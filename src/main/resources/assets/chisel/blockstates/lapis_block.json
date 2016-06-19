@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "variant=lapis_chunky": {
+      "model": "chisel:lapis_chunky"
+    },
+    "variant=lapis_dark": {
+      "model": "chisel:lapis_dark"
+    },
+    "variant=lapis_zelda": {
+      "model": "chisel:lapis_zelda"
+    },
+    "variant=lapis_ornate": {
+      "model": "chisel:lapis_ornate"
+    },
+    "variant=lapis_tile": {
+      "model": "chisel:lapis_tile"
+    },
+    "variant=lapis_panel": {
+      "model": "chisel:lapis_panel"
+    },
+    "variant=lapis_smooth": {
+      "model": "chisel:lapis_smooth"
+    },
+    "variant=lapis_ornate_layer": {
+      "model": "chisel:lapis_ornate_layer"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/planks-acacia/crate-fancy",
+    "all": "chisel:blocks/planks-acacia/crate-fancy"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/technical/fanStill-side",
+    "end": "chisel:blocks/technical/fanStill-top",
+    "side": "chisel:blocks/technical/fanStill-side"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_se",
+  "textures": {
+    "particle": "chisel:blocks/glasspanedyed/white-bubble-side",
+    "edge": "chisel:blocks/glasspanedyed/white-bubble-top",
+    "pane": "chisel:blocks/glasspanedyed/white-bubble-side"
+  }
+}

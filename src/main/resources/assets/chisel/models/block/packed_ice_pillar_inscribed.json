@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/icepillar/convexplain-side",
+    "end": "chisel:blocks/icepillar/convexplain-top",
+    "side": "chisel:blocks/icepillar/convexplain-side"
+  }
+}

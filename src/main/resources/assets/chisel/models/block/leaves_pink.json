@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/leaves/pinkpetal",
+    "all": "chisel:blocks/leaves/pinkpetal"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=copper_caution": {
+      "model": "chisel:copper_caution"
+    },
+    "variant=copper_shipping": {
+      "model": "chisel:copper_shipping"
+    },
+    "variant=copper_thermal": {
+      "model": "chisel:copper_thermal"
+    },
+    "variant=copper_125": {
+      "model": "chisel:copper_125"
+    },
+    "variant=copper_bordered": {
+      "model": "chisel:copper_bordered"
+    },
+    "variant=copper_bolted": {
+      "model": "chisel:copper_bolted"
+    }
+  }
+}

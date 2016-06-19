@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/glassdyed/pink-transparent",
+    "all": "chisel:blocks/glassdyed/pink-transparent"
+  }
+}

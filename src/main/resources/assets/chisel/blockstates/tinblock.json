@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=tin_caution": {
+      "model": "chisel:tin_caution"
+    },
+    "variant=tin_shipping": {
+      "model": "chisel:tin_shipping"
+    },
+    "variant=tin_thermal": {
+      "model": "chisel:tin_thermal"
+    },
+    "variant=tin_125": {
+      "model": "chisel:tin_125"
+    },
+    "variant=tin_bordered": {
+      "model": "chisel:tin_bordered"
+    },
+    "variant=tin_bolted": {
+      "model": "chisel:tin_bolted"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_ns",
+  "textures": {
+    "particle": "chisel:blocks/glasspane/terrain-glass-screen-side",
+    "edge": "chisel:blocks/glasspane/terrain-glass-screen-top",
+    "pane": "chisel:blocks/glasspane/terrain-glass-screen-side"
+  }
+}

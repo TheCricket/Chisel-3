@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/fantasy/plate-side",
+    "end": "chisel:blocks/fantasy/plate-top",
+    "side": "chisel:blocks/fantasy/plate-side"
+  }
+}

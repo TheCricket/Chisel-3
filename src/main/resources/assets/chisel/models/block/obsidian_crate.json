@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/obsidian/crate-side",
+    "all": "chisel:blocks/obsidian/crate-top",
+    "side": "chisel:blocks/obsidian/crate-side"
+  }
+}

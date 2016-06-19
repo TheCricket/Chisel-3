@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/holystone/plate-rough",
+    "all": "chisel:blocks/holystone/plate-rough"
+  }
+}

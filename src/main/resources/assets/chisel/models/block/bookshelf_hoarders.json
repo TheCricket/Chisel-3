@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/bookshelf/hoarder",
+    "end": "chisel:blocks/bookshelf/hoarder-top",
+    "side": "chisel:blocks/bookshelf/hoarder"
+  }
+}

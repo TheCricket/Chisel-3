@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/fantasy/pillar-decorated-side",
+    "end": "chisel:blocks/fantasy/pillar-decorated-top",
+    "side": "chisel:blocks/fantasy/pillar-decorated-side"
+  }
+}

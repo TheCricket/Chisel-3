@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_green_bubble": {
+      "model": "chisel:stained_glass_green_bubble"
+    },
+    "variant=stained_glass_green_panel": {
+      "model": "chisel:stained_glass_green_panel"
+    },
+    "variant=stained_glass_green_panel_fancy": {
+      "model": "chisel:stained_glass_green_panel_fancy"
+    },
+    "variant=stained_glass_green_borderless": {
+      "model": "chisel:stained_glass_green_borderless"
+    }
+  }
+}

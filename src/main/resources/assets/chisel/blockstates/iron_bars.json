@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "variant=iron_bars_no_frame": {
+      "model": "chisel:iron_bars_no_frame"
+    },
+    "variant=iron_bars_menacing": {
+      "model": "chisel:iron_bars_menacing"
+    },
+    "variant=iron_bars_cage": {
+      "model": "chisel:iron_bars_cage"
+    },
+    "variant=iron_bars_menacing_spikes": {
+      "model": "chisel:iron_bars_menacing_spikes"
+    },
+    "variant=iron_bars_grid_thick": {
+      "model": "chisel:iron_bars_grid_thick"
+    },
+    "variant=iron_bars_grid_thin": {
+      "model": "chisel:iron_bars_grid_thin"
+    },
+    "variant=iron_bars_ornate": {
+      "model": "chisel:iron_bars_ornate"
+    },
+    "variant=iron_bars_vertical": {
+      "model": "chisel:iron_bars_vertical"
+    },
+    "variant=iron_bars_spikes": {
+      "model": "chisel:iron_bars_spikes"
+    }
+  }
+}

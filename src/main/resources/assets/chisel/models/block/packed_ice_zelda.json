@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/ice/zelda",
+    "all": "chisel:blocks/ice/zelda"
+  }
+}

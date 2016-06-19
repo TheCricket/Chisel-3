@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "variant=industrial_fan": {
+      "model": "chisel:industrial_fan"
+    },
+    "variant=industrial_plating": {
+      "model": "chisel:industrial_plating"
+    }
+  }
+}

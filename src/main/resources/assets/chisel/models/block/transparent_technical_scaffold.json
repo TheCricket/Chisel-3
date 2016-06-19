@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/technical/scaffoldTransparent",
+    "all": "chisel:blocks/technical/scaffoldTransparent"
+  }
+}

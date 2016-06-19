@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "variant=voidstone_raw": {
+      "model": "chisel:voidstone_raw"
+    },
+    "variant=voidstone_tiles": {
+      "model": "chisel:voidstone_tiles"
+    },
+    "variant=voidstone_smooth": {
+      "model": "chisel:voidstone_smooth"
+    },
+    "variant=voidstone_skull": {
+      "model": "chisel:voidstone_skull"
+    },
+    "variant=voidstone_runic": {
+      "model": "chisel:voidstone_runic"
+    },
+    "variant=voidstone_metal": {
+      "model": "chisel:voidstone_metal"
+    },
+    "variant=voidstone_eye": {
+      "model": "chisel:voidstone_eye"
+    },
+    "variant=voidstone_bevel": {
+      "model": "chisel:voidstone_bevel"
+    }
+  }
+}

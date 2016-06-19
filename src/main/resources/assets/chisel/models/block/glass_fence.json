@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/glass/a1-glasswindow-ironfencemodern",
+    "all": "chisel:blocks/glass/a1-glasswindow-ironfencemodern"
+  }
+}

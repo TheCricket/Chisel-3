@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/dirt/bricks2",
+    "all": "chisel:blocks/dirt/bricks2"
+  }
+}

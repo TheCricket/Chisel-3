@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/tyrian/platetiles",
+    "all": "chisel:blocks/tyrian/platetiles"
+  }
+}

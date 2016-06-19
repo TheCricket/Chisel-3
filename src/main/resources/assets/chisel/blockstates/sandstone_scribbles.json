@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=sandstone_scribbles_0": {
+      "model": "chisel:sandstone_scribbles_0"
+    },
+    "variant=sandstone_scribbles_1": {
+      "model": "chisel:sandstone_scribbles_1"
+    },
+    "variant=sandstone_scribbles_2": {
+      "model": "chisel:sandstone_scribbles_2"
+    },
+    "variant=sandstone_scribbles_3": {
+      "model": "chisel:sandstone_scribbles_3"
+    },
+    "variant=sandstone_scribbles_4": {
+      "model": "chisel:sandstone_scribbles_4"
+    },
+    "variant=sandstone_scribbles_5": {
+      "model": "chisel:sandstone_scribbles_5"
+    },
+    "variant=sandstone_scribbles_6": {
+      "model": "chisel:sandstone_scribbles_6"
+    },
+    "variant=sandstone_scribbles_7": {
+      "model": "chisel:sandstone_scribbles_7"
+    },
+    "variant=sandstone_scribbles_8": {
+      "model": "chisel:sandstone_scribbles_8"
+    },
+    "variant=sandstone_scribbles_9": {
+      "model": "chisel:sandstone_scribbles_9"
+    },
+    "variant=sandstone_scribbles_10": {
+      "model": "chisel:sandstone_scribbles_10"
+    },
+    "variant=sandstone_scribbles_11": {
+      "model": "chisel:sandstone_scribbles_11"
+    },
+    "variant=sandstone_scribbles_12": {
+      "model": "chisel:sandstone_scribbles_12"
+    },
+    "variant=sandstone_scribbles_13": {
+      "model": "chisel:sandstone_scribbles_13"
+    },
+    "variant=sandstone_scribbles_14": {
+      "model": "chisel:sandstone_scribbles_14"
+    },
+    "variant=sandstone_scribbles_15": {
+      "model": "chisel:sandstone_scribbles_15"
+    }
+  }
+}

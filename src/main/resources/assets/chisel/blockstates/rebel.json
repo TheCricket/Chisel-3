@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=rebel_camo": {
+      "model": "chisel:rebel_camo"
+    },
+    "variant=rebel_camo_secluded": {
+      "model": "chisel:rebel_camo_secluded"
+    },
+    "variant=rebel_bolt": {
+      "model": "chisel:rebel_bolt"
+    },
+    "variant=rebel_caution_white": {
+      "model": "chisel:rebel_caution_white"
+    },
+    "variant=rebel_caution_team": {
+      "model": "chisel:rebel_caution_team"
+    }
+  }
+}

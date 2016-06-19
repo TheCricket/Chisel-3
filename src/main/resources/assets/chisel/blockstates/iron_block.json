@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "variant=iron_ingots_large": {
+      "model": "chisel:iron_ingots_large"
+    },
+    "variant=iron_ingots_small": {
+      "model": "chisel:iron_ingots_small"
+    },
+    "variant=iron_gears": {
+      "model": "chisel:iron_gears"
+    },
+    "variant=iron_bricks": {
+      "model": "chisel:iron_bricks"
+    },
+    "variant=iron_plates": {
+      "model": "chisel:iron_plates"
+    },
+    "variant=iron_coin_heads": {
+      "model": "chisel:iron_coin_heads"
+    },
+    "variant=iron_coin_tails": {
+      "model": "chisel:iron_coin_tails"
+    },
+    "variant=iron_crate_dark": {
+      "model": "chisel:iron_crate_dark"
+    },
+    "variant=iron_crate_light": {
+      "model": "chisel:iron_crate_light"
+    },
+    "variant=iron_moon_decor": {
+      "model": "chisel:iron_moon_decor"
+    },
+    "variant=iron_moon_obsidian_purple": {
+      "model": "chisel:iron_moon_obsidian_purple"
+    },
+    "variant=iron_moon_obsidian": {
+      "model": "chisel:iron_moon_obsidian"
+    },
+    "variant=iron_vents": {
+      "model": "chisel:iron_vents"
+    },
+    "variant=iron_simple": {
+      "model": "chisel:iron_simple"
+    }
+  }
+}

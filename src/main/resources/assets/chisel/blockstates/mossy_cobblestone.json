@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=mossy_cobblestone_bricks_aligned": {
+      "model": "chisel:mossy_cobblestone_bricks_aligned"
+    },
+    "variant=mossy_cobblestone_bricks_detailed": {
+      "model": "chisel:mossy_cobblestone_bricks_detailed"
+    },
+    "variant=mossy_cobblestone_bricks_small": {
+      "model": "chisel:mossy_cobblestone_bricks_small"
+    },
+    "variant=mossy_cobblestone_tiles_large": {
+      "model": "chisel:mossy_cobblestone_tiles_large"
+    },
+    "variant=mossy_cobblestone_tiles_small": {
+      "model": "chisel:mossy_cobblestone_tiles_small"
+    },
+    "variant=mossy_cobblestone_tiles_french": {
+      "model": "chisel:mossy_cobblestone_tiles_french"
+    },
+    "variant=mossy_cobblestone_tiles_french_light": {
+      "model": "chisel:mossy_cobblestone_tiles_french_light"
+    },
+    "variant=mossy_cobblestone_tiles_creeper": {
+      "model": "chisel:mossy_cobblestone_tiles_creeper"
+    },
+    "variant=mossy_cobblestone_tiles_damaged": {
+      "model": "chisel:mossy_cobblestone_tiles_damaged"
+    },
+    "variant=mossy_cobblestone_tiles_huge": {
+      "model": "chisel:mossy_cobblestone_tile_huge"
+    },
+    "variant=mossy_cobblestone_panel_creeper": {
+      "model": "chisel:mossy_cobblestone_panel_creeper"
+    },
+    "variant=mossy_cobblestone_dent": {
+      "model": "chisel:mossy_cobblestone_dent"
+    },
+    "variant=mossy_cobblestone_panel": {
+      "model": "chisel:mossy_cobblestone_panel"
+    },
+    "variant=mossy_cobblestone_panel_light": {
+      "model": "chisel:mossy_cobblestone_panel_light"
+    },
+    "variant=mossy_cobblestone_panel_dark": {
+      "model": "chisel:mossy_cobblestone_panel_dark"
+    }
+  }
+}

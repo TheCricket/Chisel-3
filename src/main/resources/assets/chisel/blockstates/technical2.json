@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=transparent_technical_scaffold": {
+      "model": "chisel:transparent_technical_scaffold"
+    },
+    "variant=transparent_technical_fan_fast": {
+      "model": "chisel:transparent_technical_fan_fast"
+    },
+    "variant=transparent_technical_fan_off": {
+      "model": "chisel:transparent_technical_fan_off"
+    },
+    "variant=transparent_technical_fan_malfunction": {
+      "model": "chisel:transparent_technical_fan_malfunction"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_pink_bubble": {
+      "model": "chisel:stained_glass_pink_bubble"
+    },
+    "variant=stained_glass_pink_panel": {
+      "model": "chisel:stained_glass_pink_panel"
+    },
+    "variant=stained_glass_pink_panel_fancy": {
+      "model": "chisel:stained_glass_pink_panel_fancy"
+    },
+    "variant=stained_glass_pink_borderless": {
+      "model": "chisel:stained_glass_pink_borderless"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/obsidian/pillar-quartz-side",
+    "end": "chisel:blocks/obsidian/pillar-quartz-top",
+    "side": "chisel:blocks/obsidian/pillar-quartz-side"
+  }
+}

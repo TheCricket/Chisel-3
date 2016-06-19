@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "variant=concrete_raw": {
+      "model": "chisel:concrete_raw"
+    },
+    "variant=concrete_block": {
+      "model": "chisel:concrete_block"
+    },
+    "variant=concrete_slab": {
+      "model": "chisel:concrete_slab"
+    },
+    "variant=concrete_blocks": {
+      "model": "chisel:concrete_blocks"
+    },
+    "variant=concrete_raw_weathered": {
+      "model": "chisel:concrete_raw_weathered"
+    },
+    "variant=concrete_block_weathered": {
+      "model": "chisel:concrete_block_weathered"
+    },
+    "variant=concrete_slab_weathered": {
+      "model": "chisel:concrete_slab_weathered"
+    },
+    "variant=concrete_blocks_weathered": {
+      "model": "chisel:concrete_blocks_weathered"
+    },
+    "variant=concrete_raw_partly": {
+      "model": "chisel:concrete_raw_partly"
+    },
+    "variant=concrete_block_partly": {
+      "model": "chisel:concrete_block_partly"
+    },
+    "variant=concrete_asphalt": {
+      "model": "chisel:concrete_asphalt"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_red_bubble": {
+      "model": "chisel:stained_glass_red_bubble"
+    },
+    "variant=stained_glass_red_panel": {
+      "model": "chisel:stained_glass_red_panel"
+    },
+    "variant=stained_glass_red_panel_fancy": {
+      "model": "chisel:stained_glass_red_panel_fancy"
+    },
+    "variant=stained_glass_red_borderless": {
+      "model": "chisel:stained_glass_red_borderless"
+    }
+  }
+}

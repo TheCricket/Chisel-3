@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/stonebrick2/masonBricksMixed",
+    "all": "chisel:blocks/stonebrick2/masonBricksMixed"
+  }
+}

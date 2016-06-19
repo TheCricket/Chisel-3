@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "variant=waterstone_bricks": {
+      "model": "chisel:waterstone_bricks"
+    },
+    "variant=waterstone_black": {
+      "model": "chisel:waterstone_black"
+    },
+    "variant=waterstone_tiles": {
+      "model": "chisel:waterstone_tiles"
+    },
+    "variant=waterstone_chaotic": {
+      "model": "chisel:waterstone_chaotic"
+    },
+    "variant=waterstone_creeper": {
+      "model": "chisel:waterstone_creeper"
+    },
+    "variant=waterstone_panel": {
+      "model": "chisel:waterstone_panel"
+    },
+    "variant=waterstone_ornate": {
+      "model": "chisel:waterstone_ornate"
+    }
+  }
+}

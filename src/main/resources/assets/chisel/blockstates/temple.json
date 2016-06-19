@@ -1,0 +1,87 @@
+{
+  "variants": {
+    "variant=temple_cobble": {
+      "model": "chisel:temple_cobble"
+    },
+    "variant=temple_ornate": {
+      "model": "chisel:temple_ornate"
+    },
+    "variant=temple_plate": {
+      "model": "chisel:temple_plate"
+    },
+    "variant=temple_plate_cracked": [
+      {
+        "model": "chisel:temple_plate_cracked_0",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_1",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_2",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_3",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_4",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_5",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_6",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_7",
+        "weight": 11
+      },
+      {
+        "model": "chisel:temple_plate_cracked_8",
+        "weight": 11
+      }
+    ],
+    "variant=temple_bricks": {
+      "model": "chisel:temple_bricks"
+    },
+    "variant=temple_bricks_large": {
+      "model": "chisel:temple_bricks_large"
+    },
+    "variant=temple_bricks_worn": {
+      "model": "chisel:temple_bricks_worn"
+    },
+    "variant=temple_bricks_disarray": {
+      "model": "chisel:temple_bricks_disarray"
+    },
+    "variant=temple_column": {
+      "model": "chisel:temple_column"
+    },
+    "variant=temple_stand": {
+      "model": "chisel:temple_stand"
+    },
+    "variant=temple_stand_mosaic": {
+      "model": "chisel:temple_stand_mosaic"
+    },
+    "variant=temple_stand_creeper": {
+      "model": "chisel:temple_stand_creeper"
+    },
+    "variant=temple_tiles": {
+      "model": "chisel:temple_tiles"
+    },
+    "variant=temple_tiles_small": {
+      "model": "chisel:temple_tiles_small"
+    },
+    "variant=temple_tiles_light": {
+      "model": "chisel:temple_tiles_light"
+    },
+    "variant=temple_tiles_small_light": {
+      "model": "chisel:temple_tiles_small_light"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/technical/insulationv2",
+    "all": "chisel:blocks/technical/insulationv2"
+  }
+}

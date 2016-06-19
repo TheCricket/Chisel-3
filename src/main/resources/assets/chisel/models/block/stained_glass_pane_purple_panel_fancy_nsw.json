@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_nsw",
+  "textures": {
+    "particle": "chisel:blocks/glasspanedyed/purple-panel-fancy-side",
+    "edge": "chisel:blocks/glasspanedyed/purple-panel-fancy-top",
+    "pane": "chisel:blocks/glasspanedyed/purple-panel-fancy-side"
+  }
+}

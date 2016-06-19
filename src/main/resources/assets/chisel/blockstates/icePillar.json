@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=ice_pillar_plain_plain": {
+      "model": "chisel:ice_pillar_plain_plain"
+    },
+    "variant=ice_pillar_plain_greek": {
+      "model": "chisel:ice_pillar_plain_greek"
+    },
+    "variant=ice_pillar_greek_plain": {
+      "model": "chisel:ice_pillar_greek_greek"
+    },
+    "variant=ice_pillar_carved": {
+      "model": "chisel:ice_pillar_carved"
+    },
+    "variant=ice_pillar_ornamental": {
+      "model": "chisel:ice_pillar_ornamental"
+    },
+    "variant=ice_pillar_inscribed": {
+      "model": "chisel:ice_pillar_inscribed"
+    }
+  }
+}

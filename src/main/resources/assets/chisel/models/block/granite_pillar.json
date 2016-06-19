@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/granite/granitePillar-side",
+    "end": "chisel:blocks/granite/granitePillar-top",
+    "side": "chisel:blocks/granite/granitePillar-side"
+  }
+}

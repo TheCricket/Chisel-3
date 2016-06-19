@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/netherrack/a1-netherrack-brinstarshale",
+    "all": "chisel:blocks/netherrack/a1-netherrack-brinstarshale"
+  }
+}

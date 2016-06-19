@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/gold/terrain-gold-crate-light-top",
+    "side": "chisel:blocks/gold/terrain-gold-crate-light-side",
+    "end": "chisel:blocks/gold/terrain-gold-crate-light-top"
+  }
+}

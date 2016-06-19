@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/laboratory/infocon-side",
+    "end": "chisel:blocks/laboratory/infocon=top",
+    "side": "chisel:blocks/laboratory/infocon-side"
+  }
+}

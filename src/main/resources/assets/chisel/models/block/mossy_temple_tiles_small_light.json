@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/templemossy/smalltiles-light",
+    "all": "chisel:blocks/templemossy/smalltiles-light"
+  }
+}

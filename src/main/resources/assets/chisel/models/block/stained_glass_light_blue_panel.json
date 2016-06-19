@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/glassdyed/lightblue-panel",
+    "all": "chisel:blocks/glassdyed/lightblue-panel"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=nether_brick_blue": {
+      "model": "chisel:nether_brick_blue"
+    },
+    "variant=nether_brick_spattered": {
+      "model": "chisel:nether_brick_spattered"
+    },
+    "variant=nether_brick_guts": {
+      "model": "chisel:nether_brick_guts"
+    },
+    "variant=nether_brick_guts_dark": {
+      "model": "chisel:nether_brick_guts_dark"
+    },
+    "variant=nether_brick_guts_small": {
+      "model": "chisel:nether_brick_guts_small"
+    },
+    "variant=nether_brick_blue_lava": {
+      "model": "chisel:nether_brick_blue_lava"
+    },
+    "variant=nether_brick_brown": {
+      "model": "chisel:nether_brick_brown"
+    },
+    "variant=nether_brick_obsidian": {
+      "model": "chisel:nether_brick_obsidian"
+    },
+    "variant=nether_brick_stone": {
+      "model": "chisel:nether_brick_stone"
+    },
+    "variant=nether_brick_meat": {
+      "model": "chisel:nether_brick_meat"
+    },
+    "variant=nether_brick_meat_red": {
+      "model": "chisel:nether_brick_meat_red"
+    },
+    "variant=nether_brick_meat_small": {
+      "model": "chisel:nether_brick_meat_small"
+    },
+    "variant=nether_brick_meat_small_red": {
+      "model": "chisel:nether_brick_meat_small_red"
+    },
+    "variant=nether_brick_red": {
+      "model": "chisel:nether_brick_red"
+    },
+    "variant=nether_brick_red_small": {
+      "model": "chisel:nether_brick_red_small"
+    }
+  }
+}

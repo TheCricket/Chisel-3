@@ -1,0 +1,8 @@
+{
+  "parent": "chisel:block/cube_multipass",
+  "textures": {
+    "particle": "chisel:blocks/futura/WIP/controller",
+    "layer0": "chisel:blocks/futura/WIP/controller-back",
+    "layer1": "chisel:blocks/futura/WIP/controller"
+  }
+}

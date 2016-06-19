@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/temple/column-side",
+    "end": "chisel:blocks/temple/column-top",
+    "side": "chisel:blocks/temple/column-side"
+  }
+}

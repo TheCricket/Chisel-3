@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/concrete/weathered-block-half-side",
+    "end": "chisel:blocks/concrete/weathered-block-half-top",
+    "side": "chisel:blocks/concrete/weathered-block-half-side"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=imperial_camo": {
+      "model": "chisel:imperial_camo"
+    },
+    "variant=imperial_camo_secluded": {
+      "model": "chisel:imperial_camo_secluded"
+    },
+    "variant=imperial_bolt": {
+      "model": "chisel:imperial_bolt"
+    },
+    "variant=imperial_caution_white": {
+      "model": "chisel:imperial_caution_white"
+    },
+    "variant=imperial_caution_team": {
+      "model": "chisel:imperial_caution_team"
+    }
+  }
+}

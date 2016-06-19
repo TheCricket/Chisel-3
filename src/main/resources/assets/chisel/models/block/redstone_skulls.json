@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/redstone/a1-blockredstone-skullred",
+    "all": "chisel:blocks/redstone/a1-blockredstone-skullred"
+  }
+}

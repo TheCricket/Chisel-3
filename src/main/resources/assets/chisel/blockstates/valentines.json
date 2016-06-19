@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "variant=valentines_bricks": {
+      "model": "chisel:valentines_bricks"
+    },
+    "variant=valentines_companion": {
+      "model": "chisel:valentines_companion"
+    },
+    "variant=valentines_empty": {
+      "model": "chisel:valentines_empty"
+    },
+    "variant=valentines_heart": {
+      "model": "chisel:valentines_heart"
+    },
+    "variant=valentines_heart_gray": {
+      "model": "chisel:valentines_heart_gray"
+    },
+    "variant=valentines_block": {
+      "model": "chisel:valentines_block"
+    },
+    "variant=valentines_cobble": {
+      "model": "chisel:valentines_cobble"
+    },
+    "variant=valentines_bumpy": {
+      "model": "chisel:valentines_bumpy"
+    },
+    "variant=valentines_fire": {
+      "model": "chisel:valentines_fire"
+    },
+    "variant=valentines_tile": {
+      "model": "chisel:valentines_tile"
+    }
+  }
+}

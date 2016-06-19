@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=bronze_caution": {
+      "model": "chisel:bronze_caution"
+    },
+    "variant=bronze_shipping": {
+      "model": "chisel:bronze_shipping"
+    },
+    "variant=bronze_thermal": {
+      "model": "chisel:bronze_thermal"
+    },
+    "variant=bronze_125": {
+      "model": "chisel:bronze_125"
+    },
+    "variant=bronze_bordered": {
+      "model": "chisel:bronze_bordered"
+    },
+    "variant=bronze_bolted": {
+      "model": "chisel:bronze_bolted"
+    }
+  }
+}

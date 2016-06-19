@@ -1,0 +1,38 @@
+# Only those localizations which need to be changed
+
+#Hex Plating
+tile.hexPlating.15.desc=Grey Plating
+
+#Carpet
+tile.carpet_block.7.desc=Dark Grey Carpet Block
+tile.carpet_block.8.desc=Grey Carpet Block
+
+#Carpet floor
+tile.carpet.7.desc=Dark Grey Carpet
+tile.carpet.8.desc=Grey Carpet
+
+#Woollen Clay
+tile.chisel.woolen_clay.name=Woollen Clay
+tile.woolenClay.0.desc=White Woollen Clay
+tile.woolenClay.1.desc=Orange Woollen Clay
+tile.woolenClay.2.desc=Magenta Woollen Clay
+tile.woolenClay.3.desc=Light Blue Woollen Clay
+tile.woolenClay.4.desc=Yellow Woollen Clay
+tile.woolenClay.5.desc=Lime Woollen Clay
+tile.woolenClay.6.desc=Pink Woollen Clay
+tile.woolenClay.7.desc=Grey Woollen Clay
+tile.woolenClay.8.desc=Light Grey Woollen Clay
+tile.woolenClay.9.desc=Cyan Woollen Clay
+tile.woolenClay.10.desc=Purple Woollen Clay
+tile.woolenClay.11.desc=Blue Woollen Clay
+tile.woolenClay.12.desc=Brown Woollen Clay
+tile.woolenClay.13.desc=Green Woollen Clay
+tile.woolenClay.14.desc=Red Woollen Clay
+tile.woolenClay.15.desc=Black Woollen Clay
+
+#Laboratory Block
+tile.laboratory.2.desc=Enamelled Wall
+tile.laboratory.3.desc=Enamelled Roundel Wall
+tile.laboratory.4.desc=Enamelled Wall Vents
+tile.laboratory.5.desc=Large Enamelled Tile
+tile.laboratory.6.desc=Small Enamelled Tiles

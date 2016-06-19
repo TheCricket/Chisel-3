@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=diorite_polished": {
+      "model": "chisel:diorite_polished"
+    },
+    "variant=diorite_pillar": {
+      "model": "chisel:diorite_pillar"
+    },
+    "variant=diorite_bricks": {
+      "model": "chisel:diorite_bricks"
+    },
+    "variant=diorite_ornate": {
+      "model": "chisel:diorite_ornate"
+    },
+    "variant=diorite_prismatic": {
+      "model": "chisel:diorite_prismatic"
+    },
+    "variant=diorite_tiles_small": {
+      "model": "chisel:diorite_tiles_small"
+    }
+  }
+}

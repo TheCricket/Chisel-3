@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=mossy_temple_cobble": {
+      "model": "chisel:mossy_temple_cobble"
+    },
+    "variant=mossy_temple_ornate": {
+      "model": "chisel:mossy_temple_ornate"
+    },
+    "variant=mossy_temple_plate": {
+      "model": "chisel:mossy_temple_plate"
+    },
+    "variant=mossy_temple_plate_cracked": {
+      "model": "chisel:mossy_temple_plate_cracked"
+    },
+    "variant=mossy_temple_bricks": {
+      "model": "chisel:mossy_temple_bricks"
+    },
+    "variant=mossy_temple_bricks_large": {
+      "model": "chisel:mossy_temple_bricks_large"
+    },
+    "variant=mossy_temple_bricks_worn": {
+      "model": "chisel:mossy_temple_bricks_worn"
+    },
+    "variant=mossy_temple_bricks_disarray": {
+      "model": "chisel:mossy_temple_bricks_disarray"
+    },
+    "variant=mossy_temple_column": {
+      "model": "chisel:mossy_temple_column"
+    },
+    "variant=mossy_temple_stand": {
+      "model": "chisel:mossy_temple_stand"
+    },
+    "variant=mossy_temple_stand_mosaic": {
+      "model": "chisel:mossy_temple_stand_mosaic"
+    },
+    "variant=mossy_temple_stand_creeper": {
+      "model": "chisel:mossy_temple_stand_creeper"
+    },
+    "variant=mossy_temple_tiles": {
+      "model": "chisel:mossy_temple_tiles"
+    },
+    "variant=mossy_temple_tile_small": {
+      "model": "chisel:mossy_temple_tiles_small"
+    },
+    "variant=mossy_temple_tiles_light": {
+      "model": "chisel:mossy_temple_tiles_light"
+    },
+    "variant=mossy_temple_tiles_small_light": {
+      "model": "chisel:mossy_temple_tiles_small_light"
+    }
+  }
+}

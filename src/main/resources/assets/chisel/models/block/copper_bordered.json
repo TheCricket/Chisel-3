@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/metals/copper/egregious",
+    "all": "chisel:blocks/metals/copper/egregious"
+  }
+}

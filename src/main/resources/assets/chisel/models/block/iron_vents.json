@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/iron/terrain-iron-vents-side",
+    "end": "chisel:blocks/iron/terrain-iron-vents-top",
+    "side": "chisel:blocks/iron/terrain-iron-vents-side"
+  }
+}

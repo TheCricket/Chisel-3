@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/woolenClay/gray",
+    "all": "chisel:blocks/woolenClay/gray"
+  }
+}

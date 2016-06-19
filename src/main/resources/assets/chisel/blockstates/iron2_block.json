@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=iron_caution": {
+      "model": "chisel:iron_caution"
+    },
+    "variant=iron_shipping": {
+      "model": "chisel:iron_shipping"
+    },
+    "variant=iron_thermal": {
+      "model": "chisel:iron_thermal"
+    },
+    "variant=iron_125": {
+      "model": "chisel:iron_125"
+    },
+    "variant=iron_bordered": {
+      "model": "chisel:iron_bordered"
+    },
+    "variant=iron_bolted": {
+      "model": "chisel:iron_bolted"
+    }
+  }
+}

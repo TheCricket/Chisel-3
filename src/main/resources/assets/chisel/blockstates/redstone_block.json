@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=redstone_smooth": {
+      "model": "chisel:redstone_smooth"
+    },
+    "variant=redstone_large": {
+      "model": "chisel:redstone_large"
+    },
+    "variant=redstone_small": {
+      "model": "chisel:redstone_small"
+    },
+    "variant=redstone_bricks": {
+      "model": "chisel:redstone_bricks"
+    },
+    "variant=redstone_bricks_small": {
+      "model": "chisel:redstone_bricks_small"
+    },
+    "variant=redstone_bricks_chaotic": {
+      "model": "chisel:redstone_bricks_chaotic"
+    },
+    "variant=redstone_chiseled": {
+      "model": "chisel:redstone_chiseled"
+    },
+    "variant=redstone_greek": {
+      "model": "chisel:redstone_greek"
+    },
+    "variant=redstone_tiles_ornate": {
+      "model": "chisel:redstone_tiles_ornate"
+    },
+    "variant=redstone_pillar": {
+      "model": "chisel:redstone_pillar"
+    },
+    "variant=redstone_tiles": {
+      "model": "chisel:redstone_tiles"
+    },
+    "variant=redstone_circuit": {
+      "model": "chisel:redstone_circuit"
+    },
+    "variant=redstone_circuit_supaplex": {
+      "model": "chisel:redstone_circuit_supaplex"
+    },
+    "variant=redstone_skulls": {
+      "model": "chisel:redstone_skulls"
+    },
+    "variant=redstone_zelda": {
+      "model": "chisel:redstone_zelda"
+    }
+  }
+}

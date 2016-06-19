@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "variant=torch_0": {
+      "model": "chisel:torch_0"
+    },
+    "variant=torch_1": {
+      "model": "chisel:torch_1"
+    },
+    "variant=torch_2": {
+      "model": "chisel:torch_2"
+    },
+    "variant=torch_3": {
+      "model": "chisel:torch_3"
+    },
+    "variant=torch_4": {
+      "model": "chisel:torch_4"
+    },
+    "variant=torch_5": {
+      "model": "chisel:torch_5"
+    },
+    "variant=torch_6": {
+      "model": "chisel:torch_6"
+    },
+    "variant=torch_7": {
+      "model": "chisel:torch_7"
+    },
+    "variant=torch_8": {
+      "model": "chisel:torch_8"
+    },
+    "variant=torch_9": {
+      "model": "chisel:torch_9"
+    }
+  }
+}

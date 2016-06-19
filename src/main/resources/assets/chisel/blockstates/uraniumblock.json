@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=uranium_caution": {
+      "model": "chisel:uranium_caution"
+    },
+    "variant=uranium_shipping": {
+      "model": "chisel:uranium_shipping"
+    },
+    "variant=uranium_thermal": {
+      "model": "chisel:uranium_thermal"
+    },
+    "variant=uranium_125": {
+      "model": "chisel:uranium_125"
+    },
+    "variant=uranium_bordered": {
+      "model": "chisel:uranium_bordered"
+    },
+    "variant=uranium_bolted": {
+      "model": "chisel:uranium_bolted"
+    }
+  }
+}

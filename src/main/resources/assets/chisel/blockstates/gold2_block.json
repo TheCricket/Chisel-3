@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "variant=gold_caution": {
+      "model": "chisel:gold_caution"
+    },
+    "variant=gold_shipping": {
+      "model": "chisel:gold_shipping"
+    },
+    "variant=gold_thermal": {
+      "model": "chisel:gold_thermal"
+    },
+    "variant=gold_125": {
+      "model": "chisel:gold_125"
+    },
+    "variant=gold_bordered": {
+      "model": "chisel:gold_bordered"
+    },
+    "variant=gold_bolted": {
+      "model": "chisel:gold_bolted"
+    }
+  }
+}

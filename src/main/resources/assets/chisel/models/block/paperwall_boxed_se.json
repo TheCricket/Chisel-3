@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_se",
+  "textures": {
+    "particle": "chisel:blocks/paper/box",
+    "edge": "chisel:blocks/paper/box",
+    "pane": "chisel:blocks/paper/box"
+  }
+}

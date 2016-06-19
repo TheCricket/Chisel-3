@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/iron/terrain-iron-largeingot-side",
+    "end": "chisel:blocks/iron/terrain-iron-largeingot-top",
+    "side": "chisel:blocks/iron/terrain-iron-largeingot-side"
+  }
+}

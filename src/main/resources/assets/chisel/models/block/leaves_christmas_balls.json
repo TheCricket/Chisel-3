@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/leaves/christmasBalls",
+    "all": "chisel:blocks/leaves/christmasBalls"
+  }
+}

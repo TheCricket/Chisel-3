@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/laboratory/smallsteel-side",
+    "end": "chisel:blocks/laboratory/smallsteel-top",
+    "side": "chisel:blocks/laboratory/smallsteel-side"
+  }
+}

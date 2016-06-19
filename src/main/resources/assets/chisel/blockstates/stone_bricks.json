@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "variant=stone_bricks_neutral": {
+      "model": "chisel:stone_bricks_neutral"
+    },
+    "variant=stone_bricks_felsic": {
+      "model": "chisel:stone_bricks_felsic"
+    },
+    "variant=stone_bricks_mafic": {
+      "model": "chisel:stone_bricks_mafic"
+    },
+    "variant=stone_bricks_small": {
+      "model": "chisel:stone_bricks_small"
+    },
+    "variant=stone_bricks_wide": {
+      "model": "chisel:stone_bricks_wide"
+    },
+    "variant=stone_bricks_disordered_small": {
+      "model": "chisel:stone_bricks_disordered_small"
+    },
+    "variant=stone_bricks_disordered": {
+      "model": "chisel:stone_bricks_disordered"
+    },
+    "variant=stone_bricks_disordered_panel": {
+      "model": "chisel:stone_bricks_disordered_panel"
+    },
+    "variant=stone_bricks_fancy": {
+      "model": "chisel:stone_bricks_fancy"
+    },
+    "variant=stone_bricks_ornate": {
+      "model": "chisel:stone_bricks_ornate"
+    },
+    "variant=stone_bricks_ornate_large": {
+      "model": "chisel:stone_bricks_ornate_large"
+    },
+    "variant=stone_bricks_panel_sunken": {
+      "model": "chisel:stone_bricks_panel_sunken"
+    },
+    "variant=stone_bricks_panel_ornate": {
+      "model": "chisel:stone_bricks_panel_ornate"
+    },
+    "variant=stone_bricks_poison": {
+      "model": "chisel:stone_bricks_poison"
+    }
+  }
+}

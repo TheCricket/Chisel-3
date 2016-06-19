@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_yellow_bubble": {
+      "model": "chisel:stained_glass_yellow_bubble"
+    },
+    "variant=stained_glass_yellow_panel": {
+      "model": "chisel:stained_glass_yellow_panel"
+    },
+    "variant=stained_glass_yellow_panel_fancy": {
+      "model": "chisel:stained_glass_yellow_panel_fancy"
+    },
+    "variant=stained_glass_yellow_borderless": {
+      "model": "chisel:stained_glass_yellow_borderless"
+    }
+  }
+}

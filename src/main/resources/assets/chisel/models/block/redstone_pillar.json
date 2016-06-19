@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/redstone/pillar-side",
+    "end": "chisel:blocks/redstone/pillar-top",
+	"side": "chisel:blocks/redstone/pillar-side"
+  }
+}

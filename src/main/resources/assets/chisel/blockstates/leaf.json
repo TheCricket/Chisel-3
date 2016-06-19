@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "variant=leaves_dead": {
+      "model": "chisel:leaves_dead"
+    },
+    "variant=leaves_fancy": {
+      "model": "chisel:leaves_fancy"
+    },
+    "variant=leaves_pink": {
+      "model": "chisel:leaves_pink"
+    },
+    "variant=leaves_red": {
+      "model": "chisel:leaves_red"
+    },
+    "variant=leaves_white": {
+      "model": "chisel:leaves_white"
+    },
+    "variant=leaves_christmas_balls": {
+      "model": "chisel:leaves_christmas_balls"
+    },
+    "variant=leaves_christmas_lights": {
+      "model": "chisel:leaves_christmas_lights"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "chisel:blocks/pumpkin/pumpkin_side",
+    "top": "chisel:blocks/pumpkin/pumpkin_top",
+    "front": "chisel:blocks/pumpkin/pumpkin_face_17_off",
+    "side": "chisel:blocks/pumpkin/pumpkin_side"
+  }
+}

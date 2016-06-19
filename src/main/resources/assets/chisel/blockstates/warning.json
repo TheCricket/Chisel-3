@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=warning_radiation": {
+      "model": "chisel:warning_radiation"
+    },
+    "variant=warning_biohazard": {
+      "model": "chisel:warning_biohazard"
+    },
+    "variant=warning_fire": {
+      "model": "chisel:warning_fire"
+    },
+    "variant=warning_explosion": {
+      "model": "chisel:warning_explosion"
+    },
+    "variant=warning_death": {
+      "model": "chisel:warning_death"
+    },
+    "variant=warning_falling_objects": {
+      "model": "chisel:warning_falling_objects"
+    },
+    "variant=warning_falling": {
+      "model": "chisel:warning_falling"
+    },
+    "variant=warning_voltage": {
+      "model": "chisel:warning_voltage"
+    },
+    "variant=warning_generic": {
+      "model": "chisel:warning_generic"
+    },
+    "variant=warning_chem": {
+      "model": "chisel:warning_chem"
+    },
+    "variant=warning_construction": {
+      "model": "chisel:warning_construction"
+    },
+    "variant=warning_loud": {
+      "model": "chisel:warning_loud"
+    },
+    "variant=warning_no_entry": {
+      "model": "chisel:warning_no_entry"
+    },
+    "variant=warning_cryogenic": {
+      "model": "chisel:warning_cryogenic"
+    },
+    "variant=warning_oxygen": {
+      "model": "chisel:warning_oxygen"
+    }
+  }
+}

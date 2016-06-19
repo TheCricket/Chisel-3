@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/factory/goldplating",
+    "all": "chisel:blocks/factory/goldplating"
+  }
+}

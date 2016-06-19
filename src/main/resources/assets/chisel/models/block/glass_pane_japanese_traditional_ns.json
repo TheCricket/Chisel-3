@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_ns",
+  "textures": {
+    "particle": "chisel:blocks/glasspane/japanese2-side",
+    "edge": "chisel:blocks/glasspane/japanese2-top",
+    "pane": "chisel:blocks/glasspane/japanese2-side"
+  }
+}

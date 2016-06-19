@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/metals/silver/crate",
+    "all": "chisel:blocks/metals/silver/crate"
+  }
+}

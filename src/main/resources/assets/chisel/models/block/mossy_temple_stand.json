@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/templemossy/stand-side",
+    "end": "chisel:blocks/templemossy/stand-top",
+    "side": "chisel:blocks/templemossy/stand-side"
+  }
+}

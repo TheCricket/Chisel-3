@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/marble/terrain-pistonback-marblecreeperlight-side",
+    "all": "chisel:blocks/marble/terrain-pistonback-marblecreeperlight-side"
+  }
+}

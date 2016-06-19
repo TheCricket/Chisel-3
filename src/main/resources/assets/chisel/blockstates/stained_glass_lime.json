@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_lime_bubble": {
+      "model": "chisel:stained_glass_lime_bubble"
+    },
+    "variant=stained_glass_lime_panel": {
+      "model": "chisel:stained_glass_lime_panel"
+    },
+    "variant=stained_glass_lime_panel_fancy": {
+      "model": "chisel:stained_glass_lime_panel_fancy"
+    },
+    "variant=stained_glass_lime_borderless": {
+      "model": "chisel:stained_glass_lime_borderless"
+    }
+  }
+}

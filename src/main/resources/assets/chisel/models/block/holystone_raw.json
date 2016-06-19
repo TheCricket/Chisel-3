@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/holystone/holystone",
+    "all": "chisel:blocks/holystone/holystone"
+  }
+}

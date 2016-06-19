@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=obsidian_pillar_large": {
+      "model": "chisel:obsidian_pillar_large"
+    },
+    "variant=obsidian_pillar": {
+      "model": "chisel:obsidian_pillar"
+    },
+    "variant=obsidian_chiseled": {
+      "model": "chisel:obsidian_chiseled"
+    },
+    "variant=obsidian_panel_shiny": {
+      "model": "chisel:obsidian_panel_shiny"
+    },
+    "variant=obsidian_panel": {
+      "model": "chisel:obsidian_panel"
+    },
+    "variant=obsidian_organic_chunks": {
+      "model": "chisel:obsidian_organic_chunks"
+    },
+    "variant=obsidian_organic_growth": {
+      "model": "chisel:obsidian_organic_growth"
+    },
+    "variant=obsidian_crystal": {
+      "model": "chisel:obsidian_crystal"
+    },
+    "variant=obsidian_panel_map": {
+      "model": "chisel:obsidian_panel_map"
+    },
+    "variant=obsidian_panel_region": {
+      "model": "chisel:obsidian_panel_region"
+    },
+    "variant=obsidian_panel_bright": {
+      "model": "chisel:obsidian_panel_bright"
+    },
+    "variant=obsidian_blocks": {
+      "model": "chisel:obsidian_blocks"
+    },
+    "variant=obsidian_tiles": {
+      "model": "chisel:obsidian_tiles"
+    },
+    "variant=obsidian_greek": {
+      "model": "chisel:obsidian_greek"
+    },
+    "variant=obsidian_crate": {
+      "model": "chisel:obsidian_crate"
+    }
+  }
+}

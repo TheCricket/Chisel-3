@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/bookshelf/historian",
+    "end": "chisel:blocks/bookshelf/historian-top",
+    "side": "chisel:blocks/bookshelf/historian"
+  }
+}

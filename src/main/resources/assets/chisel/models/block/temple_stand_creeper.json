@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/temple/stand-creeper",
+    "all": "chisel:blocks/temple/stand-creeper"
+  }
+}

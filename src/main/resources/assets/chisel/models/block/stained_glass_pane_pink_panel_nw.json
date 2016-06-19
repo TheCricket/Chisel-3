@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_nw",
+  "textures": {
+    "particle": "chisel:blocks/glasspanedyed/pink-panel-side",
+    "edge": "chisel:blocks/glasspanedyed/pink-panel-top",
+    "pane": "chisel:blocks/glasspanedyed/pink-panel-side"
+  }
+}

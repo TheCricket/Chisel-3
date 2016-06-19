@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=stained_glass_blue_bubble": {
+      "model": "chisel:stained_glass_blue_bubble"
+    },
+    "variant=stained_glass_blue_panel": {
+      "model": "chisel:stained_glass_blue_panel"
+    },
+    "variant=stained_glass_blue_panel_fancy": {
+      "model": "chisel:stained_glass_blue_panel_fancy"
+    },
+    "variant=stained_glass_blue_borderless": {
+      "model": "chisel:stained_glass_blue_borderless"
+    }
+  }
+}

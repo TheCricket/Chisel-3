@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=futura_screen_gray": {
+      "model": "chisel:futura_screen_gray"
+    },
+    "variant=futura_screen_cyan": {
+      "model": "chisel:futura_screen_cyan"
+    },
+    "variant=futura_controller": {
+      "model": "chisel:futura_controller"
+    },
+    "variant=futura_controller_purple": {
+      "model": "chisel:futura_controller_purple"
+    },
+    "variant=futura_rainbow": {
+      "model": "chisel:futura_rainbow"
+    }
+  }
+}

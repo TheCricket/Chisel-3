@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/emerald/cell",
+    "all": "chisel:blocks/emerald/cell"
+  }
+}

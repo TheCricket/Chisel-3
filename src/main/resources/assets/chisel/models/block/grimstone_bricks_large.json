@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/grimstone/largebricks",
+    "all": "chisel:blocks/grimstone/largebricks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/cloud/large",
+    "all": "chisel:blocks/cloud/large"
+  }
+}

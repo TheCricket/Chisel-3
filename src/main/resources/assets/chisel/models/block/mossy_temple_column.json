@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/templemossy/column",
+    "all": "chisel:blocks/templemossy/column"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "variants": {
+    "variant=sandstone_faded": {
+      "model": "chisel:sandstone_faded"
+    },
+    "variant=sandstone_pillar": {
+      "model": "chisel:sandstone_pillar"
+    },
+    "variant=sandstone_pillar_capstone": {
+      "model": "chisel:sandstone_pillar_capstone"
+    },
+    "variant=sandstone_pillar_small": {
+      "model": "chisel:sandstone_pillar_small"
+    },
+    "variant=sandstone_pillar_base": {
+      "model": "chisel:sandstone_pillar_base"
+    },
+    "variant=sandstone_smooth_flat": {
+      "model": "chisel:sandstone_smooth_flat"
+    },
+    "variant=sandstone_pillar_capstone_smooth": {
+      "model": "chisel:sandstone_pillar_capstone_smooth"
+    },
+    "variant=sandstone_pillar_small_smooth": {
+      "model": "chisel:sandstone_pillar_small_smooth"
+    },
+    "variant=sandstone_pillar_smooth": {
+      "model": "chisel:sandstone_pillar_smooth"
+    },
+    "variant=sandstone_block": {
+      "model": "chisel:sandstone_block"
+    },
+    "variant=sandstone_blocks": {
+      "model": "chisel:sandstone_blocks"
+    },
+    "variant=sandstone_mosaic": {
+      "model": "chisel:sandstone_mosaic"
+    },
+    "variant=sandstone_stacked": {
+      "model": "chisel:sandstone_stacked"
+    }
+  }
+}

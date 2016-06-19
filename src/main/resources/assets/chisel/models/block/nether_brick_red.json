@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/netherbrick/a1-netherbrick-red",
+    "all": "chisel:blocks/netherbrick/a1-netherbrick-red"
+  }
+}

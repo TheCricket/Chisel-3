@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "variant=packed_ice_rough": {
+      "model": "chisel:packed_ice_rough"
+    },
+    "variant=packed_ice_cobble": {
+      "model": "chisel:packed_ice_cobble"
+    },
+    "variant=packed_ice_rough_large": {
+      "model": "chisel:packed_ice_rough_large"
+    },
+    "variant=packed_ice_bricks_large": {
+      "model": "chisel:packed_ice_bricks_large"
+    },
+    "variant=packed_ice_bricks_small": {
+      "model": "chisel:packed_ice_bricks_small"
+    },
+    "variant=packed_ice_glass_wall": {
+      "model": "chisel:packed_ice_glass_wall"
+    },
+    "variant=packed_ice_tiles_large": {
+      "model": "chisel:packed_ice_tiles_large"
+    },
+    "variant=packed_ice_tiles_fancy": {
+      "model": "chisel:packed_ice_tiles_fancy"
+    },
+    "variant=packed_ice_tiles_sunken": {
+      "model": "chisel:packed_ice_tiles_sunken"
+    },
+    "variant=packed_ice_tiles_disordered": {
+      "model": "chisel:packed_ice_tiles_disordered"
+    },
+    "variant=packed_ice_panel": {
+      "model": "chisel:packed_ice_panel"
+    },
+    "variant=packed_ice_double_slab": {
+      "model": "chisel:packed_ice_double_slab"
+    },
+    "variant=packed_ice_zelda": {
+      "model": "chisel:packed_ice_zelda"
+    },
+    "variant=packed_ice_bismuth": {
+      "model": "chisel:packed_ice_bismuth"
+    },
+    "variant=packed_ice_poison": {
+      "model": "chisel:packed_ice_poison"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/planks-oak/fancy",
+    "all": "chisel:blocks/planks-oak/fancy"
+  }
+}

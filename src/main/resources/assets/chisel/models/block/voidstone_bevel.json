@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/voidstone/bevel",
+    "all": "chisel:blocks/voidstone/bevel"
+  }
+}

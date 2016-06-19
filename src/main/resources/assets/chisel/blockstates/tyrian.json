@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=tyrian_normal": {
+      "model": "chisel:tyrian_normal"
+    },
+    "variant=tyrian_bleak": {
+      "model": "chisel:tyrian_bleak"
+    },
+    "variant=tyrian_purple": {
+      "model": "chisel:tyrian_purple"
+    },
+    "variant=tyrian_purple_faded": {
+      "model": "chisel:tyrian_purple_faded"
+    },
+    "variant=tyrian_rusted": {
+      "model": "chisel:tyrian_rusted"
+    },
+    "variant=tyrian_elaborate": {
+      "model": "chisel:tyrian_elaborate"
+    },
+    "variant=tyrian_seams": {
+      "model": "chisel:tyrian_seams"
+    },
+    "variant=tyrian_platform": {
+      "model": "chisel:tyrian_platform"
+    },
+    "variant=tyrian_tiles": {
+      "model": "chisel:tyrian_tiles"
+    },
+    "variant=tyrian_diagonal": {
+      "model": "chisel:tyrian_diagonal"
+    },
+    "variant=tyrian_dent": {
+      "model": "chisel:tyrian_dent"
+    },
+    "variant=tyrian_blue": {
+      "model": "chisel:tyrian_blue"
+    },
+    "variant=tyrian_black": {
+      "model": "chisel:tyrian_black"
+    },
+    "variant=tyrian_black_tiles": {
+      "model": "chisel:tyrian_black_tiles"
+    },
+    "variant=tyrian_opening": {
+      "model": "chisel:tyrian_opening"
+    },
+    "variant=tyrian_shiny": {
+      "model": "chisel:tyrian_shiny"
+    }
+  }
+}

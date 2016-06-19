@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/technical/grateRusty",
+    "all": "chisel:blocks/technical/grateRusty"
+  }
+}

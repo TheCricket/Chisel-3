@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "variant=energised_voidstone_raw": {
+      "model": "chisel:energised_voidstone_raw"
+    },
+    "variant=energised_voidstone_tiles": {
+      "model": "chisel:energised_voidstone_tiles"
+    },
+    "variant=energised_voidstone_smooth": {
+      "model": "chisel:energised_voidstone_smooth"
+    },
+    "variant=energised_voidstone_skull": {
+      "model": "chisel:energised_voidstone_skull"
+    },
+    "variant=energised_voidstone_runic": {
+      "model": "chisel:energised_voidstone_runic"
+    },
+    "variant=energised_voidstone_metal": {
+      "model": "chisel:energised_voidstone_metal"
+    },
+    "variant=energised_voidstone_eye": {
+      "model": "chisel:energised_voidstone_eye"
+    },
+    "variant=energised_voidstone_bevel": {
+      "model": "chisel:energised_voidstone_bevel"
+    }
+  }
+}

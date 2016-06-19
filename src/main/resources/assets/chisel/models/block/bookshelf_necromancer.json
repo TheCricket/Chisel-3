@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/bookshelf/necromancer",
+    "end": "chisel:blocks/bookshelf/necromancer-top",
+    "side": "chisel:blocks/bookshelf/necromancer"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/planks-spruce/blinds",
+    "all": "chisel:blocks/planks-spruce/blinds"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "variant=netherrack_blood_gravel": {
+      "model": "chisel:netherrack_blood_gravel"
+    },
+    "variant=netherrack_blood": {
+      "model": "chisel:netherrack_blood"
+    },
+    "variant=netherrack_blood_dark": {
+      "model": "chisel:netherrack_blood_dark"
+    },
+    "variant=netherrack_blue": {
+      "model": "chisel:netherrack_blue"
+    },
+    "variant=netherrack_blue_shale": {
+      "model": "chisel:netherrack_blue_shale"
+    },
+    "variant=netherrack_classic": {
+      "model": "chisel:netherrack_classic"
+    },
+    "variant=netherrack_spattered": {
+      "model": "chisel:netherrack_spattered"
+    },
+    "variant=netherrack_guts": {
+      "model": "chisel:netherrack_guts"
+    },
+    "variant=netherrack_guts_dark": {
+      "model": "chisel:netherrack_guts_dark"
+    },
+    "variant=netherrack_meat": {
+      "model": "chisel:netherrack_meat"
+    },
+    "variant=netherrack_meat_red": {
+      "model": "chisel:netherrack_meat_red"
+    },
+    "variant=netherrack_meat_small": {
+      "model": "chisel:netherrack_meat_small"
+    },
+    "variant=netherrack_red": {
+      "model": "chisel:netherrack_red"
+    },
+    "variant=netherrack_lava": {
+      "model": "chisel:netherrack_lava"
+    }
+  }
+}

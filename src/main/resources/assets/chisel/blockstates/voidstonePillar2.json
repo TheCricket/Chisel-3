@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=energised_voidstone_pillar_normal": {
+      "model": "chisel:energised_voidstone_pillar_normal"
+    }
+  }
+}

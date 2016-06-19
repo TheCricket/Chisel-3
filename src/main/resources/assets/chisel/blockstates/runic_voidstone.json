@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=runic_voidstone_0": {
+      "model": "chisel:runic_voidstone_0"
+    },
+    "variant=runic_voidstone_1": {
+      "model": "chisel:runic_voidstone_1"
+    },
+    "variant=runic_voidstone_2": {
+      "model": "chisel:runic_voidstone_2"
+    },
+    "variant=runic_voidstone_3": {
+      "model": "chisel:runic_voidstone_3"
+    },
+    "variant=runic_voidstone_4": {
+      "model": "chisel:runic_voidstone_4"
+    },
+    "variant=runic_voidstone_5": {
+      "model": "chisel:runic_voidstone_5"
+    },
+    "variant=runic_voisotne_6": {
+      "model": "chisel:runic_voidstone_6"
+    },
+    "variant=runic_voidstone_7": {
+      "model": "chisel:runic_voidstone_7"
+    },
+    "variant=runic_voidstone_8": {
+      "model": "chisel:runic_voidstone_8"
+    },
+    "variant=runic_voidstone_9": {
+      "model": "chisel:runic_voidstone_9"
+    },
+    "variant=runic_voidstone_10": {
+      "model": "chisel:runic_voidstone_10"
+    },
+    "variant=runic_voidstone_11": {
+      "model": "chisel:runic_voidstone_11"
+    },
+    "variant=runic_voidstone_12": {
+      "model": "chisel:runic_voidstone_12"
+    },
+    "variant=runic_voidstone_13": {
+      "model": "chisel:runic_voidstone_13"
+    },
+    "variant=runic_voidstone_14": {
+      "model": "chisel:runic_voidstone_14"
+    },
+    "variant=runic_voidstone_15": {
+      "model": "chisel:runic_voidstone_15"
+    }
+  }
+}

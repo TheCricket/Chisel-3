@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/obsidian/greek-side",
+    "end": "chisel:blocks/obsidian/greek-top",
+    "side": "chisel:blocks/obsidian/greek-side"
+  }
+}

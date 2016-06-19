@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "variant=woolen_clay_0": {
+      "model": "chisel:woolen_clay_0"
+    },
+    "variant=woolen_clay_1": {
+      "model": "chisel:woolen_clay_1"
+    },
+    "variant=woolen_clay_2": {
+      "model": "chisel:woolen_clay_2"
+    },
+    "variant=woolen_clay_3": {
+      "model": "chisel:woolen_clay_3"
+    },
+    "variant=woolen_clay_4": {
+      "model": "chisel:woolen_clay_4"
+    },
+    "variant=woolen_clay_5": {
+      "model": "chisel:woolen_clay_5"
+    },
+    "variant=woolen_clay_6": {
+      "model": "chisel:woolen_clay_6"
+    },
+    "variant=woolen_clay_7": {
+      "model": "chisel:woolen_clay_7"
+    },
+    "variant=woolen_clay_8": {
+      "model": "chisel:woolen_clay_8"
+    },
+    "variant=woolen_clay_9": {
+      "model": "chisel:woolen_clay_9"
+    },
+    "variant=woolen_clay_10": {
+      "model": "chisel:woolen_clay_10"
+    },
+    "variant=woolen_clay_11": {
+      "model": "chisel:woolen_clay_11"
+    },
+    "variant=woolen_clay_12": {
+      "model": "chisel:woolen_clay_12"
+    },
+    "variant=woolen_clay_13": {
+      "model": "chisel:woolen_clay_13"
+    },
+    "variant=woolen_clay_14": {
+      "model": "chisel:woolen_clay_14"
+    },
+    "variant=woolen_clay_15": {
+      "model": "chisel:woolen_clay_15"
+    }
+  }
+}

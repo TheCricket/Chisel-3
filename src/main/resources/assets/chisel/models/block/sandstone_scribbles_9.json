@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/sandstone-scribbles/scribbles-9-side",
+    "end": "chisel:blocks/sandstone-scribbles/scribbles-9-top",
+    "side": "chisel:blocks/sandstone-scribbles/scribbles-9-side"
+  }
+}

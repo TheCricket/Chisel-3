@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/iron/terrain-iron-moon-side",
+    "end": "chisel:blocks/iron/terrain-iron-moon-top",
+    "side": "chisel:blocks/iron/terrain-iron-moon-side"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_sew",
+  "textures": {
+    "particle": "chisel:blocks/glasspanedyed/red-transparent-side",
+    "edge": "chisel:blocks/glasspanedyed/red-transparent-top",
+    "pane": "chisel:blocks/glasspanedyed/red-transparent-side"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "chisel:blocks/marble/a1-stoneornamental-marbleclassicpanel",
+    "all": "chisel:blocks/marble/a1-stoneornamental-marbleclassicpanel"
+  }
+}

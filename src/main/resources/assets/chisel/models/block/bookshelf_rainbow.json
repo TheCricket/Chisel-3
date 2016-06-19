@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "chisel:blocks/bookshelf/rainbow",
+    "end": "chisel:blocks/bookshelf/rainbow-top",
+    "side": "chisel:blocks/bookshelf/rainbow"
+  }
+}
