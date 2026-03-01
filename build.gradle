@@ -1,172 +1,138 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        mavenLocal()
-        jcenter()
-        maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
-    }
-    dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
-    }
-
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.134'
+    id 'idea'
 }
 
-apply plugin: 'net.minecraftforge.gradle.forge'
-apply plugin: 'maven-publish'
-//apply plugin: 'curseforge'
-
-boolean dev = project.hasProperty('chisel_dev') && project.chisel_dev.equalsIgnoreCase('true')
-
-version = "${mod_version}"
-group = "com.cricketcraft.chisel" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-
-minecraft {
-    version = "${minecraft_version}-${forge_version}"
-    mappings = "${forge_mappings}"
-    runDir = "run"
-
-    replaceIn "Chisel.java"
-    replace "@VERSION@", project.version
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
 }
+
+version = mod_version
+group = mod_group_id
 
 repositories {
+    mavenLocal()
+
     maven {
-        name 'Chicken Bones Repo'
-        url "http://chickenbones.net/maven/"
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
     }
 
     maven {
-        name 'Prof Mobius Repo'
-        url "http://mobiusstrip.eu/maven"
+        name 'Jitpack'
+        url 'https://jitpack.io'
     }
+
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
+    maven { url = "https://maven.createmod.net" }
+    maven { url "https://api.modrinth.com/maven" }
+    maven { url = 'https://maven.parchmentmc.org' }
+}
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        data {
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
 }
 
 dependencies {
 
 }
 
-processResources
-        {
-            // this will ensure that this task is redone when the versions change.
-            inputs.property "version", project.version
-            inputs.property "mcversion", project.minecraft.version
-
-            // replace stuff in mcmod.info, nothing else
-            from(sourceSets.main.resources.srcDirs) {
-                include 'mcmod.info'
-
-                // replace version and mcversion
-                expand 'version': project.version, 'mcversion': project.minecraft.version
-            }
-
-            // copy everything else, thats not the mcmod.info
-            from(sourceSets.main.resources.srcDirs) {
-                exclude 'mcmod.info'
-            }
-        }
-
-// Create deobf dev jars
-task deobfJar(type: Jar) {
-    from sourceSets.main.output
-    classifier = 'deobf'
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
 }
 
-// Create API jar with sources and compiled files
-task apiJar(type: Jar) {
-    from sourceSets.main.allSource
-    from sourceSets.main.output
-    include 'com/cricketcraft/chisel/api/**/*'
-    classifier = 'api'
-}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
 
-// Create source attachment for dev jar
-task sourcesJar(type: Jar) {
-    from sourceSets.main.allJava
-    classifier = 'sources'
-}
-
-artifacts {
-    archives deobfJar
-    archives sourcesJar
-    archives apiJar
-}
 
 publishing {
-    tasks.publish.dependsOn 'build'
     publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-            artifact deobfJar
-            artifact sourcesJar
-            artifact apiJar
+        register('mavenJava', MavenPublication) {
+            from components.java
         }
     }
-
     repositories {
-        String prop = dev ? "chisel_dev_mavendir" : "chisel_mavendir"
-        if (project.hasProperty(prop)) {
-            maven { url project.getProperty(prop) }
+        maven {
+            url "file://${project.projectDir}/repo"
         }
     }
 }
 
-//println('Changelog:\n' + getChangelogText())
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << "-Xmaxerrs" << "10000"
+}
 
-String getChangelogText() {
-    def changelogFile = new File('changelog')
-    String str = ''
-    int lineCount = 0
-    boolean done = false
-    changelogFile.eachLine {
-        if (done || it == null) {
-            return
-        }
-        if (it.size() > 1) {
-            def temp = "$it" + (lineCount == 0 ? '\n\n' : '\n')
-            str += (it.startsWith('-') ? '' : '\n') + "$temp"
-            lineCount++
-            return
-        } else {
-            done = true
-        }
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
     }
-    return str
 }
-
-//repositories {
-//    maven {
-//        url "http://dvs1.progwml6.com/files/maven"
-//    }
-//}
-
-minecraft {
-    useDepAts = true
-}
-
-dependencies {
-    //deobfCompile "mezz.jei:jei_1.8.9:2.25.12.152"
-}
-
-//curse {
-//    dependsOn 'reobf'
-//
-//    onlyIf {
-//        return project.hasProperty('chisel_curseforge_key') && System.getenv("CURSE") != null && System.getenv("CURSE").equalsIgnoreCase("true")
-//    }
-//
-//    if (project.hasProperty('chisel_curseforge_key')) apiKey = project.chisel_curseforge_key
-//    projectId = project.projectId
-//    changelog = System.getenv("CHANGELOG").equals("none") ? getChangelogText() : System.getenv("CHANGELOG")
-//    releaseType = 'release'
-//    displayName = "Chisel 2 - ${mod_version}"
-//    additionalArtifact deobfJar, sourcesJar, apiJar
-//}
-
-idea { module { inheritOutputDirs = true } }
