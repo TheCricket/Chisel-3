@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/concrete_raw_weathered"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/stained_glass_black/stained_glass_black_bubble"
+  }
+}

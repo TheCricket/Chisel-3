@@ -80,6 +80,14 @@ neoForge {
     }
 }
 
+// Ensure the IDE uses the same output directories as Gradle
+// This can help with FML complaining about directories not being valid mod files
+idea {
+    module {
+        inheritOutputDirs = true
+    }
+}
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 configurations {
@@ -95,6 +103,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
+            loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,
@@ -132,6 +141,7 @@ tasks.withType(JavaCompile).configureEach {
 
 idea {
     module {
+        inheritOutputDirs = true
         downloadSources = true
         downloadJavadoc = true
     }

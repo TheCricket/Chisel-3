@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/technical_transparent_fan_fast"
+    }
+  }
+}

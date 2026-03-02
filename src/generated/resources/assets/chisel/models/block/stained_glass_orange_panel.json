@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/stained_glass_orange/stained_glass_orange_panel"
+  }
+}

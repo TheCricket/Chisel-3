@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/hex_plating_8"
+    }
+  }
+}

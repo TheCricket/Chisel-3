@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+[[mods]]
+modId="chisel"
+version="${mod_version}"
+displayName="${mod_name}"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/chisel-3-the-cricket-strikes-back"
+credits="This mod uses a lot of textures from the Painterly pack: http://painterlypack.net/. Also one stone variation is designed to look like a block from Doku. Oh, and asie for porting the mod to 1.7.2. Oh wait and Drullkus for some wonderful art."
+authors="${mod_authors}"
+description="${mod_description}"

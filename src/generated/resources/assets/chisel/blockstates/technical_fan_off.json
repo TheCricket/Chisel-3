@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/technical_fan_off"
+    }
+  }
+}

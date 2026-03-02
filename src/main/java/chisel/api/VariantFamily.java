@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import net.minecraft.world.level.block.Block;
 
 import java.util.List;
+import java.util.function.Supplier;
 
 public class VariantFamily {
 
@@ -12,10 +13,11 @@ public class VariantFamily {
     private boolean generateModel = true;
     private boolean generateCraftingRecipe = true;
     private boolean generateChiselRecipe = true;
-    private String prefix;
+    private final String prefix;
     private String recipeUnlockedBy;
 
     private VariantFamily(String prefix, Block base) {
+        this.prefix = prefix;
         this.base = base;
     }
 
@@ -58,13 +60,13 @@ public class VariantFamily {
             return family;
         }
 
-        public Builder addConnectedVariant(String name) {
-            family.variants.add(new Variant(name, false));
+        public Builder addConnectedVariant(String name, Supplier<Block> variant) {
+            family.variants.add(new Variant(name, variant, true));
             return this;
         }
 
-        public Builder addVariant(String name) {
-            family.variants.add(new Variant(name, false));
+        public Builder addVariant(String name, Supplier<Block> variant) {
+            family.variants.add(new Variant(name, variant, false));
             return this;
         }
 

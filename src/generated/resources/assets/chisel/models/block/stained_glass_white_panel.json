@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/stained_glass_white/stained_glass_white_panel"
+  }
+}

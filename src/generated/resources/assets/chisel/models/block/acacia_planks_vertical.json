@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/acacia_planks/acacia_planks_vertical"
+  }
+}
