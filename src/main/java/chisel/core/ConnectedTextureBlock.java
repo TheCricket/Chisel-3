@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -42,6 +43,12 @@ public class ConnectedTextureBlock extends Block {
             return getConnectableSides(context.getLevel(), context.getClickedPos());
         }
         return super.getStateForPlacement(context);
+    }
+
+    @Override
+    protected void neighborChanged(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Block block, @Nullable Orientation orientation, boolean movedByPiston) {
+        super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
+        level.setBlock(pos, getConnectableSides(level, pos), Block.UPDATE_ALL);
     }
 
     @Override

@@ -45,6 +45,8 @@ public class Variant extends VariantModels {
             case TOP_BOTTOM_SIDE -> registerBTSModel(this, blockModels);
             case TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY -> registerTopBottomSideConnectedVertically(this, blockModels);
             case CONNECTED -> registerConnectedTextureModel(this, blockModels);
+            case CONNECTED_VERTICALLY -> registerConnectedTextureVerticalModel(this, blockModels);
+            case CONNECTED_HORIZONTALLY -> registerConnectedTextureHorizontalModel(this, blockModels);
             case MULTI_LAYER -> registerMultiLayer(this, blockModels);
         }
     }

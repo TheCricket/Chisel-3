@@ -1,7 +1,35 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/laboratory_panel_wall"
+  "multipart": [
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_wall"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_wall_c1"
+      },
+      "when": {
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_wall_c1",
+        "x": 180
+      },
+      "when": {
+        "down": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_wall_c2"
+      },
+      "when": {
+        "down": "true",
+        "up": "true"
+      }
     }
-  }
+  ]
 }

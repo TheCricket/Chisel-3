@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "chisel:block/laboratory/laboratory_panel_wall",
+    "east": "chisel:block/laboratory/laboratory_panel_wall-ns",
+    "north": "chisel:block/laboratory/laboratory_panel_wall-ns",
+    "particle": "chisel:block/laboratory/laboratory_panel_wall",
+    "south": "chisel:block/laboratory/laboratory_panel_wall-ns",
+    "up": "chisel:block/laboratory/laboratory_panel_wall",
+    "west": "chisel:block/laboratory/laboratory_panel_wall-ns"
+  }
+}

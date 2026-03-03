@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/ice_pillar/ice_pillar_plain_plain"
+    "bottom": "chisel:block/ice_pillar/ice_pillar_plain_plain-bottom",
+    "side": "chisel:block/ice_pillar/ice_pillar_plain_plain-side",
+    "top": "chisel:block/ice_pillar/ice_pillar_plain_plain-top"
   }
 }

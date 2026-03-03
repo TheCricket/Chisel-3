@@ -1,7 +1,70 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/laboratory_wall_vent"
+  "multipart": [
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c1",
+        "x": 90,
+        "z": 180
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c1",
+        "x": 270
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c1",
+        "x": 90,
+        "y": 270,
+        "z": 180
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c2",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_wall_vent_c2",
+        "x": 270
+      },
+      "when": {
+        "north": "true",
+        "south": "true"
+      }
     }
-  }
+  ]
 }
