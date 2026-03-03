@@ -1,0 +1,11 @@
+package chisel.core;
+
+public enum VariantModelType {
+    CUBE_ALL,
+    PILLAR,
+    BOOKSHELF,
+    TOP_BOTTOM_SIDE,
+    TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY,
+    CONNECTED,
+    MULTI_LAYER
+}

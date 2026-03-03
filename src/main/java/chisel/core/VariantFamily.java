@@ -60,36 +60,13 @@ public class VariantFamily {
             return family;
         }
 
-        public Builder addBTSVariant(String name, Supplier<Block> variant) {
-            Variant v = new Variant(name, variant, family);
-            v.isBTS = true;
-            family.variants.add(v);
-            return this;
-        }
-
-        public Builder addBookshelfVariant(String name, Supplier<Block> variant) {
-            Variant v = new Variant(name, variant, family);
-            v.isBookshelf = true;
-            family.variants.add(v);
-            return this;
-        }
-
-        public Builder addConnectedVariant(String name, Supplier<Block> variant) {
-            Variant v = new Variant(name, variant, family);
-            v.isConnected = true;
-            family.variants.add(v);
-            return this;
-        }
-
-        public Builder addPillarVariant(String name, Supplier<Block> variant) {
-            Variant v = new Variant(name, variant, family);
-            v.isPillar = true;
-            family.variants.add(v);
+        public Builder addVariant(String name, Supplier<Block> variant, VariantModelType modelType) {
+            family.variants.add(new Variant(name, variant, family, modelType));
             return this;
         }
 
         public Builder addVariant(String name, Supplier<Block> variant) {
-            family.variants.add(new Variant(name, variant, family));
+            family.variants.add(new Variant(name, variant, family, VariantModelType.CUBE_ALL));
             return this;
         }
 

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/iron/iron_bricks"
+    "bottom": "chisel:block/iron/iron_brick-bottom",
+    "side": "chisel:block/iron/iron_brick-side",
+    "top": "chisel:block/iron/iron_brick-top"
   }
 }

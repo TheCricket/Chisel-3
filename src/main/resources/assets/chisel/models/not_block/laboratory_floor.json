@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "particle": "chisel:blocks/laboratory/floortile",
-    "all": "chisel:blocks/laboratory/floortile"
+    "particle": "chisel:blocks/laboratory/laboratory_floortile",
+    "all": "chisel:blocks/laboratory/laboratory_floortile"
   }
 }

@@ -2,7 +2,7 @@
   "parent": "block/cube_column",
   "textures": {
     "particle": "chisel:blocks/grimstone/platform-side",
-    "end": "chisel:blocks/grimstone/platform-top"
+    "end": "chisel:blocks/grimstone/platform-top",
     "side": "chisel:blocks/grimstone/platform-side"
   }
 }

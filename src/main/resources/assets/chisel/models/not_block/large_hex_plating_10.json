@@ -1,8 +1,8 @@
 {
   "parent": "chisel:block/cube_multipass",
   "textures": {
-    "particle": "chisel:blocks/hexPlating/hexAnim10",
-    "layer0": "chisel:blocks/hexPlating/hexAnim10",
-    "layer1": "chisel:blocks/hexPlating/hexNew"
+    "particle": "chisel:blocks/hex_plating/hex_plating_10-bg",
+    "layer0": "chisel:blocks/hex_plating/hex_plating_10-bg",
+    "layer1": "chisel:blocks/hex_plating/hexNew"
   }
 }

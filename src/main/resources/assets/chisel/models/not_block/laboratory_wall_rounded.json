@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "particle": "chisel:blocks/laboratory/roundel",
-    "all": "chisel:blocks/laboratory/roundel"
+    "particle": "chisel:blocks/laboratory/laboratory_roundel",
+    "all": "chisel:blocks/laboratory/laboratory_roundel"
   }
 }
