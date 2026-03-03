@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/gold/gold_crate_dark"
+    "bottom": "chisel:block/gold/gold_crate_dark-bottom",
+    "side": "chisel:block/gold/gold_crate_dark-side",
+    "top": "chisel:block/gold/gold_crate_dark-top"
   }
 }

@@ -24,9 +24,9 @@ public class ChiselModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
-        VariantFamilies.getAllFamilies().forEach(family -> {
-            family.getVariants().forEach(variant -> blockModels.createTrivialBlock(variant.getBlock().get(), TexturedModel.CUBE.updateTexture(map -> map.put(TextureSlot.ALL, variant.getMaterial(family)))));
-        });
+        VariantFamilies.getAllFamilies().forEach(family -> family
+                .getVariants()
+                .forEach(variant -> variant.registerModel(blockModels, itemModels)));
 
         itemModels.generateFlatItem(ChiselItems.CHISEL_IRON.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_DIAMOND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "particle": "chisel:blocks/gold/terrain-gold-simple-top",
-    "side": "chisel:blocks/gold/terrain-gold-simple-side",
-    "end": "chisel:blocks/gold/terrain-gold-simple-top"
+    "particle": "chisel:blocks/gold/gold_simple-top",
+    "side": "chisel:blocks/gold/gold_simple-side",
+    "end": "chisel:blocks/gold/gold_simple-top"
   }
 }

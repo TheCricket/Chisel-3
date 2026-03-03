@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/gold/gold_125"
+    "bottom": "chisel:block/gold/gold_125-bottom",
+    "side": "chisel:block/gold/gold_125-side",
+    "top": "chisel:block/gold/gold_125-top"
   }
 }

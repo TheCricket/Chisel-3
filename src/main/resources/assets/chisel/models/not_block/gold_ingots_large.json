@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "particle": "chisel:blocks/gold/terrain-gold-largeingots-top",
-    "side": "chisel:blocks/gold/terrain-gold-largeingots-side",
-    "end": "chisel:blocks/gold/terrain-gold-largeingots-top"
+    "particle": "chisel:blocks/gold/gold_largeingot-top",
+    "side": "chisel:blocks/gold/gold_largeingot-side",
+    "end": "chisel:blocks/gold/gold_largeingot-top"
   }
 }

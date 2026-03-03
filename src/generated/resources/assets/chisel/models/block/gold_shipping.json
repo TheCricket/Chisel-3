@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/gold/gold_shipping"
+    "bottom": "chisel:block/gold/gold_shipping-bottom",
+    "side": "chisel:block/gold/gold_shipping-side",
+    "top": "chisel:block/gold/gold_shipping-top"
   }
 }
