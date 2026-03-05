@@ -7,7 +7,6 @@ import com.google.common.collect.Maps;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
-import javax.annotation.Nullable;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -1325,10 +1324,5 @@ public class VariantFamilies {
 
     public static Stream<VariantFamily> getAllFamilies() {
         return families.values().stream();
-    }
-
-    @Nullable
-    public static VariantFamily getFamily(Block block) {
-        return families.get(block);
     }
 }
