@@ -1,12 +1,14 @@
-package chisel.core;
+package chisel.block;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.WoolCarpetBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -17,7 +19,7 @@ import org.jspecify.annotations.Nullable;
 
 import java.util.Map;
 
-public class ConnectedTextureBlock extends Block {
+public class ConnectedTextureCarpetBlock extends WoolCarpetBlock {
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
     public static final BooleanProperty EAST = BlockStateProperties.EAST;
@@ -27,8 +29,8 @@ public class ConnectedTextureBlock extends Block {
     public static final BooleanProperty DOWN = BlockStateProperties.DOWN;
     public static final Map<Direction, BooleanProperty> PROPERTY_BY_DIRECTION = ImmutableMap.copyOf(Maps.newEnumMap(Map.of(Direction.NORTH, NORTH, Direction.EAST, EAST, Direction.SOUTH, SOUTH, Direction.WEST, WEST, Direction.UP, UP, Direction.DOWN, DOWN)));
 
-    public ConnectedTextureBlock(Properties properties) {
-        super(properties);
+    public ConnectedTextureCarpetBlock(DyeColor color, Properties properties) {
+        super(color, properties);
         registerDefaultState(defaultBlockState().setValue(NORTH, false).setValue(EAST, false).setValue(SOUTH, false).setValue(WEST, false).setValue(UP, false).setValue(DOWN, false));
     }
 
@@ -38,7 +40,7 @@ public class ConnectedTextureBlock extends Block {
     }
 
     @Override
-    public @Nullable BlockState getStateForPlacement(@NonNull BlockPlaceContext context) {
+    public @Nullable BlockState getStateForPlacement(BlockPlaceContext context) {
         if(context.canPlace()) {
             return getConnectableSides(context.getLevel(), context.getClickedPos());
         }
@@ -49,11 +51,6 @@ public class ConnectedTextureBlock extends Block {
     protected void neighborChanged(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
         level.setBlock(pos, getConnectableSides(level, pos), Block.UPDATE_ALL);
-    }
-
-    @Override
-    protected boolean skipRendering(@NonNull BlockState state, BlockState neighborState, @NonNull Direction direction) {
-        return neighborState.is(this) || super.skipRendering(state, neighborState, direction);
     }
 
     private BlockState getConnectableSides(Level level, BlockPos pos) {

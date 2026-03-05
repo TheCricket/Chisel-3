@@ -4,6 +4,8 @@ import chisel.Chisel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.renderer.block.model.Material;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.Fluids;
 
 import java.util.function.Supplier;
 
@@ -48,6 +50,9 @@ public class Variant extends VariantModels {
             case CONNECTED_VERTICALLY -> registerConnectedTextureVerticalModel(this, blockModels);
             case CONNECTED_HORIZONTALLY -> registerConnectedTextureHorizontalModel(this, blockModels);
             case MULTI_LAYER -> registerMultiLayer(this, blockModels);
+            case MULTI_LAYER_WATER -> registerMultiLayer(this, Fluids.WATER, blockModels);
+            case MULTI_LAYER_LAVA -> registerMultiLayer(this, Fluids.LAVA, blockModels);
+            case CARPET -> registerCarpetModel(this, blockModels);
         }
     }
 

@@ -1,13 +1,18 @@
 package chisel.core;
 
 import chisel.Chisel;
+import chisel.block.ConnectedTextureBlock;
 import com.mojang.math.Quadrant;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.model.*;
+import net.minecraft.client.renderer.block.model.Material;
 import net.minecraft.client.renderer.block.model.VariantMutator;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Fluid;
 
 import java.util.Optional;
 
@@ -203,6 +208,22 @@ public class VariantModels {
                 .put(TextureSlot.LAYER0, variant.getMaterial());
         MultiVariant model = plainVariant(CUBE_MULTI_PASS.create(block, textures, blockModels.modelOutput));
         blockModels.blockStateOutput.accept(createSimpleBlock(block, model));
+    }
+
+    protected void registerMultiLayer(Variant variant, Fluid background, BlockModelGenerators blockModels) {
+        Block block = variant.getBlock().get();
+        Identifier id = BuiltInRegistries.FLUID.getKey(background);
+        TextureMapping textures = (new TextureMapping())
+                .put(TextureSlot.PARTICLE, variant.getMaterial())
+                .put(TextureSlot.LAYER1, new Material(id.withPrefix("block/").withSuffix("_still")))
+                .put(TextureSlot.LAYER0, variant.getMaterial());
+        MultiVariant model = plainVariant(CUBE_MULTI_PASS.create(block, textures, blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(block, model));
+    }
+
+    protected void registerCarpetModel(Variant variant, BlockModelGenerators blockModels) {
+        MultiVariant model = plainVariant(ModelTemplates.CARPET.create(variant.getBlock().get(), (new TextureMapping()).put(TextureSlot.WOOL, variant.getMaterial()), blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(variant.getBlock().get(), model));
     }
 
     private TextureMapping getC1Textures(Variant variant) {

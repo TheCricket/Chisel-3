@@ -1,19 +1,25 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.core.ConnectedTextureBlock;
+import chisel.block.ConnectedTextureBlock;
+import chisel.block.ConnectedTextureCarpetBlock;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class ChiselBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Chisel.MODID);
 
     public static DeferredBlock<Block> ACACIA_PLANKS_SMOOTH, ACACIA_PLANKS_SHORT, ACACIA_PLANKS_FANCY, ACACIA_PLANKS_PANEL, ACACIA_PLANKS_DOUBLE_SLAB, ACACIA_PLANKS_CRATE, ACACIA_PLANKS_CRATE_FANCY, ACACIA_PLANKS_LONG, ACACIA_PLANKS_VERTICAL, ACACIA_PLANKS_VERTICAL_UNEVEN, ACACIA_PLANKS_PARQUET, ACACIA_PLANKS_BLINDS, ACACIA_PLANKS_SCAFFOLD, ACACIA_PLANKS_DISARRAY, ACACIA_PLANKS_DISARRAY_VERTICAL;
     public static DeferredBlock<Block> ALUMINUM_CAUTION, ALUMINUM_SHIPPING, ALUMINUM_THERMAL, ALUMINUM_125, ALUMINUM_BORDERED, ALUMINUM_BOLTED;
-    public static DeferredBlock<Block> ANDESITE_PILLAR, ANDESITE_BRICKS, ANDESITE_ORNATE, ANDESITE_PRISMATIC, ANDESITE_TILES_SMALL;
+    public static DeferredBlock<Block> ANDESITE_PILLAR, ANDESITE_BRICKS, ANDESITE_ORNATE, ANDESITE_PRISMATIC, ANDESITE_TILES_SMALL, ANDESITE_POLISHED;
     public static DeferredBlock<Block> ANTIBLOCK_0, ANTIBLOCK_1, ANTIBLOCK_2, ANTIBLOCK_3, ANTIBLOCK_4, ANTIBLOCK_5, ANTIBLOCK_6, ANTIBLOCK_7, ANTIBLOCK_8, ANTIBLOCK_9, ANTIBLOCK_10, ANTIBLOCK_11, ANTIBLOCK_12, ANTIBLOCK_13, ANTIBLOCK_14, ANTIBLOCK_15;
     public static DeferredBlock<Block> BIRCH_PLANKS_SMOOTH, BIRCH_PLANKS_SHORT, BIRCH_PLANKS_FANCY, BIRCH_PLANKS_PANEL, BIRCH_PLANKS_DOUBLE_SLAB, BIRCH_PLANKS_CRATE, BIRCH_PLANKS_CRATE_FANCY, BIRCH_PLANKS_LONG, BIRCH_PLANKS_VERTICAL, BIRCH_PLANKS_VERTICAL_UNEVEN, BIRCH_PLANKS_PARQUET, BIRCH_PLANKS_BLINDS, BIRCH_PLANKS_SCAFFOLD, BIRCH_PLANKS_DISARRAY, BIRCH_PLANKS_DISARRAY_VERTICAL;
     public static DeferredBlock<Block> BOOKSHELF_RAINBOW, BOOKSHELF_NECROMANCER_APPRENTICE, BOOKSHELF_NECROMANCER, BOOKSHELF_TOMES, BOOKSHELF_ABANDONED, BOOKSHELF_HOARDER, BOOKSHELF_PASTEL, BOOKSHELF_HISTORIAN;
@@ -131,6 +137,12 @@ public class ChiselBlocks {
         return block;
     }
 
+    private static DeferredBlock<Block> register(String name, Function<Properties, ? extends Block> func, Supplier<Properties> properties) {
+        DeferredBlock<Block> block = BLOCKS.registerBlock(name, func, properties);
+        ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
+        return block;
+    }
+
     static {
         ACACIA_PLANKS_SMOOTH = register("acacia_planks_smooth", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         ACACIA_PLANKS_SHORT = register("acacia_planks_short", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
@@ -147,17 +159,21 @@ public class ChiselBlocks {
         ACACIA_PLANKS_SCAFFOLD = register("acacia_planks_scaffold", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         ACACIA_PLANKS_DISARRAY = register("acacia_planks_disarray", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         ACACIA_PLANKS_DISARRAY_VERTICAL = register("acacia_planks_disarray_vertical", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        
         ALUMINUM_CAUTION = register("aluminum_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_SHIPPING = register("aluminum_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_THERMAL = register("aluminum_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_125 = register("aluminum_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_BORDERED = register("aluminum_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_BOLTED = register("aluminum_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        
         ANDESITE_PILLAR = register("andesite_pillar", Properties.ofFullCopy(Blocks.ANDESITE));
         ANDESITE_BRICKS = register("andesite_bricks", Properties.ofFullCopy(Blocks.ANDESITE));
         ANDESITE_ORNATE = register("andesite_ornate", Properties.ofFullCopy(Blocks.ANDESITE));
         ANDESITE_PRISMATIC = register("andesite_prismatic", Properties.ofFullCopy(Blocks.ANDESITE));
         ANDESITE_TILES_SMALL = register("andesite_tiles_small", Properties.ofFullCopy(Blocks.ANDESITE));
+        ANDESITE_POLISHED = register("andesite_polished", Properties.ofFullCopy(Blocks.ANDESITE));
+
         ANTIBLOCK_0 = register("antiblock_0", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
         ANTIBLOCK_1 = register("antiblock_1", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
         ANTIBLOCK_2 = register("antiblock_2", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
@@ -174,6 +190,7 @@ public class ChiselBlocks {
         ANTIBLOCK_13 = register("antiblock_13", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
         ANTIBLOCK_14 = register("antiblock_14", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
         ANTIBLOCK_15 = register("antiblock_15", Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
+        
         BIRCH_PLANKS_SMOOTH = register("birch_planks_smooth", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
         BIRCH_PLANKS_SHORT = register("birch_planks_short", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
         BIRCH_PLANKS_FANCY = register("birch_planks_fancy", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
@@ -189,6 +206,7 @@ public class ChiselBlocks {
         BIRCH_PLANKS_SCAFFOLD = register("birch_planks_scaffold", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
         BIRCH_PLANKS_DISARRAY = register("birch_planks_disarray", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
         BIRCH_PLANKS_DISARRAY_VERTICAL = register("birch_planks_disarray_vertical", Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
+        
         BOOKSHELF_RAINBOW = register("bookshelf_rainbow", Properties.ofFullCopy(Blocks.BOOKSHELF));
         BOOKSHELF_NECROMANCER_APPRENTICE = register("bookshelf_necromancer_apprentice", Properties.ofFullCopy(Blocks.BOOKSHELF));
         BOOKSHELF_NECROMANCER = register("bookshelf_necromancer", Properties.ofFullCopy(Blocks.BOOKSHELF));
@@ -197,54 +215,60 @@ public class ChiselBlocks {
         BOOKSHELF_HOARDER = register("bookshelf_hoarders", Properties.ofFullCopy(Blocks.BOOKSHELF));
         BOOKSHELF_PASTEL = register("bookshelf_pastel", Properties.ofFullCopy(Blocks.BOOKSHELF));
         BOOKSHELF_HISTORIAN = register("bookshelf_historian", Properties.ofFullCopy(Blocks.BOOKSHELF));
+        
         BRICKS_LARGE = register("bricks_large", Properties.ofFullCopy(Blocks.BRICKS));
         BRICKS_MORTARLESS = register("bricks_mortarless", Properties.ofFullCopy(Blocks.BRICKS));
         BRICKS_VARIED = register("bricks_varied", Properties.ofFullCopy(Blocks.BRICKS));
         BRICKS_AGED = register("bricks_aged", Properties.ofFullCopy(Blocks.BRICKS));
         BRICKS_YELLOW = register("bricks_yellow", Properties.ofFullCopy(Blocks.BRICKS));
+        
         BRONZE_CAUTION = register("bronze_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_SHIPPING = register("bronze_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_THERMAL = register("bronze_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_125 = register("bronze_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_BORDERED = register("bronze_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_BOLTED = register("bronze_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        CARPET_0 = register("carpet_0", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_1 = register("carpet_1", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_2 = register("carpet_2", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_3 = register("carpet_3", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_4 = register("carpet_4", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_5 = register("carpet_5", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_6 = register("carpet_6", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_7 = register("carpet_7", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_8 = register("carpet_8", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_9 = register("carpet_9", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_10 = register("carpet_10", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_11 = register("carpet_11", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_12 = register("carpet_12", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_13 = register("carpet_13", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_14 = register("carpet_14", Properties.ofFullCopy(Blocks.BLACK_CARPET));
+        
+        CARPET_0 = register("carpet_0", Properties.ofFullCopy(Blocks.WHITE_CARPET));
+        CARPET_1 = register("carpet_1", Properties.ofFullCopy(Blocks.ORANGE_CARPET));
+        CARPET_2 = register("carpet_2", Properties.ofFullCopy(Blocks.MAGENTA_CARPET));
+        CARPET_3 = register("carpet_3", Properties.ofFullCopy(Blocks.LIGHT_BLUE_CARPET));
+        CARPET_4 = register("carpet_4", Properties.ofFullCopy(Blocks.YELLOW_CARPET));
+        CARPET_5 = register("carpet_5", Properties.ofFullCopy(Blocks.LIME_CARPET));
+        CARPET_6 = register("carpet_6", Properties.ofFullCopy(Blocks.PINK_CARPET));
+        CARPET_7 = register("carpet_7", Properties.ofFullCopy(Blocks.GRAY_CARPET));
+        CARPET_8 = register("carpet_8", Properties.ofFullCopy(Blocks.LIGHT_GRAY_CARPET));
+        CARPET_9 = register("carpet_9", Properties.ofFullCopy(Blocks.CYAN_CARPET));
+        CARPET_10 = register("carpet_10", Properties.ofFullCopy(Blocks.PURPLE_CARPET));
+        CARPET_11 = register("carpet_11", Properties.ofFullCopy(Blocks.BLUE_CARPET));
+        CARPET_12 = register("carpet_12", Properties.ofFullCopy(Blocks.BROWN_CARPET));
+        CARPET_13 = register("carpet_13", Properties.ofFullCopy(Blocks.GREEN_CARPET));
+        CARPET_14 = register("carpet_14", Properties.ofFullCopy(Blocks.RED_CARPET));
         CARPET_15 = register("carpet_15", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_0 = register("carpet_floor_0", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_1 = register("carpet_floor_1", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_2 = register("carpet_floor_2", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_3 = register("carpet_floor_3", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_4 = register("carpet_floor_4", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_5 = register("carpet_floor_5", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_6 = register("carpet_floor_6", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_7 = register("carpet_floor_7", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_8 = register("carpet_floor_8", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_9 = register("carpet_floor_9", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_10 = register("carpet_floor_10", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_11 = register("carpet_floor_11", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_12 = register("carpet_floor_12", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_13 = register("carpet_floor_13", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_14 = register("carpet_floor_14", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CARPET_FLOOR_15 = register("carpet_floor_15", Properties.ofFullCopy(Blocks.BLACK_CARPET));
-        CLOUD_NORMAL = register("cloud_normal", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        CLOUD_GRID = register("cloud_grid", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        CLOUD_LARGE = register("cloud_large", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        CLOUD_SMALL = register("cloud_small", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        CLOUD_VERTICAL = register("cloud_vertical", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        
+        CARPET_FLOOR_0 = register("carpet_floor_0", p -> new ConnectedTextureCarpetBlock(DyeColor.WHITE, p), () -> Properties.ofFullCopy(Blocks.WHITE_CARPET));
+        CARPET_FLOOR_1 = register("carpet_floor_1", p -> new ConnectedTextureCarpetBlock(DyeColor.ORANGE, p), () -> Properties.ofFullCopy(Blocks.ORANGE_CARPET));
+        CARPET_FLOOR_2 = register("carpet_floor_2", p -> new ConnectedTextureCarpetBlock(DyeColor.MAGENTA, p), () -> Properties.ofFullCopy(Blocks.MAGENTA_CARPET));
+        CARPET_FLOOR_3 = register("carpet_floor_3", p -> new ConnectedTextureCarpetBlock(DyeColor.LIGHT_BLUE, p), () -> Properties.ofFullCopy(Blocks.LIGHT_BLUE_CARPET));
+        CARPET_FLOOR_4 = register("carpet_floor_4", p -> new ConnectedTextureCarpetBlock(DyeColor.YELLOW, p), () -> Properties.ofFullCopy(Blocks.YELLOW_CARPET));
+        CARPET_FLOOR_5 = register("carpet_floor_5", p -> new ConnectedTextureCarpetBlock(DyeColor.LIME, p), () -> Properties.ofFullCopy(Blocks.LIME_CARPET));
+        CARPET_FLOOR_6 = register("carpet_floor_6", p -> new ConnectedTextureCarpetBlock(DyeColor.PINK, p), () -> Properties.ofFullCopy(Blocks.PINK_CARPET));
+        CARPET_FLOOR_7 = register("carpet_floor_7", p -> new ConnectedTextureCarpetBlock(DyeColor.GRAY, p), () -> Properties.ofFullCopy(Blocks.GRAY_CARPET));
+        CARPET_FLOOR_8 = register("carpet_floor_8", p -> new ConnectedTextureCarpetBlock(DyeColor.LIGHT_GRAY, p), () -> Properties.ofFullCopy(Blocks.LIGHT_GRAY_CARPET));
+        CARPET_FLOOR_9 = register("carpet_floor_9", p -> new ConnectedTextureCarpetBlock(DyeColor.CYAN, p), () -> Properties.ofFullCopy(Blocks.CYAN_CARPET));
+        CARPET_FLOOR_10 = register("carpet_floor_10", p -> new ConnectedTextureCarpetBlock(DyeColor.PURPLE, p), () -> Properties.ofFullCopy(Blocks.PURPLE_CARPET));
+        CARPET_FLOOR_11 = register("carpet_floor_11", p -> new ConnectedTextureCarpetBlock(DyeColor.BLUE, p), () -> Properties.ofFullCopy(Blocks.BLUE_CARPET));
+        CARPET_FLOOR_12 = register("carpet_floor_12", p -> new ConnectedTextureCarpetBlock(DyeColor.BROWN, p), () -> Properties.ofFullCopy(Blocks.BROWN_CARPET));
+        CARPET_FLOOR_13 = register("carpet_floor_13", p -> new ConnectedTextureCarpetBlock(DyeColor.GREEN, p), () -> Properties.ofFullCopy(Blocks.GREEN_CARPET));
+        CARPET_FLOOR_14 = register("carpet_floor_14", p -> new ConnectedTextureCarpetBlock(DyeColor.RED, p), () -> Properties.ofFullCopy(Blocks.RED_CARPET));
+        CARPET_FLOOR_15 = register("carpet_floor_15", p -> new ConnectedTextureCarpetBlock(DyeColor.BLACK, p), () -> Properties.ofFullCopy(Blocks.BLACK_CARPET));
+        
+        CLOUD_NORMAL = register("cloud_normal", Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+        CLOUD_GRID = register("cloud_grid", Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+        CLOUD_LARGE = register("cloud_large", Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+        CLOUD_SMALL = register("cloud_small", Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+        CLOUD_VERTICAL = register("cloud_vertical", Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+        
         COBBLESTONE_BRICKS_ALIGNED = register("cobblestone_bricks_aligned", Properties.ofFullCopy(Blocks.COBBLESTONE));
         COBBLESTONE_BRICKS_DETAILED = register("cobblestone_bricks_detailed", Properties.ofFullCopy(Blocks.COBBLESTONE));
         COBBLESTONE_BRICKS_SMALL = register("cobblestone_bricks_small", Properties.ofFullCopy(Blocks.COBBLESTONE));
@@ -260,6 +284,7 @@ public class ChiselBlocks {
         COBBLESTONE_PANEL = register("cobblestone_panel", Properties.ofFullCopy(Blocks.COBBLESTONE));
         COBBLESTONE_PANEL_LIGHT = register("cobblestone_panel_light", Properties.ofFullCopy(Blocks.COBBLESTONE));
         COBBLESTONE_PANEL_DARK = register("cobblestone_panel_dark", Properties.ofFullCopy(Blocks.COBBLESTONE));
+        
         CONCRETE_RAW = register("concrete_raw", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         CONCRETE_BLOCK = register("concrete_block", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         CONCRETE_SLAB = register("concrete_slab", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
@@ -271,12 +296,14 @@ public class ChiselBlocks {
         CONCRETE_RAW_PARTLY = register("concrete_raw_partly", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         CONCRETE_BLOCK_PARTLY = register("concrete_block_partly", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         CONCRETE_ASPHALT = register("concrete_asphalt", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        
         COPPER_CAUTION = register("copper_caution", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_SHIPPING = register("copper_shipping", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_THERMAL = register("copper_thermal", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_125 = register("copper_125", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_BORDERED = register("copper_bordered", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_BOLTED = register("copper_bolted", Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        
         DARK_OAK_PLANKS_SMOOTH = register("dark_oak_planks_smooth", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
         DARK_OAK_PLANKS_SHORT = register("dark_oak_planks_short", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
         DARK_OAK_PLANKS_FANCY = register("dark_oak_planks_fancy", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
@@ -292,6 +319,7 @@ public class ChiselBlocks {
         DARK_OAK_PLANKS_SCAFFOLD = register("dark_oak_planks_scaffold", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
         DARK_OAK_PLANKS_DISARRAY = register("dark_oak_planks_disarray", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
         DARK_OAK_PLANKS_DISARRAY_VERTICAL = register("dark_oak_planks_disarray_vertical", Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
+        
         DIAMOND_EMBOSSED = register("diamond_embossed", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
         DIAMOND_PANEL = register("diamond_panel", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
         DIAMOND_CELLS = register("diamond_cells", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
@@ -304,12 +332,14 @@ public class ChiselBlocks {
         DIAMOND_SMALL_BLOCKS_ORNATE = register("diamond_small_blocks_ornate", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
         DIAMOND_ZELDA = register("diamond_zelda", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
         DIAMOND_ORNATE = register("diamond_ornate", Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
+        
         DIORITE_POLISHED = register("diorite_polished", Properties.ofFullCopy(Blocks.DIORITE));
         DIORITE_PILLAR = register("diorite_pillar", Properties.ofFullCopy(Blocks.DIORITE));
         DIORITE_BRICKS = register("diorite_bricks", Properties.ofFullCopy(Blocks.DIORITE));
         DIORITE_ORNATE = register("diorite_ornate", Properties.ofFullCopy(Blocks.DIORITE));
         DIORITE_PRISMATIC = register("diorite_prismatic", Properties.ofFullCopy(Blocks.DIORITE));
         DIORITE_TILES_SMALL = register("diorite_tiles_small", Properties.ofFullCopy(Blocks.DIORITE));
+        
         DIRT_BRICKS_DISARRAY = register("dirt_bricks_disarray", Properties.ofFullCopy(Blocks.DIRT));
         DIRT_NETHER = register("dirt_nether", Properties.ofFullCopy(Blocks.DIRT));
         DIRT_BRICKS = register("dirt_bricks", Properties.ofFullCopy(Blocks.DIRT));
@@ -326,6 +356,7 @@ public class ChiselBlocks {
         DIRT_CHUNKY = register("dirt_chunky", Properties.ofFullCopy(Blocks.DIRT));
         DIRT_HORIZONTAL2 = register("dirt_horizontal2", Properties.ofFullCopy(Blocks.DIRT));
         DIRT_PLATE = register("dirt_plate", Properties.ofFullCopy(Blocks.DIRT));
+        
         EMERALD_PANEL = register("emerald_panel", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
         EMERALD_PANEL_CLASSIC = register("emerald_panel_classic", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
         EMERALD_SMOOTH = register("emerald_smooth", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
@@ -337,6 +368,7 @@ public class ChiselBlocks {
         EMERALD_BLOCKS_SMALL = register("emerald_blocks_small", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
         EMERALD_BLOCKS_SMALL_ORNATE = register("emerald_blocks_small_ornate", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
         EMERALD_ORNATE = register("emerald_ornate", Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
+        
         ENERGISED_VOIDSTONE_RAW = register("energized_voidstone_raw", Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_TILES = register("energized_voidstone_tiles", Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_SMOOTH = register("energized_voidstone_smooth", Properties.ofFullCopy(Blocks.STONE));
@@ -346,6 +378,7 @@ public class ChiselBlocks {
         ENERGISED_VOIDSTONE_EYE = register("energized_voidstone_eye", Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_BEVEL = register("energized_voidstone_bevel", Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_PILLAR_NORMAL = register("energized_voidstone_pillar_normal", Properties.ofFullCopy(Blocks.STONE));
+        
         FACTORY_RUSTY_DOTTED = register("factory_rusty_dotted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FACTORY_RUSTY_PLATE = register("factory_rusty_plate", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FACTORY_RUSTY_VERY = register("factory_rusty_very", Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -366,6 +399,7 @@ public class ChiselBlocks {
         FACTORY_VENT_VERTICAL = register("factory_vent_vertical", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FACTORY_CIRCUIT_BLUE = register("factory_circuit_blue", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FACTORY_WIREFRAME_BLUE = register("factory_wireframe_blue", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        
         FANTASY_BRICK = register("fantasy_brick", Properties.ofFullCopy(Blocks.STONE));
         FANTASY_BRICK_FADED = register("fantasy_brick_faded", Properties.ofFullCopy(Blocks.STONE));
         FANTASY_BRICK_WORN = register("fantasy_brick_worn", Properties.ofFullCopy(Blocks.STONE));
@@ -382,11 +416,13 @@ public class ChiselBlocks {
         FANTASY_BLOCK = register("fantasy_block", Properties.ofFullCopy(Blocks.STONE));
         FANTASY_BRICKS_DISARRAY = register("fantasy_bricks_disarray", Properties.ofFullCopy(Blocks.STONE));
         FANTASY_BRICKS_DISARRAY_WORN = register("fantasy_bricks_disarray_worn", Properties.ofFullCopy(Blocks.STONE));
+        
         FUTURA_SCREEN_GRAY = register("futura_screen_gray", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FUTURA_SCREEN_CYAN = register("futura_screen_cyan", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FUTURA_CONTROLLER = register("futura_controller", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FUTURA_CONTROLLER_PURPLE = register("futura_controller_purple", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FUTURA_RAINBOW = register("futura_rainbow", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        
         GLASS_BUBBLE = register("glass_bubble", Properties.ofFullCopy(Blocks.GLASS));
         GLASS_CHINESE = register("glass_chinese", Properties.ofFullCopy(Blocks.GLASS));
         GLASS_JAPANESE = register("glass_japanese", Properties.ofFullCopy(Blocks.GLASS));
@@ -402,6 +438,7 @@ public class ChiselBlocks {
         GLASS_GRID_THIN = register("glass_grid_thin", Properties.ofFullCopy(Blocks.GLASS));
         GLASS_FENCE = register("glass_fence", Properties.ofFullCopy(Blocks.GLASS));
         GLASS_LEADED = register("glass_leaded", Properties.ofFullCopy(Blocks.GLASS));
+        
         GLASS_PANE_BUBBLE = register("glass_pane_bubble", Properties.ofFullCopy(Blocks.GLASS_PANE));
         GLASS_PANE_BORDERLESS = register("glass_pane_borderless", Properties.ofFullCopy(Blocks.GLASS_PANE));
         GLASS_PANE_SCREEN = register("glass_pane_screen", Properties.ofFullCopy(Blocks.GLASS_PANE));
@@ -410,6 +447,7 @@ public class ChiselBlocks {
         GLASS_PANE_CHINESE_GOLD = register("glass_pane_chinese_gold", Properties.ofFullCopy(Blocks.GLASS_PANE));
         GLASS_PANE_JAPANESE_TILES = register("glass_pane_japanese_tiles", Properties.ofFullCopy(Blocks.GLASS_PANE));
         GLASS_PANE_JAPANESE_TRADITIONAL = register("glass_pane_japanese_traditional", Properties.ofFullCopy(Blocks.GLASS_PANE));
+        
         GLOWSTONE_COBBLE = register("glowstone_cobble", Properties.ofFullCopy(Blocks.GLOWSTONE));
         GLOWSTONE_CORRODED = register("glowstone_corroded", Properties.ofFullCopy(Blocks.GLOWSTONE));
         GLOWSTONE_BLOCKS = register("glowstone_blocks", Properties.ofFullCopy(Blocks.GLOWSTONE));
@@ -425,6 +463,7 @@ public class ChiselBlocks {
         GLOWSTONE_CORRODED_TILES = register("glowstone_corroded_tiles", Properties.ofFullCopy(Blocks.GLOWSTONE));
         GLOWSTONE_BISMUTH = register("glowstone_bismuth", Properties.ofFullCopy(Blocks.GLOWSTONE));
         GLOWSTONE_BISMUTH_PANEL = register("glowstone_bismuth_panel", Properties.ofFullCopy(Blocks.GLOWSTONE));
+        
         GOLD_INGOTS_LARGE = register("gold_ingots_large", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_INGOTS_SMALL = register("gold_ingots_small", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_BRICKS = register("gold_bricks", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
@@ -445,12 +484,14 @@ public class ChiselBlocks {
         GOLD_125 = register("gold_125", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_BORDERED = register("gold_bordered", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_BOLTED = register("gold_bolted", Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        
         GRANITE_POLISHED = register("granite_polished", Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_PILLAR = register("granite_pillar", Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_BRICKS = register("granite_bricks", Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_ORNATE = register("granite_ornate", Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_PRISMATIC = register("granite_prismatic", Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_TILES_SMALL = register("granite_tiles_small", Properties.ofFullCopy(Blocks.GRANITE));
+        
         GRIMSTONE_RAW = register("grimstone_raw", Properties.ofFullCopy(Blocks.STONE));
         GRIMSTONE_SMOOTH = register("grimstone_smooth", Properties.ofFullCopy(Blocks.STONE));
         GRIMSTONE_SYMBOL = register("grimstone_symbol", Properties.ofFullCopy(Blocks.STONE));
@@ -466,6 +507,7 @@ public class ChiselBlocks {
         GRIMSTONE_PLATE_SMOOTH = register("grimstone_plate_smooth", Properties.ofFullCopy(Blocks.STONE));
         GRIMSTONE_PLATE = register("grimstone_plate", Properties.ofFullCopy(Blocks.STONE));
         GRIMSTONE_FLAKY = register("grimstone_flaky", Properties.ofFullCopy(Blocks.STONE));
+        
         HEX_PLATING_0 = register("hex_plating_0", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_1 = register("hex_plating_1", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_2 = register("hex_plating_2", Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -482,6 +524,7 @@ public class ChiselBlocks {
         HEX_PLATING_13 = register("hex_plating_13", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_14 = register("hex_plating_14", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_15 = register("hex_plating_15", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        
         HOLYSTONE_RAW = register("holystone_raw", Properties.ofFullCopy(Blocks.STONE));
         HOLYSTONE_SMOOTH = register("holystone_smooth", Properties.ofFullCopy(Blocks.STONE));
         HOLYSTONE_SYMBOL = register("holystone_symbol", Properties.ofFullCopy(Blocks.STONE));
@@ -496,6 +539,7 @@ public class ChiselBlocks {
         HOLYSTONE_TILES = register("holystone_tiles", Properties.ofFullCopy(Blocks.STONE));
         HOLYSTONE_PLATE_SMOOTH = register("holystone_plate_smooth", Properties.ofFullCopy(Blocks.STONE));
         HOLYSTONE_PLATE = register("holystone_plate", Properties.ofFullCopy(Blocks.STONE));
+        
         ICE_ROUGH = register("ice_rough", Properties.ofFullCopy(Blocks.ICE));
         ICE_COBBLE = register("ice_cobble", Properties.ofFullCopy(Blocks.ICE));
         ICE_ROUGH_LARGE = register("ice_rough_large", Properties.ofFullCopy(Blocks.ICE));
@@ -511,6 +555,7 @@ public class ChiselBlocks {
         ICE_ZELDA = register("ice_zelda", Properties.ofFullCopy(Blocks.ICE));
         ICE_BISMUTH = register("ice_bismuth", Properties.ofFullCopy(Blocks.ICE));
         ICE_POISON = register("ice_poison", Properties.ofFullCopy(Blocks.ICE));
+        
         ICE_PILLAR_PLAIN_PLAIN = register("ice_pillar_plain_plain", Properties.ofFullCopy(Blocks.ICE));
         ICE_PILLAR_PLAIN_GREEK = register("ice_pillar_plain_greek", Properties.ofFullCopy(Blocks.ICE));
         ICE_PILLAR_GREEK_PLAIN = register("ice_pillar_greek_plain", Properties.ofFullCopy(Blocks.ICE));
@@ -518,6 +563,7 @@ public class ChiselBlocks {
         ICE_PILLAR_CARVED = register("ice_pillar_carved", Properties.ofFullCopy(Blocks.ICE));
         ICE_PILLAR_ORNAMENTAL = register("ice_pillar_ornamental", Properties.ofFullCopy(Blocks.ICE));
         ICE_PILLAR_INSCRIBED = register("ice_pillar_inscribed", Properties.ofFullCopy(Blocks.ICE));
+        
         IRON_INGOTS_LARGE = register("iron_ingots_large", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_INGOTS_SMALL = register("iron_ingots_small", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_GEARS = register("iron_gears", Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -539,6 +585,7 @@ public class ChiselBlocks {
         IRON_BORDERED = register("iron_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_BOLTED = register("iron_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_RIVETS = register("iron_rivets", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        
         IRON_BARS_NO_FRAME = register("iron_bars_no_frame", Properties.ofFullCopy(Blocks.IRON_BARS));
         IRON_BARS_MENACING = register("iron_bars_menacing", Properties.ofFullCopy(Blocks.IRON_BARS));
         IRON_BARS_CAGE = register("iron_bars_cage", Properties.ofFullCopy(Blocks.IRON_BARS));
@@ -548,6 +595,7 @@ public class ChiselBlocks {
         IRON_BARS_ORNATE = register("iron_bars_ornate", Properties.ofFullCopy(Blocks.IRON_BARS));
         IRON_BARS_VERTICAL = register("iron_bars_vertical", Properties.ofFullCopy(Blocks.IRON_BARS));
         IRON_BARS_SPIKES = register("iron_bars_spikes", Properties.ofFullCopy(Blocks.IRON_BARS));
+        
         JUNGLE_PLANKS_SMOOTH = register("jungle_planks_smooth", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
         JUNGLE_PLANKS_SHORT = register("jungle_planks_short", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
         JUNGLE_PLANKS_FANCY = register("jungle_planks_fancy", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
@@ -563,6 +611,7 @@ public class ChiselBlocks {
         JUNGLE_PLANKS_SCAFFOLD = register("jungle_planks_scaffold", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
         JUNGLE_PLANKS_DISARRAY = register("jungle_planks_disarray", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
         JUNGLE_PLANKS_DISARRAY_VERTICAL = register("jungle_planks_disarray_vertical", Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
+        
         LABORATORY_PANEL_WALL = register("laboratory_panel_wall", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_PANEL_DOTTED = register("laboratory_panel_dotted", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_WALL = register("laboratory_wall", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
@@ -579,6 +628,7 @@ public class ChiselBlocks {
         LABORATORY_CONSOLE_RIGHT = register("laboratory_console_right", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_CONSOLE_LEFT = register("laboratory_console_left", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_CONSOLE_INFORMATION = register("laboratory_console_information", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+
         LAPIS_CHUNKY = register("lapis_chunky", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_DARK = register("lapis_dark", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_ZELDA = register("lapis_zelda", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
@@ -587,6 +637,7 @@ public class ChiselBlocks {
         LAPIS_PANEL = register("lapis_panel", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_SMOOTH = register("lapis_smooth", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_ORNATE_LAYER = register("lapis_ornate_layer", Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
+
         LARGE_HEX_PLATING_0 = register("large_hex_plating_0", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LARGE_HEX_PLATING_1 = register("large_hex_plating_1", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LARGE_HEX_PLATING_2 = register("large_hex_plating_2", Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -603,6 +654,7 @@ public class ChiselBlocks {
         LARGE_HEX_PLATING_13 = register("large_hex_plating_13", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LARGE_HEX_PLATING_14 = register("large_hex_plating_14", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LARGE_HEX_PLATING_15 = register("large_hex_plating_15", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         LAVASTONE_RAW = register("lavastone_raw", Properties.ofFullCopy(Blocks.STONE));
         LAVASTONE_BLACK = register("lavastone_black", Properties.ofFullCopy(Blocks.STONE));
         LAVASTONE_TILES = register("lavastone_tiles", Properties.ofFullCopy(Blocks.STONE));
@@ -611,12 +663,14 @@ public class ChiselBlocks {
         LAVASTONE_PANEL = register("lavastone_panel", Properties.ofFullCopy(Blocks.STONE));
         LAVASTONE_PANEL_ORNATE = register("lavastone_panel_ornate", Properties.ofFullCopy(Blocks.STONE));
         LAVASTONE_DARK = register("lavastone_dark", Properties.ofFullCopy(Blocks.STONE));
+
         LEAD_CAUTION = register("lead_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_SHIPPING = register("lead_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_THERMAL = register("lead_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_125 = register("lead_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_BORDERED = register("lead_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_BOLTED = register("lead_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         LEAVES_DEAD = register("leaf_dead", Properties.ofFullCopy(Blocks.OAK_LEAVES));
         LEAVES_FANCY = register("leaf_fancy", Properties.ofFullCopy(Blocks.OAK_LEAVES));
         LEAVES_PINK = register("leaf_pink", Properties.ofFullCopy(Blocks.OAK_LEAVES));
@@ -624,6 +678,7 @@ public class ChiselBlocks {
         LEAVES_WHITE = register("leaf_white", Properties.ofFullCopy(Blocks.OAK_LEAVES));
         LEAVES_CHRISTMAS_BALLS = register("leaf_christmas_balls", Properties.ofFullCopy(Blocks.OAK_LEAVES));
         LEAVES_CHRISTMAS_LIGHTS = register("leaf_christmas_lights", Properties.ofFullCopy(Blocks.OAK_LEAVES));
+
         LIMESTONE_RAW = register("limestone_raw", Properties.ofFullCopy(Blocks.STONE));
         LIMESTONE_TILES = register("limestone_tiles", Properties.ofFullCopy(Blocks.STONE));
         LIMESTONE_TILES_FRENCH = register("limestone_tiles_french", Properties.ofFullCopy(Blocks.STONE));
@@ -640,6 +695,7 @@ public class ChiselBlocks {
         LIMESTONE_PANEL_DARK = register("limestone_panel_dark", Properties.ofFullCopy(Blocks.STONE));
         LIMESTONE_PANEL = register("limestone_panel", Properties.ofFullCopy(Blocks.STONE));
         LIMESTONE_DENT = register("limestone_dent", Properties.ofFullCopy(Blocks.STONE));
+
         LITPUMPKIN_0 = register("lit_pumpkin_0", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
         LITPUMPKIN_1 = register("lit_pumpkin_1", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
         LITPUMPKIN_2 = register("lit_pumpkin_2", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
@@ -657,6 +713,7 @@ public class ChiselBlocks {
         LITPUMPKIN_14 = register("lit_pumpkin_14", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
         LITPUMPKIN_15 = register("lit_pumpkin_15", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
         LITPUMPKIN_16 = register("lit_pumpkin_16", Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
+
         MARBLE_RAW = register("marble_raw", Properties.ofFullCopy(Blocks.STONE));
         MARBLE_BRICK = register("marble_brick", Properties.ofFullCopy(Blocks.STONE));
         MARBLE_PANEL_CLASSIC = register("marble_panel_classic", Properties.ofFullCopy(Blocks.STONE));
@@ -673,6 +730,7 @@ public class ChiselBlocks {
         MARBLE_TILES_ARRANGED = register("marble_tiles_arranged", Properties.ofFullCopy(Blocks.STONE));
         MARBLE_TILES_FANCY = register("marble_tiles_fancy", Properties.ofFullCopy(Blocks.STONE));
         MARBLE_BLOCKS = register("marble_blocks", Properties.ofFullCopy(Blocks.STONE));
+
         MOSSY_COBBLESTONE_BRICKS_ALIGNED = register("mossy_cobblestone_bricks_aligned", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_COBBLESTONE_BRICKS_DETAILED = register("mossy_cobblestone_bricks_detailed", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_COBBLESTONE_BRICKS_SMALL = register("mossy_cobblestone_bricks_small", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
@@ -688,6 +746,7 @@ public class ChiselBlocks {
         MOSSY_COBBLESTONE_PANEL = register("mossy_cobblestone_panel", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_COBBLESTONE_PANEL_LIGHT = register("mossy_cobblestone_panel_light", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_COBBLESTONE_PANEL_DARK = register("mossy_cobblestone_panel_dark", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
+
         MOSSY_TEMPLE_COBBLE = register("mossy_temple_cobble", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_TEMPLE_ORNATE = register("mossy_temple_ornate", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_TEMPLE_PLATE = register("mossy_temple_plate", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
@@ -704,6 +763,7 @@ public class ChiselBlocks {
         MOSSY_TEMPLE_TILES_SMALL = register("mossy_temple_tiles_small", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_TEMPLE_TILES_LIGHT = register("mossy_temple_tiles_light", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
         MOSSY_TEMPLE_TILES_SMALL_LIGHT = register("mossy_temple_tiles_small_light", Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
+
         NETHER_BRICK_BLUE = register("nether_brick_blue", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
         NETHER_BRICK_SPATTERED = register("nether_brick_spattered", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
         NETHER_BRICK_GUTS = register("nether_brick_guts", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
@@ -719,6 +779,7 @@ public class ChiselBlocks {
         NETHER_BRICK_MEAT_SMALL_RED = register("nether_brick_meat_small_red", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
         NETHER_BRICK_RED = register("nether_brick_red", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
         NETHER_BRICK_RED_SMALL = register("nether_brick_red_small", Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+
         NETHERRACK_BLOOD_GRAVEL = register("netherrack_blood_gravel", Properties.ofFullCopy(Blocks.NETHERRACK));
         NETHERRACK_BLOOD = register("netherrack_blood", Properties.ofFullCopy(Blocks.NETHERRACK));
         NETHERRACK_BLOOD_DARK = register("netherrack_blood_dark", Properties.ofFullCopy(Blocks.NETHERRACK));
@@ -733,6 +794,7 @@ public class ChiselBlocks {
         NETHERRACK_MEAT_SMALL = register("netherrack_meat_small", Properties.ofFullCopy(Blocks.NETHERRACK));
         NETHERRACK_RED = register("netherrack_red", Properties.ofFullCopy(Blocks.NETHERRACK));
         NETHERRACK_LAVA = register("netherrack_lava", Properties.ofFullCopy(Blocks.NETHERRACK));
+
         OAK_PLANKS_SMOOTH = register("oak_planks_smooth", Properties.ofFullCopy(Blocks.OAK_PLANKS));
         OAK_PLANKS_SHORT = register("oak_planks_short", Properties.ofFullCopy(Blocks.OAK_PLANKS));
         OAK_PLANKS_FANCY = register("oak_planks_fancy", Properties.ofFullCopy(Blocks.OAK_PLANKS));
@@ -748,6 +810,7 @@ public class ChiselBlocks {
         OAK_PLANKS_SCAFFOLD = register("oak_planks_scaffold", Properties.ofFullCopy(Blocks.OAK_PLANKS));
         OAK_PLANKS_DISARRAY = register("oak_planks_disarray", Properties.ofFullCopy(Blocks.OAK_PLANKS));
         OAK_PLANKS_DISARRAY_VERTICAL = register("oak_planks_disarray_vertical", Properties.ofFullCopy(Blocks.OAK_PLANKS));
+
         OBSIDIAN_PILLAR_LARGE = register("obsidian_pillar_large", Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_PILLAR = register("obsidian_pillar", Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_CHISELED = register("obsidian_chiseled", Properties.ofFullCopy(Blocks.OBSIDIAN));
@@ -763,6 +826,7 @@ public class ChiselBlocks {
         OBSIDIAN_TILES = register("obsidian_tiles", Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_GREEK = register("obsidian_greek", Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_CRATE = register("obsidian_crate", Properties.ofFullCopy(Blocks.OBSIDIAN));
+
         PACKED_ICE_ROUGH = register("packed_ice_rough", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_COBBLE = register("packed_ice_cobble", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_ROUGH_LARGE = register("packed_ice_rough_large", Properties.ofFullCopy(Blocks.PACKED_ICE));
@@ -778,6 +842,7 @@ public class ChiselBlocks {
         PACKED_ICE_ZELDA = register("packed_ice_zelda", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_BISMUTH = register("packed_ice_bismuth", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_POISON = register("packed_ice_poison", Properties.ofFullCopy(Blocks.PACKED_ICE));
+
         PACKED_ICE_PILLAR_PLAIN_PLAIN = register("packed_ice_pillar_plain_plain", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_PILLAR_PLAIN_GREEK = register("packed_ice_pillar_plain_greek", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_PILLAR_GREEK_PLAIN = register("packed_ice_pillar_greek_plain", Properties.ofFullCopy(Blocks.PACKED_ICE));
@@ -785,6 +850,7 @@ public class ChiselBlocks {
         PACKED_ICE_PILLAR_CARVED = register("packed_ice_pillar_carved", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_PILLAR_ORNAMENTAL = register("packed_ice_pillar_ornamental", Properties.ofFullCopy(Blocks.PACKED_ICE));
         PACKED_ICE_PILLAR_INSCRIBED = register("packed_ice_pillar_inscribed", Properties.ofFullCopy(Blocks.PACKED_ICE));
+
         PAPERWALL_BOXED = register("paperwall_boxed", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_STRIKE_MIDDLE = register("paperwall_strike_middle", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_CROSSED = register("paperwall_crossed", Properties.ofFullCopy(Blocks.WHITE_WOOL));
@@ -794,6 +860,7 @@ public class ChiselBlocks {
         PAPERWALL_FLORAL = register("paperwall_floral", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_PLAIN = register("paperwall_plain", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_DOOR = register("paperwall_door", Properties.ofFullCopy(Blocks.WHITE_WOOL));
+
         PAPERWALL_BLOCK_BOXED = register("paperwall_block_boxed", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_BLOCK_STRIKE_MIDDLE = register("paperwall_block_strike_middle", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_BLOCK_CROSSED = register("paperwall_block_crossed", Properties.ofFullCopy(Blocks.WHITE_WOOL));
@@ -803,6 +870,7 @@ public class ChiselBlocks {
         PAPERWALL_BLOCK_FLORAL = register("paperwall_block_floral", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_BLOCK_PLAIN = register("paperwall_block_plain", Properties.ofFullCopy(Blocks.WHITE_WOOL));
         PAPERWALL_BLOCK_DOOR = register("paperwall_block_door", Properties.ofFullCopy(Blocks.WHITE_WOOL));
+
         PUMPKIN_0 = register("pumpkin_0", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
         PUMPKIN_1 = register("pumpkin_1", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
         PUMPKIN_2 = register("pumpkin_2", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
@@ -820,6 +888,7 @@ public class ChiselBlocks {
         PUMPKIN_14 = register("pumpkin_14", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
         PUMPKIN_15 = register("pumpkin_15", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
         PUMPKIN_16 = register("pumpkin_16", Properties.ofFullCopy(Blocks.CARVED_PUMPKIN));
+
         PURPLED_FANTASY_BRICK = register("purpled_fantasy_brick", Properties.ofFullCopy(Blocks.STONE));
         PURPLED_FANTASY_BRICK_FADED = register("purpled_fantasy_brick_faded", Properties.ofFullCopy(Blocks.STONE));
         PURPLED_FANTASY_BRICK_WORN = register("purpled_fantasy_brick_worn", Properties.ofFullCopy(Blocks.STONE));
@@ -836,6 +905,7 @@ public class ChiselBlocks {
         PURPLED_FANTASY_BLOCK = register("purpled_fantasy_block", Properties.ofFullCopy(Blocks.STONE));
         PURPLED_FANTASY_BRICKS_DISARRAY = register("purpled_fantasy_bricks_disarray", Properties.ofFullCopy(Blocks.STONE));
         PURPLED_FANTASY_BRICKS_DISARRAY_WORN = register("purpled_fantasy_bricks_disarray_worn", Properties.ofFullCopy(Blocks.STONE));
+
         REDSTONE_SMOOTH = register("redstone_smooth", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
         REDSTONE_LARGE = register("redstone_large", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
         REDSTONE_SMALL = register("redstone_small", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
@@ -851,10 +921,12 @@ public class ChiselBlocks {
         REDSTONE_CIRCUIT_SUPAPLEX = register("redstone_circuit_supaplex", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
         REDSTONE_SKULLS = register("redstone_skulls", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
         REDSTONE_ZELDA = register("redstone_zelda", Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
+
         ROAD_LINES_WHITE = register("road_lines_white", Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
         ROAD_LINES_YELLOW = register("road_lines_yellow", Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
         ROAD_LINES_WHITE_DOUBLE = register("road_lines_white_double", Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
         ROAD_LINES_YELLOW_DOUBLE = register("road_lines_yellow_double", Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
+
         RUNIC_VOIDSTONE_0 = register("runic_voidstone_0", Properties.ofFullCopy(Blocks.STONE));
         RUNIC_VOIDSTONE_1 = register("runic_voidstone_1", Properties.ofFullCopy(Blocks.STONE));
         RUNIC_VOIDSTONE_2 = register("runic_voidstone_2", Properties.ofFullCopy(Blocks.STONE));
@@ -871,6 +943,7 @@ public class ChiselBlocks {
         RUNIC_VOIDSTONE_13 = register("runic_voidstone_13", Properties.ofFullCopy(Blocks.STONE));
         RUNIC_VOIDSTONE_14 = register("runic_voidstone_14", Properties.ofFullCopy(Blocks.STONE));
         RUNIC_VOIDSTONE_15 = register("runic_voidstone_15", Properties.ofFullCopy(Blocks.STONE));
+
         SANDSTONE_FADED = register("sandstone_faded", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_PILLAR = register("sandstone_pillar", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_PILLAR_CAPSTONE = register("sandstone_pillar_capstone", Properties.ofFullCopy(Blocks.SANDSTONE));
@@ -885,6 +958,7 @@ public class ChiselBlocks {
         SANDSTONE_BLOCKS = register("sandstone_blocks", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_MOSAIC = register("sandstone_mosaic", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_STACKED = register("sandstone_stacked", Properties.ofFullCopy(Blocks.SANDSTONE));
+
         SANDSTONE_SCRIBBLES_0 = register("sandstone_scribbles_0", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_SCRIBBLES_1 = register("sandstone_scribbles_1", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_SCRIBBLES_2 = register("sandstone_scribbles_2", Properties.ofFullCopy(Blocks.SANDSTONE));
@@ -901,12 +975,14 @@ public class ChiselBlocks {
         SANDSTONE_SCRIBBLES_13 = register("sandstone_scribbles_13", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_SCRIBBLES_14 = register("sandstone_scribbles_14", Properties.ofFullCopy(Blocks.SANDSTONE));
         SANDSTONE_SCRIBBLES_15 = register("sandstone_scribbles_15", Properties.ofFullCopy(Blocks.SANDSTONE));
+
         SILVER_CAUTION = register("silver_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         SILVER_SHIPPING = register("silver_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         SILVER_THERMAL = register("silver_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         SILVER_125 = register("silver_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         SILVER_BORDERED = register("silver_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         SILVER_BOLTED = register("silver_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         SPRUCE_PLANKS_SMOOTH = register("spruce_planks_smooth", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
         SPRUCE_PLANKS_SHORT = register("spruce_planks_short", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
         SPRUCE_PLANKS_FANCY = register("spruce_planks_fancy", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
@@ -922,10 +998,13 @@ public class ChiselBlocks {
         SPRUCE_PLANKS_SCAFFOLD = register("spruce_planks_scaffold", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
         SPRUCE_PLANKS_DISARRAY = register("spruce_planks_disarray", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
         SPRUCE_PLANKS_DISARRAY_VERTICAL = register("spruce_planks_disarray_vertical", Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
+
         SNAKESTONE_SAND_0 = register("snakestone_sand_0", Properties.ofFullCopy(Blocks.SANDSTONE));
         SNAKESTONE_SAND_1 = register("snakestone_sand_1", Properties.ofFullCopy(Blocks.SANDSTONE));
+
         SNAKESTONE_STONE_0 = register("snakestone_stone_0", Properties.ofFullCopy(Blocks.STONE));
         SNAKESTONE_STONE_1 = register("snakestone_stone_1", Properties.ofFullCopy(Blocks.STONE));
+
         STAINED_GLASS_BLACK_BUBBLE = register("stained_glass_black_bubble", Properties.ofFullCopy(Blocks.BLACK_STAINED_GLASS));
         STAINED_GLASS_BLACK_PANEL = register("stained_glass_black_panel", Properties.ofFullCopy(Blocks.BLACK_STAINED_GLASS));
         STAINED_GLASS_BLACK_PANEL_FANCY = register("stained_glass_black_panel_fancy", Properties.ofFullCopy(Blocks.BLACK_STAINED_GLASS));
@@ -1054,12 +1133,14 @@ public class ChiselBlocks {
         STAINED_GLASS_PANE_YELLOW_PANEL = register("stained_glass_pane_yellow_panel", Properties.ofFullCopy(Blocks.YELLOW_STAINED_GLASS_PANE));
         STAINED_GLASS_PANE_YELLOW_PANEL_FANCY = register("stained_glass_pane_yellow_panel_fancy", Properties.ofFullCopy(Blocks.YELLOW_STAINED_GLASS_PANE));
         STAINED_GLASS_PANE_YELLOW_PANEL_BORDERLESS = register("stained_glass_pane_yellow_panel_borderless", Properties.ofFullCopy(Blocks.YELLOW_STAINED_GLASS_PANE));
+
         STEEL_CAUTION = register("steel_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         STEEL_SHIPPING = register("steel_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         STEEL_THERMAL = register("steel_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         STEEL_125 = register("steel_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         STEEL_BORDERED = register("steel_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         STEEL_BOLTED = register("steel_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         STONE_BRICKS_NEUTRAL = register("stone_bricks_neutral", Properties.ofFullCopy(Blocks.STONE_BRICKS));
         STONE_BRICKS_FELSIC = register("stone_bricks_felsic", Properties.ofFullCopy(Blocks.STONE_BRICKS));
         STONE_BRICKS_MAFIC = register("stone_bricks_mafic", Properties.ofFullCopy(Blocks.STONE_BRICKS));
@@ -1075,6 +1156,7 @@ public class ChiselBlocks {
         STONE_BRICKS_PANEL_SUNKEN = register("stone_bricks_panel_sunken", Properties.ofFullCopy(Blocks.STONE_BRICKS));
         STONE_BRICKS_PANEL_ORNATE = register("stone_bricks_panel_ornate", Properties.ofFullCopy(Blocks.STONE_BRICKS));
         STONE_BRICKS_POISON = register("stone_bricks_poison", Properties.ofFullCopy(Blocks.STONE_BRICKS));
+
         TECHNICAL_SCAFFOLD = register("technical_scaffold", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_PANEL_CAUTION = register("technical_panel_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_125 = register("technical_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -1091,10 +1173,12 @@ public class ChiselBlocks {
         TECHNICAL_GRATE = register("technical_grate", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_FAN_MALFUNCTIONING = register("technical_fan_malfunctioning", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_GRATE_RUSTY = register("technical_grate_rusty", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         TRANSPARENT_TECHNICAL_SCAFFOLD = register("technical_transparent_scaffold", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TRANSPARENT_TECHNICAL_FAN_FAST = register("technical_transparent_fan_fast", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TRANSPARENT_TECHNICAL_FAN_OFF = register("technical_transparent_fan_off", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TRANSPARENT_TECHNICAL_FAN_MALFUNCTIONING = register("technical_transparent_fan_malfunctioning", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         TEMPLE_COBBLE = register("temple_cobble", Properties.ofFullCopy(Blocks.STONE));
         TEMPLE_ORNATE = register("temple_ornate", Properties.ofFullCopy(Blocks.STONE));
         TEMPLE_PLATE = register("temple_plate", Properties.ofFullCopy(Blocks.STONE));
@@ -1111,12 +1195,14 @@ public class ChiselBlocks {
         TEMPLE_TILES_SMALL = register("temple_tiles_small", Properties.ofFullCopy(Blocks.STONE));
         TEMPLE_TILES_LIGHT = register("temple_tiles_light", Properties.ofFullCopy(Blocks.STONE));
         TEMPLE_TILES_SMALL_LIGHT = register("temple_tiles_small_light", Properties.ofFullCopy(Blocks.STONE));
+
         TIN_CAUTION = register("tin_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TIN_SHIPPING = register("tin_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TIN_THERMAL = register("tin_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TIN_125 = register("tin_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TIN_BORDERED = register("tin_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TIN_BOLTED = register("tin_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         TORCH_0 = register("torch_0", Properties.ofFullCopy(Blocks.TORCH));
         TORCH_1 = register("torch_1", Properties.ofFullCopy(Blocks.TORCH));
         TORCH_2 = register("torch_2", Properties.ofFullCopy(Blocks.TORCH));
@@ -1127,6 +1213,7 @@ public class ChiselBlocks {
         TORCH_7 = register("torch_7", Properties.ofFullCopy(Blocks.TORCH));
         TORCH_8 = register("torch_8", Properties.ofFullCopy(Blocks.TORCH));
         TORCH_9 = register("torch_9", Properties.ofFullCopy(Blocks.TORCH));
+
         TYRIAN_NORMAL = register("tyrian_normal", Properties.ofFullCopy(Blocks.STONE));
         TYRIAN_BLEAK = register("tyrian_bleak", Properties.ofFullCopy(Blocks.STONE));
         TYRIAN_PURPLE = register("tyrian_purple", Properties.ofFullCopy(Blocks.STONE));
@@ -1143,12 +1230,14 @@ public class ChiselBlocks {
         TYRIAN_BLACK_TILES = register("tyrian_black_tiles", Properties.ofFullCopy(Blocks.STONE));
         TYRIAN_OPENING = register("tyrian_opening", Properties.ofFullCopy(Blocks.STONE));
         TYRIAN_SHINY = register("tyrian_shiny", Properties.ofFullCopy(Blocks.STONE));
+
         URANIUM_CAUTION = register("uranium_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         URANIUM_SHIPPING = register("uranium_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         URANIUM_THERMAL = register("uranium_thermal", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         URANIUM_125 = register("uranium_125", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         URANIUM_BORDERED = register("uranium_bordered", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         URANIUM_BOLTED = register("uranium_bolted", Properties.ofFullCopy(Blocks.IRON_BLOCK));
+
         VALENTINES_BRICKS = register("valentines_bricks", Properties.ofFullCopy(Blocks.STONE));
         VALENTINES_COMPANION = register("valentines_companion", Properties.ofFullCopy(Blocks.STONE));
         VALENTINES_EMPTY = register("valentines_empty", Properties.ofFullCopy(Blocks.STONE));
@@ -1159,6 +1248,7 @@ public class ChiselBlocks {
         VALENTINES_BUMPY = register("valentines_bumpy", Properties.ofFullCopy(Blocks.STONE));
         VALENTINES_FIRE = register("valentines_fire", Properties.ofFullCopy(Blocks.STONE));
         VALENTINES_TILE = register("valentines_tile", Properties.ofFullCopy(Blocks.STONE));
+
         VOIDSTONE_RAW = register("voidstone_raw", Properties.ofFullCopy(Blocks.STONE));
         VOIDSTONE_TILES = register("voidstone_tiles", Properties.ofFullCopy(Blocks.STONE));
         VOIDSTONE_SMOOTH = register("voidstone_smooth", Properties.ofFullCopy(Blocks.STONE));
@@ -1167,6 +1257,7 @@ public class ChiselBlocks {
         VOIDSTONE_METAL = register("voidstone_metal", Properties.ofFullCopy(Blocks.STONE));
         VOIDSTONE_EYE = register("voidstone_eye", Properties.ofFullCopy(Blocks.STONE));
         VOIDSTONE_BEVEL = register("voidstone_bevel", Properties.ofFullCopy(Blocks.STONE));
+
         WARNING_RADIATION = register("warning_radiation", Properties.ofFullCopy(Blocks.STONE));
         WARNING_BIOHAZARD = register("warning_biohazard", Properties.ofFullCopy(Blocks.STONE));
         WARNING_FIRE = register("warning_fire", Properties.ofFullCopy(Blocks.STONE));
@@ -1182,6 +1273,7 @@ public class ChiselBlocks {
         WARNING_NO_ENTRY = register("warning_no_entry", Properties.ofFullCopy(Blocks.STONE));
         WARNING_CRYOGENIC = register("warning_cryogenic", Properties.ofFullCopy(Blocks.STONE));
         WARNING_OXYGEN = register("warning_oxygen", Properties.ofFullCopy(Blocks.STONE));
+
         WATERSTONE_BRICKS = register("waterstone_bricks", Properties.ofFullCopy(Blocks.STONE));
         WATERSTONE_BLACK = register("waterstone_black", Properties.ofFullCopy(Blocks.STONE));
         WATERSTONE_TILES = register("waterstone_tiles", Properties.ofFullCopy(Blocks.STONE));
@@ -1189,6 +1281,7 @@ public class ChiselBlocks {
         WATERSTONE_CREEPER = register("waterstone_creeper", Properties.ofFullCopy(Blocks.STONE));
         WATERSTONE_PANEL = register("waterstone_panel", Properties.ofFullCopy(Blocks.STONE));
         WATERSTONE_ORNATE = register("waterstone_ornate", Properties.ofFullCopy(Blocks.STONE));
+
         WOOLEN_CLAY_0 = register("woolen_clay_0", Properties.ofFullCopy(Blocks.CLAY));
         WOOLEN_CLAY_1 = register("woolen_clay_1", Properties.ofFullCopy(Blocks.CLAY));
         WOOLEN_CLAY_2 = register("woolen_clay_2", Properties.ofFullCopy(Blocks.CLAY));

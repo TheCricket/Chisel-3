@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/carpet",
   "textures": {
-    "all": "chisel:block/carpet_floor/carpet_floor_7"
+    "wool": "chisel:block/carpet_floor/carpet_floor_7"
   }
 }

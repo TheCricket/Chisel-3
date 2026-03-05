@@ -190,6 +190,7 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselBlocks.ANDESITE_ORNATE, "Andesite", "Ornate");
         addBlock(ChiselBlocks.ANDESITE_PRISMATIC, "Andesite", "Prismatic");
         addBlock(ChiselBlocks.ANDESITE_TILES_SMALL, "Andesite", "Small Tiles");
+        addBlock(ChiselBlocks.ANDESITE_POLISHED, "Andesite", "Polished");
     }
 
     private void addAntiblock() {
