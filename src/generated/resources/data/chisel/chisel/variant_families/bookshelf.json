@@ -1,0 +1,46 @@
+{
+  "base": "minecraft:bookshelf",
+  "prefix": "bookshelf",
+  "variants": [
+    {
+      "block": "chisel:bookshelf_rainbow",
+      "model_type": "bookshelf",
+      "name": "bookshelf_rainbow"
+    },
+    {
+      "block": "chisel:bookshelf_necromancer_apprentice",
+      "model_type": "bookshelf",
+      "name": "bookshelf_necromancer_apprentice"
+    },
+    {
+      "block": "chisel:bookshelf_necromancer",
+      "model_type": "bookshelf",
+      "name": "bookshelf_necromancer"
+    },
+    {
+      "block": "chisel:bookshelf_tomes",
+      "model_type": "bookshelf",
+      "name": "bookshelf_tomes"
+    },
+    {
+      "block": "chisel:bookshelf_abandoned",
+      "model_type": "bookshelf",
+      "name": "bookshelf_abandoned"
+    },
+    {
+      "block": "chisel:bookshelf_hoarders",
+      "model_type": "bookshelf",
+      "name": "bookshelf_hoarder"
+    },
+    {
+      "block": "chisel:bookshelf_pastel",
+      "model_type": "bookshelf",
+      "name": "bookshelf_pastel"
+    },
+    {
+      "block": "chisel:bookshelf_historian",
+      "model_type": "bookshelf",
+      "name": "bookshelf_historian"
+    }
+  ]
+}

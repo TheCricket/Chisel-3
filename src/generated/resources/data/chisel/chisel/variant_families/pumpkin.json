@@ -1,0 +1,91 @@
+{
+  "base": "minecraft:carved_pumpkin",
+  "prefix": "pumpkin",
+  "variants": [
+    {
+      "block": "chisel:pumpkin_0",
+      "model_type": "cube_all",
+      "name": "pumpkin_0"
+    },
+    {
+      "block": "chisel:pumpkin_1",
+      "model_type": "cube_all",
+      "name": "pumpkin_1"
+    },
+    {
+      "block": "chisel:pumpkin_2",
+      "model_type": "cube_all",
+      "name": "pumpkin_2"
+    },
+    {
+      "block": "chisel:pumpkin_3",
+      "model_type": "cube_all",
+      "name": "pumpkin_3"
+    },
+    {
+      "block": "chisel:pumpkin_4",
+      "model_type": "cube_all",
+      "name": "pumpkin_4"
+    },
+    {
+      "block": "chisel:pumpkin_5",
+      "model_type": "cube_all",
+      "name": "pumpkin_5"
+    },
+    {
+      "block": "chisel:pumpkin_6",
+      "model_type": "cube_all",
+      "name": "pumpkin_6"
+    },
+    {
+      "block": "chisel:pumpkin_7",
+      "model_type": "cube_all",
+      "name": "pumpkin_7"
+    },
+    {
+      "block": "chisel:pumpkin_8",
+      "model_type": "cube_all",
+      "name": "pumpkin_8"
+    },
+    {
+      "block": "chisel:pumpkin_9",
+      "model_type": "cube_all",
+      "name": "pumpkin_9"
+    },
+    {
+      "block": "chisel:pumpkin_10",
+      "model_type": "cube_all",
+      "name": "pumpkin_10"
+    },
+    {
+      "block": "chisel:pumpkin_11",
+      "model_type": "cube_all",
+      "name": "pumpkin_11"
+    },
+    {
+      "block": "chisel:pumpkin_12",
+      "model_type": "cube_all",
+      "name": "pumpkin_12"
+    },
+    {
+      "block": "chisel:pumpkin_13",
+      "model_type": "cube_all",
+      "name": "pumpkin_13"
+    },
+    {
+      "block": "chisel:pumpkin_14",
+      "model_type": "cube_all",
+      "name": "pumpkin_14"
+    },
+    {
+      "block": "chisel:pumpkin_15",
+      "model_type": "cube_all",
+      "name": "pumpkin_15"
+    },
+    {
+      "block": "chisel:pumpkin_16",
+      "model_type": "cube_all",
+      "name": "pumpkin_16"
+    }
+  ]
+}

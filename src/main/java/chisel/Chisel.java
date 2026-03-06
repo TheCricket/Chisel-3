@@ -1,8 +1,6 @@
 package chisel;
 
-import chisel.registry.ChiselBlocks;
-import chisel.registry.ChiselItems;
-import chisel.registry.ChiselTabs;
+import chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -18,6 +16,8 @@ public class Chisel {
         ChiselBlocks.BLOCKS.register(bus);
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
+        ChiselMenus.MENU_TYPES.register(bus);
+        ChiselDataComponents.DATA_COMPONENTS.register(bus);
     }
 
     public static Identifier prefix(String resource) {

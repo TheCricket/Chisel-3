@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:obsidian",
+  "prefix": "obsidian",
+  "variants": [
+    {
+      "block": "chisel:obsidian_pillar_large",
+      "model_type": "cube_all",
+      "name": "obsidian_pillar_large"
+    },
+    {
+      "block": "chisel:obsidian_pillar",
+      "model_type": "cube_all",
+      "name": "obsidian_pillar"
+    },
+    {
+      "block": "chisel:obsidian_chiseled",
+      "model_type": "cube_all",
+      "name": "obsidian_chiseled"
+    },
+    {
+      "block": "chisel:obsidian_panel_shiny",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_shiny"
+    },
+    {
+      "block": "chisel:obsidian_panel",
+      "model_type": "cube_all",
+      "name": "obsidian_panel"
+    },
+    {
+      "block": "chisel:obsidian_organic_chunks",
+      "model_type": "cube_all",
+      "name": "obsidian_organic_chunks"
+    },
+    {
+      "block": "chisel:obsidian_organic_growth",
+      "model_type": "cube_all",
+      "name": "obsidian_organic_growth"
+    },
+    {
+      "block": "chisel:obsidian_crystal",
+      "model_type": "cube_all",
+      "name": "obsidian_crystal"
+    },
+    {
+      "block": "chisel:obsidian_panel_map",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_map"
+    },
+    {
+      "block": "chisel:obsidian_panel_region",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_region"
+    },
+    {
+      "block": "chisel:obsidian_panel_bright",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_bright"
+    },
+    {
+      "block": "chisel:obsidian_blocks",
+      "model_type": "cube_all",
+      "name": "obsidian_blocks"
+    },
+    {
+      "block": "chisel:obsidian_tiles",
+      "model_type": "cube_all",
+      "name": "obsidian_tiles"
+    },
+    {
+      "block": "chisel:obsidian_greek",
+      "model_type": "cube_all",
+      "name": "obsidian_greek"
+    },
+    {
+      "block": "chisel:obsidian_crate",
+      "model_type": "cube_all",
+      "name": "obsidian_crate"
+    }
+  ]
+}

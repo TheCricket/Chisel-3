@@ -1,0 +1,86 @@
+{
+  "base": "chisel:antiblock_0",
+  "prefix": "antiblock",
+  "variants": [
+    {
+      "block": "chisel:antiblock_0",
+      "model_type": "cube_all",
+      "name": "antiblock_0"
+    },
+    {
+      "block": "chisel:antiblock_1",
+      "model_type": "cube_all",
+      "name": "antiblock_1"
+    },
+    {
+      "block": "chisel:antiblock_2",
+      "model_type": "cube_all",
+      "name": "antiblock_2"
+    },
+    {
+      "block": "chisel:antiblock_3",
+      "model_type": "cube_all",
+      "name": "antiblock_3"
+    },
+    {
+      "block": "chisel:antiblock_4",
+      "model_type": "cube_all",
+      "name": "antiblock_4"
+    },
+    {
+      "block": "chisel:antiblock_5",
+      "model_type": "cube_all",
+      "name": "antiblock_5"
+    },
+    {
+      "block": "chisel:antiblock_6",
+      "model_type": "cube_all",
+      "name": "antiblock_6"
+    },
+    {
+      "block": "chisel:antiblock_7",
+      "model_type": "cube_all",
+      "name": "antiblock_7"
+    },
+    {
+      "block": "chisel:antiblock_8",
+      "model_type": "cube_all",
+      "name": "antiblock_8"
+    },
+    {
+      "block": "chisel:antiblock_9",
+      "model_type": "cube_all",
+      "name": "antiblock_9"
+    },
+    {
+      "block": "chisel:antiblock_10",
+      "model_type": "cube_all",
+      "name": "antiblock_10"
+    },
+    {
+      "block": "chisel:antiblock_11",
+      "model_type": "cube_all",
+      "name": "antiblock_11"
+    },
+    {
+      "block": "chisel:antiblock_12",
+      "model_type": "cube_all",
+      "name": "antiblock_12"
+    },
+    {
+      "block": "chisel:antiblock_13",
+      "model_type": "cube_all",
+      "name": "antiblock_13"
+    },
+    {
+      "block": "chisel:antiblock_14",
+      "model_type": "cube_all",
+      "name": "antiblock_14"
+    },
+    {
+      "block": "chisel:antiblock_15",
+      "model_type": "cube_all",
+      "name": "antiblock_15"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "base": "chisel:tin_caution",
+  "prefix": "tin",
+  "variants": [
+    {
+      "block": "chisel:tin_caution",
+      "model_type": "cube_all",
+      "name": "tin_caution"
+    },
+    {
+      "block": "chisel:tin_shipping",
+      "model_type": "cube_all",
+      "name": "tin_shipping"
+    },
+    {
+      "block": "chisel:tin_thermal",
+      "model_type": "cube_all",
+      "name": "tin_thermal"
+    },
+    {
+      "block": "chisel:tin_125",
+      "model_type": "cube_all",
+      "name": "tin_125"
+    },
+    {
+      "block": "chisel:tin_bordered",
+      "model_type": "cube_all",
+      "name": "tin_bordered"
+    },
+    {
+      "block": "chisel:tin_bolted",
+      "model_type": "cube_all",
+      "name": "tin_bolted"
+    }
+  ]
+}

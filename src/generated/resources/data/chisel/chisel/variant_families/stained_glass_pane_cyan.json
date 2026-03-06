@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:cyan_stained_glass_pane",
+  "prefix": "stained_glass_pane_cyan",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_pane_cyan_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_cyan_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_pane_cyan_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_cyan_panel"
+    },
+    {
+      "block": "chisel:stained_glass_pane_cyan_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_cyan_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_pane_cyan_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_cyan_borderless"
+    }
+  ]
+}

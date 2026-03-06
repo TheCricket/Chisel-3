@@ -1,0 +1,156 @@
+{
+  "base": "minecraft:sandstone",
+  "prefix": "sandstone",
+  "variants": [
+    {
+      "block": "chisel:sandstone_faded",
+      "model_type": "cube_all",
+      "name": "sandstone_faded"
+    },
+    {
+      "block": "chisel:sandstone_pillar",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar"
+    },
+    {
+      "block": "chisel:sandstone_pillar_capstone",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_capstone"
+    },
+    {
+      "block": "chisel:sandstone_pillar_small",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_small"
+    },
+    {
+      "block": "chisel:sandstone_pillar_base",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_base"
+    },
+    {
+      "block": "chisel:sandstone_smooth_flat",
+      "model_type": "cube_all",
+      "name": "sandstone_smooth_flat"
+    },
+    {
+      "block": "chisel:sandstone_pillar_capstone_smooth",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_capstone_smooth"
+    },
+    {
+      "block": "chisel:sandstone_pillar_small_smooth",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_small_smooth"
+    },
+    {
+      "block": "chisel:sandstone_pillar_smooth",
+      "model_type": "cube_all",
+      "name": "sandstone_pillar_smooth"
+    },
+    {
+      "block": "chisel:sandstone_block",
+      "model_type": "cube_all",
+      "name": "sandstone_block"
+    },
+    {
+      "block": "chisel:sandstone_blocks_small",
+      "model_type": "cube_all",
+      "name": "sandstone_blocks_small"
+    },
+    {
+      "block": "chisel:sandstone_blocks",
+      "model_type": "cube_all",
+      "name": "sandstone_blocks"
+    },
+    {
+      "block": "chisel:sandstone_mosaic",
+      "model_type": "cube_all",
+      "name": "sandstone_mosaic"
+    },
+    {
+      "block": "chisel:sandstone_stacked",
+      "model_type": "cube_all",
+      "name": "sandstone_stacked"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_0",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_0"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_1",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_1"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_2",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_2"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_3",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_3"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_4",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_4"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_5",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_5"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_6",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_6"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_7",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_7"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_8",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_8"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_9",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_9"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_10",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_10"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_11",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_11"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_12",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_12"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_13",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_13"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_14",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_14"
+    },
+    {
+      "block": "chisel:sandstone_scribbles_15",
+      "model_type": "cube_all",
+      "name": "sandstone_scribbles_15"
+    }
+  ]
+}

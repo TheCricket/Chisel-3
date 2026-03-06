@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:red_stained_glass_pane",
+  "prefix": "stained_glass_pane_red",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_pane_red_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_red_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_pane_red_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_red_panel"
+    },
+    {
+      "block": "chisel:stained_glass_pane_red_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_red_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_pane_red_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_red_borderless"
+    }
+  ]
+}

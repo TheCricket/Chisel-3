@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:ice",
+  "prefix": "ice",
+  "variants": [
+    {
+      "block": "chisel:ice_rough",
+      "model_type": "cube_all",
+      "name": "ice_rough"
+    },
+    {
+      "block": "chisel:ice_cobble",
+      "model_type": "cube_all",
+      "name": "ice_cobble"
+    },
+    {
+      "block": "chisel:ice_rough_large",
+      "model_type": "cube_all",
+      "name": "ice_rough_large"
+    },
+    {
+      "block": "chisel:ice_bricks_large",
+      "model_type": "cube_all",
+      "name": "ice_bricks_large"
+    },
+    {
+      "block": "chisel:ice_bricks_small",
+      "model_type": "cube_all",
+      "name": "ice_bricks_small"
+    },
+    {
+      "block": "chisel:ice_glass_wall",
+      "model_type": "cube_all",
+      "name": "ice_glass_wall"
+    },
+    {
+      "block": "chisel:ice_tiles_large",
+      "model_type": "cube_all",
+      "name": "ice_tiles_large"
+    },
+    {
+      "block": "chisel:ice_tiles_fancy",
+      "model_type": "cube_all",
+      "name": "ice_tiles_fancy"
+    },
+    {
+      "block": "chisel:ice_tiles_sunken",
+      "model_type": "cube_all",
+      "name": "ice_tiles_sunken"
+    },
+    {
+      "block": "chisel:ice_tiles_disordered",
+      "model_type": "cube_all",
+      "name": "ice_tiles_disordered"
+    },
+    {
+      "block": "chisel:ice_panel",
+      "model_type": "cube_all",
+      "name": "ice_panel"
+    },
+    {
+      "block": "chisel:ice_double_slab",
+      "model_type": "cube_all",
+      "name": "ice_double_slab"
+    },
+    {
+      "block": "chisel:ice_zelda",
+      "model_type": "cube_all",
+      "name": "ice_zelda"
+    },
+    {
+      "block": "chisel:ice_bismuth",
+      "model_type": "cube_all",
+      "name": "ice_bismuth"
+    },
+    {
+      "block": "chisel:ice_poison",
+      "model_type": "cube_all",
+      "name": "ice_poison"
+    }
+  ]
+}

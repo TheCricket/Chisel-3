@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:black_stained_glass",
+  "prefix": "stained_glass_black",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_black_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_black_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_black_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_black_panel"
+    },
+    {
+      "block": "chisel:stained_glass_black_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_black_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_black_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_black_borderless"
+    }
+  ]
+}

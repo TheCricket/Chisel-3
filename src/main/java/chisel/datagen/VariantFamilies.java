@@ -6,13 +6,19 @@ import chisel.registry.ChiselBlocks;
 import com.google.common.collect.Maps;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.Map;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class VariantFamilies {
 
-    private static final Map<Block, VariantFamily> families = Maps.newHashMap();
+    private static final Map<Supplier<Block>, VariantFamily> families = Maps.newHashMap();
+
+    public static void registerVariantFamily(Supplier<Block> block, VariantFamily holder) {
+        families.putIfAbsent(block, holder);
+    }
 
     public static final VariantFamily ACACIA = builder("acacia_planks", Blocks.ACACIA_PLANKS)
             .addVariant("acacia_planks_smooth", ChiselBlocks.ACACIA_PLANKS_SMOOTH)
@@ -31,7 +37,7 @@ public class VariantFamilies {
             .addVariant("acacia_planks_disarray", ChiselBlocks.ACACIA_PLANKS_DISARRAY)
             .addVariant("acacia_planks_disarray_vertical", ChiselBlocks.ACACIA_PLANKS_DISARRAY_VERTICAL)
             .getFamily();
-    public static final VariantFamily ALUMINUM = builder("aluminum", ChiselBlocks.ALUMINUM_CAUTION.get())
+    public static final VariantFamily ALUMINUM = builder("aluminum", ChiselBlocks.ALUMINUM_CAUTION)
             .addVariant("aluminum_caution", ChiselBlocks.ALUMINUM_CAUTION)
             .addVariant("aluminum_shipping", ChiselBlocks.ALUMINUM_SHIPPING)
             .addVariant("aluminum_thermal", ChiselBlocks.ALUMINUM_THERMAL)
@@ -47,7 +53,7 @@ public class VariantFamilies {
             .addVariant("andesite_tiles_small", ChiselBlocks.ANDESITE_TILES_SMALL)
             .addVariant("andesite_polished", ChiselBlocks.ANDESITE_POLISHED)
             .getFamily();
-    public static final VariantFamily ANTIBLOCK = builder("antiblock", ChiselBlocks.ANTIBLOCK_0.get())
+    public static final VariantFamily ANTIBLOCK = builder("antiblock", ChiselBlocks.ANTIBLOCK_0)
             .addVariant("antiblock_0", ChiselBlocks.ANTIBLOCK_0)
             .addVariant("antiblock_1", ChiselBlocks.ANTIBLOCK_1)
             .addVariant("antiblock_2", ChiselBlocks.ANTIBLOCK_2)
@@ -99,7 +105,7 @@ public class VariantFamilies {
             .addVariant("bricks_aged", ChiselBlocks.BRICKS_AGED)
             .addVariant("bricks_yellow", ChiselBlocks.BRICKS_YELLOW)
             .getFamily();
-    public static final VariantFamily BRONZE = builder("bronze", ChiselBlocks.BRONZE_CAUTION.get())
+    public static final VariantFamily BRONZE = builder("bronze", ChiselBlocks.BRONZE_CAUTION)
             .addVariant("bronze_caution", ChiselBlocks.BRONZE_CAUTION)
             .addVariant("bronze_shipping", ChiselBlocks.BRONZE_SHIPPING)
             .addVariant("bronze_thermal", ChiselBlocks.BRONZE_THERMAL)
@@ -107,7 +113,7 @@ public class VariantFamilies {
             .addVariant("bronze_bordered", ChiselBlocks.BRONZE_BORDERED)
             .addVariant("bronze_bolted", ChiselBlocks.BRONZE_BOLTED)
             .getFamily();
-    public static final VariantFamily CARPET = builder("carpet", ChiselBlocks.CARPET_0.get())
+    public static final VariantFamily CARPET = builder("carpet", ChiselBlocks.CARPET_0)
             .addVariant("carpet_0", ChiselBlocks.CARPET_0)
             .addVariant("carpet_1", ChiselBlocks.CARPET_1)
             .addVariant("carpet_2", ChiselBlocks.CARPET_2)
@@ -125,7 +131,7 @@ public class VariantFamilies {
             .addVariant("carpet_14", ChiselBlocks.CARPET_14)
             .addVariant("carpet_15", ChiselBlocks.CARPET_15)
             .getFamily();
-    public static final VariantFamily CARPET_FLOOR = builder("carpet_floor", ChiselBlocks.CARPET_FLOOR_0.get())
+    public static final VariantFamily CARPET_FLOOR = builder("carpet_floor", ChiselBlocks.CARPET_FLOOR_0)
             .addVariant("carpet_floor_0", ChiselBlocks.CARPET_FLOOR_0, VariantModelType.CARPET)
             .addVariant("carpet_floor_1", ChiselBlocks.CARPET_FLOOR_1, VariantModelType.CARPET)
             .addVariant("carpet_floor_2", ChiselBlocks.CARPET_FLOOR_2, VariantModelType.CARPET)
@@ -143,7 +149,7 @@ public class VariantFamilies {
             .addVariant("carpet_floor_14", ChiselBlocks.CARPET_FLOOR_14, VariantModelType.CARPET)
             .addVariant("carpet_floor_15", ChiselBlocks.CARPET_FLOOR_15, VariantModelType.CARPET)
             .getFamily();
-    public static final VariantFamily CLOUD = builder("cloud", ChiselBlocks.CLOUD_NORMAL.get())
+    public static final VariantFamily CLOUD = builder("cloud", ChiselBlocks.CLOUD_NORMAL)
             .addVariant("cloud_normal", ChiselBlocks.CLOUD_NORMAL)
             .addVariant("cloud_grid", ChiselBlocks.CLOUD_GRID)
             .addVariant("cloud_large", ChiselBlocks.CLOUD_LARGE)
@@ -167,7 +173,7 @@ public class VariantFamilies {
             .addVariant("cobblestone_panel_light", ChiselBlocks.COBBLESTONE_PANEL_LIGHT)
             .addVariant("cobblestone_panel_dark", ChiselBlocks.COBBLESTONE_PANEL_DARK)
             .getFamily();
-    public static final VariantFamily CONCRETE = builder("concrete", ChiselBlocks.CONCRETE_RAW.get())
+    public static final VariantFamily CONCRETE = builder("concrete", ChiselBlocks.CONCRETE_RAW)
             .addVariant("concrete_raw", ChiselBlocks.CONCRETE_RAW)
             .addVariant("concrete_block", ChiselBlocks.CONCRETE_BLOCK)
             .addVariant("concrete_slab", ChiselBlocks.CONCRETE_SLAB)
@@ -258,7 +264,7 @@ public class VariantFamilies {
             .addVariant("emerald_blocks_small_ornate", ChiselBlocks.EMERALD_BLOCKS_SMALL_ORNATE)
             .addVariant("emerald_ornate", ChiselBlocks.EMERALD_ORNATE)
             .getFamily();
-    public static final VariantFamily ENERGIZED_VOIDSTONE = builder("energized_voidstone", ChiselBlocks.ENERGISED_VOIDSTONE_RAW.get())
+    public static final VariantFamily ENERGIZED_VOIDSTONE = builder("energized_voidstone", ChiselBlocks.ENERGISED_VOIDSTONE_RAW)
             .addVariant("energized_voidstone_raw", ChiselBlocks.ENERGISED_VOIDSTONE_RAW)
             .addVariant("energized_voidstone_tiles", ChiselBlocks.ENERGISED_VOIDSTONE_TILES)
             .addVariant("energized_voidstone_smooth", ChiselBlocks.ENERGISED_VOIDSTONE_SMOOTH)
@@ -268,10 +274,10 @@ public class VariantFamilies {
             .addVariant("energized_voidstone_eye", ChiselBlocks.ENERGISED_VOIDSTONE_EYE)
             .addVariant("energized_voidstone_bevel", ChiselBlocks.ENERGISED_VOIDSTONE_BEVEL)
             .getFamily();
-    public static final VariantFamily ENERGIZED_VOIDSTONE_PILLAR = builder("energized_voidstone_pillar", ChiselBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL.get())
+    public static final VariantFamily ENERGIZED_VOIDSTONE_PILLAR = builder("energized_voidstone_pillar", ChiselBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL)
             .addVariant("energized_voidstone_pillar_normal", ChiselBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL)
             .getFamily();
-    public static final VariantFamily FACTORY = builder("factory", ChiselBlocks.FACTORY_RUSTY_DOTTED.get())
+    public static final VariantFamily FACTORY = builder("factory", ChiselBlocks.FACTORY_RUSTY_DOTTED)
             .addVariant("factory_rusty_dotted", ChiselBlocks.FACTORY_RUSTY_DOTTED)
             .addVariant("factory_rusty_plate", ChiselBlocks.FACTORY_RUSTY_PLATE)
             .addVariant("factory_rusty_very", ChiselBlocks.FACTORY_RUSTY_VERY)
@@ -293,7 +299,7 @@ public class VariantFamilies {
             .addVariant("factory_circuit_blue", ChiselBlocks.FACTORY_CIRCUIT_BLUE)
             .addVariant("factory_wireframe_blue", ChiselBlocks.FACTORY_WIREFRAME_BLUE)
             .getFamily();
-    public static final VariantFamily FANTASY = builder("fantasy", ChiselBlocks.FANTASY_BRICK.get())
+    public static final VariantFamily FANTASY = builder("fantasy", ChiselBlocks.FANTASY_BRICK)
             .addVariant("fantasy_brick", ChiselBlocks.FANTASY_BRICK, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("fantasy_brick_faded", ChiselBlocks.FANTASY_BRICK_FADED, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("fantasy_brick_worn", ChiselBlocks.FANTASY_BRICK_WORN, VariantModelType.TOP_BOTTOM_SIDE)
@@ -311,7 +317,7 @@ public class VariantFamilies {
             .addVariant("fantasy_bricks_disarray", ChiselBlocks.FANTASY_BRICKS_DISARRAY, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("fantasy_bricks_disarray_worn", ChiselBlocks.FANTASY_BRICKS_DISARRAY_WORN, VariantModelType.TOP_BOTTOM_SIDE)
             .getFamily();
-    public static final VariantFamily FUTURA = builder("futura", ChiselBlocks.FUTURA_SCREEN_GRAY.get())
+    public static final VariantFamily FUTURA = builder("futura", ChiselBlocks.FUTURA_SCREEN_GRAY)
             .addVariant("futura_screen_gray", ChiselBlocks.FUTURA_SCREEN_GRAY)
             .addVariant("futura_screen_cyan", ChiselBlocks.FUTURA_SCREEN_CYAN)
             .addVariant("futura_controller", ChiselBlocks.FUTURA_CONTROLLER, VariantModelType.MULTI_LAYER)
@@ -392,7 +398,7 @@ public class VariantFamilies {
             .addVariant("granite_prismatic", ChiselBlocks.GRANITE_PRISMATIC)
             .addVariant("granite_tiles_small", ChiselBlocks.GRANITE_TILES_SMALL)
             .getFamily();
-    public static final VariantFamily GRIMSTONE = builder("grimstone", ChiselBlocks.GRIMSTONE_RAW.get())
+    public static final VariantFamily GRIMSTONE = builder("grimstone", ChiselBlocks.GRIMSTONE_RAW)
             .addVariant("grimstone_raw", ChiselBlocks.GRIMSTONE_RAW)
             .addVariant("grimstone_smooth", ChiselBlocks.GRIMSTONE_SMOOTH)
             .addVariant("grimstone_symbol", ChiselBlocks.GRIMSTONE_SYMBOL)
@@ -409,7 +415,7 @@ public class VariantFamilies {
             .addVariant("grimstone_plate", ChiselBlocks.GRIMSTONE_PLATE)
             .addVariant("grimstone_flaky", ChiselBlocks.GRIMSTONE_FLAKY)
             .getFamily();
-    public static final VariantFamily HEX_PLATING = builder("hex_plating", ChiselBlocks.HEX_PLATING_0.get())
+    public static final VariantFamily HEX_PLATING = builder("hex_plating", ChiselBlocks.HEX_PLATING_0)
             .addVariant("hex_plating_0", ChiselBlocks.HEX_PLATING_0, VariantModelType.MULTI_LAYER)
             .addVariant("hex_plating_1", ChiselBlocks.HEX_PLATING_1, VariantModelType.MULTI_LAYER)
             .addVariant("hex_plating_2", ChiselBlocks.HEX_PLATING_2, VariantModelType.MULTI_LAYER)
@@ -427,7 +433,7 @@ public class VariantFamilies {
             .addVariant("hex_plating_14", ChiselBlocks.HEX_PLATING_14, VariantModelType.MULTI_LAYER)
             .addVariant("hex_plating_15", ChiselBlocks.HEX_PLATING_15, VariantModelType.MULTI_LAYER)
             .getFamily();
-    public static final VariantFamily HOLYSTONE = builder("holystone", ChiselBlocks.HOLYSTONE_RAW.get())
+    public static final VariantFamily HOLYSTONE = builder("holystone", ChiselBlocks.HOLYSTONE_RAW)
             .addVariant("holystone_raw", ChiselBlocks.HOLYSTONE_RAW)
             .addVariant("holystone_smooth", ChiselBlocks.HOLYSTONE_SMOOTH)
             .addVariant("holystone_symbol", ChiselBlocks.HOLYSTONE_SYMBOL)
@@ -460,7 +466,7 @@ public class VariantFamilies {
             .addVariant("ice_bismuth", ChiselBlocks.ICE_BISMUTH)
             .addVariant("ice_poison", ChiselBlocks.ICE_POISON)
             .getFamily();
-    public static final VariantFamily ICE_PILLAR = builder("ice_pillar", ChiselBlocks.ICE_PILLAR_PLAIN_PLAIN.get())
+    public static final VariantFamily ICE_PILLAR = builder("ice_pillar", ChiselBlocks.ICE_PILLAR_PLAIN_PLAIN)
             .addVariant("ice_pillar_plain_plain", ChiselBlocks.ICE_PILLAR_PLAIN_PLAIN, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_plain_greek", ChiselBlocks.ICE_PILLAR_PLAIN_GREEK, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_greek_plain", ChiselBlocks.ICE_PILLAR_GREEK_PLAIN, VariantModelType.TOP_BOTTOM_SIDE)
@@ -520,7 +526,7 @@ public class VariantFamilies {
             .addVariant("jungle_planks_disarray", ChiselBlocks.JUNGLE_PLANKS_DISARRAY)
             .addVariant("jungle_planks_disarray_vertical", ChiselBlocks.JUNGLE_PLANKS_DISARRAY_VERTICAL)
             .getFamily();
-    public static final VariantFamily LABORATORY = builder("laboratory", ChiselBlocks.LABORATORY_PANEL_WALL.get())
+    public static final VariantFamily LABORATORY = builder("laboratory", ChiselBlocks.LABORATORY_PANEL_WALL)
             .addVariant("laboratory_panel_wall", ChiselBlocks.LABORATORY_PANEL_WALL, VariantModelType.CONNECTED_VERTICALLY)
             .addVariant("laboratory_panel_dotted", ChiselBlocks.LABORATORY_PANEL_DOTTED, VariantModelType.CONNECTED_VERTICALLY)
             .addVariant("laboratory_wall", ChiselBlocks.LABORATORY_WALL)
@@ -548,7 +554,7 @@ public class VariantFamilies {
             .addVariant("lapis_smooth", ChiselBlocks.LAPIS_SMOOTH)
             .addVariant("lapis_ornate_layer", ChiselBlocks.LAPIS_ORNATE_LAYER)
             .getFamily();
-    public static final VariantFamily LARGE_HEX_PLATING = builder("large_hex_plating", ChiselBlocks.LARGE_HEX_PLATING_0.get())
+    public static final VariantFamily LARGE_HEX_PLATING = builder("large_hex_plating", ChiselBlocks.LARGE_HEX_PLATING_0)
             .addVariant("large_hex_plating_0", ChiselBlocks.LARGE_HEX_PLATING_0)
             .addVariant("large_hex_plating_1", ChiselBlocks.LARGE_HEX_PLATING_1)
             .addVariant("large_hex_plating_2", ChiselBlocks.LARGE_HEX_PLATING_2)
@@ -566,7 +572,7 @@ public class VariantFamilies {
             .addVariant("large_hex_plating_14", ChiselBlocks.LARGE_HEX_PLATING_14)
             .addVariant("large_hex_plating_15", ChiselBlocks.LARGE_HEX_PLATING_15)
             .getFamily();
-    public static final VariantFamily LAVASTONE = builder("lavastone", ChiselBlocks.LAVASTONE_RAW.get())
+    public static final VariantFamily LAVASTONE = builder("lavastone", ChiselBlocks.LAVASTONE_RAW)
             .addVariant("lavastone_raw", ChiselBlocks.LAVASTONE_RAW, VariantModelType.MULTI_LAYER_LAVA)
             .addVariant("lavastone_black", ChiselBlocks.LAVASTONE_BLACK, VariantModelType.MULTI_LAYER_LAVA)
             .addVariant("lavastone_tiles", ChiselBlocks.LAVASTONE_TILES, VariantModelType.MULTI_LAYER_LAVA)
@@ -576,7 +582,7 @@ public class VariantFamilies {
             .addVariant("lavastone_panel_ornate", ChiselBlocks.LAVASTONE_PANEL_ORNATE, VariantModelType.MULTI_LAYER_LAVA)
             .addVariant("lavastone_dark", ChiselBlocks.LAVASTONE_DARK, VariantModelType.MULTI_LAYER_LAVA)
             .getFamily();
-    public static final VariantFamily LEAD = builder("lead", ChiselBlocks.LEAD_CAUTION.get())
+    public static final VariantFamily LEAD = builder("lead", ChiselBlocks.LEAD_CAUTION)
             .addVariant("lead_caution", ChiselBlocks.LEAD_CAUTION)
             .addVariant("lead_shipping", ChiselBlocks.LEAD_SHIPPING)
             .addVariant("lead_thermal", ChiselBlocks.LEAD_THERMAL)
@@ -593,7 +599,7 @@ public class VariantFamilies {
             .addVariant("leaf_christmas_balls", ChiselBlocks.LEAVES_CHRISTMAS_BALLS)
             .addVariant("leaf_christmas_lights", ChiselBlocks.LEAVES_CHRISTMAS_LIGHTS)
             .getFamily();
-    public static final VariantFamily LIMESTONE = builder("limestone", ChiselBlocks.LIMESTONE_RAW.get())
+    public static final VariantFamily LIMESTONE = builder("limestone", ChiselBlocks.LIMESTONE_RAW)
             .addVariant("limestone_raw", ChiselBlocks.LIMESTONE_RAW)
             .addVariant("limestone_tiles", ChiselBlocks.LIMESTONE_TILES)
             .addVariant("limestone_tiles_french", ChiselBlocks.LIMESTONE_TILES_FRENCH)
@@ -630,7 +636,7 @@ public class VariantFamilies {
             .addVariant("lit_pumpkin_15", ChiselBlocks.LITPUMPKIN_15)
             .addVariant("lit_pumpkin_16", ChiselBlocks.LITPUMPKIN_16)
             .getFamily();
-    public static final VariantFamily MARBLE = builder("marble", ChiselBlocks.MARBLE_RAW.get())
+    public static final VariantFamily MARBLE = builder("marble", ChiselBlocks.MARBLE_RAW)
             .addVariant("marble_raw", ChiselBlocks.MARBLE_RAW)
             .addVariant("marble_brick", ChiselBlocks.MARBLE_BRICK)
             .addVariant("marble_panel_classic", ChiselBlocks.MARBLE_PANEL_CLASSIC)
@@ -665,7 +671,7 @@ public class VariantFamilies {
             .addVariant("mossy_cobblestone_panel_light", ChiselBlocks.MOSSY_COBBLESTONE_PANEL_LIGHT)
             .addVariant("mossy_cobblestone_panel_dark", ChiselBlocks.MOSSY_COBBLESTONE_PANEL_DARK)
             .getFamily();
-    public static final VariantFamily MOSSY_TEMPLE = builder("mossy_temple", ChiselBlocks.MOSSY_TEMPLE_COBBLE.get())
+    public static final VariantFamily MOSSY_TEMPLE = builder("mossy_temple", ChiselBlocks.MOSSY_TEMPLE_COBBLE)
             .addVariant("mossy_temple_cobble", ChiselBlocks.MOSSY_TEMPLE_COBBLE)
             .addVariant("mossy_temple_ornate", ChiselBlocks.MOSSY_TEMPLE_ORNATE)
             .addVariant("mossy_temple_plate", ChiselBlocks.MOSSY_TEMPLE_PLATE)
@@ -767,7 +773,7 @@ public class VariantFamilies {
             .addVariant("packed_ice_bismuth", ChiselBlocks.PACKED_ICE_BISMUTH)
             .addVariant("packed_ice_poison", ChiselBlocks.PACKED_ICE_POISON)
             .getFamily();
-    public static final VariantFamily PACKED_ICE_PILLAR = builder("packed_ice_pillar", ChiselBlocks.PACKED_ICE_PILLAR_PLAIN_PLAIN.get())
+    public static final VariantFamily PACKED_ICE_PILLAR = builder("packed_ice_pillar", ChiselBlocks.PACKED_ICE_PILLAR_PLAIN_PLAIN)
             .addVariant("packed_ice_pillar_plain_plain", ChiselBlocks.PACKED_ICE_PILLAR_PLAIN_PLAIN)
             .addVariant("packed_ice_pillar_plain_greek", ChiselBlocks.PACKED_ICE_PILLAR_PLAIN_GREEK)
             .addVariant("packed_ice_pillar_greek_plain", ChiselBlocks.PACKED_ICE_PILLAR_GREEK_PLAIN)
@@ -776,7 +782,7 @@ public class VariantFamilies {
             .addVariant("packed_ice_pillar_ornamental", ChiselBlocks.PACKED_ICE_PILLAR_ORNAMENTAL)
             .addVariant("packed_ice_pillar_inscribed", ChiselBlocks.PACKED_ICE_PILLAR_INSCRIBED)
             .getFamily();
-    public static final VariantFamily PAPERWALL = builder("paperwall", ChiselBlocks.PAPERWALL_BOXED.get())
+    public static final VariantFamily PAPERWALL = builder("paperwall", ChiselBlocks.PAPERWALL_BOXED)
             .addVariant("paperwall_boxed", ChiselBlocks.PAPERWALL_BOXED)
             .addVariant("paperwall_strike_middle", ChiselBlocks.PAPERWALL_STRIKE_MIDDLE)
             .addVariant("paperwall_crossed", ChiselBlocks.PAPERWALL_CROSSED)
@@ -787,7 +793,7 @@ public class VariantFamilies {
             .addVariant("paperwall_plain", ChiselBlocks.PAPERWALL_PLAIN)
             .addVariant("paperwall_door", ChiselBlocks.PAPERWALL_DOOR)
             .getFamily();
-    public static final VariantFamily PAPERWALL_BLOCK = builder("paperwall_block", ChiselBlocks.PAPERWALL_BLOCK_BOXED.get())
+    public static final VariantFamily PAPERWALL_BLOCK = builder("paperwall_block", ChiselBlocks.PAPERWALL_BLOCK_BOXED)
             .addVariant("paperwall_block_boxed", ChiselBlocks.PAPERWALL_BLOCK_BOXED)
             .addVariant("paperwall_block_strike_middle", ChiselBlocks.PAPERWALL_BLOCK_STRIKE_MIDDLE)
             .addVariant("paperwall_block_crossed", ChiselBlocks.PAPERWALL_BLOCK_CROSSED)
@@ -817,7 +823,7 @@ public class VariantFamilies {
             .addVariant("pumpkin_15", ChiselBlocks.PUMPKIN_15)
             .addVariant("pumpkin_16", ChiselBlocks.PUMPKIN_16)
             .getFamily();
-    public static final VariantFamily PURPLED_FANTASY = builder("purpled_fantasy", ChiselBlocks.PURPLED_FANTASY_BRICK.get())
+    public static final VariantFamily PURPLED_FANTASY = builder("purpled_fantasy", ChiselBlocks.PURPLED_FANTASY_BRICK)
             .addVariant("purpled_fantasy_brick", ChiselBlocks.PURPLED_FANTASY_BRICK, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("purpled_fantasy_brick_faded", ChiselBlocks.PURPLED_FANTASY_BRICK_FADED, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("purpled_fantasy_brick_worn", ChiselBlocks.PURPLED_FANTASY_BRICK_WORN, VariantModelType.TOP_BOTTOM_SIDE)
@@ -852,13 +858,13 @@ public class VariantFamilies {
             .addVariant("redstone_skulls", ChiselBlocks.REDSTONE_SKULLS)
             .addVariant("redstone_zelda", ChiselBlocks.REDSTONE_ZELDA)
             .getFamily();
-    public static final VariantFamily ROAD_LINE = builder("road_line", ChiselBlocks.ROAD_LINES_WHITE.get())
+    public static final VariantFamily ROAD_LINE = builder("road_line", ChiselBlocks.ROAD_LINES_WHITE)
             .addVariant("road_lines_white", ChiselBlocks.ROAD_LINES_WHITE)
             .addVariant("road_lines_yellow", ChiselBlocks.ROAD_LINES_YELLOW)
             .addVariant("road_lines_white_double", ChiselBlocks.ROAD_LINES_WHITE_DOUBLE)
             .addVariant("road_lines_yellow_double", ChiselBlocks.ROAD_LINES_YELLOW_DOUBLE)
             .getFamily();
-    public static final VariantFamily RUNIC_VOIDSTONE = builder("runic_voidstone", ChiselBlocks.RUNIC_VOIDSTONE_0.get())
+    public static final VariantFamily RUNIC_VOIDSTONE = builder("runic_voidstone", ChiselBlocks.RUNIC_VOIDSTONE_0)
             .addVariant("runic_voidstone_0", ChiselBlocks.RUNIC_VOIDSTONE_0)
             .addVariant("runic_voidstone_1", ChiselBlocks.RUNIC_VOIDSTONE_1)
             .addVariant("runic_voidstone_2", ChiselBlocks.RUNIC_VOIDSTONE_2)
@@ -908,7 +914,7 @@ public class VariantFamilies {
             .addVariant("sandstone_scribbles_14", ChiselBlocks.SANDSTONE_SCRIBBLES_14)
             .addVariant("sandstone_scribbles_15", ChiselBlocks.SANDSTONE_SCRIBBLES_15)
             .getFamily();
-    public static final VariantFamily SILVER = builder("silver", ChiselBlocks.SILVER_CAUTION.get())
+    public static final VariantFamily SILVER = builder("silver", ChiselBlocks.SILVER_CAUTION)
             .addVariant("silver_caution", ChiselBlocks.SILVER_CAUTION)
             .addVariant("silver_shipping", ChiselBlocks.SILVER_SHIPPING)
             .addVariant("silver_thermal", ChiselBlocks.SILVER_THERMAL)
@@ -933,11 +939,11 @@ public class VariantFamilies {
             .addVariant("spruce_planks_disarray", ChiselBlocks.SPRUCE_PLANKS_DISARRAY)
             .addVariant("spruce_planks_disarray_vertical", ChiselBlocks.SPRUCE_PLANKS_DISARRAY_VERTICAL)
             .getFamily();
-    public static final VariantFamily SNAKESTONE_SAND = builder("snakestone_sand", ChiselBlocks.SNAKESTONE_SAND_0.get())
+    public static final VariantFamily SNAKESTONE_SAND = builder("snakestone_sand", ChiselBlocks.SNAKESTONE_SAND_0)
             .addVariant("snakestone_sand_0", ChiselBlocks.SNAKESTONE_SAND_0)
             .addVariant("snakestone_sand_1", ChiselBlocks.SNAKESTONE_SAND_1)
             .getFamily();
-    public static final VariantFamily SNAKESTONE_STONE = builder("snakestone_stone", ChiselBlocks.SNAKESTONE_STONE_0.get())
+    public static final VariantFamily SNAKESTONE_STONE = builder("snakestone_stone", ChiselBlocks.SNAKESTONE_STONE_0)
             .addVariant("snakestone_stone_0", ChiselBlocks.SNAKESTONE_STONE_0)
             .addVariant("snakestone_stone_1", ChiselBlocks.SNAKESTONE_STONE_1)
             .getFamily();
@@ -1133,7 +1139,7 @@ public class VariantFamilies {
             .addVariant("stained_glass_pane_yellow_panel_fancy", ChiselBlocks.STAINED_GLASS_PANE_YELLOW_PANEL_FANCY)
             .addVariant("stained_glass_pane_yellow_panel_borderless", ChiselBlocks.STAINED_GLASS_PANE_YELLOW_PANEL_BORDERLESS)
             .getFamily();
-    public static final VariantFamily STEEL = builder("steel", ChiselBlocks.STEEL_CAUTION.get())
+    public static final VariantFamily STEEL = builder("steel", ChiselBlocks.STEEL_CAUTION)
             .addVariant("steel_caution", ChiselBlocks.STEEL_CAUTION)
             .addVariant("steel_shipping", ChiselBlocks.STEEL_SHIPPING)
             .addVariant("steel_thermal", ChiselBlocks.STEEL_THERMAL)
@@ -1158,7 +1164,7 @@ public class VariantFamilies {
             .addVariant("stone_bricks_panel_ornate", ChiselBlocks.STONE_BRICKS_PANEL_ORNATE)
             .addVariant("stone_bricks_poison", ChiselBlocks.STONE_BRICKS_POISON)
             .getFamily();
-    public static final VariantFamily TECHNICAL = builder("technical", ChiselBlocks.TECHNICAL_SCAFFOLD.get())
+    public static final VariantFamily TECHNICAL = builder("technical", ChiselBlocks.TECHNICAL_SCAFFOLD)
             .addVariant("technical_scaffold", ChiselBlocks.TECHNICAL_SCAFFOLD)
             .addVariant("technical_panel_caution", ChiselBlocks.TECHNICAL_PANEL_CAUTION)
             .addVariant("technical_125", ChiselBlocks.TECHNICAL_125)
@@ -1180,7 +1186,7 @@ public class VariantFamilies {
             .addVariant("technical_transparent_fan_off", ChiselBlocks.TRANSPARENT_TECHNICAL_FAN_OFF)
             .addVariant("technical_transparent_fan_malfunctioning", ChiselBlocks.TRANSPARENT_TECHNICAL_FAN_MALFUNCTIONING)
             .getFamily();
-    public static final VariantFamily TEMPLE = builder("temple", ChiselBlocks.TEMPLE_COBBLE.get())
+    public static final VariantFamily TEMPLE = builder("temple", ChiselBlocks.TEMPLE_COBBLE)
             .addVariant("temple_cobble", ChiselBlocks.TEMPLE_COBBLE)
             .addVariant("temple_ornate", ChiselBlocks.TEMPLE_ORNATE)
             .addVariant("temple_plate", ChiselBlocks.TEMPLE_PLATE)
@@ -1198,7 +1204,7 @@ public class VariantFamilies {
             .addVariant("temple_tiles_light", ChiselBlocks.TEMPLE_TILES_LIGHT)
             .addVariant("temple_tiles_small_light", ChiselBlocks.TEMPLE_TILES_SMALL_LIGHT)
             .getFamily();
-    public static final VariantFamily TIN = builder("tin", ChiselBlocks.TIN_CAUTION.get())
+    public static final VariantFamily TIN = builder("tin", ChiselBlocks.TIN_CAUTION)
             .addVariant("tin_caution", ChiselBlocks.TIN_CAUTION)
             .addVariant("tin_shipping", ChiselBlocks.TIN_SHIPPING)
             .addVariant("tin_thermal", ChiselBlocks.TIN_THERMAL)
@@ -1218,7 +1224,7 @@ public class VariantFamilies {
             .addVariant("torch_8", ChiselBlocks.TORCH_8)
             .addVariant("torch_9", ChiselBlocks.TORCH_9)
             .getFamily();
-    public static final VariantFamily TYRIAN = builder("tyrian", ChiselBlocks.TYRIAN_NORMAL.get())
+    public static final VariantFamily TYRIAN = builder("tyrian", ChiselBlocks.TYRIAN_NORMAL)
             .addVariant("tyrian_normal", ChiselBlocks.TYRIAN_NORMAL)
             .addVariant("tyrian_bleak", ChiselBlocks.TYRIAN_BLEAK)
             .addVariant("tyrian_purple", ChiselBlocks.TYRIAN_PURPLE)
@@ -1236,7 +1242,7 @@ public class VariantFamilies {
             .addVariant("tyrian_opening", ChiselBlocks.TYRIAN_OPENING)
             .addVariant("tyrian_shiny", ChiselBlocks.TYRIAN_SHINY)
             .getFamily();
-    public static final VariantFamily URANIUM = builder("uranium", ChiselBlocks.URANIUM_CAUTION.get())
+    public static final VariantFamily URANIUM = builder("uranium", ChiselBlocks.URANIUM_CAUTION)
             .addVariant("uranium_caution", ChiselBlocks.URANIUM_CAUTION)
             .addVariant("uranium_shipping", ChiselBlocks.URANIUM_SHIPPING)
             .addVariant("uranium_thermal", ChiselBlocks.URANIUM_THERMAL)
@@ -1244,7 +1250,7 @@ public class VariantFamilies {
             .addVariant("uranium_bordered", ChiselBlocks.URANIUM_BORDERED)
             .addVariant("uranium_bolted", ChiselBlocks.URANIUM_BOLTED)
             .getFamily();
-    public static final VariantFamily VALENTINES = builder("valentines", ChiselBlocks.VALENTINES_BRICKS.get())
+    public static final VariantFamily VALENTINES = builder("valentines", ChiselBlocks.VALENTINES_BRICKS)
             .addVariant("valentines_bricks", ChiselBlocks.VALENTINES_BRICKS)
             .addVariant("valentines_companion", ChiselBlocks.VALENTINES_COMPANION)
             .addVariant("valentines_empty", ChiselBlocks.VALENTINES_EMPTY)
@@ -1256,7 +1262,7 @@ public class VariantFamilies {
             .addVariant("valentines_fire", ChiselBlocks.VALENTINES_FIRE)
             .addVariant("valentines_tile", ChiselBlocks.VALENTINES_TILE)
             .getFamily();
-    public static final VariantFamily VOIDSTONE = builder("voidstone", ChiselBlocks.VOIDSTONE_RAW.get())
+    public static final VariantFamily VOIDSTONE = builder("voidstone", ChiselBlocks.VOIDSTONE_RAW)
             .addVariant("voidstone_raw", ChiselBlocks.VOIDSTONE_RAW)
             .addVariant("voidstone_tiles", ChiselBlocks.VOIDSTONE_TILES)
             .addVariant("voidstone_smooth", ChiselBlocks.VOIDSTONE_SMOOTH)
@@ -1266,7 +1272,7 @@ public class VariantFamilies {
             .addVariant("voidstone_eye", ChiselBlocks.VOIDSTONE_EYE)
             .addVariant("voidstone_bevel", ChiselBlocks.VOIDSTONE_BEVEL)
             .getFamily();
-    public static final VariantFamily WARNING = builder("warning", ChiselBlocks.WARNING_RADIATION.get())
+    public static final VariantFamily WARNING = builder("warning", ChiselBlocks.WARNING_RADIATION)
             .addVariant("warning_radiation", ChiselBlocks.WARNING_RADIATION, VariantModelType.MULTI_LAYER)
             .addVariant("warning_biohazard", ChiselBlocks.WARNING_BIOHAZARD, VariantModelType.MULTI_LAYER)
             .addVariant("warning_fire", ChiselBlocks.WARNING_FIRE, VariantModelType.MULTI_LAYER)
@@ -1283,7 +1289,7 @@ public class VariantFamilies {
             .addVariant("warning_cryogenic", ChiselBlocks.WARNING_CRYOGENIC, VariantModelType.MULTI_LAYER)
             .addVariant("warning_oxygen", ChiselBlocks.WARNING_OXYGEN, VariantModelType.MULTI_LAYER)
             .getFamily();
-    public static final VariantFamily WATERSTONE = builder("waterstone", ChiselBlocks.WATERSTONE_BRICKS.get())
+    public static final VariantFamily WATERSTONE = builder("waterstone", ChiselBlocks.WATERSTONE_BRICKS)
             .addVariant("waterstone_bricks", ChiselBlocks.WATERSTONE_BRICKS, VariantModelType.MULTI_LAYER_WATER)
             .addVariant("waterstone_black", ChiselBlocks.WATERSTONE_BLACK, VariantModelType.MULTI_LAYER_WATER)
             .addVariant("waterstone_tiles", ChiselBlocks.WATERSTONE_TILES, VariantModelType.MULTI_LAYER_WATER)
@@ -1292,7 +1298,7 @@ public class VariantFamilies {
             .addVariant("waterstone_panel", ChiselBlocks.WATERSTONE_PANEL, VariantModelType.MULTI_LAYER_WATER)
             .addVariant("waterstone_ornate", ChiselBlocks.WATERSTONE_ORNATE, VariantModelType.MULTI_LAYER_WATER)
             .getFamily();
-    public static final VariantFamily WOOLEN_CLAY = builder("woolen_clay", ChiselBlocks.WOOLEN_CLAY_0.get())
+    public static final VariantFamily WOOLEN_CLAY = builder("woolen_clay", ChiselBlocks.WOOLEN_CLAY_0)
             .addVariant("woolen_clay_0", ChiselBlocks.WOOLEN_CLAY_0)
             .addVariant("woolen_clay_1", ChiselBlocks.WOOLEN_CLAY_1)
             .addVariant("woolen_clay_2", ChiselBlocks.WOOLEN_CLAY_2)
@@ -1312,17 +1318,14 @@ public class VariantFamilies {
             .getFamily();
 
     private static VariantFamily.Builder builder(String name, Block base) {
-        VariantFamily.Builder builder = new VariantFamily.Builder(name, base);
-        VariantFamily family = families.put(base, builder.getFamily());
+        return new VariantFamily.Builder(name, () -> base);
+    }
 
-        if (family != null) {
-            throw new IllegalStateException("Duplicate family: " + name);
-        } else {
-            return builder;
-        }
+    private static VariantFamily.Builder builder(String name, Supplier<Block> base) {
+        return new VariantFamily.Builder(name, base);
     }
 
     public static Stream<VariantFamily> getAllFamilies() {
-        return families.values().stream();
+        return families.values().stream().distinct();
     }
 }

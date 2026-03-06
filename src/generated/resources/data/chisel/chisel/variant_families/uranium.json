@@ -1,0 +1,36 @@
+{
+  "base": "chisel:uranium_caution",
+  "prefix": "uranium",
+  "variants": [
+    {
+      "block": "chisel:uranium_caution",
+      "model_type": "cube_all",
+      "name": "uranium_caution"
+    },
+    {
+      "block": "chisel:uranium_shipping",
+      "model_type": "cube_all",
+      "name": "uranium_shipping"
+    },
+    {
+      "block": "chisel:uranium_thermal",
+      "model_type": "cube_all",
+      "name": "uranium_thermal"
+    },
+    {
+      "block": "chisel:uranium_125",
+      "model_type": "cube_all",
+      "name": "uranium_125"
+    },
+    {
+      "block": "chisel:uranium_bordered",
+      "model_type": "cube_all",
+      "name": "uranium_bordered"
+    },
+    {
+      "block": "chisel:uranium_bolted",
+      "model_type": "cube_all",
+      "name": "uranium_bolted"
+    }
+  ]
+}

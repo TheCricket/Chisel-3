@@ -1,0 +1,36 @@
+{
+  "base": "chisel:lead_caution",
+  "prefix": "lead",
+  "variants": [
+    {
+      "block": "chisel:lead_caution",
+      "model_type": "cube_all",
+      "name": "lead_caution"
+    },
+    {
+      "block": "chisel:lead_shipping",
+      "model_type": "cube_all",
+      "name": "lead_shipping"
+    },
+    {
+      "block": "chisel:lead_thermal",
+      "model_type": "cube_all",
+      "name": "lead_thermal"
+    },
+    {
+      "block": "chisel:lead_125",
+      "model_type": "cube_all",
+      "name": "lead_125"
+    },
+    {
+      "block": "chisel:lead_bordered",
+      "model_type": "cube_all",
+      "name": "lead_bordered"
+    },
+    {
+      "block": "chisel:lead_bolted",
+      "model_type": "cube_all",
+      "name": "lead_bolted"
+    }
+  ]
+}

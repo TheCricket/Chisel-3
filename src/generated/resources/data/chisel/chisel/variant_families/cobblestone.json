@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:cobblestone",
+  "prefix": "cobblestone",
+  "variants": [
+    {
+      "block": "chisel:cobblestone_bricks_aligned",
+      "model_type": "cube_all",
+      "name": "cobblestone_bricks_aligned"
+    },
+    {
+      "block": "chisel:cobblestone_bricks_detailed",
+      "model_type": "cube_all",
+      "name": "cobblestone_bricks_detailed"
+    },
+    {
+      "block": "chisel:cobblestone_bricks_small",
+      "model_type": "cube_all",
+      "name": "cobblestone_bricks_small"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_large",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_large"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_small",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_small"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_french",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_french"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_french_light",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_french_light"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_creeper",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_creeper"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_damaged",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_damaged"
+    },
+    {
+      "block": "chisel:cobblestone_tiles_huge",
+      "model_type": "cube_all",
+      "name": "cobblestone_tiles_huge"
+    },
+    {
+      "block": "chisel:cobblestone_panel_creeper",
+      "model_type": "cube_all",
+      "name": "cobblestone_panel_creeper"
+    },
+    {
+      "block": "chisel:cobblestone_dent",
+      "model_type": "cube_all",
+      "name": "cobblestone_dent"
+    },
+    {
+      "block": "chisel:cobblestone_panel",
+      "model_type": "cube_all",
+      "name": "cobblestone_panel"
+    },
+    {
+      "block": "chisel:cobblestone_panel_light",
+      "model_type": "cube_all",
+      "name": "cobblestone_panel_light"
+    },
+    {
+      "block": "chisel:cobblestone_panel_dark",
+      "model_type": "cube_all",
+      "name": "cobblestone_panel_dark"
+    }
+  ]
+}

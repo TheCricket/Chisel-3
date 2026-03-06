@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:spruce_planks",
+  "prefix": "spruce_planks",
+  "variants": [
+    {
+      "block": "chisel:spruce_planks_smooth",
+      "model_type": "cube_all",
+      "name": "spruce_planks_smooth"
+    },
+    {
+      "block": "chisel:spruce_planks_short",
+      "model_type": "cube_all",
+      "name": "spruce_planks_short"
+    },
+    {
+      "block": "chisel:spruce_planks_fancy",
+      "model_type": "cube_all",
+      "name": "spruce_planks_fancy"
+    },
+    {
+      "block": "chisel:spruce_planks_panel",
+      "model_type": "cube_all",
+      "name": "spruce_planks_panel"
+    },
+    {
+      "block": "chisel:spruce_planks_double_slab",
+      "model_type": "cube_all",
+      "name": "spruce_planks_double_slab"
+    },
+    {
+      "block": "chisel:spruce_planks_crate",
+      "model_type": "cube_all",
+      "name": "spruce_planks_crate"
+    },
+    {
+      "block": "chisel:spruce_planks_crate_fancy",
+      "model_type": "cube_all",
+      "name": "spruce_planks_crate_fancy"
+    },
+    {
+      "block": "chisel:spruce_planks_long",
+      "model_type": "cube_all",
+      "name": "spruce_planks_long"
+    },
+    {
+      "block": "chisel:spruce_planks_vertical",
+      "model_type": "cube_all",
+      "name": "spruce_planks_vertical"
+    },
+    {
+      "block": "chisel:spruce_planks_vertical_uneven",
+      "model_type": "cube_all",
+      "name": "spruce_planks_vertical_uneven"
+    },
+    {
+      "block": "chisel:spruce_planks_parquet",
+      "model_type": "cube_all",
+      "name": "spruce_planks_parquet"
+    },
+    {
+      "block": "chisel:spruce_planks_blinds",
+      "model_type": "cube_all",
+      "name": "spruce_planks_blinds"
+    },
+    {
+      "block": "chisel:spruce_planks_scaffold",
+      "model_type": "cube_all",
+      "name": "spruce_planks_scaffold"
+    },
+    {
+      "block": "chisel:spruce_planks_disarray",
+      "model_type": "cube_all",
+      "name": "spruce_planks_disarray"
+    },
+    {
+      "block": "chisel:spruce_planks_disarray_vertical",
+      "model_type": "cube_all",
+      "name": "spruce_planks_disarray_vertical"
+    }
+  ]
+}

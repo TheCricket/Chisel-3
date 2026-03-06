@@ -1,0 +1,41 @@
+{
+  "base": "minecraft:oak_leaves",
+  "prefix": "leaf",
+  "variants": [
+    {
+      "block": "chisel:leaf_dead",
+      "model_type": "cube_all",
+      "name": "leaf_dead"
+    },
+    {
+      "block": "chisel:leaf_fancy",
+      "model_type": "cube_all",
+      "name": "leaf_fancy"
+    },
+    {
+      "block": "chisel:leaf_pink",
+      "model_type": "cube_all",
+      "name": "leaf_pink"
+    },
+    {
+      "block": "chisel:leaf_red",
+      "model_type": "cube_all",
+      "name": "leaf_red"
+    },
+    {
+      "block": "chisel:leaf_white",
+      "model_type": "cube_all",
+      "name": "leaf_white"
+    },
+    {
+      "block": "chisel:leaf_christmas_balls",
+      "model_type": "cube_all",
+      "name": "leaf_christmas_balls"
+    },
+    {
+      "block": "chisel:leaf_christmas_lights",
+      "model_type": "cube_all",
+      "name": "leaf_christmas_lights"
+    }
+  ]
+}

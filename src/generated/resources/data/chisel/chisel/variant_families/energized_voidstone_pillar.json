@@ -1,0 +1,11 @@
+{
+  "base": "chisel:energized_voidstone_pillar_normal",
+  "prefix": "energized_voidstone_pillar",
+  "variants": [
+    {
+      "block": "chisel:energized_voidstone_pillar_normal",
+      "model_type": "cube_all",
+      "name": "energized_voidstone_pillar_normal"
+    }
+  ]
+}

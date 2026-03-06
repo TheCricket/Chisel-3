@@ -1,0 +1,36 @@
+{
+  "base": "minecraft:andesite",
+  "prefix": "andesite",
+  "variants": [
+    {
+      "block": "chisel:andesite_pillar",
+      "model_type": "top_bottom_side",
+      "name": "andesite_pillar"
+    },
+    {
+      "block": "chisel:andesite_bricks",
+      "model_type": "cube_all",
+      "name": "andesite_bricks"
+    },
+    {
+      "block": "chisel:andesite_ornate",
+      "model_type": "cube_all",
+      "name": "andesite_ornate"
+    },
+    {
+      "block": "chisel:andesite_prismatic",
+      "model_type": "cube_all",
+      "name": "andesite_prismatic"
+    },
+    {
+      "block": "chisel:andesite_tiles_small",
+      "model_type": "cube_all",
+      "name": "andesite_tiles_small"
+    },
+    {
+      "block": "chisel:andesite_polished",
+      "model_type": "cube_all",
+      "name": "andesite_polished"
+    }
+  ]
+}

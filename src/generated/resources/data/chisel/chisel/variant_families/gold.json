@@ -1,0 +1,106 @@
+{
+  "base": "minecraft:gold_block",
+  "prefix": "gold",
+  "variants": [
+    {
+      "block": "chisel:gold_ingots_large",
+      "model_type": "top_bottom_side",
+      "name": "gold_ingots_large"
+    },
+    {
+      "block": "chisel:gold_ingots_small",
+      "model_type": "top_bottom_side",
+      "name": "gold_ingots_small"
+    },
+    {
+      "block": "chisel:gold_bricks",
+      "model_type": "top_bottom_side",
+      "name": "gold_brick"
+    },
+    {
+      "block": "chisel:gold_cart",
+      "model_type": "top_bottom_side",
+      "name": "gold_cart"
+    },
+    {
+      "block": "chisel:gold_coin_heads",
+      "model_type": "top_bottom_side",
+      "name": "gold_coin_heads"
+    },
+    {
+      "block": "chisel:gold_coin_tails",
+      "model_type": "top_bottom_side",
+      "name": "gold_coin_tails"
+    },
+    {
+      "block": "chisel:gold_crate_dark",
+      "model_type": "top_bottom_side",
+      "name": "gold_crate_dark"
+    },
+    {
+      "block": "chisel:gold_crate_light",
+      "model_type": "top_bottom_side",
+      "name": "gold_crate_light"
+    },
+    {
+      "block": "chisel:gold_plates",
+      "model_type": "top_bottom_side",
+      "name": "gold_plates"
+    },
+    {
+      "block": "chisel:gold_rivets",
+      "model_type": "top_bottom_side",
+      "name": "gold_rivets"
+    },
+    {
+      "block": "chisel:gold_star_decor",
+      "model_type": "top_bottom_side",
+      "name": "gold_star_decor"
+    },
+    {
+      "block": "chisel:gold_star_obsidian_purple",
+      "model_type": "top_bottom_side",
+      "name": "gold_star_obsidian_purple"
+    },
+    {
+      "block": "chisel:gold_star_obsidian",
+      "model_type": "top_bottom_side",
+      "name": "gold_star_obsidian"
+    },
+    {
+      "block": "chisel:gold_simple",
+      "model_type": "top_bottom_side",
+      "name": "gold_simple"
+    },
+    {
+      "block": "chisel:gold_caution",
+      "model_type": "cube_all",
+      "name": "gold_caution"
+    },
+    {
+      "block": "chisel:gold_shipping",
+      "model_type": "cube_all",
+      "name": "gold_shipping"
+    },
+    {
+      "block": "chisel:gold_thermal",
+      "model_type": "cube_all",
+      "name": "gold_thermal"
+    },
+    {
+      "block": "chisel:gold_125",
+      "model_type": "cube_all",
+      "name": "gold_125"
+    },
+    {
+      "block": "chisel:gold_bordered",
+      "model_type": "cube_all",
+      "name": "gold_bordered"
+    },
+    {
+      "block": "chisel:gold_bolted",
+      "model_type": "cube_all",
+      "name": "gold_bolted"
+    }
+  ]
+}

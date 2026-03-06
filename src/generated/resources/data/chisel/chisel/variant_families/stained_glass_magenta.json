@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:magenta_stained_glass",
+  "prefix": "stained_glass_magenta",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_magenta_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_magenta_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_magenta_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_magenta_panel"
+    },
+    {
+      "block": "chisel:stained_glass_magenta_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_magenta_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_magenta_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_magenta_borderless"
+    }
+  ]
+}

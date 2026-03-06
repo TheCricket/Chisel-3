@@ -1,0 +1,36 @@
+{
+  "base": "chisel:bronze_caution",
+  "prefix": "bronze",
+  "variants": [
+    {
+      "block": "chisel:bronze_caution",
+      "model_type": "cube_all",
+      "name": "bronze_caution"
+    },
+    {
+      "block": "chisel:bronze_shipping",
+      "model_type": "cube_all",
+      "name": "bronze_shipping"
+    },
+    {
+      "block": "chisel:bronze_thermal",
+      "model_type": "cube_all",
+      "name": "bronze_thermal"
+    },
+    {
+      "block": "chisel:bronze_125",
+      "model_type": "cube_all",
+      "name": "bronze_125"
+    },
+    {
+      "block": "chisel:bronze_bordered",
+      "model_type": "cube_all",
+      "name": "bronze_bordered"
+    },
+    {
+      "block": "chisel:bronze_bolted",
+      "model_type": "cube_all",
+      "name": "bronze_bolted"
+    }
+  ]
+}

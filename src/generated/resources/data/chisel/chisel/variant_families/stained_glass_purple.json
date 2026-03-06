@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:purple_stained_glass",
+  "prefix": "stained_glass_purple",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_purple_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_purple_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_purple_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_purple_panel"
+    },
+    {
+      "block": "chisel:stained_glass_purple_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_purple_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_purple_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_purple_borderless"
+    }
+  ]
+}

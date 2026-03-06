@@ -1,0 +1,86 @@
+{
+  "base": "chisel:fantasy_brick",
+  "prefix": "fantasy",
+  "variants": [
+    {
+      "block": "chisel:fantasy_brick",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_brick"
+    },
+    {
+      "block": "chisel:fantasy_brick_faded",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_brick_faded"
+    },
+    {
+      "block": "chisel:fantasy_brick_worn",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_brick_worn"
+    },
+    {
+      "block": "chisel:fantasy_brick_damaged",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_brick_damaged"
+    },
+    {
+      "block": "chisel:fantasy_decoration",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration"
+    },
+    {
+      "block": "chisel:fantasy_decoration_block",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_block"
+    },
+    {
+      "block": "chisel:fantasy_decoration_pillar",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_pillar"
+    },
+    {
+      "block": "chisel:fantasy_pillar",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_pillar"
+    },
+    {
+      "block": "chisel:fantasy_decoration_snake",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_snake"
+    },
+    {
+      "block": "chisel:fantasy_decoration_noise",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_noise"
+    },
+    {
+      "block": "chisel:fantasy_decoration_engraving",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_engraving"
+    },
+    {
+      "block": "chisel:fantasy_decoration_chains",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_chains"
+    },
+    {
+      "block": "chisel:fantasy_decoration_plate",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_decoration_plate"
+    },
+    {
+      "block": "chisel:fantasy_block",
+      "model_type": "cube_all",
+      "name": "fantasy_block"
+    },
+    {
+      "block": "chisel:fantasy_bricks_disarray",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_bricks_disarray"
+    },
+    {
+      "block": "chisel:fantasy_bricks_disarray_worn",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_bricks_disarray_worn"
+    }
+  ]
+}

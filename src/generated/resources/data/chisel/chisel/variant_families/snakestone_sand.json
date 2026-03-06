@@ -1,0 +1,16 @@
+{
+  "base": "chisel:snakestone_sand_0",
+  "prefix": "snakestone_sand",
+  "variants": [
+    {
+      "block": "chisel:snakestone_sand_0",
+      "model_type": "cube_all",
+      "name": "snakestone_sand_0"
+    },
+    {
+      "block": "chisel:snakestone_sand_1",
+      "model_type": "cube_all",
+      "name": "snakestone_sand_1"
+    }
+  ]
+}

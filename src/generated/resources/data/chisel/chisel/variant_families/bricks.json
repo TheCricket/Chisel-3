@@ -1,0 +1,31 @@
+{
+  "base": "minecraft:bricks",
+  "prefix": "bricks",
+  "variants": [
+    {
+      "block": "chisel:bricks_large",
+      "model_type": "cube_all",
+      "name": "bricks_large"
+    },
+    {
+      "block": "chisel:bricks_mortarless",
+      "model_type": "cube_all",
+      "name": "bricks_mortarless"
+    },
+    {
+      "block": "chisel:bricks_varied",
+      "model_type": "cube_all",
+      "name": "bricks_varied"
+    },
+    {
+      "block": "chisel:bricks_aged",
+      "model_type": "cube_all",
+      "name": "bricks_aged"
+    },
+    {
+      "block": "chisel:bricks_yellow",
+      "model_type": "cube_all",
+      "name": "bricks_yellow"
+    }
+  ]
+}

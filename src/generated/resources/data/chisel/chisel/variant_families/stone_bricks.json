@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:stone_bricks",
+  "prefix": "stone_bricks",
+  "variants": [
+    {
+      "block": "chisel:stone_bricks_neutral",
+      "model_type": "cube_all",
+      "name": "stone_bricks_neutral"
+    },
+    {
+      "block": "chisel:stone_bricks_felsic",
+      "model_type": "cube_all",
+      "name": "stone_bricks_felsic"
+    },
+    {
+      "block": "chisel:stone_bricks_mafic",
+      "model_type": "cube_all",
+      "name": "stone_bricks_mafic"
+    },
+    {
+      "block": "chisel:stone_bricks_small",
+      "model_type": "cube_all",
+      "name": "stone_bricks_small"
+    },
+    {
+      "block": "chisel:stone_bricks_wide",
+      "model_type": "cube_all",
+      "name": "stone_bricks_wide"
+    },
+    {
+      "block": "chisel:stone_bricks_disordered_small",
+      "model_type": "cube_all",
+      "name": "stone_bricks_disordered_small"
+    },
+    {
+      "block": "chisel:stone_bricks_disordered",
+      "model_type": "cube_all",
+      "name": "stone_bricks_disordered"
+    },
+    {
+      "block": "chisel:stone_bricks_disordered_panel",
+      "model_type": "cube_all",
+      "name": "stone_bricks_disordered_panel"
+    },
+    {
+      "block": "chisel:stone_bricks_fancy",
+      "model_type": "cube_all",
+      "name": "stone_bricks_fancy"
+    },
+    {
+      "block": "chisel:stone_bricks_ornate",
+      "model_type": "cube_all",
+      "name": "stone_bricks_ornate"
+    },
+    {
+      "block": "chisel:stone_bricks_ornate_large",
+      "model_type": "cube_all",
+      "name": "stone_bricks_ornate_large"
+    },
+    {
+      "block": "chisel:stone_bricks_panel",
+      "model_type": "cube_all",
+      "name": "stone_bricks_panel"
+    },
+    {
+      "block": "chisel:stone_bricks_panel_sunken",
+      "model_type": "cube_all",
+      "name": "stone_bricks_panel_sunken"
+    },
+    {
+      "block": "chisel:stone_bricks_panel_ornate",
+      "model_type": "cube_all",
+      "name": "stone_bricks_panel_ornate"
+    },
+    {
+      "block": "chisel:stone_bricks_poison",
+      "model_type": "cube_all",
+      "name": "stone_bricks_poison"
+    }
+  ]
+}

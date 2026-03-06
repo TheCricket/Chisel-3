@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:white_stained_glass_pane",
+  "prefix": "stained_glass_pane_white",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_pane_white_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_white_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_pane_white_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_white_panel"
+    },
+    {
+      "block": "chisel:stained_glass_pane_white_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_white_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_pane_white_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_white_borderless"
+    }
+  ]
+}

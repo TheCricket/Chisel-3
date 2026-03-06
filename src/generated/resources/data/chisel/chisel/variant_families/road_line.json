@@ -1,0 +1,26 @@
+{
+  "base": "chisel:road_lines_white",
+  "prefix": "road_line",
+  "variants": [
+    {
+      "block": "chisel:road_lines_white",
+      "model_type": "cube_all",
+      "name": "road_lines_white"
+    },
+    {
+      "block": "chisel:road_lines_yellow",
+      "model_type": "cube_all",
+      "name": "road_lines_yellow"
+    },
+    {
+      "block": "chisel:road_lines_white_double",
+      "model_type": "cube_all",
+      "name": "road_lines_white_double"
+    },
+    {
+      "block": "chisel:road_lines_yellow_double",
+      "model_type": "cube_all",
+      "name": "road_lines_yellow_double"
+    }
+  ]
+}

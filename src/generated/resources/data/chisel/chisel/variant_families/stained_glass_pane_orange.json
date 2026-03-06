@@ -1,0 +1,26 @@
+{
+  "base": "minecraft:orange_stained_glass_pane",
+  "prefix": "stained_glass_pane_orange",
+  "variants": [
+    {
+      "block": "chisel:stained_glass_pane_orange_bubble",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_orange_bubble"
+    },
+    {
+      "block": "chisel:stained_glass_pane_orange_panel",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_orange_panel"
+    },
+    {
+      "block": "chisel:stained_glass_pane_orange_panel_fancy",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_orange_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_pane_orange_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_pane_orange_borderless"
+    }
+  ]
+}

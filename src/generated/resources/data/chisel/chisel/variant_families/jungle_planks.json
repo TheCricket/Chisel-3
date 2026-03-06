@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:jungle_planks",
+  "prefix": "jungle_planks",
+  "variants": [
+    {
+      "block": "chisel:jungle_planks_smooth",
+      "model_type": "cube_all",
+      "name": "jungle_planks_smooth"
+    },
+    {
+      "block": "chisel:jungle_planks_short",
+      "model_type": "cube_all",
+      "name": "jungle_planks_short"
+    },
+    {
+      "block": "chisel:jungle_planks_fancy",
+      "model_type": "cube_all",
+      "name": "jungle_planks_fancy"
+    },
+    {
+      "block": "chisel:jungle_planks_panel",
+      "model_type": "cube_all",
+      "name": "jungle_planks_panel"
+    },
+    {
+      "block": "chisel:jungle_planks_double_slab",
+      "model_type": "cube_all",
+      "name": "jungle_planks_double_slab"
+    },
+    {
+      "block": "chisel:jungle_planks_crate",
+      "model_type": "cube_all",
+      "name": "jungle_planks_crate"
+    },
+    {
+      "block": "chisel:jungle_planks_crate_fancy",
+      "model_type": "cube_all",
+      "name": "jungle_planks_crate_fancy"
+    },
+    {
+      "block": "chisel:jungle_planks_long",
+      "model_type": "cube_all",
+      "name": "jungle_planks_long"
+    },
+    {
+      "block": "chisel:jungle_planks_vertical",
+      "model_type": "cube_all",
+      "name": "jungle_planks_vertical"
+    },
+    {
+      "block": "chisel:jungle_planks_vertical_uneven",
+      "model_type": "cube_all",
+      "name": "jungle_planks_vertical_uneven"
+    },
+    {
+      "block": "chisel:jungle_planks_parquet",
+      "model_type": "cube_all",
+      "name": "jungle_planks_parquet"
+    },
+    {
+      "block": "chisel:jungle_planks_blinds",
+      "model_type": "cube_all",
+      "name": "jungle_planks_blinds"
+    },
+    {
+      "block": "chisel:jungle_planks_scaffold",
+      "model_type": "cube_all",
+      "name": "jungle_planks_scaffold"
+    },
+    {
+      "block": "chisel:jungle_planks_disarray",
+      "model_type": "cube_all",
+      "name": "jungle_planks_disarray"
+    },
+    {
+      "block": "chisel:jungle_planks_disarray_vertical",
+      "model_type": "cube_all",
+      "name": "jungle_planks_disarray_vertical"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "base": "chisel:lavastone_raw",
+  "prefix": "lavastone",
+  "variants": [
+    {
+      "block": "chisel:lavastone_raw",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_raw"
+    },
+    {
+      "block": "chisel:lavastone_black",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_black"
+    },
+    {
+      "block": "chisel:lavastone_tiles",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_tiles"
+    },
+    {
+      "block": "chisel:lavastone_bricks",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks"
+    },
+    {
+      "block": "chisel:lavastone_tiles_creeper",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_tiles_creeper"
+    },
+    {
+      "block": "chisel:lavastone_panel",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_panel"
+    },
+    {
+      "block": "chisel:lavastone_panel_ornate",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_panel_ornate"
+    },
+    {
+      "block": "chisel:lavastone_dark",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_dark"
+    }
+  ]
+}

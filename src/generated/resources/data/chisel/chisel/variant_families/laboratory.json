@@ -1,0 +1,86 @@
+{
+  "base": "chisel:laboratory_panel_wall",
+  "prefix": "laboratory",
+  "variants": [
+    {
+      "block": "chisel:laboratory_panel_wall",
+      "model_type": "connected_vertically",
+      "name": "laboratory_panel_wall"
+    },
+    {
+      "block": "chisel:laboratory_panel_dotted",
+      "model_type": "connected_vertically",
+      "name": "laboratory_panel_dotted"
+    },
+    {
+      "block": "chisel:laboratory_wall",
+      "model_type": "cube_all",
+      "name": "laboratory_wall"
+    },
+    {
+      "block": "chisel:laboratory_wall_rounded",
+      "model_type": "cube_all",
+      "name": "laboratory_wall_rounded"
+    },
+    {
+      "block": "chisel:laboratory_wall_vent",
+      "model_type": "connected_horizontally",
+      "name": "laboratory_wall_vent"
+    },
+    {
+      "block": "chisel:laboratory_tiles_enamelled_large",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_enamelled_large"
+    },
+    {
+      "block": "chisel:laboratory_tiles_enamelled_small",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_enamelled_small"
+    },
+    {
+      "block": "chisel:laboratory_floor",
+      "model_type": "cube_all",
+      "name": "laboratory_floor"
+    },
+    {
+      "block": "chisel:laboratory_checkerboard",
+      "model_type": "cube_all",
+      "name": "laboratory_checkerboard"
+    },
+    {
+      "block": "chisel:laboratory_panel_clear",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_clear"
+    },
+    {
+      "block": "chisel:laboratory_panel_fuzzy",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_fuzzy"
+    },
+    {
+      "block": "chisel:laboratory_tiles_steel_large",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_steel_large"
+    },
+    {
+      "block": "chisel:laboratory_tiles_steel_small",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_steel_small"
+    },
+    {
+      "block": "chisel:laboratory_console_right",
+      "model_type": "cube_all",
+      "name": "laboratory_console_right"
+    },
+    {
+      "block": "chisel:laboratory_console_left",
+      "model_type": "cube_all",
+      "name": "laboratory_console_left"
+    },
+    {
+      "block": "chisel:laboratory_console_information",
+      "model_type": "cube_all",
+      "name": "laboratory_console_information"
+    }
+  ]
+}

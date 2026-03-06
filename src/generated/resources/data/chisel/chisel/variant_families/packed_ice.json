@@ -1,0 +1,81 @@
+{
+  "base": "minecraft:packed_ice",
+  "prefix": "packed_ice",
+  "variants": [
+    {
+      "block": "chisel:packed_ice_rough",
+      "model_type": "cube_all",
+      "name": "packed_ice_rough"
+    },
+    {
+      "block": "chisel:packed_ice_cobble",
+      "model_type": "cube_all",
+      "name": "packed_ice_cobble"
+    },
+    {
+      "block": "chisel:packed_ice_rough_large",
+      "model_type": "cube_all",
+      "name": "packed_ice_rough_large"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_large",
+      "model_type": "cube_all",
+      "name": "packed_ice_bricks_large"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_small",
+      "model_type": "cube_all",
+      "name": "packed_ice_bricks_small"
+    },
+    {
+      "block": "chisel:packed_ice_glass_wall",
+      "model_type": "cube_all",
+      "name": "packed_ice_glass_wall"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_large",
+      "model_type": "cube_all",
+      "name": "packed_ice_tiles_large"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_fancy",
+      "model_type": "cube_all",
+      "name": "packed_ice_tiles_fancy"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_sunken",
+      "model_type": "cube_all",
+      "name": "packed_ice_tiles_sunken"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_disordered",
+      "model_type": "cube_all",
+      "name": "packed_ice_tiles_disordered"
+    },
+    {
+      "block": "chisel:packed_ice_panel",
+      "model_type": "cube_all",
+      "name": "packed_ice_panel"
+    },
+    {
+      "block": "chisel:packed_ice_double_slab",
+      "model_type": "cube_all",
+      "name": "packed_ice_double_slab"
+    },
+    {
+      "block": "chisel:packed_ice_zelda",
+      "model_type": "cube_all",
+      "name": "packed_ice_zelda"
+    },
+    {
+      "block": "chisel:packed_ice_bismuth",
+      "model_type": "cube_all",
+      "name": "packed_ice_bismuth"
+    },
+    {
+      "block": "chisel:packed_ice_poison",
+      "model_type": "cube_all",
+      "name": "packed_ice_poison"
+    }
+  ]
+}

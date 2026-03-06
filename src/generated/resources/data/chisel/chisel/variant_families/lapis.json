@@ -1,0 +1,46 @@
+{
+  "base": "minecraft:lapis_block",
+  "prefix": "lapis",
+  "variants": [
+    {
+      "block": "chisel:lapis_chunky",
+      "model_type": "cube_all",
+      "name": "lapis_chunky"
+    },
+    {
+      "block": "chisel:lapis_dark",
+      "model_type": "cube_all",
+      "name": "lapis_dark"
+    },
+    {
+      "block": "chisel:lapis_zelda",
+      "model_type": "cube_all",
+      "name": "lapis_zelda"
+    },
+    {
+      "block": "chisel:lapis_ornate",
+      "model_type": "cube_all",
+      "name": "lapis_ornate"
+    },
+    {
+      "block": "chisel:lapis_tile",
+      "model_type": "cube_all",
+      "name": "lapis_tile"
+    },
+    {
+      "block": "chisel:lapis_panel",
+      "model_type": "cube_all",
+      "name": "lapis_panel"
+    },
+    {
+      "block": "chisel:lapis_smooth",
+      "model_type": "cube_all",
+      "name": "lapis_smooth"
+    },
+    {
+      "block": "chisel:lapis_ornate_layer",
+      "model_type": "cube_all",
+      "name": "lapis_ornate_layer"
+    }
+  ]
+}
