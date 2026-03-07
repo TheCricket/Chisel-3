@@ -2,13 +2,14 @@ package chisel.registry;
 
 import chisel.Chisel;
 import chisel.datagen.VariantFamilies;
-import java.util.List;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 @SuppressWarnings("unused")
 public class ChiselTabs {

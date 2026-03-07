@@ -1,11 +1,11 @@
 package chisel.events;
 
 import chisel.Chisel;
+import chisel.core.VariantFamily;
 import chisel.registry.ChiselVariants;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.DataPackRegistryEvent;
-import chisel.core.VariantFamily;
 
 @EventBusSubscriber(modid = Chisel.MODID)
 public class DatapackRegistryEventHandler {
