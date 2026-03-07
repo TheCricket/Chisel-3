@@ -6,7 +6,6 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.renderer.block.model.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 
 import java.util.function.Supplier;
@@ -29,10 +28,6 @@ public class Variant extends VariantModels {
         this.block = block;
         this.family = family;
         this.modelType = modelType;
-    }
-
-    private Variant(String name, Block block, VariantModelType modelType) {
-        this(name, () -> block, null, modelType);
     }
 
     public void setFamily(VariantFamily family) {

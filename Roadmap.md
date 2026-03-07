@@ -1,0 +1,125 @@
+# Roadmap
+
+Initial pass is just textures
+
+- [X] Acacia
+- [ ] Aluminum
+- [ ] Andesite
+- [ ] Antiblock
+- [ ] Birch
+- [ ] Bookshelf
+- [ ] Bricks
+- [ ] Bronze
+- [ ] Carpet
+- [ ] Carpet Floor
+- [ ] Cloud
+- [ ] Cobblestone
+- [ ] Concrete
+- [ ] Copper
+- [ ] Dark Oak
+- [ ] Diamond
+- [ ] Diorite
+- [ ] Dirt
+- [ ] Emerald
+- [ ] Energized Voidstone
+- [ ] Energized Voidstone Pillar
+- [ ] Factory
+- [ ] Fantasy
+- [ ] Futura
+- [ ] Glass
+- [ ] Glass Pane
+- [ ] Glowstone
+- [ ] Gold
+- [ ] Granite
+- [ ] Grimstone
+- [ ] Hex Plating
+- [ ] Holystone
+- [ ] Ice
+- [ ] Ice Pillar
+- [ ] Iron
+- [ ] Iron Bars
+- [ ] Jungle Planks
+- [ ] Laboratory
+- [ ] Lapis
+- [ ] Large Hex Plating
+- [ ] Lavastone
+- [ ] Lead
+- [ ] Leaf
+- [ ] Limestone
+- [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
+- [ ] Marble
+- [ ] Mossy Cobblestone
+- [ ] Mossy Temple
+- [ ] Nether Bricks
+- [ ] Netherrack
+- [ ] Oak
+- [ ] Obsidian
+- [ ] Packed Ice
+- [ ] Packed Ice Pillar
+- [ ] Paper wall
+- [ ] Paper wall block
+- [ ] Pumpkin
+- [ ] Purpled fantasy
+- [ ] Redstone
+- [ ] Road line
+- [ ] Runic voidstone
+- [ ] Sandstone
+- [ ] Silver
+- [ ] Snakestone Sand
+- [ ] Snakestone Stone
+- [ ] Spruce
+- [ ] Stained glass black
+- [ ] Stained glass blue
+- [ ] Stained glass brown
+- [ ] Stained glass cyan
+- [ ] Stained glass gray
+- [ ] Stained glass green
+- [ ] Stained glass light blue
+- [ ] Stained glass light gray
+- [ ] Stained glass lime
+- [ ] Stained glass magenta
+- [ ] Stained glass orange
+- [ ] Stained glass pink
+- [ ] Stained glass purple
+- [ ] Stained glass red
+- [ ] Stained glass white
+- [ ] Stained glass yellow
+- [ ] Stained glass pane black
+- [ ] Stained glass pane blue
+- [ ] Stained glass pane brown
+- [ ] Stained glass pane cyan
+- [ ] Stained glass pane gray
+- [ ] Stained glass pane green
+- [ ] Stained glass pane light blue
+- [ ] Stained glass pane light gray
+- [ ] Stained glass pane lime
+- [ ] Stained glass pane magenta
+- [ ] Stained glass pane orange
+- [ ] Stained glass pane pink
+- [ ] Stained glass pane purple
+- [ ] Stained glass pane red
+- [ ] Stained glass pane white
+- [ ] Stained glass pane yellow
+- [ ] Steel
+- [ ] Stone Bricks
+- [ ] Technical
+- [ ] Temple
+- [ ] Tin
+- [ ] Torch
+- [ ] Tyrian
+- [ ] Uranium
+- [ ] Valentines
+- [ ] Voidstone
+- [ ] Warning
+- [ ] Waterstone
+- [ ] Woolen Clay
+
+## Items
+- [ ] Ball o' Moss
+- [ ] Chisel
+- [ ] Diamond Chisel
+- [ ] Obsidian Chisel
+- [ ] Cloud in a Bottle
+- [ ] Smashing Rock
+- [ ] Upgrades
+- [ ] Not an item but auto chisel

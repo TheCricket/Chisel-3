@@ -6,10 +6,9 @@ import chisel.block.ConnectedTextureCarpetBlock;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -17,7 +16,7 @@ import java.util.function.Supplier;
 public class ChiselBlocks {
     public static DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Chisel.MODID);
 
-    public static DeferredBlock<Block> ACACIA_PLANKS_SMOOTH, ACACIA_PLANKS_SHORT, ACACIA_PLANKS_FANCY, ACACIA_PLANKS_PANEL, ACACIA_PLANKS_DOUBLE_SLAB, ACACIA_PLANKS_CRATE, ACACIA_PLANKS_CRATE_FANCY, ACACIA_PLANKS_LONG, ACACIA_PLANKS_VERTICAL, ACACIA_PLANKS_VERTICAL_UNEVEN, ACACIA_PLANKS_PARQUET, ACACIA_PLANKS_BLINDS, ACACIA_PLANKS_SCAFFOLD, ACACIA_PLANKS_DISARRAY, ACACIA_PLANKS_DISARRAY_VERTICAL;
+    public static DeferredBlock<Block> ACACIA_PLANKS_LARGE, ACACIA_PLANKS_CRUDE_HORIZONTAL, ACACIA_PLANKS_VERTICAL, ACACIA_PLANKS_CRUDE_VERTICAL, ACACIA_PLANKS_ENCASED, ACACIA_PLANKS_BRACED, ACACIA_PLANKS_SHIPPING, ACACIA_PLANKS_ENCASED_LARGE, ACACIA_PLANKS_PANELING, ACACIA_PLANKS_CRUDE_PANELING, ACACIA_PLANKS_STACKED, ACACIA_PLANKS_SMOOTH, ACACIA_PLANKS_ENCASED_SMOOTH, ACACIA_PLANKS_BRAID, ACACIA_PLANKS_LOG_CABIN;
     public static DeferredBlock<Block> ALUMINUM_CAUTION, ALUMINUM_SHIPPING, ALUMINUM_THERMAL, ALUMINUM_125, ALUMINUM_BORDERED, ALUMINUM_BOLTED;
     public static DeferredBlock<Block> ANDESITE_PILLAR, ANDESITE_BRICKS, ANDESITE_ORNATE, ANDESITE_PRISMATIC, ANDESITE_TILES_SMALL, ANDESITE_POLISHED;
     public static DeferredBlock<Block> ANTIBLOCK_0, ANTIBLOCK_1, ANTIBLOCK_2, ANTIBLOCK_3, ANTIBLOCK_4, ANTIBLOCK_5, ANTIBLOCK_6, ANTIBLOCK_7, ANTIBLOCK_8, ANTIBLOCK_9, ANTIBLOCK_10, ANTIBLOCK_11, ANTIBLOCK_12, ANTIBLOCK_13, ANTIBLOCK_14, ANTIBLOCK_15;
@@ -144,21 +143,21 @@ public class ChiselBlocks {
     }
 
     static {
-        ACACIA_PLANKS_SMOOTH = register("acacia_planks_smooth", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_SHORT = register("acacia_planks_short", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_FANCY = register("acacia_planks_fancy", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_PANEL = register("acacia_planks_panel", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_DOUBLE_SLAB = register("acacia_planks_double_slab", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_CRATE = register("acacia_planks_crate", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_CRATE_FANCY = register("acacia_planks_crate_fancy", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_LONG = register("acacia_planks_long", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_LARGE = register("acacia_planks_large", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_CRUDE_HORIZONTAL = register("acacia_planks_crude_horizontal", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         ACACIA_PLANKS_VERTICAL = register("acacia_planks_vertical", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_VERTICAL_UNEVEN = register("acacia_planks_vertical_uneven", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_PARQUET = register("acacia_planks_parquet", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_BLINDS = register("acacia_planks_blinds", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_SCAFFOLD = register("acacia_planks_scaffold", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_DISARRAY = register("acacia_planks_disarray", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-        ACACIA_PLANKS_DISARRAY_VERTICAL = register("acacia_planks_disarray_vertical", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_CRUDE_VERTICAL = register("acacia_planks_crude_vertical", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_ENCASED = register("acacia_planks_encased", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_BRACED = register("acacia_planks_braced", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_SHIPPING = register("acacia_planks_shipping", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_ENCASED_LARGE = register("acacia_planks_encased_large", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_PANELING = register("acacia_planks_paneling", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_CRUDE_PANELING = register("acacia_planks_crude_paneling", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_STACKED = register("acacia_planks_stacked", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_SMOOTH = register("acacia_planks_smooth", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_ENCASED_SMOOTH = register("acacia_planks_encased_smooth", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_BRAID = register("acacia_planks_braid", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        ACACIA_PLANKS_LOG_CABIN = register("acacia_planks_log_cabin", Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         
         ALUMINUM_CAUTION = register("aluminum_caution", Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_SHIPPING = register("aluminum_shipping", Properties.ofFullCopy(Blocks.IRON_BLOCK));

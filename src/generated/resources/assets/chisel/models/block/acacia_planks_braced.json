@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/acacia_planks/acacia_planks_braced-bottom",
+    "side": "chisel:block/acacia_planks/acacia_planks_braced-side",
+    "top": "chisel:block/acacia_planks/acacia_planks_braced-top"
+  }
+}

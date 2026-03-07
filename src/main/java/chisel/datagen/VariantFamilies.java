@@ -6,7 +6,6 @@ import chisel.registry.ChiselBlocks;
 import com.google.common.collect.Maps;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.Map;
 import java.util.function.Supplier;
@@ -21,21 +20,21 @@ public class VariantFamilies {
     }
 
     public static final VariantFamily ACACIA = builder("acacia_planks", Blocks.ACACIA_PLANKS)
-            .addVariant("acacia_planks_smooth", ChiselBlocks.ACACIA_PLANKS_SMOOTH)
-            .addVariant("acacia_planks_short", ChiselBlocks.ACACIA_PLANKS_SHORT)
-            .addVariant("acacia_planks_fancy", ChiselBlocks.ACACIA_PLANKS_FANCY)
-            .addVariant("acacia_planks_panel", ChiselBlocks.ACACIA_PLANKS_PANEL)
-            .addVariant("acacia_planks_double_slab", ChiselBlocks.ACACIA_PLANKS_DOUBLE_SLAB)
-            .addVariant("acacia_planks_crate", ChiselBlocks.ACACIA_PLANKS_CRATE)
-            .addVariant("acacia_planks_crate_fancy", ChiselBlocks.ACACIA_PLANKS_CRATE_FANCY)
-            .addVariant("acacia_planks_long", ChiselBlocks.ACACIA_PLANKS_LONG)
+            .addVariant("acacia_planks_large", ChiselBlocks.ACACIA_PLANKS_LARGE)
+            .addVariant("acacia_planks_crude_horizontal", ChiselBlocks.ACACIA_PLANKS_CRUDE_HORIZONTAL) //TODO: CTM
             .addVariant("acacia_planks_vertical", ChiselBlocks.ACACIA_PLANKS_VERTICAL)
-            .addVariant("acacia_planks_vertical_uneven", ChiselBlocks.ACACIA_PLANKS_VERTICAL_UNEVEN)
-            .addVariant("acacia_planks_parquet", ChiselBlocks.ACACIA_PLANKS_PARQUET)
-            .addVariant("acacia_planks_blinds", ChiselBlocks.ACACIA_PLANKS_BLINDS)
-            .addVariant("acacia_planks_scaffold", ChiselBlocks.ACACIA_PLANKS_SCAFFOLD)
-            .addVariant("acacia_planks_disarray", ChiselBlocks.ACACIA_PLANKS_DISARRAY)
-            .addVariant("acacia_planks_disarray_vertical", ChiselBlocks.ACACIA_PLANKS_DISARRAY_VERTICAL)
+            .addVariant("acacia_planks_crude_vertical", ChiselBlocks.ACACIA_PLANKS_CRUDE_VERTICAL) //TODO: CTM
+            .addVariant("acacia_planks_encased", ChiselBlocks.ACACIA_PLANKS_ENCASED) //TODO: CTM
+            .addVariant("acacia_planks_braced", ChiselBlocks.ACACIA_PLANKS_BRACED, VariantModelType.TOP_BOTTOM_SIDE) //TODO: CTM
+            .addVariant("acacia_planks_shipping", ChiselBlocks.ACACIA_PLANKS_SHIPPING) //TODO: CTM
+            .addVariant("acacia_planks_encased_large", ChiselBlocks.ACACIA_PLANKS_ENCASED_LARGE) //TODO: CTM
+            .addVariant("acacia_planks_paneling", ChiselBlocks.ACACIA_PLANKS_PANELING) //TODO: CTM
+            .addVariant("acacia_planks_crude_paneling", ChiselBlocks.ACACIA_PLANKS_CRUDE_PANELING)
+            .addVariant("acacia_planks_stacked", ChiselBlocks.ACACIA_PLANKS_STACKED)
+            .addVariant("acacia_planks_smooth", ChiselBlocks.ACACIA_PLANKS_SMOOTH) //TODO: CTM
+            .addVariant("acacia_planks_encased_smooth", ChiselBlocks.ACACIA_PLANKS_ENCASED_SMOOTH) //TODO: CTM
+            .addVariant("acacia_planks_braid", ChiselBlocks.ACACIA_PLANKS_BRAID) //TODO: CTM
+            .addVariant("acacia_planks_log_cabin", ChiselBlocks.ACACIA_PLANKS_LOG_CABIN) //TODO: CTM - Custom
             .getFamily();
     public static final VariantFamily ALUMINUM = builder("aluminum", ChiselBlocks.ALUMINUM_CAUTION)
             .addVariant("aluminum_caution", ChiselBlocks.ALUMINUM_CAUTION)

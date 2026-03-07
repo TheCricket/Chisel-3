@@ -157,21 +157,21 @@ public class ChiselLang extends LangHelper {
 
     private void addAcacia() {
         addBlock(() -> Blocks.ACACIA_PLANKS, "Acacia Wood Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_LARGE, "Acacia Wood Planks", "Large Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_CRUDE_HORIZONTAL, "Acacia Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_VERTICAL, "Acacia Wood Planks", "Vertical Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_CRUDE_VERTICAL, "Acacia Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_ENCASED, "Acacia Wood Planks", "Encased Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_BRACED, "Acacia Wood Planks", "Braced Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_SHIPPING, "Acacia Wood Planks", "Shipping Crate");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_ENCASED_LARGE, "Acacia Wood Planks", "Encased Large Planks");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_PANELING, "Acacia Wood Planks", "Paneling");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_CRUDE_PANELING, "Acacia Wood Planks", "Crude Paneling");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_STACKED, "Acacia Wood Planks", "Stacked");
         addBlock(ChiselBlocks.ACACIA_PLANKS_SMOOTH, "Acacia Wood Planks", "Smooth");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_SHORT, "Acacia Wood Planks", "Short");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_FANCY, "Acacia Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_PANEL, "Acacia Wood Planks", "Panel");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_DOUBLE_SLAB, "Acacia Wood Planks", "Double Slab");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_CRATE, "Acacia Wood Planks", "Crate");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_CRATE_FANCY, "Acacia Wood Planks", "Fancy Crate");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_LONG, "Acacia Wood Planks", "Large Long");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_VERTICAL, "Acacia Wood Planks", "Vertical");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_VERTICAL_UNEVEN, "Acacia Wood Planks", "Vertical Uneven");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_PARQUET, "Acacia Wood Planks", "Parquet");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_BLINDS, "Acacia Wood Planks", "Plank Blinds");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_SCAFFOLD, "Acacia Wood Planks", "Scaffold");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_DISARRAY, "Acacia Wood Planks", "Planks in Disarray");
-        addBlock(ChiselBlocks.ACACIA_PLANKS_DISARRAY_VERTICAL, "Acacia Wood Planks", "Vertical Planks in Disarray");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_ENCASED_SMOOTH, "Acacia Wood Planks", "Encased Smooth");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_BRAID, "Acacia Wood Planks", "Braid");
+        addBlock(ChiselBlocks.ACACIA_PLANKS_LOG_CABIN, "Acacia Wood Planks", "Log Cabin");
     }
 
     private void addAluminum() {
