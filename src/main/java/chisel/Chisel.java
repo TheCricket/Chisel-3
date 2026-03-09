@@ -13,7 +13,7 @@ public class Chisel {
     public static final String MODID = "chisel";
 
     public Chisel(IEventBus bus, ModContainer container, Dist dist) {
-        ChiselBlocks.BLOCKS.register(bus);
+        ChiselBlocks.registerBlocks(bus);
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
         ChiselMenus.MENU_TYPES.register(bus);

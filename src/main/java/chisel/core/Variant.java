@@ -67,6 +67,7 @@ public class Variant extends VariantModels {
             case MULTI_LAYER -> registerMultiLayer(this, blockModels);
             case MULTI_LAYER_WATER -> registerMultiLayer(this, Fluids.WATER, blockModels);
             case MULTI_LAYER_LAVA -> registerMultiLayer(this, Fluids.LAVA, blockModels);
+            case MULTI_LAYER_CONNECTED -> registerMultiLayerConnectedModel(this, blockModels);
             case CARPET -> registerCarpetModel(this, blockModels);
         }
     }

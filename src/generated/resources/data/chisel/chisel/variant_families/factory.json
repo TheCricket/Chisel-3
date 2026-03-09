@@ -28,6 +28,11 @@
       "name": "factory_wireframe"
     },
     {
+      "block": "chisel:factory_wireframe_blue",
+      "model_type": "cube_all",
+      "name": "factory_wireframe_blue"
+    },
+    {
       "block": "chisel:factory_wireframe_purple",
       "model_type": "cube_all",
       "name": "factory_wireframe_purple"
@@ -96,11 +101,6 @@
       "block": "chisel:factory_circuit_blue",
       "model_type": "cube_all",
       "name": "factory_circuit_blue"
-    },
-    {
-      "block": "chisel:factory_wireframe_blue",
-      "model_type": "cube_all",
-      "name": "factory_wireframe_blue"
     }
   ]
 }

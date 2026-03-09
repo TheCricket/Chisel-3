@@ -1,0 +1,13 @@
+{
+  "parent": "chisel:block/cube_multi_pass_ctm",
+  "textures": {
+    "down": "chisel:block/antiblock/antiblock_pink-ew",
+    "east": "chisel:block/antiblock/antiblock_pink-news",
+    "layer1": "chisel:block/antiblock/antiblock_pink-bg",
+    "north": "chisel:block/antiblock/antiblock_pink-new",
+    "particle": "chisel:block/antiblock/antiblock_pink-bg",
+    "south": "chisel:block/antiblock/antiblock_pink-new",
+    "up": "chisel:block/antiblock/antiblock_pink-news",
+    "west": "chisel:block/antiblock/antiblock_pink-news"
+  }
+}

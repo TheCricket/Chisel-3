@@ -2,11 +2,11 @@
   "parent": "minecraft:block/cube",
   "textures": {
     "down": "chisel:block/laboratory/laboratory_panel_wall",
-    "east": "chisel:block/laboratory/laboratory_panel_wall-u",
-    "north": "chisel:block/laboratory/laboratory_panel_wall-u",
+    "east": "chisel:block/laboratory/laboratory_panel_wall-n",
+    "north": "chisel:block/laboratory/laboratory_panel_wall-n",
     "particle": "chisel:block/laboratory/laboratory_panel_wall",
-    "south": "chisel:block/laboratory/laboratory_panel_wall-u",
+    "south": "chisel:block/laboratory/laboratory_panel_wall-n",
     "up": "chisel:block/laboratory/laboratory_panel_wall",
-    "west": "chisel:block/laboratory/laboratory_panel_wall-u"
+    "west": "chisel:block/laboratory/laboratory_panel_wall-n"
   }
 }

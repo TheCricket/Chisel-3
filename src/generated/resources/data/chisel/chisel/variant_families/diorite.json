@@ -9,7 +9,7 @@
     },
     {
       "block": "chisel:diorite_pillar",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "diorite_pillar"
     },
     {

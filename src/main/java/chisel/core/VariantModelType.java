@@ -1,6 +1,7 @@
 package chisel.core;
 import com.mojang.serialization.Codec;
 import net.minecraft.util.StringRepresentable;
+import org.jspecify.annotations.NonNull;
 
 public enum VariantModelType implements StringRepresentable {
     CUBE_ALL("cube_all"),
@@ -14,6 +15,7 @@ public enum VariantModelType implements StringRepresentable {
     MULTI_LAYER("multi_layer"),
     MULTI_LAYER_LAVA("multi_layer_lava"),
     MULTI_LAYER_WATER("multi_layer_water"),
+    MULTI_LAYER_CONNECTED("multi_layer_connected"),
     CARPET("carpet");
 
     public static final Codec<VariantModelType> CODEC = StringRepresentable.fromEnum(VariantModelType::values);
@@ -24,7 +26,7 @@ public enum VariantModelType implements StringRepresentable {
     }
 
     @Override
-    public String getSerializedName() {
+    public @NonNull String getSerializedName() {
         return name;
     }
 }

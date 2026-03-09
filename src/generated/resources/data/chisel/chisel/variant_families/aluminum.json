@@ -3,34 +3,39 @@
   "prefix": "aluminum",
   "variants": [
     {
-      "block": "chisel:aluminum_caution",
-      "model_type": "cube_all",
-      "name": "aluminum_caution"
-    },
-    {
-      "block": "chisel:aluminum_shipping",
-      "model_type": "cube_all",
-      "name": "aluminum_shipping"
-    },
-    {
-      "block": "chisel:aluminum_thermal",
-      "model_type": "cube_all",
-      "name": "aluminum_thermal"
-    },
-    {
       "block": "chisel:aluminum_125",
       "model_type": "cube_all",
-      "name": "aluminum_125"
-    },
-    {
-      "block": "chisel:aluminum_bordered",
-      "model_type": "cube_all",
-      "name": "aluminum_bordered"
+      "name": "aluminum_bad_greggy"
     },
     {
       "block": "chisel:aluminum_bolted",
       "model_type": "cube_all",
       "name": "aluminum_bolted"
+    },
+    {
+      "block": "chisel:aluminum_caution",
+      "model_type": "cube_all",
+      "name": "aluminum_caution"
+    },
+    {
+      "block": "chisel:aluminum_crate",
+      "model_type": "cube_all",
+      "name": "aluminum_crate"
+    },
+    {
+      "block": "chisel:aluminum_machine",
+      "model_type": "cube_all",
+      "name": "aluminum_machine"
+    },
+    {
+      "block": "chisel:aluminum_scaffold",
+      "model_type": "cube_all",
+      "name": "aluminum_scaffold"
+    },
+    {
+      "block": "chisel:aluminum_thermal",
+      "model_type": "top_bottom_side",
+      "name": "aluminum_thermal"
     }
   ]
 }

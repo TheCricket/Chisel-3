@@ -2,6 +2,7 @@ package chisel.registry;
 
 import chisel.Chisel;
 import chisel.datagen.VariantFamilies;
+import chisel.registry.blocks.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,8 +19,9 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STONE = CREATIVE_MODE_TABS.register("chisel_stone", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselBlocks.MARBLE_RAW.get()))
-            .displayItems((_, output) -> List.of(VariantFamilies.ANDESITE,
+            .icon(() -> new ItemStack(ChiselStoneBlocks.MARBLE_RAW.get()))
+            .displayItems((_, output) -> List.of(
+                    VariantFamilies.ANDESITE,
                     VariantFamilies.BRICKS,
                     VariantFamilies.COBBLESTONE,
                     VariantFamilies.STONE_BRICKS,
@@ -49,8 +51,9 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WOOD = CREATIVE_MODE_TABS.register("chisel_wood", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabWoodChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselBlocks.OAK_PLANKS_SMOOTH.get()))
-            .displayItems((_, output) -> List.of(VariantFamilies.ACACIA,
+            .icon(() -> new ItemStack(ChiselWoodBlocks.OAK_PLANKS_SMOOTH.get()))
+            .displayItems((_, output) -> List.of(
+                    VariantFamilies.ACACIA,
                     VariantFamilies.BIRCH,
                     VariantFamilies.BOOKSHELF,
                     VariantFamilies.DARK_OAK,
@@ -61,25 +64,28 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> METAL = CREATIVE_MODE_TABS.register("chisel_metal", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabMetalChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselBlocks.IRON_INGOTS_LARGE.get()))
-            .displayItems((_, output) -> List.of(VariantFamilies.FACTORY,
-                    VariantFamilies.FUTURA,
-                    VariantFamilies.GOLD,
-                    VariantFamilies.HEX_PLATING,
-                    VariantFamilies.LARGE_HEX_PLATING,
-                    VariantFamilies.IRON,
-                    VariantFamilies.LABORATORY,
-                    VariantFamilies.TECHNICAL,
-                    VariantFamilies.TYRIAN,
-                    VariantFamilies.ALUMINUM,
-                    VariantFamilies.WARNING)
+            .icon(() -> new ItemStack(ChiselMetalBlocks.IRON_INGOTS_LARGE.get()))
+            .displayItems((_, output) -> List.of(
+                    VariantFamilies.FACTORY,
+                            VariantFamilies.COPPER,
+                            VariantFamilies.FUTURA,
+                            VariantFamilies.GOLD,
+                            VariantFamilies.HEX_PLATING,
+                            VariantFamilies.LARGE_HEX_PLATING,
+                            VariantFamilies.IRON,
+                            VariantFamilies.LABORATORY,
+                            VariantFamilies.TECHNICAL,
+                            VariantFamilies.TYRIAN,
+                            VariantFamilies.ALUMINUM,
+                            VariantFamilies.WARNING)
                     .forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER = CREATIVE_MODE_TABS.register("chisel_other", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabOtherChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselBlocks.ANTIBLOCK_0.get()))
-            .displayItems((_, output) -> List.of(VariantFamilies.ANTIBLOCK,
+            .icon(() -> new ItemStack(ChiselOtherBlocks.ANTIBLOCK_BLACK.get()))
+            .displayItems((_, output) -> List.of(
+                    VariantFamilies.ANTIBLOCK,
                     VariantFamilies.CARPET,
                     VariantFamilies.CARPET_FLOOR,
                     VariantFamilies.GLASS,
@@ -143,9 +149,9 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MODDED = CREATIVE_MODE_TABS.register("chisel_modded", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselBlocks.BRONZE_CAUTION.get()))
-            .displayItems((_, output) -> List.of(VariantFamilies.BRONZE,
-                    VariantFamilies.COPPER,
+            .icon(() -> new ItemStack(ChiselModdedBlocks.BRONZE_CAUTION.get()))
+            .displayItems((_, output) -> List.of(
+                    VariantFamilies.BRONZE,
                     VariantFamilies.LEAD,
                     VariantFamilies.SILVER,
                     VariantFamilies.STEEL,

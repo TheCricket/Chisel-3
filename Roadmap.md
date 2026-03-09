@@ -3,9 +3,9 @@
 Initial pass is just textures
 
 - [X] Acacia
-- [ ] Aluminum
-- [ ] Andesite
-- [ ] Antiblock
+- [X] Aluminum
+- [X] Andesite
+- [X] Antiblock
 - [ ] Birch
 - [ ] Bookshelf
 - [ ] Bricks
