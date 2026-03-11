@@ -2,7 +2,7 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/waterstone/waterstone_creeper",
-    "layer1": "minecraft:block/water_still",
+    "layer1": "minecraft:block/lava_still",
     "particle": "chisel:block/waterstone/waterstone_creeper"
   }
 }

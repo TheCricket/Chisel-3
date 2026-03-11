@@ -98,21 +98,21 @@ public class VariantFamilies {
             .addVariant("antiblock_yellow", ChiselOtherBlocks.ANTIBLOCK_YELLOW, VariantModelType.MULTI_LAYER_CONNECTED)
             .getFamily();
     public static final VariantFamily BIRCH = builder("birch_planks", Blocks.BIRCH_PLANKS)
-            .addVariant("birch_planks_smooth", ChiselWoodBlocks.BIRCH_PLANKS_SMOOTH)
-            .addVariant("birch_planks_short", ChiselWoodBlocks.BIRCH_PLANKS_SHORT)
-            .addVariant("birch_planks_fancy", ChiselWoodBlocks.BIRCH_PLANKS_FANCY)
-            .addVariant("birch_planks_panel", ChiselWoodBlocks.BIRCH_PLANKS_PANEL)
-            .addVariant("birch_planks_double_slab", ChiselWoodBlocks.BIRCH_PLANKS_DOUBLE_SLAB)
-            .addVariant("birch_planks_crate", ChiselWoodBlocks.BIRCH_PLANKS_CRATE)
-            .addVariant("birch_planks_crate_fancy", ChiselWoodBlocks.BIRCH_PLANKS_CRATE_FANCY)
-            .addVariant("birch_planks_long", ChiselWoodBlocks.BIRCH_PLANKS_LONG)
+            .addVariant("birch_planks_large", ChiselWoodBlocks.BIRCH_PLANKS_LARGE)
+            .addVariant("birch_planks_crude_horizontal", ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_HORIZONTAL) //TODO: CTM
             .addVariant("birch_planks_vertical", ChiselWoodBlocks.BIRCH_PLANKS_VERTICAL)
-            .addVariant("birch_planks_vertical_uneven", ChiselWoodBlocks.BIRCH_PLANKS_VERTICAL_UNEVEN)
-            .addVariant("birch_planks_parquet", ChiselWoodBlocks.BIRCH_PLANKS_PARQUET)
-            .addVariant("birch_planks_blinds", ChiselWoodBlocks.BIRCH_PLANKS_BLINDS)
-            .addVariant("birch_planks_scaffold", ChiselWoodBlocks.BIRCH_PLANKS_SCAFFOLD)
-            .addVariant("birch_planks_disarray", ChiselWoodBlocks.BIRCH_PLANKS_DISARRAY)
-            .addVariant("birch_planks_disarray_vertical", ChiselWoodBlocks.BIRCH_PLANKS_DISARRAY_VERTICAL)
+            .addVariant("birch_planks_crude_vertical", ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_VERTICAL) //TODO: CTM
+            .addVariant("birch_planks_encased", ChiselWoodBlocks.BIRCH_PLANKS_ENCASED) //TODO: CTM
+            .addVariant("birch_planks_braced", ChiselWoodBlocks.BIRCH_PLANKS_BRACED, VariantModelType.TOP_BOTTOM_SIDE) //TODO: CTM
+            .addVariant("birch_planks_shipping", ChiselWoodBlocks.BIRCH_PLANKS_SHIPPING) //TODO: CTM
+            .addVariant("birch_planks_encased_large", ChiselWoodBlocks.BIRCH_PLANKS_ENCASED_LARGE) //TODO: CTM
+            .addVariant("birch_planks_paneling", ChiselWoodBlocks.BIRCH_PLANKS_PANELING) //TODO: CTM
+            .addVariant("birch_planks_crude_paneling", ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_PANELING)
+            .addVariant("birch_planks_stacked", ChiselWoodBlocks.BIRCH_PLANKS_STACKED)
+            .addVariant("birch_planks_smooth", ChiselWoodBlocks.BIRCH_PLANKS_SMOOTH) //TODO: CTM
+            .addVariant("birch_planks_encased_smooth", ChiselWoodBlocks.BIRCH_PLANKS_ENCASED_SMOOTH) //TODO: CTM
+            .addVariant("birch_planks_braid", ChiselWoodBlocks.BIRCH_PLANKS_BRAID) //TODO: CTM
+            .addVariant("birch_planks_log_cabin", ChiselWoodBlocks.BIRCH_PLANKS_LOG_CABIN) //TODO: CTM - Custom
             .getFamily();
     public static final VariantFamily BOOKSHELF = builder("bookshelf", Blocks.BOOKSHELF)
             .addVariant("bookshelf_rainbow", ChiselWoodBlocks.BOOKSHELF_RAINBOW, VariantModelType.BOOKSHELF)
@@ -120,24 +120,55 @@ public class VariantFamilies {
             .addVariant("bookshelf_necromancer", ChiselWoodBlocks.BOOKSHELF_NECROMANCER, VariantModelType.BOOKSHELF)
             .addVariant("bookshelf_tomes", ChiselWoodBlocks.BOOKSHELF_TOMES, VariantModelType.BOOKSHELF)
             .addVariant("bookshelf_abandoned", ChiselWoodBlocks.BOOKSHELF_ABANDONED, VariantModelType.BOOKSHELF)
+            .addVariant("bookshelf_brim", ChiselWoodBlocks.BOOKSHELF_BRIM, VariantModelType.BOOKSHELF)
+            .addVariant("bookshelf_cans", ChiselWoodBlocks.BOOKSHELF_CANS, VariantModelType.BOOKSHELF)
             .addVariant("bookshelf_hoarder", ChiselWoodBlocks.BOOKSHELF_HOARDER, VariantModelType.BOOKSHELF)
-            .addVariant("bookshelf_pastel", ChiselWoodBlocks.BOOKSHELF_PASTEL, VariantModelType.BOOKSHELF)
+            .addVariant("bookshelf_papers", ChiselWoodBlocks.BOOKSHELF_PAPERS, VariantModelType.BOOKSHELF)
             .addVariant("bookshelf_historian", ChiselWoodBlocks.BOOKSHELF_HISTORIAN, VariantModelType.BOOKSHELF)
             .getFamily();
     public static final VariantFamily BRICKS = builder("bricks", Blocks.BRICKS)
-            .addVariant("bricks_large", ChiselStoneBlocks.BRICKS_LARGE)
-            .addVariant("bricks_mortarless", ChiselStoneBlocks.BRICKS_MORTARLESS)
-            .addVariant("bricks_varied", ChiselStoneBlocks.BRICKS_VARIED)
-            .addVariant("bricks_aged", ChiselStoneBlocks.BRICKS_AGED)
-            .addVariant("bricks_yellow", ChiselStoneBlocks.BRICKS_YELLOW)
+            .addVariant("bricks_array", ChiselStoneBlocks.BRICKS_ARRAY) // TODO: CTM
+            .addVariant("bricks_braid", ChiselStoneBlocks.BRICKS_BRAID)
+            .addVariant("bricks_chaotic", ChiselStoneBlocks.BRICKS_CHAOTIC) // TODO: CTM
+            .addVariant("bricks_chaotic_medium", ChiselStoneBlocks.BRICKS_CHAOTIC_MEDIUM)
+            .addVariant("bricks_chaotic_small", ChiselStoneBlocks.BRICKS_CHAOTIC_SMALL)
+            .addVariant("bricks_circular", ChiselStoneBlocks.BRICKS_CIRCULAR) // TODO: CTM
+            .addVariant("bricks_cracked", ChiselStoneBlocks.BRICKS_CRACKED)
+            .addVariant("bricks_cracked_bricks", ChiselStoneBlocks.BRICKS_CRACKED_BRICKS)
+            .addVariant("bricks_cuts", ChiselStoneBlocks.BRICKS_CUTS) // TODO: CTM
+            .addVariant("bricks_dent", ChiselStoneBlocks.BRICKS_DENT) // TODO: CTM
+            .addVariant("bricks_encased", ChiselStoneBlocks.BRICKS_ENCASED) // TODO: CTM
+            .addVariant("bricks_french", ChiselStoneBlocks.BRICKS_FRENCH)
+            .addVariant("bricks_french_2", ChiselStoneBlocks.BRICKS_FRENCH_2)
+            .addVariant("bricks_jellybean", ChiselStoneBlocks.BRICKS_JELLYBEAN) // TODO: CTM
+            .addVariant("bricks_layers", ChiselStoneBlocks.BRICKS_LAYERS)
+            .addVariant("bricks_mosaic", ChiselStoneBlocks.BRICKS_MOSAIC) // TODO: CTM
+            .addVariant("bricks_ornate", ChiselStoneBlocks.BRICKS_ORNATE)
+            .addVariant("bricks_panel", ChiselStoneBlocks.BRICKS_PANEL)
+            .addVariant("bricks_pillar", ChiselStoneBlocks.BRICKS_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("bricks_prism", ChiselStoneBlocks.BRICKS_PRISM)
+            .addVariant("bricks_raw", ChiselStoneBlocks.BRICKS_RAW)
+            .addVariant("bricks_road", ChiselStoneBlocks.BRICKS_ROAD)
+            .addVariant("bricks_slanted", ChiselStoneBlocks.BRICKS_SLANTED) // TODO: CTM
+            .addVariant("bricks_small", ChiselStoneBlocks.BRICKS_SMALL)
+            .addVariant("bricks_soft", ChiselStoneBlocks.BRICKS_SOFT)
+            .addVariant("bricks_solid", ChiselStoneBlocks.BRICKS_SOLID)
+            .addVariant("bricks_tiles_large", ChiselStoneBlocks.BRICKS_TILES_LARGE) // TODO: CTM
+            .addVariant("bricks_tiles_medium", ChiselStoneBlocks.BRICKS_TILES_MEDIUM)
+            .addVariant("bricks_tiles_small", ChiselStoneBlocks.BRICKS_TILES_SMALL)
+            .addVariant("bricks_triple", ChiselStoneBlocks.BRICKS_TRIPLE)
+            .addVariant("bricks_twisted", ChiselStoneBlocks.BRICKS_TWISTED, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("bricks_weaver", ChiselStoneBlocks.BRICKS_WEAVER) // TODO: CTM
+            .addVariant("bricks_zag", ChiselStoneBlocks.BRICKS_ZAG) // TODO: CTM
             .getFamily();
     public static final VariantFamily BRONZE = builder("bronze", ChiselModdedBlocks.BRONZE_CAUTION)
-            .addVariant("bronze_caution", ChiselModdedBlocks.BRONZE_CAUTION)
-            .addVariant("bronze_shipping", ChiselModdedBlocks.BRONZE_SHIPPING)
-            .addVariant("bronze_thermal", ChiselModdedBlocks.BRONZE_THERMAL)
-            .addVariant("bronze_125", ChiselModdedBlocks.BRONZE_125)
-            .addVariant("bronze_bordered", ChiselModdedBlocks.BRONZE_BORDERED)
+            .addVariant("bronze_bad_greggy", ChiselModdedBlocks.BRONZE_BAD_GREGGY) //TODO: CTM
             .addVariant("bronze_bolted", ChiselModdedBlocks.BRONZE_BOLTED)
+            .addVariant("bronze_caution", ChiselModdedBlocks.BRONZE_CAUTION) //TODO: CTM
+            .addVariant("bronze_crate", ChiselModdedBlocks.BRONZE_CRATE) //TODO: CTM
+            .addVariant("bronze_machine", ChiselModdedBlocks.BRONZE_MACHINE)
+            .addVariant("bronze_scaffold", ChiselModdedBlocks.BRONZE_SCAFFOLD) //TODO: CTM
+            .addVariant("bronze_thermal", ChiselModdedBlocks.BRONZE_THERMAL, VariantModelType.TOP_BOTTOM_SIDE)
             .getFamily();
     public static final VariantFamily CARPET = builder("carpet", ChiselOtherBlocks.CARPET_0)
             .addVariant("carpet_0", ChiselOtherBlocks.CARPET_0)

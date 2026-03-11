@@ -6,10 +6,10 @@ Initial pass is just textures
 - [X] Aluminum
 - [X] Andesite
 - [X] Antiblock
-- [ ] Birch
-- [ ] Bookshelf
-- [ ] Bricks
-- [ ] Bronze
+- [X] Birch
+- [X] Bookshelf
+- [X] Bricks
+- [X] Bronze
 - [ ] Carpet
 - [ ] Carpet Floor
 - [ ] Cloud
@@ -116,7 +116,7 @@ Initial pass is just textures
 
 ## Items
 - [ ] Ball o' Moss
-- [ ] Chisel
+- [ ] Chisel - Started
 - [ ] Diamond Chisel
 - [ ] Obsidian Chisel
 - [ ] Cloud in a Bottle

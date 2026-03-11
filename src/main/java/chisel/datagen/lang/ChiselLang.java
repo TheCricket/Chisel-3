@@ -241,51 +241,82 @@ public class ChiselLang extends LangHelper {
 
     private void addBirch() {
         addBlock(() -> Blocks.BIRCH_PLANKS, "Birch Wood Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_LARGE, "Birch Wood Planks", "Large Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_HORIZONTAL, "Birch Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_VERTICAL, "Birch Wood Planks", "Vertical Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_VERTICAL, "Birch Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_ENCASED, "Birch Wood Planks", "Encased Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_BRACED, "Birch Wood Planks", "Braced Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_SHIPPING, "Birch Wood Planks", "Shipping Crate");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_ENCASED_LARGE, "Birch Wood Planks", "Encased Large Planks");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_PANELING, "Birch Wood Planks", "Paneling");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_CRUDE_PANELING, "Birch Wood Planks", "Crude Paneling");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_STACKED, "Birch Wood Planks", "Stacked");
         addBlock(ChiselWoodBlocks.BIRCH_PLANKS_SMOOTH, "Birch Wood Planks", "Smooth");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_SHORT, "Birch Wood Planks", "Short");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_FANCY, "Birch Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_PANEL, "Birch Wood Planks", "Panel");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_DOUBLE_SLAB, "Birch Wood Planks", "Double Slab");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_CRATE, "Birch Wood Planks", "Crate");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_CRATE_FANCY, "Birch Wood Planks", "Fancy Crate");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_LONG, "Birch Wood Planks", "Large Long");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_VERTICAL, "Birch Wood Planks", "Vertical");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_VERTICAL_UNEVEN, "Birch Wood Planks", "Vertical Uneven");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_PARQUET, "Birch Wood Planks", "Parquet");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_BLINDS, "Birch Wood Planks", "Plank Blinds");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_SCAFFOLD, "Birch Wood Planks", "Scaffold");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_DISARRAY, "Birch Wood Planks", "Planks in Disarray");
-        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_DISARRAY_VERTICAL, "Birch Wood Planks", "Vertical Planks in Disarray");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_ENCASED_SMOOTH, "Birch Wood Planks", "Encased Smooth");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_BRAID, "Birch Wood Planks", "Braid");
+        addBlock(ChiselWoodBlocks.BIRCH_PLANKS_LOG_CABIN, "Birch Wood Planks", "Log Cabin");
     }
 
     private void addBookshelf() {
         addBlock(() -> Blocks.BOOKSHELF, "Bookshelf");
         addBlock(ChiselWoodBlocks.BOOKSHELF_RAINBOW, "Bookshelf", "Rainbow Books");
+        addBlock(ChiselWoodBlocks.BOOKSHELF_BRIM, "Bookshelf", "Brim");
+        addBlock(ChiselWoodBlocks.BOOKSHELF_CANS, "Bookshelf", "Cans");
         addBlock(ChiselWoodBlocks.BOOKSHELF_NECROMANCER_APPRENTICE, "Bookshelf", "Necromancer’s Apprentice");
         addBlock(ChiselWoodBlocks.BOOKSHELF_NECROMANCER, "Bookshelf", "Necromancer's");
         addBlock(ChiselWoodBlocks.BOOKSHELF_TOMES, "Bookshelf", "Red Tomes");
         addBlock(ChiselWoodBlocks.BOOKSHELF_ABANDONED, "Bookshelf", "Abandoned");
         addBlock(ChiselWoodBlocks.BOOKSHELF_HOARDER, "Bookshelf", "Hoarder's");
-        addBlock(ChiselWoodBlocks.BOOKSHELF_PASTEL, "Bookshelf", "filled to the brim with boring Pastel Books");
+        addBlock(ChiselWoodBlocks.BOOKSHELF_PAPERS, "Bookshelf", "Papers");
         addBlock(ChiselWoodBlocks.BOOKSHELF_HISTORIAN, "Bookshelf", "Historian's");
     }
 
     private void addBricks() {
         addBlock(() -> Blocks.BRICKS, "Brick Block");
-        addBlock(ChiselStoneBlocks.BRICKS_LARGE, "Brick Block", "Large Bricks");
-        addBlock(ChiselStoneBlocks.BRICKS_MORTARLESS, "Brick Block", "Mortarless Bricks");
-        addBlock(ChiselStoneBlocks.BRICKS_VARIED, "Brick Block", "Varied Bricks");
-        addBlock(ChiselStoneBlocks.BRICKS_AGED, "Brick Block", "Aged Bricks");
-        addBlock(ChiselStoneBlocks.BRICKS_YELLOW, "Brick Block", "Yellow Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_ARRAY, "Brick Block", "Array Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_BRAID, "Brick Block", "Braid Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CHAOTIC, "Brick Block", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CHAOTIC_MEDIUM, "Brick Block", "Medium Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CHAOTIC_SMALL, "Brick Block", "Small Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CIRCULAR, "Brick Block", "Circular Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CRACKED, "Brick Block", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CRACKED_BRICKS, "Brick Block", "Cracked Brick Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_CUTS, "Brick Block", "Brick Cuts");
+        addBlock(ChiselStoneBlocks.BRICKS_DENT, "Brick Block", "Dent Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_ENCASED, "Brick Block", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_FRENCH, "Brick Block", "French Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_FRENCH_2, "Brick Block", "French Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_JELLYBEAN, "Brick Block", "Jellybean Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_LAYERS, "Brick Block", "Layered Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_MOSAIC, "Brick Block", "Mosaic Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_ORNATE, "Brick Block", "Ornate Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_PANEL, "Brick Block", "Brick Panel");
+        addBlock(ChiselStoneBlocks.BRICKS_PILLAR, "Brick Block", "Brick Pillar");
+        addBlock(ChiselStoneBlocks.BRICKS_PRISM, "Brick Block", "Prism Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_RAW, "Brick Block", "Raw Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_ROAD, "Brick Block", "Road Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_SLANTED, "Brick Block", "Slanted Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_SMALL, "Brick Block", "Small Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_SOFT, "Brick Block", "Soft Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_SOLID, "Brick Block", "Solid Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_TILES_LARGE, "Brick Block", "Large Brick Tiles");
+        addBlock(ChiselStoneBlocks.BRICKS_TILES_MEDIUM, "Brick Block", "Medium Brick Tiles");
+        addBlock(ChiselStoneBlocks.BRICKS_TILES_SMALL, "Brick Block", "Small Brick Tiles");
+        addBlock(ChiselStoneBlocks.BRICKS_TRIPLE, "Brick Block", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_TWISTED, "Brick Block", "Twisted Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_WEAVER, "Brick Block", "Weaver Bricks");
+        addBlock(ChiselStoneBlocks.BRICKS_ZAG, "Brick Block", "Zag Bricks");
     }
 
     private void addBronze() {
+        addBlock(ChiselModdedBlocks.BRONZE_BAD_GREGGY, "Block of Bronze", "Egregious");
+        addBlock(ChiselModdedBlocks.BRONZE_BOLTED, "Block of Bronze", "Bolted");
         addBlock(ChiselModdedBlocks.BRONZE_CAUTION, "Block of Bronze", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.BRONZE_SHIPPING, "Block of Bronze", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.BRONZE_THERMAL, "Block of Bronze", "Thermal");
-        addBlock(ChiselModdedBlocks.BRONZE_125, "Block of Bronze", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.BRONZE_BORDERED, "Block of Bronze", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.BRONZE_BOLTED, "Block of Bronze", "Fancy Bolted Plating");
+        addBlock(ChiselModdedBlocks.BRONZE_CRATE, "Block of Bronze", "Shipping Crate");
+        addBlock(ChiselModdedBlocks.BRONZE_MACHINE, "Block of Bronze", "An Old Relic From The Land Of OneTeuFyv");
+        addBlock(ChiselModdedBlocks.BRONZE_SCAFFOLD, "Block of Bronze", "Scaffold");
+        addBlock(ChiselModdedBlocks.BRONZE_THERMAL, "Block of Bronze", "Thermal Series");
     }
 
     private void addCarpet() {

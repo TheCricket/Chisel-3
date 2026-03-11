@@ -3,7 +3,7 @@ import chisel.Chisel;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.renderer.block.model.Material;
+import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluids;
@@ -55,20 +55,21 @@ public class Variant extends VariantModels {
     }
 
     public void registerModel(BlockModelGenerators blockModels) {
+
         switch (modelType) {
-            case CUBE_ALL -> registerBlockModel(this, blockModels);
-            case PILLAR -> registerPillarModel(this, blockModels);
-            case BOOKSHELF -> registerBookshelfModel(this, blockModels);
-            case TOP_BOTTOM_SIDE -> registerBTSModel(this, blockModels);
-            case TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY -> registerTopBottomSideConnectedVertically(this, blockModels);
-            case CONNECTED -> registerConnectedTextureModel(this, blockModels);
-            case CONNECTED_VERTICALLY -> registerConnectedTextureVerticalModel(this, blockModels);
-            case CONNECTED_HORIZONTALLY -> registerConnectedTextureHorizontalModel(this, blockModels);
-            case MULTI_LAYER -> registerMultiLayer(this, blockModels);
-            case MULTI_LAYER_WATER -> registerMultiLayer(this, Fluids.WATER, blockModels);
-            case MULTI_LAYER_LAVA -> registerMultiLayer(this, Fluids.LAVA, blockModels);
-            case MULTI_LAYER_CONNECTED -> registerMultiLayerConnectedModel(this, blockModels);
-            case CARPET -> registerCarpetModel(this, blockModels);
+            case CUBE_ALL -> CUBE_ALL.generate(this, blockModels);
+            case PILLAR -> PILLAR.generate(this, blockModels);
+            case BOOKSHELF -> BOOKSHELF.generate(this, blockModels);
+            case TOP_BOTTOM_SIDE -> TOP_BOTTOM_SIDE.generate(this, blockModels);
+            case TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY -> TOP_BOTTOM_SIDE_CTMV.generate(this, blockModels);
+            case CONNECTED -> CTM.generate(this, blockModels);
+            case CONNECTED_VERTICALLY -> CTMV.generate(this, blockModels);
+            case CONNECTED_HORIZONTALLY -> CTMH.generate(this, blockModels);
+            case MULTI_LAYER -> MULTI_LAYER.generate(this, blockModels);
+            case MULTI_LAYER_WATER -> LAVASTONE.generate(this, blockModels);
+            case MULTI_LAYER_LAVA -> LAVASTONE.generate(this, blockModels);
+            case MULTI_LAYER_CONNECTED -> MULTI_LAYER_CTM.generate(this, blockModels);
+            case CARPET -> CARPET.generate(this, blockModels);
         }
     }
 

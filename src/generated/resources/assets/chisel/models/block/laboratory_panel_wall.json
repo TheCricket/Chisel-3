@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_top",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_panel_wall"
+    "side": "chisel:block/laboratory/laboratory_panel_wall",
+    "top": "chisel:block/laboratory/laboratory_panel_wall-top"
   }
 }

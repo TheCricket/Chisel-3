@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/bricks/bricks_twisted-bottom",
+    "side": "chisel:block/bricks/bricks_twisted-side",
+    "top": "chisel:block/bricks/bricks_twisted-top"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "parent": "chisel:block/cube_multi_pass_ctm",
   "textures": {
-    "down": "chisel:block/antiblock/antiblock_cyan",
-    "east": "chisel:block/antiblock/antiblock_cyan-n",
+    "down": "chisel:block/antiblock/antiblock_cyan-news",
+    "east": "chisel:block/antiblock/antiblock_cyan-ns",
     "layer1": "chisel:block/antiblock/antiblock_cyan-bg",
-    "north": "chisel:block/antiblock/antiblock_cyan-n",
+    "north": "chisel:block/antiblock/antiblock_cyan-ns",
     "particle": "chisel:block/antiblock/antiblock_cyan-bg",
-    "south": "chisel:block/antiblock/antiblock_cyan-n",
+    "south": "chisel:block/antiblock/antiblock_cyan-ns",
     "up": "chisel:block/antiblock/antiblock_cyan-news",
-    "west": "chisel:block/antiblock/antiblock_cyan-n"
+    "west": "chisel:block/antiblock/antiblock_cyan-ns"
   }
 }

@@ -1,7 +1,12 @@
 package chisel.item;
 
+import chisel.menu.ChiselMenu;
+import io.netty.buffer.Unpooled;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
@@ -13,13 +18,14 @@ public class ChiselItem extends Item {
     }
 
     @Override
-    public @NonNull InteractionResult use(@NonNull Level level, @NonNull Player player, @NonNull InteractionHand hand) {
-        if(hand == InteractionHand.MAIN_HAND) {
+    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
+        if (!level.isClientSide()) {
             player.startUsingItem(hand);
-            //player.openMenu();
+            player.openMenu(new SimpleMenuProvider(
+                    (id, inv, _) -> new ChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer().setBoolean(0, hand == InteractionHand.MAIN_HAND))),
+                    Component.translatable("container.chisel")
+            ));
         }
-        return super.use(level, player, hand);
+        return InteractionResult.SUCCESS;
     }
-
-
 }

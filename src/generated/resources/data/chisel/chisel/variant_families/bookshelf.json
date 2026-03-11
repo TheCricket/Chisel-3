@@ -28,14 +28,24 @@
       "name": "bookshelf_abandoned"
     },
     {
+      "block": "chisel:bookshelf_brim",
+      "model_type": "bookshelf",
+      "name": "bookshelf_brim"
+    },
+    {
+      "block": "chisel:bookshelf_cans",
+      "model_type": "bookshelf",
+      "name": "bookshelf_cans"
+    },
+    {
       "block": "chisel:bookshelf_hoarders",
       "model_type": "bookshelf",
       "name": "bookshelf_hoarder"
     },
     {
-      "block": "chisel:bookshelf_pastel",
+      "block": "chisel:bookshelf_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_pastel"
+      "name": "bookshelf_papers"
     },
     {
       "block": "chisel:bookshelf_historian",

@@ -18,6 +18,7 @@ import java.util.function.Supplier;
 
 public abstract class LangHelper extends LanguageProvider {
     private final PackOutput output;
+    protected boolean generateUpsideDown = true;
     public final Map<String, String> upsideDown = new HashMap<>();
 
     public LangHelper(PackOutput output, String locale) {
@@ -29,7 +30,7 @@ public abstract class LangHelper extends LanguageProvider {
     public void add(@NonNull String key, @NonNull String value) {
         super.add(key, value);
         List<LangFormatSplitter.Component> splitEnglish = LangFormatSplitter.split(value);
-        upsideDown.put(key, LangConversionHelper.convertComponents(splitEnglish));
+        if(generateUpsideDown) upsideDown.put(key, LangConversionHelper.convertComponents(splitEnglish));
     }
 
     public void addBlock(Supplier<? extends Block> key, String family, String desc) {
@@ -64,9 +65,11 @@ public abstract class LangHelper extends LanguageProvider {
         ImmutableList.Builder<CompletableFuture<?>> builder = ImmutableList.builder();
         builder.add(languageGen);
 
-        JsonObject udJson = new JsonObject();
-        upsideDown.forEach(udJson::addProperty);
-        builder.add(DataProvider.saveStable(cache, udJson, output.getOutputFolder(PackOutput.Target.RESOURCE_PACK).resolve(Chisel.MODID).resolve("lang").resolve("en_ud.json")));
+        if(generateUpsideDown) {
+            JsonObject udJson = new JsonObject();
+            upsideDown.forEach(udJson::addProperty);
+            builder.add(DataProvider.saveStable(cache, udJson, output.getOutputFolder(PackOutput.Target.RESOURCE_PACK).resolve(Chisel.MODID).resolve("lang").resolve("en_ud.json")));
+        }
 
         return CompletableFuture.allOf(builder.build().toArray(CompletableFuture[]::new));
     }

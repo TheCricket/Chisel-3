@@ -78,6 +78,10 @@ public class VariantFamily {
         return base;
     }
 
+    public boolean isBlockInFamily(Block block) {
+        return block == getBase() || variants.stream().anyMatch(v -> v.getBlock().get() == block);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

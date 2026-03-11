@@ -7,28 +7,63 @@
     },
     {
       "apply": {
-        "model": "chisel:block/laboratory_panel_dotted_c1"
+        "model": "chisel:block/laboratory_panel_dotted_c1",
+        "x": 90,
+        "z": 180
       },
       "when": {
-        "up": "true"
+        "north": "true"
       }
     },
     {
       "apply": {
         "model": "chisel:block/laboratory_panel_dotted_c1",
-        "x": 180
+        "x": 270
       },
       "when": {
-        "down": "true"
+        "south": "true"
       }
     },
     {
       "apply": {
-        "model": "chisel:block/laboratory_panel_dotted_c2"
+        "model": "chisel:block/laboratory_panel_dotted_c1",
+        "x": 90,
+        "y": 270,
+        "z": 180
       },
       "when": {
-        "down": "true",
-        "up": "true"
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_dotted_c1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_dotted_c2",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/laboratory_panel_dotted_c2",
+        "x": 270
+      },
+      "when": {
+        "north": "true",
+        "south": "true"
       }
     }
   ]

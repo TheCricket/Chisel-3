@@ -7,12 +7,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ChiselModdedBlocks extends ChiselBlocksProvider {
-    public static DeferredBlock<Block> BRONZE_CAUTION;
-    public static DeferredBlock<Block> BRONZE_SHIPPING;
-    public static DeferredBlock<Block> BRONZE_THERMAL;
-    public static DeferredBlock<Block> BRONZE_125;
-    public static DeferredBlock<Block> BRONZE_BORDERED;
+    public static DeferredBlock<Block> BRONZE_BAD_GREGGY;
     public static DeferredBlock<Block> BRONZE_BOLTED;
+    public static DeferredBlock<Block> BRONZE_CAUTION;
+    public static DeferredBlock<Block> BRONZE_CRATE;
+    public static DeferredBlock<Block> BRONZE_MACHINE;
+    public static DeferredBlock<Block> BRONZE_SCAFFOLD;
+    public static DeferredBlock<Block> BRONZE_THERMAL;
 
     public static DeferredBlock<Block> LEAD_CAUTION;
     public static DeferredBlock<Block> LEAD_SHIPPING;
@@ -51,12 +52,13 @@ public class ChiselModdedBlocks extends ChiselBlocksProvider {
 
     @Override
     public void registerBlocks() {
-        BRONZE_CAUTION = register("bronze_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        BRONZE_SHIPPING = register("bronze_shipping", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        BRONZE_THERMAL = register("bronze_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        BRONZE_125 = register("bronze_125", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        BRONZE_BORDERED = register("bronze_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_BAD_GREGGY = register("bronze_bad_greggy", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         BRONZE_BOLTED = register("bronze_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_CAUTION = register("bronze_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_CRATE = register("bronze_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_MACHINE = register("bronze_machine", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_SCAFFOLD = register("bronze_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        BRONZE_THERMAL = register("bronze_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
         LEAD_CAUTION = register("lead_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         LEAD_SHIPPING = register("lead_shipping", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
