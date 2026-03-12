@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/andesite/andesitePillar-side",
-    "end": "chisel:blocks/andesite/andesitePillar-top",
-    "side": "chisel:blocks/andesite/andesitePillar-side"
-  }
-}

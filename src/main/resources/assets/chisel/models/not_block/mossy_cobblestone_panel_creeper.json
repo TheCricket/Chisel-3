@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/cobblestonemossy/terrain-pistonback-darkcreeper",
-    "all": "chisel:blocks/cobblestonemossy/terrain-pistonback-darkcreeper"
-  }
-}

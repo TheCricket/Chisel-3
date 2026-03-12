@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/temple/stand-mosaic",
-    "all": "chisel:blocks/temple/stand-mosaic"
-  }
-}

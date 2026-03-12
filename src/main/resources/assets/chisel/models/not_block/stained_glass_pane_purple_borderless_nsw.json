@@ -1,8 +1,0 @@
-{
-  "parent": "block/pane_nsw",
-  "textures": {
-    "particle": "chisel:blocks/glasspanedyed/purple-transparent-side",
-    "edge": "chisel:blocks/glasspanedyed/purple-transparent-top",
-    "pane": "chisel:blocks/glasspanedyed/purple-transparent-side"
-  }
-}

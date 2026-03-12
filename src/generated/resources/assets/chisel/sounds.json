@@ -1,0 +1,69 @@
+{
+  "dig_grimstone": {
+    "sounds": [
+      "chisel:dig/grimstone1"
+    ]
+  },
+  "dig_holystone": {
+    "sounds": [
+      "chisel:dig/holystone1",
+      "chisel:dig/holystone2",
+      "chisel:dig/holystone5"
+    ]
+  },
+  "dig_metal": {
+    "sounds": [
+      "chisel:dig/metal",
+      "chisel:dig/metal1",
+      "chisel:dig/metal2",
+      "chisel:dig/metal3",
+      "chisel:dig/metal7",
+      "chisel:dig/metal8"
+    ]
+  },
+  "fallback": {
+    "sounds": [
+      "chisel:chisel/fallback"
+    ]
+  },
+  "squash": {
+    "sounds": [
+      "chisel:random/squash",
+      "chisel:random/squash2"
+    ]
+  },
+  "step_holystone": {
+    "sounds": [
+      "chisel:step/holystone3",
+      "chisel:step/holystone7"
+    ]
+  },
+  "step_metal": {
+    "sounds": [
+      "chisel:step/metal4",
+      "chisel:step/metal5",
+      "chisel:step/metal6",
+      "chisel:step/metal9"
+    ]
+  },
+  "step_temple": {
+    "sounds": [
+      "chisel:step/templeblock1",
+      "chisel:step/templeblock2",
+      "chisel:step/templeblock3",
+      "chisel:step/templeblock4",
+      "chisel:step/templeblock5"
+    ]
+  },
+  "wood": {
+    "sounds": [
+      "chisel:chisel/wood2",
+      "chisel:chisel/wood3",
+      "chisel:chisel/wood4",
+      "chisel:chisel/wood5",
+      "chisel:chisel/wood8",
+      "chisel:chisel/wood9",
+      "chisel:chisel/wood11"
+    ]
+  }
+}

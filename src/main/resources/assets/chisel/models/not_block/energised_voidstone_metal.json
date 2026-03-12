@@ -1,8 +1,0 @@
-{
-  "parent": "chisel:block/cube_multipass",
-  "textures": {
-    "particle": "chisel:blocks/animations/hades",
-    "layer0": "chisel:blocks/animations/hades",
-    "layer1": "chisel:blocks/voidstone/animated/metalborder"
-  }
-}

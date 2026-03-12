@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/antiblock/purple-antiblock",
-    "all": "chisel:blocks/antiblock/purple-antiblock"
-  }
-}

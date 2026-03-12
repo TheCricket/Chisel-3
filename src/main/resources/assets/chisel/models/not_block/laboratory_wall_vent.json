@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/laboratory/laboratory_wallvents",
-    "end": "chisel:blocks/laboratory/laboratory_wallvents-top",
-    "side": "chisel:blocks/laboratory/laboratory_wallvents"
-  }
-}

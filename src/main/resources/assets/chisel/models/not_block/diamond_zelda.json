@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/diamond/terrain-diamond-zelda",
-    "all": "chisel:blocks/diamond/terrain-diamond-zelda"
-  }
-}

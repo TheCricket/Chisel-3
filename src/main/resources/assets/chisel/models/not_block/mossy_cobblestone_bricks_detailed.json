@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/cobblestonemossy/terrain-cob-detailedbrick",
-    "all": "chisel:blocks/cobblestonemossy/terrain-cob-detailedbrick"
-  }
-}

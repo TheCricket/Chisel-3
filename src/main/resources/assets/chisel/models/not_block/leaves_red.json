@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/leaves/red_roses",
-    "all": "chisel:blocks/leaves/red_roses"
-  }
-}

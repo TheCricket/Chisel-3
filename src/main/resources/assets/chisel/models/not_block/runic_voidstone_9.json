@@ -1,8 +1,0 @@
-
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/voidstone/runes/runeCyan",
-    "all": "chisel:blocks/voidstone/runes/runeCyan"
-  }
-}

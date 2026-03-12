@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/temple/plate-cracked-7",
-    "all": "chisel:blocks/temple/plate-cracked-7"
-  }
-}

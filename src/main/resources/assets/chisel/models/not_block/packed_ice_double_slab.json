@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/ice/a1-stoneslab-ice-side",
-    "end": "chisel:blocks/ice/a1-stoneslab-ice-top",
-    "side": "chisel:blocks/ice/a1-stoneslab-ice-side"
-  }
-}

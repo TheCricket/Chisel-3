@@ -1,8 +1,0 @@
-{
-  "parent": "block/pane_nse",
-  "textures": {
-    "particle": "chisel:blocks/glasspane/terrain-glassbubble-side",
-    "edge": "chisel:blocks/glasspane/terrain-glassbubble-top",
-    "pane": "chisel:blocks/glasspane/terrain-glassbubble-side"
-  }
-}

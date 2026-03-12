@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/lightstone/a1-glowstone-growth",
-    "all": "chisel:blocks/lightstone/a1-glowstone-growth"
-  }
-}

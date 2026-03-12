@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/icepillar/plainplain-side",
-    "end": "chisel:blocks/icepillar/plainplain-top",
-    "side": "chisel:blocks/icepillar/plainplain-side"
-  }
-}

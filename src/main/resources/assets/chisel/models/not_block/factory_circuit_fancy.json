@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/factory/circuit",
-    "all": "chisel:blocks/factory/circuit"
-  }
-}

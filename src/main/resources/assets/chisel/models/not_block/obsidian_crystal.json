@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/obsidian/crystal",
-    "all": "chisel:blocks/obsidian/crystal"
-  }
-}

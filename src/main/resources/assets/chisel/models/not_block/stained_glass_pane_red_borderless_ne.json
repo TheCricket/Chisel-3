@@ -1,8 +1,0 @@
-{
-  "parent": "block/pane_ne",
-  "textures": {
-    "particle": "chisel:blocks/glasspanedyed/red-transparent-side",
-    "edge": "chisel:blocks/glasspanedyed/red-transparent-top",
-    "pane": "chisel:blocks/glasspanedyed/red-transparent-side"
-  }
-}

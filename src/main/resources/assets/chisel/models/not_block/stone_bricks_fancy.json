@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/stonebrick/fancy",
-    "all": "chisel:blocks/stonebrick/fancy"
-  }
-}

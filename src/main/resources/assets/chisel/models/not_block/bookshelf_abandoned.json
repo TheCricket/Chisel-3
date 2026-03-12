@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/bookshelf/abandoned",
-    "end": "chisel:blocks/bookshelf/abandoned-top",
-    "side": "chisel:blocks/bookshelf/abandoned"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/netherbrick/a1-netherbrick-meat",
-    "all": "chisel:blocks/netherbrick/a1-netherbrick-meat"
-  }
-}

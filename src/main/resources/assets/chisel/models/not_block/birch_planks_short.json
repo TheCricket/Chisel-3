@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/planks-birch/short",
-    "all": "chisel:blocks/planks-birch/short"
-  }
-}

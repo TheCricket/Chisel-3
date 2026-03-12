@@ -1,8 +1,0 @@
-{
-  "parent": "block/pane_nsew",
-  "textures": {
-    "particle": "chisel:blocks/paper/throughMiddle",
-    "edge": "chisel:blocks/paper/throughMiddle",
-    "pane": "chisel:blocks/paper/throughMiddle"
-  }
-}

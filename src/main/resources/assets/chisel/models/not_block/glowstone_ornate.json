@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/lightstone/terrain-sulphur-ornate",
-    "all": "chisel:blocks/lightstone/terrain-sulphur-ornate"
-  }
-}

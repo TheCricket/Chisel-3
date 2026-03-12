@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/fantasy/brick-faded-side",
-    "end": "chisel:blocks/fantasy/brick-faded-top",
-    "side": "chisel:blocks/fantasy/brick-faded-side"
-  }
-}

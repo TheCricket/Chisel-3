@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/factory/metalbox-side",
-    "end": "chisel:blocks/factory/metalbox-top",
-    "side": "chisel:blocks/factory/metalbox-side"
-  }
-}

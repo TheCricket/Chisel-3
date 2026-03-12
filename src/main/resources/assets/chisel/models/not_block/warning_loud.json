@@ -1,8 +1,0 @@
-{
-  "parent": "chisel:block/cube_multipass",
-  "textures": {
-    "particle": "chisel:blocks/warning/sound",
-    "layer0": "chisel:blocks/warning/base",
-    "layer1": "chisel:blocks/warning/sound"
-  }
-}

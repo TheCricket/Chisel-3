@@ -1,8 +1,0 @@
-{
-  "parent": "block/pane_sew",
-  "textures": {
-    "particle": "chisel:blocks/glasspanedyed/yellow-bubble-side",
-    "edge": "chisel:blocks/glasspanedyed/yellow-bubble-top",
-    "pane": "chisel:blocks/glasspanedyed/yellow-bubble-side"
-  }
-}

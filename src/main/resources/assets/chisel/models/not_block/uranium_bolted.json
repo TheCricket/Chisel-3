@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/metals/uranium/bolted",
-    "all": "chisel:blocks/metals/uranium/bolted"
-  }
-}

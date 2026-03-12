@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "chisel:blocks/emerald/panelclassic",
-    "all": "chisel:blocks/emerald/panelclassic"
-  }
-}

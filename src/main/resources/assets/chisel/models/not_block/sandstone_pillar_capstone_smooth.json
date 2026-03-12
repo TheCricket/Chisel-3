@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/sandstone/smooth-cap-side",
-    "end": "chisel:blocks/sandstone/smooth-cap-top",
-    "side": "chisel:blocks/sandstone/smooth-cap-side"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/technical/malfunctionFan-side",
-    "end": "chisel:blocks/technical/malfunctionFan-top",
-    "side": "chisel:blocks/technical/malfunctionFan-side"
-  }
-}

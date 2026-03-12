@@ -2,9 +2,7 @@ package chisel;
 
 import chisel.registry.*;
 import net.minecraft.resources.Identifier;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 
 import java.util.logging.Logger;
@@ -15,7 +13,8 @@ public class Chisel {
     public static final String MODID = "chisel";
     public static final Logger LOGGER = Logger.getLogger(Chisel.MODID);
 
-    public Chisel(IEventBus bus, ModContainer container, Dist dist) {
+    public Chisel(IEventBus bus) {
+        ChiselSounds.SOUNDS.register(bus);
         ChiselBlocks.registerBlocks(bus);
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);

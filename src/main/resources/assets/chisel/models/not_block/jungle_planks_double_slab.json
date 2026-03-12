@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "particle": "chisel:blocks/planks-jungle/double-side",
-    "end": "chisel:blocks/planks-jungle/double-top",
-    "side": "chisel:blocks/planks-jungle/double-side"
-  }
-}
