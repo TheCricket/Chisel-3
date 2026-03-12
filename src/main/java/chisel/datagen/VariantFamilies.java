@@ -214,21 +214,42 @@ public class VariantFamilies {
             .addVariant("cloud_vertical", ChiselOtherBlocks.CLOUD_VERTICAL)
             .getFamily();
     public static final VariantFamily COBBLESTONE = builder("cobblestone", Blocks.COBBLESTONE)
-            .addVariant("cobblestone_bricks_aligned", ChiselStoneBlocks.COBBLESTONE_BRICKS_ALIGNED)
-            .addVariant("cobblestone_bricks_detailed", ChiselStoneBlocks.COBBLESTONE_BRICKS_DETAILED)
-            .addVariant("cobblestone_bricks_small", ChiselStoneBlocks.COBBLESTONE_BRICKS_SMALL)
-            .addVariant("cobblestone_tiles_large", ChiselStoneBlocks.COBBLESTONE_TILES_LARGE)
-            .addVariant("cobblestone_tiles_small", ChiselStoneBlocks.COBBLESTONE_TILES_SMALL)
-            .addVariant("cobblestone_tiles_french", ChiselStoneBlocks.COBBLESTONE_TILES_FRENCH)
-            .addVariant("cobblestone_tiles_french_light", ChiselStoneBlocks.COBBLESTONE_TILES_FRENCH_LIGHT)
-            .addVariant("cobblestone_tiles_creeper", ChiselStoneBlocks.COBBLESTONE_TILES_CREEPER)
-            .addVariant("cobblestone_tiles_damaged", ChiselStoneBlocks.COBBLESTONE_TILES_DAMAGED)
-            .addVariant("cobblestone_tiles_huge", ChiselStoneBlocks.COBBLESTONE_TILES_HUGE)
-            .addVariant("cobblestone_panel_creeper", ChiselStoneBlocks.COBBLESTONE_PANEL_CREEPER)
-            .addVariant("cobblestone_dent", ChiselStoneBlocks.COBBLESTONE_DENT)
+            .addVariant("cobblestone_array", ChiselStoneBlocks.COBBLESTONE_ARRAY) //TODO: CTM
+            .addVariant("cobblestone_braid", ChiselStoneBlocks.COBBLESTONE_BRAID)
+            .addVariant("cobblestone_chaotic", ChiselStoneBlocks.COBBLESTONE_CHAOTIC) //TODO: CTM
+            .addVariant("cobblestone_chaotic_medium", ChiselStoneBlocks.COBBLESTONE_CHAOTIC_MEDIUM)
+            .addVariant("cobblestone_chaotic_small", ChiselStoneBlocks.COBBLESTONE_CHAOTIC_SMALL)
+            .addVariant("cobblestone_circular", ChiselStoneBlocks.COBBLESTONE_CIRCULAR) //TODO: CTM
+            .addVariant("cobblestone_cracked", ChiselStoneBlocks.COBBLESTONE_CRACKED)
+            .addVariant("cobblestone_cracked_bricks", ChiselStoneBlocks.COBBLESTONE_CRACKED_BRICKS)
+            .addVariant("cobblestone_cuts", ChiselStoneBlocks.COBBLESTONE_CUTS) //TODO: CTM
+            .addVariant("cobblestone_dent", ChiselStoneBlocks.COBBLESTONE_DENT) //TODO: CTM
+            .addVariant("cobblestone_emboss", ChiselStoneBlocks.COBBLESTONE_EMBOSS)
+            .addVariant("cobblestone_encased", ChiselStoneBlocks.COBBLESTONE_ENCASED) //TODO: CTM
+            .addVariant("cobblestone_french_1", ChiselStoneBlocks.COBBLESTONE_FRENCH)
+            .addVariant("cobblestone_french_2", ChiselStoneBlocks.COBBLESTONE_FRENCH_2)
+            .addVariant("cobblestone_indent", ChiselStoneBlocks.COBBLESTONE_INDENT)
+            .addVariant("cobblestone_jellybean", ChiselStoneBlocks.COBBLESTONE_JELLYBEAN) //TODO: CTM
+            .addVariant("cobblestone_layers", ChiselStoneBlocks.COBBLESTONE_LAYERS)
+            .addVariant("cobblestone_marker", ChiselStoneBlocks.COBBLESTONE_MARKER)
+            .addVariant("cobblestone_mosaic", ChiselStoneBlocks.COBBLESTONE_MOSAIC)
+            .addVariant("cobblestone_ornate", ChiselStoneBlocks.COBBLESTONE_ORNATE)
             .addVariant("cobblestone_panel", ChiselStoneBlocks.COBBLESTONE_PANEL)
-            .addVariant("cobblestone_panel_light", ChiselStoneBlocks.COBBLESTONE_PANEL_LIGHT)
-            .addVariant("cobblestone_panel_dark", ChiselStoneBlocks.COBBLESTONE_PANEL_DARK)
+            .addVariant("cobblestone_pillar", ChiselStoneBlocks.COBBLESTONE_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("cobblestone_prism", ChiselStoneBlocks.COBBLESTONE_PRISM)
+            .addVariant("cobblestone_raw", ChiselStoneBlocks.COBBLESTONE_RAW)
+            .addVariant("cobblestone_road", ChiselStoneBlocks.COBBLESTONE_ROAD)
+            .addVariant("cobblestone_slanted", ChiselStoneBlocks.COBBLESTONE_SLANTED)
+            .addVariant("cobblestone_small", ChiselStoneBlocks.COBBLESTONE_SMALL)
+            .addVariant("cobblestone_soft", ChiselStoneBlocks.COBBLESTONE_SOFT)
+            .addVariant("cobblestone_solid", ChiselStoneBlocks.COBBLESTONE_SOLID)
+            .addVariant("cobblestone_tiles_large", ChiselStoneBlocks.COBBLESTONE_TILES_LARGE) //TODO: CTM
+            .addVariant("cobblestone_tiles_medium", ChiselStoneBlocks.COBBLESTONE_TILES_MEDIUM)
+            .addVariant("cobblestone_tiles_small", ChiselStoneBlocks.COBBLESTONE_TILES_SMALL)
+            .addVariant("cobblestone_triple", ChiselStoneBlocks.COBBLESTONE_TRIPLE)
+            .addVariant("cobblestone_twisted", ChiselStoneBlocks.COBBLESTONE_TWISTED, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("cobblestone_weaver", ChiselStoneBlocks.COBBLESTONE_WEAVER) //TODO: CTM
+            .addVariant("cobblestone_zag", ChiselStoneBlocks.COBBLESTONE_ZAG) //TODO: CTM
             .getFamily();
     public static final VariantFamily CONCRETE = builder("concrete", ChiselStoneBlocks.CONCRETE_RAW)
             .addVariant("concrete_raw", ChiselStoneBlocks.CONCRETE_RAW)
@@ -283,10 +304,10 @@ public class VariantFamilies {
             .addVariant("diamond_ornate", ChiselOtherBlocks.DIAMOND_ORNATE)
             .getFamily();
     public static final VariantFamily DIORITE = builder("diorite", Blocks.DIORITE)
-            .addVariant("diorite_polished", ChiselStoneBlocks.DIORITE_POLISHED)
-            .addVariant("diorite_pillar", ChiselStoneBlocks.DIORITE_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("diorite_bricks", ChiselStoneBlocks.DIORITE_BRICKS)
             .addVariant("diorite_ornate", ChiselStoneBlocks.DIORITE_ORNATE)
+            .addVariant("diorite_pillar", ChiselStoneBlocks.DIORITE_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("diorite_polished", ChiselStoneBlocks.DIORITE_POLISHED)
             .addVariant("diorite_prismatic", ChiselStoneBlocks.DIORITE_PRISMATIC)
             .addVariant("diorite_tiles_small", ChiselStoneBlocks.DIORITE_TILES_SMALL)
             .getFamily();
@@ -448,10 +469,10 @@ public class VariantFamilies {
             .addVariant("gold_bolted", ChiselMetalBlocks.GOLD_BOLTED)
             .getFamily();
     public static final VariantFamily GRANITE = builder("granite", Blocks.GRANITE)
-            .addVariant("granite_polished", ChiselStoneBlocks.GRANITE_POLISHED)
-            .addVariant("granite_pillar", ChiselStoneBlocks.GRANITE_PILLAR)
             .addVariant("granite_bricks", ChiselStoneBlocks.GRANITE_BRICKS)
             .addVariant("granite_ornate", ChiselStoneBlocks.GRANITE_ORNATE)
+            .addVariant("granite_pillar", ChiselStoneBlocks.GRANITE_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("granite_polished", ChiselStoneBlocks.GRANITE_POLISHED)
             .addVariant("granite_prismatic", ChiselStoneBlocks.GRANITE_PRISMATIC)
             .addVariant("granite_tiles_small", ChiselStoneBlocks.GRANITE_TILES_SMALL)
             .getFamily();

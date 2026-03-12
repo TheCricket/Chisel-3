@@ -3,16 +3,6 @@
   "prefix": "granite",
   "variants": [
     {
-      "block": "chisel:granite_polished",
-      "model_type": "cube_all",
-      "name": "granite_polished"
-    },
-    {
-      "block": "chisel:granite_pillar",
-      "model_type": "cube_all",
-      "name": "granite_pillar"
-    },
-    {
       "block": "chisel:granite_bricks",
       "model_type": "cube_all",
       "name": "granite_bricks"
@@ -21,6 +11,16 @@
       "block": "chisel:granite_ornate",
       "model_type": "cube_all",
       "name": "granite_ornate"
+    },
+    {
+      "block": "chisel:granite_pillar",
+      "model_type": "top_bottom_side",
+      "name": "granite_pillar"
+    },
+    {
+      "block": "chisel:granite_polished",
+      "model_type": "cube_all",
+      "name": "granite_polished"
     },
     {
       "block": "chisel:granite_prismatic",

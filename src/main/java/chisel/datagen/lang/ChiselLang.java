@@ -368,21 +368,42 @@ public class ChiselLang extends LangHelper {
 
     private void addCobblestone() {
         addBlock(() -> Blocks.COBBLESTONE, "Cobblestone");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_BRICKS_ALIGNED, "Cobblestone", "Aligned Bricks");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_BRICKS_DETAILED, "Cobblestone", "Detailed Bricks");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_BRICKS_SMALL, "Cobblestone", "Small Bricks");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_LARGE, "Cobblestone", "Large Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_SMALL, "Cobblestone", "Small Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_FRENCH, "Cobblestone", "French Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_FRENCH_LIGHT, "Cobblestone", "French Tiles Light");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_CREEPER, "Cobblestone", "Creeper Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_DAMAGED, "Cobblestone", "Damaged Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_HUGE, "Cobblestone", "Huge Tiles");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_PANEL_CREEPER, "Cobblestone", "Creeper Panel");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_ARRAY, "Cobblestone", "Array");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_BRAID, "Cobblestone", "Braid");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CHAOTIC, "Cobblestone", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CHAOTIC_MEDIUM, "Cobblestone", "Medium Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CHAOTIC_SMALL, "Cobblestone", "Small Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CIRCULAR, "Cobblestone", "Circular");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CRACKED, "Cobblestone", "Cracked");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CRACKED_BRICKS, "Cobblestone", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_CUTS, "Cobblestone", "Cuts");
         addBlock(ChiselStoneBlocks.COBBLESTONE_DENT, "Cobblestone", "Dent");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_EMBOSS, "Cobblestone", "Embossed");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_ENCASED, "Cobblestone", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_FRENCH, "Cobblestone", "French Tiles");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_FRENCH_2, "Cobblestone", "French Tiles 2");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_INDENT, "Cobblestone", "Indent");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_JELLYBEAN, "Cobblestone", "Jellybean");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_LAYERS, "Cobblestone", "Layers");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_MARKER, "Cobblestone", "Marker");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_MOSAIC, "Cobblestone", "Mosaic");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_ORNATE, "Cobblestone", "Ornate");
         addBlock(ChiselStoneBlocks.COBBLESTONE_PANEL, "Cobblestone", "Panel");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_PANEL_LIGHT, "Cobblestone", "Light Panel");
-        addBlock(ChiselStoneBlocks.COBBLESTONE_PANEL_DARK, "Cobblestone", "Dark Panel");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_PILLAR, "Cobblestone", "Pillar");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_PRISM, "Cobblestone", "Prism");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_RAW, "Cobblestone", "Raw");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_ROAD, "Cobblestone", "Road");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_SLANTED, "Cobblestone", "Slanted");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_SMALL, "Cobblestone", "Small Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_SOFT, "Cobblestone", "Soft");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_SOLID, "Cobblestone", "Solid");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_LARGE, "Cobblestone", "Large Tiles");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_MEDIUM, "Cobblestone", "Medium Tiles");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_TILES_SMALL, "Cobblestone", "Small Tiles");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_TRIPLE, "Cobblestone", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_TWISTED, "Cobblestone", "Twisted Pillar");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_WEAVER, "Cobblestone", "Weaver");
+        addBlock(ChiselStoneBlocks.COBBLESTONE_ZAG, "Cobblestone", "Zag");
     }
 
     private void addConcrete() {

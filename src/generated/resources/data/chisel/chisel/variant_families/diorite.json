@@ -3,16 +3,6 @@
   "prefix": "diorite",
   "variants": [
     {
-      "block": "chisel:diorite_polished",
-      "model_type": "cube_all",
-      "name": "diorite_polished"
-    },
-    {
-      "block": "chisel:diorite_pillar",
-      "model_type": "top_bottom_side",
-      "name": "diorite_pillar"
-    },
-    {
       "block": "chisel:diorite_bricks",
       "model_type": "cube_all",
       "name": "diorite_bricks"
@@ -21,6 +11,16 @@
       "block": "chisel:diorite_ornate",
       "model_type": "cube_all",
       "name": "diorite_ornate"
+    },
+    {
+      "block": "chisel:diorite_pillar",
+      "model_type": "top_bottom_side",
+      "name": "diorite_pillar"
+    },
+    {
+      "block": "chisel:diorite_polished",
+      "model_type": "cube_all",
+      "name": "diorite_polished"
     },
     {
       "block": "chisel:diorite_prismatic",
