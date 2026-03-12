@@ -12,7 +12,7 @@ Initial pass is just textures
 - [X] Bronze
 - [ ] Carpet
 - [ ] Carpet Floor
-- [ ] Cloud
+- [X] Cloud
 - [ ] Cobblestone
 - [ ] Concrete
 - [ ] Copper
