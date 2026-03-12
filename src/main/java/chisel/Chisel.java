@@ -7,10 +7,13 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 
+import java.util.logging.Logger;
+
 @Mod(Chisel.MODID)
 public class Chisel {
 
     public static final String MODID = "chisel";
+    public static final Logger LOGGER = Logger.getLogger(Chisel.MODID);
 
     public Chisel(IEventBus bus, ModContainer container, Dist dist) {
         ChiselBlocks.registerBlocks(bus);

@@ -1,5 +1,6 @@
 package chisel.menu;
 
+import chisel.Chisel;
 import chisel.core.VariantFamily;
 import chisel.item.ChiselItem;
 import net.minecraft.core.NonNullList;
@@ -86,19 +87,11 @@ public class ChiselSelectionInventory implements Container {
     @Override
     public void setItem(int slot, @NonNull ItemStack stack) {
         items.set(slot, stack);
-        setChanged();
     }
 
     @Override
     public void setChanged() {
-        if(family != null) {
-            family.getVariants().forEach(variant -> {
-                ItemStack stack = new ItemStack(variant.getBlock().get());
-                stack.setCount(stackSize);
-                setItem(activeVariants, stack);
-                activeVariants++;
-            });
-        }
+
     }
 
     @Override
@@ -110,6 +103,26 @@ public class ChiselSelectionInventory implements Container {
     @Override
     public void clearContent() {
         items.clear();
+        setFamily(null);
+        setStackSize(1);
+        activeVariants = 0;
+    }
+
+    public void updateSlots(VariantFamily family, int stackSize) {
+        setFamily(family);
+        setStackSize(stackSize);
+        if(family != null) {
+            Chisel.LOGGER.info("Updating inventory with family variants");
+            family.getVariants().forEach(variant -> {
+                ItemStack stack = new ItemStack(variant.getBlock().get());
+                stack.setCount(stackSize);
+                setItem(activeVariants, stack);
+                activeVariants++;
+            });
+        } else {
+            clearContent();
+        }
+        setChanged();
     }
 
     public void setFamily(VariantFamily family) {

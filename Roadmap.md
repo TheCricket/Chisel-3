@@ -116,7 +116,7 @@ Initial pass is just textures
 
 ## Items
 - [ ] Ball o' Moss
-- [ ] Chisel - Started
+- [X] Chisel
 - [ ] Diamond Chisel
 - [ ] Obsidian Chisel
 - [ ] Cloud in a Bottle
