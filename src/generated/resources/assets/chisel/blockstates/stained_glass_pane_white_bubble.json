@@ -1,7 +1,77 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/stained_glass_pane_white_bubble"
+  "multipart": [
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_side_alt"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_side_alt",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_noside"
+      },
+      "when": {
+        "north": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_noside_alt"
+      },
+      "when": {
+        "east": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_noside_alt",
+        "y": 90
+      },
+      "when": {
+        "south": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_white_bubble_noside",
+        "y": 90
+      },
+      "when": {
+        "west": "false"
+      }
     }
-  }
+  ]
 }

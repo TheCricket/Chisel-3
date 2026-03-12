@@ -1,12 +1,12 @@
 package chisel.core;
 import chisel.Chisel;
+import chisel.registry.VariantModels;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.material.Fluids;
 
 import java.util.function.Supplier;
 
@@ -70,6 +70,7 @@ public class Variant extends VariantModels {
             case MULTI_LAYER_LAVA -> LAVASTONE.generate(this, blockModels);
             case MULTI_LAYER_CONNECTED -> MULTI_LAYER_CTM.generate(this, blockModels);
             case CARPET -> CARPET.generate(this, blockModels);
+            case GLASS_PANE -> GLASS_PANE.generate(this, blockModels);
         }
     }
 

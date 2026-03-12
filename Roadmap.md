@@ -68,38 +68,38 @@ Initial pass is just textures
 - [ ] Snakestone Sand
 - [ ] Snakestone Stone
 - [ ] Spruce
-- [ ] Stained glass black
-- [ ] Stained glass blue
-- [ ] Stained glass brown
-- [ ] Stained glass cyan
-- [ ] Stained glass gray
-- [ ] Stained glass green
-- [ ] Stained glass light blue
-- [ ] Stained glass light gray
-- [ ] Stained glass lime
-- [ ] Stained glass magenta
-- [ ] Stained glass orange
-- [ ] Stained glass pink
-- [ ] Stained glass purple
-- [ ] Stained glass red
-- [ ] Stained glass white
-- [ ] Stained glass yellow
-- [ ] Stained glass pane black
-- [ ] Stained glass pane blue
-- [ ] Stained glass pane brown
-- [ ] Stained glass pane cyan
-- [ ] Stained glass pane gray
-- [ ] Stained glass pane green
-- [ ] Stained glass pane light blue
-- [ ] Stained glass pane light gray
-- [ ] Stained glass pane lime
-- [ ] Stained glass pane magenta
-- [ ] Stained glass pane orange
-- [ ] Stained glass pane pink
-- [ ] Stained glass pane purple
-- [ ] Stained glass pane red
-- [ ] Stained glass pane white
-- [ ] Stained glass pane yellow
+- [X] Stained glass black
+- [X] Stained glass blue
+- [X] Stained glass brown
+- [X] Stained glass cyan
+- [X] Stained glass gray
+- [X] Stained glass green
+- [X] Stained glass light blue
+- [X] Stained glass light gray
+- [X] Stained glass lime
+- [X] Stained glass magenta
+- [X] Stained glass orange
+- [X] Stained glass pink
+- [X] Stained glass purple
+- [X] Stained glass red
+- [X] Stained glass white
+- [X] Stained glass yellow
+- [X] Stained glass pane black
+- [X] Stained glass pane blue
+- [X] Stained glass pane brown
+- [X] Stained glass pane cyan
+- [X] Stained glass pane gray
+- [X] Stained glass pane green
+- [X] Stained glass pane light blue
+- [X] Stained glass pane light gray
+- [X] Stained glass pane lime
+- [X] Stained glass pane magenta
+- [X] Stained glass pane orange
+- [X] Stained glass pane pink
+- [X] Stained glass pane purple
+- [X] Stained glass pane red
+- [X] Stained glass pane white
+- [X] Stained glass pane yellow
 - [ ] Steel
 - [ ] Stone Bricks
 - [ ] Technical

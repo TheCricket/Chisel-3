@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chisel:block/stained_glass_pane_red/stained_glass_pane_red_borderless"
+  }
+}

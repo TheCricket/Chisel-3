@@ -18,9 +18,9 @@
       "name": "stained_glass_yellow_panel_fancy"
     },
     {
-      "block": "chisel:stained_glass_yellow_panel_borderless",
+      "block": "chisel:stained_glass_yellow_borderless",
       "model_type": "cube_all",
-      "name": "stained_glass_yellow_panel_borderless"
+      "name": "stained_glass_yellow_borderless"
     }
   ]
 }

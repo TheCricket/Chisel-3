@@ -1367,7 +1367,7 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_YELLOW_BUBBLE, "Stained Glass", "Yellow Bubble");
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_YELLOW_PANEL, "Stained Glass", "Yellow Panel");
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_YELLOW_PANEL_FANCY, "Stained Glass", "Yellow Fancy Panel");
-        addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_YELLOW_PANEL_BORDERLESS, "Stained Glass", "Yellow Borderless");
+        addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_YELLOW_BORDERLESS, "Stained Glass", "Yellow Borderless");
     }
 
     private void addStainedGlassPaneBlack() {
@@ -1479,7 +1479,7 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_PANE_YELLOW_BUBBLE, "Stained Glass Pane", "Yellow Bubble");
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_PANE_YELLOW_PANEL, "Stained Glass Pane", "Yellow Panel");
         addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_PANE_YELLOW_PANEL_FANCY, "Stained Glass Pane", "Yellow Fancy Panel");
-        addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_PANE_YELLOW_PANEL_BORDERLESS, "Stained Glass Pane", "Yellow Borderless");
+        addBlock(ChiselStainedGlassBlocks.STAINED_GLASS_PANE_YELLOW_BORDERLESS, "Stained Glass Pane", "Yellow Borderless");
     }
 
     private void addSteel() {

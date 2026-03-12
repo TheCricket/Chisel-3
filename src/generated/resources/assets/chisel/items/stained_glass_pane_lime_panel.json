@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/stained_glass_pane_lime_panel"
+    "model": "chisel:item/stained_glass_pane_lime_panel"
   }
 }
