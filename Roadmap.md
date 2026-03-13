@@ -21,7 +21,7 @@ Initial pass is just textures
 - [X] Diorite
 - [ ] Dirt
 - [ ] Emerald
-- [ ] Energized Voidstone
+- [X] Energized Voidstone
 - [ ] Energized Voidstone Pillar
 - [ ] Factory
 - [ ] Fantasy
