@@ -3,34 +3,39 @@
   "prefix": "copper",
   "variants": [
     {
-      "block": "chisel:copper_caution",
-      "model_type": "cube_all",
-      "name": "copper_caution"
-    },
-    {
-      "block": "chisel:copper_shipping",
-      "model_type": "cube_all",
-      "name": "copper_shipping"
-    },
-    {
-      "block": "chisel:copper_thermal",
-      "model_type": "cube_all",
-      "name": "copper_thermal"
-    },
-    {
       "block": "chisel:copper_125",
       "model_type": "cube_all",
-      "name": "copper_125"
-    },
-    {
-      "block": "chisel:copper_bordered",
-      "model_type": "cube_all",
-      "name": "copper_bordered"
+      "name": "copper_bad_greggy"
     },
     {
       "block": "chisel:copper_bolted",
       "model_type": "cube_all",
       "name": "copper_bolted"
+    },
+    {
+      "block": "chisel:copper_caution",
+      "model_type": "cube_all",
+      "name": "copper_caution"
+    },
+    {
+      "block": "chisel:copper_crate",
+      "model_type": "cube_all",
+      "name": "copper_crate"
+    },
+    {
+      "block": "chisel:copper_machine",
+      "model_type": "cube_all",
+      "name": "copper_machine"
+    },
+    {
+      "block": "chisel:copper_scaffold",
+      "model_type": "cube_all",
+      "name": "copper_scaffold"
+    },
+    {
+      "block": "chisel:copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "copper_thermal"
     }
   ]
 }

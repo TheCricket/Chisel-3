@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/copper_bordered"
+    "model": "chisel:block/copper_scaffold"
   }
 }

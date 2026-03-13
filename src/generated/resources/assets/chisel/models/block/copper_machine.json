@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/copper/copper_shipping"
+    "all": "chisel:block/copper/copper_machine"
   }
 }

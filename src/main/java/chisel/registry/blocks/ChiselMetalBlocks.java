@@ -16,12 +16,13 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> ALUMINUM_SCAFFOLD;
     public static DeferredBlock<Block> ALUMINUM_THERMAL;
 
-    public static DeferredBlock<Block> COPPER_CAUTION;
-    public static DeferredBlock<Block> COPPER_SHIPPING;
-    public static DeferredBlock<Block> COPPER_THERMAL;
-    public static DeferredBlock<Block> COPPER_125;
-    public static DeferredBlock<Block> COPPER_BORDERED;
+    public static DeferredBlock<Block> COPPER_BAD_GREGGY;
     public static DeferredBlock<Block> COPPER_BOLTED;
+    public static DeferredBlock<Block> COPPER_CAUTION;
+    public static DeferredBlock<Block> COPPER_CRATE;
+    public static DeferredBlock<Block> COPPER_MACHINE;
+    public static DeferredBlock<Block> COPPER_SCAFFOLD;
+    public static DeferredBlock<Block> COPPER_THERMAL;
 
     public static DeferredBlock<Block> FACTORY_BLUE;
     public static DeferredBlock<Block> FACTORY_CIRCUIT_BLUE;
@@ -209,12 +210,13 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         ALUMINUM_SCAFFOLD = register("aluminum_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_THERMAL = register("aluminum_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
-        COPPER_CAUTION = register("copper_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
-        COPPER_SHIPPING = register("copper_shipping", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
-        COPPER_THERMAL = register("copper_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
-        COPPER_125 = register("copper_125", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
-        COPPER_BORDERED = register("copper_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_BAD_GREGGY = register("copper_125", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_BOLTED = register("copper_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_CAUTION = register("copper_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_CRATE = register("copper_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_MACHINE = register("copper_machine", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_SCAFFOLD = register("copper_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_THERMAL = register("copper_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
 
         FACTORY_BLUE = register("factory_blue", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FACTORY_CIRCUIT_BLUE = register("factory_circuit_blue", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));

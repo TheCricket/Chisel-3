@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:copper_bordered"
+          "name": "chisel:copper_machine"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/copper_bordered"
+  "random_sequence": "chisel:blocks/copper_machine"
 }

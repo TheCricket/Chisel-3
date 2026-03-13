@@ -421,12 +421,13 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addCopper() {
+        addBlock(ChiselMetalBlocks.COPPER_BAD_GREGGY, "Block of Copper", "Egregious");
+        addBlock(ChiselMetalBlocks.COPPER_BOLTED, "Block of Copper", "Bolted");
         addBlock(ChiselMetalBlocks.COPPER_CAUTION, "Block of Copper", "Caution Stripes");
-        addBlock(ChiselMetalBlocks.COPPER_SHIPPING, "Block of Copper", "Shipping Crate");
-        addBlock(ChiselMetalBlocks.COPPER_THERMAL, "Block of Copper", "Thermal");
-        addBlock(ChiselMetalBlocks.COPPER_125, "Block of Copper", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselMetalBlocks.COPPER_BORDERED, "Block of Copper", "Egregiously Bordered Block");
-        addBlock(ChiselMetalBlocks.COPPER_BOLTED, "Block of Copper", "Fancy Bolted Plating");
+        addBlock(ChiselMetalBlocks.COPPER_CRATE, "Block of Copper", "Shipping Crate");
+        addBlock(ChiselMetalBlocks.COPPER_MACHINE, "Block of Copper", "An Old Relic From The Land Of OneTeuFyv");
+        addBlock(ChiselMetalBlocks.COPPER_SCAFFOLD, "Block of Copper", "Scaffold");
+        addBlock(ChiselMetalBlocks.COPPER_THERMAL, "Block of Copper", "Thermal Series");
     }
 
     private void addDarkOak() {

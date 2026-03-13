@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:copper_shipping"
+          "name": "chisel:copper_crate"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/copper_shipping"
+  "random_sequence": "chisel:blocks/copper_crate"
 }

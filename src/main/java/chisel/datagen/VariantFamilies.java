@@ -265,12 +265,13 @@ public class VariantFamilies {
             .addVariant("concrete_asphalt", ChiselStoneBlocks.CONCRETE_ASPHALT)
             .getFamily();
     public static final VariantFamily COPPER = builder("copper", Blocks.COPPER_BLOCK)
-            .addVariant("copper_caution", ChiselMetalBlocks.COPPER_CAUTION)
-            .addVariant("copper_shipping", ChiselMetalBlocks.COPPER_SHIPPING)
-            .addVariant("copper_thermal", ChiselMetalBlocks.COPPER_THERMAL)
-            .addVariant("copper_125", ChiselMetalBlocks.COPPER_125)
-            .addVariant("copper_bordered", ChiselMetalBlocks.COPPER_BORDERED)
+            .addVariant("copper_bad_greggy", ChiselMetalBlocks.COPPER_BAD_GREGGY) //TODO: CTM
             .addVariant("copper_bolted", ChiselMetalBlocks.COPPER_BOLTED)
+            .addVariant("copper_caution", ChiselMetalBlocks.COPPER_CAUTION) //TODO: CTM
+            .addVariant("copper_crate", ChiselMetalBlocks.COPPER_CRATE) //TODO: CTM
+            .addVariant("copper_machine", ChiselMetalBlocks.COPPER_MACHINE)
+            .addVariant("copper_scaffold", ChiselMetalBlocks.COPPER_SCAFFOLD) //TODO: CTM
+            .addVariant("copper_thermal", ChiselMetalBlocks.COPPER_THERMAL, VariantModelType.TOP_BOTTOM_SIDE)
             .getFamily();
     public static final VariantFamily DARK_OAK = builder("dark_oak_planks", Blocks.DARK_OAK_PLANKS)
             .addVariant("dark_oak_planks_smooth", ChiselWoodBlocks.DARK_OAK_PLANKS_SMOOTH)
