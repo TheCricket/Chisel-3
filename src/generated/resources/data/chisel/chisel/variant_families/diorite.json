@@ -78,11 +78,6 @@
       "name": "diorite_layers"
     },
     {
-      "block": "chisel:diorite_marker",
-      "model_type": "cube_all",
-      "name": "diorite_marker"
-    },
-    {
       "block": "chisel:diorite_mosaic",
       "model_type": "cube_all",
       "name": "diorite_mosaic"
