@@ -467,12 +467,39 @@ public class ChiselLang extends LangHelper {
 
     private void addDiorite() {
         addBlock(() -> Blocks.DIORITE, "Diorite");
-        addBlock(ChiselStoneBlocks.DIORITE_POLISHED, "Diorite", "Polished");
-        addBlock(ChiselStoneBlocks.DIORITE_PILLAR, "Diorite", "Pillar");
-        addBlock(ChiselStoneBlocks.DIORITE_BRICKS, "Diorite", "Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_ARRAY, "Diorite", "Array");
+        addBlock(ChiselStoneBlocks.DIORITE_BRAID, "Diorite", "Braid");
+        addBlock(ChiselStoneBlocks.DIORITE_CHAOTIC, "Diorite", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_CHAOTIC_MEDIUM, "Diorite", "Medium Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_CHAOTIC_SMALL, "Diorite", "Small Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_CIRCULAR, "Diorite", "Circular");
+        addBlock(ChiselStoneBlocks.DIORITE_CRACKED, "Diorite", "Cracked");
+        addBlock(ChiselStoneBlocks.DIORITE_CRACKED_BRICKS, "Diorite", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_CUTS, "Diorite", "Cuts");
+        addBlock(ChiselStoneBlocks.DIORITE_DENT, "Diorite", "Dent");
+        addBlock(ChiselStoneBlocks.DIORITE_ENCASED, "Diorite", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_FRENCH, "Diorite", "French Tiles");
+        addBlock(ChiselStoneBlocks.DIORITE_FRENCH_2, "Diorite", "French Tiles 2");
+        addBlock(ChiselStoneBlocks.DIORITE_JELLYBEAN, "Diorite", "Jellybean");
+        addBlock(ChiselStoneBlocks.DIORITE_LAYERS, "Diorite", "Layers");
+        addBlock(ChiselStoneBlocks.DIORITE_MOSAIC, "Diorite", "Mosaic");
         addBlock(ChiselStoneBlocks.DIORITE_ORNATE, "Diorite", "Ornate");
-        addBlock(ChiselStoneBlocks.DIORITE_PRISMATIC, "Diorite", "Prismatic");
+        addBlock(ChiselStoneBlocks.DIORITE_PANEL, "Diorite", "Panel");
+        addBlock(ChiselStoneBlocks.DIORITE_PILLAR, "Diorite", "Pillar");
+        addBlock(ChiselStoneBlocks.DIORITE_PRISM, "Diorite", "Prism");
+        addBlock(ChiselStoneBlocks.DIORITE_RAW, "Diorite", "Raw");
+        addBlock(ChiselStoneBlocks.DIORITE_ROAD, "Diorite", "Road");
+        addBlock(ChiselStoneBlocks.DIORITE_SLANTED, "Diorite", "Slanted");
+        addBlock(ChiselStoneBlocks.DIORITE_SMALL, "Diorite", "Small Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_SOFT, "Diorite", "Soft");
+        addBlock(ChiselStoneBlocks.DIORITE_SOLID, "Diorite", "Solid");
+        addBlock(ChiselStoneBlocks.DIORITE_TILES_LARGE, "Diorite", "Large Tiles");
+        addBlock(ChiselStoneBlocks.DIORITE_TILES_MEDIUM, "Diorite", "Medium Tiles");
         addBlock(ChiselStoneBlocks.DIORITE_TILES_SMALL, "Diorite", "Small Tiles");
+        addBlock(ChiselStoneBlocks.DIORITE_TRIPLE, "Diorite", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.DIORITE_TWISTED, "Diorite", "Twisted Pillar");
+        addBlock(ChiselStoneBlocks.DIORITE_WEAVER, "Diorite", "Weaver");
+        addBlock(ChiselStoneBlocks.DIORITE_ZAG, "Diorite", "Zag");
     }
 
     private void addDirt() {

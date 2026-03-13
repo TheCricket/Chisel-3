@@ -17,8 +17,8 @@ Initial pass is just textures
 - [ ] Concrete
 - [X] Copper
 - [X] Dark Oak
-- [ ] Diamond
-- [ ] Diorite
+- [X] Diamond
+- [X] Diorite
 - [ ] Dirt
 - [ ] Emerald
 - [ ] Energized Voidstone
