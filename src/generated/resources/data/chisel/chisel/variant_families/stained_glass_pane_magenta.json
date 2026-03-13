@@ -3,6 +3,11 @@
   "prefix": "stained_glass_pane_magenta",
   "variants": [
     {
+      "block": "chisel:stained_glass_pane_magenta_borderless",
+      "model_type": "glass_pane",
+      "name": "stained_glass_pane_magenta_borderless"
+    },
+    {
       "block": "chisel:stained_glass_pane_magenta_bubble",
       "model_type": "glass_pane",
       "name": "stained_glass_pane_magenta_bubble"
@@ -16,11 +21,6 @@
       "block": "chisel:stained_glass_pane_magenta_panel_fancy",
       "model_type": "glass_pane",
       "name": "stained_glass_pane_magenta_panel_fancy"
-    },
-    {
-      "block": "chisel:stained_glass_pane_magenta_borderless",
-      "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_borderless"
     }
   ]
 }

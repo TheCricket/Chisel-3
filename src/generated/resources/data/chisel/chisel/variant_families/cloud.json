@@ -3,11 +3,6 @@
   "prefix": "cloud",
   "variants": [
     {
-      "block": "chisel:cloud_normal",
-      "model_type": "cube_all",
-      "name": "cloud_normal"
-    },
-    {
       "block": "chisel:cloud_grid",
       "model_type": "cube_all",
       "name": "cloud_grid"
@@ -16,6 +11,11 @@
       "block": "chisel:cloud_large",
       "model_type": "cube_all",
       "name": "cloud_large"
+    },
+    {
+      "block": "chisel:cloud_normal",
+      "model_type": "cube_all",
+      "name": "cloud_normal"
     },
     {
       "block": "chisel:cloud_small",

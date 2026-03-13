@@ -3,79 +3,79 @@
   "prefix": "dark_oak_planks",
   "variants": [
     {
+      "block": "chisel:dark_oak_planks_braced",
+      "model_type": "top_bottom_side",
+      "name": "dark_oak_planks_braced"
+    },
+    {
+      "block": "chisel:dark_oak_planks_braid",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_braid"
+    },
+    {
+      "block": "chisel:dark_oak_planks_crude_horizontal",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_crude_horizontal"
+    },
+    {
+      "block": "chisel:dark_oak_planks_crude_paneling",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_crude_paneling"
+    },
+    {
+      "block": "chisel:dark_oak_planks_crude_vertical",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_crude_vertical"
+    },
+    {
+      "block": "chisel:dark_oak_planks_encased",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_encased"
+    },
+    {
+      "block": "chisel:dark_oak_planks_encased_large",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_encased_large"
+    },
+    {
+      "block": "chisel:dark_oak_planks_encased_smooth",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_encased_smooth"
+    },
+    {
+      "block": "chisel:dark_oak_planks_large",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_large"
+    },
+    {
+      "block": "chisel:dark_oak_planks_log_cabin",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_log_cabin"
+    },
+    {
+      "block": "chisel:dark_oak_planks_paneling",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_paneling"
+    },
+    {
+      "block": "chisel:dark_oak_planks_shipping",
+      "model_type": "cube_all",
+      "name": "dark_oak_planks_shipping"
+    },
+    {
       "block": "chisel:dark_oak_planks_smooth",
       "model_type": "cube_all",
       "name": "dark_oak_planks_smooth"
     },
     {
-      "block": "chisel:dark_oak_planks_short",
+      "block": "chisel:dark_oak_planks_stacked",
       "model_type": "cube_all",
-      "name": "dark_oak_planks_short"
-    },
-    {
-      "block": "chisel:dark_oak_planks_fancy",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_fancy"
-    },
-    {
-      "block": "chisel:dark_oak_planks_panel",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_panel"
-    },
-    {
-      "block": "chisel:dark_oak_planks_double_slab",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_double_slab"
-    },
-    {
-      "block": "chisel:dark_oak_planks_crate",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_crate"
-    },
-    {
-      "block": "chisel:dark_oak_planks_crate_fancy",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_crate_fancy"
-    },
-    {
-      "block": "chisel:dark_oak_planks_long",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_long"
+      "name": "dark_oak_planks_stacked"
     },
     {
       "block": "chisel:dark_oak_planks_vertical",
       "model_type": "cube_all",
       "name": "dark_oak_planks_vertical"
-    },
-    {
-      "block": "chisel:dark_oak_planks_vertical_uneven",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_vertical_uneven"
-    },
-    {
-      "block": "chisel:dark_oak_planks_parquet",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_parquet"
-    },
-    {
-      "block": "chisel:dark_oak_planks_blinds",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_blinds"
-    },
-    {
-      "block": "chisel:dark_oak_planks_scaffold",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_scaffold"
-    },
-    {
-      "block": "chisel:dark_oak_planks_disarray",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_disarray"
-    },
-    {
-      "block": "chisel:dark_oak_planks_disarray_vertical",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_disarray_vertical"
     }
   ]
 }

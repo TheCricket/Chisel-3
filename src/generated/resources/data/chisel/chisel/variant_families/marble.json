@@ -3,44 +3,19 @@
   "prefix": "marble",
   "variants": [
     {
-      "block": "chisel:marble_raw",
-      "model_type": "cube_all",
-      "name": "marble_raw"
-    },
-    {
-      "block": "chisel:marble_brick",
-      "model_type": "cube_all",
-      "name": "marble_brick"
-    },
-    {
-      "block": "chisel:marble_panel_classic",
-      "model_type": "cube_all",
-      "name": "marble_panel_classic"
-    },
-    {
-      "block": "chisel:marble_panel_ornate",
-      "model_type": "cube_all",
-      "name": "marble_panel_ornate"
-    },
-    {
-      "block": "chisel:marble_panel",
-      "model_type": "cube_all",
-      "name": "marble_panel"
-    },
-    {
       "block": "chisel:marble_block",
       "model_type": "cube_all",
       "name": "marble_block"
     },
     {
-      "block": "chisel:marble_creeper_dark",
+      "block": "chisel:marble_blocks",
       "model_type": "cube_all",
-      "name": "marble_creeper_dark"
+      "name": "marble_blocks"
     },
     {
-      "block": "chisel:marble_creeper_light",
+      "block": "chisel:marble_brick",
       "model_type": "cube_all",
-      "name": "marble_creeper_light"
+      "name": "marble_brick"
     },
     {
       "block": "chisel:marble_carved",
@@ -53,6 +28,16 @@
       "name": "marble_carved_radial"
     },
     {
+      "block": "chisel:marble_creeper_dark",
+      "model_type": "cube_all",
+      "name": "marble_creeper_dark"
+    },
+    {
+      "block": "chisel:marble_creeper_light",
+      "model_type": "cube_all",
+      "name": "marble_creeper_light"
+    },
+    {
       "block": "chisel:marble_dent",
       "model_type": "cube_all",
       "name": "marble_dent"
@@ -61,6 +46,26 @@
       "block": "chisel:marble_dent_large",
       "model_type": "cube_all",
       "name": "marble_dent_large"
+    },
+    {
+      "block": "chisel:marble_panel",
+      "model_type": "cube_all",
+      "name": "marble_panel"
+    },
+    {
+      "block": "chisel:marble_panel_classic",
+      "model_type": "cube_all",
+      "name": "marble_panel_classic"
+    },
+    {
+      "block": "chisel:marble_panel_ornate",
+      "model_type": "cube_all",
+      "name": "marble_panel_ornate"
+    },
+    {
+      "block": "chisel:marble_raw",
+      "model_type": "cube_all",
+      "name": "marble_raw"
     },
     {
       "block": "chisel:marble_tiles",
@@ -76,11 +81,6 @@
       "block": "chisel:marble_tiles_fancy",
       "model_type": "cube_all",
       "name": "marble_tiles_fancy"
-    },
-    {
-      "block": "chisel:marble_blocks",
-      "model_type": "cube_all",
-      "name": "marble_blocks"
     }
   ]
 }

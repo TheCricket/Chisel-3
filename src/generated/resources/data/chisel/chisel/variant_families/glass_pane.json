@@ -3,24 +3,14 @@
   "prefix": "glass_pane",
   "variants": [
     {
-      "block": "chisel:glass_pane_bubble",
-      "model_type": "glass_pane",
-      "name": "glass_pane_bubble"
-    },
-    {
       "block": "chisel:glass_pane_borderless",
       "model_type": "glass_pane",
       "name": "glass_pane_borderless"
     },
     {
-      "block": "chisel:glass_pane_screen",
+      "block": "chisel:glass_pane_bubble",
       "model_type": "glass_pane",
-      "name": "glass_pane_screen"
-    },
-    {
-      "block": "chisel:glass_pane_streak",
-      "model_type": "glass_pane",
-      "name": "glass_pane_streak"
+      "name": "glass_pane_bubble"
     },
     {
       "block": "chisel:glass_pane_chinese",
@@ -41,6 +31,16 @@
       "block": "chisel:glass_pane_japanese_traditional",
       "model_type": "glass_pane",
       "name": "glass_pane_japanese_traditional"
+    },
+    {
+      "block": "chisel:glass_pane_screen",
+      "model_type": "glass_pane",
+      "name": "glass_pane_screen"
+    },
+    {
+      "block": "chisel:glass_pane_streak",
+      "model_type": "glass_pane",
+      "name": "glass_pane_streak"
     }
   ]
 }

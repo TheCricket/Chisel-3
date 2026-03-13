@@ -3,14 +3,9 @@
   "prefix": "diamond",
   "variants": [
     {
-      "block": "chisel:diamond_embossed",
-      "model_type": "top_bottom_side",
-      "name": "diamond_embossed"
-    },
-    {
-      "block": "chisel:diamond_panel",
-      "model_type": "top_bottom_side",
-      "name": "diamond_panel"
+      "block": "chisel:diamond_bismuth",
+      "model_type": "cube_all",
+      "name": "diamond_bismuth"
     },
     {
       "block": "chisel:diamond_cells",
@@ -18,9 +13,14 @@
       "name": "diamond_cells"
     },
     {
-      "block": "chisel:diamond_obsidian_purple",
+      "block": "chisel:diamond_crushed",
       "model_type": "cube_all",
-      "name": "diamond_obsidian_purple"
+      "name": "diamond_crushed"
+    },
+    {
+      "block": "chisel:diamond_embossed",
+      "model_type": "top_bottom_side",
+      "name": "diamond_embossed"
     },
     {
       "block": "chisel:diamond_obsidian",
@@ -28,19 +28,24 @@
       "name": "diamond_obsidian"
     },
     {
+      "block": "chisel:diamond_obsidian_purple",
+      "model_type": "cube_all",
+      "name": "diamond_obsidian_purple"
+    },
+    {
+      "block": "chisel:diamond_ornate",
+      "model_type": "cube_all",
+      "name": "diamond_ornate"
+    },
+    {
+      "block": "chisel:diamond_panel",
+      "model_type": "top_bottom_side",
+      "name": "diamond_panel"
+    },
+    {
       "block": "chisel:diamond_simple",
       "model_type": "top_bottom_side",
       "name": "diamond_simple"
-    },
-    {
-      "block": "chisel:diamond_bismuth",
-      "model_type": "cube_all",
-      "name": "diamond_bismuth"
-    },
-    {
-      "block": "chisel:diamond_crushed",
-      "model_type": "cube_all",
-      "name": "diamond_crushed"
     },
     {
       "block": "chisel:diamond_small_blocks",
@@ -56,11 +61,6 @@
       "block": "chisel:diamond_zelda",
       "model_type": "cube_all",
       "name": "diamond_zelda"
-    },
-    {
-      "block": "chisel:diamond_ornate",
-      "model_type": "cube_all",
-      "name": "diamond_ornate"
     }
   ]
 }

@@ -3,6 +3,11 @@
   "prefix": "stained_glass_pane_orange",
   "variants": [
     {
+      "block": "chisel:stained_glass_pane_orange_borderless",
+      "model_type": "glass_pane",
+      "name": "stained_glass_pane_orange_borderless"
+    },
+    {
       "block": "chisel:stained_glass_pane_orange_bubble",
       "model_type": "glass_pane",
       "name": "stained_glass_pane_orange_bubble"
@@ -16,11 +21,6 @@
       "block": "chisel:stained_glass_pane_orange_panel_fancy",
       "model_type": "glass_pane",
       "name": "stained_glass_pane_orange_panel_fancy"
-    },
-    {
-      "block": "chisel:stained_glass_pane_orange_borderless",
-      "model_type": "glass_pane",
-      "name": "stained_glass_pane_orange_borderless"
     }
   ]
 }

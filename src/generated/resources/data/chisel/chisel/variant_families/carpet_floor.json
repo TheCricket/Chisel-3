@@ -13,6 +13,36 @@
       "name": "carpet_floor_1"
     },
     {
+      "block": "chisel:carpet_floor_10",
+      "model_type": "carpet",
+      "name": "carpet_floor_10"
+    },
+    {
+      "block": "chisel:carpet_floor_11",
+      "model_type": "carpet",
+      "name": "carpet_floor_11"
+    },
+    {
+      "block": "chisel:carpet_floor_12",
+      "model_type": "carpet",
+      "name": "carpet_floor_12"
+    },
+    {
+      "block": "chisel:carpet_floor_13",
+      "model_type": "carpet",
+      "name": "carpet_floor_13"
+    },
+    {
+      "block": "chisel:carpet_floor_14",
+      "model_type": "carpet",
+      "name": "carpet_floor_14"
+    },
+    {
+      "block": "chisel:carpet_floor_15",
+      "model_type": "carpet",
+      "name": "carpet_floor_15"
+    },
+    {
       "block": "chisel:carpet_floor_2",
       "model_type": "carpet",
       "name": "carpet_floor_2"
@@ -51,36 +81,6 @@
       "block": "chisel:carpet_floor_9",
       "model_type": "carpet",
       "name": "carpet_floor_9"
-    },
-    {
-      "block": "chisel:carpet_floor_10",
-      "model_type": "carpet",
-      "name": "carpet_floor_10"
-    },
-    {
-      "block": "chisel:carpet_floor_11",
-      "model_type": "carpet",
-      "name": "carpet_floor_11"
-    },
-    {
-      "block": "chisel:carpet_floor_12",
-      "model_type": "carpet",
-      "name": "carpet_floor_12"
-    },
-    {
-      "block": "chisel:carpet_floor_13",
-      "model_type": "carpet",
-      "name": "carpet_floor_13"
-    },
-    {
-      "block": "chisel:carpet_floor_14",
-      "model_type": "carpet",
-      "name": "carpet_floor_14"
-    },
-    {
-      "block": "chisel:carpet_floor_15",
-      "model_type": "carpet",
-      "name": "carpet_floor_15"
     }
   ]
 }

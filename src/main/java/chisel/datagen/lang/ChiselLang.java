@@ -432,21 +432,21 @@ public class ChiselLang extends LangHelper {
 
     private void addDarkOak() {
         addBlock(() -> Blocks.DARK_OAK_PLANKS, "Dark Oak Wood Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_LARGE, "Dark Oak Wood Planks", "Large Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_CRUDE_HORIZONTAL, "Dark Oak Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_VERTICAL, "Dark Oak Wood Planks", "Vertical Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_CRUDE_VERTICAL, "Dark Oak Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_ENCASED, "Dark Oak Wood Planks", "Encased Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_BRACED, "Dark Oak Wood Planks", "Braced Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_SHIPPING, "Dark Oak Wood Planks", "Shipping Crate");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_ENCASED_LARGE, "Dark Oak Wood Planks", "Encased Large Planks");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_PANELING, "Dark Oak Wood Planks", "Paneling");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_CRUDE_PANELING, "Dark Oak Wood Planks", "Crude Paneling");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_STACKED, "Dark Oak Wood Planks", "Stacked");
         addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_SMOOTH, "Dark Oak Wood Planks", "Smooth");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_SHORT, "Dark Oak Wood Planks", "Short");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_FANCY, "Dark Oak Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_PANEL, "Dark Oak Wood Planks", "Panel");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_DOUBLE_SLAB, "Dark Oak Wood Planks", "Double Slab");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_CRATE, "Dark Oak Wood Planks", "Crate");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_CRATE_FANCY, "Dark Oak Wood Planks", "Fancy Crate");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_LONG, "Dark Oak Wood Planks", "Large Long");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_VERTICAL, "Dark Oak Wood Planks", "Vertical");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_VERTICAL_UNEVEN, "Dark Oak Wood Planks", "Vertical Uneven");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_PARQUET, "Dark Oak Wood Planks", "Parquet");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_BLINDS, "Dark Oak Wood Planks", "Plank Blinds");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_SCAFFOLD, "Dark Oak Wood Planks", "Scaffold");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_DISARRAY, "Dark Oak Wood Planks", "Planks in Disarray");
-        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_DISARRAY_VERTICAL, "Dark Oak Wood Planks", "Vertical Planks in Disarray");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_ENCASED_SMOOTH, "Dark Oak Wood Planks", "Encased Smooth");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_BRAID, "Dark Oak Wood Planks", "Braid");
+        addBlock(ChiselWoodBlocks.DARK_OAK_PLANKS_LOG_CABIN, "Dark Oak Wood Planks", "Log Cabin");
     }
 
     private void addDiamond() {

@@ -3,6 +3,21 @@
   "prefix": "steel",
   "variants": [
     {
+      "block": "chisel:steel_125",
+      "model_type": "cube_all",
+      "name": "steel_125"
+    },
+    {
+      "block": "chisel:steel_bolted",
+      "model_type": "cube_all",
+      "name": "steel_bolted"
+    },
+    {
+      "block": "chisel:steel_bordered",
+      "model_type": "cube_all",
+      "name": "steel_bordered"
+    },
+    {
       "block": "chisel:steel_caution",
       "model_type": "cube_all",
       "name": "steel_caution"
@@ -16,21 +31,6 @@
       "block": "chisel:steel_thermal",
       "model_type": "cube_all",
       "name": "steel_thermal"
-    },
-    {
-      "block": "chisel:steel_125",
-      "model_type": "cube_all",
-      "name": "steel_125"
-    },
-    {
-      "block": "chisel:steel_bordered",
-      "model_type": "cube_all",
-      "name": "steel_bordered"
-    },
-    {
-      "block": "chisel:steel_bolted",
-      "model_type": "cube_all",
-      "name": "steel_bolted"
     }
   ]
 }

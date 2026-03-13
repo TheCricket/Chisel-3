@@ -3,16 +3,6 @@
   "prefix": "futura",
   "variants": [
     {
-      "block": "chisel:futura_screen_gray",
-      "model_type": "cube_all",
-      "name": "futura_screen_gray"
-    },
-    {
-      "block": "chisel:futura_screen_cyan",
-      "model_type": "cube_all",
-      "name": "futura_screen_cyan"
-    },
-    {
       "block": "chisel:futura_controller",
       "model_type": "multi_layer",
       "name": "futura_controller"
@@ -26,6 +16,16 @@
       "block": "chisel:futura_rainbow",
       "model_type": "multi_layer",
       "name": "futura_rainbow"
+    },
+    {
+      "block": "chisel:futura_screen_cyan",
+      "model_type": "cube_all",
+      "name": "futura_screen_cyan"
+    },
+    {
+      "block": "chisel:futura_screen_gray",
+      "model_type": "cube_all",
+      "name": "futura_screen_gray"
     }
   ]
 }

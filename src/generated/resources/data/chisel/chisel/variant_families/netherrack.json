@@ -3,11 +3,6 @@
   "prefix": "netherrack",
   "variants": [
     {
-      "block": "chisel:netherrack_blood_gravel",
-      "model_type": "cube_all",
-      "name": "netherrack_blood_gravel"
-    },
-    {
       "block": "chisel:netherrack_blood",
       "model_type": "cube_all",
       "name": "netherrack_blood"
@@ -16,6 +11,11 @@
       "block": "chisel:netherrack_blood_dark",
       "model_type": "cube_all",
       "name": "netherrack_blood_dark"
+    },
+    {
+      "block": "chisel:netherrack_blood_gravel",
+      "model_type": "cube_all",
+      "name": "netherrack_blood_gravel"
     },
     {
       "block": "chisel:netherrack_blue",
@@ -33,11 +33,6 @@
       "name": "netherrack_classic"
     },
     {
-      "block": "chisel:netherrack_spattered",
-      "model_type": "cube_all",
-      "name": "netherrack_spattered"
-    },
-    {
       "block": "chisel:netherrack_guts",
       "model_type": "cube_all",
       "name": "netherrack_guts"
@@ -46,6 +41,11 @@
       "block": "chisel:netherrack_guts_dark",
       "model_type": "cube_all",
       "name": "netherrack_guts_dark"
+    },
+    {
+      "block": "chisel:netherrack_lava",
+      "model_type": "cube_all",
+      "name": "netherrack_lava"
     },
     {
       "block": "chisel:netherrack_meat",
@@ -68,9 +68,9 @@
       "name": "netherrack_red"
     },
     {
-      "block": "chisel:netherrack_lava",
+      "block": "chisel:netherrack_spattered",
       "model_type": "cube_all",
-      "name": "netherrack_lava"
+      "name": "netherrack_spattered"
     }
   ]
 }

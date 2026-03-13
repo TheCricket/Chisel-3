@@ -8,9 +8,14 @@
       "name": "nether_brick_blue"
     },
     {
-      "block": "chisel:nether_brick_spattered",
+      "block": "chisel:nether_brick_blue_lava",
       "model_type": "cube_all",
-      "name": "nether_brick_spattered"
+      "name": "nether_brick_blue_lava"
+    },
+    {
+      "block": "chisel:nether_brick_brown",
+      "model_type": "cube_all",
+      "name": "nether_brick_brown"
     },
     {
       "block": "chisel:nether_brick_guts",
@@ -26,26 +31,6 @@
       "block": "chisel:nether_brick_guts_small",
       "model_type": "cube_all",
       "name": "nether_brick_guts_small"
-    },
-    {
-      "block": "chisel:nether_brick_blue_lava",
-      "model_type": "cube_all",
-      "name": "nether_brick_blue_lava"
-    },
-    {
-      "block": "chisel:nether_brick_brown",
-      "model_type": "cube_all",
-      "name": "nether_brick_brown"
-    },
-    {
-      "block": "chisel:nether_brick_obsidian",
-      "model_type": "cube_all",
-      "name": "nether_brick_obsidian"
-    },
-    {
-      "block": "chisel:nether_brick_stone",
-      "model_type": "cube_all",
-      "name": "nether_brick_stone"
     },
     {
       "block": "chisel:nether_brick_meat",
@@ -68,6 +53,11 @@
       "name": "nether_brick_meat_small_red"
     },
     {
+      "block": "chisel:nether_brick_obsidian",
+      "model_type": "cube_all",
+      "name": "nether_brick_obsidian"
+    },
+    {
       "block": "chisel:nether_brick_red",
       "model_type": "cube_all",
       "name": "nether_brick_red"
@@ -76,6 +66,16 @@
       "block": "chisel:nether_brick_red_small",
       "model_type": "cube_all",
       "name": "nether_brick_red_small"
+    },
+    {
+      "block": "chisel:nether_brick_spattered",
+      "model_type": "cube_all",
+      "name": "nether_brick_spattered"
+    },
+    {
+      "block": "chisel:nether_brick_stone",
+      "model_type": "cube_all",
+      "name": "nether_brick_stone"
     }
   ]
 }

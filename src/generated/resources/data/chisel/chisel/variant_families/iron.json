@@ -3,19 +3,19 @@
   "prefix": "iron",
   "variants": [
     {
-      "block": "chisel:iron_ingots_large",
-      "model_type": "top_bottom_side",
-      "name": "iron_ingots_large"
+      "block": "chisel:iron_125",
+      "model_type": "cube_all",
+      "name": "iron_125"
     },
     {
-      "block": "chisel:iron_ingots_small",
-      "model_type": "top_bottom_side",
-      "name": "iron_ingots_small"
+      "block": "chisel:iron_bolted",
+      "model_type": "cube_all",
+      "name": "iron_bolted"
     },
     {
-      "block": "chisel:iron_gears",
-      "model_type": "top_bottom_side",
-      "name": "iron_gears"
+      "block": "chisel:iron_bordered",
+      "model_type": "cube_all",
+      "name": "iron_bordered"
     },
     {
       "block": "chisel:iron_bricks",
@@ -23,9 +23,9 @@
       "name": "iron_brick"
     },
     {
-      "block": "chisel:iron_plates",
-      "model_type": "top_bottom_side",
-      "name": "iron_plates"
+      "block": "chisel:iron_caution",
+      "model_type": "cube_all",
+      "name": "iron_caution"
     },
     {
       "block": "chisel:iron_coin_heads",
@@ -48,14 +48,24 @@
       "name": "iron_crate_light"
     },
     {
+      "block": "chisel:iron_gears",
+      "model_type": "top_bottom_side",
+      "name": "iron_gears"
+    },
+    {
+      "block": "chisel:iron_ingots_large",
+      "model_type": "top_bottom_side",
+      "name": "iron_ingots_large"
+    },
+    {
+      "block": "chisel:iron_ingots_small",
+      "model_type": "top_bottom_side",
+      "name": "iron_ingots_small"
+    },
+    {
       "block": "chisel:iron_moon_decor",
       "model_type": "top_bottom_side",
       "name": "iron_moon"
-    },
-    {
-      "block": "chisel:iron_moon_obsidian_purple",
-      "model_type": "cube_all",
-      "name": "iron_moon_obsidian_purple"
     },
     {
       "block": "chisel:iron_moon_obsidian",
@@ -63,19 +73,19 @@
       "name": "iron_moon_obsidian"
     },
     {
-      "block": "chisel:iron_vents",
-      "model_type": "top_bottom_side",
-      "name": "iron_vents"
-    },
-    {
-      "block": "chisel:iron_simple",
-      "model_type": "top_bottom_side",
-      "name": "iron_simple"
-    },
-    {
-      "block": "chisel:iron_caution",
+      "block": "chisel:iron_moon_obsidian_purple",
       "model_type": "cube_all",
-      "name": "iron_caution"
+      "name": "iron_moon_obsidian_purple"
+    },
+    {
+      "block": "chisel:iron_plates",
+      "model_type": "top_bottom_side",
+      "name": "iron_plates"
+    },
+    {
+      "block": "chisel:iron_rivets",
+      "model_type": "top_bottom_side",
+      "name": "iron_rivets"
     },
     {
       "block": "chisel:iron_shipping",
@@ -83,29 +93,19 @@
       "name": "iron_shipping"
     },
     {
+      "block": "chisel:iron_simple",
+      "model_type": "top_bottom_side",
+      "name": "iron_simple"
+    },
+    {
       "block": "chisel:iron_thermal",
       "model_type": "cube_all",
       "name": "iron_thermal"
     },
     {
-      "block": "chisel:iron_125",
-      "model_type": "cube_all",
-      "name": "iron_125"
-    },
-    {
-      "block": "chisel:iron_bordered",
-      "model_type": "cube_all",
-      "name": "iron_bordered"
-    },
-    {
-      "block": "chisel:iron_bolted",
-      "model_type": "cube_all",
-      "name": "iron_bolted"
-    },
-    {
-      "block": "chisel:iron_rivets",
+      "block": "chisel:iron_vents",
       "model_type": "top_bottom_side",
-      "name": "iron_rivets"
+      "name": "iron_vents"
     }
   ]
 }

@@ -3,9 +3,34 @@
   "prefix": "temple",
   "variants": [
     {
+      "block": "chisel:temple_bricks",
+      "model_type": "cube_all",
+      "name": "temple_bricks"
+    },
+    {
+      "block": "chisel:temple_bricks_disarray",
+      "model_type": "cube_all",
+      "name": "temple_bricks_disarray"
+    },
+    {
+      "block": "chisel:temple_bricks_large",
+      "model_type": "cube_all",
+      "name": "temple_bricks_large"
+    },
+    {
+      "block": "chisel:temple_bricks_worn",
+      "model_type": "cube_all",
+      "name": "temple_bricks_worn"
+    },
+    {
       "block": "chisel:temple_cobble",
       "model_type": "cube_all",
       "name": "temple_cobble"
+    },
+    {
+      "block": "chisel:temple_column",
+      "model_type": "cube_all",
+      "name": "temple_column"
     },
     {
       "block": "chisel:temple_ornate",
@@ -23,39 +48,9 @@
       "name": "temple_plate_cracked"
     },
     {
-      "block": "chisel:temple_bricks",
-      "model_type": "cube_all",
-      "name": "temple_bricks"
-    },
-    {
-      "block": "chisel:temple_bricks_large",
-      "model_type": "cube_all",
-      "name": "temple_bricks_large"
-    },
-    {
-      "block": "chisel:temple_bricks_worn",
-      "model_type": "cube_all",
-      "name": "temple_bricks_worn"
-    },
-    {
-      "block": "chisel:temple_bricks_disarray",
-      "model_type": "cube_all",
-      "name": "temple_bricks_disarray"
-    },
-    {
-      "block": "chisel:temple_column",
-      "model_type": "cube_all",
-      "name": "temple_column"
-    },
-    {
       "block": "chisel:temple_stand",
       "model_type": "cube_all",
       "name": "temple_stand"
-    },
-    {
-      "block": "chisel:temple_stand_mosaic",
-      "model_type": "cube_all",
-      "name": "temple_stand_mosaic"
     },
     {
       "block": "chisel:temple_stand_creeper",
@@ -63,19 +58,24 @@
       "name": "temple_stand_creeper"
     },
     {
+      "block": "chisel:temple_stand_mosaic",
+      "model_type": "cube_all",
+      "name": "temple_stand_mosaic"
+    },
+    {
       "block": "chisel:temple_tiles",
       "model_type": "cube_all",
       "name": "temple_tiles"
     },
     {
-      "block": "chisel:temple_tiles_small",
-      "model_type": "cube_all",
-      "name": "temple_tiles_small"
-    },
-    {
       "block": "chisel:temple_tiles_light",
       "model_type": "cube_all",
       "name": "temple_tiles_light"
+    },
+    {
+      "block": "chisel:temple_tiles_small",
+      "model_type": "cube_all",
+      "name": "temple_tiles_small"
     },
     {
       "block": "chisel:temple_tiles_small_light",

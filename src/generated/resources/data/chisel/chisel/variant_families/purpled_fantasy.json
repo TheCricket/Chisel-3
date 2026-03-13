@@ -3,9 +3,19 @@
   "prefix": "purpled_fantasy",
   "variants": [
     {
+      "block": "chisel:purpled_fantasy_block",
+      "model_type": "cube_all",
+      "name": "purpled_fantasy_block"
+    },
+    {
       "block": "chisel:purpled_fantasy_brick",
       "model_type": "top_bottom_side",
       "name": "purpled_fantasy_brick"
+    },
+    {
+      "block": "chisel:purpled_fantasy_brick_damaged",
+      "model_type": "top_bottom_side",
+      "name": "purpled_fantasy_brick_damaged"
     },
     {
       "block": "chisel:purpled_fantasy_brick_faded",
@@ -18,9 +28,14 @@
       "name": "purpled_fantasy_brick_worn"
     },
     {
-      "block": "chisel:purpled_fantasy_brick_damaged",
+      "block": "chisel:purpled_fantasy_bricks_disarray",
       "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_brick_damaged"
+      "name": "purpled_fantasy_bricks_disarray"
+    },
+    {
+      "block": "chisel:purpled_fantasy_bricks_disarray_worn",
+      "model_type": "top_bottom_side",
+      "name": "purpled_fantasy_bricks_disarray_worn"
     },
     {
       "block": "chisel:purpled_fantasy_decoration",
@@ -33,24 +48,9 @@
       "name": "purpled_fantasy_decoration_block"
     },
     {
-      "block": "chisel:purpled_fantasy_decoration_pillar",
+      "block": "chisel:purpled_fantasy_decoration_chains",
       "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_decoration_pillar"
-    },
-    {
-      "block": "chisel:purpled_fantasy_pillar",
-      "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_pillar"
-    },
-    {
-      "block": "chisel:purpled_fantasy_decoration_snake",
-      "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_decoration_snake"
-    },
-    {
-      "block": "chisel:purpled_fantasy_decoration_noise",
-      "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_decoration_noise"
+      "name": "purpled_fantasy_decoration_chains"
     },
     {
       "block": "chisel:purpled_fantasy_decoration_engraving",
@@ -58,9 +58,14 @@
       "name": "purpled_fantasy_decoration_engraving"
     },
     {
-      "block": "chisel:purpled_fantasy_decoration_chains",
+      "block": "chisel:purpled_fantasy_decoration_noise",
       "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_decoration_chains"
+      "name": "purpled_fantasy_decoration_noise"
+    },
+    {
+      "block": "chisel:purpled_fantasy_decoration_pillar",
+      "model_type": "top_bottom_side",
+      "name": "purpled_fantasy_decoration_pillar"
     },
     {
       "block": "chisel:purpled_fantasy_decoration_plate",
@@ -68,19 +73,14 @@
       "name": "purpled_fantasy_decoration_plate"
     },
     {
-      "block": "chisel:purpled_fantasy_block",
-      "model_type": "cube_all",
-      "name": "purpled_fantasy_block"
+      "block": "chisel:purpled_fantasy_decoration_snake",
+      "model_type": "top_bottom_side",
+      "name": "purpled_fantasy_decoration_snake"
     },
     {
-      "block": "chisel:purpled_fantasy_bricks_disarray",
+      "block": "chisel:purpled_fantasy_pillar",
       "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_bricks_disarray"
-    },
-    {
-      "block": "chisel:purpled_fantasy_bricks_disarray_worn",
-      "model_type": "top_bottom_side",
-      "name": "purpled_fantasy_bricks_disarray_worn"
+      "name": "purpled_fantasy_pillar"
     }
   ]
 }

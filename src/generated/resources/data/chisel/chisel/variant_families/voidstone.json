@@ -3,34 +3,9 @@
   "prefix": "voidstone",
   "variants": [
     {
-      "block": "chisel:voidstone_raw",
+      "block": "chisel:voidstone_bevel",
       "model_type": "cube_all",
-      "name": "voidstone_raw"
-    },
-    {
-      "block": "chisel:voidstone_tiles",
-      "model_type": "cube_all",
-      "name": "voidstone_tiles"
-    },
-    {
-      "block": "chisel:voidstone_smooth",
-      "model_type": "cube_all",
-      "name": "voidstone_smooth"
-    },
-    {
-      "block": "chisel:voidstone_skull",
-      "model_type": "cube_all",
-      "name": "voidstone_skull"
-    },
-    {
-      "block": "chisel:voidstone_runic",
-      "model_type": "cube_all",
-      "name": "voidstone_runic"
-    },
-    {
-      "block": "chisel:voidstone_metal",
-      "model_type": "cube_all",
-      "name": "voidstone_metal"
+      "name": "voidstone_bevel"
     },
     {
       "block": "chisel:voidstone_eye",
@@ -38,9 +13,34 @@
       "name": "voidstone_eye"
     },
     {
-      "block": "chisel:voidstone_bevel",
+      "block": "chisel:voidstone_metal",
       "model_type": "cube_all",
-      "name": "voidstone_bevel"
+      "name": "voidstone_metal"
+    },
+    {
+      "block": "chisel:voidstone_raw",
+      "model_type": "cube_all",
+      "name": "voidstone_raw"
+    },
+    {
+      "block": "chisel:voidstone_runic",
+      "model_type": "cube_all",
+      "name": "voidstone_runic"
+    },
+    {
+      "block": "chisel:voidstone_skull",
+      "model_type": "cube_all",
+      "name": "voidstone_skull"
+    },
+    {
+      "block": "chisel:voidstone_smooth",
+      "model_type": "cube_all",
+      "name": "voidstone_smooth"
+    },
+    {
+      "block": "chisel:voidstone_tiles",
+      "model_type": "cube_all",
+      "name": "voidstone_tiles"
     }
   ]
 }

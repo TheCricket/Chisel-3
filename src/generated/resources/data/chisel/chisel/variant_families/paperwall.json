@@ -8,29 +8,14 @@
       "name": "paperwall_boxed"
     },
     {
-      "block": "chisel:paperwall_strike_middle",
-      "model_type": "cube_all",
-      "name": "paperwall_strike_middle"
-    },
-    {
       "block": "chisel:paperwall_crossed",
       "model_type": "cube_all",
       "name": "paperwall_crossed"
     },
     {
-      "block": "chisel:paperwall_six",
+      "block": "chisel:paperwall_door",
       "model_type": "cube_all",
-      "name": "paperwall_six"
-    },
-    {
-      "block": "chisel:paperwall_strike_vertical",
-      "model_type": "cube_all",
-      "name": "paperwall_strike_vertical"
-    },
-    {
-      "block": "chisel:paperwall_strike_horizontal",
-      "model_type": "cube_all",
-      "name": "paperwall_strike_horizontal"
+      "name": "paperwall_door"
     },
     {
       "block": "chisel:paperwall_floral",
@@ -43,9 +28,24 @@
       "name": "paperwall_plain"
     },
     {
-      "block": "chisel:paperwall_door",
+      "block": "chisel:paperwall_six",
       "model_type": "cube_all",
-      "name": "paperwall_door"
+      "name": "paperwall_six"
+    },
+    {
+      "block": "chisel:paperwall_strike_horizontal",
+      "model_type": "cube_all",
+      "name": "paperwall_strike_horizontal"
+    },
+    {
+      "block": "chisel:paperwall_strike_middle",
+      "model_type": "cube_all",
+      "name": "paperwall_strike_middle"
+    },
+    {
+      "block": "chisel:paperwall_strike_vertical",
+      "model_type": "cube_all",
+      "name": "paperwall_strike_vertical"
     }
   ]
 }

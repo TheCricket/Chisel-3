@@ -3,49 +3,9 @@
   "prefix": "warning",
   "variants": [
     {
-      "block": "chisel:warning_radiation",
-      "model_type": "multi_layer",
-      "name": "warning_radiation"
-    },
-    {
       "block": "chisel:warning_biohazard",
       "model_type": "multi_layer",
       "name": "warning_biohazard"
-    },
-    {
-      "block": "chisel:warning_fire",
-      "model_type": "multi_layer",
-      "name": "warning_fire"
-    },
-    {
-      "block": "chisel:warning_explosion",
-      "model_type": "multi_layer",
-      "name": "warning_explosion"
-    },
-    {
-      "block": "chisel:warning_death",
-      "model_type": "multi_layer",
-      "name": "warning_death"
-    },
-    {
-      "block": "chisel:warning_falling_objects",
-      "model_type": "multi_layer",
-      "name": "warning_falling_objects"
-    },
-    {
-      "block": "chisel:warning_falling",
-      "model_type": "multi_layer",
-      "name": "warning_falling"
-    },
-    {
-      "block": "chisel:warning_voltage",
-      "model_type": "multi_layer",
-      "name": "warning_voltage"
-    },
-    {
-      "block": "chisel:warning_generic",
-      "model_type": "multi_layer",
-      "name": "warning_generic"
     },
     {
       "block": "chisel:warning_chem",
@@ -58,6 +18,41 @@
       "name": "warning_construction"
     },
     {
+      "block": "chisel:warning_cryogenic",
+      "model_type": "multi_layer",
+      "name": "warning_cryogenic"
+    },
+    {
+      "block": "chisel:warning_death",
+      "model_type": "multi_layer",
+      "name": "warning_death"
+    },
+    {
+      "block": "chisel:warning_explosion",
+      "model_type": "multi_layer",
+      "name": "warning_explosion"
+    },
+    {
+      "block": "chisel:warning_falling",
+      "model_type": "multi_layer",
+      "name": "warning_falling"
+    },
+    {
+      "block": "chisel:warning_falling_objects",
+      "model_type": "multi_layer",
+      "name": "warning_falling_objects"
+    },
+    {
+      "block": "chisel:warning_fire",
+      "model_type": "multi_layer",
+      "name": "warning_fire"
+    },
+    {
+      "block": "chisel:warning_generic",
+      "model_type": "multi_layer",
+      "name": "warning_generic"
+    },
+    {
       "block": "chisel:warning_loud",
       "model_type": "multi_layer",
       "name": "warning_loud"
@@ -68,14 +63,19 @@
       "name": "warning_no_entry"
     },
     {
-      "block": "chisel:warning_cryogenic",
-      "model_type": "multi_layer",
-      "name": "warning_cryogenic"
-    },
-    {
       "block": "chisel:warning_oxygen",
       "model_type": "multi_layer",
       "name": "warning_oxygen"
+    },
+    {
+      "block": "chisel:warning_radiation",
+      "model_type": "multi_layer",
+      "name": "warning_radiation"
+    },
+    {
+      "block": "chisel:warning_voltage",
+      "model_type": "multi_layer",
+      "name": "warning_voltage"
     }
   ]
 }

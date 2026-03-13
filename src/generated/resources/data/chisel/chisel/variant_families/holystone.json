@@ -3,26 +3,6 @@
   "prefix": "holystone",
   "variants": [
     {
-      "block": "chisel:holystone_raw",
-      "model_type": "cube_all",
-      "name": "holystone_raw"
-    },
-    {
-      "block": "chisel:holystone_smooth",
-      "model_type": "cube_all",
-      "name": "holystone_smooth"
-    },
-    {
-      "block": "chisel:holystone_symbol",
-      "model_type": "cube_all",
-      "name": "holystone_symbol"
-    },
-    {
-      "block": "chisel:holystone_chiseled",
-      "model_type": "cube_all",
-      "name": "holystone_chiseled"
-    },
-    {
       "block": "chisel:holystone_blocks",
       "model_type": "cube_all",
       "name": "holystone_blocks"
@@ -43,6 +23,26 @@
       "name": "holystone_bricks_large"
     },
     {
+      "block": "chisel:holystone_chiseled",
+      "model_type": "cube_all",
+      "name": "holystone_chiseled"
+    },
+    {
+      "block": "chisel:holystone_construction",
+      "model_type": "cube_all",
+      "name": "holystone_construction"
+    },
+    {
+      "block": "chisel:holystone_plate",
+      "model_type": "cube_all",
+      "name": "holystone_plate"
+    },
+    {
+      "block": "chisel:holystone_plate_smooth",
+      "model_type": "cube_all",
+      "name": "holystone_plate_smooth"
+    },
+    {
       "block": "chisel:holystone_platform",
       "model_type": "cube_all",
       "name": "holystone_platform"
@@ -53,24 +53,24 @@
       "name": "holystone_platform_tiles"
     },
     {
-      "block": "chisel:holystone_construction",
+      "block": "chisel:holystone_raw",
       "model_type": "cube_all",
-      "name": "holystone_construction"
+      "name": "holystone_raw"
+    },
+    {
+      "block": "chisel:holystone_smooth",
+      "model_type": "cube_all",
+      "name": "holystone_smooth"
+    },
+    {
+      "block": "chisel:holystone_symbol",
+      "model_type": "cube_all",
+      "name": "holystone_symbol"
     },
     {
       "block": "chisel:holystone_tiles",
       "model_type": "cube_all",
       "name": "holystone_tiles"
-    },
-    {
-      "block": "chisel:holystone_plate_smooth",
-      "model_type": "cube_all",
-      "name": "holystone_plate_smooth"
-    },
-    {
-      "block": "chisel:holystone_plate",
-      "model_type": "cube_all",
-      "name": "holystone_plate"
     }
   ]
 }

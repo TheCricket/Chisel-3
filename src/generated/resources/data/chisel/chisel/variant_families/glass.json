@@ -3,6 +3,11 @@
   "prefix": "glass",
   "variants": [
     {
+      "block": "chisel:glass_borderless",
+      "model_type": "cube_all",
+      "name": "glass_borderless"
+    },
+    {
       "block": "chisel:glass_bubble",
       "model_type": "cube_all",
       "name": "glass_bubble"
@@ -13,24 +18,39 @@
       "name": "glass_chinese"
     },
     {
-      "block": "chisel:glass_japanese",
-      "model_type": "cube_all",
-      "name": "glass_japanese"
-    },
-    {
       "block": "chisel:glass_dungeon",
       "model_type": "cube_all",
       "name": "glass_dungeon"
     },
     {
+      "block": "chisel:glass_fence",
+      "model_type": "cube_all",
+      "name": "glass_fence"
+    },
+    {
+      "block": "chisel:glass_grid_thick",
+      "model_type": "cube_all",
+      "name": "glass_grid_thick"
+    },
+    {
+      "block": "chisel:glass_grid_thin",
+      "model_type": "cube_all",
+      "name": "glass_grid_thin"
+    },
+    {
+      "block": "chisel:glass_japanese",
+      "model_type": "cube_all",
+      "name": "glass_japanese"
+    },
+    {
+      "block": "chisel:glass_leaded",
+      "model_type": "cube_all",
+      "name": "glass_leaded"
+    },
+    {
       "block": "chisel:glass_light",
       "model_type": "cube_all",
       "name": "glass_light"
-    },
-    {
-      "block": "chisel:glass_borderless",
-      "model_type": "cube_all",
-      "name": "glass_borderless"
     },
     {
       "block": "chisel:glass_ornate",
@@ -56,26 +76,6 @@
       "block": "chisel:glass_stone",
       "model_type": "cube_all",
       "name": "glass_stone"
-    },
-    {
-      "block": "chisel:glass_grid_thick",
-      "model_type": "cube_all",
-      "name": "glass_grid_thick"
-    },
-    {
-      "block": "chisel:glass_grid_thin",
-      "model_type": "cube_all",
-      "name": "glass_grid_thin"
-    },
-    {
-      "block": "chisel:glass_fence",
-      "model_type": "cube_all",
-      "name": "glass_fence"
-    },
-    {
-      "block": "chisel:glass_leaded",
-      "model_type": "cube_all",
-      "name": "glass_leaded"
     }
   ]
 }

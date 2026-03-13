@@ -3,26 +3,6 @@
   "prefix": "grimstone",
   "variants": [
     {
-      "block": "chisel:grimstone_raw",
-      "model_type": "cube_all",
-      "name": "grimstone_raw"
-    },
-    {
-      "block": "chisel:grimstone_smooth",
-      "model_type": "cube_all",
-      "name": "grimstone_smooth"
-    },
-    {
-      "block": "chisel:grimstone_symbol",
-      "model_type": "cube_all",
-      "name": "grimstone_symbol"
-    },
-    {
-      "block": "chisel:grimstone_chiseled",
-      "model_type": "cube_all",
-      "name": "grimstone_chiseled"
-    },
-    {
       "block": "chisel:grimstone_blocks",
       "model_type": "cube_all",
       "name": "grimstone_blocks"
@@ -43,6 +23,31 @@
       "name": "grimstone_bricks_large"
     },
     {
+      "block": "chisel:grimstone_chiseled",
+      "model_type": "cube_all",
+      "name": "grimstone_chiseled"
+    },
+    {
+      "block": "chisel:grimstone_construction",
+      "model_type": "cube_all",
+      "name": "grimstone_construction"
+    },
+    {
+      "block": "chisel:grimstone_flaky",
+      "model_type": "cube_all",
+      "name": "grimstone_flaky"
+    },
+    {
+      "block": "chisel:grimstone_plate",
+      "model_type": "cube_all",
+      "name": "grimstone_plate"
+    },
+    {
+      "block": "chisel:grimstone_plate_smooth",
+      "model_type": "cube_all",
+      "name": "grimstone_plate_smooth"
+    },
+    {
       "block": "chisel:grimstone_platform",
       "model_type": "cube_all",
       "name": "grimstone_platform"
@@ -53,29 +58,24 @@
       "name": "grimstone_platform_tiles"
     },
     {
-      "block": "chisel:grimstone_construction",
+      "block": "chisel:grimstone_raw",
       "model_type": "cube_all",
-      "name": "grimstone_construction"
+      "name": "grimstone_raw"
+    },
+    {
+      "block": "chisel:grimstone_smooth",
+      "model_type": "cube_all",
+      "name": "grimstone_smooth"
+    },
+    {
+      "block": "chisel:grimstone_symbol",
+      "model_type": "cube_all",
+      "name": "grimstone_symbol"
     },
     {
       "block": "chisel:grimstone_tiles",
       "model_type": "cube_all",
       "name": "grimstone_tiles"
-    },
-    {
-      "block": "chisel:grimstone_plate_smooth",
-      "model_type": "cube_all",
-      "name": "grimstone_plate_smooth"
-    },
-    {
-      "block": "chisel:grimstone_plate",
-      "model_type": "cube_all",
-      "name": "grimstone_plate"
-    },
-    {
-      "block": "chisel:grimstone_flaky",
-      "model_type": "cube_all",
-      "name": "grimstone_flaky"
     }
   ]
 }

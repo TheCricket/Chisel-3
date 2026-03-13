@@ -3,24 +3,9 @@
   "prefix": "iron_bars",
   "variants": [
     {
-      "block": "chisel:iron_bars_no_frame",
-      "model_type": "cube_all",
-      "name": "iron_bars_no_frame"
-    },
-    {
-      "block": "chisel:iron_bars_menacing",
-      "model_type": "cube_all",
-      "name": "iron_bars_menacing"
-    },
-    {
       "block": "chisel:iron_bars_cage",
       "model_type": "cube_all",
       "name": "iron_bars_cage"
-    },
-    {
-      "block": "chisel:iron_bars_menacing_spikes",
-      "model_type": "cube_all",
-      "name": "iron_bars_menacing_spikes"
     },
     {
       "block": "chisel:iron_bars_grid_thick",
@@ -33,19 +18,34 @@
       "name": "iron_bars_grid_thin"
     },
     {
+      "block": "chisel:iron_bars_menacing",
+      "model_type": "cube_all",
+      "name": "iron_bars_menacing"
+    },
+    {
+      "block": "chisel:iron_bars_menacing_spikes",
+      "model_type": "cube_all",
+      "name": "iron_bars_menacing_spikes"
+    },
+    {
+      "block": "chisel:iron_bars_no_frame",
+      "model_type": "cube_all",
+      "name": "iron_bars_no_frame"
+    },
+    {
       "block": "chisel:iron_bars_ornate",
       "model_type": "cube_all",
       "name": "iron_bars_ornate"
     },
     {
-      "block": "chisel:iron_bars_vertical",
-      "model_type": "cube_all",
-      "name": "iron_bars_vertical"
-    },
-    {
       "block": "chisel:iron_bars_spikes",
       "model_type": "cube_all",
       "name": "iron_bars_spikes"
+    },
+    {
+      "block": "chisel:iron_bars_vertical",
+      "model_type": "cube_all",
+      "name": "iron_bars_vertical"
     }
   ]
 }

@@ -3,9 +3,34 @@
   "prefix": "mossy_temple",
   "variants": [
     {
+      "block": "chisel:mossy_temple_bricks",
+      "model_type": "cube_all",
+      "name": "mossy_temple_bricks"
+    },
+    {
+      "block": "chisel:mossy_temple_bricks_disarray",
+      "model_type": "cube_all",
+      "name": "mossy_temple_bricks_disarray"
+    },
+    {
+      "block": "chisel:mossy_temple_bricks_large",
+      "model_type": "cube_all",
+      "name": "mossy_temple_bricks_large"
+    },
+    {
+      "block": "chisel:mossy_temple_bricks_worn",
+      "model_type": "cube_all",
+      "name": "mossy_temple_bricks_worn"
+    },
+    {
       "block": "chisel:mossy_temple_cobble",
       "model_type": "cube_all",
       "name": "mossy_temple_cobble"
+    },
+    {
+      "block": "chisel:mossy_temple_column",
+      "model_type": "cube_all",
+      "name": "mossy_temple_column"
     },
     {
       "block": "chisel:mossy_temple_ornate",
@@ -23,39 +48,9 @@
       "name": "mossy_temple_plate_cracked"
     },
     {
-      "block": "chisel:mossy_temple_bricks",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks"
-    },
-    {
-      "block": "chisel:mossy_temple_bricks_large",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks_large"
-    },
-    {
-      "block": "chisel:mossy_temple_bricks_worn",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks_worn"
-    },
-    {
-      "block": "chisel:mossy_temple_bricks_disarray",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks_disarray"
-    },
-    {
-      "block": "chisel:mossy_temple_column",
-      "model_type": "cube_all",
-      "name": "mossy_temple_column"
-    },
-    {
       "block": "chisel:mossy_temple_stand",
       "model_type": "cube_all",
       "name": "mossy_temple_stand"
-    },
-    {
-      "block": "chisel:mossy_temple_stand_mosaic",
-      "model_type": "cube_all",
-      "name": "mossy_temple_stand_mosaic"
     },
     {
       "block": "chisel:mossy_temple_stand_creeper",
@@ -63,19 +58,24 @@
       "name": "mossy_temple_stand_creeper"
     },
     {
+      "block": "chisel:mossy_temple_stand_mosaic",
+      "model_type": "cube_all",
+      "name": "mossy_temple_stand_mosaic"
+    },
+    {
       "block": "chisel:mossy_temple_tiles",
       "model_type": "cube_all",
       "name": "mossy_temple_tiles"
     },
     {
-      "block": "chisel:mossy_temple_tiles_small",
-      "model_type": "cube_all",
-      "name": "mossy_temple_tiles_small"
-    },
-    {
       "block": "chisel:mossy_temple_tiles_light",
       "model_type": "cube_all",
       "name": "mossy_temple_tiles_light"
+    },
+    {
+      "block": "chisel:mossy_temple_tiles_small",
+      "model_type": "cube_all",
+      "name": "mossy_temple_tiles_small"
     },
     {
       "block": "chisel:mossy_temple_tiles_small_light",

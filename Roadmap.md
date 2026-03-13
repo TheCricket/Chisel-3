@@ -16,7 +16,7 @@ Initial pass is just textures
 - [X] Cobblestone
 - [ ] Concrete
 - [X] Copper
-- [ ] Dark Oak
+- [X] Dark Oak
 - [ ] Diamond
 - [ ] Diorite
 - [ ] Dirt

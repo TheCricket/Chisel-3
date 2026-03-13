@@ -3,6 +3,11 @@
   "prefix": "stained_glass_brown",
   "variants": [
     {
+      "block": "chisel:stained_glass_brown_borderless",
+      "model_type": "cube_all",
+      "name": "stained_glass_brown_borderless"
+    },
+    {
       "block": "chisel:stained_glass_brown_bubble",
       "model_type": "cube_all",
       "name": "stained_glass_brown_bubble"
@@ -16,11 +21,6 @@
       "block": "chisel:stained_glass_brown_panel_fancy",
       "model_type": "cube_all",
       "name": "stained_glass_brown_panel_fancy"
-    },
-    {
-      "block": "chisel:stained_glass_brown_borderless",
-      "model_type": "cube_all",
-      "name": "stained_glass_brown_borderless"
     }
   ]
 }

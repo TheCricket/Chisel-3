@@ -3,9 +3,14 @@
   "prefix": "acacia_planks",
   "variants": [
     {
-      "block": "chisel:acacia_planks_large",
+      "block": "chisel:acacia_planks_braced",
+      "model_type": "top_bottom_side",
+      "name": "acacia_planks_braced"
+    },
+    {
+      "block": "chisel:acacia_planks_braid",
       "model_type": "cube_all",
-      "name": "acacia_planks_large"
+      "name": "acacia_planks_braid"
     },
     {
       "block": "chisel:acacia_planks_crude_horizontal",
@@ -13,9 +18,9 @@
       "name": "acacia_planks_crude_horizontal"
     },
     {
-      "block": "chisel:acacia_planks_vertical",
+      "block": "chisel:acacia_planks_crude_paneling",
       "model_type": "cube_all",
-      "name": "acacia_planks_vertical"
+      "name": "acacia_planks_crude_paneling"
     },
     {
       "block": "chisel:acacia_planks_crude_vertical",
@@ -28,39 +33,9 @@
       "name": "acacia_planks_encased"
     },
     {
-      "block": "chisel:acacia_planks_braced",
-      "model_type": "top_bottom_side",
-      "name": "acacia_planks_braced"
-    },
-    {
-      "block": "chisel:acacia_planks_shipping",
-      "model_type": "cube_all",
-      "name": "acacia_planks_shipping"
-    },
-    {
       "block": "chisel:acacia_planks_encased_large",
       "model_type": "cube_all",
       "name": "acacia_planks_encased_large"
-    },
-    {
-      "block": "chisel:acacia_planks_paneling",
-      "model_type": "cube_all",
-      "name": "acacia_planks_paneling"
-    },
-    {
-      "block": "chisel:acacia_planks_crude_paneling",
-      "model_type": "cube_all",
-      "name": "acacia_planks_crude_paneling"
-    },
-    {
-      "block": "chisel:acacia_planks_stacked",
-      "model_type": "cube_all",
-      "name": "acacia_planks_stacked"
-    },
-    {
-      "block": "chisel:acacia_planks_smooth",
-      "model_type": "cube_all",
-      "name": "acacia_planks_smooth"
     },
     {
       "block": "chisel:acacia_planks_encased_smooth",
@@ -68,14 +43,39 @@
       "name": "acacia_planks_encased_smooth"
     },
     {
-      "block": "chisel:acacia_planks_braid",
+      "block": "chisel:acacia_planks_large",
       "model_type": "cube_all",
-      "name": "acacia_planks_braid"
+      "name": "acacia_planks_large"
     },
     {
       "block": "chisel:acacia_planks_log_cabin",
       "model_type": "cube_all",
       "name": "acacia_planks_log_cabin"
+    },
+    {
+      "block": "chisel:acacia_planks_paneling",
+      "model_type": "cube_all",
+      "name": "acacia_planks_paneling"
+    },
+    {
+      "block": "chisel:acacia_planks_shipping",
+      "model_type": "cube_all",
+      "name": "acacia_planks_shipping"
+    },
+    {
+      "block": "chisel:acacia_planks_smooth",
+      "model_type": "cube_all",
+      "name": "acacia_planks_smooth"
+    },
+    {
+      "block": "chisel:acacia_planks_stacked",
+      "model_type": "cube_all",
+      "name": "acacia_planks_stacked"
+    },
+    {
+      "block": "chisel:acacia_planks_vertical",
+      "model_type": "cube_all",
+      "name": "acacia_planks_vertical"
     }
   ]
 }

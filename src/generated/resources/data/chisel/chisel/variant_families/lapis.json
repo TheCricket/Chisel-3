@@ -13,19 +13,14 @@
       "name": "lapis_dark"
     },
     {
-      "block": "chisel:lapis_zelda",
-      "model_type": "cube_all",
-      "name": "lapis_zelda"
-    },
-    {
       "block": "chisel:lapis_ornate",
       "model_type": "cube_all",
       "name": "lapis_ornate"
     },
     {
-      "block": "chisel:lapis_tile",
+      "block": "chisel:lapis_ornate_layer",
       "model_type": "cube_all",
-      "name": "lapis_tile"
+      "name": "lapis_ornate_layer"
     },
     {
       "block": "chisel:lapis_panel",
@@ -38,9 +33,14 @@
       "name": "lapis_smooth"
     },
     {
-      "block": "chisel:lapis_ornate_layer",
+      "block": "chisel:lapis_tile",
       "model_type": "cube_all",
-      "name": "lapis_ornate_layer"
+      "name": "lapis_tile"
+    },
+    {
+      "block": "chisel:lapis_zelda",
+      "model_type": "cube_all",
+      "name": "lapis_zelda"
     }
   ]
 }

@@ -3,6 +3,21 @@
   "prefix": "glowstone",
   "variants": [
     {
+      "block": "chisel:glowstone_bismuth",
+      "model_type": "cube_all",
+      "name": "glowstone_bismuth"
+    },
+    {
+      "block": "chisel:glowstone_bismuth_panel",
+      "model_type": "cube_all",
+      "name": "glowstone_bismuth_panel"
+    },
+    {
+      "block": "chisel:glowstone_blocks",
+      "model_type": "cube_all",
+      "name": "glowstone_blocks"
+    },
+    {
       "block": "chisel:glowstone_cobble",
       "model_type": "cube_all",
       "name": "glowstone_cobble"
@@ -13,14 +28,34 @@
       "name": "glowstone_corroded"
     },
     {
-      "block": "chisel:glowstone_blocks",
+      "block": "chisel:glowstone_corroded_tiles",
       "model_type": "cube_all",
-      "name": "glowstone_blocks"
+      "name": "glowstone_corroded_tiles"
+    },
+    {
+      "block": "chisel:glowstone_crumbling",
+      "model_type": "cube_all",
+      "name": "glowstone_crumbling"
+    },
+    {
+      "block": "chisel:glowstone_fancy",
+      "model_type": "cube_all",
+      "name": "glowstone_fancy"
+    },
+    {
+      "block": "chisel:glowstone_layers",
+      "model_type": "cube_all",
+      "name": "glowstone_layers"
     },
     {
       "block": "chisel:glowstone_neon",
       "model_type": "cube_all",
       "name": "glowstone_neon"
+    },
+    {
+      "block": "chisel:glowstone_organic",
+      "model_type": "cube_all",
+      "name": "glowstone_organic"
     },
     {
       "block": "chisel:glowstone_ornate",
@@ -41,41 +76,6 @@
       "block": "chisel:glowstone_tiles",
       "model_type": "cube_all",
       "name": "glowstone_tiles"
-    },
-    {
-      "block": "chisel:glowstone_fancy",
-      "model_type": "cube_all",
-      "name": "glowstone_fancy"
-    },
-    {
-      "block": "chisel:glowstone_crumbling",
-      "model_type": "cube_all",
-      "name": "glowstone_crumbling"
-    },
-    {
-      "block": "chisel:glowstone_organic",
-      "model_type": "cube_all",
-      "name": "glowstone_organic"
-    },
-    {
-      "block": "chisel:glowstone_layers",
-      "model_type": "cube_all",
-      "name": "glowstone_layers"
-    },
-    {
-      "block": "chisel:glowstone_corroded_tiles",
-      "model_type": "cube_all",
-      "name": "glowstone_corroded_tiles"
-    },
-    {
-      "block": "chisel:glowstone_bismuth",
-      "model_type": "cube_all",
-      "name": "glowstone_bismuth"
-    },
-    {
-      "block": "chisel:glowstone_bismuth_panel",
-      "model_type": "cube_all",
-      "name": "glowstone_bismuth_panel"
     }
   ]
 }

@@ -38,6 +38,11 @@
       "name": "antiblock_light_blue"
     },
     {
+      "block": "chisel:antiblock_light_gray",
+      "model_type": "multi_layer_connected",
+      "name": "antiblock_light_gray"
+    },
+    {
       "block": "chisel:antiblock_lime",
       "model_type": "multi_layer_connected",
       "name": "antiblock_lime"
@@ -66,11 +71,6 @@
       "block": "chisel:antiblock_red",
       "model_type": "multi_layer_connected",
       "name": "antiblock_red"
-    },
-    {
-      "block": "chisel:antiblock_light_gray",
-      "model_type": "multi_layer_connected",
-      "name": "antiblock_light_gray"
     },
     {
       "block": "chisel:antiblock_white",

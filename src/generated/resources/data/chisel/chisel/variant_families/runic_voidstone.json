@@ -13,6 +13,36 @@
       "name": "runic_voidstone_1"
     },
     {
+      "block": "chisel:runic_voidstone_10",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_10"
+    },
+    {
+      "block": "chisel:runic_voidstone_11",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_11"
+    },
+    {
+      "block": "chisel:runic_voidstone_12",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_12"
+    },
+    {
+      "block": "chisel:runic_voidstone_13",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_13"
+    },
+    {
+      "block": "chisel:runic_voidstone_14",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_14"
+    },
+    {
+      "block": "chisel:runic_voidstone_15",
+      "model_type": "cube_all",
+      "name": "runic_voidstone_15"
+    },
+    {
       "block": "chisel:runic_voidstone_2",
       "model_type": "cube_all",
       "name": "runic_voidstone_2"
@@ -51,36 +81,6 @@
       "block": "chisel:runic_voidstone_9",
       "model_type": "cube_all",
       "name": "runic_voidstone_9"
-    },
-    {
-      "block": "chisel:runic_voidstone_10",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_10"
-    },
-    {
-      "block": "chisel:runic_voidstone_11",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_11"
-    },
-    {
-      "block": "chisel:runic_voidstone_12",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_12"
-    },
-    {
-      "block": "chisel:runic_voidstone_13",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_13"
-    },
-    {
-      "block": "chisel:runic_voidstone_14",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_14"
-    },
-    {
-      "block": "chisel:runic_voidstone_15",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_15"
     }
   ]
 }

@@ -3,19 +3,14 @@
   "prefix": "waterstone",
   "variants": [
     {
-      "block": "chisel:waterstone_bricks",
-      "model_type": "multi_layer_water",
-      "name": "waterstone_bricks"
-    },
-    {
       "block": "chisel:waterstone_black",
       "model_type": "multi_layer_water",
       "name": "waterstone_black"
     },
     {
-      "block": "chisel:waterstone_tiles",
+      "block": "chisel:waterstone_bricks",
       "model_type": "multi_layer_water",
-      "name": "waterstone_tiles"
+      "name": "waterstone_bricks"
     },
     {
       "block": "chisel:waterstone_chaotic",
@@ -28,14 +23,19 @@
       "name": "waterstone_creeper"
     },
     {
+      "block": "chisel:waterstone_ornate",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_ornate"
+    },
+    {
       "block": "chisel:waterstone_panel",
       "model_type": "multi_layer_water",
       "name": "waterstone_panel"
     },
     {
-      "block": "chisel:waterstone_ornate",
+      "block": "chisel:waterstone_tiles",
       "model_type": "multi_layer_water",
-      "name": "waterstone_ornate"
+      "name": "waterstone_tiles"
     }
   ]
 }

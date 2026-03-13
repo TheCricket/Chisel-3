@@ -13,6 +13,36 @@
       "name": "large_hex_plating_1"
     },
     {
+      "block": "chisel:large_hex_plating_10",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_10"
+    },
+    {
+      "block": "chisel:large_hex_plating_11",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_11"
+    },
+    {
+      "block": "chisel:large_hex_plating_12",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_12"
+    },
+    {
+      "block": "chisel:large_hex_plating_13",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_13"
+    },
+    {
+      "block": "chisel:large_hex_plating_14",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_14"
+    },
+    {
+      "block": "chisel:large_hex_plating_15",
+      "model_type": "cube_all",
+      "name": "large_hex_plating_15"
+    },
+    {
       "block": "chisel:large_hex_plating_2",
       "model_type": "cube_all",
       "name": "large_hex_plating_2"
@@ -51,36 +81,6 @@
       "block": "chisel:large_hex_plating_9",
       "model_type": "cube_all",
       "name": "large_hex_plating_9"
-    },
-    {
-      "block": "chisel:large_hex_plating_10",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_10"
-    },
-    {
-      "block": "chisel:large_hex_plating_11",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_11"
-    },
-    {
-      "block": "chisel:large_hex_plating_12",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_12"
-    },
-    {
-      "block": "chisel:large_hex_plating_13",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_13"
-    },
-    {
-      "block": "chisel:large_hex_plating_14",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_14"
-    },
-    {
-      "block": "chisel:large_hex_plating_15",
-      "model_type": "cube_all",
-      "name": "large_hex_plating_15"
     }
   ]
 }

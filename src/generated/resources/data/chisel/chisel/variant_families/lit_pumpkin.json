@@ -13,6 +13,41 @@
       "name": "lit_pumpkin_1"
     },
     {
+      "block": "chisel:lit_pumpkin_10",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_10"
+    },
+    {
+      "block": "chisel:lit_pumpkin_11",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_11"
+    },
+    {
+      "block": "chisel:lit_pumpkin_12",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_12"
+    },
+    {
+      "block": "chisel:lit_pumpkin_13",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_13"
+    },
+    {
+      "block": "chisel:lit_pumpkin_14",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_14"
+    },
+    {
+      "block": "chisel:lit_pumpkin_15",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_15"
+    },
+    {
+      "block": "chisel:lit_pumpkin_16",
+      "model_type": "cube_all",
+      "name": "lit_pumpkin_16"
+    },
+    {
       "block": "chisel:lit_pumpkin_2",
       "model_type": "cube_all",
       "name": "lit_pumpkin_2"
@@ -51,41 +86,6 @@
       "block": "chisel:lit_pumpkin_9",
       "model_type": "cube_all",
       "name": "lit_pumpkin_9"
-    },
-    {
-      "block": "chisel:lit_pumpkin_10",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_10"
-    },
-    {
-      "block": "chisel:lit_pumpkin_11",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_11"
-    },
-    {
-      "block": "chisel:lit_pumpkin_12",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_12"
-    },
-    {
-      "block": "chisel:lit_pumpkin_13",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_13"
-    },
-    {
-      "block": "chisel:lit_pumpkin_14",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_14"
-    },
-    {
-      "block": "chisel:lit_pumpkin_15",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_15"
-    },
-    {
-      "block": "chisel:lit_pumpkin_16",
-      "model_type": "cube_all",
-      "name": "lit_pumpkin_16"
     }
   ]
 }

@@ -3,6 +3,21 @@
   "prefix": "silver",
   "variants": [
     {
+      "block": "chisel:silver_125",
+      "model_type": "cube_all",
+      "name": "silver_125"
+    },
+    {
+      "block": "chisel:silver_bolted",
+      "model_type": "cube_all",
+      "name": "silver_bolted"
+    },
+    {
+      "block": "chisel:silver_bordered",
+      "model_type": "cube_all",
+      "name": "silver_bordered"
+    },
+    {
       "block": "chisel:silver_caution",
       "model_type": "cube_all",
       "name": "silver_caution"
@@ -16,21 +31,6 @@
       "block": "chisel:silver_thermal",
       "model_type": "cube_all",
       "name": "silver_thermal"
-    },
-    {
-      "block": "chisel:silver_125",
-      "model_type": "cube_all",
-      "name": "silver_125"
-    },
-    {
-      "block": "chisel:silver_bordered",
-      "model_type": "cube_all",
-      "name": "silver_bordered"
-    },
-    {
-      "block": "chisel:silver_bolted",
-      "model_type": "cube_all",
-      "name": "silver_bolted"
     }
   ]
 }

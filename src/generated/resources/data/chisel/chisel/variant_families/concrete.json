@@ -3,9 +3,9 @@
   "prefix": "concrete",
   "variants": [
     {
-      "block": "chisel:concrete_raw",
+      "block": "chisel:concrete_asphalt",
       "model_type": "cube_all",
-      "name": "concrete_raw"
+      "name": "concrete_asphalt"
     },
     {
       "block": "chisel:concrete_block",
@@ -13,19 +13,9 @@
       "name": "concrete_block"
     },
     {
-      "block": "chisel:concrete_slab",
+      "block": "chisel:concrete_block_partly",
       "model_type": "cube_all",
-      "name": "concrete_slab"
-    },
-    {
-      "block": "chisel:concrete_blocks",
-      "model_type": "cube_all",
-      "name": "concrete_blocks"
-    },
-    {
-      "block": "chisel:concrete_raw_weathered",
-      "model_type": "cube_all",
-      "name": "concrete_raw_weathered"
+      "name": "concrete_block_partly"
     },
     {
       "block": "chisel:concrete_block_weathered",
@@ -33,9 +23,9 @@
       "name": "concrete_block_weathered"
     },
     {
-      "block": "chisel:concrete_slab_weathered",
+      "block": "chisel:concrete_blocks",
       "model_type": "cube_all",
-      "name": "concrete_slab_weathered"
+      "name": "concrete_blocks"
     },
     {
       "block": "chisel:concrete_blocks_weathered",
@@ -43,19 +33,29 @@
       "name": "concrete_blocks_weathered"
     },
     {
+      "block": "chisel:concrete_raw",
+      "model_type": "cube_all",
+      "name": "concrete_raw"
+    },
+    {
       "block": "chisel:concrete_raw_partly",
       "model_type": "cube_all",
       "name": "concrete_raw_partly"
     },
     {
-      "block": "chisel:concrete_block_partly",
+      "block": "chisel:concrete_raw_weathered",
       "model_type": "cube_all",
-      "name": "concrete_block_partly"
+      "name": "concrete_raw_weathered"
     },
     {
-      "block": "chisel:concrete_asphalt",
+      "block": "chisel:concrete_slab",
       "model_type": "cube_all",
-      "name": "concrete_asphalt"
+      "name": "concrete_slab"
+    },
+    {
+      "block": "chisel:concrete_slab_weathered",
+      "model_type": "cube_all",
+      "name": "concrete_slab_weathered"
     }
   ]
 }

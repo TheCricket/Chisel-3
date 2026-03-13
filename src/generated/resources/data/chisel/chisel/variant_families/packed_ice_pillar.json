@@ -3,19 +3,9 @@
   "prefix": "packed_ice_pillar",
   "variants": [
     {
-      "block": "chisel:packed_ice_pillar_plain_plain",
+      "block": "chisel:packed_ice_pillar_carved",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_plain_plain"
-    },
-    {
-      "block": "chisel:packed_ice_pillar_plain_greek",
-      "model_type": "cube_all",
-      "name": "packed_ice_pillar_plain_greek"
-    },
-    {
-      "block": "chisel:packed_ice_pillar_greek_plain",
-      "model_type": "cube_all",
-      "name": "packed_ice_pillar_greek_plain"
+      "name": "packed_ice_pillar_carved"
     },
     {
       "block": "chisel:packed_ice_pillar_greek_greek",
@@ -23,9 +13,14 @@
       "name": "packed_ice_pillar_greek_greek"
     },
     {
-      "block": "chisel:packed_ice_pillar_carved",
+      "block": "chisel:packed_ice_pillar_greek_plain",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_carved"
+      "name": "packed_ice_pillar_greek_plain"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_inscribed",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_inscribed"
     },
     {
       "block": "chisel:packed_ice_pillar_ornamental",
@@ -33,9 +28,14 @@
       "name": "packed_ice_pillar_ornamental"
     },
     {
-      "block": "chisel:packed_ice_pillar_inscribed",
+      "block": "chisel:packed_ice_pillar_plain_greek",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_inscribed"
+      "name": "packed_ice_pillar_plain_greek"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_plain_plain",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_plain_plain"
     }
   ]
 }
