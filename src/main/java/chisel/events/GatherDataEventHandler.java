@@ -3,6 +3,7 @@ package chisel.events;
 import chisel.Chisel;
 import chisel.datagen.ChiselLootTableProvider;
 import chisel.datagen.ChiselModelProvider;
+import chisel.datagen.ChiselRecipes;
 import chisel.datagen.ChiselSoundDefinitionProvider;
 import chisel.datagen.lang.ChiselLang;
 import chisel.registry.ChiselVariants;
@@ -26,5 +27,6 @@ public class GatherDataEventHandler {
         event.createProvider(ChiselLootTableProvider::new);
         event.createProvider(ChiselLang::new);
         event.createProvider(ChiselSoundDefinitionProvider::new);
+        event.createProvider(ChiselRecipes.Runner::new);
     }
 }

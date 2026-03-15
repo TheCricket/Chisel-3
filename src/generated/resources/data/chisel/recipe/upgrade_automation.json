@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "#c:gems/emerald",
+    "I": "#c:ingots/iron",
+    "R": "#c:dusts/redstone",
+    "U": "minecraft:hopper"
+  },
+  "pattern": [
+    "IEI",
+    "EUE",
+    "RRR"
+  ],
+  "result": {
+    "id": "chisel:upgrade_automation"
+  }
+}

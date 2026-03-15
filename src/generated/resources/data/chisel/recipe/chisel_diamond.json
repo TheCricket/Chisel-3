@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "#c:rods/wooden",
+    "Y": "#c:gems/diamond"
+  },
+  "pattern": [
+    " Y",
+    "X "
+  ],
+  "result": {
+    "id": "chisel:chisel_diamond"
+  }
+}
