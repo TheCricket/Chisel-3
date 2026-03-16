@@ -19,7 +19,7 @@ Initial pass is just textures
 - [X] Dark Oak
 - [X] Diamond
 - [X] Diorite
-- [ ] Dirt
+- [X] Dirt
 - [ ] Emerald
 - [X] Energized Voidstone
 - [ ] Energized Voidstone Pillar

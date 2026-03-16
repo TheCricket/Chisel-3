@@ -8,6 +8,11 @@
       "name": "dirt_bricks"
     },
     {
+      "block": "chisel:dirt_bricks_arranged",
+      "model_type": "cube_all",
+      "name": "dirt_bricks_arranged"
+    },
+    {
       "block": "chisel:dirt_bricks_disarray",
       "model_type": "cube_all",
       "name": "dirt_bricks_disarray"
@@ -16,11 +21,6 @@
       "block": "chisel:dirt_bricks_large",
       "model_type": "cube_all",
       "name": "dirt_bricks_large"
-    },
-    {
-      "block": "chisel:dirt_bricks_large_on",
-      "model_type": "cube_all",
-      "name": "dirt_bricks_large_on"
     },
     {
       "block": "chisel:dirt_chunky",
@@ -33,16 +33,6 @@
       "name": "dirt_cobble"
     },
     {
-      "block": "chisel:dirt_cobble_reinforced",
-      "model_type": "cube_all",
-      "name": "dirt_cobble_reinforced"
-    },
-    {
-      "block": "chisel:dirt_crumbling",
-      "model_type": "cube_all",
-      "name": "dirt_crumbling"
-    },
-    {
       "block": "chisel:dirt_happy",
       "model_type": "cube_all",
       "name": "dirt_happy"
@@ -53,19 +43,14 @@
       "name": "dirt_horizontal"
     },
     {
-      "block": "chisel:dirt_horizontal2",
-      "model_type": "cube_all",
-      "name": "dirt_horizontal2"
-    },
-    {
       "block": "chisel:dirt_layers",
       "model_type": "cube_all",
       "name": "dirt_layers"
     },
     {
-      "block": "chisel:dirt_nether",
+      "block": "chisel:dirt_netherbricks",
       "model_type": "cube_all",
-      "name": "dirt_nether"
+      "name": "dirt_netherbricks"
     },
     {
       "block": "chisel:dirt_plate",
@@ -76,6 +61,16 @@
       "block": "chisel:dirt_reinforced",
       "model_type": "cube_all",
       "name": "dirt_reinforced"
+    },
+    {
+      "block": "chisel:dirt_reinforced_cobble",
+      "model_type": "cube_all",
+      "name": "dirt_reinforced_cobble"
+    },
+    {
+      "block": "chisel:dirt_vert",
+      "model_type": "cube_all",
+      "name": "dirt_vert"
     },
     {
       "block": "chisel:dirt_vertical",

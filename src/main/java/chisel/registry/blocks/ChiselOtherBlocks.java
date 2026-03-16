@@ -80,22 +80,21 @@ public class ChiselOtherBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> DIAMOND_ZELDA;
     public static DeferredBlock<Block> DIAMOND_ORNATE;
 
-    public static DeferredBlock<Block> DIRT_BRICKS_DISARRAY;
-    public static DeferredBlock<Block> DIRT_NETHER;
     public static DeferredBlock<Block> DIRT_BRICKS;
-    public static DeferredBlock<Block> DIRT_COBBLE;
-    public static DeferredBlock<Block> DIRT_COBBLE_REINFORCED;
-    public static DeferredBlock<Block> DIRT_REINFORCED;
-    public static DeferredBlock<Block> DIRT_HAPPY;
+    public static DeferredBlock<Block> DIRT_BRICKS_ARRANGED;
+    public static DeferredBlock<Block> DIRT_BRICKS_DISARRAY;
     public static DeferredBlock<Block> DIRT_BRICKS_LARGE;
-    public static DeferredBlock<Block> DIRT_BRICKS_LARGE_ON;
-    public static DeferredBlock<Block> DIRT_HORIZONTAL;
-    public static DeferredBlock<Block> DIRT_VERTICAL;
-    public static DeferredBlock<Block> DIRT_LAYERS;
-    public static DeferredBlock<Block> DIRT_CRUMBLING;
     public static DeferredBlock<Block> DIRT_CHUNKY;
-    public static DeferredBlock<Block> DIRT_HORIZONTAL2;
+    public static DeferredBlock<Block> DIRT_COBBLE;
+    public static DeferredBlock<Block> DIRT_HAPPY;
+    public static DeferredBlock<Block> DIRT_HORIZONTAL;
+    public static DeferredBlock<Block> DIRT_LAYERS;
+    public static DeferredBlock<Block> DIRT_NETHERBRICKS;
     public static DeferredBlock<Block> DIRT_PLATE;
+    public static DeferredBlock<Block> DIRT_REINFORCED;
+    public static DeferredBlock<Block> DIRT_REINFORCED_COBBLE;
+    public static DeferredBlock<Block> DIRT_VERT;
+    public static DeferredBlock<Block> DIRT_VERTICAL;
 
     public static DeferredBlock<Block> EMERALD_PANEL;
     public static DeferredBlock<Block> EMERALD_PANEL_CLASSIC;
@@ -467,22 +466,21 @@ public class ChiselOtherBlocks extends ChiselBlocksProvider {
         DIAMOND_ZELDA = register("diamond_zelda", BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
         DIAMOND_ORNATE = register("diamond_ornate", BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
 
-        DIRT_BRICKS_DISARRAY = register("dirt_bricks_disarray", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_NETHER = register("dirt_nether", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
         DIRT_BRICKS = register("dirt_bricks", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_COBBLE = register("dirt_cobble", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_COBBLE_REINFORCED = register("dirt_cobble_reinforced", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_REINFORCED = register("dirt_reinforced", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_HAPPY = register("dirt_happy", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_BRICKS_ARRANGED = register("dirt_bricks_arranged", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_BRICKS_DISARRAY = register("dirt_bricks_disarray", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
         DIRT_BRICKS_LARGE = register("dirt_bricks_large", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_BRICKS_LARGE_ON = register("dirt_bricks_large_on", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_HORIZONTAL = register("dirt_horizontal", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_VERTICAL = register("dirt_vertical", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_LAYERS = register("dirt_layers", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_CRUMBLING = register("dirt_crumbling", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
         DIRT_CHUNKY = register("dirt_chunky", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-        DIRT_HORIZONTAL2 = register("dirt_horizontal2", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_COBBLE = register("dirt_cobble", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_HAPPY = register("dirt_happy", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_HORIZONTAL = register("dirt_horizontal", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_LAYERS = register("dirt_layers", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_NETHERBRICKS = register("dirt_netherbricks", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
         DIRT_PLATE = register("dirt_plate", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_REINFORCED = register("dirt_reinforced", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_REINFORCED_COBBLE = register("dirt_reinforced_cobble", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_VERT = register("dirt_vert", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
+        DIRT_VERTICAL = register("dirt_vertical", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
 
         EMERALD_PANEL = register("emerald_panel", BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
         EMERALD_PANEL_CLASSIC = register("emerald_panel_classic", BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_BLOCK));

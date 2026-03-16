@@ -504,22 +504,21 @@ public class ChiselLang extends LangHelper {
 
     private void addDirt() {
         addBlock(() -> Blocks.DIRT, "Dirt");
-        addBlock(ChiselOtherBlocks.DIRT_BRICKS_DISARRAY, "Dirt", "Bricks in Disarray");
-        addBlock(ChiselOtherBlocks.DIRT_NETHER, "Dirt", "Bricks Imitating Nether Brick Design");
+        addBlock(ChiselOtherBlocks.DIRT_BRICKS_ARRANGED, "Dirt", "Arranged Bricks");
         addBlock(ChiselOtherBlocks.DIRT_BRICKS, "Dirt", "Bricks");
+        addBlock(ChiselOtherBlocks.DIRT_BRICKS_DISARRAY, "Dirt", "Bricks in Disarray");
         addBlock(ChiselOtherBlocks.DIRT_COBBLE, "Dirt", "Cobble-Dirt");
-        addBlock(ChiselOtherBlocks.DIRT_COBBLE_REINFORCED, "Dirt", "Reinforced Cobble-Dirt");
-        addBlock(ChiselOtherBlocks.DIRT_REINFORCED, "Dirt", "Reinforced");
-        addBlock(ChiselOtherBlocks.DIRT_HAPPY, "Dirt", "Happy");
-        addBlock(ChiselOtherBlocks.DIRT_BRICKS_LARGE, "Dirt", "Large Bricks");
-        addBlock(ChiselOtherBlocks.DIRT_BRICKS_LARGE_ON, "Dirt", "Large Bricks on top of Dirt");
-        addBlock(ChiselOtherBlocks.DIRT_HORIZONTAL, "Dirt", "Horizontal");
-        addBlock(ChiselOtherBlocks.DIRT_VERTICAL, "Dirt", "Vertical");
-        addBlock(ChiselOtherBlocks.DIRT_LAYERS, "Dirt", "Layers");
-        addBlock(ChiselOtherBlocks.DIRT_CRUMBLING, "Dirt", "Crumbling");
         addBlock(ChiselOtherBlocks.DIRT_CHUNKY, "Dirt", "Decayed Bricks");
-        addBlock(ChiselOtherBlocks.DIRT_HORIZONTAL2, "Dirt", "Horizontal");
         addBlock(ChiselOtherBlocks.DIRT_PLATE, "Dirt", "Dried Farmland");
+        addBlock(ChiselOtherBlocks.DIRT_HAPPY, "Dirt", "Happy");
+        addBlock(ChiselOtherBlocks.DIRT_HORIZONTAL, "Dirt", "Horizontal");
+        addBlock(ChiselOtherBlocks.DIRT_BRICKS_LARGE, "Dirt", "Large Bricks");
+        addBlock(ChiselOtherBlocks.DIRT_LAYERS, "Dirt", "Layers");
+        addBlock(ChiselOtherBlocks.DIRT_NETHERBRICKS, "Dirt", "Netherbricks");
+        addBlock(ChiselOtherBlocks.DIRT_REINFORCED, "Dirt", "Reinforced");
+        addBlock(ChiselOtherBlocks.DIRT_REINFORCED_COBBLE, "Dirt", "Reinforced Cobble");
+        addBlock(ChiselOtherBlocks.DIRT_VERTICAL, "Dirt", "Vertical");
+        addBlock(ChiselOtherBlocks.DIRT_VERT, "Dirt", "Vertical Bricks");
     }
 
     private void addEmerald() {
