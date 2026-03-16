@@ -362,10 +362,13 @@ public class VariantFamilies {
             .addVariant("emerald_blocks_small_ornate", ChiselOtherBlocks.EMERALD_BLOCKS_SMALL_ORNATE)
             .addVariant("emerald_cell", ChiselOtherBlocks.EMERALD_CELL)
             .addVariant("emerald_chunk", ChiselOtherBlocks.EMERALD_CHUNK)
+            .addVariant("emerald_circle", ChiselOtherBlocks.EMERALD_CIRCLE)
+            .addVariant("emerald_masonry", ChiselOtherBlocks.EMERALD_MASONRY)
             .addVariant("emerald_ornate", ChiselOtherBlocks.EMERALD_ORNATE)
             .addVariant("emerald_ornate_layer", ChiselOtherBlocks.EMERALD_ORNATE_LAYER)
             .addVariant("emerald_panel", ChiselOtherBlocks.EMERALD_PANEL)
             .addVariant("emerald_panel_classic", ChiselOtherBlocks.EMERALD_PANEL_CLASSIC)
+            .addVariant("emerald_prismatic", ChiselOtherBlocks.EMERALD_PRISMATIC)
             .addVariant("emerald_smooth", ChiselOtherBlocks.EMERALD_SMOOTH)
             .addVariant("emerald_zelda", ChiselOtherBlocks.EMERALD_ZELDA)
             .getFamily();

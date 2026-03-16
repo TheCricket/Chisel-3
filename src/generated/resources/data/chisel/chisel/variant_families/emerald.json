@@ -28,6 +28,16 @@
       "name": "emerald_chunk"
     },
     {
+      "block": "chisel:emerald_circle",
+      "model_type": "cube_all",
+      "name": "emerald_circle"
+    },
+    {
+      "block": "chisel:emerald_masonry",
+      "model_type": "cube_all",
+      "name": "emerald_masonry"
+    },
+    {
       "block": "chisel:emerald_ornate",
       "model_type": "cube_all",
       "name": "emerald_ornate"
@@ -46,6 +56,11 @@
       "block": "chisel:emerald_panel_classic",
       "model_type": "cube_all",
       "name": "emerald_panel_classic"
+    },
+    {
+      "block": "chisel:emerald_prismatic",
+      "model_type": "cube_all",
+      "name": "emerald_prismatic"
     },
     {
       "block": "chisel:emerald_smooth",
