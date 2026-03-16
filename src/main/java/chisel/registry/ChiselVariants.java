@@ -31,7 +31,6 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> DIRT = create(VariantFamilies.DIRT);
     public static ResourceKey<VariantFamily> EMERALD = create(VariantFamilies.EMERALD);
     public static ResourceKey<VariantFamily> ENERGIZED_VOIDSTONE = create(VariantFamilies.ENERGIZED_VOIDSTONE);
-    public static ResourceKey<VariantFamily> ENERGIZED_VOIDSTONE_PILLAR = create(VariantFamilies.ENERGIZED_VOIDSTONE_PILLAR);
     public static ResourceKey<VariantFamily> FACTORY = create(VariantFamilies.FACTORY);
     public static ResourceKey<VariantFamily> FANTASY = create(VariantFamilies.FANTASY);
     public static ResourceKey<VariantFamily> FUTURA = create(VariantFamilies.FUTURA);
@@ -149,7 +148,6 @@ public class ChiselVariants {
                 bootstrap.register(DIRT, VariantFamilies.DIRT);
                 bootstrap.register(EMERALD, VariantFamilies.EMERALD);
                 bootstrap.register(ENERGIZED_VOIDSTONE, VariantFamilies.ENERGIZED_VOIDSTONE);
-                bootstrap.register(ENERGIZED_VOIDSTONE_PILLAR, VariantFamilies.ENERGIZED_VOIDSTONE_PILLAR);
                 bootstrap.register(FACTORY, VariantFamilies.FACTORY);
                 bootstrap.register(FANTASY, VariantFamilies.FANTASY);
                 bootstrap.register(FUTURA, VariantFamilies.FUTURA);

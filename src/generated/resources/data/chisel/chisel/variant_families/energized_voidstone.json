@@ -18,6 +18,11 @@
       "name": "energized_voidstone_metal"
     },
     {
+      "block": "chisel:energized_voidstone_pillar_normal",
+      "model_type": "multi_layer_tbs",
+      "name": "energized_voidstone_pillar"
+    },
+    {
       "block": "chisel:energized_voidstone_raw",
       "model_type": "multi_layer",
       "name": "energized_voidstone_raw"

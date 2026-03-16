@@ -1,6 +1,10 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
-    "all": "chisel:block/energized_voidstone_pillar/energized_voidstone_pillar_normal"
+    "bottom": "chisel:block/energized_voidstone/energized_voidstone_pillar-bottom",
+    "layer1": "chisel:block/energized_voidstone/energized_voidstone_pillar-bg",
+    "particle": "chisel:block/energized_voidstone/energized_voidstone_pillar",
+    "side": "chisel:block/energized_voidstone/energized_voidstone_pillar-side",
+    "top": "chisel:block/energized_voidstone/energized_voidstone_pillar-top"
   }
 }

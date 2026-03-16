@@ -376,14 +376,12 @@ public class VariantFamilies {
             .addVariant("energized_voidstone_bevel", ChiselStoneBlocks.ENERGISED_VOIDSTONE_BEVEL, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_eye", ChiselStoneBlocks.ENERGISED_VOIDSTONE_EYE, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_metal", ChiselStoneBlocks.ENERGISED_VOIDSTONE_METAL, VariantModelType.MULTI_LAYER)
+            .addVariant("energized_voidstone_pillar", ChiselStoneBlocks.ENERGISED_VOIDSTONE_PILLAR, VariantModelType.MULTI_LAYER_TBS)
             .addVariant("energized_voidstone_raw", ChiselStoneBlocks.ENERGISED_VOIDSTONE_RAW, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_runic", ChiselStoneBlocks.ENERGISED_VOIDSTONE_RUNIC, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_skull", ChiselStoneBlocks.ENERGISED_VOIDSTONE_SKULL, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_smooth", ChiselStoneBlocks.ENERGISED_VOIDSTONE_SMOOTH, VariantModelType.MULTI_LAYER)
             .addVariant("energized_voidstone_tiles", ChiselStoneBlocks.ENERGISED_VOIDSTONE_TILES, VariantModelType.MULTI_LAYER)
-            .getFamily();
-    public static final VariantFamily ENERGIZED_VOIDSTONE_PILLAR = builder("energized_voidstone_pillar", ChiselStoneBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL)
-            .addVariant("energized_voidstone_pillar_normal", ChiselStoneBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL)
             .getFamily();
     public static final VariantFamily FACTORY = builder("factory", ChiselMetalBlocks.FACTORY_RUSTY_DOTTED)
             .addVariant("factory_blue", ChiselMetalBlocks.FACTORY_BLUE)

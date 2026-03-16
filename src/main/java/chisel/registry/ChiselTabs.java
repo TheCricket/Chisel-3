@@ -111,7 +111,6 @@ public class ChiselTabs {
                     VariantFamilies.DIRT,
                     VariantFamilies.EMERALD,
                     VariantFamilies.ENERGIZED_VOIDSTONE,
-                    VariantFamilies.ENERGIZED_VOIDSTONE_PILLAR,
                     VariantFamilies.GLASS_PANE,
                     VariantFamilies.STAINED_GLASS_PANE_BLACK,
                     VariantFamilies.STAINED_GLASS_PANE_BLUE,

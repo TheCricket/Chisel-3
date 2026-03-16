@@ -13,6 +13,7 @@ public enum VariantModelType implements StringRepresentable {
     CONNECTED_VERTICALLY("connected_vertically"),
     CONNECTED_HORIZONTALLY("connected_horizontally"),
     MULTI_LAYER("multi_layer"),
+    MULTI_LAYER_TBS("multi_layer_tbs"),
     MULTI_LAYER_LAVA("multi_layer_lava"),
     MULTI_LAYER_WATER("multi_layer_water"),
     MULTI_LAYER_CONNECTED("multi_layer_connected"),

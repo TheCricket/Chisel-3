@@ -18,6 +18,7 @@ public class VariantModels {
     public final CubeAllModel CUBE_ALL = new CubeAllModel();
     public final PillarModel PILLAR = new PillarModel();
     public final MultiLayerModel MULTI_LAYER = new MultiLayerModel();
+    public final MultiLayerTBSModel MULTI_LAYER_TBS = new MultiLayerTBSModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM = new MultiLayerCTMModel();
     public final LavastoneModel LAVASTONE = new LavastoneModel();
     public final BookshelfModel BOOKSHELF = new BookshelfModel();

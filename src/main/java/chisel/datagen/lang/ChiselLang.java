@@ -551,7 +551,7 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addEnergizedVoidstonePillar() {
-        addBlock(ChiselStoneBlocks.ENERGISED_VOIDSTONE_PILLAR_NORMAL, "Energised Voidstone Pillar", "Striped");
+        addBlock(ChiselStoneBlocks.ENERGISED_VOIDSTONE_PILLAR, "Energised Voidstone Pillar", "Striped");
     }
 
     private void addFactory() {

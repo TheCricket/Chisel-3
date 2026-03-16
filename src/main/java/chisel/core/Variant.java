@@ -66,6 +66,7 @@ public class Variant extends VariantModels {
             case CONNECTED_VERTICALLY -> CTMV.generate(this, blockModels);
             case CONNECTED_HORIZONTALLY -> CTMH.generate(this, blockModels);
             case MULTI_LAYER -> MULTI_LAYER.generate(this, blockModels);
+            case MULTI_LAYER_TBS -> MULTI_LAYER_TBS.generate(this, blockModels);
             case MULTI_LAYER_WATER -> LAVASTONE.generate(this, blockModels);
             case MULTI_LAYER_LAVA -> LAVASTONE.generate(this, blockModels);
             case MULTI_LAYER_CONNECTED -> MULTI_LAYER_CTM.generate(this, blockModels);

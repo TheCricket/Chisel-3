@@ -160,7 +160,7 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_BEVEL;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_EYE;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_METAL;
-    public static DeferredBlock<Block> ENERGISED_VOIDSTONE_PILLAR_NORMAL;
+    public static DeferredBlock<Block> ENERGISED_VOIDSTONE_PILLAR;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_RAW;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_RUNIC;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_SKULL;
@@ -573,7 +573,7 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
         ENERGISED_VOIDSTONE_METAL = register("energized_voidstone_metal", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_EYE = register("energized_voidstone_eye", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_BEVEL = register("energized_voidstone_bevel", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        ENERGISED_VOIDSTONE_PILLAR_NORMAL = register("energized_voidstone_pillar_normal", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
+        ENERGISED_VOIDSTONE_PILLAR = register("energized_voidstone_pillar_normal", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
 
         FANTASY_BLOCK = register("fantasy_block", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
         FANTASY_BRICK = register("fantasy_brick", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
