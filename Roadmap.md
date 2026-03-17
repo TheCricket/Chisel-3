@@ -43,7 +43,7 @@ Initial pass is just textures
 - [X] Large Hex Plating
 - [X] Lavastone
 - [X] Lead
-- [ ] Leaf
+- [X] Leaf
 - [ ] Limestone
 - [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
 - [ ] Marble

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/limestone/limestone_pillar-bottom",
+    "side": "chisel:block/limestone/limestone_pillar-side",
+    "top": "chisel:block/limestone/limestone_pillar-top"
+  }
+}

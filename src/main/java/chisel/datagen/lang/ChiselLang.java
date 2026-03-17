@@ -1021,22 +1021,39 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addLimestone() {
-        addBlock(ChiselStoneBlocks.LIMESTONE_BRICKS, "Limestone", "Small Bricks");
-        addBlock(ChiselStoneBlocks.LIMESTONE_DENT, "Limestone", "with Dent");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL, "Limestone", "with Panel");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL_CREEPER, "Limestone", "with Creeper Panel");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL_DARK, "Limestone", "with Dark Panel");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL_ENGRAVED, "Limestone", "with Engraved Ornate Panel");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL_LIGHT, "Limestone", "with Light Panel");
-        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL_ORNATE, "Limestone", "with Ornate Panel");
         addBlock(ChiselStoneBlocks.LIMESTONE_RAW, "Limestone", "Raw");
-        addBlock(ChiselStoneBlocks.LIMESTONE_SMOOTH, "Limestone", "Smooth");
-        addBlock(ChiselStoneBlocks.LIMESTONE_TILES, "Limestone", "Small Tiles");
-        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_CREEPER, "Limestone", "Creeper Tiles");
-        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_DAMAGED, "Limestone", "Damaged Tiles");
-        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_FRENCH, "Limestone", "French Tiles");
-        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_FRENCH_LIGHT, "Limestone", "French Tiles Light");
+        addBlock(ChiselStoneBlocks.LIMESTONE_ARRAY, "Limestone", "Array");
+        addBlock(ChiselStoneBlocks.LIMESTONE_BRAID, "Limestone", "Braid");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CHAOTIC_BRICKS, "Limestone", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CHAOTIC_MEDIUM, "Limestone", "Medium Chaotic");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CHAOTIC_SMALL, "Limestone", "Small Chaotic");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CIRCULAR, "Limestone", "Circular");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CRACKED, "Limestone", "Cracked");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CRACKED_BRICKS, "Limestone", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_CUTS, "Limestone", "Cuts");
+        addBlock(ChiselStoneBlocks.LIMESTONE_DENT, "Limestone", "Dent");
+        addBlock(ChiselStoneBlocks.LIMESTONE_ENCASED_BRICKS, "Limestone", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_FRENCH_1, "Limestone", "French 1");
+        addBlock(ChiselStoneBlocks.LIMESTONE_FRENCH_2, "Limestone", "French 2");
+        addBlock(ChiselStoneBlocks.LIMESTONE_JELLYBEAN, "Limestone", "Jellybean");
+        addBlock(ChiselStoneBlocks.LIMESTONE_LAYERS, "Limestone", "Layers");
+        addBlock(ChiselStoneBlocks.LIMESTONE_MOSAIC, "Limestone", "Mosaic");
+        addBlock(ChiselStoneBlocks.LIMESTONE_ORNATE, "Limestone", "Ornate");
+        addBlock(ChiselStoneBlocks.LIMESTONE_PANEL, "Limestone", "Panel");
+        addBlock(ChiselStoneBlocks.LIMESTONE_PILLAR, "Limestone", "Pillar");
+        addBlock(ChiselStoneBlocks.LIMESTONE_PRISM, "Limestone", "Prism");
+        addBlock(ChiselStoneBlocks.LIMESTONE_ROAD, "Limestone", "Road");
+        addBlock(ChiselStoneBlocks.LIMESTONE_SLANTED, "Limestone", "Slanted");
+        addBlock(ChiselStoneBlocks.LIMESTONE_SMALL_BRICKS, "Limestone", "Small Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_SOFT_BRICKS, "Limestone", "Soft Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_SOLID_BRICKS, "Limestone", "Solid Bricks");
         addBlock(ChiselStoneBlocks.LIMESTONE_TILES_LARGE, "Limestone", "Large Tiles");
+        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_MEDIUM, "Limestone", "Medium Tiles");
+        addBlock(ChiselStoneBlocks.LIMESTONE_TILES_SMALL, "Limestone", "Small Tiles");
+        addBlock(ChiselStoneBlocks.LIMESTONE_TRIPLE_BRICKS, "Limestone", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.LIMESTONE_TWISTED, "Limestone", "Twisted");
+        addBlock(ChiselStoneBlocks.LIMESTONE_WEAVER, "Limestone", "Weaver");
+        addBlock(ChiselStoneBlocks.LIMESTONE_ZAG, "Limestone", "Zag");
     }
 
     private void addLitPumpkin() {
