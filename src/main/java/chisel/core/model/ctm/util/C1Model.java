@@ -24,6 +24,7 @@ public class C1Model extends VariantModel {
     }
 
     public MultiVariant getModel(Variant variant, BlockModelGenerators blockModels) {
+        setVariant(variant);
         return getModel(variant, getTextureMapping(), blockModels);
     }
 

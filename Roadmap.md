@@ -42,7 +42,7 @@ Initial pass is just textures
 - [X] Lapis
 - [X] Large Hex Plating
 - [X] Lavastone
-- [ ] Lead
+- [X] Lead
 - [ ] Leaf
 - [ ] Limestone
 - [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
@@ -62,10 +62,10 @@ Initial pass is just textures
 - [ ] Road line
 - [ ] Runic voidstone
 - [ ] Sandstone
-- [ ] Silver
+- [X] Silver
 - [ ] Snakestone Sand
 - [ ] Snakestone Stone
-- [ ] Spruce
+- [X] Spruce
 - [X] Stained glass black
 - [X] Stained glass blue
 - [X] Stained glass brown
@@ -98,17 +98,17 @@ Initial pass is just textures
 - [X] Stained glass pane red
 - [X] Stained glass pane white
 - [X] Stained glass pane yellow
-- [ ] Steel
+- [X] Steel
 - [ ] Stone Bricks
 - [ ] Technical
 - [ ] Temple
 - [ ] Tin
 - [ ] Torch
 - [ ] Tyrian
-- [ ] Uranium
-- [ ] Valentines
-- [ ] Voidstone
-- [ ] Warning
+- [X] Uranium
+- [X] Valentines
+- [X] Voidstone
+- [X] Warning
 - [ ] Waterstone
 - [ ] Woolen Clay
 

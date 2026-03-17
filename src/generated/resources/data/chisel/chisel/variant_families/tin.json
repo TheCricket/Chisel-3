@@ -3,9 +3,9 @@
   "prefix": "tin",
   "variants": [
     {
-      "block": "chisel:tin_125",
+      "block": "chisel:tin_bad_greggy",
       "model_type": "cube_all",
-      "name": "tin_125"
+      "name": "tin_bad_greggy"
     },
     {
       "block": "chisel:tin_bolted",
@@ -13,23 +13,28 @@
       "name": "tin_bolted"
     },
     {
-      "block": "chisel:tin_bordered",
-      "model_type": "cube_all",
-      "name": "tin_bordered"
-    },
-    {
       "block": "chisel:tin_caution",
       "model_type": "cube_all",
       "name": "tin_caution"
     },
     {
-      "block": "chisel:tin_shipping",
+      "block": "chisel:tin_crate",
       "model_type": "cube_all",
-      "name": "tin_shipping"
+      "name": "tin_crate"
+    },
+    {
+      "block": "chisel:tin_machine",
+      "model_type": "cube_all",
+      "name": "tin_machine"
+    },
+    {
+      "block": "chisel:tin_scaffold",
+      "model_type": "cube_all",
+      "name": "tin_scaffold"
     },
     {
       "block": "chisel:tin_thermal",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "tin_thermal"
     }
   ]

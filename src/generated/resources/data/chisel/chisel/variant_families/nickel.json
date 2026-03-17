@@ -1,0 +1,41 @@
+{
+  "base": "chisel:nickel_caution",
+  "prefix": "nickel",
+  "variants": [
+    {
+      "block": "chisel:nickel_bad_greggy",
+      "model_type": "cube_all",
+      "name": "nickel_bad_greggy"
+    },
+    {
+      "block": "chisel:nickel_bolted",
+      "model_type": "cube_all",
+      "name": "nickel_bolted"
+    },
+    {
+      "block": "chisel:nickel_caution",
+      "model_type": "cube_all",
+      "name": "nickel_caution"
+    },
+    {
+      "block": "chisel:nickel_crate",
+      "model_type": "cube_all",
+      "name": "nickel_crate"
+    },
+    {
+      "block": "chisel:nickel_machine",
+      "model_type": "cube_all",
+      "name": "nickel_machine"
+    },
+    {
+      "block": "chisel:nickel_scaffold",
+      "model_type": "cube_all",
+      "name": "nickel_scaffold"
+    },
+    {
+      "block": "chisel:nickel_thermal",
+      "model_type": "top_bottom_side",
+      "name": "nickel_thermal"
+    }
+  ]
+}

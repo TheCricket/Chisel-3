@@ -3,7 +3,7 @@
   "prefix": "aluminum",
   "variants": [
     {
-      "block": "chisel:aluminum_125",
+      "block": "chisel:aluminum_bad_greggy",
       "model_type": "cube_all",
       "name": "aluminum_bad_greggy"
     },

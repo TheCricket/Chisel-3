@@ -3,9 +3,9 @@
   "prefix": "lead",
   "variants": [
     {
-      "block": "chisel:lead_125",
+      "block": "chisel:lead_bad_greggy",
       "model_type": "cube_all",
-      "name": "lead_125"
+      "name": "lead_bad_greggy"
     },
     {
       "block": "chisel:lead_bolted",
@@ -13,23 +13,28 @@
       "name": "lead_bolted"
     },
     {
-      "block": "chisel:lead_bordered",
-      "model_type": "cube_all",
-      "name": "lead_bordered"
-    },
-    {
       "block": "chisel:lead_caution",
       "model_type": "cube_all",
       "name": "lead_caution"
     },
     {
-      "block": "chisel:lead_shipping",
+      "block": "chisel:lead_crate",
       "model_type": "cube_all",
-      "name": "lead_shipping"
+      "name": "lead_crate"
+    },
+    {
+      "block": "chisel:lead_machine",
+      "model_type": "cube_all",
+      "name": "lead_machine"
+    },
+    {
+      "block": "chisel:lead_scaffold",
+      "model_type": "cube_all",
+      "name": "lead_scaffold"
     },
     {
       "block": "chisel:lead_thermal",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "lead_thermal"
     }
   ]

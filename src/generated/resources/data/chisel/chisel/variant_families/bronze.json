@@ -4,7 +4,7 @@
   "variants": [
     {
       "block": "chisel:bronze_bad_greggy",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bronze_bad_greggy"
     },
     {
@@ -14,12 +14,12 @@
     },
     {
       "block": "chisel:bronze_caution",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bronze_caution"
     },
     {
       "block": "chisel:bronze_crate",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bronze_crate"
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "block": "chisel:bronze_scaffold",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bronze_scaffold"
     },
     {

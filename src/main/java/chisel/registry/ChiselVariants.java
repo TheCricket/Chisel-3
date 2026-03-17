@@ -22,6 +22,7 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> CARPET = create(VariantFamilies.CARPET);
     public static ResourceKey<VariantFamily> CARPET_FLOOR = create(VariantFamilies.CARPET_FLOOR);
     public static ResourceKey<VariantFamily> CLOUD = create(VariantFamilies.CLOUD);
+    public static ResourceKey<VariantFamily> COBALT = create(VariantFamilies.COBALT);
     public static ResourceKey<VariantFamily> COBBLESTONE = create(VariantFamilies.COBBLESTONE);
     public static ResourceKey<VariantFamily> CONCRETE = create(VariantFamilies.CONCRETE);
     public static ResourceKey<VariantFamily> COPPER = create(VariantFamilies.COPPER);
@@ -29,6 +30,7 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> DIAMOND = create(VariantFamilies.DIAMOND);
     public static ResourceKey<VariantFamily> DIORITE = create(VariantFamilies.DIORITE);
     public static ResourceKey<VariantFamily> DIRT = create(VariantFamilies.DIRT);
+    public static ResourceKey<VariantFamily> ELECTRUM = create(VariantFamilies.ELECTRUM);
     public static ResourceKey<VariantFamily> EMERALD = create(VariantFamilies.EMERALD);
     public static ResourceKey<VariantFamily> ENERGIZED_VOIDSTONE = create(VariantFamilies.ENERGIZED_VOIDSTONE);
     public static ResourceKey<VariantFamily> FACTORY = create(VariantFamilies.FACTORY);
@@ -42,6 +44,7 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> HEX_PLATING = create(VariantFamilies.HEX_PLATING);
     public static ResourceKey<VariantFamily> HOLYSTONE = create(VariantFamilies.HOLYSTONE);
     public static ResourceKey<VariantFamily> ICE = create(VariantFamilies.ICE);
+    public static ResourceKey<VariantFamily> INVAR = create(VariantFamilies.INVAR);
     public static ResourceKey<VariantFamily> IRON = create(VariantFamilies.IRON);
     public static ResourceKey<VariantFamily> IRON_BARS = create(VariantFamilies.IRON_BARS);
     public static ResourceKey<VariantFamily> JUNGLE = create(VariantFamilies.JUNGLE);
@@ -57,6 +60,7 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> MOSSY_TEMPLE = create(VariantFamilies.MOSSY_TEMPLE);
     public static ResourceKey<VariantFamily> NETHERBRICK = create(VariantFamilies.NETHERBRICK);
     public static ResourceKey<VariantFamily> NETHERRACK = create(VariantFamilies.NETHERRACK);
+    public static ResourceKey<VariantFamily> NICKEL = create(VariantFamilies.NICKEL);
     public static ResourceKey<VariantFamily> OAK = create(VariantFamilies.OAK);
     public static ResourceKey<VariantFamily> OBSIDIAN = create(VariantFamilies.OBSIDIAN);
     public static ResourceKey<VariantFamily> PACKED_ICE = create(VariantFamilies.PACKED_ICE);
@@ -69,6 +73,7 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> RUNIC_VOIDSTONE = create(VariantFamilies.RUNIC_VOIDSTONE);
     public static ResourceKey<VariantFamily> SANDSTONE = create(VariantFamilies.SANDSTONE);
     public static ResourceKey<VariantFamily> SILVER = create(VariantFamilies.SILVER);
+    public static ResourceKey<VariantFamily> PLATINUM = create(VariantFamilies.PLATINUM);
     public static ResourceKey<VariantFamily> SPRUCE = create(VariantFamilies.SPRUCE);
     public static ResourceKey<VariantFamily> SNAKESTONE_SAND = create(VariantFamilies.SNAKESTONE_SAND);
     public static ResourceKey<VariantFamily> SNAKESTONE_STONE = create(VariantFamilies.SNAKESTONE_STONE);
@@ -135,6 +140,7 @@ public class ChiselVariants {
                 bootstrap.register(CARPET, VariantFamilies.CARPET);
                 bootstrap.register(CARPET_FLOOR, VariantFamilies.CARPET_FLOOR);
                 bootstrap.register(CLOUD, VariantFamilies.CLOUD);
+                bootstrap.register(COBALT, VariantFamilies.COBALT);
                 bootstrap.register(COBBLESTONE, VariantFamilies.COBBLESTONE);
                 bootstrap.register(CONCRETE, VariantFamilies.CONCRETE);
                 bootstrap.register(COPPER, VariantFamilies.COPPER);
@@ -142,6 +148,7 @@ public class ChiselVariants {
                 bootstrap.register(DIAMOND, VariantFamilies.DIAMOND);
                 bootstrap.register(DIORITE, VariantFamilies.DIORITE);
                 bootstrap.register(DIRT, VariantFamilies.DIRT);
+                bootstrap.register(ELECTRUM, VariantFamilies.ELECTRUM);
                 bootstrap.register(EMERALD, VariantFamilies.EMERALD);
                 bootstrap.register(ENERGIZED_VOIDSTONE, VariantFamilies.ENERGIZED_VOIDSTONE);
                 bootstrap.register(FACTORY, VariantFamilies.FACTORY);
@@ -155,6 +162,7 @@ public class ChiselVariants {
                 bootstrap.register(HEX_PLATING, VariantFamilies.HEX_PLATING);
                 bootstrap.register(HOLYSTONE, VariantFamilies.HOLYSTONE);
                 bootstrap.register(ICE, VariantFamilies.ICE);
+                bootstrap.register(INVAR, VariantFamilies.INVAR);
                 bootstrap.register(IRON, VariantFamilies.IRON);
                 bootstrap.register(IRON_BARS, VariantFamilies.IRON_BARS);
                 bootstrap.register(JUNGLE, VariantFamilies.JUNGLE);
@@ -170,6 +178,7 @@ public class ChiselVariants {
                 bootstrap.register(MOSSY_TEMPLE, VariantFamilies.MOSSY_TEMPLE);
                 bootstrap.register(NETHERBRICK, VariantFamilies.NETHERBRICK);
                 bootstrap.register(NETHERRACK, VariantFamilies.NETHERRACK);
+                bootstrap.register(NICKEL, VariantFamilies.NICKEL);
                 bootstrap.register(OAK, VariantFamilies.OAK);
                 bootstrap.register(OBSIDIAN, VariantFamilies.OBSIDIAN);
                 bootstrap.register(PACKED_ICE, VariantFamilies.PACKED_ICE);
@@ -182,6 +191,7 @@ public class ChiselVariants {
                 bootstrap.register(RUNIC_VOIDSTONE, VariantFamilies.RUNIC_VOIDSTONE);
                 bootstrap.register(SANDSTONE, VariantFamilies.SANDSTONE);
                 bootstrap.register(SILVER, VariantFamilies.SILVER);
+                bootstrap.register(PLATINUM, VariantFamilies.PLATINUM);
                 bootstrap.register(SPRUCE, VariantFamilies.SPRUCE);
                 bootstrap.register(SNAKESTONE_SAND, VariantFamilies.SNAKESTONE_SAND);
                 bootstrap.register(SNAKESTONE_STONE, VariantFamilies.SNAKESTONE_STONE);

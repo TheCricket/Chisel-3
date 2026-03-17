@@ -3,9 +3,9 @@
   "prefix": "silver",
   "variants": [
     {
-      "block": "chisel:silver_125",
+      "block": "chisel:silver_bad_greggy",
       "model_type": "cube_all",
-      "name": "silver_125"
+      "name": "silver_bad_greggy"
     },
     {
       "block": "chisel:silver_bolted",
@@ -13,23 +13,28 @@
       "name": "silver_bolted"
     },
     {
-      "block": "chisel:silver_bordered",
-      "model_type": "cube_all",
-      "name": "silver_bordered"
-    },
-    {
       "block": "chisel:silver_caution",
       "model_type": "cube_all",
       "name": "silver_caution"
     },
     {
-      "block": "chisel:silver_shipping",
+      "block": "chisel:silver_crate",
       "model_type": "cube_all",
-      "name": "silver_shipping"
+      "name": "silver_crate"
+    },
+    {
+      "block": "chisel:silver_machine",
+      "model_type": "cube_all",
+      "name": "silver_machine"
+    },
+    {
+      "block": "chisel:silver_scaffold",
+      "model_type": "cube_all",
+      "name": "silver_scaffold"
     },
     {
       "block": "chisel:silver_thermal",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "silver_thermal"
     }
   ]

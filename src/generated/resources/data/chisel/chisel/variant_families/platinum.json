@@ -1,0 +1,41 @@
+{
+  "base": "chisel:platinum_caution",
+  "prefix": "platinum",
+  "variants": [
+    {
+      "block": "chisel:platinum_bad_greggy",
+      "model_type": "cube_all",
+      "name": "platinum_bad_greggy"
+    },
+    {
+      "block": "chisel:platinum_bolted",
+      "model_type": "cube_all",
+      "name": "platinum_bolted"
+    },
+    {
+      "block": "chisel:platinum_caution",
+      "model_type": "cube_all",
+      "name": "platinum_caution"
+    },
+    {
+      "block": "chisel:platinum_crate",
+      "model_type": "cube_all",
+      "name": "platinum_crate"
+    },
+    {
+      "block": "chisel:platinum_machine",
+      "model_type": "cube_all",
+      "name": "platinum_machine"
+    },
+    {
+      "block": "chisel:platinum_scaffold",
+      "model_type": "cube_all",
+      "name": "platinum_scaffold"
+    },
+    {
+      "block": "chisel:platinum_thermal",
+      "model_type": "top_bottom_side",
+      "name": "platinum_thermal"
+    }
+  ]
+}

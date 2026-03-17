@@ -1,0 +1,41 @@
+{
+  "base": "chisel:electrum_caution",
+  "prefix": "electrum",
+  "variants": [
+    {
+      "block": "chisel:electrum_bad_greggy",
+      "model_type": "cube_all",
+      "name": "electrum_bad_greggy"
+    },
+    {
+      "block": "chisel:electrum_bolted",
+      "model_type": "cube_all",
+      "name": "electrum_bolted"
+    },
+    {
+      "block": "chisel:electrum_caution",
+      "model_type": "cube_all",
+      "name": "electrum_caution"
+    },
+    {
+      "block": "chisel:electrum_crate",
+      "model_type": "cube_all",
+      "name": "electrum_crate"
+    },
+    {
+      "block": "chisel:electrum_machine",
+      "model_type": "cube_all",
+      "name": "electrum_machine"
+    },
+    {
+      "block": "chisel:electrum_scaffold",
+      "model_type": "cube_all",
+      "name": "electrum_scaffold"
+    },
+    {
+      "block": "chisel:electrum_thermal",
+      "model_type": "top_bottom_side",
+      "name": "electrum_thermal"
+    }
+  ]
+}

@@ -3,9 +3,9 @@
   "prefix": "iron",
   "variants": [
     {
-      "block": "chisel:iron_125",
+      "block": "chisel:iron_bad_greggy",
       "model_type": "cube_all",
-      "name": "iron_125"
+      "name": "iron_bad_greggy"
     },
     {
       "block": "chisel:iron_bolted",
@@ -13,19 +13,44 @@
       "name": "iron_bolted"
     },
     {
+      "block": "chisel:iron_caution",
+      "model_type": "cube_all",
+      "name": "iron_caution"
+    },
+    {
+      "block": "chisel:iron_crate",
+      "model_type": "cube_all",
+      "name": "iron_crate"
+    },
+    {
+      "block": "chisel:iron_machine",
+      "model_type": "cube_all",
+      "name": "iron_machine"
+    },
+    {
+      "block": "chisel:iron_scaffold",
+      "model_type": "cube_all",
+      "name": "iron_scaffold"
+    },
+    {
+      "block": "chisel:iron_thermal",
+      "model_type": "top_bottom_side",
+      "name": "iron_thermal"
+    },
+    {
+      "block": "chisel:iron_125",
+      "model_type": "cube_all",
+      "name": "iron_125"
+    },
+    {
       "block": "chisel:iron_bordered",
       "model_type": "cube_all",
       "name": "iron_bordered"
     },
     {
-      "block": "chisel:iron_bricks",
+      "block": "chisel:iron_brick",
       "model_type": "top_bottom_side",
       "name": "iron_brick"
-    },
-    {
-      "block": "chisel:iron_caution",
-      "model_type": "cube_all",
-      "name": "iron_caution"
     },
     {
       "block": "chisel:iron_coin_heads",
@@ -63,7 +88,7 @@
       "name": "iron_ingots_small"
     },
     {
-      "block": "chisel:iron_moon_decor",
+      "block": "chisel:iron_moon",
       "model_type": "top_bottom_side",
       "name": "iron_moon"
     },
@@ -96,11 +121,6 @@
       "block": "chisel:iron_simple",
       "model_type": "top_bottom_side",
       "name": "iron_simple"
-    },
-    {
-      "block": "chisel:iron_thermal",
-      "model_type": "cube_all",
-      "name": "iron_thermal"
     },
     {
       "block": "chisel:iron_vents",

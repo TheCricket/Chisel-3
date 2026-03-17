@@ -3,9 +3,9 @@
   "prefix": "uranium",
   "variants": [
     {
-      "block": "chisel:uranium_125",
+      "block": "chisel:uranium_bad_greggy",
       "model_type": "cube_all",
-      "name": "uranium_125"
+      "name": "uranium_bad_greggy"
     },
     {
       "block": "chisel:uranium_bolted",
@@ -13,23 +13,28 @@
       "name": "uranium_bolted"
     },
     {
-      "block": "chisel:uranium_bordered",
-      "model_type": "cube_all",
-      "name": "uranium_bordered"
-    },
-    {
       "block": "chisel:uranium_caution",
       "model_type": "cube_all",
       "name": "uranium_caution"
     },
     {
-      "block": "chisel:uranium_shipping",
+      "block": "chisel:uranium_crate",
       "model_type": "cube_all",
-      "name": "uranium_shipping"
+      "name": "uranium_crate"
+    },
+    {
+      "block": "chisel:uranium_machine",
+      "model_type": "cube_all",
+      "name": "uranium_machine"
+    },
+    {
+      "block": "chisel:uranium_scaffold",
+      "model_type": "cube_all",
+      "name": "uranium_scaffold"
     },
     {
       "block": "chisel:uranium_thermal",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "uranium_thermal"
     }
   ]

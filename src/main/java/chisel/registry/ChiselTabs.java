@@ -62,7 +62,7 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> METAL = CREATIVE_MODE_TABS.register("chisel_metal", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabMetalChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselMetalBlocks.IRON_INGOTS_LARGE.get()))
+            .icon(() -> new ItemStack(ChiselMetalBlocks.IRON_INGOTS_SMALL.get()))
             .displayItems((_, output) -> List.of(
                     VariantFamilies.FACTORY,
                             VariantFamilies.COPPER,

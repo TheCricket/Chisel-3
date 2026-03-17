@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/uranium/uranium_thermal"
+    "bottom": "chisel:block/uranium/uranium_thermal-bottom",
+    "side": "chisel:block/uranium/uranium_thermal-side",
+    "top": "chisel:block/uranium/uranium_thermal-top"
   }
 }

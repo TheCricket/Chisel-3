@@ -1,0 +1,41 @@
+{
+  "base": "chisel:cobalt_caution",
+  "prefix": "cobalt",
+  "variants": [
+    {
+      "block": "chisel:cobalt_bad_greggy",
+      "model_type": "cube_all",
+      "name": "cobalt_bad_greggy"
+    },
+    {
+      "block": "chisel:cobalt_bolted",
+      "model_type": "cube_all",
+      "name": "cobalt_bolted"
+    },
+    {
+      "block": "chisel:cobalt_caution",
+      "model_type": "cube_all",
+      "name": "cobalt_caution"
+    },
+    {
+      "block": "chisel:cobalt_crate",
+      "model_type": "cube_all",
+      "name": "cobalt_crate"
+    },
+    {
+      "block": "chisel:cobalt_machine",
+      "model_type": "cube_all",
+      "name": "cobalt_machine"
+    },
+    {
+      "block": "chisel:cobalt_scaffold",
+      "model_type": "cube_all",
+      "name": "cobalt_scaffold"
+    },
+    {
+      "block": "chisel:cobalt_thermal",
+      "model_type": "top_bottom_side",
+      "name": "cobalt_thermal"
+    }
+  ]
+}

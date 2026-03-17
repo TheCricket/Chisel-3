@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/silver/silver_thermal"
+    "bottom": "chisel:block/silver/silver_thermal-bottom",
+    "side": "chisel:block/silver/silver_thermal-side",
+    "top": "chisel:block/silver/silver_thermal-top"
   }
 }

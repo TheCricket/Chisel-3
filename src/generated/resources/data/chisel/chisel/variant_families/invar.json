@@ -1,0 +1,41 @@
+{
+  "base": "chisel:invar_caution",
+  "prefix": "invar",
+  "variants": [
+    {
+      "block": "chisel:invar_bad_greggy",
+      "model_type": "cube_all",
+      "name": "invar_bad_greggy"
+    },
+    {
+      "block": "chisel:invar_bolted",
+      "model_type": "cube_all",
+      "name": "invar_bolted"
+    },
+    {
+      "block": "chisel:invar_caution",
+      "model_type": "cube_all",
+      "name": "invar_caution"
+    },
+    {
+      "block": "chisel:invar_crate",
+      "model_type": "cube_all",
+      "name": "invar_crate"
+    },
+    {
+      "block": "chisel:invar_machine",
+      "model_type": "cube_all",
+      "name": "invar_machine"
+    },
+    {
+      "block": "chisel:invar_scaffold",
+      "model_type": "cube_all",
+      "name": "invar_scaffold"
+    },
+    {
+      "block": "chisel:invar_thermal",
+      "model_type": "top_bottom_side",
+      "name": "invar_thermal"
+    }
+  ]
+}

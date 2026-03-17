@@ -52,16 +52,23 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> FUTURA_SCREEN_CYAN;
     public static DeferredBlock<Block> FUTURA_SCREEN_GRAY;
 
-    public static DeferredBlock<Block> GOLD_125;
+    public static DeferredBlock<Block> GOLD_BAD_GREGGY;
     public static DeferredBlock<Block> GOLD_BOLTED;
-    public static DeferredBlock<Block> GOLD_BORDERED;
-    public static DeferredBlock<Block> GOLD_BRICKS;
-    public static DeferredBlock<Block> GOLD_CART;
     public static DeferredBlock<Block> GOLD_CAUTION;
+    public static DeferredBlock<Block> GOLD_CRATE;
+    public static DeferredBlock<Block> GOLD_MACHINE;
+    public static DeferredBlock<Block> GOLD_SCAFFOLD;
+    public static DeferredBlock<Block> GOLD_THERMAL;
+    public static DeferredBlock<Block> GOLD_125;
+    public static DeferredBlock<Block> GOLD_ADV;
+    public static DeferredBlock<Block> GOLD_BORDERED;
+    public static DeferredBlock<Block> GOLD_BRICK;
+    public static DeferredBlock<Block> GOLD_CART;
     public static DeferredBlock<Block> GOLD_COIN_HEADS;
     public static DeferredBlock<Block> GOLD_COIN_TAILS;
     public static DeferredBlock<Block> GOLD_CRATE_DARK;
     public static DeferredBlock<Block> GOLD_CRATE_LIGHT;
+    public static DeferredBlock<Block> GOLD_EGREGIOUS;
     public static DeferredBlock<Block> GOLD_INGOTS_LARGE;
     public static DeferredBlock<Block> GOLD_INGOTS_SMALL;
     public static DeferredBlock<Block> GOLD_PLATES;
@@ -71,7 +78,6 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> GOLD_STAR_DECOR;
     public static DeferredBlock<Block> GOLD_STAR_OBSIDIAN;
     public static DeferredBlock<Block> GOLD_STAR_OBSIDIAN_PURPLE;
-    public static DeferredBlock<Block> GOLD_THERMAL;
 
     public static DeferredBlock<Block> HEX_PLATING_0;
     public static DeferredBlock<Block> HEX_PLATING_1;
@@ -90,11 +96,16 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> HEX_PLATING_14;
     public static DeferredBlock<Block> HEX_PLATING_15;
 
-    public static DeferredBlock<Block> IRON_125;
+    public static DeferredBlock<Block> IRON_BAD_GREGGY;
     public static DeferredBlock<Block> IRON_BOLTED;
-    public static DeferredBlock<Block> IRON_BORDERED;
-    public static DeferredBlock<Block> IRON_BRICKS;
     public static DeferredBlock<Block> IRON_CAUTION;
+    public static DeferredBlock<Block> IRON_CRATE;
+    public static DeferredBlock<Block> IRON_MACHINE;
+    public static DeferredBlock<Block> IRON_SCAFFOLD;
+    public static DeferredBlock<Block> IRON_THERMAL;
+    public static DeferredBlock<Block> IRON_125;
+    public static DeferredBlock<Block> IRON_BORDERED;
+    public static DeferredBlock<Block> IRON_BRICK;
     public static DeferredBlock<Block> IRON_COIN_HEADS;
     public static DeferredBlock<Block> IRON_COIN_TAILS;
     public static DeferredBlock<Block> IRON_CRATE_DARK;
@@ -102,14 +113,13 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> IRON_GEARS;
     public static DeferredBlock<Block> IRON_INGOTS_LARGE;
     public static DeferredBlock<Block> IRON_INGOTS_SMALL;
-    public static DeferredBlock<Block> IRON_MOON_DECOR;
+    public static DeferredBlock<Block> IRON_MOON;
     public static DeferredBlock<Block> IRON_MOON_OBSIDIAN;
     public static DeferredBlock<Block> IRON_MOON_OBSIDIAN_PURPLE;
     public static DeferredBlock<Block> IRON_PLATES;
     public static DeferredBlock<Block> IRON_RIVETS;
     public static DeferredBlock<Block> IRON_SHIPPING;
     public static DeferredBlock<Block> IRON_SIMPLE;
-    public static DeferredBlock<Block> IRON_THERMAL;
     public static DeferredBlock<Block> IRON_VENTS;
 
     public static DeferredBlock<Block> LABORATORY_CHECKERBOARD;
@@ -130,23 +140,6 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> LABORATORY_WALL;
     public static DeferredBlock<Block> LABORATORY_WALL_ROUNDED;
     public static DeferredBlock<Block> LABORATORY_WALL_VENT;
-
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_0;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_1;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_2;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_3;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_4;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_5;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_6;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_7;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_8;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_9;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_10;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_11;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_12;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_13;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_14;
-    public static DeferredBlock<Block> LARGE_HEX_PLATING_15;
 
     public static DeferredBlock<Block> TECHNICAL_125;
     public static DeferredBlock<Block> TECHNICAL_CABLES;
@@ -205,7 +198,7 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
 
     @Override
     public void registerBlocks() {
-        ALUMINUM_BAD_GREGGY = register("aluminum_125", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        ALUMINUM_BAD_GREGGY = register("aluminum_bad_greggy", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_BOLTED = register("aluminum_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_CAUTION = register("aluminum_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_CRATE = register("aluminum_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -213,7 +206,7 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         ALUMINUM_SCAFFOLD = register("aluminum_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         ALUMINUM_THERMAL = register("aluminum_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
-        COPPER_BAD_GREGGY = register("copper_125", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+        COPPER_BAD_GREGGY = register("copper_bad_greggy", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_BOLTED = register("copper_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_CAUTION = register("copper_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
         COPPER_CRATE = register("copper_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
@@ -249,16 +242,23 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         FUTURA_SCREEN_CYAN = register("futura_screen_cyan", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         FUTURA_SCREEN_GRAY = register("futura_screen_gray", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
-        GOLD_125 = register("gold_125", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_BAD_GREGGY = register("gold_bad_greggy", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_BOLTED = register("gold_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
-        GOLD_BORDERED = register("gold_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
-        GOLD_BRICKS = register("gold_bricks", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
-        GOLD_CART = register("gold_cart", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_CAUTION = register("gold_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_CRATE = register("gold_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_MACHINE = register("gold_machine", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_SCAFFOLD = register("gold_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_THERMAL = register("gold_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_125 = register("gold_125", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_ADV = register("gold_adv", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_BORDERED = register("gold_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_BRICK = register("gold_brick", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_CART = register("gold_cart", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_COIN_HEADS = register("gold_coin_heads", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_COIN_TAILS = register("gold_coin_tails", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_CRATE_DARK = register("gold_crate_dark", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_CRATE_LIGHT = register("gold_crate_light", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+        GOLD_EGREGIOUS = register("gold_egregious", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_INGOTS_LARGE = register("gold_ingots_large", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_INGOTS_SMALL = register("gold_ingots_small", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_PLATES = register("gold_plates", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
@@ -268,7 +268,6 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         GOLD_STAR_DECOR = register("gold_star_decor", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_STAR_OBSIDIAN = register("gold_star_obsidian", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
         GOLD_STAR_OBSIDIAN_PURPLE = register("gold_star_obsidian_purple", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
-        GOLD_THERMAL = register("gold_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
 
         HEX_PLATING_0 = register("hex_plating_0", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_1 = register("hex_plating_1", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -287,11 +286,16 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         HEX_PLATING_14 = register("hex_plating_14", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         HEX_PLATING_15 = register("hex_plating_15", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
-        IRON_125 = register("iron_125", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_BAD_GREGGY = register("iron_bad_greggy", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_BOLTED = register("iron_bolted", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        IRON_BORDERED = register("iron_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        IRON_BRICKS = register("iron_bricks", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_CAUTION = register("iron_caution", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_CRATE = register("iron_crate", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_MACHINE = register("iron_machine", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_SCAFFOLD = register("iron_scaffold", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_THERMAL = register("iron_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_125 = register("iron_125", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_BORDERED = register("iron_bordered", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_BRICK = register("iron_brick", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_COIN_HEADS = register("iron_coin_heads", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_COIN_TAILS = register("iron_coin_tails", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_CRATE_DARK = register("iron_crate_dark", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -299,14 +303,13 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         IRON_GEARS = register("iron_gears", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_INGOTS_LARGE = register("iron_ingots_large", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_INGOTS_SMALL = register("iron_ingots_small", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        IRON_MOON_DECOR = register("iron_moon_decor", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+        IRON_MOON = register("iron_moon", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_MOON_OBSIDIAN = register("iron_moon_obsidian", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_MOON_OBSIDIAN_PURPLE = register("iron_moon_obsidian_purple", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_PLATES = register("iron_plates", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_RIVETS = register("iron_rivets", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_SHIPPING = register("iron_shipping", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_SIMPLE = register("iron_simple", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        IRON_THERMAL = register("iron_thermal", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         IRON_VENTS = register("iron_vents", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 
         LABORATORY_CHECKERBOARD = register("laboratory_checkerboard", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));

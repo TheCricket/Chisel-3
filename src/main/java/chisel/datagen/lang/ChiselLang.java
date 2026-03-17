@@ -50,12 +50,14 @@ public class ChiselLang extends LangHelper {
         addBookshelf();
         addBricks();
         addBronze();
+        addCobalt();
         addCarpet();
         addCarpetFloor();
         addCloud();
         addCobblestone();
         addConcrete();
         addCopper();
+        addElectrum();
         addDarkOak();
         addDiamond();
         addDiorite();
@@ -70,6 +72,7 @@ public class ChiselLang extends LangHelper {
         addGlassPane();
         addGlowstone();
         addGold();
+        addInvar();
         addGranite();
         addGrimstone();
         addHexPlating();
@@ -82,6 +85,7 @@ public class ChiselLang extends LangHelper {
         addLapis();
         addLavastone();
         addLead();
+        addNickel();
         addLeaf();
         addLimestone();
         addLitPumpkin();
@@ -102,6 +106,7 @@ public class ChiselLang extends LangHelper {
         addRunicVoidstone();
         addSandstone();
         addSilver();
+        addPlatinum();
         addSpruce();
         addSnakestoneSand();
         addSnakestoneStone();
@@ -172,13 +177,13 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addAluminum() {
-        addBlock(ChiselMetalBlocks.ALUMINUM_BAD_GREGGY, "Aluminum", "Egregious");
+        addBlock(ChiselMetalBlocks.ALUMINUM_BAD_GREGGY, "Aluminum", "Bad Greggy");
         addBlock(ChiselMetalBlocks.ALUMINUM_BOLTED, "Aluminum", "Bolted");
-        addBlock(ChiselMetalBlocks.ALUMINUM_CAUTION, "Aluminum", "Caution Stripes");
-        addBlock(ChiselMetalBlocks.ALUMINUM_CRATE, "Aluminum", "Shipping Crate");
-        addBlock(ChiselMetalBlocks.ALUMINUM_MACHINE, "Aluminum", "An Old Relic From The Land Of OneTeuFyv");
+        addBlock(ChiselMetalBlocks.ALUMINUM_CAUTION, "Aluminum", "Caution");
+        addBlock(ChiselMetalBlocks.ALUMINUM_CRATE, "Aluminum", "Crate");
+        addBlock(ChiselMetalBlocks.ALUMINUM_MACHINE, "Aluminum", "Machine");
         addBlock(ChiselMetalBlocks.ALUMINUM_SCAFFOLD, "Aluminum", "Scaffold");
-        addBlock(ChiselMetalBlocks.ALUMINUM_THERMAL, "Aluminum", "Thermal Series");
+        addBlock(ChiselMetalBlocks.ALUMINUM_THERMAL, "Aluminum", "Thermal");
     }
 
     private void addAndesite() {
@@ -307,13 +312,23 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addBronze() {
-        addBlock(ChiselModdedBlocks.BRONZE_BAD_GREGGY, "Block of Bronze", "Egregious");
-        addBlock(ChiselModdedBlocks.BRONZE_BOLTED, "Block of Bronze", "Bolted");
-        addBlock(ChiselModdedBlocks.BRONZE_CAUTION, "Block of Bronze", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.BRONZE_CRATE, "Block of Bronze", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.BRONZE_MACHINE, "Block of Bronze", "An Old Relic From The Land Of OneTeuFyv");
-        addBlock(ChiselModdedBlocks.BRONZE_SCAFFOLD, "Block of Bronze", "Scaffold");
-        addBlock(ChiselModdedBlocks.BRONZE_THERMAL, "Block of Bronze", "Thermal Series");
+        addBlock(ChiselModdedBlocks.BRONZE_BAD_GREGGY, "Bronze", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.BRONZE_BOLTED, "Bronze", "Bolted");
+        addBlock(ChiselModdedBlocks.BRONZE_CAUTION, "Bronze", "Caution");
+        addBlock(ChiselModdedBlocks.BRONZE_CRATE, "Bronze", "Crate");
+        addBlock(ChiselModdedBlocks.BRONZE_MACHINE, "Bronze", "Machine");
+        addBlock(ChiselModdedBlocks.BRONZE_SCAFFOLD, "Bronze", "Scaffold");
+        addBlock(ChiselModdedBlocks.BRONZE_THERMAL, "Bronze", "Thermal");
+    }
+
+    private void addCobalt() {
+        addBlock(ChiselModdedBlocks.COBALT_BAD_GREGGY, "Cobalt", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.COBALT_BOLTED, "Cobalt", "Bolted");
+        addBlock(ChiselModdedBlocks.COBALT_CAUTION, "Cobalt", "Caution");
+        addBlock(ChiselModdedBlocks.COBALT_CRATE, "Cobalt", "Crate");
+        addBlock(ChiselModdedBlocks.COBALT_MACHINE, "Cobalt", "Machine");
+        addBlock(ChiselModdedBlocks.COBALT_SCAFFOLD, "Cobalt", "Scaffold");
+        addBlock(ChiselModdedBlocks.COBALT_THERMAL, "Cobalt", "Thermal");
     }
 
     private void addCarpet() {
@@ -418,13 +433,23 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addCopper() {
-        addBlock(ChiselMetalBlocks.COPPER_BAD_GREGGY, "Block of Copper", "Egregious");
-        addBlock(ChiselMetalBlocks.COPPER_BOLTED, "Block of Copper", "Bolted");
-        addBlock(ChiselMetalBlocks.COPPER_CAUTION, "Block of Copper", "Caution Stripes");
-        addBlock(ChiselMetalBlocks.COPPER_CRATE, "Block of Copper", "Shipping Crate");
-        addBlock(ChiselMetalBlocks.COPPER_MACHINE, "Block of Copper", "An Old Relic From The Land Of OneTeuFyv");
-        addBlock(ChiselMetalBlocks.COPPER_SCAFFOLD, "Block of Copper", "Scaffold");
-        addBlock(ChiselMetalBlocks.COPPER_THERMAL, "Block of Copper", "Thermal Series");
+        addBlock(ChiselMetalBlocks.COPPER_BAD_GREGGY, "Copper", "Bad Greggy");
+        addBlock(ChiselMetalBlocks.COPPER_BOLTED, "Copper", "Bolted");
+        addBlock(ChiselMetalBlocks.COPPER_CAUTION, "Copper", "Caution");
+        addBlock(ChiselMetalBlocks.COPPER_CRATE, "Copper", "Crate");
+        addBlock(ChiselMetalBlocks.COPPER_MACHINE, "Copper", "Machine");
+        addBlock(ChiselMetalBlocks.COPPER_SCAFFOLD, "Copper", "Scaffold");
+        addBlock(ChiselMetalBlocks.COPPER_THERMAL, "Copper", "Thermal");
+    }
+
+    private void addElectrum() {
+        addBlock(ChiselModdedBlocks.ELECTRUM_BAD_GREGGY, "Electrum", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.ELECTRUM_BOLTED, "Electrum", "Bolted");
+        addBlock(ChiselModdedBlocks.ELECTRUM_CAUTION, "Electrum", "Caution");
+        addBlock(ChiselModdedBlocks.ELECTRUM_CRATE, "Electrum", "Crate");
+        addBlock(ChiselModdedBlocks.ELECTRUM_MACHINE, "Electrum", "Machine");
+        addBlock(ChiselModdedBlocks.ELECTRUM_SCAFFOLD, "Electrum", "Scaffold");
+        addBlock(ChiselModdedBlocks.ELECTRUM_THERMAL, "Electrum", "Thermal");
     }
 
     private void addDarkOak() {
@@ -659,27 +684,42 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addGold() {
-        addBlock(() -> Blocks.GOLD_BLOCK, "Block of Gold");
-        addBlock(ChiselMetalBlocks.GOLD_125, "Block of Gold", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselMetalBlocks.GOLD_BOLTED, "Block of Gold", "Fancy Bolted Plating");
-        addBlock(ChiselMetalBlocks.GOLD_BORDERED, "Block of Gold", "Egregiously Bordered Block");
-        addBlock(ChiselMetalBlocks.GOLD_BRICKS, "Block of Gold", "Golden Bricks");
-        addBlock(ChiselMetalBlocks.GOLD_CART, "Block of Gold", "Gold Cart");
-        addBlock(ChiselMetalBlocks.GOLD_CAUTION, "Block of Gold", "Caution Stripes");
-        addBlock(ChiselMetalBlocks.GOLD_COIN_HEADS, "Block of Gold", "Golden Coin Stack Heads-up");
-        addBlock(ChiselMetalBlocks.GOLD_COIN_TAILS, "Block of Gold", "Golden Coin Stack Heads-down");
-        addBlock(ChiselMetalBlocks.GOLD_CRATE_DARK, "Block of Gold", "Dark Gold Crate");
-        addBlock(ChiselMetalBlocks.GOLD_CRATE_LIGHT, "Block of Gold", "Light Gold Crate");
-        addBlock(ChiselMetalBlocks.GOLD_INGOTS_LARGE, "Block of Gold", "Large Golden Ingots");
-        addBlock(ChiselMetalBlocks.GOLD_INGOTS_SMALL, "Block of Gold", "Small Golden Ingots");
-        addBlock(ChiselMetalBlocks.GOLD_PLATES, "Block of Gold", "Golden Plates");
-        addBlock(ChiselMetalBlocks.GOLD_RIVETS, "Block of Gold", "Gold Plates with Rivets");
-        addBlock(ChiselMetalBlocks.GOLD_SHIPPING, "Block of Gold", "Shipping Crate");
-        addBlock(ChiselMetalBlocks.GOLD_SIMPLE, "Block of Gold", "Simple");
-        addBlock(ChiselMetalBlocks.GOLD_STAR_DECOR, "Block of Gold", "with Star Decoration");
-        addBlock(ChiselMetalBlocks.GOLD_STAR_OBSIDIAN, "Block of Gold", "Golden Star in Obsidian");
-        addBlock(ChiselMetalBlocks.GOLD_STAR_OBSIDIAN_PURPLE, "Block of Gold", "Golden Star in Purple Obsidian");
-        addBlock(ChiselMetalBlocks.GOLD_THERMAL, "Block of Gold", "Thermal");
+        addBlock(ChiselMetalBlocks.GOLD_BAD_GREGGY, "Gold", "Bad Greggy");
+        addBlock(ChiselMetalBlocks.GOLD_BOLTED, "Gold", "Bolted");
+        addBlock(ChiselMetalBlocks.GOLD_CAUTION, "Gold", "Caution");
+        addBlock(ChiselMetalBlocks.GOLD_CRATE, "Gold", "Crate");
+        addBlock(ChiselMetalBlocks.GOLD_MACHINE, "Gold", "Machine");
+        addBlock(ChiselMetalBlocks.GOLD_SCAFFOLD, "Gold", "Scaffold");
+        addBlock(ChiselMetalBlocks.GOLD_THERMAL, "Gold", "Thermal");
+        addBlock(ChiselMetalBlocks.GOLD_125, "Gold", "125");
+        addBlock(ChiselMetalBlocks.GOLD_ADV, "Gold", "ADV");
+        addBlock(ChiselMetalBlocks.GOLD_BORDERED, "Gold", "Bordered");
+        addBlock(ChiselMetalBlocks.GOLD_BRICK, "Gold", "Brick");
+        addBlock(ChiselMetalBlocks.GOLD_CART, "Gold", "Cart");
+        addBlock(ChiselMetalBlocks.GOLD_COIN_HEADS, "Gold", "Coin Heads");
+        addBlock(ChiselMetalBlocks.GOLD_COIN_TAILS, "Gold", "Coin Tails");
+        addBlock(ChiselMetalBlocks.GOLD_CRATE_DARK, "Gold", "Dark Crate");
+        addBlock(ChiselMetalBlocks.GOLD_CRATE_LIGHT, "Gold", "Light Crate");
+        addBlock(ChiselMetalBlocks.GOLD_EGREGIOUS, "Gold", "Egregious");
+        addBlock(ChiselMetalBlocks.GOLD_INGOTS_LARGE, "Gold", "Large Ingots");
+        addBlock(ChiselMetalBlocks.GOLD_INGOTS_SMALL, "Gold", "Small Ingots");
+        addBlock(ChiselMetalBlocks.GOLD_PLATES, "Gold", "Plates");
+        addBlock(ChiselMetalBlocks.GOLD_RIVETS, "Gold", "Rivets");
+        addBlock(ChiselMetalBlocks.GOLD_SHIPPING, "Gold", "Shipping Crate");
+        addBlock(ChiselMetalBlocks.GOLD_SIMPLE, "Gold", "Simple");
+        addBlock(ChiselMetalBlocks.GOLD_STAR_DECOR, "Gold", "Star Decor");
+        addBlock(ChiselMetalBlocks.GOLD_STAR_OBSIDIAN, "Gold", "Obsidian Star");
+        addBlock(ChiselMetalBlocks.GOLD_STAR_OBSIDIAN_PURPLE, "Gold", "Purple Obsidian Star");
+    }
+
+    private void addInvar() {
+        addBlock(ChiselModdedBlocks.INVAR_BAD_GREGGY, "Invar", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.INVAR_BOLTED, "Invar", "Bolted");
+        addBlock(ChiselModdedBlocks.INVAR_CAUTION, "Invar", "Caution");
+        addBlock(ChiselModdedBlocks.INVAR_CRATE, "Invar", "Crate");
+        addBlock(ChiselModdedBlocks.INVAR_MACHINE, "Invar", "Machine");
+        addBlock(ChiselModdedBlocks.INVAR_SCAFFOLD, "Invar", "Scaffold");
+        addBlock(ChiselModdedBlocks.INVAR_THERMAL, "Invar", "Thermal");
     }
 
     private void addGranite() {
@@ -818,28 +858,31 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addIron() {
-        addBlock(() -> Blocks.IRON_BLOCK, "Block of Iron");
-        addBlock(ChiselMetalBlocks.IRON_125, "Block of Iron", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselMetalBlocks.IRON_BOLTED, "Block of Iron", "Fancy Bolted Plating");
-        addBlock(ChiselMetalBlocks.IRON_BORDERED, "Block of Iron", "Egregiously Bordered Block");
-        addBlock(ChiselMetalBlocks.IRON_BRICKS, "Block of Iron", "Iron Bricks");
-        addBlock(ChiselMetalBlocks.IRON_CAUTION, "Block of Iron", "Caution Stripes");
-        addBlock(ChiselMetalBlocks.IRON_COIN_HEADS, "Block of Iron", "Iron Coin Stack Heads-up");
-        addBlock(ChiselMetalBlocks.IRON_COIN_TAILS, "Block of Iron", "Iron Coin Stack Heads-down");
-        addBlock(ChiselMetalBlocks.IRON_CRATE_DARK, "Block of Iron", "Dark Iron Crate");
-        addBlock(ChiselMetalBlocks.IRON_CRATE_LIGHT, "Block of Iron", "Light Iron Crate");
-        addBlock(ChiselMetalBlocks.IRON_GEARS, "Block of Iron", "Iron Gears");
-        addBlock(ChiselMetalBlocks.IRON_INGOTS_LARGE, "Block of Iron", "Large Iron Ingots");
-        addBlock(ChiselMetalBlocks.IRON_INGOTS_SMALL, "Block of Iron", "Small Iron Ingots");
-        addBlock(ChiselMetalBlocks.IRON_MOON_DECOR, "Block of Iron", "with Moon Decoration");
-        addBlock(ChiselMetalBlocks.IRON_MOON_OBSIDIAN, "Block of Iron", "Iron Moon in Obsidian");
-        addBlock(ChiselMetalBlocks.IRON_MOON_OBSIDIAN_PURPLE, "Block of Iron", "Iron Moon in Purple Obsidian");
-        addBlock(ChiselMetalBlocks.IRON_PLATES, "Block of Iron", "Iron Plates");
-        addBlock(ChiselMetalBlocks.IRON_RIVETS, "Block of Iron", "Iron Plates with Rivets");
-        addBlock(ChiselMetalBlocks.IRON_SHIPPING, "Block of Iron", "Shipping Crate");
-        addBlock(ChiselMetalBlocks.IRON_SIMPLE, "Block of Iron", "Simple");
-        addBlock(ChiselMetalBlocks.IRON_THERMAL, "Block of Iron", "Thermal");
-        addBlock(ChiselMetalBlocks.IRON_VENTS, "Block of Iron", "Iron Vents");
+        addBlock(ChiselMetalBlocks.IRON_BAD_GREGGY, "Iron", "Bad Greggy");
+        addBlock(ChiselMetalBlocks.IRON_BOLTED, "Iron", "Bolted");
+        addBlock(ChiselMetalBlocks.IRON_CAUTION, "Iron", "Caution");
+        addBlock(ChiselMetalBlocks.IRON_CRATE, "Iron", "Crate");
+        addBlock(ChiselMetalBlocks.IRON_MACHINE, "Iron", "Machine");
+        addBlock(ChiselMetalBlocks.IRON_SCAFFOLD, "Iron", "Scaffold");
+        addBlock(ChiselMetalBlocks.IRON_THERMAL, "Iron", "Thermal");
+        addBlock(ChiselMetalBlocks.IRON_125, "Iron", "125");
+        addBlock(ChiselMetalBlocks.IRON_BORDERED, "Iron", "Bordered");
+        addBlock(ChiselMetalBlocks.IRON_BRICK, "Iron", "Brick");
+        addBlock(ChiselMetalBlocks.IRON_COIN_HEADS, "Iron", "Coin (Heads)");
+        addBlock(ChiselMetalBlocks.IRON_COIN_TAILS, "Iron", "Coin (Tails)");
+        addBlock(ChiselMetalBlocks.IRON_CRATE_DARK, "Iron", "Dark Crate");
+        addBlock(ChiselMetalBlocks.IRON_CRATE_LIGHT, "Iron", "Light Crate");
+        addBlock(ChiselMetalBlocks.IRON_GEARS, "Iron", "Gears");
+        addBlock(ChiselMetalBlocks.IRON_INGOTS_LARGE, "Iron", "Large Ingots");
+        addBlock(ChiselMetalBlocks.IRON_INGOTS_SMALL, "Iron", "Small Ingots");
+        addBlock(ChiselMetalBlocks.IRON_MOON, "Iron", "Moon");
+        addBlock(ChiselMetalBlocks.IRON_MOON_OBSIDIAN, "Iron", "Obsidian Moon");
+        addBlock(ChiselMetalBlocks.IRON_MOON_OBSIDIAN_PURPLE, "Iron", "Purple Obsidian Moon");
+        addBlock(ChiselMetalBlocks.IRON_PLATES, "Iron", "Plates");
+        addBlock(ChiselMetalBlocks.IRON_RIVETS, "Iron", "Rivets");
+        addBlock(ChiselMetalBlocks.IRON_SHIPPING, "Iron", "Shipping Crate");
+        addBlock(ChiselMetalBlocks.IRON_SIMPLE, "Iron", "Simple");
+        addBlock(ChiselMetalBlocks.IRON_VENTS, "Iron", "Vents");
     }
 
     private void addIronBars() {
@@ -948,12 +991,23 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addLead() {
-        addBlock(ChiselModdedBlocks.LEAD_125, "Block of Lead", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.LEAD_BOLTED, "Block of Lead", "Fancy Bolted Plating");
-        addBlock(ChiselModdedBlocks.LEAD_BORDERED, "Block of Lead", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.LEAD_CAUTION, "Block of Lead", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.LEAD_SHIPPING, "Block of Lead", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.LEAD_THERMAL, "Block of Lead", "Thermal");
+        addBlock(ChiselModdedBlocks.LEAD_BAD_GREGGY, "Lead", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.LEAD_BOLTED, "Lead", "Bolted");
+        addBlock(ChiselModdedBlocks.LEAD_CAUTION, "Lead", "Caution");
+        addBlock(ChiselModdedBlocks.LEAD_CRATE, "Lead", "Crate");
+        addBlock(ChiselModdedBlocks.LEAD_MACHINE, "Lead", "Machine");
+        addBlock(ChiselModdedBlocks.LEAD_SCAFFOLD, "Lead", "Scaffold");
+        addBlock(ChiselModdedBlocks.LEAD_THERMAL, "Lead", "Thermal");
+    }
+
+    private void addNickel() {
+        addBlock(ChiselModdedBlocks.NICKEL_BAD_GREGGY, "Nickel", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.NICKEL_BOLTED, "Nickel", "Bolted");
+        addBlock(ChiselModdedBlocks.NICKEL_CAUTION, "Nickel", "Caution");
+        addBlock(ChiselModdedBlocks.NICKEL_CRATE, "Nickel", "Crate");
+        addBlock(ChiselModdedBlocks.NICKEL_MACHINE, "Nickel", "Machine");
+        addBlock(ChiselModdedBlocks.NICKEL_SCAFFOLD, "Nickel", "Scaffold");
+        addBlock(ChiselModdedBlocks.NICKEL_THERMAL, "Nickel", "Thermal");
     }
 
     private void addLeaf() {
@@ -1290,12 +1344,23 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addSilver() {
-        addBlock(ChiselModdedBlocks.SILVER_125, "Block of Silver", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.SILVER_BOLTED, "Block of Silver", "Fancy Bolted Plating");
-        addBlock(ChiselModdedBlocks.SILVER_BORDERED, "Block of Silver", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.SILVER_CAUTION, "Block of Silver", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.SILVER_SHIPPING, "Block of Silver", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.SILVER_THERMAL, "Block of Silver", "Thermal");
+        addBlock(ChiselModdedBlocks.SILVER_BAD_GREGGY, "Silver", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.SILVER_BOLTED, "Silver", "Bolted");
+        addBlock(ChiselModdedBlocks.SILVER_CAUTION, "Silver", "Caution");
+        addBlock(ChiselModdedBlocks.SILVER_CRATE, "Silver", "Crate");
+        addBlock(ChiselModdedBlocks.SILVER_MACHINE, "Silver", "Machine");
+        addBlock(ChiselModdedBlocks.SILVER_SCAFFOLD, "Silver", "Scaffold");
+        addBlock(ChiselModdedBlocks.SILVER_THERMAL, "Silver", "Thermal");
+    }
+
+    private void addPlatinum() {
+        addBlock(ChiselModdedBlocks.PLATINUM_BAD_GREGGY, "Platinum", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.PLATINUM_BOLTED, "Platinum", "Bolted");
+        addBlock(ChiselModdedBlocks.PLATINUM_CAUTION, "Platinum", "Caution");
+        addBlock(ChiselModdedBlocks.PLATINUM_CRATE, "Platinum", "Crate");
+        addBlock(ChiselModdedBlocks.PLATINUM_MACHINE, "Platinum", "Machine");
+        addBlock(ChiselModdedBlocks.PLATINUM_SCAFFOLD, "Platinum", "Scaffold");
+        addBlock(ChiselModdedBlocks.PLATINUM_THERMAL, "Platinum", "Thermal");
     }
 
     private void addSpruce() {
@@ -1552,12 +1617,13 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addSteel() {
-        addBlock(ChiselModdedBlocks.STEEL_125, "Block of Steel", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.STEEL_BOLTED, "Block of Steel", "Fancy Bolted Plating");
-        addBlock(ChiselModdedBlocks.STEEL_BORDERED, "Block of Steel", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.STEEL_CAUTION, "Block of Steel", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.STEEL_SHIPPING, "Block of Steel", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.STEEL_THERMAL, "Block of Steel", "Thermal");
+        addBlock(ChiselModdedBlocks.STEEL_BAD_GREGGY, "Steel", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.STEEL_BOLTED, "Steel", "Bolted");
+        addBlock(ChiselModdedBlocks.STEEL_CAUTION, "Steel", "Caution");
+        addBlock(ChiselModdedBlocks.STEEL_CRATE, "Steel", "Crate");
+        addBlock(ChiselModdedBlocks.STEEL_MACHINE, "Steel", "Machine");
+        addBlock(ChiselModdedBlocks.STEEL_SCAFFOLD, "Steel", "Scaffold");
+        addBlock(ChiselModdedBlocks.STEEL_THERMAL, "Steel", "Thermal");
     }
 
     private void addStoneBricks() {
@@ -1622,12 +1688,13 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addTin() {
-        addBlock(ChiselModdedBlocks.TIN_125, "Block of Tin", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.TIN_BOLTED, "Block of Tin", "Fancy Bolted Plating");
-        addBlock(ChiselModdedBlocks.TIN_BORDERED, "Block of Tin", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.TIN_CAUTION, "Block of Tin", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.TIN_SHIPPING, "Block of Tin", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.TIN_THERMAL, "Block of Tin", "Thermal");
+        addBlock(ChiselModdedBlocks.TIN_BAD_GREGGY, "Tin", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.TIN_BOLTED, "Tin", "Bolted");
+        addBlock(ChiselModdedBlocks.TIN_CAUTION, "Tin", "Caution");
+        addBlock(ChiselModdedBlocks.TIN_CRATE, "Tin", "Crate");
+        addBlock(ChiselModdedBlocks.TIN_MACHINE, "Tin", "Machine");
+        addBlock(ChiselModdedBlocks.TIN_SCAFFOLD, "Tin", "Scaffold");
+        addBlock(ChiselModdedBlocks.TIN_THERMAL, "Tin", "Thermal");
     }
 
     private void addTorch() {
@@ -1663,12 +1730,13 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addUranium() {
-        addBlock(ChiselModdedBlocks.URANIUM_125, "Block of Uranium", "An Old Relic from the land of Oneteufyv");
-        addBlock(ChiselModdedBlocks.URANIUM_BOLTED, "Block of Uranium", "Fancy Bolted Plating");
-        addBlock(ChiselModdedBlocks.URANIUM_BORDERED, "Block of Uranium", "Egregiously Bordered Block");
-        addBlock(ChiselModdedBlocks.URANIUM_CAUTION, "Block of Uranium", "Caution Stripes");
-        addBlock(ChiselModdedBlocks.URANIUM_SHIPPING, "Block of Uranium", "Shipping Crate");
-        addBlock(ChiselModdedBlocks.URANIUM_THERMAL, "Block of Uranium", "Thermal");
+        addBlock(ChiselModdedBlocks.URANIUM_BAD_GREGGY, "Uranium", "Bad Greggy");
+        addBlock(ChiselModdedBlocks.URANIUM_BOLTED, "Uranium", "Bolted");
+        addBlock(ChiselModdedBlocks.URANIUM_CAUTION, "Uranium", "Caution");
+        addBlock(ChiselModdedBlocks.URANIUM_CRATE, "Uranium", "Crate");
+        addBlock(ChiselModdedBlocks.URANIUM_MACHINE, "Uranium", "Machine");
+        addBlock(ChiselModdedBlocks.URANIUM_SCAFFOLD, "Uranium", "Scaffold");
+        addBlock(ChiselModdedBlocks.URANIUM_THERMAL, "Uranium", "Thermal");
     }
 
     private void addValentines() {

@@ -3,9 +3,9 @@
   "prefix": "steel",
   "variants": [
     {
-      "block": "chisel:steel_125",
+      "block": "chisel:steel_bad_greggy",
       "model_type": "cube_all",
-      "name": "steel_125"
+      "name": "steel_bad_greggy"
     },
     {
       "block": "chisel:steel_bolted",
@@ -13,23 +13,28 @@
       "name": "steel_bolted"
     },
     {
-      "block": "chisel:steel_bordered",
-      "model_type": "cube_all",
-      "name": "steel_bordered"
-    },
-    {
       "block": "chisel:steel_caution",
       "model_type": "cube_all",
       "name": "steel_caution"
     },
     {
-      "block": "chisel:steel_shipping",
+      "block": "chisel:steel_crate",
       "model_type": "cube_all",
-      "name": "steel_shipping"
+      "name": "steel_crate"
+    },
+    {
+      "block": "chisel:steel_machine",
+      "model_type": "cube_all",
+      "name": "steel_machine"
+    },
+    {
+      "block": "chisel:steel_scaffold",
+      "model_type": "cube_all",
+      "name": "steel_scaffold"
     },
     {
       "block": "chisel:steel_thermal",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "steel_thermal"
     }
   ]

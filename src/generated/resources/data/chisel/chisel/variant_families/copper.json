@@ -3,7 +3,7 @@
   "prefix": "copper",
   "variants": [
     {
-      "block": "chisel:copper_125",
+      "block": "chisel:copper_bad_greggy",
       "model_type": "cube_all",
       "name": "copper_bad_greggy"
     },
