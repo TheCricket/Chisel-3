@@ -1,41 +1,46 @@
 {
-  "base": "chisel:factory_rusty_dotted",
+  "base": "chisel:factory_circuit",
   "prefix": "factory",
   "variants": [
     {
-      "block": "chisel:factory_blue",
+      "block": "chisel:factory_circuit",
       "model_type": "cube_all",
-      "name": "factory_blue"
-    },
-    {
-      "block": "chisel:factory_circuit_blue",
-      "model_type": "cube_all",
-      "name": "factory_circuit_blue"
-    },
-    {
-      "block": "chisel:factory_circuit_fancy",
-      "model_type": "cube_all",
-      "name": "factory_circuit_fancy"
+      "name": "factory_circuit"
     },
     {
       "block": "chisel:factory_column",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "factory_column"
     },
     {
-      "block": "chisel:factory_construction",
+      "block": "chisel:factory_dots",
       "model_type": "cube_all",
-      "name": "factory_construction"
+      "name": "factory_dots"
     },
     {
-      "block": "chisel:factory_gold_circuit",
+      "block": "chisel:factory_frame_blue",
       "model_type": "cube_all",
-      "name": "factory_gold_circuit"
+      "name": "factory_frame_blue"
     },
     {
-      "block": "chisel:factory_gold_purple",
+      "block": "chisel:factory_gold_plate",
       "model_type": "cube_all",
-      "name": "factory_gold_purple"
+      "name": "factory_gold_plate"
+    },
+    {
+      "block": "chisel:factory_gold_plating",
+      "model_type": "cube_all",
+      "name": "factory_gold_plating"
+    },
+    {
+      "block": "chisel:factory_grinder",
+      "model_type": "cube_all",
+      "name": "factory_grinder"
+    },
+    {
+      "block": "chisel:factory_hazard",
+      "model_type": "cube_all",
+      "name": "factory_hazard"
     },
     {
       "block": "chisel:factory_hazard_orange",
@@ -43,49 +48,49 @@
       "name": "factory_hazard_orange"
     },
     {
-      "block": "chisel:factory_hazard_yellow",
+      "block": "chisel:factory_ice",
       "model_type": "cube_all",
-      "name": "factory_hazard_yellow"
+      "name": "factory_ice"
     },
     {
-      "block": "chisel:factory_metal",
-      "model_type": "cube_all",
-      "name": "factory_metal"
+      "block": "chisel:factory_metal_box",
+      "model_type": "top_bottom_side",
+      "name": "factory_metal_box"
     },
     {
-      "block": "chisel:factory_rusty_dotted",
+      "block": "chisel:factory_platex",
       "model_type": "cube_all",
-      "name": "factory_rusty_dotted"
+      "name": "factory_platex"
     },
     {
-      "block": "chisel:factory_rusty_little",
+      "block": "chisel:factory_plating",
       "model_type": "cube_all",
-      "name": "factory_rusty_little"
+      "name": "factory_plating"
     },
     {
-      "block": "chisel:factory_rusty_plate",
+      "block": "chisel:factory_rust",
       "model_type": "cube_all",
-      "name": "factory_rusty_plate"
+      "name": "factory_rust"
     },
     {
-      "block": "chisel:factory_rusty_plates",
+      "block": "chisel:factory_rust2",
       "model_type": "cube_all",
-      "name": "factory_rusty_plates"
+      "name": "factory_rust2"
     },
     {
-      "block": "chisel:factory_rusty_very",
+      "block": "chisel:factory_rust_plates",
       "model_type": "cube_all",
-      "name": "factory_rusty_very"
+      "name": "factory_rust_plates"
     },
     {
-      "block": "chisel:factory_vent_vertical",
+      "block": "chisel:factory_tile_mosaic",
       "model_type": "cube_all",
-      "name": "factory_vent_vertical"
+      "name": "factory_tile_mosaic"
     },
     {
-      "block": "chisel:factory_vent_worn",
-      "model_type": "cube_all",
-      "name": "factory_vent_worn"
+      "block": "chisel:factory_vent",
+      "model_type": "top_bottom_side",
+      "name": "factory_vent"
     },
     {
       "block": "chisel:factory_wireframe",
@@ -98,9 +103,9 @@
       "name": "factory_wireframe_blue"
     },
     {
-      "block": "chisel:factory_wireframe_purple",
+      "block": "chisel:factory_wireframe_white",
       "model_type": "cube_all",
-      "name": "factory_wireframe_purple"
+      "name": "factory_wireframe_white"
     }
   ]
 }

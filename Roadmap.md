@@ -23,7 +23,7 @@ Initial pass is just textures
 - [X] Emerald
 - [X] Energized Voidstone
 - [X] Energized Voidstone Pillar
-- [ ] Factory
+- [X] Factory
 - [ ] Fantasy
 - [ ] Futura
 - [ ] Glass

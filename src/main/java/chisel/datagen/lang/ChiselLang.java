@@ -555,26 +555,27 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addFactory() {
-        addBlock(ChiselMetalBlocks.FACTORY_BLUE, "Factory Block", "Neon Blue Plating");
-        addBlock(ChiselMetalBlocks.FACTORY_CIRCUIT_BLUE, "Factory Block", "Metallic Blue Circuit Plating");
-        addBlock(ChiselMetalBlocks.FACTORY_CIRCUIT_FANCY, "Factory Block", "Fancy Circuit");
-        addBlock(ChiselMetalBlocks.FACTORY_COLUMN, "Factory Block", "Worn Metal Column");
-        addBlock(ChiselMetalBlocks.FACTORY_CONSTRUCTION, "Factory Block", "Shiny Metal Construction");
-        addBlock(ChiselMetalBlocks.FACTORY_GOLD_CIRCUIT, "Factory Block", "Gold-Plated Fancy Circuit");
-        addBlock(ChiselMetalBlocks.FACTORY_GOLD_PURPLE, "Factory Block", "Gold-Plated Rusty Purple");
-        addBlock(ChiselMetalBlocks.FACTORY_HAZARD_ORANGE, "Factory Block", "Orange-White Hazard");
-        addBlock(ChiselMetalBlocks.FACTORY_HAZARD_YELLOW, "Factory Block", "Yellow-Black Hazard");
-        addBlock(ChiselMetalBlocks.FACTORY_METAL, "Factory Block", "Fancy Metal Box");
-        addBlock(ChiselMetalBlocks.FACTORY_RUSTY_DOTTED, "Factory Block", "Rusty Metal Plate with Dotted Pattern");
-        addBlock(ChiselMetalBlocks.FACTORY_RUSTY_LITTLE, "Factory Block", "A Metal Plate with Little Rust");
-        addBlock(ChiselMetalBlocks.FACTORY_RUSTY_PLATE, "Factory Block", "Rusty Metal Plate");
-        addBlock(ChiselMetalBlocks.FACTORY_RUSTY_PLATES, "Factory Block", "Rusty Metal Plates");
-        addBlock(ChiselMetalBlocks.FACTORY_RUSTY_VERY, "Factory Block", "Very Rusty Metal Plate");
-        addBlock(ChiselMetalBlocks.FACTORY_VENT_VERTICAL, "Factory Block", "Vertical Venting");
-        addBlock(ChiselMetalBlocks.FACTORY_VENT_WORN, "Factory Block", "Worn Metal Wall with Ventilation Openings");
+        addBlock(ChiselMetalBlocks.FACTORY_CIRCUIT, "Factory Block", "Circuit");
+        addBlock(ChiselMetalBlocks.FACTORY_COLUMN, "Factory Block", "Column");
+        addBlock(ChiselMetalBlocks.FACTORY_DOTS, "Factory Block", "Dots");
+        addBlock(ChiselMetalBlocks.FACTORY_FRAME_BLUE, "Factory Block", "Circuit");
+        addBlock(ChiselMetalBlocks.FACTORY_GOLD_PLATE, "Factory Block", "Gold Plate");
+        addBlock(ChiselMetalBlocks.FACTORY_GOLD_PLATING, "Factory Block", "Gold Plating");
+        addBlock(ChiselMetalBlocks.FACTORY_GRINDER, "Factory Block", "Grinder");
+        addBlock(ChiselMetalBlocks.FACTORY_HAZARD, "Factory Block", "Hazard");
+        addBlock(ChiselMetalBlocks.FACTORY_HAZARD_ORANGE, "Factory Block", "Hazard Orange");
+        addBlock(ChiselMetalBlocks.FACTORY_ICE, "Factory Block", "Ice");
+        addBlock(ChiselMetalBlocks.FACTORY_METAL_BOX, "Factory Block", "Metal Box");
+        addBlock(ChiselMetalBlocks.FACTORY_PLATEX, "Factory Block", "Plate");
+        addBlock(ChiselMetalBlocks.FACTORY_PLATING, "Factory Block", "Plating");
+        addBlock(ChiselMetalBlocks.FACTORY_RUST, "Factory Block", "Rust");
+        addBlock(ChiselMetalBlocks.FACTORY_RUST2, "Factory Block", "Rust 2");
+        addBlock(ChiselMetalBlocks.FACTORY_RUST_PLATES, "Factory Block", "Rust Plates");
+        addBlock(ChiselMetalBlocks.FACTORY_TILE_MOSAIC, "Factory Block", "Mosaic");
+        addBlock(ChiselMetalBlocks.FACTORY_VENT, "Factory Block", "Vent");
         addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME, "Factory Block", "Wireframe");
-        addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_BLUE, "Factory Block", "Blue Wireframing");
-        addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_PURPLE, "Factory Block", "Wireframe in a Shade of Purple");
+        addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_BLUE, "Factory Block", "Wireframe Blue");
+        addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_WHITE, "Factory Block", "Wireframe White");
     }
 
     private void addFantasy() {

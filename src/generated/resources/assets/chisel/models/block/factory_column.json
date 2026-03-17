@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/factory/factory_column"
+    "bottom": "chisel:block/factory/factory_column-bottom",
+    "side": "chisel:block/factory/factory_column-side",
+    "top": "chisel:block/factory/factory_column-top"
   }
 }
