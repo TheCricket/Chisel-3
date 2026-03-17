@@ -44,7 +44,7 @@ Initial pass is just textures
 - [X] Lavastone
 - [X] Lead
 - [X] Leaf
-- [ ] Limestone
+- [X] Limestone
 - [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
 - [ ] Marble
 - [ ] Mossy Cobblestone
