@@ -18,6 +18,7 @@ public class VariantModels {
     public final MultiLayerTBSModel MULTI_LAYER_TBS = new MultiLayerTBSModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM = new MultiLayerCTMModel();
     public final LavastoneModel LAVASTONE = new LavastoneModel();
+    public final LavastoneTBSModel LAVASTONE_TOP_BOTTOM_SIDE = new LavastoneTBSModel();
     public final BookshelfModel BOOKSHELF = new BookshelfModel();
     public final CarpetModel CARPET = new CarpetModel();
     public final GlassPaneModel GLASS_PANE = new GlassPaneModel();

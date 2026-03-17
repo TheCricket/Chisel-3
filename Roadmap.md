@@ -41,7 +41,7 @@ Initial pass is just textures
 - [X] Laboratory
 - [X] Lapis
 - [X] Large Hex Plating
-- [ ] Lavastone
+- [X] Lavastone
 - [ ] Lead
 - [ ] Leaf
 - [ ] Limestone

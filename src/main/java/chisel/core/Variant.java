@@ -69,6 +69,7 @@ public class Variant extends VariantModels {
             case MULTI_LAYER_TBS -> MULTI_LAYER_TBS.generate(this, blockModels);
             case MULTI_LAYER_WATER -> LAVASTONE.generate(this, blockModels);
             case MULTI_LAYER_LAVA -> LAVASTONE.generate(this, blockModels);
+            case MULTI_LAYER_LAVA_TOP_BOTTOM_SIDE -> LAVASTONE_TOP_BOTTOM_SIDE.generate(this, blockModels);
             case MULTI_LAYER_CONNECTED -> MULTI_LAYER_CTM.generate(this, blockModels);
             case CARPET -> CARPET.generate(this, blockModels);
             case IRON_BARS -> IRON_BARS.generate(this, blockModels);

@@ -912,14 +912,39 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addLavastone() {
-        addBlock(ChiselStoneBlocks.LAVASTONE_BLACK, "Lavastone", "Black");
-        addBlock(ChiselStoneBlocks.LAVASTONE_BRICKS, "Lavastone", "Chaotic Bricks");
-        addBlock(ChiselStoneBlocks.LAVASTONE_DARK, "Lavastone", "Dark");
+        addBlock(ChiselStoneBlocks.LAVASTONE_ARRAY, "Lavastone", "Array");
+        addBlock(ChiselStoneBlocks.LAVASTONE_BRAID, "Lavastone", "Braid");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CHAOTIC_BRICKS, "Lavastone", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CHAOTIC_MEDIUM, "Lavastone", "Medium Chaotic");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CHAOTIC_SMALL, "Lavastone", "Small Chaotic");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CIRCULAR, "Lavastone", "Circular");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CRACKED, "Lavastone", "Cracked");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CRACKED_BRICKS, "Lavastone", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_CUTS, "Lavastone", "Cuts");
+        addBlock(ChiselStoneBlocks.LAVASTONE_DENT, "Lavastone", "Dent");
+        addBlock(ChiselStoneBlocks.LAVASTONE_ENCASED_BRICKS, "Lavastone", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_FRENCH_1, "Lavastone", "French 1");
+        addBlock(ChiselStoneBlocks.LAVASTONE_FRENCH_2, "Lavastone", "French 2");
+        addBlock(ChiselStoneBlocks.LAVASTONE_JELLYBEAN, "Lavastone", "Jellybean");
+        addBlock(ChiselStoneBlocks.LAVASTONE_LAYERS, "Lavastone", "Layers");
+        addBlock(ChiselStoneBlocks.LAVASTONE_MOSAIC, "Lavastone", "Mosaic");
+        addBlock(ChiselStoneBlocks.LAVASTONE_ORNATE, "Lavastone", "Ornate");
         addBlock(ChiselStoneBlocks.LAVASTONE_PANEL, "Lavastone", "Panel");
-        addBlock(ChiselStoneBlocks.LAVASTONE_PANEL_ORNATE, "Lavastone", "Ornate Panel");
+        addBlock(ChiselStoneBlocks.LAVASTONE_PILLAR, "Lavastone", "Pillar");
+        addBlock(ChiselStoneBlocks.LAVASTONE_PRISM, "Lavastone", "Prism");
         addBlock(ChiselStoneBlocks.LAVASTONE_RAW, "Lavastone", "Raw");
-        addBlock(ChiselStoneBlocks.LAVASTONE_TILES, "Lavastone", "Tiles");
-        addBlock(ChiselStoneBlocks.LAVASTONE_TILES_CREEPER, "Lavastone", "Creeper in Tiles");
+        addBlock(ChiselStoneBlocks.LAVASTONE_ROAD, "Lavastone", "Road");
+        addBlock(ChiselStoneBlocks.LAVASTONE_SLANTED, "Lavastone", "Slanted");
+        addBlock(ChiselStoneBlocks.LAVASTONE_SMALL_BRICKS, "Lavastone", "Small Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_SOFT_BRICKS, "Lavastone", "Soft Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_SOLID_BRICKS, "Lavastone", "Solid Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_TILES_LARGE, "Lavastone", "Large Tiles");
+        addBlock(ChiselStoneBlocks.LAVASTONE_TILES_MEDIUM, "Lavastone", "Medium Tiles");
+        addBlock(ChiselStoneBlocks.LAVASTONE_TILES_SMALL, "Lavastone", "Small Tiles");
+        addBlock(ChiselStoneBlocks.LAVASTONE_TRIPLE_BRICKS, "Lavastone", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.LAVASTONE_TWISTED, "Lavastone", "Twisted");
+        addBlock(ChiselStoneBlocks.LAVASTONE_WEAVER, "Lavastone", "Weaver");
+        addBlock(ChiselStoneBlocks.LAVASTONE_ZAG, "Lavastone", "Zag");
     }
 
     private void addLead() {

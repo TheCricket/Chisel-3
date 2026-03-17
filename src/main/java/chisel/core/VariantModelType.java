@@ -15,6 +15,7 @@ public enum VariantModelType implements StringRepresentable {
     MULTI_LAYER("multi_layer"),
     MULTI_LAYER_TBS("multi_layer_tbs"),
     MULTI_LAYER_LAVA("multi_layer_lava"),
+    MULTI_LAYER_LAVA_TOP_BOTTOM_SIDE("multi_layer_lava_top_bottom_side"),
     MULTI_LAYER_WATER("multi_layer_water"),
     MULTI_LAYER_CONNECTED("multi_layer_connected"),
     CARPET("carpet"),
