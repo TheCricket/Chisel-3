@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:storage_blocks/coal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chisel:hex_plating_0"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coal_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chisel:hex_plating_0"
+    ]
+  }
+}
