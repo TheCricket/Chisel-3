@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/purpled_fantasy/purpled_fantasy_block"
-  }
-}

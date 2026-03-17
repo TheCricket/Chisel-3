@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
-  "textures": {
-    "bottom": "chisel:block/fantasy/fantasy_bricks_disarray-bottom",
-    "side": "chisel:block/fantasy/fantasy_bricks_disarray-side",
-    "top": "chisel:block/fantasy/fantasy_bricks_disarray-top"
-  }
-}

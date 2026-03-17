@@ -167,23 +167,6 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_SMOOTH;
     public static DeferredBlock<Block> ENERGISED_VOIDSTONE_TILES;
 
-    public static DeferredBlock<Block> FANTASY_BLOCK;
-    public static DeferredBlock<Block> FANTASY_BRICK;
-    public static DeferredBlock<Block> FANTASY_BRICK_DAMAGED;
-    public static DeferredBlock<Block> FANTASY_BRICK_FADED;
-    public static DeferredBlock<Block> FANTASY_BRICK_WORN;
-    public static DeferredBlock<Block> FANTASY_BRICKS_DISARRAY;
-    public static DeferredBlock<Block> FANTASY_BRICKS_DISARRAY_WORN;
-    public static DeferredBlock<Block> FANTASY_DECORATION;
-    public static DeferredBlock<Block> FANTASY_DECORATION_BLOCK;
-    public static DeferredBlock<Block> FANTASY_DECORATION_CHAINS;
-    public static DeferredBlock<Block> FANTASY_DECORATION_ENGRAVING;
-    public static DeferredBlock<Block> FANTASY_DECORATION_NOISE;
-    public static DeferredBlock<Block> FANTASY_DECORATION_PILLAR;
-    public static DeferredBlock<Block> FANTASY_DECORATION_PLATE;
-    public static DeferredBlock<Block> FANTASY_DECORATION_SNAKE;
-    public static DeferredBlock<Block> FANTASY_PILLAR;
-
     public static DeferredBlock<Block> GRANITE_BRICKS;
     public static DeferredBlock<Block> GRANITE_ORNATE;
     public static DeferredBlock<Block> GRANITE_PILLAR;
@@ -344,23 +327,6 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> OBSIDIAN_PILLAR;
     public static DeferredBlock<Block> OBSIDIAN_PILLAR_LARGE;
     public static DeferredBlock<Block> OBSIDIAN_TILES;
-
-    public static DeferredBlock<Block> PURPLED_FANTASY_BLOCK;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICK;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICK_DAMAGED;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICK_FADED;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICK_WORN;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICKS_DISARRAY;
-    public static DeferredBlock<Block> PURPLED_FANTASY_BRICKS_DISARRAY_WORN;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_BLOCK;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_CHAINS;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_ENGRAVING;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_NOISE;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_PILLAR;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_PLATE;
-    public static DeferredBlock<Block> PURPLED_FANTASY_DECORATION_SNAKE;
-    public static DeferredBlock<Block> PURPLED_FANTASY_PILLAR;
 
     public static DeferredBlock<Block> RUNIC_VOIDSTONE_0;
     public static DeferredBlock<Block> RUNIC_VOIDSTONE_1;
@@ -575,23 +541,6 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
         ENERGISED_VOIDSTONE_BEVEL = register("energized_voidstone_bevel", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
         ENERGISED_VOIDSTONE_PILLAR = register("energized_voidstone_pillar_normal", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
 
-        FANTASY_BLOCK = register("fantasy_block", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICK = register("fantasy_brick", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICK_DAMAGED = register("fantasy_brick_damaged", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICK_FADED = register("fantasy_brick_faded", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICK_WORN = register("fantasy_brick_worn", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICKS_DISARRAY = register("fantasy_bricks_disarray", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_BRICKS_DISARRAY_WORN = register("fantasy_bricks_disarray_worn", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION = register("fantasy_decoration", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_BLOCK = register("fantasy_decoration_block", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_CHAINS = register("fantasy_decoration_chains", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_ENGRAVING = register("fantasy_decoration_engraving", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_NOISE = register("fantasy_decoration_noise", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_PILLAR = register("fantasy_decoration_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_PLATE = register("fantasy_decoration_plate", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_DECORATION_SNAKE = register("fantasy_decoration_snake", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        FANTASY_PILLAR = register("fantasy_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-
         GRANITE_BRICKS = register("granite_bricks", BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_ORNATE = register("granite_ornate", BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE));
         GRANITE_PILLAR = register("granite_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE));
@@ -752,23 +701,6 @@ public class ChiselStoneBlocks extends ChiselBlocksProvider {
         OBSIDIAN_PILLAR = register("obsidian_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_PILLAR_LARGE = register("obsidian_pillar_large", BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
         OBSIDIAN_TILES = register("obsidian_tiles", BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
-
-        PURPLED_FANTASY_BLOCK = register("purpled_fantasy_block", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICK = register("purpled_fantasy_brick", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICK_DAMAGED = register("purpled_fantasy_brick_damaged", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICK_FADED = register("purpled_fantasy_brick_faded", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICK_WORN = register("purpled_fantasy_brick_worn", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICKS_DISARRAY = register("purpled_fantasy_bricks_disarray", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_BRICKS_DISARRAY_WORN = register("purpled_fantasy_bricks_disarray_worn", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION = register("purpled_fantasy_decoration", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_BLOCK = register("purpled_fantasy_decoration_block", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_CHAINS = register("purpled_fantasy_decoration_chains", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_ENGRAVING = register("purpled_fantasy_decoration_engraving", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_NOISE = register("purpled_fantasy_decoration_noise", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_PILLAR = register("purpled_fantasy_decoration_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_PLATE = register("purpled_fantasy_decoration_plate", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_DECORATION_SNAKE = register("purpled_fantasy_decoration_snake", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-        PURPLED_FANTASY_PILLAR = register("purpled_fantasy_pillar", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
 
         RUNIC_VOIDSTONE_0 = register("runic_voidstone_0", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
         RUNIC_VOIDSTONE_1 = register("runic_voidstone_1", BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));

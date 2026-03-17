@@ -24,7 +24,6 @@ Initial pass is just textures
 - [X] Energized Voidstone
 - [X] Energized Voidstone Pillar
 - [X] Factory
-- [ ] Fantasy
 - [ ] Futura
 - [ ] Glass
 - [ ] Glass Pane
@@ -59,7 +58,6 @@ Initial pass is just textures
 - [ ] Paper wall
 - [ ] Paper wall block
 - [ ] Pumpkin
-- [ ] Purpled fantasy
 - [ ] Redstone
 - [ ] Road line
 - [ ] Runic voidstone

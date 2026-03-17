@@ -32,7 +32,6 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> EMERALD = create(VariantFamilies.EMERALD);
     public static ResourceKey<VariantFamily> ENERGIZED_VOIDSTONE = create(VariantFamilies.ENERGIZED_VOIDSTONE);
     public static ResourceKey<VariantFamily> FACTORY = create(VariantFamilies.FACTORY);
-    public static ResourceKey<VariantFamily> FANTASY = create(VariantFamilies.FANTASY);
     public static ResourceKey<VariantFamily> FUTURA = create(VariantFamilies.FUTURA);
     public static ResourceKey<VariantFamily> GLASS = create(VariantFamilies.GLASS);
     public static ResourceKey<VariantFamily> GLASS_PANE = create(VariantFamilies.GLASS_PANE);
@@ -67,7 +66,6 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> PAPERWALL = create(VariantFamilies.PAPERWALL);
     public static ResourceKey<VariantFamily> PAPERWALL_BLOCK = create(VariantFamilies.PAPERWALL_BLOCK);
     public static ResourceKey<VariantFamily> PUMPKIN = create(VariantFamilies.PUMPKIN);
-    public static ResourceKey<VariantFamily> PURPLED_FANTASY = create(VariantFamilies.PURPLED_FANTASY);
     public static ResourceKey<VariantFamily> REDSTONE = create(VariantFamilies.REDSTONE);
     public static ResourceKey<VariantFamily> ROAD_LINE = create(VariantFamilies.ROAD_LINE);
     public static ResourceKey<VariantFamily> RUNIC_VOIDSTONE = create(VariantFamilies.RUNIC_VOIDSTONE);
@@ -149,7 +147,6 @@ public class ChiselVariants {
                 bootstrap.register(EMERALD, VariantFamilies.EMERALD);
                 bootstrap.register(ENERGIZED_VOIDSTONE, VariantFamilies.ENERGIZED_VOIDSTONE);
                 bootstrap.register(FACTORY, VariantFamilies.FACTORY);
-                bootstrap.register(FANTASY, VariantFamilies.FANTASY);
                 bootstrap.register(FUTURA, VariantFamilies.FUTURA);
                 bootstrap.register(GLASS, VariantFamilies.GLASS);
                 bootstrap.register(GLASS_PANE, VariantFamilies.GLASS_PANE);
@@ -184,7 +181,6 @@ public class ChiselVariants {
                 bootstrap.register(PAPERWALL, VariantFamilies.PAPERWALL);
                 bootstrap.register(PAPERWALL_BLOCK, VariantFamilies.PAPERWALL_BLOCK);
                 bootstrap.register(PUMPKIN, VariantFamilies.PUMPKIN);
-                bootstrap.register(PURPLED_FANTASY, VariantFamilies.PURPLED_FANTASY);
                 bootstrap.register(REDSTONE, VariantFamilies.REDSTONE);
                 bootstrap.register(ROAD_LINE, VariantFamilies.ROAD_LINE);
                 bootstrap.register(RUNIC_VOIDSTONE, VariantFamilies.RUNIC_VOIDSTONE);

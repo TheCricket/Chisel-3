@@ -64,7 +64,6 @@ public class ChiselLang extends LangHelper {
         addEnergizedVoidstone();
         addEnergizedVoidstonePillar();
         addFactory();
-        addFantasy();
         addFutura();
         addGlass();
         addGlassPane();
@@ -99,7 +98,6 @@ public class ChiselLang extends LangHelper {
         addPaperwall();
         addPaperwallBlock();
         addPumpkin();
-        addPurpledFantasy();
         addRedstone();
         addRoadLine();
         addRunicVoidstone();
@@ -576,25 +574,6 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME, "Factory Block", "Wireframe");
         addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_BLUE, "Factory Block", "Wireframe Blue");
         addBlock(ChiselMetalBlocks.FACTORY_WIREFRAME_WHITE, "Factory Block", "Wireframe White");
-    }
-
-    private void addFantasy() {
-        addBlock(ChiselStoneBlocks.FANTASY_BLOCK, "Fantasy Block", "Block");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICK, "Fantasy Block", "Brick");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICKS_DISARRAY, "Fantasy Block", "Bricks in disarray");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICKS_DISARRAY_WORN, "Fantasy Block", "Worn Bricks in disarray");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICK_DAMAGED, "Fantasy Block", "Damaged Bricks");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICK_FADED, "Fantasy Block", "Faded Brick");
-        addBlock(ChiselStoneBlocks.FANTASY_BRICK_WORN, "Fantasy Block", "Worn Brick");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION, "Fantasy Block", "Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_BLOCK, "Fantasy Block", "Decoration Block");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_CHAINS, "Fantasy Block", "Gold Chains Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_ENGRAVING, "Fantasy Block", "Gold Engravings Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_NOISE, "Fantasy Block", "Gold Noise Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_PILLAR, "Fantasy Block", "Decoration Pillar");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_PLATE, "Fantasy Block", "Plate Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_DECORATION_SNAKE, "Fantasy Block", "Gold Snake Decoration");
-        addBlock(ChiselStoneBlocks.FANTASY_PILLAR, "Fantasy Block", "Pillar");
     }
 
     private void addFutura() {
@@ -1151,25 +1130,6 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselOtherBlocks.PUMPKIN_7, "Pumpkin", "Bored");
         addBlock(ChiselOtherBlocks.PUMPKIN_8, "Pumpkin", "Sad");
         addBlock(ChiselOtherBlocks.PUMPKIN_9, "Pumpkin", "Evil");
-    }
-
-    private void addPurpledFantasy() {
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BLOCK, "Purpled Fantasy Block", "Block");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICK, "Purpled Fantasy Block", "Brick");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICKS_DISARRAY, "Purpled Fantasy Block", "Bricks in disarray");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICKS_DISARRAY_WORN, "Purpled Fantasy Block", "Worn Bricks in disarray");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICK_DAMAGED, "Purpled Fantasy Block", "Damaged Bricks");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICK_FADED, "Purpled Fantasy Block", "Faded Brick");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_BRICK_WORN, "Purpled Fantasy Block", "Worn Brick");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION, "Purpled Fantasy Block", "Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_BLOCK, "Purpled Fantasy Block", "Decoration Block");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_CHAINS, "Purpled Fantasy Block", "Gold Chains Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_ENGRAVING, "Purpled Fantasy Block", "Gold Engravings Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_NOISE, "Purpled Fantasy Block", "Gold Noise Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_PILLAR, "Purpled Fantasy Block", "Decoration Pillar");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_PLATE, "Purpled Fantasy Block", "Plate Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_DECORATION_SNAKE, "Purpled Fantasy Block", "Gold Snake Decoration");
-        addBlock(ChiselStoneBlocks.PURPLED_FANTASY_PILLAR, "Purpled Fantasy Block", "Pillar");
     }
 
     private void addRedstone() {

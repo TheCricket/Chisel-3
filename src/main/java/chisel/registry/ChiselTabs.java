@@ -27,8 +27,6 @@ public class ChiselTabs {
                     VariantFamilies.STONE_BRICKS,
                     VariantFamilies.CONCRETE,
                     VariantFamilies.DIORITE,
-                    VariantFamilies.FANTASY,
-                    VariantFamilies.PURPLED_FANTASY,
                     VariantFamilies.GRANITE,
                     VariantFamilies.GRIMSTONE,
                     VariantFamilies.HOLYSTONE,
