@@ -27,7 +27,7 @@ Initial pass is just textures
 - [X] Futura
 - [X] Glass
 - [ ] Glass Pane
-- [ ] Glowstone
+- [X] Glowstone
 - [ ] Gold
 - [ ] Granite
 - [ ] Grimstone

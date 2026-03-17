@@ -626,21 +626,38 @@ public class ChiselLang extends LangHelper {
 
     private void addGlowstone() {
         addBlock(() -> Blocks.GLOWSTONE, "Glowstone");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_ARRAY, "Glowstone", "Array");
         addBlock(ChiselOtherBlocks.GLOWSTONE_BISMUTH, "Glowstone", "Bismuth");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_BISMUTH_PANEL, "Glowstone", "Bismuth Panel");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_BLOCKS, "Glowstone", "Blocks with Glass");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_COBBLE, "Glowstone", "Cobble Block");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_CORRODED, "Glowstone", "Corroded Blocks");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_CORRODED_TILES, "Glowstone", "Corroded Tiles");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_CRUMBLING, "Glowstone", "Crumbling Block");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_FANCY, "Glowstone", "Fancy Lantern");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_BRAID, "Glowstone", "Braid");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_CHAOTIC_MEDIUM, "Glowstone", "Medium Chaotic");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_CHAOTIC_SMALL, "Glowstone", "Small Chaotic");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_CIRCULAR, "Glowstone", "Circular");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_CRACKED, "Glowstone", "Cracked");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_CRACKED_BRICKS, "Glowstone", "Cracked Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_DENT, "Glowstone", "Dent");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_ENCASED_BRICKS, "Glowstone", "Encased Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_FRENCH_1, "Glowstone", "French 1");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_FRENCH_2, "Glowstone", "French 2");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_JELLYBEAN, "Glowstone", "Jellybean");
         addBlock(ChiselOtherBlocks.GLOWSTONE_LAYERS, "Glowstone", "Layers");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_MOSAIC, "Glowstone", "Mosaic");
         addBlock(ChiselOtherBlocks.GLOWSTONE_NEON, "Glowstone", "Neon");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_ORGANIC, "Glowstone", "Organic Growth Block");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_ORNATE, "Glowstone", "Ornate Blocks");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_ROCKY, "Glowstone", "Rocky");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_SHALE, "Glowstone", "Shale-Shaped");
-        addBlock(ChiselOtherBlocks.GLOWSTONE_TILES, "Glowstone", "Tiles");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_NEON_PANEL, "Glowstone", "Neon Panel");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_ORNATE, "Glowstone", "Ornate");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_PANEL, "Glowstone", "Panel");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_PILLAR, "Glowstone", "Pillar");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_PRISM, "Glowstone", "Prism");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_ROAD, "Glowstone", "Road");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_SLANTED, "Glowstone", "Slanted");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_SMALL_BRICKS, "Glowstone", "Small Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_SOFT_BRICKS, "Glowstone", "Soft Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_SOLID_BRICKS, "Glowstone", "Solid Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TILES_LARGE, "Glowstone", "Large Tiles");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TILES_LARGE_BISMUTH, "Glowstone", "Large Bismuth Tiles");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TILES_MEDIUM, "Glowstone", "Medium Tiles");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TILES_SMALL, "Glowstone", "Small Tiles");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TRIPLE_BRICKS, "Glowstone", "Triple Bricks");
+        addBlock(ChiselOtherBlocks.GLOWSTONE_TWISTED, "Glowstone", "Twisted");
     }
 
     private void addGold() {
