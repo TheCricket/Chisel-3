@@ -24,8 +24,8 @@ Initial pass is just textures
 - [X] Energized Voidstone
 - [X] Energized Voidstone Pillar
 - [X] Factory
-- [ ] Futura
-- [ ] Glass
+- [X] Futura
+- [X] Glass
 - [ ] Glass Pane
 - [ ] Glowstone
 - [ ] Gold

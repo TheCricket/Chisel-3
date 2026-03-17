@@ -66,6 +66,7 @@ public class ChiselLang extends LangHelper {
         addFactory();
         addFutura();
         addGlass();
+        addlGlass();
         addGlassPane();
         addGlowstone();
         addGold();
@@ -594,13 +595,21 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselOtherBlocks.GLASS_GRID_THICK, "Glass", "Thick Grid");
         addBlock(ChiselOtherBlocks.GLASS_GRID_THIN, "Glass", "Thin Grid");
         addBlock(ChiselOtherBlocks.GLASS_JAPANESE, "Glass", "Japanese");
-        addBlock(ChiselOtherBlocks.GLASS_LEADED, "Glass", "Asymmetrical Leaded");
         addBlock(ChiselOtherBlocks.GLASS_LIGHT, "Glass", "Light");
         addBlock(ChiselOtherBlocks.GLASS_ORNATE, "Glass", "Ornate Steel");
         addBlock(ChiselOtherBlocks.GLASS_SCREEN, "Glass", "Screen");
         addBlock(ChiselOtherBlocks.GLASS_SHALE, "Glass", "Shale");
         addBlock(ChiselOtherBlocks.GLASS_STEEL, "Glass", "Steel Frame");
         addBlock(ChiselOtherBlocks.GLASS_STONE, "Glass", "Stone Frame");
+    }
+
+    private void addlGlass() {
+        addBlock(ChiselOtherBlocks.GLASS_CHINESE_2, "Glass", "Chinese 2");
+        addBlock(ChiselOtherBlocks.GLASS_CHRONO, "Glass", "Chrono");
+        addBlock(ChiselOtherBlocks.GLASS_EDGE, "Glass", "Edge");
+        addBlock(ChiselOtherBlocks.GLASS_EDGE_STEEL, "Glass", "Steel-Edged");
+        addBlock(ChiselOtherBlocks.GLASS_JAPANESE_2, "Glass", "Japanese 2");
+        addBlock(ChiselOtherBlocks.GLASS_ORNATE_OLD, "Glass", "Old Ornate Steel");
     }
 
     private void addGlassPane() {
