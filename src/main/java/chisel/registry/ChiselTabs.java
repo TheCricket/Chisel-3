@@ -69,7 +69,6 @@ public class ChiselTabs {
                             VariantFamilies.FUTURA,
                             VariantFamilies.GOLD,
                             VariantFamilies.HEX_PLATING,
-                            VariantFamilies.LARGE_HEX_PLATING,
                             VariantFamilies.IRON,
                             VariantFamilies.LABORATORY,
                             VariantFamilies.TECHNICAL,

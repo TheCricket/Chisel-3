@@ -39,8 +39,8 @@ Initial pass is just textures
 - [X] Iron Bars
 - [X] Jungle Planks
 - [X] Laboratory
-- [ ] Lapis
-- [ ] Large Hex Plating
+- [X] Lapis
+- [X] Large Hex Plating
 - [ ] Lavastone
 - [ ] Lead
 - [ ] Leaf

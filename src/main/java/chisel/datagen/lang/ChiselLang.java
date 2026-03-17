@@ -80,7 +80,6 @@ public class ChiselLang extends LangHelper {
         addJungle();
         addLaboratory();
         addLapis();
-        addLargeHexPlating();
         addLavastone();
         addLead();
         addLeaf();
@@ -903,31 +902,13 @@ public class ChiselLang extends LangHelper {
         addBlock(() -> Blocks.LAPIS_BLOCK, "Lapis Block");
         addBlock(ChiselOtherBlocks.LAPIS_CHUNKY, "Lapis Block", "Chunky");
         addBlock(ChiselOtherBlocks.LAPIS_DARK, "Lapis Block", "Dark");
+        addBlock(ChiselOtherBlocks.LAPIS_MASONRY, "Lapis Block", "Masonry");
         addBlock(ChiselOtherBlocks.LAPIS_ORNATE, "Lapis Block", "Ornate");
         addBlock(ChiselOtherBlocks.LAPIS_ORNATE_LAYER, "Lapis Block", "with Ornate Layer");
         addBlock(ChiselOtherBlocks.LAPIS_PANEL, "Lapis Block", "Panel");
         addBlock(ChiselOtherBlocks.LAPIS_SMOOTH, "Lapis Block", "Smooth");
         addBlock(ChiselOtherBlocks.LAPIS_TILE, "Lapis Block", "Tile");
         addBlock(ChiselOtherBlocks.LAPIS_ZELDA, "Lapis Block", "Zelda");
-    }
-
-    private void addLargeHexPlating() {
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_0, "Large Hex Plating", "Black");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_1, "Large Hex Plating", "Blue");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_10, "Large Hex Plating", "Pink");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_11, "Large Hex Plating", "Purple");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_12, "Large Hex Plating", "Red");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_13, "Large Hex Plating", "White");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_14, "Large Hex Plating", "Yellow");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_15, "Large Hex Plating", "Gray");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_2, "Large Hex Plating", "Brown");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_3, "Large Hex Plating", "Cyan");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_4, "Large Hex Plating", "Green");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_5, "Large Hex Plating", "Light Blue");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_6, "Large Hex Plating", "Light Gray");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_7, "Large Hex Plating", "Lime");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_8, "Large Hex Plating", "Magenta");
-        addBlock(ChiselMetalBlocks.LARGE_HEX_PLATING_9, "Large Hex Plating", "Orange");
     }
 
     private void addLavastone() {

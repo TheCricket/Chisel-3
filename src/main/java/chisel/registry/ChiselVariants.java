@@ -47,7 +47,6 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> JUNGLE = create(VariantFamilies.JUNGLE);
     public static ResourceKey<VariantFamily> LABORATORY = create(VariantFamilies.LABORATORY);
     public static ResourceKey<VariantFamily> LAPIS = create(VariantFamilies.LAPIS);
-    public static ResourceKey<VariantFamily> LARGE_HEX_PLATING = create(VariantFamilies.LARGE_HEX_PLATING);
     public static ResourceKey<VariantFamily> LAVASTONE = create(VariantFamilies.LAVASTONE);
     public static ResourceKey<VariantFamily> LEAD = create(VariantFamilies.LEAD);
     public static ResourceKey<VariantFamily> LEAF = create(VariantFamilies.LEAF);
@@ -161,7 +160,6 @@ public class ChiselVariants {
                 bootstrap.register(JUNGLE, VariantFamilies.JUNGLE);
                 bootstrap.register(LABORATORY, VariantFamilies.LABORATORY);
                 bootstrap.register(LAPIS, VariantFamilies.LAPIS);
-                bootstrap.register(LARGE_HEX_PLATING, VariantFamilies.LARGE_HEX_PLATING);
                 bootstrap.register(LAVASTONE, VariantFamilies.LAVASTONE);
                 bootstrap.register(LEAD, VariantFamilies.LEAD);
                 bootstrap.register(LEAF, VariantFamilies.LEAF);

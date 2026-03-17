@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/large_hex_plating/large_hex_plating_7"
-  }
-}

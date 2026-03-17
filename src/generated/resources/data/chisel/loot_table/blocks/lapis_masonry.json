@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:large_hex_plating_1"
+          "name": "chisel:lapis_masonry"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/large_hex_plating_1"
+  "random_sequence": "chisel:blocks/lapis_masonry"
 }

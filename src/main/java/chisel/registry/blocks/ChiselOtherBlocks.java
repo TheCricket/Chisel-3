@@ -235,6 +235,7 @@ public class ChiselOtherBlocks extends ChiselBlocksProvider {
 
     public static DeferredBlock<Block> LAPIS_CHUNKY;
     public static DeferredBlock<Block> LAPIS_DARK;
+    public static DeferredBlock<Block> LAPIS_MASONRY;
     public static DeferredBlock<Block> LAPIS_ORNATE;
     public static DeferredBlock<Block> LAPIS_ORNATE_LAYER;
     public static DeferredBlock<Block> LAPIS_PANEL;
@@ -667,6 +668,7 @@ public class ChiselOtherBlocks extends ChiselBlocksProvider {
 
         LAPIS_CHUNKY = register("lapis_chunky", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_DARK = register("lapis_dark", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
+        LAPIS_MASONRY = register("lapis_masonry", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_ORNATE = register("lapis_ornate", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_ORNATE_LAYER = register("lapis_ornate_layer", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
         LAPIS_PANEL = register("lapis_panel", BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));

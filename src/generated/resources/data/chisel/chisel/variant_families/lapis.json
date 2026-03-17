@@ -13,6 +13,11 @@
       "name": "lapis_dark"
     },
     {
+      "block": "chisel:lapis_masonry",
+      "model_type": "cube_all",
+      "name": "lapis_masonry"
+    },
+    {
       "block": "chisel:lapis_ornate",
       "model_type": "cube_all",
       "name": "lapis_ornate"

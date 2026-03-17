@@ -328,23 +328,6 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         LABORATORY_WALL_ROUNDED = register("laboratory_wall_rounded", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_WALL_VENT = register("laboratory_wall_vent", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
 
-        LARGE_HEX_PLATING_0 = register("large_hex_plating_0", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_1 = register("large_hex_plating_1", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_2 = register("large_hex_plating_2", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_3 = register("large_hex_plating_3", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_4 = register("large_hex_plating_4", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_5 = register("large_hex_plating_5", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_6 = register("large_hex_plating_6", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_7 = register("large_hex_plating_7", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_8 = register("large_hex_plating_8", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_9 = register("large_hex_plating_9", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_10 = register("large_hex_plating_10", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_11 = register("large_hex_plating_11", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_12 = register("large_hex_plating_12", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_13 = register("large_hex_plating_13", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_14 = register("large_hex_plating_14", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-        LARGE_HEX_PLATING_15 = register("large_hex_plating_15", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-
         TECHNICAL_125 = register("technical_125", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_CABLES = register("technical_cables", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
         TECHNICAL_FAN_FAST = register("technical_fan_fast", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
