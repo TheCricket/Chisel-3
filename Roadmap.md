@@ -28,8 +28,8 @@ Initial pass is just textures
 - [X] Glass
 - [ ] Glass Pane
 - [X] Glowstone
-- [ ] Gold
-- [ ] Granite
+- [X] Gold
+- [X] Granite
 - [ ] Grimstone
 - [ ] Hex Plating
 - [ ] Holystone

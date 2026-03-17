@@ -686,12 +686,39 @@ public class ChiselLang extends LangHelper {
 
     private void addGranite() {
         addBlock(() -> Blocks.GRANITE, "Granite");
-        addBlock(ChiselStoneBlocks.GRANITE_BRICKS, "Granite", "Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_ARRAY, "Granite", "Array");
+        addBlock(ChiselStoneBlocks.GRANITE_BRAID, "Granite", "Braid");
+        addBlock(ChiselStoneBlocks.GRANITE_CHAOTIC_BRICKS, "Granite", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_CHAOTIC_MEDIUM, "Granite", "Medium Chaotic");
+        addBlock(ChiselStoneBlocks.GRANITE_CHAOTIC_SMALL, "Granite", "Small Chaotic");
+        addBlock(ChiselStoneBlocks.GRANITE_CIRCULAR, "Granite", "Circular");
+        addBlock(ChiselStoneBlocks.GRANITE_CRACKED, "Granite", "Cracked");
+        addBlock(ChiselStoneBlocks.GRANITE_CRACKED_BRICKS, "Granite", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_CUTS, "Granite", "Cuts");
+        addBlock(ChiselStoneBlocks.GRANITE_DENT, "Granite", "Dent");
+        addBlock(ChiselStoneBlocks.GRANITE_ENCASED_BRICKS, "Granite", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_FRENCH_1, "Granite", "French 1");
+        addBlock(ChiselStoneBlocks.GRANITE_FRENCH_2, "Granite", "French 2");
+        addBlock(ChiselStoneBlocks.GRANITE_JELLYBEAN, "Granite", "Jellybean");
+        addBlock(ChiselStoneBlocks.GRANITE_LAYERS, "Granite", "Layers");
+        addBlock(ChiselStoneBlocks.GRANITE_MOSAIC, "Granite", "Mosaic");
         addBlock(ChiselStoneBlocks.GRANITE_ORNATE, "Granite", "Ornate");
+        addBlock(ChiselStoneBlocks.GRANITE_PANEL, "Granite", "Panel");
         addBlock(ChiselStoneBlocks.GRANITE_PILLAR, "Granite", "Pillar");
-        addBlock(ChiselStoneBlocks.GRANITE_POLISHED, "Granite", "Polished");
-        addBlock(ChiselStoneBlocks.GRANITE_PRISMATIC, "Granite", "Prismatic");
+        addBlock(ChiselStoneBlocks.GRANITE_PRISM, "Granite", "Prism");
+        addBlock(ChiselStoneBlocks.GRANITE_RAW, "Granite", "Raw");
+        addBlock(ChiselStoneBlocks.GRANITE_ROAD, "Granite", "Road");
+        addBlock(ChiselStoneBlocks.GRANITE_SLANTED, "Granite", "Slanted");
+        addBlock(ChiselStoneBlocks.GRANITE_SMALL_BRICKS, "Granite", "Small Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_SOFT_BRICKS, "Granite", "Soft Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_SOLID_BRICKS, "Granite", "Solid Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_TILES_LARGE, "Granite", "Large Tiles");
+        addBlock(ChiselStoneBlocks.GRANITE_TILES_MEDIUM, "Granite", "Medium Tiles");
         addBlock(ChiselStoneBlocks.GRANITE_TILES_SMALL, "Granite", "Small Tiles");
+        addBlock(ChiselStoneBlocks.GRANITE_TRIPLE_BRICKS, "Granite", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.GRANITE_TWISTED, "Granite", "Twisted");
+        addBlock(ChiselStoneBlocks.GRANITE_WEAVER, "Granite", "Weaver");
+        addBlock(ChiselStoneBlocks.GRANITE_ZAG, "Granite", "Zag");
     }
 
     private void addGrimstone() {
