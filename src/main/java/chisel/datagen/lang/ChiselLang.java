@@ -892,6 +892,8 @@ public class ChiselLang extends LangHelper {
         addBlock(ChiselMetalBlocks.LABORATORY_TILES_ENAMELLED_SMALL, "Laboratory Block", "Small Enamelled Tiles");
         addBlock(ChiselMetalBlocks.LABORATORY_TILES_STEEL_LARGE, "Laboratory Block", "Large Steel Tile");
         addBlock(ChiselMetalBlocks.LABORATORY_TILES_STEEL_SMALL, "Laboratory Block", "Small Steel Tiles");
+        addBlock(ChiselMetalBlocks.LABORATORY_TILES_SMALL, "Laboratory Block", "Small Tiles");
+        addBlock(ChiselMetalBlocks.LABORATORY_TILES_LARGE, "Laboratory Block", "Large Tiles");
         addBlock(ChiselMetalBlocks.LABORATORY_WALL, "Laboratory Block", "Enamelled Wall");
         addBlock(ChiselMetalBlocks.LABORATORY_WALL_ROUNDED, "Laboratory Block", "Enamelled Roundel Wall");
         addBlock(ChiselMetalBlocks.LABORATORY_WALL_VENT, "Laboratory Block", "Enamelled Wall Vents");

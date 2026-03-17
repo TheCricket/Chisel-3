@@ -125,6 +125,8 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
     public static DeferredBlock<Block> LABORATORY_TILES_ENAMELLED_SMALL;
     public static DeferredBlock<Block> LABORATORY_TILES_STEEL_LARGE;
     public static DeferredBlock<Block> LABORATORY_TILES_STEEL_SMALL;
+    public static DeferredBlock<Block> LABORATORY_TILES_SMALL;
+    public static DeferredBlock<Block> LABORATORY_TILES_LARGE;
     public static DeferredBlock<Block> LABORATORY_WALL;
     public static DeferredBlock<Block> LABORATORY_WALL_ROUNDED;
     public static DeferredBlock<Block> LABORATORY_WALL_VENT;
@@ -320,6 +322,8 @@ public class ChiselMetalBlocks extends ChiselBlocksProvider {
         LABORATORY_TILES_ENAMELLED_SMALL = register("laboratory_tiles_enamelled_small", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_TILES_STEEL_LARGE = register("laboratory_tiles_steel_large", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_TILES_STEEL_SMALL = register("laboratory_tiles_steel_small", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        LABORATORY_TILES_SMALL = register("laboratory_tiles_small", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+        LABORATORY_TILES_LARGE = register("laboratory_tiles_large", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_WALL = register("laboratory_wall", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_WALL_ROUNDED = register("laboratory_wall_rounded", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
         LABORATORY_WALL_VENT = register("laboratory_wall_vent", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));

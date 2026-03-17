@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_tiles_steel_small"
+    "bottom": "chisel:block/laboratory/laboratory_tiles_steel_small-bottom",
+    "side": "chisel:block/laboratory/laboratory_tiles_steel_small-side",
+    "top": "chisel:block/laboratory/laboratory_tiles_steel_small-top"
   }
 }

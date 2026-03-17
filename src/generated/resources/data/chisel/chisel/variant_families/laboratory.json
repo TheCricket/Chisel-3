@@ -9,7 +9,7 @@
     },
     {
       "block": "chisel:laboratory_console_information",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "laboratory_console_information"
     },
     {
@@ -59,13 +59,23 @@
     },
     {
       "block": "chisel:laboratory_tiles_steel_large",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "laboratory_tiles_steel_large"
     },
     {
       "block": "chisel:laboratory_tiles_steel_small",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "laboratory_tiles_steel_small"
+    },
+    {
+      "block": "chisel:laboratory_tiles_small",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_small"
+    },
+    {
+      "block": "chisel:laboratory_tiles_large",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_large"
     },
     {
       "block": "chisel:laboratory_wall",
