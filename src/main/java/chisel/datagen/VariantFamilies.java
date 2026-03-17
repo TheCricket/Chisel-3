@@ -588,30 +588,46 @@ public class VariantFamilies {
             .addVariant("holystone_tiles", ChiselStoneBlocks.HOLYSTONE_TILES)
             .getFamily();
     public static final VariantFamily ICE = builder("ice", Blocks.ICE)
-            .addVariant("ice_bismuth", ChiselOtherBlocks.ICE_BISMUTH)
-            .addVariant("ice_bricks_large", ChiselOtherBlocks.ICE_BRICKS_LARGE)
-            .addVariant("ice_bricks_small", ChiselOtherBlocks.ICE_BRICKS_SMALL)
-            .addVariant("ice_cobble", ChiselOtherBlocks.ICE_COBBLE)
-            .addVariant("ice_double_slab", ChiselOtherBlocks.ICE_DOUBLE_SLAB)
-            .addVariant("ice_glass_wall", ChiselOtherBlocks.ICE_GLASS_WALL)
+            .addVariant("ice_array", ChiselOtherBlocks.ICE_ARRAY)
+            .addVariant("ice_braid", ChiselOtherBlocks.ICE_BRAID)
+            .addVariant("ice_chaotic_bricks", ChiselOtherBlocks.ICE_CHAOTIC_BRICKS)
+            .addVariant("ice_chaotic_medium", ChiselOtherBlocks.ICE_CHAOTIC_MEDIUM)
+            .addVariant("ice_chaotic_small", ChiselOtherBlocks.ICE_CHAOTIC_SMALL)
+            .addVariant("ice_circular", ChiselOtherBlocks.ICE_CIRCULAR)
+            .addVariant("ice_cracked", ChiselOtherBlocks.ICE_CRACKED)
+            .addVariant("ice_cracked_bricks", ChiselOtherBlocks.ICE_CRACKED_BRICKS)
+            .addVariant("ice_cuts", ChiselOtherBlocks.ICE_CUTS)
+            .addVariant("ice_dent", ChiselOtherBlocks.ICE_DENT)
+            .addVariant("ice_encased_bricks", ChiselOtherBlocks.ICE_ENCASED_BRICKS)
+            .addVariant("ice_french_1", ChiselOtherBlocks.ICE_FRENCH_1)
+            .addVariant("ice_french_2", ChiselOtherBlocks.ICE_FRENCH_2)
+            .addVariant("ice_jellybean", ChiselOtherBlocks.ICE_JELLYBEAN)
+            .addVariant("ice_layers", ChiselOtherBlocks.ICE_LAYERS)
+            .addVariant("ice_mosaic", ChiselOtherBlocks.ICE_MOSAIC)
+            .addVariant("ice_ornate", ChiselOtherBlocks.ICE_ORNATE)
             .addVariant("ice_panel", ChiselOtherBlocks.ICE_PANEL)
-            .addVariant("ice_poison", ChiselOtherBlocks.ICE_POISON)
-            .addVariant("ice_rough", ChiselOtherBlocks.ICE_ROUGH)
-            .addVariant("ice_rough_large", ChiselOtherBlocks.ICE_ROUGH_LARGE)
-            .addVariant("ice_tiles_disordered", ChiselOtherBlocks.ICE_TILES_DISORDERED)
-            .addVariant("ice_tiles_fancy", ChiselOtherBlocks.ICE_TILES_FANCY)
-            .addVariant("ice_tiles_large", ChiselOtherBlocks.ICE_TILES_LARGE)
-            .addVariant("ice_tiles_sunken", ChiselOtherBlocks.ICE_TILES_SUNKEN)
-            .addVariant("ice_zelda", ChiselOtherBlocks.ICE_ZELDA)
-            .getFamily();
-    public static final VariantFamily ICE_PILLAR = builder("ice_pillar", ChiselOtherBlocks.ICE_PILLAR_PLAIN_PLAIN)
+            .addVariant("ice_pillar", ChiselOtherBlocks.ICE_PILLAR, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_carved", ChiselOtherBlocks.ICE_PILLAR_CARVED, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_greek_greek", ChiselOtherBlocks.ICE_PILLAR_GREEK_GREEK, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_greek_plain", ChiselOtherBlocks.ICE_PILLAR_GREEK_PLAIN, VariantModelType.TOP_BOTTOM_SIDE)
-            .addVariant("ice_pillar_inscribed", ChiselOtherBlocks.ICE_PILLAR_INSCRIBED, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("ice_pillar_convex", ChiselOtherBlocks.ICE_PILLAR_CONVEX, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_ornamental", ChiselOtherBlocks.ICE_PILLAR_ORNAMENTAL, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_plain_greek", ChiselOtherBlocks.ICE_PILLAR_PLAIN_GREEK, VariantModelType.TOP_BOTTOM_SIDE)
             .addVariant("ice_pillar_plain_plain", ChiselOtherBlocks.ICE_PILLAR_PLAIN_PLAIN, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("ice_prism", ChiselOtherBlocks.ICE_PRISM)
+            .addVariant("ice_raw", ChiselOtherBlocks.ICE_RAW)
+            .addVariant("ice_road", ChiselOtherBlocks.ICE_ROAD)
+            .addVariant("ice_slanted", ChiselOtherBlocks.ICE_SLANTED)
+            .addVariant("ice_small_bricks", ChiselOtherBlocks.ICE_SMALL_BRICKS)
+            .addVariant("ice_soft_bricks", ChiselOtherBlocks.ICE_SOFT_BRICKS)
+            .addVariant("ice_solid_bricks", ChiselOtherBlocks.ICE_SOLID_BRICKS)
+            .addVariant("ice_tiles_large", ChiselOtherBlocks.ICE_TILES_LARGE)
+            .addVariant("ice_tiles_medium", ChiselOtherBlocks.ICE_TILES_MEDIUM)
+            .addVariant("ice_tiles_small", ChiselOtherBlocks.ICE_TILES_SMALL)
+            .addVariant("ice_triple_bricks", ChiselOtherBlocks.ICE_TRIPLE_BRICKS)
+            .addVariant("ice_twisted", ChiselOtherBlocks.ICE_TWISTED, VariantModelType.TOP_BOTTOM_SIDE)
+            .addVariant("ice_weaver", ChiselOtherBlocks.ICE_WEAVER)
+            .addVariant("ice_zag", ChiselOtherBlocks.ICE_ZAG)
             .getFamily();
     public static final VariantFamily IRON = builder("iron", Blocks.IRON_BLOCK)
             .addVariant("iron_125", ChiselMetalBlocks.IRON_125)
@@ -637,32 +653,35 @@ public class VariantFamilies {
             .addVariant("iron_vents", ChiselMetalBlocks.IRON_VENTS, VariantModelType.TOP_BOTTOM_SIDE)
             .getFamily();
     public static final VariantFamily IRON_BARS = builder("iron_bars", Blocks.IRON_BARS)
-            .addVariant("iron_bars_cage", ChiselOtherBlocks.IRON_BARS_CAGE)
-            .addVariant("iron_bars_grid_thick", ChiselOtherBlocks.IRON_BARS_GRID_THICK)
-            .addVariant("iron_bars_grid_thin", ChiselOtherBlocks.IRON_BARS_GRID_THIN)
-            .addVariant("iron_bars_menacing", ChiselOtherBlocks.IRON_BARS_MENACING)
-            .addVariant("iron_bars_menacing_spikes", ChiselOtherBlocks.IRON_BARS_MENACING_SPIKES)
-            .addVariant("iron_bars_no_frame", ChiselOtherBlocks.IRON_BARS_NO_FRAME)
-            .addVariant("iron_bars_ornate", ChiselOtherBlocks.IRON_BARS_ORNATE)
-            .addVariant("iron_bars_spikes", ChiselOtherBlocks.IRON_BARS_SPIKES)
-            .addVariant("iron_bars_vertical", ChiselOtherBlocks.IRON_BARS_VERTICAL)
+            .addVariant("iron_bars_barbed_wire", ChiselOtherBlocks.IRON_BARS_BARBED_WIRE, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_bars", ChiselOtherBlocks.IRON_BARS_BARS, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_borderless", ChiselOtherBlocks.IRON_BARS_BORDERLESS, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_cage", ChiselOtherBlocks.IRON_BARS_CAGE, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_classic", ChiselOtherBlocks.IRON_BARS_CLASSIC, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_classic_new", ChiselOtherBlocks.IRON_BARS_CLASSIC_NEW, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_fence", ChiselOtherBlocks.IRON_BARS_FENCE, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_modern", ChiselOtherBlocks.IRON_BARS_MODERN, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_ornate_steel", ChiselOtherBlocks.IRON_BARS_ORNATE_STEEL, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_spikes", ChiselOtherBlocks.IRON_BARS_SPIKES, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_thick_grid", ChiselOtherBlocks.IRON_BARS_THICK_GRID, VariantModelType.IRON_BARS)
+            .addVariant("iron_bars_thin_grid", ChiselOtherBlocks.IRON_BARS_THIN_GRID, VariantModelType.IRON_BARS)
             .getFamily();
     public static final VariantFamily JUNGLE = builder("jungle_planks", Blocks.JUNGLE_PLANKS)
-            .addVariant("jungle_planks_blinds", ChiselWoodBlocks.JUNGLE_PLANKS_BLINDS)
-            .addVariant("jungle_planks_crate", ChiselWoodBlocks.JUNGLE_PLANKS_CRATE)
-            .addVariant("jungle_planks_crate_fancy", ChiselWoodBlocks.JUNGLE_PLANKS_CRATE_FANCY)
-            .addVariant("jungle_planks_disarray", ChiselWoodBlocks.JUNGLE_PLANKS_DISARRAY)
-            .addVariant("jungle_planks_disarray_vertical", ChiselWoodBlocks.JUNGLE_PLANKS_DISARRAY_VERTICAL)
-            .addVariant("jungle_planks_double_slab", ChiselWoodBlocks.JUNGLE_PLANKS_DOUBLE_SLAB)
-            .addVariant("jungle_planks_fancy", ChiselWoodBlocks.JUNGLE_PLANKS_FANCY)
-            .addVariant("jungle_planks_long", ChiselWoodBlocks.JUNGLE_PLANKS_LONG)
-            .addVariant("jungle_planks_panel", ChiselWoodBlocks.JUNGLE_PLANKS_PANEL)
-            .addVariant("jungle_planks_parquet", ChiselWoodBlocks.JUNGLE_PLANKS_PARQUET)
-            .addVariant("jungle_planks_scaffold", ChiselWoodBlocks.JUNGLE_PLANKS_SCAFFOLD)
-            .addVariant("jungle_planks_short", ChiselWoodBlocks.JUNGLE_PLANKS_SHORT)
-            .addVariant("jungle_planks_smooth", ChiselWoodBlocks.JUNGLE_PLANKS_SMOOTH)
+            .addVariant("jungle_planks_braced", ChiselWoodBlocks.JUNGLE_PLANKS_BRACED, VariantModelType.TOP_BOTTOM_SIDE) //TODO: CTM
+            .addVariant("jungle_planks_braid", ChiselWoodBlocks.JUNGLE_PLANKS_BRAID) //TODO: CTM
+            .addVariant("jungle_planks_crude_horizontal", ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_HORIZONTAL) //TODO: CTM
+            .addVariant("jungle_planks_crude_paneling", ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_PANELING)
+            .addVariant("jungle_planks_crude_vertical", ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_VERTICAL) //TODO: CTM
+            .addVariant("jungle_planks_encased", ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED) //TODO: CTM
+            .addVariant("jungle_planks_encased_large", ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED_LARGE) //TODO: CTM
+            .addVariant("jungle_planks_encased_smooth", ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED_SMOOTH) //TODO: CTM
+            .addVariant("jungle_planks_large", ChiselWoodBlocks.JUNGLE_PLANKS_LARGE)
+            .addVariant("jungle_planks_log_cabin", ChiselWoodBlocks.JUNGLE_PLANKS_LOG_CABIN) //TODO: CTM - Custom
+            .addVariant("jungle_planks_paneling", ChiselWoodBlocks.JUNGLE_PLANKS_PANELING) //TODO: CTM
+            .addVariant("jungle_planks_shipping", ChiselWoodBlocks.JUNGLE_PLANKS_SHIPPING) //TODO: CTM
+            .addVariant("jungle_planks_smooth", ChiselWoodBlocks.JUNGLE_PLANKS_SMOOTH) //TODO: CTM
+            .addVariant("jungle_planks_stacked", ChiselWoodBlocks.JUNGLE_PLANKS_STACKED)
             .addVariant("jungle_planks_vertical", ChiselWoodBlocks.JUNGLE_PLANKS_VERTICAL)
-            .addVariant("jungle_planks_vertical_uneven", ChiselWoodBlocks.JUNGLE_PLANKS_VERTICAL_UNEVEN)
             .getFamily();
     public static final VariantFamily LABORATORY = builder("laboratory", ChiselMetalBlocks.LABORATORY_PANEL_WALL)
             .addVariant("laboratory_checkerboard", ChiselMetalBlocks.LABORATORY_CHECKERBOARD)
@@ -861,21 +880,21 @@ public class VariantFamilies {
             .addVariant("netherrack_spattered", ChiselStoneBlocks.NETHERRACK_SPATTERED)
             .getFamily();
     public static final VariantFamily OAK = builder("oak_planks", Blocks.OAK_PLANKS)
-            .addVariant("oak_planks_blinds", ChiselWoodBlocks.OAK_PLANKS_BLINDS)
-            .addVariant("oak_planks_crate", ChiselWoodBlocks.OAK_PLANKS_CRATE)
-            .addVariant("oak_planks_crate_fancy", ChiselWoodBlocks.OAK_PLANKS_CRATE_FANCY)
-            .addVariant("oak_planks_disarray", ChiselWoodBlocks.OAK_PLANKS_DISARRAY)
-            .addVariant("oak_planks_disarray_vertical", ChiselWoodBlocks.OAK_PLANKS_DISARRAY_VERTICAL)
-            .addVariant("oak_planks_double_slab", ChiselWoodBlocks.OAK_PLANKS_DOUBLE_SLAB)
-            .addVariant("oak_planks_fancy", ChiselWoodBlocks.OAK_PLANKS_FANCY)
-            .addVariant("oak_planks_long", ChiselWoodBlocks.OAK_PLANKS_LONG)
-            .addVariant("oak_planks_panel", ChiselWoodBlocks.OAK_PLANKS_PANEL)
-            .addVariant("oak_planks_parquet", ChiselWoodBlocks.OAK_PLANKS_PARQUET)
-            .addVariant("oak_planks_scaffold", ChiselWoodBlocks.OAK_PLANKS_SCAFFOLD)
-            .addVariant("oak_planks_short", ChiselWoodBlocks.OAK_PLANKS_SHORT)
-            .addVariant("oak_planks_smooth", ChiselWoodBlocks.OAK_PLANKS_SMOOTH)
+            .addVariant("oak_planks_braced", ChiselWoodBlocks.OAK_PLANKS_BRACED, VariantModelType.TOP_BOTTOM_SIDE) //TODO: CTM
+            .addVariant("oak_planks_braid", ChiselWoodBlocks.OAK_PLANKS_BRAID) //TODO: CTM
+            .addVariant("oak_planks_crude_horizontal", ChiselWoodBlocks.OAK_PLANKS_CRUDE_HORIZONTAL) //TODO: CTM
+            .addVariant("oak_planks_crude_paneling", ChiselWoodBlocks.OAK_PLANKS_CRUDE_PANELING)
+            .addVariant("oak_planks_crude_vertical", ChiselWoodBlocks.OAK_PLANKS_CRUDE_VERTICAL) //TODO: CTM
+            .addVariant("oak_planks_encased", ChiselWoodBlocks.OAK_PLANKS_ENCASED) //TODO: CTM
+            .addVariant("oak_planks_encased_large", ChiselWoodBlocks.OAK_PLANKS_ENCASED_LARGE) //TODO: CTM
+            .addVariant("oak_planks_encased_smooth", ChiselWoodBlocks.OAK_PLANKS_ENCASED_SMOOTH) //TODO: CTM
+            .addVariant("oak_planks_large", ChiselWoodBlocks.OAK_PLANKS_LARGE)
+            .addVariant("oak_planks_log_cabin", ChiselWoodBlocks.OAK_PLANKS_LOG_CABIN) //TODO: CTM - Custom
+            .addVariant("oak_planks_paneling", ChiselWoodBlocks.OAK_PLANKS_PANELING) //TODO: CTM
+            .addVariant("oak_planks_shipping", ChiselWoodBlocks.OAK_PLANKS_SHIPPING) //TODO: CTM
+            .addVariant("oak_planks_smooth", ChiselWoodBlocks.OAK_PLANKS_SMOOTH) //TODO: CTM
+            .addVariant("oak_planks_stacked", ChiselWoodBlocks.OAK_PLANKS_STACKED)
             .addVariant("oak_planks_vertical", ChiselWoodBlocks.OAK_PLANKS_VERTICAL)
-            .addVariant("oak_planks_vertical_uneven", ChiselWoodBlocks.OAK_PLANKS_VERTICAL_UNEVEN)
             .getFamily();
     public static final VariantFamily OBSIDIAN = builder("obsidian", Blocks.OBSIDIAN)
             .addVariant("obsidian_blocks", ChiselStoneBlocks.OBSIDIAN_BLOCKS)
@@ -1051,21 +1070,21 @@ public class VariantFamilies {
             .addVariant("snakestone_stone_1", ChiselOtherBlocks.SNAKESTONE_STONE_1)
             .getFamily();
     public static final VariantFamily SPRUCE = builder("spruce_planks", Blocks.SPRUCE_PLANKS)
-            .addVariant("spruce_planks_blinds", ChiselWoodBlocks.SPRUCE_PLANKS_BLINDS)
-            .addVariant("spruce_planks_crate", ChiselWoodBlocks.SPRUCE_PLANKS_CRATE)
-            .addVariant("spruce_planks_crate_fancy", ChiselWoodBlocks.SPRUCE_PLANKS_CRATE_FANCY)
-            .addVariant("spruce_planks_disarray", ChiselWoodBlocks.SPRUCE_PLANKS_DISARRAY)
-            .addVariant("spruce_planks_disarray_vertical", ChiselWoodBlocks.SPRUCE_PLANKS_DISARRAY_VERTICAL)
-            .addVariant("spruce_planks_double_slab", ChiselWoodBlocks.SPRUCE_PLANKS_DOUBLE_SLAB)
-            .addVariant("spruce_planks_fancy", ChiselWoodBlocks.SPRUCE_PLANKS_FANCY)
-            .addVariant("spruce_planks_long", ChiselWoodBlocks.SPRUCE_PLANKS_LONG)
-            .addVariant("spruce_planks_panel", ChiselWoodBlocks.SPRUCE_PLANKS_PANEL)
-            .addVariant("spruce_planks_parquet", ChiselWoodBlocks.SPRUCE_PLANKS_PARQUET)
-            .addVariant("spruce_planks_scaffold", ChiselWoodBlocks.SPRUCE_PLANKS_SCAFFOLD)
-            .addVariant("spruce_planks_short", ChiselWoodBlocks.SPRUCE_PLANKS_SHORT)
-            .addVariant("spruce_planks_smooth", ChiselWoodBlocks.SPRUCE_PLANKS_SMOOTH)
+            .addVariant("spruce_planks_braced", ChiselWoodBlocks.SPRUCE_PLANKS_BRACED, VariantModelType.TOP_BOTTOM_SIDE) //TODO: CTM
+            .addVariant("spruce_planks_braid", ChiselWoodBlocks.SPRUCE_PLANKS_BRAID) //TODO: CTM
+            .addVariant("spruce_planks_crude_horizontal", ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_HORIZONTAL) //TODO: CTM
+            .addVariant("spruce_planks_crude_paneling", ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_PANELING)
+            .addVariant("spruce_planks_crude_vertical", ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_VERTICAL) //TODO: CTM
+            .addVariant("spruce_planks_encased", ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED) //TODO: CTM
+            .addVariant("spruce_planks_encased_large", ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED_LARGE) //TODO: CTM
+            .addVariant("spruce_planks_encased_smooth", ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED_SMOOTH) //TODO: CTM
+            .addVariant("spruce_planks_large", ChiselWoodBlocks.SPRUCE_PLANKS_LARGE)
+            .addVariant("spruce_planks_log_cabin", ChiselWoodBlocks.SPRUCE_PLANKS_LOG_CABIN) //TODO: CTM - Custom
+            .addVariant("spruce_planks_paneling", ChiselWoodBlocks.SPRUCE_PLANKS_PANELING) //TODO: CTM
+            .addVariant("spruce_planks_shipping", ChiselWoodBlocks.SPRUCE_PLANKS_SHIPPING) //TODO: CTM
+            .addVariant("spruce_planks_smooth", ChiselWoodBlocks.SPRUCE_PLANKS_SMOOTH) //TODO: CTM
+            .addVariant("spruce_planks_stacked", ChiselWoodBlocks.SPRUCE_PLANKS_STACKED)
             .addVariant("spruce_planks_vertical", ChiselWoodBlocks.SPRUCE_PLANKS_VERTICAL)
-            .addVariant("spruce_planks_vertical_uneven", ChiselWoodBlocks.SPRUCE_PLANKS_VERTICAL_UNEVEN)
             .getFamily();
     public static final VariantFamily STAINED_GLASS_BLACK = builder("stained_glass_black", Blocks.BLACK_STAINED_GLASS)
             .addVariant("stained_glass_black_borderless", ChiselStainedGlassBlocks.STAINED_GLASS_BLACK_BORDERLESS)

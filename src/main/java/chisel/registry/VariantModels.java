@@ -2,10 +2,7 @@ package chisel.registry;
 
 import chisel.core.model.*;
 import chisel.core.model.ctm.*;
-import chisel.core.model.special.BookshelfModel;
-import chisel.core.model.special.CarpetModel;
-import chisel.core.model.special.GlassPaneModel;
-import chisel.core.model.special.LavastoneModel;
+import chisel.core.model.special.*;
 
 public class VariantModels {
     public final TopBottomSideModel TOP_BOTTOM_SIDE = new TopBottomSideModel();
@@ -24,4 +21,5 @@ public class VariantModels {
     public final BookshelfModel BOOKSHELF = new BookshelfModel();
     public final CarpetModel CARPET = new CarpetModel();
     public final GlassPaneModel GLASS_PANE = new GlassPaneModel();
+    public final IronBarsModel IRON_BARS = new IronBarsModel();
 }

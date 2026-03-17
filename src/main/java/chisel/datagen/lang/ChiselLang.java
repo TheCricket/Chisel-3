@@ -75,7 +75,6 @@ public class ChiselLang extends LangHelper {
         addHexPlating();
         addHolystone();
         addIce();
-        addIcePillar();
         addIron();
         addIronBars();
         addJungle();
@@ -777,31 +776,46 @@ public class ChiselLang extends LangHelper {
 
     private void addIce() {
         addBlock(() -> Blocks.ICE, "Ice");
-        addBlock(ChiselOtherBlocks.ICE_BISMUTH, "Ice", "Bismuth");
-        addBlock(ChiselOtherBlocks.ICE_BRICKS_LARGE, "Ice", "Large Bricks");
-        addBlock(ChiselOtherBlocks.ICE_BRICKS_SMALL, "Ice", "Small Bricks");
-        addBlock(ChiselOtherBlocks.ICE_COBBLE, "Ice", "Cobble-Ice");
-        addBlock(ChiselOtherBlocks.ICE_DOUBLE_SLAB, "Ice", "Double Slab");
-        addBlock(ChiselOtherBlocks.ICE_GLASS_WALL, "Ice", "Fancy Glass Wall");
+        addBlock(ChiselOtherBlocks.ICE_ARRAY, "Ice", "Array");
+        addBlock(ChiselOtherBlocks.ICE_BRAID, "Ice", "Braid");
+        addBlock(ChiselOtherBlocks.ICE_CHAOTIC_BRICKS, "Ice", "Chaotic Bricks");
+        addBlock(ChiselOtherBlocks.ICE_CHAOTIC_MEDIUM, "Ice", "Medium Chaotic");
+        addBlock(ChiselOtherBlocks.ICE_CHAOTIC_SMALL, "Ice", "Small Chaotic");
+        addBlock(ChiselOtherBlocks.ICE_CIRCULAR, "Ice", "Circular");
+        addBlock(ChiselOtherBlocks.ICE_CRACKED, "Ice", "Cracked");
+        addBlock(ChiselOtherBlocks.ICE_CRACKED_BRICKS, "Ice", "Cracked Bricks");
+        addBlock(ChiselOtherBlocks.ICE_CUTS, "Ice", "Cuts");
+        addBlock(ChiselOtherBlocks.ICE_DENT, "Ice", "Dent");
+        addBlock(ChiselOtherBlocks.ICE_ENCASED_BRICKS, "Ice", "Encased Bricks");
+        addBlock(ChiselOtherBlocks.ICE_FRENCH_1, "Ice", "French 1");
+        addBlock(ChiselOtherBlocks.ICE_FRENCH_2, "Ice", "French 2");
+        addBlock(ChiselOtherBlocks.ICE_JELLYBEAN, "Ice", "Jellybean");
+        addBlock(ChiselOtherBlocks.ICE_LAYERS, "Ice", "Layers");
+        addBlock(ChiselOtherBlocks.ICE_MOSAIC, "Ice", "Mosaic");
+        addBlock(ChiselOtherBlocks.ICE_ORNATE, "Ice", "Ornate");
         addBlock(ChiselOtherBlocks.ICE_PANEL, "Ice", "Panel");
-        addBlock(ChiselOtherBlocks.ICE_POISON, "Ice", "Poison");
-        addBlock(ChiselOtherBlocks.ICE_ROUGH, "Ice", "Rough");
-        addBlock(ChiselOtherBlocks.ICE_ROUGH_LARGE, "Ice", "Large Rough Bricks");
-        addBlock(ChiselOtherBlocks.ICE_TILES_DISORDERED, "Ice", "Disordered Tiles");
-        addBlock(ChiselOtherBlocks.ICE_TILES_FANCY, "Ice", "Fancy Tiles");
-        addBlock(ChiselOtherBlocks.ICE_TILES_LARGE, "Ice", "Large Tiles");
-        addBlock(ChiselOtherBlocks.ICE_TILES_SUNKEN, "Ice", "Sunken Tiles");
-        addBlock(ChiselOtherBlocks.ICE_ZELDA, "Ice", "Zelda");
-    }
-
-    private void addIcePillar() {
+        addBlock(ChiselOtherBlocks.ICE_PILLAR, "Ice", "Pillar");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_CARVED, "Ice Pillar", "Carved Capstone");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_GREEK_GREEK, "Ice Pillar", "Greek with Greek Capstone");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_GREEK_PLAIN, "Ice Pillar", "Greek with Plain Capstone");
-        addBlock(ChiselOtherBlocks.ICE_PILLAR_INSCRIBED, "Ice Pillar", "Inscribed");
+        addBlock(ChiselOtherBlocks.ICE_PILLAR_CONVEX, "Ice Pillar", "Convex");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_ORNAMENTAL, "Ice Pillar", "Ornamental Capstone");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_PLAIN_GREEK, "Ice Pillar", "Plain with Greek Capstone");
         addBlock(ChiselOtherBlocks.ICE_PILLAR_PLAIN_PLAIN, "Ice Pillar", "Plain with Plain Capstone");
+        addBlock(ChiselOtherBlocks.ICE_PRISM, "Ice", "Prism");
+        addBlock(ChiselOtherBlocks.ICE_RAW, "Ice", "Raw");
+        addBlock(ChiselOtherBlocks.ICE_ROAD, "Ice", "Road");
+        addBlock(ChiselOtherBlocks.ICE_SLANTED, "Ice", "Slanted");
+        addBlock(ChiselOtherBlocks.ICE_SMALL_BRICKS, "Ice", "Small Bricks");
+        addBlock(ChiselOtherBlocks.ICE_SOFT_BRICKS, "Ice", "Soft Bricks");
+        addBlock(ChiselOtherBlocks.ICE_SOLID_BRICKS, "Ice", "Solid Bricks");
+        addBlock(ChiselOtherBlocks.ICE_TILES_LARGE, "Ice", "Large Tiles");
+        addBlock(ChiselOtherBlocks.ICE_TILES_MEDIUM, "Ice", "Medium Tiles");
+        addBlock(ChiselOtherBlocks.ICE_TILES_SMALL, "Ice", "Small Tiles");
+        addBlock(ChiselOtherBlocks.ICE_TRIPLE_BRICKS, "Ice", "Triple Bricks");
+        addBlock(ChiselOtherBlocks.ICE_TWISTED, "Ice", "Twisted");
+        addBlock(ChiselOtherBlocks.ICE_WEAVER, "Ice", "Weaver");
+        addBlock(ChiselOtherBlocks.ICE_ZAG, "Ice", "Zag");
     }
 
     private void addIron() {
@@ -831,34 +845,37 @@ public class ChiselLang extends LangHelper {
 
     private void addIronBars() {
         addBlock(() -> Blocks.IRON_BARS, "Iron Bars");
+        addBlock(ChiselOtherBlocks.IRON_BARS_BARBED_WIRE, "Iron Bars", "Barbed Wire");
+        addBlock(ChiselOtherBlocks.IRON_BARS_BARS, "Iron Bars", "Bars");
+        addBlock(ChiselOtherBlocks.IRON_BARS_BORDERLESS, "Iron Bars", "Borderless");
         addBlock(ChiselOtherBlocks.IRON_BARS_CAGE, "Iron Bars", "Cage");
-        addBlock(ChiselOtherBlocks.IRON_BARS_GRID_THICK, "Iron Bars", "Thick Grid");
-        addBlock(ChiselOtherBlocks.IRON_BARS_GRID_THIN, "Iron Bars", "Thin Grid");
-        addBlock(ChiselOtherBlocks.IRON_BARS_MENACING, "Iron Bars", "Menacing");
-        addBlock(ChiselOtherBlocks.IRON_BARS_MENACING_SPIKES, "Iron Bars", "Menacing Spikes");
-        addBlock(ChiselOtherBlocks.IRON_BARS_NO_FRAME, "Iron Bars", "without Frame");
-        addBlock(ChiselOtherBlocks.IRON_BARS_ORNATE, "Iron Bars", "Ornate");
+        addBlock(ChiselOtherBlocks.IRON_BARS_CLASSIC, "Iron Bars", "Classic");
+        addBlock(ChiselOtherBlocks.IRON_BARS_CLASSIC_NEW, "Iron Bars", "New Classic");
+        addBlock(ChiselOtherBlocks.IRON_BARS_FENCE, "Iron Bars", "Fence");
+        addBlock(ChiselOtherBlocks.IRON_BARS_MODERN, "Iron Bars", "Modern");
+        addBlock(ChiselOtherBlocks.IRON_BARS_ORNATE_STEEL, "Iron Bars", "Ornate Steel");
         addBlock(ChiselOtherBlocks.IRON_BARS_SPIKES, "Iron Bars", "Spikes");
-        addBlock(ChiselOtherBlocks.IRON_BARS_VERTICAL, "Iron Bars", "Vertical");
+        addBlock(ChiselOtherBlocks.IRON_BARS_THICK_GRID, "Iron Bars", "Thick Grid");
+        addBlock(ChiselOtherBlocks.IRON_BARS_THIN_GRID, "Iron Bars", "Thin Grid");
     }
 
     private void addJungle() {
         addBlock(() -> Blocks.JUNGLE_PLANKS, "Jungle Wood Planks");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_BLINDS, "Jungle Wood Planks", "Plank Blinds");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_CRATE, "Jungle Wood Planks", "Crate");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_CRATE_FANCY, "Jungle Wood Planks", "Fancy Crate");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_DISARRAY, "Jungle Wood Planks", "Planks in Disarray");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_DISARRAY_VERTICAL, "Jungle Wood Planks", "Vertical Planks in Disarray");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_DOUBLE_SLAB, "Jungle Wood Planks", "Double Slab");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_FANCY, "Jungle Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_LONG, "Jungle Wood Planks", "Large Long");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_PANEL, "Jungle Wood Planks", "Panel");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_PARQUET, "Jungle Wood Planks", "Parquet");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_SCAFFOLD, "Jungle Wood Planks", "Scaffold");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_SHORT, "Jungle Wood Planks", "Short");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_BRACED, "Jungle Wood Planks", "Braced Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_BRAID, "Jungle Wood Planks", "Braid");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_HORIZONTAL, "Jungle Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_PANELING, "Jungle Wood Planks", "Crude Paneling");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_CRUDE_VERTICAL, "Jungle Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED, "Jungle Wood Planks", "Encased Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED_LARGE, "Jungle Wood Planks", "Encased Large Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_ENCASED_SMOOTH, "Jungle Wood Planks", "Encased Smooth");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_LARGE, "Jungle Wood Planks", "Large Planks");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_LOG_CABIN, "Jungle Wood Planks", "Log Cabin");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_PANELING, "Jungle Wood Planks", "Paneling");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_SHIPPING, "Jungle Wood Planks", "Shipping Crate");
         addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_SMOOTH, "Jungle Wood Planks", "Smooth");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_VERTICAL, "Jungle Wood Planks", "Vertical");
-        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_VERTICAL_UNEVEN, "Jungle Wood Planks", "Vertical Uneven");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_STACKED, "Jungle Wood Planks", "Stacked");
+        addBlock(ChiselWoodBlocks.JUNGLE_PLANKS_VERTICAL, "Jungle Wood Planks", "Vertical Planks");
     }
 
     private void addLaboratory() {
@@ -1076,21 +1093,21 @@ public class ChiselLang extends LangHelper {
 
     private void addOak() {
         addBlock(() -> Blocks.OAK_PLANKS, "Oak Wood Planks");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_BLINDS, "Oak Wood Planks", "Plank Blinds");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_CRATE, "Oak Wood Planks", "Crate");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_CRATE_FANCY, "Oak Wood Planks", "Fancy Crate");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_DISARRAY, "Oak Wood Planks", "Planks in Disarray");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_DISARRAY_VERTICAL, "Oak Wood Planks", "Vertical Planks in Disarray");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_DOUBLE_SLAB, "Oak Wood Planks", "Double Slab");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_FANCY, "Oak Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_LONG, "Oak Wood Planks", "Large Long");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_PANEL, "Oak Wood Planks", "Panel");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_PARQUET, "Oak Wood Planks", "Parquet");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_SCAFFOLD, "Oak Wood Planks", "Scaffold");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_SHORT, "Oak Wood Planks", "Short");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_BRACED, "Oak Wood Planks", "Braced Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_BRAID, "Oak Wood Planks", "Braid");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_CRUDE_HORIZONTAL, "Oak Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_CRUDE_PANELING, "Oak Wood Planks", "Crude Paneling");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_CRUDE_VERTICAL, "Oak Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_ENCASED, "Oak Wood Planks", "Encased Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_ENCASED_LARGE, "Oak Wood Planks", "Encased Large Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_ENCASED_SMOOTH, "Oak Wood Planks", "Encased Smooth");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_LARGE, "Oak Wood Planks", "Large Planks");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_LOG_CABIN, "Oak Wood Planks", "Log Cabin");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_PANELING, "Oak Wood Planks", "Paneling");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_SHIPPING, "Oak Wood Planks", "Shipping Crate");
         addBlock(ChiselWoodBlocks.OAK_PLANKS_SMOOTH, "Oak Wood Planks", "Smooth");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_VERTICAL, "Oak Wood Planks", "Vertical");
-        addBlock(ChiselWoodBlocks.OAK_PLANKS_VERTICAL_UNEVEN, "Oak Wood Planks", "Vertical Uneven");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_STACKED, "Oak Wood Planks", "Stacked");
+        addBlock(ChiselWoodBlocks.OAK_PLANKS_VERTICAL, "Oak Wood Planks", "Vertical Planks");
     }
 
     private void addObsidian() {
@@ -1275,21 +1292,21 @@ public class ChiselLang extends LangHelper {
 
     private void addSpruce() {
         addBlock(() -> Blocks.SPRUCE_PLANKS, "Spruce Wood Planks");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_BLINDS, "Spruce Wood Planks", "Plank Blinds");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_CRATE, "Spruce Wood Planks", "Crate");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_CRATE_FANCY, "Spruce Wood Planks", "Fancy Crate");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_DISARRAY, "Spruce Wood Planks", "Planks in Disarray");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_DISARRAY_VERTICAL, "Spruce Wood Planks", "Vertical Planks in Disarray");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_DOUBLE_SLAB, "Spruce Wood Planks", "Double Slab");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_FANCY, "Spruce Wood Planks", "Fancy Arrangement");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_LONG, "Spruce Wood Planks", "Large Long");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_PANEL, "Spruce Wood Planks", "Panel");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_PARQUET, "Spruce Wood Planks", "Parquet");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_SCAFFOLD, "Spruce Wood Planks", "Scaffold");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_SHORT, "Spruce Wood Planks", "Short");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_BRACED, "Spruce Wood Planks", "Braced Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_BRAID, "Spruce Wood Planks", "Braid");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_HORIZONTAL, "Spruce Wood Planks", "Crude Horizontal Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_PANELING, "Spruce Wood Planks", "Crude Paneling");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_CRUDE_VERTICAL, "Spruce Wood Planks", "Crude Vertical Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED, "Spruce Wood Planks", "Encased Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED_LARGE, "Spruce Wood Planks", "Encased Large Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_ENCASED_SMOOTH, "Spruce Wood Planks", "Encased Smooth");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_LARGE, "Spruce Wood Planks", "Large Planks");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_LOG_CABIN, "Spruce Wood Planks", "Log Cabin");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_PANELING, "Spruce Wood Planks", "Paneling");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_SHIPPING, "Spruce Wood Planks", "Shipping Crate");
         addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_SMOOTH, "Spruce Wood Planks", "Smooth");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_VERTICAL, "Spruce Wood Planks", "Vertical");
-        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_VERTICAL_UNEVEN, "Spruce Wood Planks", "Vertical Uneven");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_STACKED, "Spruce Wood Planks", "Stacked");
+        addBlock(ChiselWoodBlocks.SPRUCE_PLANKS_VERTICAL, "Spruce Wood Planks", "Vertical Planks");
     }
 
     private void addSnakestoneSand() {

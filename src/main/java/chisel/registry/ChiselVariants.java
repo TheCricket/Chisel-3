@@ -42,7 +42,6 @@ public class ChiselVariants {
     public static ResourceKey<VariantFamily> HEX_PLATING = create(VariantFamilies.HEX_PLATING);
     public static ResourceKey<VariantFamily> HOLYSTONE = create(VariantFamilies.HOLYSTONE);
     public static ResourceKey<VariantFamily> ICE = create(VariantFamilies.ICE);
-    public static ResourceKey<VariantFamily> ICE_PILLAR = create(VariantFamilies.ICE_PILLAR);
     public static ResourceKey<VariantFamily> IRON = create(VariantFamilies.IRON);
     public static ResourceKey<VariantFamily> IRON_BARS = create(VariantFamilies.IRON_BARS);
     public static ResourceKey<VariantFamily> JUNGLE = create(VariantFamilies.JUNGLE);
@@ -157,7 +156,6 @@ public class ChiselVariants {
                 bootstrap.register(HEX_PLATING, VariantFamilies.HEX_PLATING);
                 bootstrap.register(HOLYSTONE, VariantFamilies.HOLYSTONE);
                 bootstrap.register(ICE, VariantFamilies.ICE);
-                bootstrap.register(ICE_PILLAR, VariantFamilies.ICE_PILLAR);
                 bootstrap.register(IRON, VariantFamilies.IRON);
                 bootstrap.register(IRON_BARS, VariantFamilies.IRON_BARS);
                 bootstrap.register(JUNGLE, VariantFamilies.JUNGLE);

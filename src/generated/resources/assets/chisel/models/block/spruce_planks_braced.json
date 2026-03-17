@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/spruce_planks/spruce_planks_braced-bottom",
+    "side": "chisel:block/spruce_planks/spruce_planks_braced-side",
+    "top": "chisel:block/spruce_planks/spruce_planks_braced-top"
+  }
+}

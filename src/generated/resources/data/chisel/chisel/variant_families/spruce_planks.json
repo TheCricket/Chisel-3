@@ -3,64 +3,64 @@
   "prefix": "spruce_planks",
   "variants": [
     {
-      "block": "chisel:spruce_planks_blinds",
-      "model_type": "cube_all",
-      "name": "spruce_planks_blinds"
+      "block": "chisel:spruce_planks_braced",
+      "model_type": "top_bottom_side",
+      "name": "spruce_planks_braced"
     },
     {
-      "block": "chisel:spruce_planks_crate",
+      "block": "chisel:spruce_planks_braid",
       "model_type": "cube_all",
-      "name": "spruce_planks_crate"
+      "name": "spruce_planks_braid"
     },
     {
-      "block": "chisel:spruce_planks_crate_fancy",
+      "block": "chisel:spruce_planks_crude_horizontal",
       "model_type": "cube_all",
-      "name": "spruce_planks_crate_fancy"
+      "name": "spruce_planks_crude_horizontal"
     },
     {
-      "block": "chisel:spruce_planks_disarray",
+      "block": "chisel:spruce_planks_crude_paneling",
       "model_type": "cube_all",
-      "name": "spruce_planks_disarray"
+      "name": "spruce_planks_crude_paneling"
     },
     {
-      "block": "chisel:spruce_planks_disarray_vertical",
+      "block": "chisel:spruce_planks_crude_vertical",
       "model_type": "cube_all",
-      "name": "spruce_planks_disarray_vertical"
+      "name": "spruce_planks_crude_vertical"
     },
     {
-      "block": "chisel:spruce_planks_double_slab",
+      "block": "chisel:spruce_planks_encased",
       "model_type": "cube_all",
-      "name": "spruce_planks_double_slab"
+      "name": "spruce_planks_encased"
     },
     {
-      "block": "chisel:spruce_planks_fancy",
+      "block": "chisel:spruce_planks_encased_large",
       "model_type": "cube_all",
-      "name": "spruce_planks_fancy"
+      "name": "spruce_planks_encased_large"
     },
     {
-      "block": "chisel:spruce_planks_long",
+      "block": "chisel:spruce_planks_encased_smooth",
       "model_type": "cube_all",
-      "name": "spruce_planks_long"
+      "name": "spruce_planks_encased_smooth"
     },
     {
-      "block": "chisel:spruce_planks_panel",
+      "block": "chisel:spruce_planks_large",
       "model_type": "cube_all",
-      "name": "spruce_planks_panel"
+      "name": "spruce_planks_large"
     },
     {
-      "block": "chisel:spruce_planks_parquet",
+      "block": "chisel:spruce_planks_log_cabin",
       "model_type": "cube_all",
-      "name": "spruce_planks_parquet"
+      "name": "spruce_planks_log_cabin"
     },
     {
-      "block": "chisel:spruce_planks_scaffold",
+      "block": "chisel:spruce_planks_paneling",
       "model_type": "cube_all",
-      "name": "spruce_planks_scaffold"
+      "name": "spruce_planks_paneling"
     },
     {
-      "block": "chisel:spruce_planks_short",
+      "block": "chisel:spruce_planks_shipping",
       "model_type": "cube_all",
-      "name": "spruce_planks_short"
+      "name": "spruce_planks_shipping"
     },
     {
       "block": "chisel:spruce_planks_smooth",
@@ -68,14 +68,14 @@
       "name": "spruce_planks_smooth"
     },
     {
+      "block": "chisel:spruce_planks_stacked",
+      "model_type": "cube_all",
+      "name": "spruce_planks_stacked"
+    },
+    {
       "block": "chisel:spruce_planks_vertical",
       "model_type": "cube_all",
       "name": "spruce_planks_vertical"
-    },
-    {
-      "block": "chisel:spruce_planks_vertical_uneven",
-      "model_type": "cube_all",
-      "name": "spruce_planks_vertical_uneven"
     }
   ]
 }

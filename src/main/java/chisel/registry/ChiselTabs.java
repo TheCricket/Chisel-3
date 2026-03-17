@@ -128,7 +128,6 @@ public class ChiselTabs {
                     VariantFamilies.STAINED_GLASS_PANE_YELLOW,
                     VariantFamilies.GLOWSTONE,
                     VariantFamilies.ICE,
-                    VariantFamilies.ICE_PILLAR,
                     VariantFamilies.LIT_PUMPKIN,
                     VariantFamilies.IRON_BARS,
                     VariantFamilies.LAPIS,

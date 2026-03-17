@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "bottom": "chisel:block/ice_pillar/ice_pillar_greek_greek-bottom",
-    "side": "chisel:block/ice_pillar/ice_pillar_greek_greek-side",
-    "top": "chisel:block/ice_pillar/ice_pillar_greek_greek-top"
+    "bottom": "chisel:block/ice/ice_pillar_greek_greek-bottom",
+    "side": "chisel:block/ice/ice_pillar_greek_greek-side",
+    "top": "chisel:block/ice/ice_pillar_greek_greek-top"
   }
 }

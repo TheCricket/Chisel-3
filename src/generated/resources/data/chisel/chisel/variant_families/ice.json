@@ -3,34 +3,89 @@
   "prefix": "ice",
   "variants": [
     {
-      "block": "chisel:ice_bismuth",
+      "block": "chisel:ice_array",
       "model_type": "cube_all",
-      "name": "ice_bismuth"
+      "name": "ice_array"
     },
     {
-      "block": "chisel:ice_bricks_large",
+      "block": "chisel:ice_braid",
       "model_type": "cube_all",
-      "name": "ice_bricks_large"
+      "name": "ice_braid"
     },
     {
-      "block": "chisel:ice_bricks_small",
+      "block": "chisel:ice_chaotic_bricks",
       "model_type": "cube_all",
-      "name": "ice_bricks_small"
+      "name": "ice_chaotic_bricks"
     },
     {
-      "block": "chisel:ice_cobble",
+      "block": "chisel:ice_chaotic_medium",
       "model_type": "cube_all",
-      "name": "ice_cobble"
+      "name": "ice_chaotic_medium"
     },
     {
-      "block": "chisel:ice_double_slab",
+      "block": "chisel:ice_chaotic_small",
       "model_type": "cube_all",
-      "name": "ice_double_slab"
+      "name": "ice_chaotic_small"
     },
     {
-      "block": "chisel:ice_glass_wall",
+      "block": "chisel:ice_circular",
       "model_type": "cube_all",
-      "name": "ice_glass_wall"
+      "name": "ice_circular"
+    },
+    {
+      "block": "chisel:ice_cracked",
+      "model_type": "cube_all",
+      "name": "ice_cracked"
+    },
+    {
+      "block": "chisel:ice_cracked_bricks",
+      "model_type": "cube_all",
+      "name": "ice_cracked_bricks"
+    },
+    {
+      "block": "chisel:ice_cuts",
+      "model_type": "cube_all",
+      "name": "ice_cuts"
+    },
+    {
+      "block": "chisel:ice_dent",
+      "model_type": "cube_all",
+      "name": "ice_dent"
+    },
+    {
+      "block": "chisel:ice_encased_bricks",
+      "model_type": "cube_all",
+      "name": "ice_encased_bricks"
+    },
+    {
+      "block": "chisel:ice_french_1",
+      "model_type": "cube_all",
+      "name": "ice_french_1"
+    },
+    {
+      "block": "chisel:ice_french_2",
+      "model_type": "cube_all",
+      "name": "ice_french_2"
+    },
+    {
+      "block": "chisel:ice_jellybean",
+      "model_type": "cube_all",
+      "name": "ice_jellybean"
+    },
+    {
+      "block": "chisel:ice_layers",
+      "model_type": "cube_all",
+      "name": "ice_layers"
+    },
+    {
+      "block": "chisel:ice_mosaic",
+      "model_type": "cube_all",
+      "name": "ice_mosaic"
+    },
+    {
+      "block": "chisel:ice_ornate",
+      "model_type": "cube_all",
+      "name": "ice_ornate"
     },
     {
       "block": "chisel:ice_panel",
@@ -38,29 +93,79 @@
       "name": "ice_panel"
     },
     {
-      "block": "chisel:ice_poison",
-      "model_type": "cube_all",
-      "name": "ice_poison"
+      "block": "chisel:ice_pillar",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar"
     },
     {
-      "block": "chisel:ice_rough",
-      "model_type": "cube_all",
-      "name": "ice_rough"
+      "block": "chisel:ice_pillar_carved",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_carved"
     },
     {
-      "block": "chisel:ice_rough_large",
-      "model_type": "cube_all",
-      "name": "ice_rough_large"
+      "block": "chisel:ice_pillar_greek_greek",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_greek_greek"
     },
     {
-      "block": "chisel:ice_tiles_disordered",
-      "model_type": "cube_all",
-      "name": "ice_tiles_disordered"
+      "block": "chisel:ice_pillar_greek_plain",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_greek_plain"
     },
     {
-      "block": "chisel:ice_tiles_fancy",
+      "block": "chisel:ice_pillar_convex",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_convex"
+    },
+    {
+      "block": "chisel:ice_pillar_ornamental",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_ornamental"
+    },
+    {
+      "block": "chisel:ice_pillar_plain_greek",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_plain_greek"
+    },
+    {
+      "block": "chisel:ice_pillar_plain_plain",
+      "model_type": "top_bottom_side",
+      "name": "ice_pillar_plain_plain"
+    },
+    {
+      "block": "chisel:ice_prism",
       "model_type": "cube_all",
-      "name": "ice_tiles_fancy"
+      "name": "ice_prism"
+    },
+    {
+      "block": "chisel:ice_raw",
+      "model_type": "cube_all",
+      "name": "ice_raw"
+    },
+    {
+      "block": "chisel:ice_road",
+      "model_type": "cube_all",
+      "name": "ice_road"
+    },
+    {
+      "block": "chisel:ice_slanted",
+      "model_type": "cube_all",
+      "name": "ice_slanted"
+    },
+    {
+      "block": "chisel:ice_small_bricks",
+      "model_type": "cube_all",
+      "name": "ice_small_bricks"
+    },
+    {
+      "block": "chisel:ice_soft_bricks",
+      "model_type": "cube_all",
+      "name": "ice_soft_bricks"
+    },
+    {
+      "block": "chisel:ice_solid_bricks",
+      "model_type": "cube_all",
+      "name": "ice_solid_bricks"
     },
     {
       "block": "chisel:ice_tiles_large",
@@ -68,14 +173,34 @@
       "name": "ice_tiles_large"
     },
     {
-      "block": "chisel:ice_tiles_sunken",
+      "block": "chisel:ice_tiles_medium",
       "model_type": "cube_all",
-      "name": "ice_tiles_sunken"
+      "name": "ice_tiles_medium"
     },
     {
-      "block": "chisel:ice_zelda",
+      "block": "chisel:ice_tiles_small",
       "model_type": "cube_all",
-      "name": "ice_zelda"
+      "name": "ice_tiles_small"
+    },
+    {
+      "block": "chisel:ice_triple_bricks",
+      "model_type": "cube_all",
+      "name": "ice_triple_bricks"
+    },
+    {
+      "block": "chisel:ice_twisted",
+      "model_type": "top_bottom_side",
+      "name": "ice_twisted"
+    },
+    {
+      "block": "chisel:ice_weaver",
+      "model_type": "cube_all",
+      "name": "ice_weaver"
+    },
+    {
+      "block": "chisel:ice_zag",
+      "model_type": "cube_all",
+      "name": "ice_zag"
     }
   ]
 }

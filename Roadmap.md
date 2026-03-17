@@ -30,14 +30,14 @@ Initial pass is just textures
 - [X] Glowstone
 - [X] Gold
 - [X] Granite
-- [ ] Grimstone
-- [ ] Hex Plating
-- [ ] Holystone
-- [ ] Ice
-- [ ] Ice Pillar
-- [ ] Iron
-- [ ] Iron Bars
-- [ ] Jungle Planks
+- [X] Grimstone
+- [X] Hex Plating
+- [X] Holystone
+- [X] Ice
+- [X] Ice Pillar
+- [X] Iron
+- [X] Iron Bars
+- [X] Jungle Planks
 - [ ] Laboratory
 - [ ] Lapis
 - [ ] Large Hex Plating
@@ -51,7 +51,7 @@ Initial pass is just textures
 - [ ] Mossy Temple
 - [ ] Nether Bricks
 - [ ] Netherrack
-- [ ] Oak
+- [X] Oak
 - [ ] Obsidian
 - [ ] Packed Ice
 - [ ] Packed Ice Pillar

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/spruce_planks/spruce_planks_crude_horizontal"
+  }
+}

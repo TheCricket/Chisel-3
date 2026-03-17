@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/iron_bars_spikes"
+    "model": "chisel:item/iron_bars_spikes"
   }
 }

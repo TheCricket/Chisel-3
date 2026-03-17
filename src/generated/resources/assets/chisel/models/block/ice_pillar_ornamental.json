@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "bottom": "chisel:block/ice_pillar/ice_pillar_ornamental-bottom",
-    "side": "chisel:block/ice_pillar/ice_pillar_ornamental-side",
-    "top": "chisel:block/ice_pillar/ice_pillar_ornamental-top"
+    "bottom": "chisel:block/ice/ice_pillar_ornamental-bottom",
+    "side": "chisel:block/ice/ice_pillar_ornamental-side",
+    "top": "chisel:block/ice/ice_pillar_ornamental-top"
   }
 }
