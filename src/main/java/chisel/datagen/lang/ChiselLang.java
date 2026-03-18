@@ -1114,21 +1114,42 @@ public class ChiselLang extends LangHelper {
 
     private void addMossyCobblestone() {
         addBlock(() -> Blocks.MOSSY_COBBLESTONE, "Mossy Cobblestone");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_ALIGNED, "Mossy Cobblestone", "Aligned Bricks");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_DETAILED, "Mossy Cobblestone", "Detailed Bricks");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_SMALL, "Mossy Cobblestone", "Small Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_ARRAY, "Mossy Cobblestone", "Array");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_BRAID, "Mossy Cobblestone", "Braid");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC, "Mossy Cobblestone", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC_MEDIUM, "Mossy Cobblestone", "Medium Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC_SMALL, "Mossy Cobblestone", "Small Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CIRCULAR, "Mossy Cobblestone", "Circular");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CRACKED, "Mossy Cobblestone", "Cracked");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CRACKED_BRICKS, "Mossy Cobblestone", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_CUTS, "Mossy Cobblestone", "Cuts");
         addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_DENT, "Mossy Cobblestone", "Dent");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL, "Mossy Cobblestone", "Pane");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_CREEPER, "Mossy Cobblestone", "Creeper Panel");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_DARK, "Mossy Cobblestone", "Dark Panel");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_LIGHT, "Mossy Cobblestone", "Light Panel");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_CREEPER, "Mossy Cobblestone", "Creeper Tiles");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_DAMAGED, "Mossy Cobblestone", "Damaged Tiles");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_FRENCH, "Mossy Cobblestone", "French Tiles");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_FRENCH_LIGHT, "Mossy Cobblestone", "French Tiles Light");
-        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_HUGE, "Mossy Cobblestone", "Huge Tiles");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_EMBOSS, "Mossy Cobblestone", "Embossed");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_ENCASED, "Mossy Cobblestone", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_FRENCH, "Mossy Cobblestone", "French Tiles");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_FRENCH_2, "Mossy Cobblestone", "French Tiles 2");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_INDENT, "Mossy Cobblestone", "Indent");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_JELLYBEAN, "Mossy Cobblestone", "Jellybean");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_LAYERS, "Mossy Cobblestone", "Layers");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_MARKER, "Mossy Cobblestone", "Marker");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_MOSAIC, "Mossy Cobblestone", "Mosaic");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_ORNATE, "Mossy Cobblestone", "Ornate");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL, "Mossy Cobblestone", "Panel");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PILLAR, "Mossy Cobblestone", "Pillar");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_PRISM, "Mossy Cobblestone", "Prism");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_RAW, "Mossy Cobblestone", "Raw");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_ROAD, "Mossy Cobblestone", "Road");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_SLANTED, "Mossy Cobblestone", "Slanted");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_SMALL, "Mossy Cobblestone", "Small Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_SOFT, "Mossy Cobblestone", "Soft");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_SOLID, "Mossy Cobblestone", "Solid");
         addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_LARGE, "Mossy Cobblestone", "Large Tiles");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_MEDIUM, "Mossy Cobblestone", "Medium Tiles");
         addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_SMALL, "Mossy Cobblestone", "Small Tiles");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TRIPLE, "Mossy Cobblestone", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_TWISTED, "Mossy Cobblestone", "Twisted Pillar");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_WEAVER, "Mossy Cobblestone", "Weaver");
+        addBlock(ChiselStoneBlocks.MOSSY_COBBLESTONE_ZAG, "Mossy Cobblestone", "Zag");
     }
 
     private void addMossyTemple() {

@@ -903,21 +903,42 @@ public class VariantFamilies {
             .addVariant("marble_zag", ChiselStoneBlocks.MARBLE_ZAG)
             .getFamily();
     public static final VariantFamily MOSSY_COBBLESTONE = builder("mossy_cobblestone", Blocks.MOSSY_COBBLESTONE)
-            .addVariant("mossy_cobblestone_bricks_aligned", ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_ALIGNED)
-            .addVariant("mossy_cobblestone_bricks_detailed", ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_DETAILED)
-            .addVariant("mossy_cobblestone_bricks_small", ChiselStoneBlocks.MOSSY_COBBLESTONE_BRICKS_SMALL)
-            .addVariant("mossy_cobblestone_dent", ChiselStoneBlocks.MOSSY_COBBLESTONE_DENT)
-            .addVariant("mossy_cobblestone_panel", ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL)
-            .addVariant("mossy_cobblestone_panel_creeper", ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_CREEPER)
-            .addVariant("mossy_cobblestone_panel_dark", ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_DARK)
-            .addVariant("mossy_cobblestone_panel_light", ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL_LIGHT)
-            .addVariant("mossy_cobblestone_tiles_creeper", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_CREEPER)
-            .addVariant("mossy_cobblestone_tiles_damaged", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_DAMAGED)
-            .addVariant("mossy_cobblestone_tiles_french", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_FRENCH)
-            .addVariant("mossy_cobblestone_tiles_french_light", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_FRENCH_LIGHT)
-            .addVariant("mossy_cobblestone_tiles_huge", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_HUGE)
-            .addVariant("mossy_cobblestone_tiles_large", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_LARGE)
-            .addVariant("mossy_cobblestone_tiles_small", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_SMALL)
+            .addVariant("mossy_cobblestone_array", ChiselStoneBlocks.MOSSY_COBBLESTONE_ARRAY, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_braid", ChiselStoneBlocks.MOSSY_COBBLESTONE_BRAID, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_chaotic", ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_chaotic_medium", ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC_MEDIUM, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_chaotic_small", ChiselStoneBlocks.MOSSY_COBBLESTONE_CHAOTIC_SMALL, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_circular", ChiselStoneBlocks.MOSSY_COBBLESTONE_CIRCULAR, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_cracked", ChiselStoneBlocks.MOSSY_COBBLESTONE_CRACKED, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_cracked_bricks", ChiselStoneBlocks.MOSSY_COBBLESTONE_CRACKED_BRICKS, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_cuts", ChiselStoneBlocks.MOSSY_COBBLESTONE_CUTS, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_dent", ChiselStoneBlocks.MOSSY_COBBLESTONE_DENT, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_emboss", ChiselStoneBlocks.MOSSY_COBBLESTONE_EMBOSS, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_encased", ChiselStoneBlocks.MOSSY_COBBLESTONE_ENCASED, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_french_1", ChiselStoneBlocks.MOSSY_COBBLESTONE_FRENCH, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_french_2", ChiselStoneBlocks.MOSSY_COBBLESTONE_FRENCH_2, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_indent", ChiselStoneBlocks.MOSSY_COBBLESTONE_INDENT, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_jellybean", ChiselStoneBlocks.MOSSY_COBBLESTONE_JELLYBEAN, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_layers", ChiselStoneBlocks.MOSSY_COBBLESTONE_LAYERS, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_marker", ChiselStoneBlocks.MOSSY_COBBLESTONE_MARKER, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_mosaic", ChiselStoneBlocks.MOSSY_COBBLESTONE_MOSAIC, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_ornate", ChiselStoneBlocks.MOSSY_COBBLESTONE_ORNATE, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_panel", ChiselStoneBlocks.MOSSY_COBBLESTONE_PANEL, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_pillar", ChiselStoneBlocks.MOSSY_COBBLESTONE_PILLAR, VariantModelType.MOSSY_TOP_BOTTOM_SIDE)
+            .addVariant("mossy_cobblestone_prism", ChiselStoneBlocks.MOSSY_COBBLESTONE_PRISM, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_raw", ChiselStoneBlocks.MOSSY_COBBLESTONE_RAW, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_road", ChiselStoneBlocks.MOSSY_COBBLESTONE_ROAD, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_slanted", ChiselStoneBlocks.MOSSY_COBBLESTONE_SLANTED, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_small", ChiselStoneBlocks.MOSSY_COBBLESTONE_SMALL, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_soft", ChiselStoneBlocks.MOSSY_COBBLESTONE_SOFT, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_solid", ChiselStoneBlocks.MOSSY_COBBLESTONE_SOLID, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_tiles_large", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_LARGE, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_tiles_medium", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_MEDIUM, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_tiles_small", ChiselStoneBlocks.MOSSY_COBBLESTONE_TILES_SMALL, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_triple", ChiselStoneBlocks.MOSSY_COBBLESTONE_TRIPLE, VariantModelType.MOSSY)
+            .addVariant("mossy_cobblestone_twisted", ChiselStoneBlocks.MOSSY_COBBLESTONE_TWISTED, VariantModelType.MOSSY_TOP_BOTTOM_SIDE)
+            .addVariant("mossy_cobblestone_weaver", ChiselStoneBlocks.MOSSY_COBBLESTONE_WEAVER, VariantModelType.MOSSY) //TODO: CTM
+            .addVariant("mossy_cobblestone_zag", ChiselStoneBlocks.MOSSY_COBBLESTONE_ZAG, VariantModelType.MOSSY) //TODO: CTM
             .getFamily();
     public static final VariantFamily MOSSY_TEMPLE = builder("mossy_temple", ChiselStoneBlocks.MOSSY_TEMPLE_COBBLE)
             .addVariant("mossy_temple_bricks", ChiselStoneBlocks.MOSSY_TEMPLE_BRICKS)

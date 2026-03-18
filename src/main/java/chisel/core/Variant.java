@@ -74,6 +74,8 @@ public class Variant extends VariantModels {
             case CARPET -> CARPET.generate(this, blockModels);
             case IRON_BARS -> IRON_BARS.generate(this, blockModels);
             case GLASS_PANE -> GLASS_PANE.generate(this, blockModels);
+            case MOSSY -> MOSSY.generate(this, blockModels);
+            case MOSSY_TOP_BOTTOM_SIDE -> MOSSY_TOP_BOTTOM_SIDE.generate(this, blockModels);
         }
     }
 

@@ -23,4 +23,6 @@ public class VariantModels {
     public final CarpetModel CARPET = new CarpetModel();
     public final GlassPaneModel GLASS_PANE = new GlassPaneModel();
     public final IronBarsModel IRON_BARS = new IronBarsModel();
+    public final MossyModel MOSSY = new MossyModel();
+    public final MossyTBSModel MOSSY_TOP_BOTTOM_SIDE = new MossyTBSModel();
 }

@@ -16,6 +16,14 @@ public class ChiselModelTemplates {
             TextureSlot.PARTICLE
     );
 
+    public static final ModelTemplate CUBE_MULTI_PASS_NO_GLOW = new ModelTemplate(
+            Optional.of(Chisel.prefix("block/cube_multi_pass_no_glow")),
+            Optional.empty(),
+            TextureSlot.LAYER0,
+            TextureSlot.LAYER1,
+            TextureSlot.PARTICLE
+    );
+
     public static final ModelTemplate CUBE_MULTI_PASS_CONNECTED = new ModelTemplate(
             Optional.of(Chisel.prefix("block/cube_multi_pass_ctm")),
             Optional.empty(),
@@ -31,6 +39,16 @@ public class ChiselModelTemplates {
 
     public static final ModelTemplate CUBE_MULTI_PASS_TOP_BOTTOM_SIDE = new ModelTemplate(
             Optional.of(Chisel.prefix("block/cube_multi_pass_top_bottom_side")),
+            Optional.empty(),
+            TextureSlot.TOP,
+            TextureSlot.BOTTOM,
+            TextureSlot.SIDE,
+            TextureSlot.LAYER1,
+            TextureSlot.PARTICLE
+    );
+
+    public static final ModelTemplate CUBE_MULTI_PASS_TOP_BOTTOM_SIDE_NO_GLOW = new ModelTemplate(
+            Optional.of(Chisel.prefix("block/cube_multi_pass_top_bottom_side_no_glow")),
             Optional.empty(),
             TextureSlot.TOP,
             TextureSlot.BOTTOM,
