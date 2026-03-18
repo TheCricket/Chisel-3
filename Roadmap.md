@@ -48,7 +48,7 @@ Initial pass is just textures
 - [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
 - [X] Marble
 - [X] Mossy Cobblestone
-- [ ] Mossy Temple
+- [X] Mossy Temple
 - [ ] Nether Bricks
 - [ ] Netherrack
 - [X] Oak
