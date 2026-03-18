@@ -3,39 +3,49 @@
   "prefix": "marble",
   "variants": [
     {
-      "block": "chisel:marble_block",
+      "block": "chisel:marble_array",
       "model_type": "cube_all",
-      "name": "marble_block"
+      "name": "marble_array"
     },
     {
-      "block": "chisel:marble_blocks",
+      "block": "chisel:marble_braid",
       "model_type": "cube_all",
-      "name": "marble_blocks"
+      "name": "marble_braid"
     },
     {
-      "block": "chisel:marble_brick",
+      "block": "chisel:marble_chaotic_bricks",
       "model_type": "cube_all",
-      "name": "marble_brick"
+      "name": "marble_chaotic_bricks"
     },
     {
-      "block": "chisel:marble_carved",
+      "block": "chisel:marble_chaotic_medium",
       "model_type": "cube_all",
-      "name": "marble_carved"
+      "name": "marble_chaotic_medium"
     },
     {
-      "block": "chisel:marble_carved_radial",
+      "block": "chisel:marble_chaotic_small",
       "model_type": "cube_all",
-      "name": "marble_carved_radial"
+      "name": "marble_chaotic_small"
     },
     {
-      "block": "chisel:marble_creeper_dark",
+      "block": "chisel:marble_circular",
       "model_type": "cube_all",
-      "name": "marble_creeper_dark"
+      "name": "marble_circular"
     },
     {
-      "block": "chisel:marble_creeper_light",
+      "block": "chisel:marble_cracked",
       "model_type": "cube_all",
-      "name": "marble_creeper_light"
+      "name": "marble_cracked"
+    },
+    {
+      "block": "chisel:marble_cracked_bricks",
+      "model_type": "cube_all",
+      "name": "marble_cracked_bricks"
+    },
+    {
+      "block": "chisel:marble_cuts",
+      "model_type": "cube_all",
+      "name": "marble_cuts"
     },
     {
       "block": "chisel:marble_dent",
@@ -43,9 +53,39 @@
       "name": "marble_dent"
     },
     {
-      "block": "chisel:marble_dent_large",
+      "block": "chisel:marble_encased_bricks",
       "model_type": "cube_all",
-      "name": "marble_dent_large"
+      "name": "marble_encased_bricks"
+    },
+    {
+      "block": "chisel:marble_french_1",
+      "model_type": "cube_all",
+      "name": "marble_french_1"
+    },
+    {
+      "block": "chisel:marble_french_2",
+      "model_type": "cube_all",
+      "name": "marble_french_2"
+    },
+    {
+      "block": "chisel:marble_jellybean",
+      "model_type": "cube_all",
+      "name": "marble_jellybean"
+    },
+    {
+      "block": "chisel:marble_layers",
+      "model_type": "cube_all",
+      "name": "marble_layers"
+    },
+    {
+      "block": "chisel:marble_mosaic",
+      "model_type": "cube_all",
+      "name": "marble_mosaic"
+    },
+    {
+      "block": "chisel:marble_ornate",
+      "model_type": "cube_all",
+      "name": "marble_ornate"
     },
     {
       "block": "chisel:marble_panel",
@@ -53,14 +93,14 @@
       "name": "marble_panel"
     },
     {
-      "block": "chisel:marble_panel_classic",
-      "model_type": "cube_all",
-      "name": "marble_panel_classic"
+      "block": "chisel:marble_pillar",
+      "model_type": "top_bottom_side",
+      "name": "marble_pillar"
     },
     {
-      "block": "chisel:marble_panel_ornate",
+      "block": "chisel:marble_prism",
       "model_type": "cube_all",
-      "name": "marble_panel_ornate"
+      "name": "marble_prism"
     },
     {
       "block": "chisel:marble_raw",
@@ -68,19 +108,64 @@
       "name": "marble_raw"
     },
     {
-      "block": "chisel:marble_tiles",
+      "block": "chisel:marble_road",
       "model_type": "cube_all",
-      "name": "marble_tiles"
+      "name": "marble_road"
     },
     {
-      "block": "chisel:marble_tiles_arranged",
+      "block": "chisel:marble_slanted",
       "model_type": "cube_all",
-      "name": "marble_tiles_arranged"
+      "name": "marble_slanted"
     },
     {
-      "block": "chisel:marble_tiles_fancy",
+      "block": "chisel:marble_small_bricks",
       "model_type": "cube_all",
-      "name": "marble_tiles_fancy"
+      "name": "marble_small_bricks"
+    },
+    {
+      "block": "chisel:marble_soft_bricks",
+      "model_type": "cube_all",
+      "name": "marble_soft_bricks"
+    },
+    {
+      "block": "chisel:marble_solid_bricks",
+      "model_type": "cube_all",
+      "name": "marble_solid_bricks"
+    },
+    {
+      "block": "chisel:marble_tiles_large",
+      "model_type": "cube_all",
+      "name": "marble_tiles_large"
+    },
+    {
+      "block": "chisel:marble_tiles_medium",
+      "model_type": "cube_all",
+      "name": "marble_tiles_medium"
+    },
+    {
+      "block": "chisel:marble_tiles_small",
+      "model_type": "cube_all",
+      "name": "marble_tiles_small"
+    },
+    {
+      "block": "chisel:marble_triple_bricks",
+      "model_type": "cube_all",
+      "name": "marble_triple_bricks"
+    },
+    {
+      "block": "chisel:marble_twisted",
+      "model_type": "top_bottom_side",
+      "name": "marble_twisted"
+    },
+    {
+      "block": "chisel:marble_weaver",
+      "model_type": "cube_all",
+      "name": "marble_weaver"
+    },
+    {
+      "block": "chisel:marble_zag",
+      "model_type": "cube_all",
+      "name": "marble_zag"
     }
   ]
 }

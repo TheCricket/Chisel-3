@@ -1077,22 +1077,39 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addMarble() {
-        addBlock(ChiselStoneBlocks.MARBLE_BLOCK, "Marble", "Block");
-        addBlock(ChiselStoneBlocks.MARBLE_BLOCKS, "Marble", "Blocks");
-        addBlock(ChiselStoneBlocks.MARBLE_BRICK, "Marble", "Brick");
-        addBlock(ChiselStoneBlocks.MARBLE_CARVED, "Marble", "Carved");
-        addBlock(ChiselStoneBlocks.MARBLE_CARVED_RADIAL, "Marble", "Radial Carved");
-        addBlock(ChiselStoneBlocks.MARBLE_CREEPER_DARK, "Marble", "Dark Creeper");
-        addBlock(ChiselStoneBlocks.MARBLE_CREEPER_LIGHT, "Marble", "Light Creeper");
-        addBlock(ChiselStoneBlocks.MARBLE_DENT, "Marble", "with Dent");
-        addBlock(ChiselStoneBlocks.MARBLE_DENT_LARGE, "Marble", "with Large Dent");
-        addBlock(ChiselStoneBlocks.MARBLE_PANEL, "Marble", "Panel");
-        addBlock(ChiselStoneBlocks.MARBLE_PANEL_CLASSIC, "Marble", "Classic Panel");
-        addBlock(ChiselStoneBlocks.MARBLE_PANEL_ORNATE, "Marble", "Ornate Panel");
         addBlock(ChiselStoneBlocks.MARBLE_RAW, "Marble", "Raw");
-        addBlock(ChiselStoneBlocks.MARBLE_TILES, "Marble", "Tiles");
-        addBlock(ChiselStoneBlocks.MARBLE_TILES_ARRANGED, "Marble", "Arranged Tiles");
-        addBlock(ChiselStoneBlocks.MARBLE_TILES_FANCY, "Marble", "Fancy Tiles");
+        addBlock(ChiselStoneBlocks.MARBLE_ARRAY, "Marble", "Array");
+        addBlock(ChiselStoneBlocks.MARBLE_BRAID, "Marble", "Braid");
+        addBlock(ChiselStoneBlocks.MARBLE_CHAOTIC_BRICKS, "Marble", "Chaotic Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_CHAOTIC_MEDIUM, "Marble", "Medium Chaotic");
+        addBlock(ChiselStoneBlocks.MARBLE_CHAOTIC_SMALL, "Marble", "Small Chaotic");
+        addBlock(ChiselStoneBlocks.MARBLE_CIRCULAR, "Marble", "Circular");
+        addBlock(ChiselStoneBlocks.MARBLE_CRACKED, "Marble", "Cracked");
+        addBlock(ChiselStoneBlocks.MARBLE_CRACKED_BRICKS, "Marble", "Cracked Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_CUTS, "Marble", "Cuts");
+        addBlock(ChiselStoneBlocks.MARBLE_DENT, "Marble", "Dent");
+        addBlock(ChiselStoneBlocks.MARBLE_ENCASED_BRICKS, "Marble", "Encased Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_FRENCH_1, "Marble", "French 1");
+        addBlock(ChiselStoneBlocks.MARBLE_FRENCH_2, "Marble", "French 2");
+        addBlock(ChiselStoneBlocks.MARBLE_JELLYBEAN, "Marble", "Jellybean");
+        addBlock(ChiselStoneBlocks.MARBLE_LAYERS, "Marble", "Layers");
+        addBlock(ChiselStoneBlocks.MARBLE_MOSAIC, "Marble", "Mosaic");
+        addBlock(ChiselStoneBlocks.MARBLE_ORNATE, "Marble", "Ornate");
+        addBlock(ChiselStoneBlocks.MARBLE_PANEL, "Marble", "Panel");
+        addBlock(ChiselStoneBlocks.MARBLE_PILLAR, "Marble", "Pillar");
+        addBlock(ChiselStoneBlocks.MARBLE_PRISM, "Marble", "Prism");
+        addBlock(ChiselStoneBlocks.MARBLE_ROAD, "Marble", "Road");
+        addBlock(ChiselStoneBlocks.MARBLE_SLANTED, "Marble", "Slanted");
+        addBlock(ChiselStoneBlocks.MARBLE_SMALL_BRICKS, "Marble", "Small Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_SOFT_BRICKS, "Marble", "Soft Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_SOLID_BRICKS, "Marble", "Solid Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_TILES_LARGE, "Marble", "Large Tiles");
+        addBlock(ChiselStoneBlocks.MARBLE_TILES_MEDIUM, "Marble", "Medium Tiles");
+        addBlock(ChiselStoneBlocks.MARBLE_TILES_SMALL, "Marble", "Small Tiles");
+        addBlock(ChiselStoneBlocks.MARBLE_TRIPLE_BRICKS, "Marble", "Triple Bricks");
+        addBlock(ChiselStoneBlocks.MARBLE_TWISTED, "Marble", "Twisted");
+        addBlock(ChiselStoneBlocks.MARBLE_WEAVER, "Marble", "Weaver");
+        addBlock(ChiselStoneBlocks.MARBLE_ZAG, "Marble", "Zag");
     }
 
     private void addMossyCobblestone() {
