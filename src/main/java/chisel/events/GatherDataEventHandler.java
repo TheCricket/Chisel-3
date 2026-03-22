@@ -1,21 +1,15 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.datagen.ChiselLootTableProvider;
-import chisel.datagen.ChiselModelProvider;
-import chisel.datagen.ChiselRecipes;
-import chisel.datagen.ChiselSoundDefinitionProvider;
+import chisel.datagen.*;
 import chisel.datagen.lang.ChiselLang;
 import chisel.registry.ChiselVariants;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = Chisel.MODID)
 public class GatherDataEventHandler {
@@ -28,5 +22,6 @@ public class GatherDataEventHandler {
         event.createProvider(ChiselLang::new);
         event.createProvider(ChiselSoundDefinitionProvider::new);
         event.createProvider(ChiselRecipes.Runner::new);
+        event.createProvider(ChiselBlockTags::new);
     }
 }

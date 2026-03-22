@@ -17,6 +17,8 @@ public class ChiselLang extends LangHelper {
         addItems();
         addVariantFamilies();
         addTabs();
+
+        add("container.chisel", "Chisel");
     }
 
     private void addTabs() {

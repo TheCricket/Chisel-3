@@ -1,6 +1,7 @@
 package chisel.item;
 
 import chisel.menu.ChiselMenu;
+import chisel.registry.ChiselItemAbilities;
 import io.netty.buffer.Unpooled;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -9,12 +10,21 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemInstance;
 import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.common.ItemAbility;
 import org.jspecify.annotations.NonNull;
 
 public class ChiselItem extends Item {
+
     public ChiselItem(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public boolean canPerformAction(@NonNull ItemInstance stack, @NonNull ItemAbility itemAbility) {
+        if(itemAbility == ChiselItemAbilities.CHISEL) return true;
+        return super.canPerformAction(stack, itemAbility);
     }
 
     @Override

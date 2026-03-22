@@ -19,7 +19,6 @@ public class Chisel {
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
         ChiselMenus.MENU_TYPES.register(bus);
-        ChiselDataComponents.DATA_COMPONENTS.register(bus);
     }
 
     public static Identifier prefix(String resource) {
