@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:iron_block",
-  "prefix": "iron",
+  "familyName": "iron",
   "variants": [
+    {
+      "block": "minecraft:iron_block",
+      "model_type": "cube_all",
+      "name": "block.minecraft.iron_block"
+    },
     {
       "block": "chisel:iron_bad_greggy",
       "model_type": "cube_all",

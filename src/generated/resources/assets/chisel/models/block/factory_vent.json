@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "chisel:block/factory/factory_vent-bottom",
-    "side": "chisel:block/factory/factory_vent-side",
-    "top": "chisel:block/factory/factory_vent-top"
+    "all": "chisel:block/factory/factory_vent"
   }
 }

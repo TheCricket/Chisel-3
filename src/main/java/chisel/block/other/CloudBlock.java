@@ -1,0 +1,23 @@
+package chisel.block.other;
+
+import chisel.block.ChiselBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import chisel.util.LangHelper;
+import net.minecraft.world.level.block.Blocks;
+
+public class CloudBlock extends ChiselBlock {
+    public CloudBlock(BlockBehaviour.Properties props) {
+        
+
+        family = builder("cloud")
+                .addVariant(Blocks.WHITE_WOOL)
+                .addVariant("cloud_0", props)
+                .getFamily();
+    }
+
+    @Override
+    public void addTranslations(LangHelper lang) {
+        lang.addBlock(getVariant("cloud_0"), "Cloud Block");
+    }
+}
+

@@ -1,31 +1,15 @@
 {
-  "base": "chisel:cloud_normal",
-  "prefix": "cloud",
+  "familyName": "cloud",
   "variants": [
     {
-      "block": "chisel:cloud_grid",
+      "block": "minecraft:white_wool",
       "model_type": "cube_all",
-      "name": "cloud_grid"
+      "name": "block.minecraft.white_wool"
     },
     {
-      "block": "chisel:cloud_large",
+      "block": "chisel:cloud_0",
       "model_type": "cube_all",
-      "name": "cloud_large"
-    },
-    {
-      "block": "chisel:cloud_normal",
-      "model_type": "cube_all",
-      "name": "cloud_normal"
-    },
-    {
-      "block": "chisel:cloud_small",
-      "model_type": "cube_all",
-      "name": "cloud_small"
-    },
-    {
-      "block": "chisel:cloud_vertical",
-      "model_type": "cube_all",
-      "name": "cloud_vertical"
+      "name": "cloud_0"
     }
   ]
 }

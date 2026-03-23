@@ -1,85 +1,52 @@
 package chisel.core;
-import chisel.datagen.VariantFamilies;
+
+import chisel.registry.ChiselBlocks;
+import chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class VariantFamily {
 
     public static final Codec<VariantFamily> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.STRING.fieldOf("prefix").forGetter(f -> f.prefix),
-            BuiltInRegistries.BLOCK.byNameCodec().fieldOf("base").forGetter(f -> f.base.get()),
+            Codec.STRING.fieldOf("familyName").forGetter(f -> f.familyName),
             Variant.CODEC.listOf().fieldOf("variants").forGetter(f -> f.variants),
-            Codec.BOOL.optionalFieldOf("generate_model", true).forGetter(f -> f.generateModel),
-            Codec.BOOL.optionalFieldOf("generate_crafting_recipe", true).forGetter(f -> f.generateCraftingRecipe),
-            Codec.BOOL.optionalFieldOf("generate_chisel_recipe", true).forGetter(f -> f.generateChiselRecipe),
             Codec.STRING.optionalFieldOf("recipe_unlocked_by").forGetter(f -> java.util.Optional.ofNullable(f.recipeUnlockedBy))
-    ).apply(instance, (prefix, base, variants, genModel, genCrafting, genChisel, unlockedBy) -> {
-        VariantFamily family = new VariantFamily(prefix, () -> base);
-        family.generateModel = genModel;
-        family.generateCraftingRecipe = genCrafting;
-        family.generateChiselRecipe = genChisel;
+    ).apply(instance, (prefix, variants, unlockedBy) -> {
+        VariantFamily family = new VariantFamily(prefix);
         unlockedBy.ifPresent(u -> family.recipeUnlockedBy = u);
         for (Variant v : variants) {
             v.setFamily(family);
             family.variants.add(v);
         }
-        VariantFamilies.registerVariantFamily(family.getBaseSupplier(), family);
         return family;
     }));
 
-    private final Supplier<Block> base;
     private final List<Variant> variants = Lists.newArrayList();
-    private boolean generateModel = true;
-    private boolean generateCraftingRecipe = true;
-    private boolean generateChiselRecipe = true;
-    private final String prefix;
+    private final String familyName;
     private String recipeUnlockedBy;
 
-    public VariantFamily(String prefix, Supplier<Block> base) {
-        this.prefix = prefix;
-        this.base = base;
-    }
-
-    public Block getBase() {
-        return base.get();
+    public VariantFamily(String familyName) {
+        this.familyName = familyName;
     }
 
     public List<Variant> getVariants() {
         return variants;
     }
 
-    public boolean shouldGenerateModel() {
-        return generateModel;
-    }
-
-    public boolean shouldGenerateCraftingRecipe() {
-        return generateCraftingRecipe;
-    }
-
-    public boolean shouldGenerateChiselRecipe() {
-        return generateChiselRecipe;
-    }
-
-    public String getPrefix() {
-        return prefix;
-    }
-
-    public String getRecipeUnlockedBy() {
-        return recipeUnlockedBy;
-    }
-
-    public Supplier<Block> getBaseSupplier() {
-        return base;
+    public String getFamilyName() {
+        return familyName;
     }
 
     public boolean isBlockInFamily(Block block) {
-        return block == getBase() || variants.stream().anyMatch(v -> v.getBlock().get() == block);
+        return variants.stream().anyMatch(v -> v.getBlock() == block);
     }
 
     @Override
@@ -87,53 +54,55 @@ public class VariantFamily {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         VariantFamily that = (VariantFamily) o;
-        return prefix.equals(that.prefix);
+        return familyName.equals(that.familyName);
     }
 
     @Override
     public int hashCode() {
-        return prefix.hashCode();
+        return familyName.hashCode();
     }
 
     public static class Builder {
         private final VariantFamily family;
 
-        public Builder(String prefix, Supplier<Block> base) {
-            this.family = new VariantFamily(prefix, base);
+        public Builder(String prefix) {
+            this.family = new VariantFamily(prefix);
         }
 
         public VariantFamily getFamily() {
-            VariantFamilies.registerVariantFamily(family.getBaseSupplier(), family);
             return family;
         }
-
-        public Builder addVariant(String name, Supplier<Block> variant, VariantModelType modelType) {
-            Variant v = new Variant(name, variant, family, modelType);
-            family.variants.add(v);
+        
+        public Builder addVariant(Block block) {
+            family.getVariants().add(new Variant(block, family));
             return this;
         }
 
-        public Builder addVariant(String name, Supplier<Block> variant) {
-            return addVariant(name, variant, VariantModelType.CUBE_ALL);
-        }
-
-        public Builder dontGenerateModel() {
-            family.generateModel = false;
+        public Builder addVariant(String name, BlockBehaviour.Properties props) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, props);
+            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
+            family.getVariants().add(new Variant(name, block, family));
             return this;
         }
 
-        public Builder dontGenerateCraftingRecipe() {
-            this.family.generateCraftingRecipe = false;
+        public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
+            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
+            family.getVariants().add(new Variant(name, block, family));
             return this;
         }
 
-        public Builder generateChiselRecipe() {
-            this.family.generateChiselRecipe = true;
+        public Builder addVariant(String name, BlockBehaviour.Properties props, VariantModelType modelType) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, props);
+            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
+            family.getVariants().add(new Variant(name, block, family, modelType));
             return this;
         }
 
-        public Builder recipeUnlockedBy(String recipeUnlockedBy) {
-            this.family.recipeUnlockedBy = recipeUnlockedBy;
+        public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelType modelType) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
+            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
+            family.getVariants().add(new Variant(name, block, family, modelType));
             return this;
         }
     }

@@ -1,8 +1,6 @@
 {
-  "parent": "chisel:block/cube_multi_pass_no_glow",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "layer0": "chisel:block/mossy_cobblestone/mossy_cobblestone_braid",
-    "layer1": "chisel:block/mossy_cobblestone/mossy",
-    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_braid"
+    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_braid"
   }
 }

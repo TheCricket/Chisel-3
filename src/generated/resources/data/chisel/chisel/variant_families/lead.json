@@ -1,6 +1,5 @@
 {
-  "base": "chisel:lead_caution",
-  "prefix": "lead",
+  "familyName": "lead",
   "variants": [
     {
       "block": "chisel:lead_bad_greggy",

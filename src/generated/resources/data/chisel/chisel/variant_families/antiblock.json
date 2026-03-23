@@ -1,6 +1,5 @@
 {
-  "base": "chisel:antiblock_black",
-  "prefix": "antiblock",
+  "familyName": "antiblock",
   "variants": [
     {
       "block": "chisel:antiblock_black",

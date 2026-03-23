@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:glass",
-  "prefix": "glass",
+  "familyName": "glass",
   "variants": [
+    {
+      "block": "minecraft:glass",
+      "model_type": "cube_all",
+      "name": "block.minecraft.glass"
+    },
     {
       "block": "chisel:glass_borderless",
       "model_type": "cube_all",

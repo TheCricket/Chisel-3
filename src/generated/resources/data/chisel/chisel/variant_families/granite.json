@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:granite",
-  "prefix": "granite",
+  "familyName": "granite",
   "variants": [
+    {
+      "block": "minecraft:granite",
+      "model_type": "cube_all",
+      "name": "block.minecraft.granite"
+    },
     {
       "block": "chisel:granite_array",
       "model_type": "cube_all",

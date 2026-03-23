@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:spruce_planks",
-  "prefix": "spruce_planks",
+  "familyName": "spruce_planks",
   "variants": [
+    {
+      "block": "minecraft:spruce_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.spruce_planks"
+    },
     {
       "block": "chisel:spruce_planks_braced",
       "model_type": "top_bottom_side",

@@ -1,7 +1,11 @@
 {
-  "base": "chisel:limestone_raw",
-  "prefix": "limestone",
+  "familyName": "limestone",
   "variants": [
+    {
+      "block": "chisel:limestone_raw",
+      "model_type": "cube_all",
+      "name": "limestone_raw"
+    },
     {
       "block": "chisel:limestone_array",
       "model_type": "cube_all",
@@ -101,11 +105,6 @@
       "block": "chisel:limestone_prism",
       "model_type": "cube_all",
       "name": "limestone_prism"
-    },
-    {
-      "block": "chisel:limestone_raw",
-      "model_type": "cube_all",
-      "name": "limestone_raw"
     },
     {
       "block": "chisel:limestone_road",

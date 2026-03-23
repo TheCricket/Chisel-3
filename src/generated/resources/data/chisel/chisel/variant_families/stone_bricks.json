@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:stone_bricks",
-  "prefix": "stone_bricks",
+  "familyName": "stone_bricks",
   "variants": [
+    {
+      "block": "minecraft:stone_bricks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.stone_bricks"
+    },
     {
       "block": "chisel:stone_bricks_disordered",
       "model_type": "cube_all",

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
-  "textures": {
-    "bottom": "chisel:block/glowstone/glowstone_pillar-bottom",
-    "side": "chisel:block/glowstone/glowstone_pillar-side",
-    "top": "chisel:block/glowstone/glowstone_pillar-top"
-  }
-}

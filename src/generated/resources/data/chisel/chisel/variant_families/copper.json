@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:copper_block",
-  "prefix": "copper",
+  "familyName": "copper",
   "variants": [
+    {
+      "block": "minecraft:copper_block",
+      "model_type": "cube_all",
+      "name": "block.minecraft.copper_block"
+    },
     {
       "block": "chisel:copper_bad_greggy",
       "model_type": "cube_all",

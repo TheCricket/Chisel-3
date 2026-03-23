@@ -1,7 +1,11 @@
 {
-  "base": "chisel:marble_raw",
-  "prefix": "marble",
+  "familyName": "marble",
   "variants": [
+    {
+      "block": "chisel:marble_raw",
+      "model_type": "cube_all",
+      "name": "marble_raw"
+    },
     {
       "block": "chisel:marble_array",
       "model_type": "cube_all",
@@ -101,11 +105,6 @@
       "block": "chisel:marble_prism",
       "model_type": "cube_all",
       "name": "marble_prism"
-    },
-    {
-      "block": "chisel:marble_raw",
-      "model_type": "cube_all",
-      "name": "marble_raw"
     },
     {
       "block": "chisel:marble_road",

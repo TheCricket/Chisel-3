@@ -1,6 +1,5 @@
 {
-  "base": "chisel:steel_caution",
-  "prefix": "steel",
+  "familyName": "steel",
   "variants": [
     {
       "block": "chisel:steel_bad_greggy",

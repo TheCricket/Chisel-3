@@ -1,6 +1,5 @@
 {
-  "base": "chisel:aluminum_caution",
-  "prefix": "aluminum",
+  "familyName": "aluminum",
   "variants": [
     {
       "block": "chisel:aluminum_bad_greggy",

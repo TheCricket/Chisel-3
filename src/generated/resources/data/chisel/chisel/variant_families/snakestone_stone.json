@@ -1,16 +1,20 @@
 {
-  "base": "chisel:snakestone_stone_0",
-  "prefix": "snakestone_stone",
+  "familyName": "snakestone_stone",
   "variants": [
     {
-      "block": "chisel:snakestone_stone_0",
+      "block": "minecraft:stone",
       "model_type": "cube_all",
-      "name": "snakestone_stone_0"
+      "name": "block.minecraft.stone"
     },
     {
-      "block": "chisel:snakestone_stone_1",
+      "block": "chisel:snakestone_stone_head",
       "model_type": "cube_all",
-      "name": "snakestone_stone_1"
+      "name": "snakestone_stone_head"
+    },
+    {
+      "block": "chisel:snakestone_stone_body",
+      "model_type": "cube_all",
+      "name": "snakestone_stone_body"
     }
   ]
 }

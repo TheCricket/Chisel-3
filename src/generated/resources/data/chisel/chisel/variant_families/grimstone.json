@@ -1,7 +1,11 @@
 {
-  "base": "chisel:grimstone_raw",
-  "prefix": "grimstone",
+  "familyName": "grimstone",
   "variants": [
+    {
+      "block": "chisel:grimstone_raw",
+      "model_type": "cube_all",
+      "name": "grimstone_raw"
+    },
     {
       "block": "chisel:grimstone_blocks",
       "model_type": "cube_all",
@@ -56,11 +60,6 @@
       "block": "chisel:grimstone_platform_tiles",
       "model_type": "cube_all",
       "name": "grimstone_platform_tiles"
-    },
-    {
-      "block": "chisel:grimstone_raw",
-      "model_type": "cube_all",
-      "name": "grimstone_raw"
     },
     {
       "block": "chisel:grimstone_smooth",

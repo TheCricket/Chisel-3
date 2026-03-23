@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/energized_voidstone/energized_voidstone_plate_smooth"
+  }
+}

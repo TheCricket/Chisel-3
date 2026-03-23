@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:andesite",
-  "prefix": "andesite",
+  "familyName": "andesite",
   "variants": [
+    {
+      "block": "minecraft:andesite",
+      "model_type": "cube_all",
+      "name": "block.minecraft.andesite"
+    },
     {
       "block": "chisel:andesite_array",
       "model_type": "cube_all",

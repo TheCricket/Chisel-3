@@ -17,7 +17,7 @@ public class PillarModel extends VariantModel {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         blockModels.createTrivialBlock(
-                variant.getBlock().get(),
+                variant.getBlock(),
                 TexturedModel.COLUMN.updateTexture(
                         map -> map.put(TextureSlot.SIDE, variant.getMaterial("side")).put(TextureSlot.END, variant.getMaterial("end"))
                 ));

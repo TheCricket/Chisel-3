@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:dark_oak_planks",
-  "prefix": "dark_oak_planks",
+  "familyName": "dark_oak_planks",
   "variants": [
+    {
+      "block": "minecraft:dark_oak_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.dark_oak_planks"
+    },
     {
       "block": "chisel:dark_oak_planks_braced",
       "model_type": "top_bottom_side",

@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:diorite",
-  "prefix": "diorite",
+  "familyName": "diorite",
   "variants": [
+    {
+      "block": "minecraft:diorite",
+      "model_type": "cube_all",
+      "name": "block.minecraft.diorite"
+    },
     {
       "block": "chisel:diorite_array",
       "model_type": "cube_all",
@@ -60,7 +64,7 @@
     {
       "block": "chisel:diorite_french",
       "model_type": "cube_all",
-      "name": "diorite_french_1"
+      "name": "diorite_french"
     },
     {
       "block": "chisel:diorite_french_2",

@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:birch_planks",
-  "prefix": "birch_planks",
+  "familyName": "birch_planks",
   "variants": [
+    {
+      "block": "minecraft:birch_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.birch_planks"
+    },
     {
       "block": "chisel:birch_planks_braced",
       "model_type": "top_bottom_side",

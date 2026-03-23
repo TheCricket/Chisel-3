@@ -1,16 +1,20 @@
 {
-  "base": "chisel:snakestone_sand_0",
-  "prefix": "snakestone_sand",
+  "familyName": "snakestone_sand",
   "variants": [
     {
-      "block": "chisel:snakestone_sand_0",
+      "block": "minecraft:sandstone",
       "model_type": "cube_all",
-      "name": "snakestone_sand_0"
+      "name": "block.minecraft.sandstone"
     },
     {
-      "block": "chisel:snakestone_sand_1",
+      "block": "chisel:snakestone_sand_head",
       "model_type": "cube_all",
-      "name": "snakestone_sand_1"
+      "name": "snakestone_sand_head"
+    },
+    {
+      "block": "chisel:snakestone_sand_body",
+      "model_type": "cube_all",
+      "name": "snakestone_sand_body"
     }
   ]
 }

@@ -1,6 +1,5 @@
 {
-  "base": "chisel:uranium_caution",
-  "prefix": "uranium",
+  "familyName": "uranium",
   "variants": [
     {
       "block": "chisel:uranium_bad_greggy",

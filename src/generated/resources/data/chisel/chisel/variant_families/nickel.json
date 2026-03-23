@@ -1,6 +1,5 @@
 {
-  "base": "chisel:nickel_caution",
-  "prefix": "nickel",
+  "familyName": "nickel",
   "variants": [
     {
       "block": "chisel:nickel_bad_greggy",

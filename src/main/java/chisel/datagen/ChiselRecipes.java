@@ -1,10 +1,8 @@
 package chisel.datagen;
 
 import chisel.Chisel;
+import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
-import chisel.registry.blocks.ChiselMetalBlocks;
-import chisel.registry.blocks.ChiselOtherBlocks;
-import chisel.registry.blocks.ChiselStoneBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -31,20 +29,20 @@ public class ChiselRecipes extends RecipeProvider {
     @Override
     protected void buildRecipes() {
         // MARK: Blocks
-        stoneAround("has_glowstone", Tags.Items.DUSTS_GLOWSTONE, ChiselOtherBlocks.ANTIBLOCK_BLACK, 8);
-        stoneAround("has_redstone", Tags.Items.DUSTS_REDSTONE, ChiselMetalBlocks.FUTURA_SCREEN_GRAY, 8);
-        stoneAround("has_quartz", Tags.Items.GEMS_QUARTZ, ChiselMetalBlocks.LABORATORY_FLOOR, 8);
-        stoneAround("has_iron_ingot", Tags.Items.INGOTS_IRON, ChiselMetalBlocks.TYRIAN_SHINY, 32);
-        stoneAround("has_pink_dye", Tags.Items.DYES_PINK, ChiselOtherBlocks.VALENTINES_BLOCK, 4);
-        stoneAround("has_coal", ItemTags.COALS, ChiselStoneBlocks.GRIMSTONE_RAW, 8);
-        stoneAround("has_coal_block", Tags.Items.STORAGE_BLOCKS_COAL, ChiselMetalBlocks.HEX_PLATING_0, 8);
-        stoneAround("has_feather", Tags.Items.FEATHERS, ChiselStoneBlocks.HOLYSTONE_RAW, 8);
-        stoneAround("has_lava_bucket", Tags.Items.BUCKETS_LAVA, ChiselStoneBlocks.LAVASTONE_RAW, 8);
-        stoneAround("has_water_bucket", Tags.Items.BUCKETS_WATER, ChiselStoneBlocks.WATERSTONE_BRICKS, 8);
-        stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselStoneBlocks.TEMPLE_COBBLE, 8);
-        stoneAround("has_sign", ItemTags.SIGNS, ChiselMetalBlocks.WARNING_RADIATION, 4);
+        stoneAround("has_glowstone", Tags.Items.DUSTS_GLOWSTONE, ChiselBlocks.ANTIBLOCK.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_redstone", Tags.Items.DUSTS_REDSTONE, ChiselBlocks.FUTURA.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_quartz", Tags.Items.GEMS_QUARTZ, ChiselBlocks.LABORATORY.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_iron_ingot", Tags.Items.INGOTS_IRON, ChiselBlocks.TYRIAN.getFamily().getVariants().getFirst().getBlock(), 32);
+        stoneAround("has_pink_dye", Tags.Items.DYES_PINK, ChiselBlocks.VALENTINES.getFamily().getVariants().getFirst().getBlock(), 4);
+        stoneAround("has_coal", ItemTags.COALS, ChiselBlocks.GRIMSTONE.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_coal_block", Tags.Items.STORAGE_BLOCKS_COAL, ChiselBlocks.HEX_PLATING.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_feather", Tags.Items.FEATHERS, ChiselBlocks.HOLYSTONE.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_lava_bucket", Tags.Items.BUCKETS_LAVA, ChiselBlocks.LAVASTONE.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_water_bucket", Tags.Items.BUCKETS_WATER, ChiselBlocks.WATERSTONE.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselBlocks.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
+        stoneAround("has_sign", ItemTags.SIGNS, ChiselBlocks.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselMetalBlocks.FACTORY_DOTS.asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")
                 .pattern("SIS")
@@ -53,7 +51,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselOtherBlocks.PAPERWALL_BOXED.asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.PAPERWALL_BLOCK.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("PPP")
                 .pattern("PSP")
                 .pattern("PPP")
@@ -62,7 +60,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_paper", has(Items.PAPER))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselOtherBlocks.ROAD_LINES_WHITE.asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.ROAD_LINE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("WRW")
                 .pattern("WRW")
                 .pattern("WRW")
@@ -71,7 +69,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_white_dye", has(Tags.Items.DYES_WHITE))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselMetalBlocks.TECHNICAL_SCAFFOLD.asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.TECHNICAL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("SIS")
                 .pattern("ISI")
                 .pattern("SIS")
@@ -80,7 +78,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselStoneBlocks.VOIDSTONE_RAW.asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("OSO")
                 .pattern("SES")
                 .pattern("OSO")
@@ -90,7 +88,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_ender_pearl", has(Items.ENDER_PEARL))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselStoneBlocks.ENERGISED_VOIDSTONE_RAW.asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.ENERGIZED_VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("OSO")
                 .pattern("SES")
                 .pattern("OSO")

@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:red_stained_glass",
-  "prefix": "stained_glass_red",
+  "familyName": "stained_glass_red",
   "variants": [
+    {
+      "block": "minecraft:red_stained_glass",
+      "model_type": "cube_all",
+      "name": "block.minecraft.red_stained_glass"
+    },
     {
       "block": "chisel:stained_glass_red_borderless",
       "model_type": "cube_all",
@@ -18,9 +22,9 @@
       "name": "stained_glass_red_panel"
     },
     {
-      "block": "chisel:stained_glass_red_panel_fancy",
+      "block": "chisel:stained_glass_red_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_red_panel_fancy"
+      "name": "stained_glass_red_fancy"
     }
   ]
 }

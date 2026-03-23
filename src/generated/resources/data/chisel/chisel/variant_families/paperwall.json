@@ -1,6 +1,5 @@
 {
-  "base": "chisel:paperwall_boxed",
-  "prefix": "paperwall",
+  "familyName": "paperwall",
   "variants": [
     {
       "block": "chisel:paperwall_boxed",

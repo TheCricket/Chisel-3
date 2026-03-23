@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:black_stained_glass_pane",
-  "prefix": "stained_glass_pane_black",
+  "familyName": "stained_glass_pane_black",
   "variants": [
+    {
+      "block": "minecraft:black_stained_glass_pane",
+      "model_type": "cube_all",
+      "name": "block.minecraft.black_stained_glass_pane"
+    },
     {
       "block": "chisel:stained_glass_pane_black_borderless",
       "model_type": "glass_pane",
@@ -18,9 +22,9 @@
       "name": "stained_glass_pane_black_panel"
     },
     {
-      "block": "chisel:stained_glass_pane_black_panel_fancy",
+      "block": "chisel:stained_glass_pane_black_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_black_panel_fancy"
+      "name": "stained_glass_pane_black_fancy"
     }
   ]
 }

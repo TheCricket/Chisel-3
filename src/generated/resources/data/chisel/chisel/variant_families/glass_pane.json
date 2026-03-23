@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:glass_pane",
-  "prefix": "glass_pane",
+  "familyName": "glass_pane",
   "variants": [
+    {
+      "block": "minecraft:glass_pane",
+      "model_type": "cube_all",
+      "name": "block.minecraft.glass_pane"
+    },
     {
       "block": "chisel:glass_pane_borderless",
       "model_type": "glass_pane",
@@ -26,21 +30,6 @@
       "block": "chisel:glass_pane_japanese_tiles",
       "model_type": "glass_pane",
       "name": "glass_pane_japanese_tiles"
-    },
-    {
-      "block": "chisel:glass_pane_japanese_traditional",
-      "model_type": "glass_pane",
-      "name": "glass_pane_japanese_traditional"
-    },
-    {
-      "block": "chisel:glass_pane_screen",
-      "model_type": "glass_pane",
-      "name": "glass_pane_screen"
-    },
-    {
-      "block": "chisel:glass_pane_streak",
-      "model_type": "glass_pane",
-      "name": "glass_pane_streak"
     }
   ]
 }

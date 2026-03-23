@@ -1,8 +1,6 @@
 {
-  "parent": "chisel:block/cube_multi_pass",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "layer0": "chisel:block/lavastone/lavastone_layers",
-    "layer1": "minecraft:block/lava_still",
-    "particle": "chisel:block/lavastone/lavastone_layers"
+    "all": "chisel:block/lavastone/lavastone_layers"
   }
 }

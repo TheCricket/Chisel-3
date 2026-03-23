@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
-  "textures": {
-    "bottom": "chisel:block/diamond/diamond_simple-bottom",
-    "side": "chisel:block/diamond/diamond_simple-side",
-    "top": "chisel:block/diamond/diamond_simple-top"
-  }
-}

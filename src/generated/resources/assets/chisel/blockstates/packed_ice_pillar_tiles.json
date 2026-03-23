@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/packed_ice_pillar_tiles"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.datagen.VariantFamilies;
+import chisel.registry.ChiselVariants;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,9 +13,9 @@ public class AddAttributeTooltipsEventHandler {
 
     @SubscribeEvent
     public static void addTooltips(AddAttributeTooltipsEvent event) {
-        VariantFamilies.getAllFamilies().forEach(family -> family.getVariants().forEach(variant -> {
-            if(event.getStack().is(variant.getBlock().get().asItem())) {
-                event.addTooltipLines(Component.translatable(variant.getTranslationKey()).withStyle(ChatFormatting.GRAY));
+        ChiselVariants.getVariantFamilies().forEach(family -> family.getVariants().forEach(v -> {
+            if (event.getStack().is(v.getBlock().asItem())) {
+                event.addTooltipLines(Component.translatable(v.getTranslationKey()).withStyle(ChatFormatting.GRAY));
             }
         }));
     }

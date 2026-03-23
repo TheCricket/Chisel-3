@@ -1,26 +1,45 @@
 {
-  "base": "chisel:laboratory_panel_wall",
-  "prefix": "laboratory",
+  "familyName": "laboratory",
   "variants": [
     {
-      "block": "chisel:laboratory_checkerboard",
+      "block": "chisel:laboratory_boiler",
       "model_type": "cube_all",
-      "name": "laboratory_checkerboard"
+      "name": "laboratory_boiler"
     },
     {
-      "block": "chisel:laboratory_console_information",
-      "model_type": "top_bottom_side",
-      "name": "laboratory_console_information"
+      "block": "chisel:laboratory_bricks",
+      "model_type": "cube_all",
+      "name": "laboratory_bricks"
     },
     {
-      "block": "chisel:laboratory_console_left",
+      "block": "chisel:laboratory_bubble",
       "model_type": "cube_all",
-      "name": "laboratory_console_left"
+      "name": "laboratory_bubble"
     },
     {
-      "block": "chisel:laboratory_console_right",
+      "block": "chisel:laboratory_cell",
       "model_type": "cube_all",
-      "name": "laboratory_console_right"
+      "name": "laboratory_cell"
+    },
+    {
+      "block": "chisel:laboratory_circles",
+      "model_type": "cube_all",
+      "name": "laboratory_circles"
+    },
+    {
+      "block": "chisel:laboratory_conwall",
+      "model_type": "cube_all",
+      "name": "laboratory_conwall"
+    },
+    {
+      "block": "chisel:laboratory_dotted",
+      "model_type": "cube_all",
+      "name": "laboratory_dotted"
+    },
+    {
+      "block": "chisel:laboratory_faded",
+      "model_type": "cube_all",
+      "name": "laboratory_faded"
     },
     {
       "block": "chisel:laboratory_floor",
@@ -28,69 +47,49 @@
       "name": "laboratory_floor"
     },
     {
-      "block": "chisel:laboratory_panel_clear",
+      "block": "chisel:laboratory_infusion",
       "model_type": "cube_all",
-      "name": "laboratory_panel_clear"
+      "name": "laboratory_infusion"
     },
     {
-      "block": "chisel:laboratory_panel_dotted",
-      "model_type": "connected_vertically",
-      "name": "laboratory_panel_dotted"
-    },
-    {
-      "block": "chisel:laboratory_panel_fuzzy",
+      "block": "chisel:laboratory_metal",
       "model_type": "cube_all",
-      "name": "laboratory_panel_fuzzy"
+      "name": "laboratory_metal"
     },
     {
-      "block": "chisel:laboratory_panel_wall",
-      "model_type": "connected_vertically",
-      "name": "laboratory_panel_wall"
-    },
-    {
-      "block": "chisel:laboratory_tiles_enamelled_large",
+      "block": "chisel:laboratory_panel",
       "model_type": "cube_all",
-      "name": "laboratory_tiles_enamelled_large"
+      "name": "laboratory_panel"
     },
     {
-      "block": "chisel:laboratory_tiles_enamelled_small",
+      "block": "chisel:laboratory_panel_broken",
       "model_type": "cube_all",
-      "name": "laboratory_tiles_enamelled_small"
+      "name": "laboratory_panel_broken"
     },
     {
-      "block": "chisel:laboratory_tiles_steel_large",
-      "model_type": "top_bottom_side",
-      "name": "laboratory_tiles_steel_large"
-    },
-    {
-      "block": "chisel:laboratory_tiles_steel_small",
-      "model_type": "top_bottom_side",
-      "name": "laboratory_tiles_steel_small"
-    },
-    {
-      "block": "chisel:laboratory_tiles_small",
+      "block": "chisel:laboratory_panel_cracked",
       "model_type": "cube_all",
-      "name": "laboratory_tiles_small"
+      "name": "laboratory_panel_cracked"
     },
     {
-      "block": "chisel:laboratory_tiles_large",
+      "block": "chisel:laboratory_plating",
       "model_type": "cube_all",
-      "name": "laboratory_tiles_large"
+      "name": "laboratory_plating"
+    },
+    {
+      "block": "chisel:laboratory_shale",
+      "model_type": "cube_all",
+      "name": "laboratory_shale"
+    },
+    {
+      "block": "chisel:laboratory_tile",
+      "model_type": "cube_all",
+      "name": "laboratory_tile"
     },
     {
       "block": "chisel:laboratory_wall",
       "model_type": "cube_all",
       "name": "laboratory_wall"
-    },
-    {
-      "block": "chisel:laboratory_wall_rounded",
-      "model_type": "cube_all",
-      "name": "laboratory_wall_rounded"
-    },
-    {
-      "block": "chisel:laboratory_wall_vent",
-      "model_type": "connected_horizontally",
-      "name": "laboratory_wall_vent"
     }
   ]
 }

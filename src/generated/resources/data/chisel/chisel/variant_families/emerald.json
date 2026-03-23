@@ -1,41 +1,55 @@
 {
-  "base": "minecraft:emerald_block",
-  "prefix": "emerald",
+  "familyName": "emerald",
   "variants": [
     {
-      "block": "chisel:emerald_bismuth",
+      "block": "minecraft:emerald_block",
       "model_type": "cube_all",
-      "name": "emerald_bismuth"
+      "name": "block.minecraft.emerald_block"
     },
     {
-      "block": "chisel:emerald_blocks_small",
+      "block": "chisel:emerald_array",
       "model_type": "cube_all",
-      "name": "emerald_blocks_small"
+      "name": "emerald_array"
     },
     {
-      "block": "chisel:emerald_blocks_small_ornate",
+      "block": "chisel:emerald_braid",
       "model_type": "cube_all",
-      "name": "emerald_blocks_small_ornate"
+      "name": "emerald_braid"
     },
     {
-      "block": "chisel:emerald_cell",
+      "block": "chisel:emerald_chaotic",
       "model_type": "cube_all",
-      "name": "emerald_cell"
+      "name": "emerald_chaotic"
     },
     {
-      "block": "chisel:emerald_chunk",
+      "block": "chisel:emerald_circular",
       "model_type": "cube_all",
-      "name": "emerald_chunk"
+      "name": "emerald_circular"
     },
     {
-      "block": "chisel:emerald_circle",
+      "block": "chisel:emerald_cuts",
       "model_type": "cube_all",
-      "name": "emerald_circle"
+      "name": "emerald_cuts"
     },
     {
-      "block": "chisel:emerald_masonry",
+      "block": "chisel:emerald_dent",
       "model_type": "cube_all",
-      "name": "emerald_masonry"
+      "name": "emerald_dent"
+    },
+    {
+      "block": "chisel:emerald_french",
+      "model_type": "cube_all",
+      "name": "emerald_french"
+    },
+    {
+      "block": "chisel:emerald_french_2",
+      "model_type": "cube_all",
+      "name": "emerald_french_2"
+    },
+    {
+      "block": "chisel:emerald_layers",
+      "model_type": "cube_all",
+      "name": "emerald_layers"
     },
     {
       "block": "chisel:emerald_ornate",
@@ -43,34 +57,29 @@
       "name": "emerald_ornate"
     },
     {
-      "block": "chisel:emerald_ornate_layer",
-      "model_type": "cube_all",
-      "name": "emerald_ornate_layer"
-    },
-    {
       "block": "chisel:emerald_panel",
       "model_type": "cube_all",
       "name": "emerald_panel"
     },
     {
-      "block": "chisel:emerald_panel_classic",
+      "block": "chisel:emerald_road",
       "model_type": "cube_all",
-      "name": "emerald_panel_classic"
+      "name": "emerald_road"
     },
     {
-      "block": "chisel:emerald_prismatic",
+      "block": "chisel:emerald_tiles",
       "model_type": "cube_all",
-      "name": "emerald_prismatic"
+      "name": "emerald_tiles"
     },
     {
-      "block": "chisel:emerald_smooth",
+      "block": "chisel:emerald_weaver",
       "model_type": "cube_all",
-      "name": "emerald_smooth"
+      "name": "emerald_weaver"
     },
     {
-      "block": "chisel:emerald_zelda",
+      "block": "chisel:emerald_zag",
       "model_type": "cube_all",
-      "name": "emerald_zelda"
+      "name": "emerald_zag"
     }
   ]
 }

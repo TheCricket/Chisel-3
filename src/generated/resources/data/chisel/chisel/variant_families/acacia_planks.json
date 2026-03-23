@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:acacia_planks",
-  "prefix": "acacia_planks",
+  "familyName": "acacia_planks",
   "variants": [
+    {
+      "block": "minecraft:acacia_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.acacia_planks"
+    },
     {
       "block": "chisel:acacia_planks_braced",
       "model_type": "top_bottom_side",

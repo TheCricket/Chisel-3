@@ -1,8 +1,6 @@
 {
-  "parent": "chisel:block/cube_multi_pass",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "layer0": "chisel:block/hex_plating/hex_plating_0",
-    "layer1": "chisel:block/hex_plating/hex_plating_0-bg",
-    "particle": "chisel:block/hex_plating/hex_plating_0"
+    "all": "chisel:block/hex_plating/hex_plating_0"
   }
 }

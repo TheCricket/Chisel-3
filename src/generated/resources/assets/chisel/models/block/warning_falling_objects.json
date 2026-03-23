@@ -1,8 +1,0 @@
-{
-  "parent": "chisel:block/cube_multi_pass",
-  "textures": {
-    "layer0": "chisel:block/warning/warning_falling_objects",
-    "layer1": "chisel:block/warning/warning_falling_objects-bg",
-    "particle": "chisel:block/warning/warning_falling_objects"
-  }
-}

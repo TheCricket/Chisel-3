@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:yellow_stained_glass",
-  "prefix": "stained_glass_yellow",
+  "familyName": "stained_glass_yellow",
   "variants": [
+    {
+      "block": "minecraft:yellow_stained_glass",
+      "model_type": "cube_all",
+      "name": "block.minecraft.yellow_stained_glass"
+    },
     {
       "block": "chisel:stained_glass_yellow_borderless",
       "model_type": "cube_all",
@@ -18,9 +22,9 @@
       "name": "stained_glass_yellow_panel"
     },
     {
-      "block": "chisel:stained_glass_yellow_panel_fancy",
+      "block": "chisel:stained_glass_yellow_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_yellow_panel_fancy"
+      "name": "stained_glass_yellow_fancy"
     }
   ]
 }

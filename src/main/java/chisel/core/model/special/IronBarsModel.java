@@ -18,15 +18,15 @@ public class IronBarsModel extends VariantModel {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         blockModels.createBars(
-                variant.getBlock().get(),
-                ModelTemplates.BARS_POST_ENDS.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput),
-                ModelTemplates.BARS_POST.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput),
-                ModelTemplates.BARS_CAP.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput),
-                ModelTemplates.BARS_CAP_ALT.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput),
-                ModelTemplates.BARS_POST_SIDE.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput),
-                ModelTemplates.BARS_POST_SIDE_ALT.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput)
+                variant.getBlock(),
+                ModelTemplates.BARS_POST_ENDS.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput),
+                ModelTemplates.BARS_POST.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput),
+                ModelTemplates.BARS_CAP.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput),
+                ModelTemplates.BARS_CAP_ALT.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput),
+                ModelTemplates.BARS_POST_SIDE.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput),
+                ModelTemplates.BARS_POST_SIDE_ALT.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput)
         );
 
-        blockModels.registerSimpleItemModel(variant.getBlock().get(), ModelTemplates.FLAT_ITEM.create(ModelLocationUtils.getModelLocation(variant.getBlock().get().asItem()), TextureMapping.layer0(variant.getMaterial()), blockModels.modelOutput));
+        blockModels.registerSimpleItemModel(variant.getBlock(), ModelTemplates.FLAT_ITEM.create(ModelLocationUtils.getModelLocation(variant.getBlock().asItem()), TextureMapping.layer0(variant.getMaterial()), blockModels.modelOutput));
     }
 }

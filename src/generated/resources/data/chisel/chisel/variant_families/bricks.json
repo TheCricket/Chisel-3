@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:bricks",
-  "prefix": "bricks",
+  "familyName": "bricks",
   "variants": [
+    {
+      "block": "minecraft:bricks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.bricks"
+    },
     {
       "block": "chisel:bricks_array",
       "model_type": "cube_all",

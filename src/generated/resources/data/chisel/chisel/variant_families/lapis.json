@@ -1,21 +1,55 @@
 {
-  "base": "minecraft:lapis_block",
-  "prefix": "lapis",
+  "familyName": "lapis",
   "variants": [
     {
-      "block": "chisel:lapis_chunky",
+      "block": "minecraft:lapis_block",
       "model_type": "cube_all",
-      "name": "lapis_chunky"
+      "name": "block.minecraft.lapis_block"
     },
     {
-      "block": "chisel:lapis_dark",
+      "block": "chisel:lapis_array",
       "model_type": "cube_all",
-      "name": "lapis_dark"
+      "name": "lapis_array"
     },
     {
-      "block": "chisel:lapis_masonry",
+      "block": "chisel:lapis_braid",
       "model_type": "cube_all",
-      "name": "lapis_masonry"
+      "name": "lapis_braid"
+    },
+    {
+      "block": "chisel:lapis_chaotic",
+      "model_type": "cube_all",
+      "name": "lapis_chaotic"
+    },
+    {
+      "block": "chisel:lapis_circular",
+      "model_type": "cube_all",
+      "name": "lapis_circular"
+    },
+    {
+      "block": "chisel:lapis_cuts",
+      "model_type": "cube_all",
+      "name": "lapis_cuts"
+    },
+    {
+      "block": "chisel:lapis_dent",
+      "model_type": "cube_all",
+      "name": "lapis_dent"
+    },
+    {
+      "block": "chisel:lapis_french",
+      "model_type": "cube_all",
+      "name": "lapis_french"
+    },
+    {
+      "block": "chisel:lapis_french_2",
+      "model_type": "cube_all",
+      "name": "lapis_french_2"
+    },
+    {
+      "block": "chisel:lapis_layers",
+      "model_type": "cube_all",
+      "name": "lapis_layers"
     },
     {
       "block": "chisel:lapis_ornate",
@@ -23,29 +57,29 @@
       "name": "lapis_ornate"
     },
     {
-      "block": "chisel:lapis_ornate_layer",
-      "model_type": "cube_all",
-      "name": "lapis_ornate_layer"
-    },
-    {
       "block": "chisel:lapis_panel",
       "model_type": "cube_all",
       "name": "lapis_panel"
     },
     {
-      "block": "chisel:lapis_smooth",
+      "block": "chisel:lapis_road",
       "model_type": "cube_all",
-      "name": "lapis_smooth"
+      "name": "lapis_road"
     },
     {
-      "block": "chisel:lapis_tile",
+      "block": "chisel:lapis_tiles",
       "model_type": "cube_all",
-      "name": "lapis_tile"
+      "name": "lapis_tiles"
     },
     {
-      "block": "chisel:lapis_zelda",
+      "block": "chisel:lapis_weaver",
       "model_type": "cube_all",
-      "name": "lapis_zelda"
+      "name": "lapis_weaver"
+    },
+    {
+      "block": "chisel:lapis_zag",
+      "model_type": "cube_all",
+      "name": "lapis_zag"
     }
   ]
 }

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/obsidian/obsidian_pillar"
+    "bottom": "chisel:block/obsidian/obsidian_pillar-bottom",
+    "side": "chisel:block/obsidian/obsidian_pillar-side",
+    "top": "chisel:block/obsidian/obsidian_pillar-top"
   }
 }

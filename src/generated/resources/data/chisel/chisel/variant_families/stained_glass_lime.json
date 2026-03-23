@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:lime_stained_glass",
-  "prefix": "stained_glass_lime",
+  "familyName": "stained_glass_lime",
   "variants": [
+    {
+      "block": "minecraft:lime_stained_glass",
+      "model_type": "cube_all",
+      "name": "block.minecraft.lime_stained_glass"
+    },
     {
       "block": "chisel:stained_glass_lime_borderless",
       "model_type": "cube_all",
@@ -18,9 +22,9 @@
       "name": "stained_glass_lime_panel"
     },
     {
-      "block": "chisel:stained_glass_lime_panel_fancy",
+      "block": "chisel:stained_glass_lime_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_lime_panel_fancy"
+      "name": "stained_glass_lime_fancy"
     }
   ]
 }

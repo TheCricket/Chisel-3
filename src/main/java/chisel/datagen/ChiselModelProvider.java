@@ -3,6 +3,7 @@ package chisel.datagen;
 import chisel.Chisel;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
+import chisel.registry.ChiselVariants;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -22,9 +23,10 @@ public class ChiselModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
-        VariantFamilies.getAllFamilies().forEach(family -> family
-                .getVariants()
-                .forEach(variant -> variant.registerModel(blockModels)));
+        ChiselVariants.getVariantFamilies().forEach(family -> family.getVariants().forEach(variant -> {
+            if(variant.shouldGenerateModel())
+                variant.registerModel(blockModels);
+        }));
 
         itemModels.generateFlatItem(ChiselItems.CHISEL_IRON.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_DIAMOND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

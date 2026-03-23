@@ -2,6 +2,7 @@ package chisel.datagen;
 
 import chisel.Chisel;
 import chisel.core.VariantFamily;
+import chisel.registry.ChiselBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -21,16 +22,16 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NonNull Provider provider) {
-        addToWood(VariantFamilies.ACACIA);
-        addToWood(VariantFamilies.BIRCH);
-        addToWood(VariantFamilies.DARK_OAK);
-        addToWood(VariantFamilies.JUNGLE);
-        addToWood(VariantFamilies.OAK);
-        addToWood(VariantFamilies.SPRUCE);
-        addToWood(VariantFamilies.BOOKSHELF);
+        addToWood(ChiselBlocks.ACACIA.getFamily());
+        addToWood(ChiselBlocks.BIRCH.getFamily());
+        addToWood(ChiselBlocks.DARK_OAK.getFamily());
+        addToWood(ChiselBlocks.JUNGLE.getFamily());
+        addToWood(ChiselBlocks.OAK.getFamily());
+        addToWood(ChiselBlocks.SPRUCE.getFamily());
+        addToWood(ChiselBlocks.BOOKSHELF.getFamily());
     }
 
     private void addToWood(VariantFamily family) {
-        family.getVariants().forEach(variant -> tag(WOOD).add(variant.getBlock().get()));
+        family.getVariants().forEach(variant -> tag(WOOD).add(variant.getBlock()));
     }
 }

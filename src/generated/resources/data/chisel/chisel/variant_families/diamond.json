@@ -1,36 +1,55 @@
 {
-  "base": "minecraft:diamond_block",
-  "prefix": "diamond",
+  "familyName": "diamond",
   "variants": [
     {
-      "block": "chisel:diamond_bismuth",
+      "block": "minecraft:diamond_block",
       "model_type": "cube_all",
-      "name": "diamond_bismuth"
+      "name": "block.minecraft.diamond_block"
     },
     {
-      "block": "chisel:diamond_cells",
+      "block": "chisel:diamond_array",
       "model_type": "cube_all",
-      "name": "diamond_cells"
+      "name": "diamond_array"
     },
     {
-      "block": "chisel:diamond_crushed",
+      "block": "chisel:diamond_braid",
       "model_type": "cube_all",
-      "name": "diamond_crushed"
+      "name": "diamond_braid"
     },
     {
-      "block": "chisel:diamond_embossed",
-      "model_type": "top_bottom_side",
-      "name": "diamond_embossed"
+      "block": "chisel:diamond_chaotic",
+      "model_type": "cube_all",
+      "name": "diamond_chaotic"
     },
     {
-      "block": "chisel:diamond_obsidian",
+      "block": "chisel:diamond_circular",
       "model_type": "cube_all",
-      "name": "diamond_obsidian"
+      "name": "diamond_circular"
     },
     {
-      "block": "chisel:diamond_obsidian_purple",
+      "block": "chisel:diamond_cuts",
       "model_type": "cube_all",
-      "name": "diamond_obsidian_purple"
+      "name": "diamond_cuts"
+    },
+    {
+      "block": "chisel:diamond_dent",
+      "model_type": "cube_all",
+      "name": "diamond_dent"
+    },
+    {
+      "block": "chisel:diamond_french",
+      "model_type": "cube_all",
+      "name": "diamond_french"
+    },
+    {
+      "block": "chisel:diamond_french_2",
+      "model_type": "cube_all",
+      "name": "diamond_french_2"
+    },
+    {
+      "block": "chisel:diamond_layers",
+      "model_type": "cube_all",
+      "name": "diamond_layers"
     },
     {
       "block": "chisel:diamond_ornate",
@@ -39,28 +58,28 @@
     },
     {
       "block": "chisel:diamond_panel",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "diamond_panel"
     },
     {
-      "block": "chisel:diamond_simple",
-      "model_type": "top_bottom_side",
-      "name": "diamond_simple"
+      "block": "chisel:diamond_road",
+      "model_type": "cube_all",
+      "name": "diamond_road"
     },
     {
-      "block": "chisel:diamond_small_blocks",
+      "block": "chisel:diamond_tiles",
       "model_type": "cube_all",
-      "name": "diamond_small_blocks"
+      "name": "diamond_tiles"
     },
     {
-      "block": "chisel:diamond_small_blocks_ornate",
+      "block": "chisel:diamond_weaver",
       "model_type": "cube_all",
-      "name": "diamond_small_blocks_ornate"
+      "name": "diamond_weaver"
     },
     {
-      "block": "chisel:diamond_zelda",
+      "block": "chisel:diamond_zag",
       "model_type": "cube_all",
-      "name": "diamond_zelda"
+      "name": "diamond_zag"
     }
   ]
 }

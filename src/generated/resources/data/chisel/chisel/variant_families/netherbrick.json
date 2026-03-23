@@ -1,81 +1,50 @@
 {
-  "base": "minecraft:nether_bricks",
-  "prefix": "netherbrick",
+  "familyName": "netherbrick",
   "variants": [
     {
-      "block": "chisel:nether_brick_blue",
+      "block": "minecraft:nether_bricks",
       "model_type": "cube_all",
-      "name": "nether_brick_blue"
+      "name": "block.minecraft.nether_bricks"
     },
     {
-      "block": "chisel:nether_brick_blue_lava",
+      "block": "chisel:netherbrick_braid",
       "model_type": "cube_all",
-      "name": "nether_brick_blue_lava"
+      "name": "netherbrick_braid"
     },
     {
-      "block": "chisel:nether_brick_brown",
+      "block": "chisel:netherbrick_chaotic",
       "model_type": "cube_all",
-      "name": "nether_brick_brown"
+      "name": "netherbrick_chaotic"
     },
     {
-      "block": "chisel:nether_brick_guts",
+      "block": "chisel:netherbrick_cracked",
       "model_type": "cube_all",
-      "name": "nether_brick_guts"
+      "name": "netherbrick_cracked"
     },
     {
-      "block": "chisel:nether_brick_guts_dark",
+      "block": "chisel:netherbrick_cuts",
       "model_type": "cube_all",
-      "name": "nether_brick_guts_dark"
+      "name": "netherbrick_cuts"
     },
     {
-      "block": "chisel:nether_brick_guts_small",
+      "block": "chisel:netherbrick_dent",
       "model_type": "cube_all",
-      "name": "nether_brick_guts_small"
+      "name": "netherbrick_dent"
     },
     {
-      "block": "chisel:nether_brick_meat",
+      "block": "chisel:netherbrick_french",
       "model_type": "cube_all",
-      "name": "nether_brick_meat"
+      "name": "netherbrick_french"
     },
     {
-      "block": "chisel:nether_brick_meat_red",
+      "block": "chisel:netherbrick_french_2",
       "model_type": "cube_all",
-      "name": "nether_brick_meat_red"
+      "name": "netherbrick_french_2"
     },
     {
-      "block": "chisel:nether_brick_meat_small",
+      "block": "chisel:netherbrick_layers",
       "model_type": "cube_all",
-      "name": "nether_brick_meat_small"
-    },
-    {
-      "block": "chisel:nether_brick_meat_small_red",
-      "model_type": "cube_all",
-      "name": "nether_brick_meat_small_red"
-    },
-    {
-      "block": "chisel:nether_brick_obsidian",
-      "model_type": "cube_all",
-      "name": "nether_brick_obsidian"
-    },
-    {
-      "block": "chisel:nether_brick_red",
-      "model_type": "cube_all",
-      "name": "nether_brick_red"
-    },
-    {
-      "block": "chisel:nether_brick_red_small",
-      "model_type": "cube_all",
-      "name": "nether_brick_red_small"
-    },
-    {
-      "block": "chisel:nether_brick_spattered",
-      "model_type": "cube_all",
-      "name": "nether_brick_spattered"
-    },
-    {
-      "block": "chisel:nether_brick_stone",
-      "model_type": "cube_all",
-      "name": "nether_brick_stone"
+      "name": "netherbrick_layers"
     }
   ]
 }

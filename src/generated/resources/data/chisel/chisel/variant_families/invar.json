@@ -1,6 +1,5 @@
 {
-  "base": "chisel:invar_caution",
-  "prefix": "invar",
+  "familyName": "invar",
   "variants": [
     {
       "block": "chisel:invar_bad_greggy",

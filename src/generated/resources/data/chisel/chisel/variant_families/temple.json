@@ -1,7 +1,11 @@
 {
-  "base": "chisel:temple_cobble",
-  "prefix": "temple",
+  "familyName": "temple",
   "variants": [
+    {
+      "block": "chisel:temple_cobble",
+      "model_type": "cube_all",
+      "name": "temple_cobble"
+    },
     {
       "block": "chisel:temple_bricks",
       "model_type": "cube_all",
@@ -21,11 +25,6 @@
       "block": "chisel:temple_bricks_worn",
       "model_type": "cube_all",
       "name": "temple_bricks_worn"
-    },
-    {
-      "block": "chisel:temple_cobble",
-      "model_type": "cube_all",
-      "name": "temple_cobble"
     },
     {
       "block": "chisel:temple_column",

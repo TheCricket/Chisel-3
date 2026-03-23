@@ -1,86 +1,80 @@
 {
-  "base": "chisel:runic_voidstone_0",
-  "prefix": "runic_voidstone",
+  "familyName": "runic_voidstone",
   "variants": [
     {
-      "block": "chisel:runic_voidstone_0",
+      "block": "chisel:runic_voidstone_raw",
       "model_type": "cube_all",
-      "name": "runic_voidstone_0"
+      "name": "runic_voidstone_raw"
     },
     {
-      "block": "chisel:runic_voidstone_1",
+      "block": "chisel:runic_voidstone_bricks",
       "model_type": "cube_all",
-      "name": "runic_voidstone_1"
+      "name": "runic_voidstone_bricks"
     },
     {
-      "block": "chisel:runic_voidstone_10",
+      "block": "chisel:runic_voidstone_bricks_disordered",
       "model_type": "cube_all",
-      "name": "runic_voidstone_10"
+      "name": "runic_voidstone_bricks_disordered"
     },
     {
-      "block": "chisel:runic_voidstone_11",
+      "block": "chisel:runic_voidstone_chiseled",
       "model_type": "cube_all",
-      "name": "runic_voidstone_11"
+      "name": "runic_voidstone_chiseled"
     },
     {
-      "block": "chisel:runic_voidstone_12",
+      "block": "chisel:runic_voidstone_construction",
       "model_type": "cube_all",
-      "name": "runic_voidstone_12"
+      "name": "runic_voidstone_construction"
     },
     {
-      "block": "chisel:runic_voidstone_13",
+      "block": "chisel:runic_voidstone_dent",
       "model_type": "cube_all",
-      "name": "runic_voidstone_13"
+      "name": "runic_voidstone_dent"
     },
     {
-      "block": "chisel:runic_voidstone_14",
+      "block": "chisel:runic_voidstone_layers",
       "model_type": "cube_all",
-      "name": "runic_voidstone_14"
+      "name": "runic_voidstone_layers"
     },
     {
-      "block": "chisel:runic_voidstone_15",
+      "block": "chisel:runic_voidstone_ornate",
       "model_type": "cube_all",
-      "name": "runic_voidstone_15"
+      "name": "runic_voidstone_ornate"
     },
     {
-      "block": "chisel:runic_voidstone_2",
+      "block": "chisel:runic_voidstone_panel",
       "model_type": "cube_all",
-      "name": "runic_voidstone_2"
+      "name": "runic_voidstone_panel"
     },
     {
-      "block": "chisel:runic_voidstone_3",
+      "block": "chisel:runic_voidstone_plate",
       "model_type": "cube_all",
-      "name": "runic_voidstone_3"
+      "name": "runic_voidstone_plate"
     },
     {
-      "block": "chisel:runic_voidstone_4",
+      "block": "chisel:runic_voidstone_plate_smooth",
       "model_type": "cube_all",
-      "name": "runic_voidstone_4"
+      "name": "runic_voidstone_plate_smooth"
     },
     {
-      "block": "chisel:runic_voidstone_5",
+      "block": "chisel:runic_voidstone_shale",
       "model_type": "cube_all",
-      "name": "runic_voidstone_5"
+      "name": "runic_voidstone_shale"
     },
     {
-      "block": "chisel:runic_voidstone_6",
+      "block": "chisel:runic_voidstone_smooth",
       "model_type": "cube_all",
-      "name": "runic_voidstone_6"
+      "name": "runic_voidstone_smooth"
     },
     {
-      "block": "chisel:runic_voidstone_7",
+      "block": "chisel:runic_voidstone_symbol",
       "model_type": "cube_all",
-      "name": "runic_voidstone_7"
+      "name": "runic_voidstone_symbol"
     },
     {
-      "block": "chisel:runic_voidstone_8",
+      "block": "chisel:runic_voidstone_tiles",
       "model_type": "cube_all",
-      "name": "runic_voidstone_8"
-    },
-    {
-      "block": "chisel:runic_voidstone_9",
-      "model_type": "cube_all",
-      "name": "runic_voidstone_9"
+      "name": "runic_voidstone_tiles"
     }
   ]
 }

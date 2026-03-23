@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:light_gray_stained_glass_pane",
-  "prefix": "stained_glass_pane_light_gray",
+  "familyName": "stained_glass_pane_light_gray",
   "variants": [
+    {
+      "block": "minecraft:light_gray_stained_glass_pane",
+      "model_type": "cube_all",
+      "name": "block.minecraft.light_gray_stained_glass_pane"
+    },
     {
       "block": "chisel:stained_glass_pane_light_gray_borderless",
       "model_type": "glass_pane",
@@ -18,9 +22,9 @@
       "name": "stained_glass_pane_light_gray_panel"
     },
     {
-      "block": "chisel:stained_glass_pane_light_gray_panel_fancy",
+      "block": "chisel:stained_glass_pane_light_gray_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_gray_panel_fancy"
+      "name": "stained_glass_pane_light_gray_fancy"
     }
   ]
 }

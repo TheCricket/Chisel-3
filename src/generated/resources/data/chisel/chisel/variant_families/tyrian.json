@@ -1,26 +1,30 @@
 {
-  "base": "chisel:tyrian_normal",
-  "prefix": "tyrian",
+  "familyName": "tyrian",
   "variants": [
     {
-      "block": "chisel:tyrian_black",
+      "block": "chisel:tyrian_raw",
       "model_type": "cube_all",
-      "name": "tyrian_black"
+      "name": "tyrian_raw"
     },
     {
-      "block": "chisel:tyrian_black_tiles",
+      "block": "chisel:tyrian_bricks",
       "model_type": "cube_all",
-      "name": "tyrian_black_tiles"
+      "name": "tyrian_bricks"
     },
     {
-      "block": "chisel:tyrian_bleak",
+      "block": "chisel:tyrian_bricks_disordered",
       "model_type": "cube_all",
-      "name": "tyrian_bleak"
+      "name": "tyrian_bricks_disordered"
     },
     {
-      "block": "chisel:tyrian_blue",
+      "block": "chisel:tyrian_chiseled",
       "model_type": "cube_all",
-      "name": "tyrian_blue"
+      "name": "tyrian_chiseled"
+    },
+    {
+      "block": "chisel:tyrian_construction",
+      "model_type": "cube_all",
+      "name": "tyrian_construction"
     },
     {
       "block": "chisel:tyrian_dent",
@@ -28,54 +32,44 @@
       "name": "tyrian_dent"
     },
     {
-      "block": "chisel:tyrian_diagonal",
+      "block": "chisel:tyrian_layers",
       "model_type": "cube_all",
-      "name": "tyrian_diagonal"
+      "name": "tyrian_layers"
     },
     {
-      "block": "chisel:tyrian_elaborate",
+      "block": "chisel:tyrian_ornate",
       "model_type": "cube_all",
-      "name": "tyrian_elaborate"
+      "name": "tyrian_ornate"
     },
     {
-      "block": "chisel:tyrian_normal",
+      "block": "chisel:tyrian_panel",
       "model_type": "cube_all",
-      "name": "tyrian_normal"
+      "name": "tyrian_panel"
     },
     {
-      "block": "chisel:tyrian_opening",
+      "block": "chisel:tyrian_plate",
       "model_type": "cube_all",
-      "name": "tyrian_opening"
+      "name": "tyrian_plate"
     },
     {
-      "block": "chisel:tyrian_platform",
+      "block": "chisel:tyrian_plate_smooth",
       "model_type": "cube_all",
-      "name": "tyrian_platform"
+      "name": "tyrian_plate_smooth"
     },
     {
-      "block": "chisel:tyrian_purple",
+      "block": "chisel:tyrian_shale",
       "model_type": "cube_all",
-      "name": "tyrian_purple"
+      "name": "tyrian_shale"
     },
     {
-      "block": "chisel:tyrian_purple_faded",
+      "block": "chisel:tyrian_smooth",
       "model_type": "cube_all",
-      "name": "tyrian_purple_faded"
+      "name": "tyrian_smooth"
     },
     {
-      "block": "chisel:tyrian_rusted",
+      "block": "chisel:tyrian_symbol",
       "model_type": "cube_all",
-      "name": "tyrian_rusted"
-    },
-    {
-      "block": "chisel:tyrian_seams",
-      "model_type": "cube_all",
-      "name": "tyrian_seams"
-    },
-    {
-      "block": "chisel:tyrian_shiny",
-      "model_type": "cube_all",
-      "name": "tyrian_shiny"
+      "name": "tyrian_symbol"
     },
     {
       "block": "chisel:tyrian_tiles",

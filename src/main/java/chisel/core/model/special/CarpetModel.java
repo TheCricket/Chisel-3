@@ -20,7 +20,7 @@ public class CarpetModel extends VariantModel {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        MultiVariant model = plainVariant(ModelTemplates.CARPET.create(variant.getBlock().get(), getTextureMapping(), blockModels.modelOutput));
-        blockModels.blockStateOutput.accept(createSimpleBlock(variant.getBlock().get(), model));
+        MultiVariant model = plainVariant(ModelTemplates.CARPET.create(variant.getBlock(), getTextureMapping(), blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(variant.getBlock(), model));
     }
 }

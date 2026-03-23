@@ -114,7 +114,7 @@ public class ChiselSelectionInventory implements Container {
         if(family != null) {
             Chisel.LOGGER.info("Updating inventory with family variants");
             family.getVariants().forEach(variant -> {
-                ItemStack stack = new ItemStack(variant.getBlock().get());
+                ItemStack stack = new ItemStack(variant.getBlock());
                 stack.setCount(stackSize);
                 setItem(activeVariants, stack);
                 activeVariants++;
@@ -131,13 +131,5 @@ public class ChiselSelectionInventory implements Container {
 
     public void setStackSize(int stackSize) {
         this.stackSize = stackSize;
-    }
-
-    public ItemStack getStackInSpecialSlot() {
-        return getItem(size);
-    }
-
-    public void setStackInSpecialSlot(ItemStack stack) {
-        setItem(size, stack);
     }
 }

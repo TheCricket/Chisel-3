@@ -1,81 +1,50 @@
 {
-  "base": "minecraft:dirt",
-  "prefix": "dirt",
+  "familyName": "dirt",
   "variants": [
     {
-      "block": "chisel:dirt_bricks",
+      "block": "minecraft:dirt",
       "model_type": "cube_all",
-      "name": "dirt_bricks"
+      "name": "block.minecraft.dirt"
     },
     {
-      "block": "chisel:dirt_bricks_arranged",
+      "block": "chisel:dirt_braid",
       "model_type": "cube_all",
-      "name": "dirt_bricks_arranged"
+      "name": "dirt_braid"
     },
     {
-      "block": "chisel:dirt_bricks_disarray",
+      "block": "chisel:dirt_chaotic",
       "model_type": "cube_all",
-      "name": "dirt_bricks_disarray"
+      "name": "dirt_chaotic"
     },
     {
-      "block": "chisel:dirt_bricks_large",
+      "block": "chisel:dirt_circular",
       "model_type": "cube_all",
-      "name": "dirt_bricks_large"
+      "name": "dirt_circular"
     },
     {
-      "block": "chisel:dirt_chunky",
+      "block": "chisel:dirt_cuts",
       "model_type": "cube_all",
-      "name": "dirt_chunky"
+      "name": "dirt_cuts"
     },
     {
-      "block": "chisel:dirt_cobble",
+      "block": "chisel:dirt_dent",
       "model_type": "cube_all",
-      "name": "dirt_cobble"
+      "name": "dirt_dent"
     },
     {
-      "block": "chisel:dirt_happy",
+      "block": "chisel:dirt_french",
       "model_type": "cube_all",
-      "name": "dirt_happy"
+      "name": "dirt_french"
     },
     {
-      "block": "chisel:dirt_horizontal",
+      "block": "chisel:dirt_french_2",
       "model_type": "cube_all",
-      "name": "dirt_horizontal"
+      "name": "dirt_french_2"
     },
     {
       "block": "chisel:dirt_layers",
       "model_type": "cube_all",
       "name": "dirt_layers"
-    },
-    {
-      "block": "chisel:dirt_netherbricks",
-      "model_type": "cube_all",
-      "name": "dirt_netherbricks"
-    },
-    {
-      "block": "chisel:dirt_plate",
-      "model_type": "cube_all",
-      "name": "dirt_plate"
-    },
-    {
-      "block": "chisel:dirt_reinforced",
-      "model_type": "cube_all",
-      "name": "dirt_reinforced"
-    },
-    {
-      "block": "chisel:dirt_reinforced_cobble",
-      "model_type": "cube_all",
-      "name": "dirt_reinforced_cobble"
-    },
-    {
-      "block": "chisel:dirt_vert",
-      "model_type": "cube_all",
-      "name": "dirt_vert"
-    },
-    {
-      "block": "chisel:dirt_vertical",
-      "model_type": "cube_all",
-      "name": "dirt_vertical"
     }
   ]
 }

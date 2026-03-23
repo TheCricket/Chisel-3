@@ -1,26 +1,55 @@
 {
-  "base": "chisel:road_lines_white",
-  "prefix": "road_line",
+  "familyName": "road_line",
   "variants": [
     {
-      "block": "chisel:road_lines_white",
+      "block": "chisel:road_line_0",
       "model_type": "cube_all",
-      "name": "road_lines_white"
+      "name": "road_line_0"
     },
     {
-      "block": "chisel:road_lines_white_double",
+      "block": "chisel:road_line_1",
       "model_type": "cube_all",
-      "name": "road_lines_white_double"
+      "name": "road_line_1"
     },
     {
-      "block": "chisel:road_lines_yellow",
+      "block": "chisel:road_line_2",
       "model_type": "cube_all",
-      "name": "road_lines_yellow"
+      "name": "road_line_2"
     },
     {
-      "block": "chisel:road_lines_yellow_double",
+      "block": "chisel:road_line_3",
       "model_type": "cube_all",
-      "name": "road_lines_yellow_double"
+      "name": "road_line_3"
+    },
+    {
+      "block": "chisel:road_line_4",
+      "model_type": "cube_all",
+      "name": "road_line_4"
+    },
+    {
+      "block": "chisel:road_line_5",
+      "model_type": "cube_all",
+      "name": "road_line_5"
+    },
+    {
+      "block": "chisel:road_line_6",
+      "model_type": "cube_all",
+      "name": "road_line_6"
+    },
+    {
+      "block": "chisel:road_line_7",
+      "model_type": "cube_all",
+      "name": "road_line_7"
+    },
+    {
+      "block": "chisel:road_line_8",
+      "model_type": "cube_all",
+      "name": "road_line_8"
+    },
+    {
+      "block": "chisel:road_line_9",
+      "model_type": "cube_all",
+      "name": "road_line_9"
     }
   ]
 }

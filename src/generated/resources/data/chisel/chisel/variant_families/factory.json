@@ -1,6 +1,5 @@
 {
-  "base": "chisel:factory_circuit",
-  "prefix": "factory",
+  "familyName": "factory",
   "variants": [
     {
       "block": "chisel:factory_circuit",
@@ -9,8 +8,13 @@
     },
     {
       "block": "chisel:factory_column",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "factory_column"
+    },
+    {
+      "block": "chisel:factory_column_rusty",
+      "model_type": "cube_all",
+      "name": "factory_column_rusty"
     },
     {
       "block": "chisel:factory_dots",
@@ -18,24 +22,14 @@
       "name": "factory_dots"
     },
     {
-      "block": "chisel:factory_frame_blue",
+      "block": "chisel:factory_floor",
       "model_type": "cube_all",
-      "name": "factory_frame_blue"
+      "name": "factory_floor"
     },
     {
-      "block": "chisel:factory_gold_plate",
+      "block": "chisel:factory_grate",
       "model_type": "cube_all",
-      "name": "factory_gold_plate"
-    },
-    {
-      "block": "chisel:factory_gold_plating",
-      "model_type": "cube_all",
-      "name": "factory_gold_plating"
-    },
-    {
-      "block": "chisel:factory_grinder",
-      "model_type": "cube_all",
-      "name": "factory_grinder"
+      "name": "factory_grate"
     },
     {
       "block": "chisel:factory_hazard",
@@ -48,19 +42,39 @@
       "name": "factory_hazard_orange"
     },
     {
-      "block": "chisel:factory_ice",
+      "block": "chisel:factory_hazard_yellow",
       "model_type": "cube_all",
-      "name": "factory_ice"
+      "name": "factory_hazard_yellow"
     },
     {
-      "block": "chisel:factory_metal_box",
-      "model_type": "top_bottom_side",
-      "name": "factory_metal_box"
+      "block": "chisel:factory_insulation",
+      "model_type": "cube_all",
+      "name": "factory_insulation"
     },
     {
-      "block": "chisel:factory_platex",
+      "block": "chisel:factory_metal",
       "model_type": "cube_all",
-      "name": "factory_platex"
+      "name": "factory_metal"
+    },
+    {
+      "block": "chisel:factory_metal_plate",
+      "model_type": "cube_all",
+      "name": "factory_metal_plate"
+    },
+    {
+      "block": "chisel:factory_pipe",
+      "model_type": "cube_all",
+      "name": "factory_pipe"
+    },
+    {
+      "block": "chisel:factory_plate",
+      "model_type": "cube_all",
+      "name": "factory_plate"
+    },
+    {
+      "block": "chisel:factory_plate_rusty",
+      "model_type": "cube_all",
+      "name": "factory_plate_rusty"
     },
     {
       "block": "chisel:factory_plating",
@@ -73,39 +87,29 @@
       "name": "factory_rust"
     },
     {
-      "block": "chisel:factory_rust2",
+      "block": "chisel:factory_tile",
       "model_type": "cube_all",
-      "name": "factory_rust2"
-    },
-    {
-      "block": "chisel:factory_rust_plates",
-      "model_type": "cube_all",
-      "name": "factory_rust_plates"
-    },
-    {
-      "block": "chisel:factory_tile_mosaic",
-      "model_type": "cube_all",
-      "name": "factory_tile_mosaic"
+      "name": "factory_tile"
     },
     {
       "block": "chisel:factory_vent",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "factory_vent"
     },
     {
-      "block": "chisel:factory_wireframe",
+      "block": "chisel:factory_wall",
       "model_type": "cube_all",
-      "name": "factory_wireframe"
+      "name": "factory_wall"
     },
     {
-      "block": "chisel:factory_wireframe_blue",
+      "block": "chisel:factory_wall_rusty",
       "model_type": "cube_all",
-      "name": "factory_wireframe_blue"
+      "name": "factory_wall_rusty"
     },
     {
-      "block": "chisel:factory_wireframe_white",
+      "block": "chisel:factory_wire",
       "model_type": "cube_all",
-      "name": "factory_wireframe_white"
+      "name": "factory_wire"
     }
   ]
 }

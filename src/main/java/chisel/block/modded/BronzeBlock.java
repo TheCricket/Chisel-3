@@ -1,0 +1,34 @@
+package chisel.block.modded;
+
+import chisel.block.ChiselBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import chisel.core.VariantModelType;
+import chisel.util.LangHelper;
+
+public class BronzeBlock extends ChiselBlock {
+    public BronzeBlock(BlockBehaviour.Properties props) {
+        
+
+        family = builder("bronze")
+                .addVariant("bronze_bad_greggy", props)
+                .addVariant("bronze_bolted", props)
+                .addVariant("bronze_caution", props)
+                .addVariant("bronze_crate", props)
+                .addVariant("bronze_machine", props)
+                .addVariant("bronze_scaffold", props)
+                .addVariant("bronze_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .getFamily();
+    }
+
+    @Override
+    public void addTranslations(LangHelper lang) {
+        lang.addBlock(getVariant("bronze_bad_greggy"), "Bronze", "Bad Greggy");
+        lang.addBlock(getVariant("bronze_bolted"), "Bronze", "Bolted");
+        lang.addBlock(getVariant("bronze_caution"), "Bronze", "Caution");
+        lang.addBlock(getVariant("bronze_crate"), "Bronze", "Crate");
+        lang.addBlock(getVariant("bronze_machine"), "Bronze", "Machine");
+        lang.addBlock(getVariant("bronze_scaffold"), "Bronze", "Scaffold");
+        lang.addBlock(getVariant("bronze_thermal"), "Bronze", "Thermal");
+    }
+}
+

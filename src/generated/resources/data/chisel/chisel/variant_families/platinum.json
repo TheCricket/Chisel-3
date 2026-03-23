@@ -1,6 +1,5 @@
 {
-  "base": "chisel:platinum_caution",
-  "prefix": "platinum",
+  "familyName": "platinum",
   "variants": [
     {
       "block": "chisel:platinum_bad_greggy",

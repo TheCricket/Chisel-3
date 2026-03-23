@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:bookshelf",
-  "prefix": "bookshelf",
+  "familyName": "bookshelf",
   "variants": [
+    {
+      "block": "minecraft:bookshelf",
+      "model_type": "cube_all",
+      "name": "block.minecraft.bookshelf"
+    },
     {
       "block": "chisel:bookshelf_abandoned",
       "model_type": "bookshelf",
@@ -23,7 +27,7 @@
       "name": "bookshelf_historian"
     },
     {
-      "block": "chisel:bookshelf_hoarders",
+      "block": "chisel:bookshelf_hoarder",
       "model_type": "bookshelf",
       "name": "bookshelf_hoarder"
     },

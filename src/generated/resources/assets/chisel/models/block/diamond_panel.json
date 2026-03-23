@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "chisel:block/diamond/diamond_panel-bottom",
-    "side": "chisel:block/diamond/diamond_panel-side",
-    "top": "chisel:block/diamond/diamond_panel-top"
+    "all": "chisel:block/diamond/diamond_panel"
   }
 }

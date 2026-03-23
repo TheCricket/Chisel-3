@@ -1,36 +1,10 @@
 {
-  "base": "chisel:technical_scaffold",
-  "prefix": "technical",
+  "familyName": "technical",
   "variants": [
     {
-      "block": "chisel:technical_125",
+      "block": "chisel:technical_fan",
       "model_type": "cube_all",
-      "name": "technical_125"
-    },
-    {
-      "block": "chisel:technical_cables",
-      "model_type": "cube_all",
-      "name": "technical_cables"
-    },
-    {
-      "block": "chisel:technical_fan_fast",
-      "model_type": "cube_all",
-      "name": "technical_fan_fast"
-    },
-    {
-      "block": "chisel:technical_fan_malfunctioning",
-      "model_type": "cube_all",
-      "name": "technical_fan_malfunctioning"
-    },
-    {
-      "block": "chisel:technical_fan_off",
-      "model_type": "cube_all",
-      "name": "technical_fan_off"
-    },
-    {
-      "block": "chisel:technical_gears",
-      "model_type": "cube_all",
-      "name": "technical_gears"
+      "name": "technical_fan"
     },
     {
       "block": "chisel:technical_grate",
@@ -38,9 +12,9 @@
       "name": "technical_grate"
     },
     {
-      "block": "chisel:technical_grate_rusty",
+      "block": "chisel:technical_hazard",
       "model_type": "cube_all",
-      "name": "technical_grate_rusty"
+      "name": "technical_hazard"
     },
     {
       "block": "chisel:technical_insulation",
@@ -48,14 +22,29 @@
       "name": "technical_insulation"
     },
     {
-      "block": "chisel:technical_panel_caution",
+      "block": "chisel:technical_panel",
       "model_type": "cube_all",
-      "name": "technical_panel_caution"
+      "name": "technical_panel"
     },
     {
-      "block": "chisel:technical_panel_rusty",
+      "block": "chisel:technical_pipe",
       "model_type": "cube_all",
-      "name": "technical_panel_rusty"
+      "name": "technical_pipe"
+    },
+    {
+      "block": "chisel:technical_plate",
+      "model_type": "cube_all",
+      "name": "technical_plate"
+    },
+    {
+      "block": "chisel:technical_plating",
+      "model_type": "cube_all",
+      "name": "technical_plating"
+    },
+    {
+      "block": "chisel:technical_rust",
+      "model_type": "cube_all",
+      "name": "technical_rust"
     },
     {
       "block": "chisel:technical_scaffold",
@@ -63,44 +52,19 @@
       "name": "technical_scaffold"
     },
     {
-      "block": "chisel:technical_transparent_fan_fast",
+      "block": "chisel:technical_vent",
       "model_type": "cube_all",
-      "name": "technical_transparent_fan_fast"
+      "name": "technical_vent"
     },
     {
-      "block": "chisel:technical_transparent_fan_malfunctioning",
+      "block": "chisel:technical_wall",
       "model_type": "cube_all",
-      "name": "technical_transparent_fan_malfunctioning"
+      "name": "technical_wall"
     },
     {
-      "block": "chisel:technical_transparent_fan_off",
+      "block": "chisel:technical_wire",
       "model_type": "cube_all",
-      "name": "technical_transparent_fan_off"
-    },
-    {
-      "block": "chisel:technical_transparent_scaffold",
-      "model_type": "cube_all",
-      "name": "technical_transparent_scaffold"
-    },
-    {
-      "block": "chisel:technical_under_large",
-      "model_type": "cube_all",
-      "name": "technical_under_large"
-    },
-    {
-      "block": "chisel:technical_under_small",
-      "model_type": "cube_all",
-      "name": "technical_under_small"
-    },
-    {
-      "block": "chisel:technical_vents",
-      "model_type": "cube_all",
-      "name": "technical_vents"
-    },
-    {
-      "block": "chisel:technical_vents_glowing",
-      "model_type": "cube_all",
-      "name": "technical_vents_glowing"
+      "name": "technical_wire"
     }
   ]
 }

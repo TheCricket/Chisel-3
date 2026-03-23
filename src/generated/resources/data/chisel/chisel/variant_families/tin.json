@@ -1,6 +1,5 @@
 {
-  "base": "chisel:tin_caution",
-  "prefix": "tin",
+  "familyName": "tin",
   "variants": [
     {
       "block": "chisel:tin_bad_greggy",

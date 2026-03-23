@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/packed_ice_pillar/packed_ice_pillar_braid"
+  }
+}

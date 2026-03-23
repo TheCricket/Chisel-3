@@ -1,51 +1,50 @@
 {
-  "base": "minecraft:netherrack",
-  "prefix": "netherrack",
+  "familyName": "netherrack",
   "variants": [
     {
-      "block": "chisel:netherrack_blood",
+      "block": "minecraft:netherrack",
       "model_type": "cube_all",
-      "name": "netherrack_blood"
+      "name": "block.minecraft.netherrack"
     },
     {
-      "block": "chisel:netherrack_blood_dark",
+      "block": "chisel:netherrack_braid",
       "model_type": "cube_all",
-      "name": "netherrack_blood_dark"
+      "name": "netherrack_braid"
     },
     {
-      "block": "chisel:netherrack_blood_gravel",
+      "block": "chisel:netherrack_chaotic",
       "model_type": "cube_all",
-      "name": "netherrack_blood_gravel"
+      "name": "netherrack_chaotic"
     },
     {
-      "block": "chisel:netherrack_blue",
+      "block": "chisel:netherrack_cracked",
       "model_type": "cube_all",
-      "name": "netherrack_blue"
+      "name": "netherrack_cracked"
     },
     {
-      "block": "chisel:netherrack_blue_shale",
+      "block": "chisel:netherrack_cuts",
       "model_type": "cube_all",
-      "name": "netherrack_blue_shale"
+      "name": "netherrack_cuts"
     },
     {
-      "block": "chisel:netherrack_classic",
+      "block": "chisel:netherrack_dent",
       "model_type": "cube_all",
-      "name": "netherrack_classic"
+      "name": "netherrack_dent"
     },
     {
-      "block": "chisel:netherrack_guts",
+      "block": "chisel:netherrack_french",
       "model_type": "cube_all",
-      "name": "netherrack_guts"
+      "name": "netherrack_french"
     },
     {
-      "block": "chisel:netherrack_guts_dark",
+      "block": "chisel:netherrack_french_2",
       "model_type": "cube_all",
-      "name": "netherrack_guts_dark"
+      "name": "netherrack_french_2"
     },
     {
-      "block": "chisel:netherrack_lava",
+      "block": "chisel:netherrack_layers",
       "model_type": "cube_all",
-      "name": "netherrack_lava"
+      "name": "netherrack_layers"
     },
     {
       "block": "chisel:netherrack_meat",

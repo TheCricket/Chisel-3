@@ -1,7 +1,11 @@
 {
-  "base": "chisel:concrete_raw",
-  "prefix": "concrete",
+  "familyName": "concrete",
   "variants": [
+    {
+      "block": "chisel:concrete_raw",
+      "model_type": "cube_all",
+      "name": "concrete_raw"
+    },
     {
       "block": "chisel:concrete_asphalt",
       "model_type": "cube_all",
@@ -31,11 +35,6 @@
       "block": "chisel:concrete_blocks_weathered",
       "model_type": "cube_all",
       "name": "concrete_blocks_weathered"
-    },
-    {
-      "block": "chisel:concrete_raw",
-      "model_type": "cube_all",
-      "name": "concrete_raw"
     },
     {
       "block": "chisel:concrete_raw_partly",

@@ -1,7 +1,5 @@
 package chisel.block;
 
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -15,8 +13,6 @@ import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
-import java.util.Map;
-
 public class ConnectedTextureBlock extends Block {
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
@@ -25,7 +21,6 @@ public class ConnectedTextureBlock extends Block {
     public static final BooleanProperty WEST = BlockStateProperties.WEST;
     public static final BooleanProperty UP = BlockStateProperties.UP;
     public static final BooleanProperty DOWN = BlockStateProperties.DOWN;
-    public static final Map<Direction, BooleanProperty> PROPERTY_BY_DIRECTION = ImmutableMap.copyOf(Maps.newEnumMap(Map.of(Direction.NORTH, NORTH, Direction.EAST, EAST, Direction.SOUTH, SOUTH, Direction.WEST, WEST, Direction.UP, UP, Direction.DOWN, DOWN)));
 
     public ConnectedTextureBlock(Properties properties) {
         super(properties);

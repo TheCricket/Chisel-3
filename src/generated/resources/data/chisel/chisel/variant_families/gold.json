@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:gold_block",
-  "prefix": "gold",
+  "familyName": "gold",
   "variants": [
+    {
+      "block": "minecraft:gold_block",
+      "model_type": "cube_all",
+      "name": "block.minecraft.gold_block"
+    },
     {
       "block": "chisel:gold_bad_greggy",
       "model_type": "cube_all",

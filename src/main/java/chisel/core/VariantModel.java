@@ -17,7 +17,7 @@ public abstract class VariantModel {
     }
 
     protected Block getBlock() {
-        return variant.getBlock().get();
+        return variant.getBlock();
     }
 
     public void setVariant(Variant variant) {

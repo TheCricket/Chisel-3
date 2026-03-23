@@ -1,41 +1,85 @@
 {
-  "base": "minecraft:oak_leaves",
-  "prefix": "leaf",
+  "familyName": "leaf",
   "variants": [
     {
-      "block": "chisel:leaf_christmas_balls",
+      "block": "chisel:leaf_0",
       "model_type": "cube_all",
-      "name": "leaf_christmas_balls"
+      "name": "leaf_0"
     },
     {
-      "block": "chisel:leaf_christmas_lights",
+      "block": "chisel:leaf_1",
       "model_type": "cube_all",
-      "name": "leaf_christmas_lights"
+      "name": "leaf_1"
     },
     {
-      "block": "chisel:leaf_dead",
+      "block": "chisel:leaf_2",
       "model_type": "cube_all",
-      "name": "leaf_dead"
+      "name": "leaf_2"
     },
     {
-      "block": "chisel:leaf_fancy",
+      "block": "chisel:leaf_3",
       "model_type": "cube_all",
-      "name": "leaf_fancy"
+      "name": "leaf_3"
     },
     {
-      "block": "chisel:leaf_pink",
+      "block": "chisel:leaf_4",
       "model_type": "cube_all",
-      "name": "leaf_pink"
+      "name": "leaf_4"
     },
     {
-      "block": "chisel:leaf_red",
+      "block": "chisel:leaf_5",
       "model_type": "cube_all",
-      "name": "leaf_red"
+      "name": "leaf_5"
     },
     {
-      "block": "chisel:leaf_white",
+      "block": "chisel:leaf_6",
       "model_type": "cube_all",
-      "name": "leaf_white"
+      "name": "leaf_6"
+    },
+    {
+      "block": "chisel:leaf_7",
+      "model_type": "cube_all",
+      "name": "leaf_7"
+    },
+    {
+      "block": "chisel:leaf_8",
+      "model_type": "cube_all",
+      "name": "leaf_8"
+    },
+    {
+      "block": "chisel:leaf_9",
+      "model_type": "cube_all",
+      "name": "leaf_9"
+    },
+    {
+      "block": "chisel:leaf_10",
+      "model_type": "cube_all",
+      "name": "leaf_10"
+    },
+    {
+      "block": "chisel:leaf_11",
+      "model_type": "cube_all",
+      "name": "leaf_11"
+    },
+    {
+      "block": "chisel:leaf_12",
+      "model_type": "cube_all",
+      "name": "leaf_12"
+    },
+    {
+      "block": "chisel:leaf_13",
+      "model_type": "cube_all",
+      "name": "leaf_13"
+    },
+    {
+      "block": "chisel:leaf_14",
+      "model_type": "cube_all",
+      "name": "leaf_14"
+    },
+    {
+      "block": "chisel:leaf_15",
+      "model_type": "cube_all",
+      "name": "leaf_15"
     }
   ]
 }

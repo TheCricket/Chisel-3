@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:cobblestone",
-  "prefix": "cobblestone",
+  "familyName": "cobblestone",
   "variants": [
+    {
+      "block": "minecraft:cobblestone",
+      "model_type": "cube_all",
+      "name": "block.minecraft.cobblestone"
+    },
     {
       "block": "chisel:cobblestone_array",
       "model_type": "cube_all",
@@ -65,7 +69,7 @@
     {
       "block": "chisel:cobblestone_french",
       "model_type": "cube_all",
-      "name": "cobblestone_french_1"
+      "name": "cobblestone_french"
     },
     {
       "block": "chisel:cobblestone_french_2",

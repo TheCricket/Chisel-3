@@ -1,41 +1,80 @@
 {
-  "base": "chisel:packed_ice_pillar_plain_plain",
-  "prefix": "packed_ice_pillar",
+  "familyName": "packed_ice_pillar",
   "variants": [
     {
-      "block": "chisel:packed_ice_pillar_carved",
+      "block": "chisel:packed_ice_pillar_array",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_carved"
+      "name": "packed_ice_pillar_array"
     },
     {
-      "block": "chisel:packed_ice_pillar_greek_greek",
+      "block": "chisel:packed_ice_pillar_braid",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_greek_greek"
+      "name": "packed_ice_pillar_braid"
     },
     {
-      "block": "chisel:packed_ice_pillar_greek_plain",
+      "block": "chisel:packed_ice_pillar_chaotic",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_greek_plain"
+      "name": "packed_ice_pillar_chaotic"
     },
     {
-      "block": "chisel:packed_ice_pillar_inscribed",
+      "block": "chisel:packed_ice_pillar_circular",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_inscribed"
+      "name": "packed_ice_pillar_circular"
     },
     {
-      "block": "chisel:packed_ice_pillar_ornamental",
+      "block": "chisel:packed_ice_pillar_cuts",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_ornamental"
+      "name": "packed_ice_pillar_cuts"
     },
     {
-      "block": "chisel:packed_ice_pillar_plain_greek",
+      "block": "chisel:packed_ice_pillar_dent",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_plain_greek"
+      "name": "packed_ice_pillar_dent"
     },
     {
-      "block": "chisel:packed_ice_pillar_plain_plain",
+      "block": "chisel:packed_ice_pillar_french",
       "model_type": "cube_all",
-      "name": "packed_ice_pillar_plain_plain"
+      "name": "packed_ice_pillar_french"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_french_2",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_french_2"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_layers",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_layers"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ornate",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_ornate"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_panel",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_panel"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_road",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_road"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_tiles",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_tiles"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_weaver",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_weaver"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_zag",
+      "model_type": "cube_all",
+      "name": "packed_ice_pillar_zag"
     }
   ]
 }

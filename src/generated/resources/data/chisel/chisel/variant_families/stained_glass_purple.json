@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:purple_stained_glass",
-  "prefix": "stained_glass_purple",
+  "familyName": "stained_glass_purple",
   "variants": [
+    {
+      "block": "minecraft:purple_stained_glass",
+      "model_type": "cube_all",
+      "name": "block.minecraft.purple_stained_glass"
+    },
     {
       "block": "chisel:stained_glass_purple_borderless",
       "model_type": "cube_all",
@@ -18,9 +22,9 @@
       "name": "stained_glass_purple_panel"
     },
     {
-      "block": "chisel:stained_glass_purple_panel_fancy",
+      "block": "chisel:stained_glass_purple_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_purple_panel_fancy"
+      "name": "stained_glass_purple_fancy"
     }
   ]
 }

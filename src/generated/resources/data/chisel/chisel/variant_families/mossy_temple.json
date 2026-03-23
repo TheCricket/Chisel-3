@@ -1,7 +1,11 @@
 {
-  "base": "chisel:mossy_temple_cobble",
-  "prefix": "mossy_temple",
+  "familyName": "mossy_temple",
   "variants": [
+    {
+      "block": "chisel:mossy_temple_cobble",
+      "model_type": "cube_all",
+      "name": "mossy_temple_cobble"
+    },
     {
       "block": "chisel:mossy_temple_bricks",
       "model_type": "cube_all",
@@ -21,11 +25,6 @@
       "block": "chisel:mossy_temple_bricks_worn",
       "model_type": "cube_all",
       "name": "mossy_temple_bricks_worn"
-    },
-    {
-      "block": "chisel:mossy_temple_cobble",
-      "model_type": "cube_all",
-      "name": "mossy_temple_cobble"
     },
     {
       "block": "chisel:mossy_temple_column",

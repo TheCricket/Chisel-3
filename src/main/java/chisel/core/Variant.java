@@ -1,4 +1,5 @@
 package chisel.core;
+
 import chisel.Chisel;
 import chisel.registry.VariantModels;
 import com.mojang.serialization.Codec;
@@ -14,20 +15,34 @@ public class Variant extends VariantModels {
 
     public static final Codec<Variant> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name").forGetter(Variant::getName),
-            BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(v -> v.getBlock().get()),
+            BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(Variant::getBlock),
             VariantModelType.CODEC.fieldOf("model_type").forGetter(Variant::getModelType)
     ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType)));
 
     private final String name;
     private final Supplier<Block> block;
     private final VariantModelType modelType;
+    private final boolean shouldGenerateModel;
     private VariantFamily family;
 
-    public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelType modelType) {
+    public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelType modelType, boolean shouldGenerateModel) {
         this.name = name;
         this.block = block;
         this.family = family;
         this.modelType = modelType;
+        this.shouldGenerateModel = shouldGenerateModel;
+    }
+
+    public Variant(Block block, VariantFamily family) {
+        this(block.getDescriptionId(), () -> block, family, VariantModelType.CUBE_ALL, false);
+    }
+
+    public Variant(String name, Supplier<Block> block, VariantFamily family) {
+        this(name, block, family, VariantModelType.CUBE_ALL, true);
+    }
+
+    public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelType modelType) {
+        this(name, block, family, modelType, true);
     }
 
     public void setFamily(VariantFamily family) {
@@ -38,20 +53,24 @@ public class Variant extends VariantModels {
         return name;
     }
 
-    public Supplier<Block> getBlock() {
-        return block;
+    public Block getBlock() {
+        return block.get();
     }
 
     public VariantModelType getModelType() {
         return modelType;
     }
 
+    public boolean shouldGenerateModel() {
+        return shouldGenerateModel;
+    }
+
     public Material getMaterial() {
-        return new Material(Chisel.prefix("block/%s/%s".formatted(family.getPrefix(), name)));
+        return new Material(Chisel.prefix("block/%s/%s".formatted(family.getFamilyName(), name)));
     }
 
     public Material getMaterial(String suffix) {
-        return new Material(Chisel.prefix("block/%s/%s-%s".formatted(family.getPrefix(), name, suffix)));
+        return new Material(Chisel.prefix("block/%s/%s-%s".formatted(family.getFamilyName(), name, suffix)));
     }
 
     public void registerModel(BlockModelGenerators blockModels) {

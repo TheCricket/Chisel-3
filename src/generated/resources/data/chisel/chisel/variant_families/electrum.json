@@ -1,6 +1,5 @@
 {
-  "base": "chisel:electrum_caution",
-  "prefix": "electrum",
+  "familyName": "electrum",
   "variants": [
     {
       "block": "chisel:electrum_bad_greggy",

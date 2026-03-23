@@ -1,6 +1,7 @@
 package chisel.datagen;
 
 import chisel.registry.ChiselBlocks;
+import chisel.registry.ChiselVariants;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -17,9 +18,10 @@ public class ChiselBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        VariantFamilies.getAllFamilies().forEach(family -> {
-            family.getVariants().forEach(variant -> dropSelf(variant.getBlock().get()));
-        });
+        ChiselVariants.getVariantFamilies().forEach(f -> f.getVariants().forEach(v -> {
+            if(v.shouldGenerateModel())
+                dropSelf(v.getBlock());
+        }));
     }
 
     @Override

@@ -52,11 +52,11 @@ public class LeftClickBlockEventHandler {
                 LAST_CHISEL_TIME.put(player, time);
 
                 for(int c = 0; c < family.getVariants().size(); c++) {
-                    if(state.is(family.getVariants().get(c).getBlock().get())) {
+                    if(state.is(family.getVariants().get(c).getBlock())) {
                         if(c == family.getVariants().size() - 1) {
-                            chiselBlock(level, pos, family.getVariants().getFirst().getBlock().get().defaultBlockState());
+                            chiselBlock(level, pos, family.getVariants().getFirst().getBlock().defaultBlockState());
                         } else {
-                            chiselBlock(level, pos, family.getVariants().get(c + 1).getBlock().get().defaultBlockState());
+                            chiselBlock(level, pos, family.getVariants().get(c + 1).getBlock().defaultBlockState());
                         }
                     }
                 }

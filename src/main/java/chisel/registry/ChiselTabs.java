@@ -1,8 +1,6 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.datagen.VariantFamilies;
-import chisel.registry.blocks.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,139 +17,110 @@ public class ChiselTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STONE = CREATIVE_MODE_TABS.register("chisel_stone", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselStoneBlocks.MARBLE_RAW.get()))
+            .icon(() -> new ItemStack(ChiselBlocks.MARBLE.getVariant("marble_raw").get()))
             .displayItems((_, output) -> List.of(
-                    VariantFamilies.ANDESITE,
-                    VariantFamilies.BRICKS,
-                    VariantFamilies.COBBLESTONE,
-                    VariantFamilies.STONE_BRICKS,
-                    VariantFamilies.CONCRETE,
-                    VariantFamilies.DIORITE,
-                    VariantFamilies.GRANITE,
-                    VariantFamilies.GRIMSTONE,
-                    VariantFamilies.HOLYSTONE,
-                    VariantFamilies.LAVASTONE,
-                    VariantFamilies.LIMESTONE,
-                    VariantFamilies.MARBLE,
-                    VariantFamilies.MOSSY_COBBLESTONE,
-                    VariantFamilies.MOSSY_TEMPLE,
-                    VariantFamilies.NETHERBRICK,
-                    VariantFamilies.NETHERRACK,
-                    VariantFamilies.OBSIDIAN,
-                    VariantFamilies.RUNIC_VOIDSTONE,
-                    VariantFamilies.SANDSTONE,
-                    VariantFamilies.SNAKESTONE_SAND,
-                    VariantFamilies.SNAKESTONE_STONE,
-                    VariantFamilies.TEMPLE,
-                    VariantFamilies.VOIDSTONE,
-                    VariantFamilies.WATERSTONE).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
+                    ChiselBlocks.ANDESITE.getFamily(),
+                    ChiselBlocks.BRICKS.getFamily(),
+                    ChiselBlocks.COBBLESTONE.getFamily(),
+                    ChiselBlocks.STONE_BRICKS.getFamily(),
+                    ChiselBlocks.CONCRETE.getFamily(),
+                    ChiselBlocks.DIORITE.getFamily(),
+                    ChiselBlocks.GRANITE.getFamily(),
+                    ChiselBlocks.GRIMSTONE.getFamily(),
+                    ChiselBlocks.HOLYSTONE.getFamily(),
+                    ChiselBlocks.LAVASTONE.getFamily(),
+                    ChiselBlocks.LIMESTONE.getFamily(),
+                    ChiselBlocks.MARBLE.getFamily(),
+                    ChiselBlocks.MOSSY_COBBLESTONE.getFamily(),
+                    ChiselBlocks.MOSSY_TEMPLE.getFamily(),
+                    ChiselBlocks.NETHERBRICK.getFamily(),
+                    ChiselBlocks.NETHERRACK.getFamily(),
+                    ChiselBlocks.OBSIDIAN.getFamily(),
+                    ChiselBlocks.RUNIC_VOIDSTONE.getFamily(),
+                    ChiselBlocks.SANDSTONE.getFamily(),
+                    ChiselBlocks.SNAKESTONE_SAND.getFamily(),
+                    ChiselBlocks.SNAKESTONE_STONE.getFamily(),
+                    ChiselBlocks.TEMPLE.getFamily(),
+                    ChiselBlocks.VOIDSTONE.getFamily(),
+                    ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WOOD = CREATIVE_MODE_TABS.register("chisel_wood", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabWoodChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselWoodBlocks.OAK_PLANKS_SMOOTH.get()))
+            .icon(() -> new ItemStack(ChiselBlocks.OAK.getVariant("oak_planks_smooth").get()))
             .displayItems((_, output) -> List.of(
-                    VariantFamilies.ACACIA,
-                    VariantFamilies.BIRCH,
-                    VariantFamilies.BOOKSHELF,
-                    VariantFamilies.DARK_OAK,
-                    VariantFamilies.JUNGLE,
-                    VariantFamilies.OAK,
-                    VariantFamilies.SPRUCE).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
+                    ChiselBlocks.ACACIA.getFamily(),
+                    ChiselBlocks.BIRCH.getFamily(),
+                    ChiselBlocks.BOOKSHELF.getFamily(),
+                    ChiselBlocks.DARK_OAK.getFamily(),
+                    ChiselBlocks.JUNGLE.getFamily(),
+                    ChiselBlocks.OAK.getFamily(),
+                    ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> METAL = CREATIVE_MODE_TABS.register("chisel_metal", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabMetalChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselMetalBlocks.IRON_INGOTS_SMALL.get()))
+            .icon(() -> new ItemStack(ChiselBlocks.IRON.getVariant("iron_ingots_small").get()))
             .displayItems((_, output) -> List.of(
-                    VariantFamilies.FACTORY,
-                            VariantFamilies.COPPER,
-                            VariantFamilies.FUTURA,
-                            VariantFamilies.GOLD,
-                            VariantFamilies.HEX_PLATING,
-                            VariantFamilies.IRON,
-                            VariantFamilies.LABORATORY,
-                            VariantFamilies.TECHNICAL,
-                            VariantFamilies.TYRIAN,
-                            VariantFamilies.ALUMINUM,
-                            VariantFamilies.WARNING)
-                    .forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
+                    ChiselBlocks.FACTORY.getFamily(),
+                    ChiselBlocks.COPPER.getFamily(),
+                    ChiselBlocks.FUTURA.getFamily(),
+                    ChiselBlocks.GOLD.getFamily(),
+                    ChiselBlocks.HEX_PLATING.getFamily(),
+                    ChiselBlocks.IRON.getFamily(),
+                    ChiselBlocks.LABORATORY.getFamily(),
+                    ChiselBlocks.TECHNICAL.getFamily(),
+                    ChiselBlocks.TYRIAN.getFamily(),
+                    ChiselBlocks.ALUMINUM.getFamily(),
+                    ChiselBlocks.WARNING.getFamily())
+                    .forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER = CREATIVE_MODE_TABS.register("chisel_other", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabOtherChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselOtherBlocks.ANTIBLOCK_BLACK.get()))
-            .displayItems((_, output) -> List.of(
-                    VariantFamilies.ANTIBLOCK,
-                    VariantFamilies.CARPET,
-                    VariantFamilies.CARPET_FLOOR,
-                    VariantFamilies.GLASS,
-                    VariantFamilies.STAINED_GLASS_BLACK,
-                    VariantFamilies.STAINED_GLASS_BLUE,
-                    VariantFamilies.STAINED_GLASS_BROWN,
-                    VariantFamilies.STAINED_GLASS_CYAN,
-                    VariantFamilies.STAINED_GLASS_GRAY,
-                    VariantFamilies.STAINED_GLASS_GREEN,
-                    VariantFamilies.STAINED_GLASS_LIGHT_BLUE,
-                    VariantFamilies.STAINED_GLASS_LIGHT_GRAY,
-                    VariantFamilies.STAINED_GLASS_LIME,
-                    VariantFamilies.STAINED_GLASS_MAGENTA,
-                    VariantFamilies.STAINED_GLASS_ORANGE,
-                    VariantFamilies.STAINED_GLASS_PINK,
-                    VariantFamilies.STAINED_GLASS_PURPLE,
-                    VariantFamilies.STAINED_GLASS_RED,
-                    VariantFamilies.STAINED_GLASS_WHITE,
-                    VariantFamilies.STAINED_GLASS_YELLOW,
-                    VariantFamilies.TORCH,
-                    VariantFamilies.CLOUD,
-                    VariantFamilies.DIAMOND,
-                    VariantFamilies.DIRT,
-                    VariantFamilies.EMERALD,
-                    VariantFamilies.ENERGIZED_VOIDSTONE,
-                    VariantFamilies.GLASS_PANE,
-                    VariantFamilies.STAINED_GLASS_PANE_BLACK,
-                    VariantFamilies.STAINED_GLASS_PANE_BLUE,
-                    VariantFamilies.STAINED_GLASS_PANE_BROWN,
-                    VariantFamilies.STAINED_GLASS_PANE_CYAN,
-                    VariantFamilies.STAINED_GLASS_PANE_GRAY,
-                    VariantFamilies.STAINED_GLASS_PANE_GREEN,
-                    VariantFamilies.STAINED_GLASS_PANE_LIGHT_BLUE,
-                    VariantFamilies.STAINED_GLASS_PANE_LIGHT_GRAY,
-                    VariantFamilies.STAINED_GLASS_PANE_LIME,
-                    VariantFamilies.STAINED_GLASS_PANE_MAGENTA,
-                    VariantFamilies.STAINED_GLASS_PANE_ORANGE,
-                    VariantFamilies.STAINED_GLASS_PANE_PINK,
-                    VariantFamilies.STAINED_GLASS_PANE_PURPLE,
-                    VariantFamilies.STAINED_GLASS_PANE_RED,
-                    VariantFamilies.STAINED_GLASS_PANE_WHITE,
-                    VariantFamilies.STAINED_GLASS_PANE_YELLOW,
-                    VariantFamilies.GLOWSTONE,
-                    VariantFamilies.ICE,
-                    VariantFamilies.LIT_PUMPKIN,
-                    VariantFamilies.IRON_BARS,
-                    VariantFamilies.LAPIS,
-                    VariantFamilies.LEAF,
-                    VariantFamilies.PACKED_ICE,
-                    VariantFamilies.PACKED_ICE_PILLAR,
-                    VariantFamilies.PAPERWALL,
-                    VariantFamilies.PUMPKIN,
-                    VariantFamilies.REDSTONE,
-                    VariantFamilies.PAPERWALL_BLOCK,
-                    VariantFamilies.ROAD_LINE,
-                    VariantFamilies.VALENTINES,
-                    VariantFamilies.WOOLEN_CLAY).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
+            .icon(() -> new ItemStack(ChiselBlocks.ANTIBLOCK.getVariant("antiblock_black").get()))
+            .displayItems((_, output) -> {
+                List.of(
+                        ChiselBlocks.ANTIBLOCK.getFamily(),
+                        ChiselBlocks.GLASS.getFamily(),
+                        ChiselBlocks.TORCH.getFamily(),
+                        ChiselBlocks.CLOUD.getFamily(),
+                        ChiselBlocks.DIAMOND.getFamily(),
+                        ChiselBlocks.DIRT.getFamily(),
+                        ChiselBlocks.EMERALD.getFamily(),
+                        ChiselBlocks.ENERGIZED_VOIDSTONE.getFamily(),
+                        ChiselBlocks.GLASS_PANE.getFamily(),
+                        ChiselBlocks.GLOWSTONE.getFamily(),
+                        ChiselBlocks.ICE.getFamily(),
+                        ChiselBlocks.LIT_PUMPKIN.getFamily(),
+                        ChiselBlocks.IRON_BARS.getFamily(),
+                        ChiselBlocks.LAPIS.getFamily(),
+                        ChiselBlocks.LEAF.getFamily(),
+                        ChiselBlocks.PACKED_ICE.getFamily(),
+                        ChiselBlocks.PACKED_ICE_PILLAR.getFamily(),
+                        ChiselBlocks.PAPERWALL.getFamily(),
+                        ChiselBlocks.PUMPKIN.getFamily(),
+                        ChiselBlocks.REDSTONE.getFamily(),
+                        ChiselBlocks.PAPERWALL_BLOCK.getFamily(),
+                        ChiselBlocks.ROAD_LINE.getFamily(),
+                        ChiselBlocks.VALENTINES.getFamily(),
+                        ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock())));
+
+                ChiselBlocks.STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
+                ChiselBlocks.STAINED_GLASS_PANE.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
+            })
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MODDED = CREATIVE_MODE_TABS.register("chisel_modded", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
-            .icon(() -> new ItemStack(ChiselModdedBlocks.BRONZE_CAUTION.get()))
+            .icon(() -> new ItemStack(ChiselBlocks.BRONZE.getVariant("bronze_caution").get()))
             .displayItems((_, output) -> List.of(
-                    VariantFamilies.BRONZE,
-                    VariantFamilies.LEAD,
-                    VariantFamilies.SILVER,
-                    VariantFamilies.STEEL,
-                    VariantFamilies.TIN,
-                    VariantFamilies.URANIUM).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock().get()))))
+                    ChiselBlocks.BRONZE.getFamily(),
+                    ChiselBlocks.LEAD.getFamily(),
+                    ChiselBlocks.SILVER.getFamily(),
+                    ChiselBlocks.STEEL.getFamily(),
+                    ChiselBlocks.TIN.getFamily(),
+                    ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHISEL = CREATIVE_MODE_TABS.register("chisel_main", () -> CreativeModeTab.builder()

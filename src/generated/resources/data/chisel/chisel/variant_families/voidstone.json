@@ -1,41 +1,75 @@
 {
-  "base": "chisel:voidstone_raw",
-  "prefix": "voidstone",
+  "familyName": "voidstone",
   "variants": [
-    {
-      "block": "chisel:voidstone_bevel",
-      "model_type": "cube_all",
-      "name": "voidstone_bevel"
-    },
-    {
-      "block": "chisel:voidstone_eye",
-      "model_type": "cube_all",
-      "name": "voidstone_eye"
-    },
-    {
-      "block": "chisel:voidstone_metal",
-      "model_type": "cube_all",
-      "name": "voidstone_metal"
-    },
     {
       "block": "chisel:voidstone_raw",
       "model_type": "cube_all",
       "name": "voidstone_raw"
     },
     {
-      "block": "chisel:voidstone_runic",
+      "block": "chisel:voidstone_bricks",
       "model_type": "cube_all",
-      "name": "voidstone_runic"
+      "name": "voidstone_bricks"
     },
     {
-      "block": "chisel:voidstone_skull",
+      "block": "chisel:voidstone_bricks_disordered",
       "model_type": "cube_all",
-      "name": "voidstone_skull"
+      "name": "voidstone_bricks_disordered"
+    },
+    {
+      "block": "chisel:voidstone_chiseled",
+      "model_type": "cube_all",
+      "name": "voidstone_chiseled"
+    },
+    {
+      "block": "chisel:voidstone_construction",
+      "model_type": "cube_all",
+      "name": "voidstone_construction"
+    },
+    {
+      "block": "chisel:voidstone_dent",
+      "model_type": "cube_all",
+      "name": "voidstone_dent"
+    },
+    {
+      "block": "chisel:voidstone_layers",
+      "model_type": "cube_all",
+      "name": "voidstone_layers"
+    },
+    {
+      "block": "chisel:voidstone_ornate",
+      "model_type": "cube_all",
+      "name": "voidstone_ornate"
+    },
+    {
+      "block": "chisel:voidstone_panel",
+      "model_type": "cube_all",
+      "name": "voidstone_panel"
+    },
+    {
+      "block": "chisel:voidstone_plate",
+      "model_type": "cube_all",
+      "name": "voidstone_plate"
+    },
+    {
+      "block": "chisel:voidstone_plate_smooth",
+      "model_type": "cube_all",
+      "name": "voidstone_plate_smooth"
+    },
+    {
+      "block": "chisel:voidstone_shale",
+      "model_type": "cube_all",
+      "name": "voidstone_shale"
     },
     {
       "block": "chisel:voidstone_smooth",
       "model_type": "cube_all",
       "name": "voidstone_smooth"
+    },
+    {
+      "block": "chisel:voidstone_symbol",
+      "model_type": "cube_all",
+      "name": "voidstone_symbol"
     },
     {
       "block": "chisel:voidstone_tiles",

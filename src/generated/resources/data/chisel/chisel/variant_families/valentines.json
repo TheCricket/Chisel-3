@@ -1,41 +1,15 @@
 {
-  "base": "chisel:valentines_bricks",
-  "prefix": "valentines",
+  "familyName": "valentines",
   "variants": [
     {
-      "block": "chisel:valentines_block",
+      "block": "chisel:valentines_dots",
       "model_type": "cube_all",
-      "name": "valentines_block"
+      "name": "valentines_dots"
     },
     {
-      "block": "chisel:valentines_bricks",
+      "block": "chisel:valentines_flower",
       "model_type": "cube_all",
-      "name": "valentines_bricks"
-    },
-    {
-      "block": "chisel:valentines_bumpy",
-      "model_type": "cube_all",
-      "name": "valentines_bumpy"
-    },
-    {
-      "block": "chisel:valentines_cobble",
-      "model_type": "cube_all",
-      "name": "valentines_cobble"
-    },
-    {
-      "block": "chisel:valentines_companion",
-      "model_type": "cube_all",
-      "name": "valentines_companion"
-    },
-    {
-      "block": "chisel:valentines_empty",
-      "model_type": "cube_all",
-      "name": "valentines_empty"
-    },
-    {
-      "block": "chisel:valentines_fire",
-      "model_type": "cube_all",
-      "name": "valentines_fire"
+      "name": "valentines_flower"
     },
     {
       "block": "chisel:valentines_heart",
@@ -43,14 +17,29 @@
       "name": "valentines_heart"
     },
     {
-      "block": "chisel:valentines_heart_gray",
+      "block": "chisel:valentines_ornate",
       "model_type": "cube_all",
-      "name": "valentines_heart_gray"
+      "name": "valentines_ornate"
     },
     {
-      "block": "chisel:valentines_tile",
+      "block": "chisel:valentines_panel",
       "model_type": "cube_all",
-      "name": "valentines_tile"
+      "name": "valentines_panel"
+    },
+    {
+      "block": "chisel:valentines_rose",
+      "model_type": "cube_all",
+      "name": "valentines_rose"
+    },
+    {
+      "block": "chisel:valentines_tiles",
+      "model_type": "cube_all",
+      "name": "valentines_tiles"
+    },
+    {
+      "block": "chisel:valentines_wall",
+      "model_type": "cube_all",
+      "name": "valentines_wall"
     }
   ]
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "chisel:block/cube_multi_pass",
-  "textures": {
-    "layer0": "chisel:block/warning/warning_explosion",
-    "layer1": "chisel:block/warning/warning_explosion-bg",
-    "particle": "chisel:block/warning/warning_explosion"
-  }
-}

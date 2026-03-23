@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/carpet",
-  "textures": {
-    "wool": "chisel:block/carpet_floor/carpet_floor_8"
-  }
-}

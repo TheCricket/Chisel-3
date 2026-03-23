@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/snakestone_stone/snakestone_stone_0"
-  }
-}

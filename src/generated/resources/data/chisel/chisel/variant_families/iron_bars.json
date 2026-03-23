@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:iron_bars",
-  "prefix": "iron_bars",
+  "familyName": "iron_bars",
   "variants": [
+    {
+      "block": "minecraft:iron_bars",
+      "model_type": "cube_all",
+      "name": "block.minecraft.iron_bars"
+    },
     {
       "block": "chisel:iron_bars_barbed_wire",
       "model_type": "iron_bars",

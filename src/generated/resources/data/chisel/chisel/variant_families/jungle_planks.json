@@ -1,7 +1,11 @@
 {
-  "base": "minecraft:jungle_planks",
-  "prefix": "jungle_planks",
+  "familyName": "jungle_planks",
   "variants": [
+    {
+      "block": "minecraft:jungle_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.jungle_planks"
+    },
     {
       "block": "chisel:jungle_planks_braced",
       "model_type": "top_bottom_side",

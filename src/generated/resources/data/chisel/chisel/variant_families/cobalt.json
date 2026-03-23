@@ -1,6 +1,5 @@
 {
-  "base": "chisel:cobalt_caution",
-  "prefix": "cobalt",
+  "familyName": "cobalt",
   "variants": [
     {
       "block": "chisel:cobalt_bad_greggy",

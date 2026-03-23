@@ -1,16 +1,10 @@
 {
-  "base": "chisel:holystone_raw",
-  "prefix": "holystone",
+  "familyName": "holystone",
   "variants": [
     {
-      "block": "chisel:holystone_blocks",
+      "block": "chisel:holystone_raw",
       "model_type": "cube_all",
-      "name": "holystone_blocks"
-    },
-    {
-      "block": "chisel:holystone_blocks_rough",
-      "model_type": "cube_all",
-      "name": "holystone_blocks_rough"
+      "name": "holystone_raw"
     },
     {
       "block": "chisel:holystone_bricks",
@@ -18,9 +12,9 @@
       "name": "holystone_bricks"
     },
     {
-      "block": "chisel:holystone_bricks_large",
+      "block": "chisel:holystone_bricks_disordered",
       "model_type": "cube_all",
-      "name": "holystone_bricks_large"
+      "name": "holystone_bricks_disordered"
     },
     {
       "block": "chisel:holystone_chiseled",
@@ -33,6 +27,26 @@
       "name": "holystone_construction"
     },
     {
+      "block": "chisel:holystone_dent",
+      "model_type": "cube_all",
+      "name": "holystone_dent"
+    },
+    {
+      "block": "chisel:holystone_layers",
+      "model_type": "cube_all",
+      "name": "holystone_layers"
+    },
+    {
+      "block": "chisel:holystone_ornate",
+      "model_type": "cube_all",
+      "name": "holystone_ornate"
+    },
+    {
+      "block": "chisel:holystone_panel",
+      "model_type": "cube_all",
+      "name": "holystone_panel"
+    },
+    {
       "block": "chisel:holystone_plate",
       "model_type": "cube_all",
       "name": "holystone_plate"
@@ -43,19 +57,9 @@
       "name": "holystone_plate_smooth"
     },
     {
-      "block": "chisel:holystone_platform",
+      "block": "chisel:holystone_shale",
       "model_type": "cube_all",
-      "name": "holystone_platform"
-    },
-    {
-      "block": "chisel:holystone_platform_tiles",
-      "model_type": "cube_all",
-      "name": "holystone_platform_tiles"
-    },
-    {
-      "block": "chisel:holystone_raw",
-      "model_type": "cube_all",
-      "name": "holystone_raw"
+      "name": "holystone_shale"
     },
     {
       "block": "chisel:holystone_smooth",

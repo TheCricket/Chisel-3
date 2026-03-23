@@ -1,40 +1,79 @@
 {
-  "base": "chisel:waterstone_bricks",
-  "prefix": "waterstone",
+  "familyName": "waterstone",
   "variants": [
     {
-      "block": "chisel:waterstone_black",
-      "model_type": "multi_layer_water",
-      "name": "waterstone_black"
+      "block": "chisel:waterstone_raw",
+      "model_type": "cube_all",
+      "name": "waterstone_raw"
     },
     {
       "block": "chisel:waterstone_bricks",
-      "model_type": "multi_layer_water",
+      "model_type": "cube_all",
       "name": "waterstone_bricks"
     },
     {
-      "block": "chisel:waterstone_chaotic",
-      "model_type": "multi_layer_water",
-      "name": "waterstone_chaotic"
+      "block": "chisel:waterstone_bricks_disordered",
+      "model_type": "cube_all",
+      "name": "waterstone_bricks_disordered"
     },
     {
-      "block": "chisel:waterstone_creeper",
-      "model_type": "multi_layer_water",
-      "name": "waterstone_creeper"
+      "block": "chisel:waterstone_chiseled",
+      "model_type": "cube_all",
+      "name": "waterstone_chiseled"
+    },
+    {
+      "block": "chisel:waterstone_construction",
+      "model_type": "cube_all",
+      "name": "waterstone_construction"
+    },
+    {
+      "block": "chisel:waterstone_dent",
+      "model_type": "cube_all",
+      "name": "waterstone_dent"
+    },
+    {
+      "block": "chisel:waterstone_layers",
+      "model_type": "cube_all",
+      "name": "waterstone_layers"
     },
     {
       "block": "chisel:waterstone_ornate",
-      "model_type": "multi_layer_water",
+      "model_type": "cube_all",
       "name": "waterstone_ornate"
     },
     {
       "block": "chisel:waterstone_panel",
-      "model_type": "multi_layer_water",
+      "model_type": "cube_all",
       "name": "waterstone_panel"
     },
     {
+      "block": "chisel:waterstone_plate",
+      "model_type": "cube_all",
+      "name": "waterstone_plate"
+    },
+    {
+      "block": "chisel:waterstone_plate_smooth",
+      "model_type": "cube_all",
+      "name": "waterstone_plate_smooth"
+    },
+    {
+      "block": "chisel:waterstone_shale",
+      "model_type": "cube_all",
+      "name": "waterstone_shale"
+    },
+    {
+      "block": "chisel:waterstone_smooth",
+      "model_type": "cube_all",
+      "name": "waterstone_smooth"
+    },
+    {
+      "block": "chisel:waterstone_symbol",
+      "model_type": "cube_all",
+      "name": "waterstone_symbol"
+    },
+    {
       "block": "chisel:waterstone_tiles",
-      "model_type": "multi_layer_water",
+      "model_type": "cube_all",
       "name": "waterstone_tiles"
     }
   ]
