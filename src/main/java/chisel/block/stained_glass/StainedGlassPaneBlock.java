@@ -26,7 +26,7 @@ public class StainedGlassPaneBlock extends ChiselBlock {
                 .addVariant("stained_glass_pane_%s_bubble".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("stained_glass_pane_%s_panel".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("stained_glass_pane_%s_fancy".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .getFamily();
+                .family();
     }
 
     @Override

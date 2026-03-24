@@ -24,7 +24,7 @@ public class EnergizedVoidstoneBlock extends ChiselBlock {
                 .addVariant("energized_voidstone_smooth", props)
                 .addVariant("energized_voidstone_symbol", props)
                 .addVariant("energized_voidstone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

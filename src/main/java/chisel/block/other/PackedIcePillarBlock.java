@@ -24,7 +24,7 @@ public class PackedIcePillarBlock extends ChiselBlock {
                 .addVariant("packed_ice_pillar_tiles", props)
                 .addVariant("packed_ice_pillar_weaver", props)
                 .addVariant("packed_ice_pillar_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -22,7 +22,7 @@ public class BookshelfBlock extends ChiselBlock {
                 .addVariant("bookshelf_papers", props, VariantModelType.BOOKSHELF)
                 .addVariant("bookshelf_rainbow", props, VariantModelType.BOOKSHELF)
                 .addVariant("bookshelf_tomes", props, VariantModelType.BOOKSHELF)
-                .getFamily();
+                .family();
     }
 
     @Override

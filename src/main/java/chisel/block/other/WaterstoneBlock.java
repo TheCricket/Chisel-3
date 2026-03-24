@@ -24,7 +24,7 @@ public class WaterstoneBlock extends ChiselBlock {
                 .addVariant("waterstone_smooth", props)
                 .addVariant("waterstone_symbol", props)
                 .addVariant("waterstone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -26,7 +26,13 @@ public class IceBlock extends ChiselBlock {
                 .addVariant("ice_tiles", props)
                 .addVariant("ice_weaver", props)
                 .addVariant("ice_zag", props)
-                .getFamily();
+                .addVariant("ice_pillar_1", props)
+                .addVariant("ice_pillar_2", props)
+                .addVariant("ice_pillar_3", props)
+                .addVariant("ice_pillar_4", props)
+                .addVariant("ice_pillar_5", props)
+                .addVariant("ice_pillar_6", props)
+                .family();
     }
 
     @Override
@@ -46,6 +52,12 @@ public class IceBlock extends ChiselBlock {
         lang.addBlock(getVariant("ice_tiles"), "Ice", "Tiles");
         lang.addBlock(getVariant("ice_weaver"), "Ice", "Weaver");
         lang.addBlock(getVariant("ice_zag"), "Ice", "Zag");
+        lang.addBlock(getVariant("ice_pillar_1"), "Ice", "Pillar 1");
+        lang.addBlock(getVariant("ice_pillar_2"), "Ice", "Pillar 2");
+        lang.addBlock(getVariant("ice_pillar_3"), "Ice", "Pillar 3");
+        lang.addBlock(getVariant("ice_pillar_4"), "Ice", "Pillar 4");
+        lang.addBlock(getVariant("ice_pillar_5"), "Ice", "Pillar 5");
+        lang.addBlock(getVariant("ice_pillar_6"), "Ice", "Pillar 6");
     }
 }
 

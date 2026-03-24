@@ -38,7 +38,7 @@ public class GoldBlock extends ChiselBlock {
                 .addVariant("gold_star_decor", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("gold_star_obsidian", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("gold_star_obsidian_purple", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

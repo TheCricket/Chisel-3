@@ -18,7 +18,7 @@ public class WoolenClayBlock extends ChiselBlock {
                 .addVariant("woolen_clay_french", props)
                 .addVariant("woolen_clay_french_2", props)
                 .addVariant("woolen_clay_layers", props)
-                .getFamily();
+                .family();
     }
 
     @Override

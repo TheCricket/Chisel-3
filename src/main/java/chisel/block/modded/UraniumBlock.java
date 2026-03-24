@@ -17,7 +17,7 @@ public class UraniumBlock extends ChiselBlock {
                 .addVariant("uranium_machine", props)
                 .addVariant("uranium_scaffold", props)
                 .addVariant("uranium_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

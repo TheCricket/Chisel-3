@@ -21,7 +21,7 @@ public class GlassPaneBlock extends ChiselBlock {
                 .addVariant("glass_pane_chinese", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese")))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("glass_pane_chinese_gold", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese_gold")))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("glass_pane_japanese_tiles", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese_tiles")))), () -> props, VariantModelType.GLASS_PANE)
-                .getFamily();
+                .family();
     }
 
     @Override

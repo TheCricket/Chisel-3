@@ -25,7 +25,7 @@ public class MossyTempleBlock extends ChiselBlock {
                 .addVariant("mossy_temple_tiles_light", props)
                 .addVariant("mossy_temple_tiles_small", props)
                 .addVariant("mossy_temple_tiles_small_light", props)
-                .getFamily();
+                .family();
     }
 
     @Override

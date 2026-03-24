@@ -17,7 +17,7 @@ public class LeadBlock extends ChiselBlock {
                 .addVariant("lead_machine", props)
                 .addVariant("lead_scaffold", props)
                 .addVariant("lead_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

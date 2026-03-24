@@ -17,7 +17,7 @@ public class PlatinumBlock extends ChiselBlock {
                 .addVariant("platinum_machine", props)
                 .addVariant("platinum_scaffold", props)
                 .addVariant("platinum_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

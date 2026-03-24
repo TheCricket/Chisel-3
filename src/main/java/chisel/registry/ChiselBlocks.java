@@ -33,7 +33,7 @@ public class ChiselBlocks {
     public static final AcaciaBlock ACACIA = new AcaciaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
     public static final AluminumBlock ALUMINUM = new AluminumBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final AndesiteBlock ANDESITE = new AndesiteBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE));
-    public static final Antiblock ANTIBLOCK = new Antiblock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
+    public static final AntiblockBlock ANTIBLOCK = new AntiblockBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
     public static final BirchBlock BIRCH = new BirchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
     public static final BookshelfBlock BOOKSHELF = new BookshelfBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BOOKSHELF));
     public static final BricksBlock BRICKS = new BricksBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS));

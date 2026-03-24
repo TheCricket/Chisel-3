@@ -17,7 +17,7 @@ public class ValentinesBlock extends ChiselBlock {
                 .addVariant("valentines_rose", props)
                 .addVariant("valentines_tiles", props)
                 .addVariant("valentines_wall", props)
-                .getFamily();
+                .family();
     }
 
     @Override

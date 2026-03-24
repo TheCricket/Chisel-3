@@ -29,7 +29,7 @@ public class FactoryBlock extends ChiselBlock {
                 .addVariant("factory_wall", props)
                 .addVariant("factory_wall_rusty", props)
                 .addVariant("factory_wire", props)
-                .getFamily();
+                .family();
     }
 
     @Override

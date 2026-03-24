@@ -26,7 +26,7 @@ public class GlowstoneBlock extends ChiselBlock {
                 .addVariant("glowstone_tiles", props)
                 .addVariant("glowstone_weaver", props)
                 .addVariant("glowstone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -24,7 +24,7 @@ public class HolystoneBlock extends ChiselBlock {
                 .addVariant("holystone_smooth", props)
                 .addVariant("holystone_symbol", props)
                 .addVariant("holystone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

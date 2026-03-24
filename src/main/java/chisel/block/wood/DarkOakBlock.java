@@ -27,7 +27,7 @@ public class DarkOakBlock extends ChiselBlock {
                 .addVariant("dark_oak_planks_smooth", props)
                 .addVariant("dark_oak_planks_stacked", props)
                 .addVariant("dark_oak_planks_vertical", props)
-                .getFamily();
+                .family();
     }
 
     @Override

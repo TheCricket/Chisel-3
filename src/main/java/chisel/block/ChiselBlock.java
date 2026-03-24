@@ -13,6 +13,7 @@ public class ChiselBlock {
     protected VariantFamily family;
 
     public VariantFamily getFamily() {
+        ChiselVariants.VARIANT_FAMILIES.putIfAbsent(family.getFamilyName(), family);
         return family;
     }
 

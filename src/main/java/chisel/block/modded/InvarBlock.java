@@ -17,7 +17,7 @@ public class InvarBlock extends ChiselBlock {
                 .addVariant("invar_machine", props)
                 .addVariant("invar_scaffold", props)
                 .addVariant("invar_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

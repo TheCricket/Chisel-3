@@ -12,7 +12,7 @@ public class CloudBlock extends ChiselBlock {
         family = builder("cloud")
                 .addVariant(Blocks.WHITE_WOOL)
                 .addVariant("cloud_0", props)
-                .getFamily();
+                .family();
     }
 
     @Override

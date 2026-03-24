@@ -2,7 +2,6 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 
 public class ConcreteBlock extends ChiselBlock {
@@ -21,7 +20,7 @@ public class ConcreteBlock extends ChiselBlock {
                 .addVariant("concrete_raw_weathered", props)
                 .addVariant("concrete_slab", props)
                 .addVariant("concrete_slab_weathered", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -18,7 +18,7 @@ public class PaperwallBlock extends ChiselBlock {
                 .addVariant("paperwall_strike_horizontal", props)
                 .addVariant("paperwall_strike_middle", props)
                 .addVariant("paperwall_strike_vertical", props)
-                .getFamily();
+                .family();
     }
 
     @Override

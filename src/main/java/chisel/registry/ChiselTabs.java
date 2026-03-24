@@ -42,7 +42,10 @@ public class ChiselTabs {
                     ChiselBlocks.SNAKESTONE_STONE.getFamily(),
                     ChiselBlocks.TEMPLE.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
-                    ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
+                    ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                        if(variant.shouldGenerateModel())
+                            output.accept(variant.getBlock());
+            })))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WOOD = CREATIVE_MODE_TABS.register("chisel_wood", () -> CreativeModeTab.builder()
@@ -55,7 +58,10 @@ public class ChiselTabs {
                     ChiselBlocks.DARK_OAK.getFamily(),
                     ChiselBlocks.JUNGLE.getFamily(),
                     ChiselBlocks.OAK.getFamily(),
-                    ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
+                    ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                        if(variant.shouldGenerateModel())
+                            output.accept(variant.getBlock());
+                    })))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> METAL = CREATIVE_MODE_TABS.register("chisel_metal", () -> CreativeModeTab.builder()
@@ -73,7 +79,10 @@ public class ChiselTabs {
                     ChiselBlocks.TYRIAN.getFamily(),
                     ChiselBlocks.ALUMINUM.getFamily(),
                     ChiselBlocks.WARNING.getFamily())
-                    .forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
+                    .forEach(family -> family.getVariants().forEach(variant ->  {
+                        if(variant.shouldGenerateModel())
+                            output.accept(variant.getBlock());
+                    })))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER = CREATIVE_MODE_TABS.register("chisel_other", () -> CreativeModeTab.builder()
@@ -104,7 +113,10 @@ public class ChiselTabs {
                         ChiselBlocks.PAPERWALL_BLOCK.getFamily(),
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
-                        ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock())));
+                        ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
+                            if(variant.shouldGenerateModel())
+                                output.accept(variant.getBlock());
+                }));
 
                 ChiselBlocks.STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
                 ChiselBlocks.STAINED_GLASS_PANE.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
@@ -120,7 +132,10 @@ public class ChiselTabs {
                     ChiselBlocks.SILVER.getFamily(),
                     ChiselBlocks.STEEL.getFamily(),
                     ChiselBlocks.TIN.getFamily(),
-                    ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> output.accept(variant.getBlock()))))
+                    ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                        if(variant.shouldGenerateModel())
+                            output.accept(variant.getBlock());
+            })))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHISEL = CREATIVE_MODE_TABS.register("chisel_main", () -> CreativeModeTab.builder()

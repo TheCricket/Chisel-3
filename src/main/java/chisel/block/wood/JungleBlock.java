@@ -27,7 +27,7 @@ public class JungleBlock extends ChiselBlock {
                 .addVariant("jungle_planks_smooth", props)
                 .addVariant("jungle_planks_stacked", props)
                 .addVariant("jungle_planks_vertical", props)
-                .getFamily();
+                .family();
     }
 
     @Override

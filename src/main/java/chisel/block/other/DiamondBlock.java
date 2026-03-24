@@ -26,7 +26,7 @@ public class DiamondBlock extends ChiselBlock {
                 .addVariant("diamond_tiles", props)
                 .addVariant("diamond_weaver", props)
                 .addVariant("diamond_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

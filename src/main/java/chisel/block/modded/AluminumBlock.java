@@ -17,7 +17,7 @@ public class AluminumBlock extends ChiselBlock {
                 .addVariant("aluminum_machine", props)
                 .addVariant("aluminum_scaffold", props)
                 .addVariant("aluminum_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -26,7 +26,7 @@ public class AcaciaBlock extends ChiselBlock {
                 .addVariant("acacia_planks_smooth", props)
                 .addVariant("acacia_planks_stacked", props)
                 .addVariant("acacia_planks_vertical", props)
-                .getFamily();
+                .family();
     }
 
     @Override

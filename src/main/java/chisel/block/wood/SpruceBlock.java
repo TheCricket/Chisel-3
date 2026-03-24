@@ -27,7 +27,7 @@ public class SpruceBlock extends ChiselBlock {
                 .addVariant("spruce_planks_smooth", props)
                 .addVariant("spruce_planks_stacked", props)
                 .addVariant("spruce_planks_vertical", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -36,7 +36,7 @@ public class IronBlock extends ChiselBlock {
                 .addVariant("iron_shipping", props)
                 .addVariant("iron_simple", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("iron_vents", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -13,7 +13,7 @@ public class SnakestoneStoneBlock extends ChiselBlock {
                 .addVariant(Blocks.STONE)
                 .addVariant("snakestone_stone_head", props)
                 .addVariant("snakestone_stone_body", props)
-                .getFamily();
+                .family();
     }
 
     @Override

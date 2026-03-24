@@ -45,7 +45,7 @@ public class BricksBlock extends ChiselBlock {
                 .addVariant("bricks_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("bricks_weaver", props)
                 .addVariant("bricks_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

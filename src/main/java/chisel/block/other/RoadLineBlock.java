@@ -19,7 +19,7 @@ public class RoadLineBlock extends ChiselBlock {
                 .addVariant("road_line_7", props)
                 .addVariant("road_line_8", props)
                 .addVariant("road_line_9", props)
-                .getFamily();
+                .family();
     }
 
     @Override

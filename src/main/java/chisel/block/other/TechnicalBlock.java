@@ -22,7 +22,7 @@ public class TechnicalBlock extends ChiselBlock {
                 .addVariant("technical_vent", props)
                 .addVariant("technical_wall", props)
                 .addVariant("technical_wire", props)
-                .getFamily();
+                .family();
     }
 
     @Override

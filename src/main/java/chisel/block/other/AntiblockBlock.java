@@ -4,10 +4,9 @@ import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 
-public class Antiblock extends ChiselBlock {
-    public Antiblock(BlockBehaviour.Properties props) {
+public class AntiblockBlock extends ChiselBlock {
+    public AntiblockBlock(BlockBehaviour.Properties props) {
         
 
         family = builder("antiblock")
@@ -27,7 +26,7 @@ public class Antiblock extends ChiselBlock {
                 .addVariant("antiblock_red", props, VariantModelType.MULTI_LAYER_CONNECTED)
                 .addVariant("antiblock_white", props, VariantModelType.MULTI_LAYER_CONNECTED)
                 .addVariant("antiblock_yellow", props, VariantModelType.MULTI_LAYER_CONNECTED)
-                .getFamily();
+                .family();
     }
 
     @Override

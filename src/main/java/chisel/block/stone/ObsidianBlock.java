@@ -31,7 +31,7 @@ public class ObsidianBlock extends ChiselBlock {
                 .addVariant("obsidian_tiles", props)
                 .addVariant("obsidian_weaver", props)
                 .addVariant("obsidian_zigzag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

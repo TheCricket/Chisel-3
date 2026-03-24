@@ -17,7 +17,7 @@ public class SteelBlock extends ChiselBlock {
                 .addVariant("steel_machine", props)
                 .addVariant("steel_scaffold", props)
                 .addVariant("steel_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -31,7 +31,7 @@ public class GlassBlock extends ChiselBlock {
                 .addVariant("glass_shale", props)
                 .addVariant("glass_steel", props)
                 .addVariant("glass_stone", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -24,7 +24,7 @@ public class VoidstoneBlock extends ChiselBlock {
                 .addVariant("voidstone_smooth", props)
                 .addVariant("voidstone_symbol", props)
                 .addVariant("voidstone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

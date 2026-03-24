@@ -17,7 +17,7 @@ public class TinBlock extends ChiselBlock {
                 .addVariant("tin_machine", props)
                 .addVariant("tin_scaffold", props)
                 .addVariant("tin_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

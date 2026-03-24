@@ -18,7 +18,7 @@ public class FuturaBlock extends ChiselBlock {
                 .addVariant("futura_screen_orange", props)
                 .addVariant("futura_screen_red", props)
                 .addVariant("futura_wavy", props)
-                .getFamily();
+                .family();
     }
 
     @Override

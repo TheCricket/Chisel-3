@@ -2,6 +2,7 @@ package chisel.block.other;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 
 public class LaboratoryBlock extends ChiselBlock {
@@ -27,7 +28,22 @@ public class LaboratoryBlock extends ChiselBlock {
                 .addVariant("laboratory_shale", props)
                 .addVariant("laboratory_tile", props)
                 .addVariant("laboratory_wall", props)
-                .getFamily();
+                .addVariant("laboratory_checkerboard", props)
+                .addVariant("laboratory_clearscreen", props)
+                .addVariant("laboratory_console_informatio", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_panel_clear", props)
+                .addVariant("laboratory_panel_dotted", props)
+                .addVariant("laboratory_panel_fuzzy", props)
+                .addVariant("laboratory_panel_wall", props)
+                .addVariant("laboratory_tiles_enamelled_la", props)
+                .addVariant("laboratory_tiles_enamelled_sm", props)
+                .addVariant("laboratory_tiles_large", props)
+                .addVariant("laboratory_tiles_small", props)
+                .addVariant("laboratory_tiles_steel_large", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_tiles_steel_small", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_wall_rounded", props)
+                .addVariant("laboratory_wall_vent", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .family();
     }
 
     @Override
@@ -50,6 +66,21 @@ public class LaboratoryBlock extends ChiselBlock {
         lang.addBlock(getVariant("laboratory_shale"), "Laboratory Block", "Shale");
         lang.addBlock(getVariant("laboratory_tile"), "Laboratory Block", "Tile");
         lang.addBlock(getVariant("laboratory_wall"), "Laboratory Block", "Wall");
+        lang.addBlock(getVariant("laboratory_checkerboard"), "Laboratory Block", "Checkerboard");
+        lang.addBlock(getVariant("laboratory_clearscreen"), "Laboratory Block", "Clearscreen");
+        lang.addBlock(getVariant("laboratory_console_informatio"), "Laboratory Block", "Console Information");
+        lang.addBlock(getVariant("laboratory_panel_clear"), "Laboratory Block", "Clear Panel");
+        lang.addBlock(getVariant("laboratory_panel_dotted"), "Laboratory Block", "Dotted Panel");
+        lang.addBlock(getVariant("laboratory_panel_fuzzy"), "Laboratory Block", "Fuzzy Panel");
+        lang.addBlock(getVariant("laboratory_panel_wall"), "Laboratory Block", "Wall Panel");
+        lang.addBlock(getVariant("laboratory_tiles_enamelled_la"), "Laboratory Block", "Enamelled Large Tiles");
+        lang.addBlock(getVariant("laboratory_tiles_enamelled_sm"), "Laboratory Block", "Enamelled Small Tiles");
+        lang.addBlock(getVariant("laboratory_tiles_large"), "Laboratory Block", "Large Tiles");
+        lang.addBlock(getVariant("laboratory_tiles_small"), "Laboratory Block", "Small Tiles");
+        lang.addBlock(getVariant("laboratory_tiles_steel_large"), "Laboratory Block", "Large Steel Tiles");
+        lang.addBlock(getVariant("laboratory_tiles_steel_small"), "Laboratory Block", "Small Steel Tiles");
+        lang.addBlock(getVariant("laboratory_wall_rounded"), "Laboratory Block", "Rounded Wall");
+        lang.addBlock(getVariant("laboratory_wall_vent"), "Laboratory Block", "Wall Vent");
     }
 }
 

@@ -17,7 +17,7 @@ public class NickelBlock extends ChiselBlock {
                 .addVariant("nickel_machine", props)
                 .addVariant("nickel_scaffold", props)
                 .addVariant("nickel_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

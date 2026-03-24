@@ -43,7 +43,7 @@ public class LimestoneBlock extends ChiselBlock {
                 .addVariant("limestone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("limestone_weaver", props)
                 .addVariant("limestone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

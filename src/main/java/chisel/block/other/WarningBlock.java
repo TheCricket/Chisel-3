@@ -19,7 +19,7 @@ public class WarningBlock extends ChiselBlock {
                 .addVariant("warning_stripes_black", props)
                 .addVariant("warning_stripes_red", props)
                 .addVariant("warning_stripes_yellow", props)
-                .getFamily();
+                .family();
     }
 
     @Override

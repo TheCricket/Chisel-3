@@ -26,7 +26,7 @@ public class RedstoneBlock extends ChiselBlock {
                 .addVariant("redstone_tiles", props)
                 .addVariant("redstone_weaver", props)
                 .addVariant("redstone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

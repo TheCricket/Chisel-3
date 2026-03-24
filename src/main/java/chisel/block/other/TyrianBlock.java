@@ -24,7 +24,7 @@ public class TyrianBlock extends ChiselBlock {
                 .addVariant("tyrian_smooth", props)
                 .addVariant("tyrian_symbol", props)
                 .addVariant("tyrian_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

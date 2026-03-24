@@ -2,7 +2,6 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 
@@ -20,7 +19,7 @@ public class NetherBrickBlock extends ChiselBlock {
                 .addVariant("netherbrick_french", props)
                 .addVariant("netherbrick_french_2", props)
                 .addVariant("netherbrick_layers", props)
-                .getFamily();
+                .family();
     }
 
     @Override

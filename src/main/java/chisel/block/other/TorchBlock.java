@@ -10,7 +10,7 @@ public class TorchBlock extends ChiselBlock {
 
         family = builder("torch")
                 .addVariant("torch_0", props)
-                .getFamily();
+                .family();
     }
 
     @Override

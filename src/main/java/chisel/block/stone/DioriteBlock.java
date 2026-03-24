@@ -45,7 +45,7 @@ public class DioriteBlock extends ChiselBlock {
                 .addVariant("diorite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("diorite_weaver", props)
                 .addVariant("diorite_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

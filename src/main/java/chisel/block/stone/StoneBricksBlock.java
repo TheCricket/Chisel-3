@@ -2,7 +2,6 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 
@@ -27,7 +26,7 @@ public class StoneBricksBlock extends ChiselBlock {
                 .addVariant("stone_bricks_poison", props)
                 .addVariant("stone_bricks_small", props)
                 .addVariant("stone_bricks_wide", props)
-                .getFamily();
+                .family();
     }
 
     @Override

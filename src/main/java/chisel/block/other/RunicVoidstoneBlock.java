@@ -24,7 +24,7 @@ public class RunicVoidstoneBlock extends ChiselBlock {
                 .addVariant("runic_voidstone_smooth", props)
                 .addVariant("runic_voidstone_symbol", props)
                 .addVariant("runic_voidstone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

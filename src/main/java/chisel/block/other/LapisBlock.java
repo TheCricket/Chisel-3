@@ -26,7 +26,7 @@ public class LapisBlock extends ChiselBlock {
                 .addVariant("lapis_tiles", props)
                 .addVariant("lapis_weaver", props)
                 .addVariant("lapis_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -26,7 +26,7 @@ public class EmeraldBlock extends ChiselBlock {
                 .addVariant("emerald_tiles", props)
                 .addVariant("emerald_weaver", props)
                 .addVariant("emerald_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

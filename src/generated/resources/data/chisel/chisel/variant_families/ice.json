@@ -80,6 +80,36 @@
       "block": "chisel:ice_zag",
       "model_type": "cube_all",
       "name": "ice_zag"
+    },
+    {
+      "block": "chisel:ice_pillar_1",
+      "model_type": "cube_all",
+      "name": "ice_pillar_1"
+    },
+    {
+      "block": "chisel:ice_pillar_2",
+      "model_type": "cube_all",
+      "name": "ice_pillar_2"
+    },
+    {
+      "block": "chisel:ice_pillar_3",
+      "model_type": "cube_all",
+      "name": "ice_pillar_3"
+    },
+    {
+      "block": "chisel:ice_pillar_4",
+      "model_type": "cube_all",
+      "name": "ice_pillar_4"
+    },
+    {
+      "block": "chisel:ice_pillar_5",
+      "model_type": "cube_all",
+      "name": "ice_pillar_5"
+    },
+    {
+      "block": "chisel:ice_pillar_6",
+      "model_type": "cube_all",
+      "name": "ice_pillar_6"
     }
   ]
 }

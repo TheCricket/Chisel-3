@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/lavastone/lavastone_pillar-bottom",
+    "side": "chisel:block/lavastone/lavastone_pillar-side",
+    "top": "chisel:block/lavastone/lavastone_pillar-top"
+  }
+}

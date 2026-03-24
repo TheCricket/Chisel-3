@@ -1,10 +1,12 @@
 package chisel.core;
 
+import chisel.block.ConnectedTextureBlockItem;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -62,48 +64,43 @@ public class VariantFamily {
         return familyName.hashCode();
     }
 
-    public static class Builder {
-        private final VariantFamily family;
+    public record Builder(VariantFamily family) {
+            public Builder(String family) {
+                this(new VariantFamily(family));
+            }
 
-        public Builder(String prefix) {
-            this.family = new VariantFamily(prefix);
-        }
-
-        public VariantFamily getFamily() {
-            return family;
-        }
-        
         public Builder addVariant(Block block) {
-            family.getVariants().add(new Variant(block, family));
-            return this;
-        }
+                family.getVariants().add(new Variant(block, family));
+                return this;
+            }
 
-        public Builder addVariant(String name, BlockBehaviour.Properties props) {
-            DeferredBlock<Block> block = ChiselBlocks.register(name, props);
-            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
-            family.getVariants().add(new Variant(name, block, family));
-            return this;
-        }
+            public Builder addVariant(String name, BlockBehaviour.Properties props) {
+                DeferredBlock<Block> block = ChiselBlocks.register(name, props);
+                registerAndAdd(new Variant(name, block, family));
+                return this;
+            }
 
-        public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties) {
-            DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
-            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
-            family.getVariants().add(new Variant(name, block, family));
-            return this;
-        }
+            public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties) {
+                DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
+                registerAndAdd(new Variant(name, block, family));
+                return this;
+            }
 
-        public Builder addVariant(String name, BlockBehaviour.Properties props, VariantModelType modelType) {
-            DeferredBlock<Block> block = ChiselBlocks.register(name, props);
-            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
-            family.getVariants().add(new Variant(name, block, family, modelType));
-            return this;
-        }
+            public Builder addVariant(String name, BlockBehaviour.Properties props, VariantModelType modelType) {
+                DeferredBlock<Block> block = ChiselBlocks.register(name, props);
+                registerAndAdd(new Variant(name, block, family, modelType));
+                return this;
+            }
 
-        public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelType modelType) {
-            DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
-            ChiselItems.ITEMS.registerSimpleBlockItem(name, block);
-            family.getVariants().add(new Variant(name, block, family, modelType));
-            return this;
+            public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelType modelType) {
+                DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
+                registerAndAdd(new Variant(name, block, family, modelType));
+                return this;
+            }
+
+            private void registerAndAdd(Variant variant) {
+                ChiselItems.ITEMS.registerItem(variant.getName(), p -> new ConnectedTextureBlockItem(variant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
+                family.getVariants().add(variant);
+            }
         }
-    }
 }

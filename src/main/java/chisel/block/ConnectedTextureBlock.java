@@ -60,4 +60,6 @@ public class ConnectedTextureBlock extends Block {
                 .setValue(WEST, level.getBlockState(pos.west()).is(this))
                 .setValue(EAST, level.getBlockState(pos.east()).is(this));
     }
+
+
 }

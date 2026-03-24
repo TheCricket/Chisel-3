@@ -44,7 +44,7 @@ public class AndesiteBlock extends ChiselBlock {
                 .addVariant("andesite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("andesite_weaver", props)
                 .addVariant("andesite_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

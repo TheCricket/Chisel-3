@@ -27,7 +27,7 @@ public class ChiselIronBarsBlock extends ChiselBlock {
                 .addVariant("iron_bars_spikes", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_spikes")))), () -> props, VariantModelType.IRON_BARS)
                 .addVariant("iron_bars_thick_grid", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thick_grid")))), () -> props, VariantModelType.IRON_BARS)
                 .addVariant("iron_bars_thin_grid", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thin_grid")))), () -> props, VariantModelType.IRON_BARS)
-                .getFamily();
+                .family();
     }
 
     @Override

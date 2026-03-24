@@ -2,7 +2,6 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 
@@ -25,7 +24,7 @@ public class NetherrackBlock extends ChiselBlock {
                 .addVariant("netherrack_meat_small", props)
                 .addVariant("netherrack_red", props)
                 .addVariant("netherrack_spattered", props)
-                .getFamily();
+                .family();
     }
 
     @Override

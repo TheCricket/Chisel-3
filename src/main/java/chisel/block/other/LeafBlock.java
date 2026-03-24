@@ -25,7 +25,7 @@ public class LeafBlock extends ChiselBlock {
                 .addVariant("leaf_13", props)
                 .addVariant("leaf_14", props)
                 .addVariant("leaf_15", props)
-                .getFamily();
+                .family();
     }
 
     @Override

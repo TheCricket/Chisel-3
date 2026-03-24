@@ -17,7 +17,7 @@ public class SilverBlock extends ChiselBlock {
                 .addVariant("silver_machine", props)
                 .addVariant("silver_scaffold", props)
                 .addVariant("silver_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .getFamily();
+                .family();
     }
 
     @Override

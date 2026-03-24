@@ -1,6 +1,7 @@
 package chisel.registry;
 
 import chisel.Chisel;
+import chisel.block.ChiselBlock;
 import chisel.core.VariantFamily;
 import com.google.common.collect.Maps;
 import net.minecraft.core.Registry;
@@ -13,10 +14,10 @@ import java.util.Map;
 
 public class ChiselVariants {
 
-    private static final Map<String, VariantFamily> VARIANT_FAMILIES = Maps.newHashMap();
+    public static final Map<String, VariantFamily> VARIANT_FAMILIES = Maps.newHashMap();
     public static final ResourceKey<Registry<VariantFamily>> VARIANT_FAMILY_REGISTRY_KEY = ResourceKey.createRegistryKey(Chisel.prefix("variant_families"));
 
-    private static void register(chisel.block.ChiselBlock block, BootstrapContext<VariantFamily> context) {
+    private static void register(ChiselBlock block, BootstrapContext<VariantFamily> context) {
         context.register(block.getKey(), block.getFamily());
         VARIANT_FAMILIES.putIfAbsent(block.getFamily().getFamilyName(), block.getFamily());
     }

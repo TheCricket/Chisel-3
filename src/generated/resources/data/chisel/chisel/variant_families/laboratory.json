@@ -90,6 +90,81 @@
       "block": "chisel:laboratory_wall",
       "model_type": "cube_all",
       "name": "laboratory_wall"
+    },
+    {
+      "block": "chisel:laboratory_checkerboard",
+      "model_type": "cube_all",
+      "name": "laboratory_checkerboard"
+    },
+    {
+      "block": "chisel:laboratory_clearscreen",
+      "model_type": "cube_all",
+      "name": "laboratory_clearscreen"
+    },
+    {
+      "block": "chisel:laboratory_console_informatio",
+      "model_type": "top_bottom_side",
+      "name": "laboratory_console_informatio"
+    },
+    {
+      "block": "chisel:laboratory_panel_clear",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_clear"
+    },
+    {
+      "block": "chisel:laboratory_panel_dotted",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_dotted"
+    },
+    {
+      "block": "chisel:laboratory_panel_fuzzy",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_fuzzy"
+    },
+    {
+      "block": "chisel:laboratory_panel_wall",
+      "model_type": "cube_all",
+      "name": "laboratory_panel_wall"
+    },
+    {
+      "block": "chisel:laboratory_tiles_enamelled_la",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_enamelled_la"
+    },
+    {
+      "block": "chisel:laboratory_tiles_enamelled_sm",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_enamelled_sm"
+    },
+    {
+      "block": "chisel:laboratory_tiles_large",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_large"
+    },
+    {
+      "block": "chisel:laboratory_tiles_small",
+      "model_type": "cube_all",
+      "name": "laboratory_tiles_small"
+    },
+    {
+      "block": "chisel:laboratory_tiles_steel_large",
+      "model_type": "top_bottom_side",
+      "name": "laboratory_tiles_steel_large"
+    },
+    {
+      "block": "chisel:laboratory_tiles_steel_small",
+      "model_type": "top_bottom_side",
+      "name": "laboratory_tiles_steel_small"
+    },
+    {
+      "block": "chisel:laboratory_wall_rounded",
+      "model_type": "cube_all",
+      "name": "laboratory_wall_rounded"
+    },
+    {
+      "block": "chisel:laboratory_wall_vent",
+      "model_type": "top_bottom_side",
+      "name": "laboratory_wall_vent"
     }
   ]
 }

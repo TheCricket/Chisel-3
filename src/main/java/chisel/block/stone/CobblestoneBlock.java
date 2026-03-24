@@ -48,7 +48,7 @@ public class CobblestoneBlock extends ChiselBlock {
                 .addVariant("cobblestone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("cobblestone_weaver", props)
                 .addVariant("cobblestone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

@@ -80,6 +80,11 @@
       "block": "chisel:birch_planks_vertical",
       "model_type": "cube_all",
       "name": "birch_planks_vertical"
+    },
+    {
+      "block": "chisel:birch_planks_log_bordered",
+      "model_type": "cube_all",
+      "name": "birch_planks_log_bordered"
     }
   ]
 }

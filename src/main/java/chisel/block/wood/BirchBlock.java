@@ -27,7 +27,8 @@ public class BirchBlock extends ChiselBlock {
                 .addVariant("birch_planks_smooth", props)
                 .addVariant("birch_planks_stacked", props)
                 .addVariant("birch_planks_vertical", props)
-                .getFamily();
+                .addVariant("birch_planks_log_bordered", props)
+                .family();
     }
 
     @Override
@@ -47,6 +48,7 @@ public class BirchBlock extends ChiselBlock {
         lang.addBlock(getVariant("birch_planks_smooth"), "Birch Wood Planks", "Smooth");
         lang.addBlock(getVariant("birch_planks_stacked"), "Birch Wood Planks", "Stacked");
         lang.addBlock(getVariant("birch_planks_vertical"), "Birch Wood Planks", "Vertical Planks");
+        lang.addBlock(getVariant("birch_planks_log_bordered"), "Birch Wood Planks", "Log Bordered");
     }
 }
 

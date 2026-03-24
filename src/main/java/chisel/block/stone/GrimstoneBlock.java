@@ -2,7 +2,6 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 
 public class GrimstoneBlock extends ChiselBlock {
@@ -25,7 +24,7 @@ public class GrimstoneBlock extends ChiselBlock {
                 .addVariant("grimstone_smooth", props)
                 .addVariant("grimstone_symbol", props)
                 .addVariant("grimstone_tiles", props)
-                .getFamily();
+                .family();
     }
 
     @Override

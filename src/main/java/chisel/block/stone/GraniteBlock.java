@@ -45,7 +45,7 @@ public class GraniteBlock extends ChiselBlock {
                 .addVariant("granite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("granite_weaver", props)
                 .addVariant("granite_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

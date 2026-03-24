@@ -24,7 +24,7 @@ public class MossyCobblestoneBlock extends ChiselBlock {
                 .addVariant("mossy_cobblestone_tiles", props)
                 .addVariant("mossy_cobblestone_weaver", props)
                 .addVariant("mossy_cobblestone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

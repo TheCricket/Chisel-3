@@ -27,7 +27,7 @@ public class PumpkinBlock extends ChiselBlock {
                 .addVariant("pumpkin_13", props)
                 .addVariant("pumpkin_14", props)
                 .addVariant("pumpkin_15", props)
-                .getFamily();
+                .family();
     }
 
     @Override

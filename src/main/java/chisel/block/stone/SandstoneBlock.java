@@ -58,7 +58,7 @@ public class SandstoneBlock extends ChiselBlock {
                 .addVariant("sandstone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("sandstone_weaver", props)
                 .addVariant("sandstone_zag", props)
-                .getFamily();
+                .family();
     }
 
     @Override

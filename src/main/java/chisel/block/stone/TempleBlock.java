@@ -2,9 +2,7 @@ package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 
 public class TempleBlock extends ChiselBlock {
     public TempleBlock(BlockBehaviour.Properties props) {
@@ -27,7 +25,7 @@ public class TempleBlock extends ChiselBlock {
                 .addVariant("temple_tiles_light", props)
                 .addVariant("temple_tiles_small", props)
                 .addVariant("temple_tiles_small_light", props)
-                .getFamily();
+                .family();
     }
 
     @Override

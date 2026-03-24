@@ -19,7 +19,9 @@ public class DirtBlock extends ChiselBlock {
                 .addVariant("dirt_french", props)
                 .addVariant("dirt_french_2", props)
                 .addVariant("dirt_layers", props)
-                .getFamily();
+                .addVariant("dirt_bricks_arranged", props)
+                .addVariant("dirt_chunky", props)
+                .family();
     }
 
     @Override
@@ -32,6 +34,8 @@ public class DirtBlock extends ChiselBlock {
         lang.addBlock(getVariant("dirt_french"), "Dirt", "French");
         lang.addBlock(getVariant("dirt_french_2"), "Dirt", "French 2");
         lang.addBlock(getVariant("dirt_layers"), "Dirt", "Layers");
+        lang.addBlock(getVariant("dirt_bricks_arranged"), "Dirt", "Arranged Bricks");
+        lang.addBlock(getVariant("dirt_chunky"), "Dirt", "Chunky");
     }
 }
 

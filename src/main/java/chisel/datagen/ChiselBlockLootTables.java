@@ -19,8 +19,7 @@ public class ChiselBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         ChiselVariants.getVariantFamilies().forEach(f -> f.getVariants().forEach(v -> {
-            if(v.shouldGenerateModel())
-                dropSelf(v.getBlock());
+            if(v.shouldGenerateModel()) dropSelf(v.getBlock());
         }));
     }
 
