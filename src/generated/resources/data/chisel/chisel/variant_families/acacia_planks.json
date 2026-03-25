@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:acacia_planks_braid",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "acacia_planks_braid"
     },
     {

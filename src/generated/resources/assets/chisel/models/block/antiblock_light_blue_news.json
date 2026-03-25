@@ -1,8 +1,0 @@
-{
-  "parent": "chisel:block/cube_multi_pass",
-  "textures": {
-    "layer0": "chisel:block/antiblock/antiblock_light_blue-news",
-    "layer1": "chisel:block/antiblock/antiblock_light_blue-bg",
-    "particle": "chisel:block/antiblock/antiblock_light_blue-bg"
-  }
-}

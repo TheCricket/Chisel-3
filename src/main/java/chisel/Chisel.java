@@ -16,6 +16,7 @@ public class Chisel {
     public Chisel(IEventBus bus) {
         ChiselSounds.SOUNDS.register(bus);
         ChiselBlocks.registerBlocks(bus);
+        ChiselBlockEntities.register(bus);
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
         ChiselMenus.MENU_TYPES.register(bus);

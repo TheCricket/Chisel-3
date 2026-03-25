@@ -3,82 +3,82 @@
   "variants": [
     {
       "block": "chisel:antiblock_black",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_black"
     },
     {
       "block": "chisel:antiblock_blue",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_blue"
     },
     {
       "block": "chisel:antiblock_brown",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_brown"
     },
     {
       "block": "chisel:antiblock_cyan",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_cyan"
     },
     {
       "block": "chisel:antiblock_gray",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_gray"
     },
     {
       "block": "chisel:antiblock_green",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_green"
     },
     {
       "block": "chisel:antiblock_light_blue",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_light_blue"
     },
     {
       "block": "chisel:antiblock_light_gray",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_light_gray"
     },
     {
       "block": "chisel:antiblock_lime",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_lime"
     },
     {
       "block": "chisel:antiblock_magenta",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_magenta"
     },
     {
       "block": "chisel:antiblock_orange",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_orange"
     },
     {
       "block": "chisel:antiblock_pink",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_pink"
     },
     {
       "block": "chisel:antiblock_purple",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_purple"
     },
     {
       "block": "chisel:antiblock_red",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_red"
     },
     {
       "block": "chisel:antiblock_white",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_white"
     },
     {
       "block": "chisel:antiblock_yellow",
-      "model_type": "multi_layer_connected",
+      "model_type": "multi_layer",
       "name": "antiblock_yellow"
     }
   ]

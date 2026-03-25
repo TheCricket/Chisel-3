@@ -1,5 +1,6 @@
 package chisel.core.model;
 
+import chisel.client.ChiselModelTemplates;
 import chisel.core.Variant;
 import chisel.core.VariantModel;
 import net.minecraft.client.data.models.BlockModelGenerators;

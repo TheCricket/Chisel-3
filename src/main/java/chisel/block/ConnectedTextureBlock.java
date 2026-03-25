@@ -5,6 +5,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -13,7 +15,7 @@ import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
-public class ConnectedTextureBlock extends Block {
+public class ConnectedTextureBlock extends Block implements EntityBlock {
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
     public static final BooleanProperty EAST = BlockStateProperties.EAST;
@@ -61,5 +63,8 @@ public class ConnectedTextureBlock extends Block {
                 .setValue(EAST, level.getBlockState(pos.east()).is(this));
     }
 
-
+    @Override
+    public @Nullable BlockEntity newBlockEntity(@NonNull BlockPos pos, @NonNull BlockState state) {
+        return new ConnectedTextureBlockEntity(pos, state);
+    }
 }

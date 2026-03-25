@@ -3,6 +3,7 @@ package chisel.events;
 import chisel.Chisel;
 import chisel.datagen.*;
 import chisel.datagen.lang.ChiselLang;
+import chisel.datagen.model.ChiselModelProvider;
 import chisel.registry.ChiselVariants;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

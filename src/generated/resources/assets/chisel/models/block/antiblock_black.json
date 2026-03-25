@@ -3,6 +3,6 @@
   "textures": {
     "layer0": "chisel:block/antiblock/antiblock_black",
     "layer1": "chisel:block/antiblock/antiblock_black-bg",
-    "particle": "chisel:block/antiblock/antiblock_black-bg"
+    "particle": "chisel:block/antiblock/antiblock_black"
   }
 }

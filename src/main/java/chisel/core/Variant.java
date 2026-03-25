@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
+import static chisel.core.VariantModelType.*;
+
 public class Variant extends VariantModels {
 
     public static final Codec<Variant> CODEC = RecordCodecBuilder.create(instance -> instance.group(
@@ -55,6 +57,10 @@ public class Variant extends VariantModels {
 
     public Block getBlock() {
         return block.get();
+    }
+
+    public boolean isCTM() {
+        return modelType == CONNECTED || modelType == CONNECTED_VERTICALLY || modelType == CONNECTED_HORIZONTALLY || modelType == MULTI_LAYER_CONNECTED;
     }
 
     public VariantModelType getModelType() {

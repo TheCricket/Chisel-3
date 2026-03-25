@@ -12,7 +12,7 @@ public class AcaciaBlock extends ChiselBlock {
         family = builder("acacia_planks")
                 .addVariant(Blocks.ACACIA_PLANKS)
                 .addVariant("acacia_planks_braced", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("acacia_planks_braid", props)
+                .addVariant("acacia_planks_braid", props, VariantModelType.CONNECTED)
                 .addVariant("acacia_planks_crude_horizontal", props)
                 .addVariant("acacia_planks_crude_paneling", props)
                 .addVariant("acacia_planks_crude_vertical", props)
