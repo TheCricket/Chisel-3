@@ -1,8 +1,8 @@
 package chisel.block.metal;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class FuturaBlock extends ChiselBlock {
     public FuturaBlock(BlockBehaviour.Properties props) {

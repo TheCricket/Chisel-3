@@ -1,7 +1,10 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.datagen.*;
+import chisel.datagen.ChiselBlockTags;
+import chisel.datagen.ChiselLootTableProvider;
+import chisel.datagen.ChiselRecipes;
+import chisel.datagen.ChiselSoundDefinitionProvider;
 import chisel.datagen.lang.ChiselLang;
 import chisel.datagen.model.ChiselModelProvider;
 import chisel.registry.ChiselVariants;

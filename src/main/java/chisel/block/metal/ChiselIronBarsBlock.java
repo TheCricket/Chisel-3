@@ -6,9 +6,9 @@ import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.Blocks;
 
 public class ChiselIronBarsBlock extends ChiselBlock {
     public ChiselIronBarsBlock(BlockBehaviour.Properties props) {

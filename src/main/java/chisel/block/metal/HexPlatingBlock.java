@@ -2,8 +2,8 @@ package chisel.block.metal;
 
 import chisel.block.ChiselBlock;
 import chisel.core.VariantModelType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class HexPlatingBlock extends ChiselBlock {
     public HexPlatingBlock(BlockBehaviour.Properties props) {

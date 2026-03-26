@@ -7,6 +7,7 @@ import chisel.core.model.ctm.util.C1Model;
 import chisel.core.model.ctm.util.C2Model;
 import com.mojang.math.Quadrant;
 import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.resources.Identifier;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
@@ -32,7 +33,9 @@ public class CTMHModel extends VariantModel {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        MultiVariant base = plainVariant(ModelTemplates.CUBE_TOP.create(getBlock(), getTextureMapping(), blockModels.modelOutput));
+        Identifier modelLocation = ModelTemplates.CUBE_TOP.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        MultiVariant base = plainVariant(modelLocation);
+        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         c1Model.setVariant(variant);
         c2Model.setVariant(variant);
 

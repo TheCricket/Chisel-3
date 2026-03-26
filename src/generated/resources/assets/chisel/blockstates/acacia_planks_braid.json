@@ -1,12 +1,12 @@
 {
   "neoforge:definition_type": "chisel:ctm_definition_loader",
   "connected_faces": [
-    "north",
-    "east",
     "down",
     "west",
+    "up",
     "south",
-    "up"
+    "north",
+    "east"
   ],
   "element": {
     "max": [

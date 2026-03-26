@@ -1,8 +1,8 @@
 package chisel.block.other;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class TyrianBlock extends ChiselBlock {
     public TyrianBlock(BlockBehaviour.Properties props) {

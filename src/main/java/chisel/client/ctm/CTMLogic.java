@@ -4,9 +4,13 @@ import net.minecraft.client.resources.model.cuboid.CuboidFace;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
 
+import com.mojang.serialization.Codec;
+import net.minecraft.util.StringRepresentable;
+import org.jspecify.annotations.NonNull;
+
 import static net.minecraft.core.Direction.*;
 
-public enum CTMLogic {
+public enum CTMLogic implements StringRepresentable {
 
     NONE(0, 0, 0, 16, 16),
     CORNERLESS(1, 0, 0, 8, 8),
@@ -55,5 +59,12 @@ public enum CTMLogic {
 
     public float getV(float delta) {
         return (float) this.v0 + (float) (this.v1 - this.v0) * (delta / 16.0F);
+    }
+
+    public static final Codec<CTMLogic> CODEC = StringRepresentable.fromEnum(CTMLogic::values);
+
+    @Override
+    public @NonNull String getSerializedName() {
+        return name().toLowerCase();
     }
 }

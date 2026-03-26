@@ -1,10 +1,10 @@
 package chisel.block.wood;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class SpruceBlock extends ChiselBlock {
     public SpruceBlock(BlockBehaviour.Properties props) {

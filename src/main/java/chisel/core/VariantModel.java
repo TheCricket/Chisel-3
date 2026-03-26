@@ -1,7 +1,6 @@
 package chisel.core;
 
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.world.level.block.Block;
 

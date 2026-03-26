@@ -1,6 +1,9 @@
 package chisel.registry;
 
-import chisel.core.model.*;
+import chisel.core.model.CubeAllModel;
+import chisel.core.model.MultiLayerModel;
+import chisel.core.model.PillarModel;
+import chisel.core.model.TopBottomSideModel;
 import chisel.core.model.ctm.*;
 import chisel.core.model.special.*;
 

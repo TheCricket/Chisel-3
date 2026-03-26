@@ -1,8 +1,8 @@
 package chisel.block.other;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class MossyTempleBlock extends ChiselBlock {
     public MossyTempleBlock(BlockBehaviour.Properties props) {

@@ -1,9 +1,9 @@
 package chisel.block.modded;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AluminumBlock extends ChiselBlock {
     public AluminumBlock(BlockBehaviour.Properties props) {

@@ -1,10 +1,10 @@
 package chisel.core.model.ctm;
 
 import chisel.block.ConnectedTextureBlock;
+import chisel.client.ChiselModelTemplates;
 import chisel.client.ChiselTextureSlots;
 import chisel.core.Variant;
 import chisel.core.VariantModel;
-import chisel.client.ChiselModelTemplates;
 import chisel.core.model.ctm.util.*;
 import com.mojang.math.Quadrant;
 import net.minecraft.client.data.models.BlockModelGenerators;

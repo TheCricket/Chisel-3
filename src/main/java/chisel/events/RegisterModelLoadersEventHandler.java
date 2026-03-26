@@ -5,7 +5,6 @@ import chisel.client.ctm.UnbakedConnectedTextureBlockStateModel;
 import chisel.datagen.model.ConnectedTextureBlockModelDefinition;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.client.event.RegisterBlockStateModels;
 
 @EventBusSubscriber(modid = Chisel.MODID)

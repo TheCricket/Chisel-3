@@ -2,7 +2,6 @@ package chisel.util;
 
 import chisel.core.VariantFamily;
 import chisel.registry.ChiselVariants;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceKey;

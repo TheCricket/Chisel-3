@@ -45,30 +45,37 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
         ModelData modelData = level.getModelData(pos);
         CTMData ctm = modelData.get(CTMData.DATA);
 
-        for(Direction face : Direction.values()) {
+        if (ctm == null) {
+            ctm = new CTMData();
+        } else {
+            // Copy CTMData to avoid modifying a shared instance if it's cached somewhere
+            ctm = new CTMData(List.copyOf(ctm.unculledFaces), java.util.Arrays.stream(ctm.logic).flatMap(java.util.Arrays::stream).toList());
+        }
+
+        // Ensure static unculled faces from the model are included
+        ctm.unculledFaces.addAll(this.unculledFaces);
+
+        for (Direction face : Direction.values()) {
             Direction[] directions = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
             boolean[] sideStates = new boolean[4];
-            int faceIndex;
 
-            for (faceIndex = 0; faceIndex < directions.length; faceIndex++) {
-                sideStates[faceIndex] = shouldConnectSide(level, pos, face, directions[faceIndex]);
+            for (int i = 0; i < directions.length; i++) {
+                sideStates[i] = shouldConnectSide(level, pos, face, directions[i]);
             }
 
-            faceIndex = face.get3DDataValue();
-
+            int faceIndex = face.get3DDataValue();
             for (int dir = 0; dir < directions.length; dir++) {
                 int cornerOffset = (dir + 1) % directions.length;
                 boolean side1 = sideStates[dir];
                 boolean side2 = sideStates[cornerOffset];
                 boolean corner = side1 && side2 && this.isCornerBlockPresent(level, pos, face, directions[dir], directions[cornerOffset]);
-                if (ctm != null) {
-                    ctm.logic[faceIndex][dir] = dir % 2 == 0 ? CTMLogic.of(side1, side2, corner) : CTMLogic.of(side2, side1, corner);
-                    modelData.derive().with(CTMData.DATA, ctm).build();
-                }
 
-                parts.add(new ConnectedTextureBlockModelPart(modelData, connectedFaces, unculledFaces, baseQuads, connectedQuads, renderOverlayOnAllFaces, false, particle));
+                ctm.logic[faceIndex][dir] = dir % 2 == 0 ? CTMLogic.of(side1, side2, corner) : CTMLogic.of(side2, side1, corner);
             }
         }
+
+        ModelData finalData = modelData.derive().with(CTMData.DATA, ctm).build();
+        parts.add(new ConnectedTextureBlockModelPart(finalData, connectedFaces, unculledFaces, baseQuads, connectedQuads, renderOverlayOnAllFaces, false, particle));
     }
 
     private boolean shouldConnectSide(BlockAndTintGetter getter, BlockPos pos, Direction face, Direction side) {

@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.model.data.ModelData;
-import net.neoforged.neoforge.model.data.ModelProperty;
 import org.jspecify.annotations.NonNull;
 
 import java.util.Set;
@@ -25,7 +24,7 @@ public class ConnectedTextureBlockEntity extends BlockEntity {
     public @NonNull ModelData getModelData() {
         ModelData data = super.getModelData();
         CTMData ctm = data.get(CTMData.DATA);
-        if(ctm == null) return data;
+        if(ctm == null) ctm = new CTMData();
         if(level == null) return data;
 
         for(Direction face : Direction.values()) {

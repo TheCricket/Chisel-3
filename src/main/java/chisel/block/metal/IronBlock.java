@@ -3,8 +3,8 @@ package chisel.block.metal;
 import chisel.block.ChiselBlock;
 import chisel.core.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class IronBlock extends ChiselBlock {
     public IronBlock(BlockBehaviour.Properties props) {

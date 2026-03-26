@@ -1,6 +1,5 @@
 package chisel.core.model.ctm;
 
-import chisel.Chisel;
 import chisel.client.ChiselModelTemplates;
 import chisel.client.ChiselTextureSlots;
 import chisel.client.ctm.ConnectedTextureBlockStateModelBuilder;
@@ -8,7 +7,6 @@ import chisel.core.Variant;
 import chisel.core.VariantModel;
 import chisel.datagen.model.ConnectedTextureBlockStateDefinitionGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
@@ -30,6 +28,7 @@ public class CTMModel extends VariantModel {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         Identifier modelLocation = ChiselModelTemplates.CTM.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

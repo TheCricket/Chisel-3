@@ -80,7 +80,6 @@ public class Variant extends VariantModels {
     }
 
     public void registerModel(BlockModelGenerators blockModels) {
-
         switch (modelType) {
             case CUBE_ALL -> CUBE_ALL.generate(this, blockModels);
             case PILLAR -> PILLAR.generate(this, blockModels);

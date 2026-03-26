@@ -1,8 +1,8 @@
 package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class GrimstoneBlock extends ChiselBlock {
     public GrimstoneBlock(BlockBehaviour.Properties props) {

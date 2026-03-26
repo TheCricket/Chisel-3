@@ -1,6 +1,5 @@
 package chisel.core.model.special;
 
-import chisel.core.model.MultiLayerModel;
 import chisel.core.model.ctm.MultiLayerTBSModel;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;

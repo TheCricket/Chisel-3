@@ -1,9 +1,9 @@
 package chisel.block.glass;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class GlassBlock extends ChiselBlock {
     public GlassBlock(BlockBehaviour.Properties props) {

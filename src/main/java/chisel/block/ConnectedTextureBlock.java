@@ -15,6 +15,8 @@ import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
+import java.util.Objects;
+
 public class ConnectedTextureBlock extends Block implements EntityBlock {
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
@@ -46,6 +48,7 @@ public class ConnectedTextureBlock extends Block implements EntityBlock {
     protected void neighborChanged(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
         level.setBlock(pos, getConnectableSides(level, pos), Block.UPDATE_ALL);
+        Objects.requireNonNull(level.getBlockEntity(pos)).requestModelDataUpdate();
     }
 
     @Override

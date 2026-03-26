@@ -1,9 +1,9 @@
 package chisel.block.stone;
 
 import chisel.block.ChiselBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class NetherrackBlock extends ChiselBlock {
     public NetherrackBlock(BlockBehaviour.Properties props) {
