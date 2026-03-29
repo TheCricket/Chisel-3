@@ -5,8 +5,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -15,9 +13,7 @@ import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
-import java.util.Objects;
-
-public class ConnectedTextureBlock extends Block implements EntityBlock {
+public class ConnectedTextureBlock extends Block {
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
     public static final BooleanProperty EAST = BlockStateProperties.EAST;
@@ -48,7 +44,6 @@ public class ConnectedTextureBlock extends Block implements EntityBlock {
     protected void neighborChanged(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
         level.setBlock(pos, getConnectableSides(level, pos), Block.UPDATE_ALL);
-        Objects.requireNonNull(level.getBlockEntity(pos)).requestModelDataUpdate();
     }
 
     @Override
@@ -64,10 +59,5 @@ public class ConnectedTextureBlock extends Block implements EntityBlock {
                 .setValue(SOUTH, level.getBlockState(pos.south()).is(this))
                 .setValue(WEST, level.getBlockState(pos.west()).is(this))
                 .setValue(EAST, level.getBlockState(pos.east()).is(this));
-    }
-
-    @Override
-    public @Nullable BlockEntity newBlockEntity(@NonNull BlockPos pos, @NonNull BlockState state) {
-        return new ConnectedTextureBlockEntity(pos, state);
     }
 }

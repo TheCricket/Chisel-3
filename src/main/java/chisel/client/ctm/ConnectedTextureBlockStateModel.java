@@ -12,12 +12,10 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.DynamicBlockStateModel;
-import net.neoforged.neoforge.model.data.ModelData;
 import org.jspecify.annotations.NonNull;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
 
@@ -29,8 +27,18 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     private final TextureAtlasSprite particle;
     private final Variant variant;
 
-    public ConnectedTextureBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, Map<Direction, BakedQuad[][]> connectedQuads, TextureAtlasSprite particle, Variant variant) {
+    // ✅ FIX: instance-level cache
+    private final Map<CTMData, ConnectedTextureBlockModelPart> cache = new ConcurrentHashMap<>();
 
+    public ConnectedTextureBlockStateModel(
+            Set<Direction> connectedFaces,
+            Set<Direction> unculledFaces,
+            boolean renderOverlayOnAllFaces,
+            Map<Direction, BakedQuad[]> baseQuads,
+            Map<Direction, BakedQuad[][]> connectedQuads,
+            TextureAtlasSprite particle,
+            Variant variant
+    ) {
         this.connectedFaces = connectedFaces;
         this.unculledFaces = unculledFaces;
         this.renderOverlayOnAllFaces = renderOverlayOnAllFaces;
@@ -41,53 +49,116 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     }
 
     @Override
-    public void collectParts(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random, List<BlockStateModelPart> parts) {
-        ModelData modelData = level.getModelData(pos);
-        CTMData ctm = modelData.get(CTMData.DATA);
+    public Object createGeometryKey(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos,
+                                    @NonNull BlockState state, @NonNull RandomSource random) {
+        return computeCTMData(level, pos);
+    }
 
-        if (ctm == null) {
-            ctm = new CTMData();
-        } else {
-            // Copy CTMData to avoid modifying a shared instance if it's cached somewhere
-            ctm = new CTMData(List.copyOf(ctm.unculledFaces), java.util.Arrays.stream(ctm.logic).flatMap(java.util.Arrays::stream).toList());
-        }
+    @Override
+    public void collectParts(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos,
+                             @NonNull BlockState state, @NonNull RandomSource random,
+                             List<BlockStateModelPart> parts) {
 
-        // Ensure static unculled faces from the model are included
-        ctm.unculledFaces.addAll(this.unculledFaces);
+        CTMData data = computeCTMData(level, pos);
+        parts.add(cache.computeIfAbsent(data, this::createPart));
+    }
+
+    private CTMData computeCTMData(BlockAndTintGetter level, BlockPos pos) {
+        CTMLogic[][] logic = new CTMLogic[6][4];
 
         for (Direction face : Direction.values()) {
-            Direction[] directions = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
+            Direction[] dirs = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
             boolean[] sideStates = new boolean[4];
 
-            for (int i = 0; i < directions.length; i++) {
-                sideStates[i] = shouldConnectSide(level, pos, face, directions[i]);
+            for (int i = 0; i < 4; i++) {
+                sideStates[i] = shouldConnectSide(level, pos, face, dirs[i]);
             }
 
             int faceIndex = face.get3DDataValue();
-            for (int dir = 0; dir < directions.length; dir++) {
-                int cornerOffset = (dir + 1) % directions.length;
-                boolean side1 = sideStates[dir];
-                boolean side2 = sideStates[cornerOffset];
-                boolean corner = side1 && side2 && this.isCornerBlockPresent(level, pos, face, directions[dir], directions[cornerOffset]);
 
-                ctm.logic[faceIndex][dir] = dir % 2 == 0 ? CTMLogic.of(side1, side2, corner) : CTMLogic.of(side2, side1, corner);
+            for (int i = 0; i < 4; i++) {
+                int next = (i + 1) % 4;
+
+                boolean s1 = sideStates[i];
+                boolean s2 = sideStates[next];
+                boolean corner = s1 && s2 && isCornerBlockPresent(level, pos, face, dirs[i], dirs[next]);
+
+                logic[faceIndex][i] = (i % 2 == 0)
+                        ? CTMLogic.of(s1, s2, corner)
+                        : CTMLogic.of(s2, s1, corner);
             }
         }
 
-        ModelData finalData = modelData.derive().with(CTMData.DATA, ctm).build();
-        parts.add(new ConnectedTextureBlockModelPart(finalData, connectedFaces, unculledFaces, baseQuads, connectedQuads, renderOverlayOnAllFaces, false, particle));
+        return new CTMData(variant, logic);
     }
 
-    private boolean shouldConnectSide(BlockAndTintGetter getter, BlockPos pos, Direction face, Direction side) {
-        BlockState neighborState = getter.getBlockState(pos.relative(side));
-        if (this.unculledFaces.contains(face)) return neighborState.is(variant.getBlock());
-        return neighborState.is(variant.getBlock()) && Block.shouldRenderFace(getter, pos.relative(face), neighborState, getter.getBlockState(pos.relative(face)), face);
+    private ConnectedTextureBlockModelPart createPart(CTMData data) {
+        Map<Direction, List<BakedQuad>> quadsMap = new EnumMap<>(Direction.class);
+        List<BakedQuad> unculled = new ArrayList<>();
+        int flags = 0;
+
+        for (Direction side : Direction.values()) {
+            List<BakedQuad> faceQuads = new ArrayList<>(8);
+
+            BakedQuad[] base = baseQuads.get(side);
+            if (base != null) {
+                faceQuads.addAll(Arrays.asList(base));
+            }
+
+            if (connectedFaces.contains(side) || renderOverlayOnAllFaces) {
+                for (int i = 0; i < 4; i++) {
+                    CTMLogic logic = connectedFaces.contains(side)
+                            ? data.get(side, i)
+                            : CTMLogic.NONE;
+
+                    BakedQuad[][] conn = connectedQuads.get(side);
+                    if (conn != null && conn[i] != null) {
+                        faceQuads.add(conn[i][logic.ordinal()]);
+                    }
+                }
+            }
+
+            for (BakedQuad q : faceQuads) {
+                flags |= q.materialInfo().flags();
+            }
+
+            quadsMap.put(side, List.copyOf(faceQuads));
+
+            if (unculledFaces.contains(side)) {
+                unculled.addAll(faceQuads);
+            }
+        }
+
+        return new ConnectedTextureBlockModelPart(
+                quadsMap,
+                List.copyOf(unculled),
+                flags,
+                new Material.Baked(particle, false)
+        );
     }
 
-    private boolean isCornerBlockPresent(BlockAndTintGetter getter, BlockPos pos, Direction face, Direction side1, Direction side2) {
-        BlockState neighborState = getter.getBlockState(pos.relative(side1).relative(side2));
-        if (this.unculledFaces.contains(face)) return neighborState.is(variant.getBlock());
-        return neighborState.is(variant.getBlock()) && Block.shouldRenderFace(getter, pos.relative(face), neighborState, getter.getBlockState(pos.relative(face)), face);
+    private boolean shouldConnectSide(BlockAndTintGetter level, BlockPos pos, Direction face, Direction side) {
+        BlockState neighbor = level.getBlockState(pos.relative(side));
+        if (unculledFaces.contains(face)) {
+            return neighbor.is(variant.getBlock());
+        }
+        return neighbor.is(variant.getBlock()) &&
+                Block.shouldRenderFace(level, pos.relative(face), neighbor,
+                        level.getBlockState(pos.relative(face)), face);
+    }
+
+    private boolean isCornerBlockPresent(BlockAndTintGetter level, BlockPos pos,
+                                         Direction face, Direction side1, Direction side2) {
+
+        BlockState neighbor = level.getBlockState(pos.relative(side1).relative(side2));
+
+        if (unculledFaces.contains(face)) {
+            return neighbor.is(variant.getBlock());
+        }
+
+        return neighbor.is(variant.getBlock()) &&
+                Block.shouldRenderFace(level, pos.relative(face), neighbor,
+                        level.getBlockState(pos.relative(face)), face);
     }
 
     @Override
@@ -97,6 +168,6 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
 
     @Override
     public @BakedQuad.MaterialFlags int materialFlags() {
-        return 0;
+        return 0; // handled per-part
     }
 }

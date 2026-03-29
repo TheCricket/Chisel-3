@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public class ChiselModelTemplates extends ModelTemplates {
 
-    public static final ModelTemplate CTM = create("chisel:ctm", TextureSlot.PARTICLE, ChiselTextureSlots.CTM_BASE, ChiselTextureSlots.CTM_OVERLAY, ChiselTextureSlots.CTM_OVERLAY_CONNECTED).extend().parent(Identifier.withDefaultNamespace("block/block")).build();
+    public static final ModelTemplate CTM = create("chisel:ctm", TextureSlot.PARTICLE, TextureSlot.ALL, ChiselTextureSlots.CTM_BASE, ChiselTextureSlots.CTM_OVERLAY, ChiselTextureSlots.CTM_OVERLAY_CONNECTED).extend().parent(Identifier.withDefaultNamespace("block/cube_all")).build();
     public static final ModelTemplate CTM_NO_BASE = create("chisel:ctm", TextureSlot.PARTICLE, ChiselTextureSlots.CTM_OVERLAY, ChiselTextureSlots.CTM_OVERLAY_CONNECTED).extend().parent(Identifier.withDefaultNamespace("block/block")).build();
 
     public static final ModelTemplate CUBE_MULTI_PASS = new ModelTemplate(

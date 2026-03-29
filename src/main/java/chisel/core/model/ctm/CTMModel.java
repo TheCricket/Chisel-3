@@ -19,6 +19,7 @@ public class CTMModel extends VariantModel {
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
+                .put(TextureSlot.ALL, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_BASE, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctm"));
