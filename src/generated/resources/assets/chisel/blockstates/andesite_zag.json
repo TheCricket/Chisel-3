@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/andesite_zag"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "south",
+    "north",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/andesite_zag",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:andesite_zag",
+    "model_type": "connected",
+    "name": "andesite_zag"
   }
 }

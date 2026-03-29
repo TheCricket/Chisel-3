@@ -1,6 +1,10 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/aluminum/aluminum_crate"
+    "all": "chisel:block/aluminum/aluminum_crate",
+    "base_texture": "chisel:block/aluminum/aluminum_crate",
+    "overlay_connected": "chisel:block/aluminum/aluminum_crate-ctm",
+    "overlay_texture": "chisel:block/aluminum/aluminum_crate",
+    "particle": "chisel:block/aluminum/aluminum_crate"
   }
 }

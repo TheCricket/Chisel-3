@@ -7,15 +7,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AluminumBlock extends ChiselBlock {
     public AluminumBlock(BlockBehaviour.Properties props) {
-        
-
         family = builder("aluminum")
-                .addVariant("aluminum_bad_greggy", props)
+                .addVariant("aluminum_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("aluminum_bolted", props)
-                .addVariant("aluminum_caution", props)
-                .addVariant("aluminum_crate", props)
+                .addVariant("aluminum_caution", props, VariantModelType.CONNECTED)
+                .addVariant("aluminum_crate", props, VariantModelType.CONNECTED)
                 .addVariant("aluminum_machine", props)
-                .addVariant("aluminum_scaffold", props)
+                .addVariant("aluminum_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("aluminum_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .family();
     }

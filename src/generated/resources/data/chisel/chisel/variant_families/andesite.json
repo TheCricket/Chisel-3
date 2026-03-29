@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:andesite_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_circular"
     },
     {
@@ -53,12 +53,12 @@
     },
     {
       "block": "chisel:andesite_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_dent"
     },
     {
       "block": "chisel:andesite_encased_bricks",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_encased_bricks"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:andesite_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_mosaic"
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "block": "chisel:andesite_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_tiles_large"
     },
     {
@@ -158,12 +158,12 @@
     },
     {
       "block": "chisel:andesite_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_weaver"
     },
     {
       "block": "chisel:andesite_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "andesite_zag"
     }
   ]

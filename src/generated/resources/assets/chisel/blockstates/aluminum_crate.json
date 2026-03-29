@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/aluminum_crate"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "south",
+    "north",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/aluminum_crate",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:aluminum_crate",
+    "model_type": "connected",
+    "name": "aluminum_crate"
   }
 }
