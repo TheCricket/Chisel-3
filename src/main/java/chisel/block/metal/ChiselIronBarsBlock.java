@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ChiselIronBarsBlock extends ChiselBlock {
     public ChiselIronBarsBlock(BlockBehaviour.Properties props) {
-
         family = builder("iron_bars")
                 .addVariant(Blocks.IRON_BARS)
                 .addVariant("iron_bars_barbed_wire", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_barbed_wire")))), () -> props, VariantModelType.IRON_BARS)

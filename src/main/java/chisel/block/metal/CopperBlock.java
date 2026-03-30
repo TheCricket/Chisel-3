@@ -8,16 +8,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CopperBlock extends ChiselBlock {
     public CopperBlock(BlockBehaviour.Properties props) {
-        
-
         family = builder("copper")
                 .addVariant(Blocks.COPPER_BLOCK)
-                .addVariant("copper_bad_greggy", props)
+                .addVariant("copper_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("copper_bolted", props)
-                .addVariant("copper_caution", props)
-                .addVariant("copper_crate", props)
+                .addVariant("copper_caution", props, VariantModelType.CONNECTED)
+                .addVariant("copper_crate", props, VariantModelType.CONNECTED)
                 .addVariant("copper_machine", props)
-                .addVariant("copper_scaffold", props)
+                .addVariant("copper_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("copper_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .family();
     }

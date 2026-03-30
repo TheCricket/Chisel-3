@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/bronze/bronze_caution"
+    "all": "chisel:block/bronze/bronze_caution",
+    "overlay_connected": "chisel:block/bronze/bronze_caution-ctm",
+    "overlay_texture": "chisel:block/bronze/bronze_caution",
+    "particle": "chisel:block/bronze/bronze_caution"
   }
 }

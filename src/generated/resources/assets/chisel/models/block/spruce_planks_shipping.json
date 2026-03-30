@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/spruce_planks/spruce_planks_shipping"
+    "all": "chisel:block/spruce_planks/spruce_planks_shipping",
+    "overlay_connected": "chisel:block/spruce_planks/spruce_planks_shipping-ctm",
+    "overlay_texture": "chisel:block/spruce_planks/spruce_planks_shipping",
+    "particle": "chisel:block/spruce_planks/spruce_planks_shipping"
   }
 }

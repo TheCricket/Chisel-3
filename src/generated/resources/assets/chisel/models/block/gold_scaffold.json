@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/gold/gold_scaffold"
+    "all": "chisel:block/gold/gold_scaffold",
+    "overlay_connected": "chisel:block/gold/gold_scaffold-ctm",
+    "overlay_texture": "chisel:block/gold/gold_scaffold",
+    "particle": "chisel:block/gold/gold_scaffold"
   }
 }

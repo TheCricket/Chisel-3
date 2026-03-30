@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/factory/factory_gold_plating",
+    "overlay_connected": "chisel:block/factory/factory_gold_plating-ctm",
+    "overlay_texture": "chisel:block/factory/factory_gold_plating",
+    "particle": "chisel:block/factory/factory_gold_plating"
+  }
+}

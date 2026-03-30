@@ -27,7 +27,6 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     private final TextureAtlasSprite particle;
     private final Variant variant;
 
-    // ✅ FIX: instance-level cache
     private final Map<CTMData, ConnectedTextureBlockModelPart> cache = new ConcurrentHashMap<>();
 
     public ConnectedTextureBlockStateModel(
@@ -49,8 +48,7 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     }
 
     @Override
-    public Object createGeometryKey(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos,
-                                    @NonNull BlockState state, @NonNull RandomSource random) {
+    public Object createGeometryKey(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos, @NonNull BlockState state, @NonNull RandomSource random) {
         return computeCTMData(level, pos);
     }
 
@@ -102,7 +100,11 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
 
             BakedQuad[] base = baseQuads.get(side);
             if (base != null) {
-                faceQuads.addAll(Arrays.asList(base));
+                for (BakedQuad quad : base) {
+                    if (quad != null) {
+                        faceQuads.add(quad);
+                    }
+                }
             }
 
             if (connectedFaces.contains(side) || renderOverlayOnAllFaces) {
@@ -113,13 +115,18 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
 
                     BakedQuad[][] conn = connectedQuads.get(side);
                     if (conn != null && conn[i] != null) {
-                        faceQuads.add(conn[i][logic.ordinal()]);
+                        BakedQuad quad = conn[i][logic.ordinal()];
+                        if (quad != null) {
+                            faceQuads.add(quad);
+                        }
                     }
                 }
             }
 
             for (BakedQuad q : faceQuads) {
-                flags |= q.materialInfo().flags();
+                if (q != null) {
+                    flags |= q.materialInfo().flags();
+                }
             }
 
             quadsMap.put(side, List.copyOf(faceQuads));
@@ -168,6 +175,6 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
 
     @Override
     public @BakedQuad.MaterialFlags int materialFlags() {
-        return 0; // handled per-part
+        return 0;
     }
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/factory/factory_frame_blue",
+    "overlay_connected": "chisel:block/factory/factory_frame_blue-ctm",
+    "overlay_texture": "chisel:block/factory/factory_frame_blue",
+    "particle": "chisel:block/factory/factory_frame_blue"
+  }
+}

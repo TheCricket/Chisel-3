@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/iron/iron_crate"
+    "all": "chisel:block/iron/iron_crate",
+    "overlay_connected": "chisel:block/iron/iron_crate-ctm",
+    "overlay_texture": "chisel:block/iron/iron_crate",
+    "particle": "chisel:block/iron/iron_crate"
   }
 }

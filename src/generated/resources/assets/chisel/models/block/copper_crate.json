@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/copper/copper_crate"
+    "all": "chisel:block/copper/copper_crate",
+    "overlay_connected": "chisel:block/copper/copper_crate-ctm",
+    "overlay_texture": "chisel:block/copper/copper_crate",
+    "particle": "chisel:block/copper/copper_crate"
   }
 }

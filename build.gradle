@@ -1,9 +1,19 @@
+import java.util.Properties
+
 plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.134'
     id 'idea'
+    id 'io.github.themrmilchmann.curseforge-publish' version '0.9.0'
+    id 'com.modrinth.minotaur' version '2.+'
 }
+
+var env = new Properties()
+if (file('.env').exists()) {
+    file('.env').withInputStream { env.load(it) }
+}
+
 
 tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
@@ -120,6 +130,37 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 
+curseforge {
+    apiToken = env.getProperty("CURSEFORGE")
+
+    publications {
+        register("curseForge") {
+            projectId.convention('225236')
+            gameVersion("26-1", "26.1")
+            artifacts.register("main") {
+                from jar
+                displayName = "${mod_name}-${mod_version}"
+                releaseType = io.github.themrmilchmann.gradle.publish.curseforge.ReleaseType.ALPHA
+
+                changelog {
+                    format = io.github.themrmilchmann.gradle.publish.curseforge.ChangelogFormat.MARKDOWN
+                    from(file("CHANGELOG.md"))
+                }
+            }
+        }
+    }
+}
+
+modrinth {
+    token = env.getProperty("MODRINTH")
+    projectId = "chisel-3"
+    versionName = "${mod_name}-${mod_version}"
+    versionNumber = mod_version
+    versionType = "alpha"
+    uploadFile = jar
+    gameVersions = ["26.1"]
+    loaders = ["neoforge"]
+}
 
 publishing {
     publications {
@@ -132,6 +173,24 @@ publishing {
             url "file://${project.projectDir}/repo"
         }
     }
+}
+
+tasks.register('releaseCurseForge') {
+    group = 'upload'
+    description = 'Builds and uploads the jar to CurseForge'
+    dependsOn 'publishToCurseForge'
+}
+
+tasks.register('releaseModrinth') {
+    group = 'upload'
+    description = 'Builds and uploads the jar to Modrinth'
+    dependsOn 'modrinth'
+}
+
+tasks.register('release') {
+    group = 'upload'
+    description = 'Builds and uploads the jar to both CurseForge and Modrinth'
+    dependsOn 'jar', 'releaseCurseForge', 'releaseModrinth'
 }
 
 tasks.withType(JavaCompile).configureEach {

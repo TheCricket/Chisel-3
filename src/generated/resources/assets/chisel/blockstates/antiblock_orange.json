@@ -1,7 +1,31 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/antiblock_orange"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_emissivity": 15,
+  "connected_faces": [
+    "down",
+    "west",
+    "east",
+    "up",
+    "north",
+    "south"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/antiblock_orange",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:antiblock_orange",
+    "model_type": "multi_layer_connected_glow",
+    "name": "antiblock_orange"
   }
 }

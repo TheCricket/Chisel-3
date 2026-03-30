@@ -44,3 +44,4 @@ libs
 *.dat
 *.psd
 /src/generated/resources/.cache/
+.env

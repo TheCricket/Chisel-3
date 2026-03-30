@@ -7,15 +7,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BronzeBlock extends ChiselBlock {
     public BronzeBlock(BlockBehaviour.Properties props) {
-        
-
         family = builder("bronze")
-                .addVariant("bronze_bad_greggy", props)
+                .addVariant("bronze_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("bronze_bolted", props)
-                .addVariant("bronze_caution", props)
-                .addVariant("bronze_crate", props)
+                .addVariant("bronze_caution", props, VariantModelType.CONNECTED)
+                .addVariant("bronze_crate", props, VariantModelType.CONNECTED)
                 .addVariant("bronze_machine", props)
-                .addVariant("bronze_scaffold", props)
+                .addVariant("bronze_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("bronze_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .family();
     }

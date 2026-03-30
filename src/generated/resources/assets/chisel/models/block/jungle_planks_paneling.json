@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/jungle_planks/jungle_planks_paneling"
+    "all": "chisel:block/jungle_planks/jungle_planks_paneling",
+    "overlay_connected": "chisel:block/jungle_planks/jungle_planks_paneling-ctm",
+    "overlay_texture": "chisel:block/jungle_planks/jungle_planks_paneling",
+    "particle": "chisel:block/jungle_planks/jungle_planks_paneling"
   }
 }

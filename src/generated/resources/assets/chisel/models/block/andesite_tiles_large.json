@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/andesite/andesite_tiles_large",
-    "base_texture": "chisel:block/andesite/andesite_tiles_large",
     "overlay_connected": "chisel:block/andesite/andesite_tiles_large-ctm",
     "overlay_texture": "chisel:block/andesite/andesite_tiles_large",
     "particle": "chisel:block/andesite/andesite_tiles_large"

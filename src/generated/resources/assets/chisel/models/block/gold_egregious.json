@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/gold/gold_egregious"
+    "all": "chisel:block/gold/gold_egregious",
+    "overlay_connected": "chisel:block/gold/gold_egregious-ctm",
+    "overlay_texture": "chisel:block/gold/gold_egregious",
+    "particle": "chisel:block/gold/gold_egregious"
   }
 }

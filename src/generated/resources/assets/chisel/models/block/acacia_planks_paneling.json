@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/acacia_planks/acacia_planks_paneling"
+    "all": "chisel:block/acacia_planks/acacia_planks_paneling",
+    "overlay_connected": "chisel:block/acacia_planks/acacia_planks_paneling-ctm",
+    "overlay_texture": "chisel:block/acacia_planks/acacia_planks_paneling",
+    "particle": "chisel:block/acacia_planks/acacia_planks_paneling"
   }
 }

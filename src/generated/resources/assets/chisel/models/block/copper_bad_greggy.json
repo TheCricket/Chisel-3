@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/copper/copper_bad_greggy"
+    "all": "chisel:block/copper/copper_bad_greggy",
+    "overlay_connected": "chisel:block/copper/copper_bad_greggy-ctm",
+    "overlay_texture": "chisel:block/copper/copper_bad_greggy",
+    "particle": "chisel:block/copper/copper_bad_greggy"
   }
 }

@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:birch_planks_braid",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_braid"
     },
     {
@@ -33,17 +33,17 @@
     },
     {
       "block": "chisel:birch_planks_encased",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_encased"
     },
     {
       "block": "chisel:birch_planks_encased_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_encased_large"
     },
     {
       "block": "chisel:birch_planks_encased_smooth",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_encased_smooth"
     },
     {
@@ -58,17 +58,17 @@
     },
     {
       "block": "chisel:birch_planks_paneling",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_paneling"
     },
     {
       "block": "chisel:birch_planks_shipping",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_shipping"
     },
     {
       "block": "chisel:birch_planks_smooth",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_smooth"
     },
     {

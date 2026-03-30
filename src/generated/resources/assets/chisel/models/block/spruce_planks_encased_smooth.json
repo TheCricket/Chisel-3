@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/spruce_planks/spruce_planks_encased_smooth"
+    "all": "chisel:block/spruce_planks/spruce_planks_encased_smooth",
+    "overlay_connected": "chisel:block/spruce_planks/spruce_planks_encased_smooth-ctm",
+    "overlay_texture": "chisel:block/spruce_planks/spruce_planks_encased_smooth",
+    "particle": "chisel:block/spruce_planks/spruce_planks_encased_smooth"
   }
 }

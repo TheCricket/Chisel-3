@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/copper/copper_caution"
+    "all": "chisel:block/copper/copper_caution",
+    "overlay_connected": "chisel:block/copper/copper_caution-ctm",
+    "overlay_texture": "chisel:block/copper/copper_caution",
+    "particle": "chisel:block/copper/copper_caution"
   }
 }

@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/aluminum/aluminum_scaffold",
-    "base_texture": "chisel:block/aluminum/aluminum_scaffold",
     "overlay_connected": "chisel:block/aluminum/aluminum_scaffold-ctm",
     "overlay_texture": "chisel:block/aluminum/aluminum_scaffold",
     "particle": "chisel:block/aluminum/aluminum_scaffold"

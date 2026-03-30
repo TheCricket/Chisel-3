@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/factory/factory_dots"
+    "all": "chisel:block/factory/factory_dots",
+    "overlay_connected": "chisel:block/factory/factory_dots-ctm",
+    "overlay_texture": "chisel:block/factory/factory_dots",
+    "particle": "chisel:block/factory/factory_dots"
   }
 }

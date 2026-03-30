@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/andesite/andesite_encased_bricks",
-    "base_texture": "chisel:block/andesite/andesite_encased_bricks",
     "overlay_connected": "chisel:block/andesite/andesite_encased_bricks-ctm",
     "overlay_texture": "chisel:block/andesite/andesite_encased_bricks",
     "particle": "chisel:block/andesite/andesite_encased_bricks"

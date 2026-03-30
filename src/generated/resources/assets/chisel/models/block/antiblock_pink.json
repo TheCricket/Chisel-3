@@ -1,8 +1,11 @@
 {
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
-    "layer0": "chisel:block/antiblock/antiblock_pink",
+    "all": "chisel:block/antiblock/antiblock_pink",
+    "base_texture": "chisel:block/antiblock/antiblock_pink-bg",
     "layer1": "chisel:block/antiblock/antiblock_pink-bg",
+    "overlay_connected": "chisel:block/antiblock/antiblock_pink-ctm",
+    "overlay_texture": "chisel:block/antiblock/antiblock_pink",
     "particle": "chisel:block/antiblock/antiblock_pink"
   }
 }

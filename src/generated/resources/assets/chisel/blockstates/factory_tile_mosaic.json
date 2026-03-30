@@ -1,0 +1,30 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "west",
+    "east",
+    "up",
+    "north",
+    "south"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/factory_tile_mosaic",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:factory_tile_mosaic",
+    "model_type": "connected",
+    "name": "factory_tile_mosaic"
+  }
+}

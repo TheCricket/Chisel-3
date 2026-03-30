@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/factory/factory_hazard"
+    "all": "chisel:block/factory/factory_hazard",
+    "overlay_connected": "chisel:block/factory/factory_hazard-ctm",
+    "overlay_texture": "chisel:block/factory/factory_hazard",
+    "particle": "chisel:block/factory/factory_hazard"
   }
 }

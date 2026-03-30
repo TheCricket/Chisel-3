@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/birch_planks/birch_planks_paneling"
+    "all": "chisel:block/birch_planks/birch_planks_paneling",
+    "overlay_connected": "chisel:block/birch_planks/birch_planks_paneling-ctm",
+    "overlay_texture": "chisel:block/birch_planks/birch_planks_paneling",
+    "particle": "chisel:block/birch_planks/birch_planks_paneling"
   }
 }

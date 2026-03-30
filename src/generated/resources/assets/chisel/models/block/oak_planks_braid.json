@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/oak_planks/oak_planks_braid"
+    "all": "chisel:block/oak_planks/oak_planks_braid",
+    "overlay_connected": "chisel:block/oak_planks/oak_planks_braid-ctm",
+    "overlay_texture": "chisel:block/oak_planks/oak_planks_braid",
+    "particle": "chisel:block/oak_planks/oak_planks_braid"
   }
 }

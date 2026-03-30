@@ -8,8 +8,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BookshelfBlock extends ChiselBlock {
     public BookshelfBlock(BlockBehaviour.Properties props) {
-        
-
         family = builder("bookshelf")
                 .addVariant(Blocks.BOOKSHELF)
                 .addVariant("bookshelf_abandoned", props, VariantModelType.BOOKSHELF)

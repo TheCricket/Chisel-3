@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dark_oak_planks/dark_oak_planks_braid"
+    "all": "chisel:block/dark_oak_planks/dark_oak_planks_braid",
+    "overlay_connected": "chisel:block/dark_oak_planks/dark_oak_planks_braid-ctm",
+    "overlay_texture": "chisel:block/dark_oak_planks/dark_oak_planks_braid",
+    "particle": "chisel:block/dark_oak_planks/dark_oak_planks_braid"
   }
 }

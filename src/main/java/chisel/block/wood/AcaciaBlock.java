@@ -21,7 +21,7 @@ public class AcaciaBlock extends ChiselBlock {
                 .addVariant("acacia_planks_encased_smooth", props, VariantModelType.CONNECTED)
                 .addVariant("acacia_planks_large", props)
                 .addVariant("acacia_planks_log_cabin", props)
-                .addVariant("acacia_planks_paneling", props)
+                .addVariant("acacia_planks_paneling", props, VariantModelType.CONNECTED)
                 .addVariant("acacia_planks_shipping", props, VariantModelType.CONNECTED)
                 .addVariant("acacia_planks_smooth", props, VariantModelType.CONNECTED)
                 .addVariant("acacia_planks_stacked", props)

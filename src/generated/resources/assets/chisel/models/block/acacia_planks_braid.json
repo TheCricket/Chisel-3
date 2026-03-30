@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/acacia_planks/acacia_planks_braid",
-    "base_texture": "chisel:block/acacia_planks/acacia_planks_braid",
     "overlay_connected": "chisel:block/acacia_planks/acacia_planks_braid-ctm",
     "overlay_texture": "chisel:block/acacia_planks/acacia_planks_braid",
     "particle": "chisel:block/acacia_planks/acacia_planks_braid"

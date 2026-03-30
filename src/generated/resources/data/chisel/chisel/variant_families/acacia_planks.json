@@ -58,7 +58,7 @@
     },
     {
       "block": "chisel:acacia_planks_paneling",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "acacia_planks_paneling"
     },
     {

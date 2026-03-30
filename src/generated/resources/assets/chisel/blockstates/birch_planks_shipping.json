@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/birch_planks_shipping"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "west",
+    "east",
+    "up",
+    "north",
+    "south"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/birch_planks_shipping",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:birch_planks_shipping",
+    "model_type": "connected",
+    "name": "birch_planks_shipping"
   }
 }

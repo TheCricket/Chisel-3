@@ -20,7 +20,6 @@ public class CTMModel extends VariantModel {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.ALL, variant.getMaterial())
-                .put(ChiselTextureSlots.CTM_BASE, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctm"));
     }
@@ -28,7 +27,7 @@ public class CTMModel extends VariantModel {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.CTM.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        Identifier modelLocation = ChiselModelTemplates.CTM_NO_BASE.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)

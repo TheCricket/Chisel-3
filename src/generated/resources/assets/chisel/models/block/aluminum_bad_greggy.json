@@ -2,7 +2,6 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/aluminum/aluminum_bad_greggy",
-    "base_texture": "chisel:block/aluminum/aluminum_bad_greggy",
     "overlay_connected": "chisel:block/aluminum/aluminum_bad_greggy-ctm",
     "overlay_texture": "chisel:block/aluminum/aluminum_bad_greggy",
     "particle": "chisel:block/aluminum/aluminum_bad_greggy"

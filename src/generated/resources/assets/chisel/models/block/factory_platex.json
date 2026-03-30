@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/factory/factory_platex",
+    "overlay_connected": "chisel:block/factory/factory_platex-ctm",
+    "overlay_texture": "chisel:block/factory/factory_platex",
+    "particle": "chisel:block/factory/factory_platex"
+  }
+}

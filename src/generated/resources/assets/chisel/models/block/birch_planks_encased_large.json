@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/birch_planks/birch_planks_encased_large"
+    "all": "chisel:block/birch_planks/birch_planks_encased_large",
+    "overlay_connected": "chisel:block/birch_planks/birch_planks_encased_large-ctm",
+    "overlay_texture": "chisel:block/birch_planks/birch_planks_encased_large",
+    "particle": "chisel:block/birch_planks/birch_planks_encased_large"
   }
 }
