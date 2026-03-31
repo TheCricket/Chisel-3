@@ -1,11 +1,9 @@
-import java.util.Properties
-
 plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.134'
     id 'idea'
-    id 'io.github.themrmilchmann.curseforge-publish' version '0.9.0'
+    id 'net.darkhax.curseforgegradle' version '1.2.30'
     id 'com.modrinth.minotaur' version '2.+'
 }
 
@@ -130,25 +128,12 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 
-curseforge {
+tasks.register('publishCurseForge', net.darkhax.curseforgegradle.TaskPublishCurseForge) {
     apiToken = env.getProperty("CURSEFORGE")
+    def projectId = '225236'
+    def mainFile = upload(projectId, jar)
 
-    publications {
-        register("curseForge") {
-            projectId.convention('225236')
-            gameVersion("26-1", "26.1")
-            artifacts.register("main") {
-                from jar
-                displayName = "${mod_name}-${mod_version}"
-                releaseType = io.github.themrmilchmann.gradle.publish.curseforge.ReleaseType.ALPHA
-
-                changelog {
-                    format = io.github.themrmilchmann.gradle.publish.curseforge.ChangelogFormat.MARKDOWN
-                    from(file("CHANGELOG.md"))
-                }
-            }
-        }
-    }
+    mainFile.changelog = file('CHANGELOG.md')
 }
 
 modrinth {
@@ -178,7 +163,7 @@ publishing {
 tasks.register('releaseCurseForge') {
     group = 'upload'
     description = 'Builds and uploads the jar to CurseForge'
-    dependsOn 'publishToCurseForge'
+    dependsOn 'publishCurseForge'
 }
 
 tasks.register('releaseModrinth') {

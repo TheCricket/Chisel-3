@@ -2,12 +2,12 @@
   "neoforge:definition_type": "chisel:ctm_definition_loader",
   "base_emissivity": 15,
   "connected_faces": [
-    "down",
+    "south",
+    "north",
     "west",
     "east",
-    "up",
-    "north",
-    "south"
+    "down",
+    "up"
   ],
   "element": {
     "max": [

@@ -1,10 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.datagen.ChiselBlockTags;
-import chisel.datagen.ChiselLootTableProvider;
-import chisel.datagen.ChiselRecipes;
-import chisel.datagen.ChiselSoundDefinitionProvider;
+import chisel.datagen.*;
 import chisel.datagen.lang.ChiselLang;
 import chisel.datagen.model.ChiselModelProvider;
 import chisel.registry.ChiselVariants;
@@ -20,12 +17,12 @@ public class GatherDataEventHandler {
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent.Client event) {
-        event.getGenerator().addProvider(true, new DatapackBuiltinEntriesProvider(event.getGenerator().getPackOutput(), event.getLookupProvider(), ChiselVariants.BUILDER, Set.of(Chisel.MODID)));
         event.createProvider(ChiselModelProvider::new);
         event.createProvider(ChiselLootTableProvider::new);
         event.createProvider(ChiselLang::new);
         event.createProvider(ChiselSoundDefinitionProvider::new);
         event.createProvider(ChiselRecipes.Runner::new);
         event.createProvider(ChiselBlockTags::new);
+        event.createProvider(ChiselRegistries::new);
     }
 }

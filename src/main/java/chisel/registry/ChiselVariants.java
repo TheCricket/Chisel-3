@@ -22,10 +22,11 @@ public class ChiselVariants {
         VARIANT_FAMILIES.putIfAbsent(block.getFamily().getFamilyName(), block.getFamily());
     }
 
-    public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(VARIANT_FAMILY_REGISTRY_KEY, bootstrap -> ChiselBlocks.getBlocks().forEach(block -> register(block, bootstrap)));
-
     public static Collection<VariantFamily> getVariantFamilies() {
         return VARIANT_FAMILIES.values();
+    }
+
+    public static void bootstrap(BootstrapContext<VariantFamily> context) {
+        ChiselBlocks.getBlocks().forEach(block -> register(block, context));
     }
 }
