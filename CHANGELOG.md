@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.2]
+
+### Added
+- World gen! Both Marble and Limestone will be found around the world.
+
+### Changed
+- 
+
+### Fixed
+- 
+
 ## [3.0.1]
 
 ### Added
