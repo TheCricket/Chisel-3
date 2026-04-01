@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_tiles_large",
+    "overlay_connected": "chisel:block/mossy_cobblestone/mossy_cobblestone_tiles_large-ctm",
+    "overlay_texture": "chisel:block/mossy_cobblestone/mossy_cobblestone_tiles_large",
+    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_tiles_large"
+  }
+}

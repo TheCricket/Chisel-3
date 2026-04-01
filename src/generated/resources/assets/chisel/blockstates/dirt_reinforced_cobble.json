@@ -1,0 +1,30 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/dirt_reinforced_cobble",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:dirt_reinforced_cobble",
+    "model_type": "connected",
+    "name": "dirt_reinforced_cobble"
+  }
+}

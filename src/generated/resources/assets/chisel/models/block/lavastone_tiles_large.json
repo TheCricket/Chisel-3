@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass",
   "textures": {
-    "all": "chisel:block/lavastone/lavastone_tiles_large"
+    "all": "chisel:block/lavastone/lavastone_tiles_large",
+    "base_texture": "chisel:block/lavastone/lavastone_tiles_large-bg",
+    "layer0": "chisel:block/lavastone/lavastone_tiles_large",
+    "layer1": "chisel:block/lavastone/lavastone_tiles_large-bg",
+    "overlay_connected": "chisel:block/lavastone/lavastone_tiles_large-ctm",
+    "overlay_texture": "chisel:block/lavastone/lavastone_tiles_large",
+    "particle": "chisel:block/lavastone/lavastone_tiles_large"
   }
 }

@@ -1,6 +1,6 @@
 package chisel.core;
 
-import chisel.block.ConnectedTextureBlockItem;
+import chisel.block.util.ConnectedTextureBlockItem;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;

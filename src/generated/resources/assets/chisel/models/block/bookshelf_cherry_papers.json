@@ -1,0 +1,10 @@
+{
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "textures": {
+    "bottom": "minecraft:block/cherry_planks",
+    "layer0": "minecraft:block/cherry_planks",
+    "particle": "minecraft:block/cherry_planks",
+    "side": "chisel:block/bookshelf/bookshelf_papers",
+    "top": "minecraft:block/cherry_planks"
+  }
+}

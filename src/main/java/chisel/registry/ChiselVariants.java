@@ -1,11 +1,10 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.block.ChiselBlock;
+import chisel.block.util.ChiselBlock;
 import chisel.core.VariantFamily;
 import com.google.common.collect.Maps;
 import net.minecraft.core.Registry;
-import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 

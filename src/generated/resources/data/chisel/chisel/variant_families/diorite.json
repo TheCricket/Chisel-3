@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:diorite_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_circular"
     },
     {
@@ -53,12 +53,12 @@
     },
     {
       "block": "chisel:diorite_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_dent"
     },
     {
       "block": "chisel:diorite_encased",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_encased"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:diorite_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_mosaic"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "block": "chisel:diorite_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_tiles_large"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "block": "chisel:diorite_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_weaver"
     },
     {
       "block": "chisel:diorite_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "diorite_zag"
     }
   ]

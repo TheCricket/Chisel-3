@@ -8,10 +8,17 @@ All notable changes to this project will be documented in this file.
 - World gen! Both Marble and Limestone will be found around the world.
 
 ### Changed
-- 
+- Added in CTM for Glass.
+- Added in missing variants for Glass Pane.
+- Added in missing variants for Bookshelves.
 
 ### Fixed
-- 
+- Acacia Planks - Shipping
+- Cloud Blocks
+- Dirt Blocks
+- Diamond Blocks
+- Diorite Blocks
+- Datagen for CTM Blockstates where it wouldn't sort the blockstates.
 
 ## [3.0.1]
 

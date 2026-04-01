@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_wall_rounded"
+    "all": "chisel:block/laboratory/laboratory_wall_rounded",
+    "overlay_connected": "chisel:block/laboratory/laboratory_wall_rounded-ctm",
+    "overlay_texture": "chisel:block/laboratory/laboratory_wall_rounded",
+    "particle": "chisel:block/laboratory/laboratory_wall_rounded"
   }
 }

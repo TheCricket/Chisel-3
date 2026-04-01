@@ -15,6 +15,6 @@ public class LavastoneTBSModel extends MultiLayerTBSModel {
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
                 .put(TextureSlot.SIDE, variant.getMaterial("side"))
-                .put(TextureSlot.LAYER1, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")));
+                .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")));
     }
 }

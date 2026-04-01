@@ -3,6 +3,8 @@ package chisel.datagen;
 import chisel.Chisel;
 import chisel.core.VariantFamily;
 import chisel.registry.ChiselBlocks;
+import chisel.registry.ChiselItems;
+import chisel.util.LangHelper;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;

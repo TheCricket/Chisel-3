@@ -1,17 +1,9 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.block.ChiselBlock;
-import chisel.block.ConnectedTextureBlock;
-import chisel.block.glass.GlassBlock;
-import chisel.block.glass.GlassPaneBlock;
-import chisel.block.glass.StainedGlassBlock;
-import chisel.block.glass.StainedGlassPaneBlock;
-import chisel.block.metal.*;
-import chisel.block.modded.*;
-import chisel.block.other.*;
-import chisel.block.stone.*;
-import chisel.block.wood.*;
+import chisel.block.*;
+import chisel.block.util.ChiselBlock;
+import chisel.block.util.ConnectedTextureBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.DyeColor;
@@ -80,10 +72,7 @@ public class ChiselBlocks {
     public static final NickelBlock NICKEL = new NickelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final OakBlock OAK = new OakBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS));
     public static final ObsidianBlock OBSIDIAN = new ObsidianBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
-    public static final PackedIceBlock PACKED_ICE = new PackedIceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_ICE));
-    public static final PackedIcePillarBlock PACKED_ICE_PILLAR = new PackedIcePillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_ICE));
     public static final PaperwallBlock PAPERWALL = new PaperwallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
-    public static final PaperwallBlockBlock PAPERWALL_BLOCK = new PaperwallBlockBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final PlatinumBlock PLATINUM = new PlatinumBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final PumpkinBlock PUMPKIN = new PumpkinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final RedstoneBlock REDSTONE = new RedstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
@@ -167,7 +156,7 @@ public class ChiselBlocks {
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,
                 LEAF, LIMESTONE, LIT_PUMPKIN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
-                NICKEL, OAK, OBSIDIAN, PACKED_ICE, PACKED_ICE_PILLAR, PAPERWALL, PAPERWALL_BLOCK, PLATINUM,
+                NICKEL, OAK, OBSIDIAN, PAPERWALL, PLATINUM,
                 PUMPKIN, REDSTONE, ROAD_LINE, RUNIC_VOIDSTONE, SANDSTONE, SILVER, SNAKESTONE_SAND, SNAKESTONE_STONE,
                 SPRUCE, STEEL, STONE_BRICKS, TECHNICAL, TEMPLE, TIN, TORCH, TYRIAN, URANIUM, VALENTINES, VOIDSTONE, WARNING,
                 WATERSTONE, WOOLEN_CLAY

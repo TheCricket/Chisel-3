@@ -13,13 +13,18 @@
     },
     {
       "block": "chisel:obsidian_chiseled",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "obsidian_chiseled"
     },
     {
       "block": "chisel:obsidian_crate",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "obsidian_crate"
+    },
+    {
+      "block": "chisel:obsidian_crate_unboxed",
+      "model_type": "cube_all",
+      "name": "obsidian_crate_unboxed"
     },
     {
       "block": "chisel:obsidian_crystal",
@@ -28,23 +33,18 @@
     },
     {
       "block": "chisel:obsidian_greek",
-      "model_type": "cube_all",
+      "model_type": "top_bottom_side",
       "name": "obsidian_greek"
     },
     {
-      "block": "chisel:obsidian_japanese",
+      "block": "chisel:obsidian_organic_chunks",
       "model_type": "cube_all",
-      "name": "obsidian_japanese"
+      "name": "obsidian_organic_chunks"
     },
     {
-      "block": "chisel:obsidian_layers",
+      "block": "chisel:obsidian_organic_growth",
       "model_type": "cube_all",
-      "name": "obsidian_layers"
-    },
-    {
-      "block": "chisel:obsidian_ornate",
-      "model_type": "cube_all",
-      "name": "obsidian_ornate"
+      "name": "obsidian_organic_growth"
     },
     {
       "block": "chisel:obsidian_panel",
@@ -52,54 +52,39 @@
       "name": "obsidian_panel"
     },
     {
+      "block": "chisel:obsidian_panel_bright",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_bright"
+    },
+    {
+      "block": "chisel:obsidian_panel_map",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_map"
+    },
+    {
+      "block": "chisel:obsidian_panel_region",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_region"
+    },
+    {
+      "block": "chisel:obsidian_panel_shiny",
+      "model_type": "cube_all",
+      "name": "obsidian_panel_shiny"
+    },
+    {
       "block": "chisel:obsidian_pillar",
       "model_type": "top_bottom_side",
       "name": "obsidian_pillar"
     },
     {
-      "block": "chisel:obsidian_plates",
-      "model_type": "cube_all",
-      "name": "obsidian_plates"
-    },
-    {
-      "block": "chisel:obsidian_road",
-      "model_type": "cube_all",
-      "name": "obsidian_road"
-    },
-    {
-      "block": "chisel:obsidian_shale",
-      "model_type": "cube_all",
-      "name": "obsidian_shale"
-    },
-    {
-      "block": "chisel:obsidian_snakes",
-      "model_type": "cube_all",
-      "name": "obsidian_snakes"
-    },
-    {
-      "block": "chisel:obsidian_soft",
-      "model_type": "cube_all",
-      "name": "obsidian_soft"
-    },
-    {
-      "block": "chisel:obsidian_sunken",
-      "model_type": "cube_all",
-      "name": "obsidian_sunken"
+      "block": "chisel:obsidian_pillar_quartz",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_pillar_quartz"
     },
     {
       "block": "chisel:obsidian_tiles",
       "model_type": "cube_all",
       "name": "obsidian_tiles"
-    },
-    {
-      "block": "chisel:obsidian_weaver",
-      "model_type": "cube_all",
-      "name": "obsidian_weaver"
-    },
-    {
-      "block": "chisel:obsidian_zigzag",
-      "model_type": "cube_all",
-      "name": "obsidian_zigzag"
     }
   ]
 }

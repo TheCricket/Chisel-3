@@ -52,9 +52,14 @@
       "name": "birch_planks_large"
     },
     {
-      "block": "chisel:birch_planks_log_cabin",
-      "model_type": "cube_all",
-      "name": "birch_planks_log_cabin"
+      "block": "chisel:birch_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "birch_planks_log_cabin_ew"
+    },
+    {
+      "block": "chisel:birch_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "birch_planks_log_cabin_ns"
     },
     {
       "block": "chisel:birch_planks_paneling",
@@ -83,7 +88,7 @@
     },
     {
       "block": "chisel:birch_planks_log_bordered",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "birch_planks_log_bordered"
     }
   ]

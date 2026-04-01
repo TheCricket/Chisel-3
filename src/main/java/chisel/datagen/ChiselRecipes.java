@@ -51,7 +51,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.PAPERWALL_BLOCK.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.PAPERWALL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("PPP")
                 .pattern("PSP")
                 .pattern("PPP")

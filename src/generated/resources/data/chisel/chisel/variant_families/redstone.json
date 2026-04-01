@@ -7,64 +7,79 @@
       "name": "block.minecraft.redstone_block"
     },
     {
-      "block": "chisel:redstone_array",
+      "block": "chisel:redstone_bricks",
       "model_type": "cube_all",
-      "name": "redstone_array"
+      "name": "redstone_bricks"
     },
     {
-      "block": "chisel:redstone_braid",
+      "block": "chisel:redstone_bricks_chaotic",
       "model_type": "cube_all",
-      "name": "redstone_braid"
+      "name": "redstone_bricks_chaotic"
     },
     {
-      "block": "chisel:redstone_chaotic",
+      "block": "chisel:redstone_bricks_small",
       "model_type": "cube_all",
-      "name": "redstone_chaotic"
+      "name": "redstone_bricks_small"
     },
     {
-      "block": "chisel:redstone_circular",
-      "model_type": "cube_all",
-      "name": "redstone_circular"
+      "block": "chisel:redstone_chiseled",
+      "model_type": "top_bottom_side",
+      "name": "redstone_chiseled"
     },
     {
-      "block": "chisel:redstone_cuts",
+      "block": "chisel:redstone_chunk",
       "model_type": "cube_all",
-      "name": "redstone_cuts"
+      "name": "redstone_chunk"
     },
     {
-      "block": "chisel:redstone_dent",
+      "block": "chisel:redstone_circuit",
       "model_type": "cube_all",
-      "name": "redstone_dent"
+      "name": "redstone_circuit"
     },
     {
-      "block": "chisel:redstone_french",
+      "block": "chisel:redstone_circuit_supaplex",
       "model_type": "cube_all",
-      "name": "redstone_french"
+      "name": "redstone_circuit_supaplex"
     },
     {
-      "block": "chisel:redstone_french_2",
+      "block": "chisel:redstone_ere",
       "model_type": "cube_all",
-      "name": "redstone_french_2"
+      "name": "redstone_ere"
     },
     {
-      "block": "chisel:redstone_layers",
+      "block": "chisel:redstone_greek",
       "model_type": "cube_all",
-      "name": "redstone_layers"
+      "name": "redstone_greek"
     },
     {
-      "block": "chisel:redstone_ornate",
-      "model_type": "cube_all",
-      "name": "redstone_ornate"
+      "block": "chisel:redstone_large",
+      "model_type": "connected",
+      "name": "redstone_large"
     },
     {
-      "block": "chisel:redstone_panel",
-      "model_type": "cube_all",
-      "name": "redstone_panel"
+      "block": "chisel:redstone_pillar",
+      "model_type": "top_bottom_side",
+      "name": "redstone_pillar"
     },
     {
-      "block": "chisel:redstone_road",
+      "block": "chisel:redstone_skulls",
       "model_type": "cube_all",
-      "name": "redstone_road"
+      "name": "redstone_skulls"
+    },
+    {
+      "block": "chisel:redstone_small",
+      "model_type": "cube_all",
+      "name": "redstone_small"
+    },
+    {
+      "block": "chisel:redstone_smooth",
+      "model_type": "cube_all",
+      "name": "redstone_smooth"
+    },
+    {
+      "block": "chisel:redstone_solid",
+      "model_type": "cube_all",
+      "name": "redstone_solid"
     },
     {
       "block": "chisel:redstone_tiles",
@@ -72,14 +87,14 @@
       "name": "redstone_tiles"
     },
     {
-      "block": "chisel:redstone_weaver",
+      "block": "chisel:redstone_tiles_ornate",
       "model_type": "cube_all",
-      "name": "redstone_weaver"
+      "name": "redstone_tiles_ornate"
     },
     {
-      "block": "chisel:redstone_zag",
+      "block": "chisel:redstone_zelda",
       "model_type": "cube_all",
-      "name": "redstone_zag"
+      "name": "redstone_zelda"
     }
   ]
 }

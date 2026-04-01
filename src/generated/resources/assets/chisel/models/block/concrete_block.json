@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/concrete/concrete_block"
+    "all": "chisel:block/concrete/concrete_block",
+    "overlay_connected": "chisel:block/concrete/concrete_block-ctm",
+    "overlay_texture": "chisel:block/concrete/concrete_block",
+    "particle": "chisel:block/concrete/concrete_block"
   }
 }

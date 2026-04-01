@@ -27,9 +27,19 @@
       "name": "glass_pane_chinese_gold"
     },
     {
-      "block": "chisel:glass_pane_japanese_tiles",
+      "block": "chisel:glass_pane_japanese",
       "model_type": "glass_pane",
-      "name": "glass_pane_japanese_tiles"
+      "name": "glass_pane_japanese"
+    },
+    {
+      "block": "chisel:glass_pane_japanese2",
+      "model_type": "glass_pane",
+      "name": "glass_pane_japanese2"
+    },
+    {
+      "block": "chisel:glass_pane_streak",
+      "model_type": "glass_pane",
+      "name": "glass_pane_streak"
     }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/glass/glass_stone"
+    "all": "chisel:block/glass/glass_stone",
+    "overlay_connected": "chisel:block/glass/glass_stone-ctm",
+    "overlay_texture": "chisel:block/glass/glass_stone",
+    "particle": "chisel:block/glass/glass_stone"
   }
 }

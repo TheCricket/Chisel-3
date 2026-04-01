@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/mossy_temple/mossy_temple_column"
+    "bottom": "chisel:block/mossy_temple/mossy_temple_column-bottom",
+    "side": "chisel:block/mossy_temple/mossy_temple_column-side",
+    "top": "chisel:block/mossy_temple/mossy_temple_column-top"
   }
 }

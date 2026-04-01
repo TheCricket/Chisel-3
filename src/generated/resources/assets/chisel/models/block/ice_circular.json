@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ice/ice_circular"
+    "all": "chisel:block/ice/ice_circular",
+    "overlay_connected": "chisel:block/ice/ice_circular-ctm",
+    "overlay_texture": "chisel:block/ice/ice_circular",
+    "particle": "chisel:block/ice/ice_circular"
   }
 }

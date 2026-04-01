@@ -7,44 +7,49 @@
       "name": "block.minecraft.netherrack"
     },
     {
-      "block": "chisel:netherrack_braid",
+      "block": "chisel:netherrack_blood",
       "model_type": "cube_all",
-      "name": "netherrack_braid"
+      "name": "netherrack_blood"
     },
     {
-      "block": "chisel:netherrack_chaotic",
+      "block": "chisel:netherrack_blood_dark",
       "model_type": "cube_all",
-      "name": "netherrack_chaotic"
+      "name": "netherrack_blood_dark"
     },
     {
-      "block": "chisel:netherrack_cracked",
+      "block": "chisel:netherrack_blood_gravel",
       "model_type": "cube_all",
-      "name": "netherrack_cracked"
+      "name": "netherrack_blood_gravel"
     },
     {
-      "block": "chisel:netherrack_cuts",
+      "block": "chisel:netherrack_blue",
       "model_type": "cube_all",
-      "name": "netherrack_cuts"
+      "name": "netherrack_blue"
     },
     {
-      "block": "chisel:netherrack_dent",
+      "block": "chisel:netherrack_blue_shale",
       "model_type": "cube_all",
-      "name": "netherrack_dent"
+      "name": "netherrack_blue_shale"
     },
     {
-      "block": "chisel:netherrack_french",
+      "block": "chisel:netherrack_classic",
       "model_type": "cube_all",
-      "name": "netherrack_french"
+      "name": "netherrack_classic"
     },
     {
-      "block": "chisel:netherrack_french_2",
+      "block": "chisel:netherrack_guts",
       "model_type": "cube_all",
-      "name": "netherrack_french_2"
+      "name": "netherrack_guts"
     },
     {
-      "block": "chisel:netherrack_layers",
+      "block": "chisel:netherrack_guts_dark",
       "model_type": "cube_all",
-      "name": "netherrack_layers"
+      "name": "netherrack_guts_dark"
+    },
+    {
+      "block": "chisel:netherrack_lava",
+      "model_type": "cube_all",
+      "name": "netherrack_lava"
     },
     {
       "block": "chisel:netherrack_meat",

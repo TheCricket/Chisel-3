@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/energized_voidstone/energized_voidstone_metal",
+    "base_texture": "chisel:block/energized_voidstone/energized_voidstone_metal-bg",
+    "layer0": "chisel:block/energized_voidstone/energized_voidstone_metal",
+    "layer1": "chisel:block/energized_voidstone/energized_voidstone_metal-bg",
+    "overlay_connected": "chisel:block/energized_voidstone/energized_voidstone_metal-ctm",
+    "overlay_texture": "chisel:block/energized_voidstone/energized_voidstone_metal",
+    "particle": "chisel:block/energized_voidstone/energized_voidstone_metal"
+  }
+}

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_circular"
+    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_circular",
+    "overlay_connected": "chisel:block/mossy_cobblestone/mossy_cobblestone_circular-ctm",
+    "overlay_texture": "chisel:block/mossy_cobblestone/mossy_cobblestone_circular",
+    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_circular"
   }
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/platinum/platinum_caution"
+    "all": "chisel:block/platinum/platinum_caution",
+    "overlay_connected": "chisel:block/platinum/platinum_caution-ctm",
+    "overlay_texture": "chisel:block/platinum/platinum_caution",
+    "particle": "chisel:block/platinum/platinum_caution"
   }
 }

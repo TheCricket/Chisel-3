@@ -105,12 +105,9 @@ public class ChiselTabs {
                         ChiselBlocks.IRON_BARS.getFamily(),
                         ChiselBlocks.LAPIS.getFamily(),
                         ChiselBlocks.LEAF.getFamily(),
-                        ChiselBlocks.PACKED_ICE.getFamily(),
-                        ChiselBlocks.PACKED_ICE_PILLAR.getFamily(),
                         ChiselBlocks.PAPERWALL.getFamily(),
                         ChiselBlocks.PUMPKIN.getFamily(),
                         ChiselBlocks.REDSTONE.getFamily(),
-                        ChiselBlocks.PAPERWALL_BLOCK.getFamily(),
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
                         ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {

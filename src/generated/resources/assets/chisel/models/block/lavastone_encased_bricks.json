@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass",
   "textures": {
-    "all": "chisel:block/lavastone/lavastone_encased_bricks"
+    "all": "chisel:block/lavastone/lavastone_encased_bricks",
+    "base_texture": "chisel:block/lavastone/lavastone_encased_bricks-bg",
+    "layer0": "chisel:block/lavastone/lavastone_encased_bricks",
+    "layer1": "chisel:block/lavastone/lavastone_encased_bricks-bg",
+    "overlay_connected": "chisel:block/lavastone/lavastone_encased_bricks-ctm",
+    "overlay_texture": "chisel:block/lavastone/lavastone_encased_bricks",
+    "particle": "chisel:block/lavastone/lavastone_encased_bricks"
   }
 }

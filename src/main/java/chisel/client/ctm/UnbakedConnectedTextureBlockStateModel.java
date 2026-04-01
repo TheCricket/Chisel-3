@@ -73,7 +73,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
             instance -> instance.group(
                     Identifier.CODEC.fieldOf("model_location").forGetter(m -> m.modelLocation),
                     ELEMENT_CODEC.fieldOf("element").forGetter(m -> m.element),
-                    Direction.CODEC.listOf().fieldOf("connected_faces").forGetter(m -> m.connectedFaces.stream().toList()),
+                    Direction.CODEC.listOf().fieldOf("connected_faces").forGetter(m -> m.connectedFaces.stream().toList().stream().sorted().toList()),
                     Codec.BOOL.optionalFieldOf("render_overlay_on_all_faces", false).forGetter(m -> m.renderOverlayOnAllFaces),
                     Variant.CODEC.fieldOf("variant").forGetter(m -> m.variant),
                     Codec.INT.optionalFieldOf("base_tint_index", -1).forGetter(m -> m.baseTintIndex),

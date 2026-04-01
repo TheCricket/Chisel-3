@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "minecraft:ender_eye",
+    "O": "#c:obsidians",
+    "S": "#c:stones"
+  },
+  "pattern": [
+    "OSO",
+    "SES",
+    "OSO"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:energized_voidstone_bevel"
+  }
+}

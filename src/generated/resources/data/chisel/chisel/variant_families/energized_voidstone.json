@@ -2,78 +2,48 @@
   "familyName": "energized_voidstone",
   "variants": [
     {
+      "block": "chisel:energized_voidstone_bevel",
+      "model_type": "multi_layer_connected_glow",
+      "name": "energized_voidstone_bevel"
+    },
+    {
+      "block": "chisel:energized_voidstone_eye",
+      "model_type": "multi_layer",
+      "name": "energized_voidstone_eye"
+    },
+    {
+      "block": "chisel:energized_voidstone_metal",
+      "model_type": "multi_layer_connected_glow",
+      "name": "energized_voidstone_metal"
+    },
+    {
+      "block": "chisel:energized_voidstone_pillar",
+      "model_type": "multi_layer",
+      "name": "energized_voidstone_pillar"
+    },
+    {
       "block": "chisel:energized_voidstone_raw",
-      "model_type": "cube_all",
+      "model_type": "multi_layer",
       "name": "energized_voidstone_raw"
     },
     {
-      "block": "chisel:energized_voidstone_bricks",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_bricks"
+      "block": "chisel:energized_voidstone_runic",
+      "model_type": "multi_layer",
+      "name": "energized_voidstone_runic"
     },
     {
-      "block": "chisel:energized_voidstone_bricks_disordered",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_bricks_disordered"
-    },
-    {
-      "block": "chisel:energized_voidstone_chiseled",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_chiseled"
-    },
-    {
-      "block": "chisel:energized_voidstone_construction",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_construction"
-    },
-    {
-      "block": "chisel:energized_voidstone_dent",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_dent"
-    },
-    {
-      "block": "chisel:energized_voidstone_layers",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_layers"
-    },
-    {
-      "block": "chisel:energized_voidstone_ornate",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_ornate"
-    },
-    {
-      "block": "chisel:energized_voidstone_panel",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_panel"
-    },
-    {
-      "block": "chisel:energized_voidstone_plate",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_plate"
-    },
-    {
-      "block": "chisel:energized_voidstone_plate_smooth",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_plate_smooth"
-    },
-    {
-      "block": "chisel:energized_voidstone_shale",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_shale"
+      "block": "chisel:energized_voidstone_skull",
+      "model_type": "multi_layer",
+      "name": "energized_voidstone_skull"
     },
     {
       "block": "chisel:energized_voidstone_smooth",
-      "model_type": "cube_all",
+      "model_type": "multi_layer",
       "name": "energized_voidstone_smooth"
     },
     {
-      "block": "chisel:energized_voidstone_symbol",
-      "model_type": "cube_all",
-      "name": "energized_voidstone_symbol"
-    },
-    {
       "block": "chisel:energized_voidstone_tiles",
-      "model_type": "cube_all",
+      "model_type": "multi_layer",
       "name": "energized_voidstone_tiles"
     }
   ]

@@ -8,12 +8,12 @@
     },
     {
       "block": "chisel:glass_borderless",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_borderless"
     },
     {
       "block": "chisel:glass_bubble",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_bubble"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "block": "chisel:glass_chrono",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_chrono"
     },
     {
@@ -73,12 +73,12 @@
     },
     {
       "block": "chisel:glass_light",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_light"
     },
     {
       "block": "chisel:glass_ornate",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_ornate"
     },
     {
@@ -93,18 +93,23 @@
     },
     {
       "block": "chisel:glass_shale",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_shale"
     },
     {
       "block": "chisel:glass_steel",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_steel"
     },
     {
       "block": "chisel:glass_stone",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "glass_stone"
+    },
+    {
+      "block": "chisel:glass_streak",
+      "model_type": "cube_all",
+      "name": "glass_streak"
     }
   ]
 }

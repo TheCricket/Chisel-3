@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass",
   "textures": {
-    "all": "chisel:block/lavastone/lavastone_weaver"
+    "all": "chisel:block/lavastone/lavastone_weaver",
+    "base_texture": "chisel:block/lavastone/lavastone_weaver-bg",
+    "layer0": "chisel:block/lavastone/lavastone_weaver",
+    "layer1": "chisel:block/lavastone/lavastone_weaver-bg",
+    "overlay_connected": "chisel:block/lavastone/lavastone_weaver-ctm",
+    "overlay_texture": "chisel:block/lavastone/lavastone_weaver",
+    "particle": "chisel:block/lavastone/lavastone_weaver"
   }
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/glass/glass_chrono"
+    "all": "chisel:block/glass/glass_chrono",
+    "overlay_connected": "chisel:block/glass/glass_chrono-ctm",
+    "overlay_texture": "chisel:block/glass/glass_chrono",
+    "particle": "chisel:block/glass/glass_chrono"
   }
 }

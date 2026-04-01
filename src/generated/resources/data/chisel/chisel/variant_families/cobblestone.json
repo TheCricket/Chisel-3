@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:cobblestone_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_circular"
     },
     {
@@ -53,17 +53,17 @@
     },
     {
       "block": "chisel:cobblestone_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_dent"
     },
     {
       "block": "chisel:cobblestone_emboss",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_emboss"
     },
     {
       "block": "chisel:cobblestone_encased",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_encased"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "block": "chisel:cobblestone_indent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_indent"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "block": "chisel:cobblestone_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_mosaic"
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "block": "chisel:cobblestone_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_tiles_large"
     },
     {
@@ -178,12 +178,12 @@
     },
     {
       "block": "chisel:cobblestone_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_weaver"
     },
     {
       "block": "chisel:cobblestone_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "cobblestone_zag"
     }
   ]

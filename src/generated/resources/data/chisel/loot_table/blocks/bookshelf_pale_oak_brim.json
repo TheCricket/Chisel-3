@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:bookshelf_pale_oak_brim"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chisel:blocks/bookshelf_pale_oak_brim"
+}

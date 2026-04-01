@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ice/ice_tiles_large",
+    "overlay_connected": "chisel:block/ice/ice_tiles_large-ctm",
+    "overlay_texture": "chisel:block/ice/ice_tiles_large",
+    "particle": "chisel:block/ice/ice_tiles_large"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/mossy_cobblestone/mossy_cobblestone_pillar-bottom",
+    "side": "chisel:block/mossy_cobblestone/mossy_cobblestone_pillar-side",
+    "top": "chisel:block/mossy_cobblestone/mossy_cobblestone_pillar-top"
+  }
+}

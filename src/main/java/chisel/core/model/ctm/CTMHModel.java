@@ -1,6 +1,6 @@
 package chisel.core.model.ctm;
 
-import chisel.block.ConnectedTextureBlock;
+import chisel.block.util.ConnectedTextureBlock;
 import chisel.core.Variant;
 import chisel.core.VariantModel;
 import chisel.core.model.ctm.util.C1Model;

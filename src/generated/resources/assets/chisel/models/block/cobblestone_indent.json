@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/cobblestone/cobblestone_indent"
+    "all": "chisel:block/cobblestone/cobblestone_indent",
+    "overlay_connected": "chisel:block/cobblestone/cobblestone_indent-ctm",
+    "overlay_texture": "chisel:block/cobblestone/cobblestone_indent",
+    "particle": "chisel:block/cobblestone/cobblestone_indent"
   }
 }

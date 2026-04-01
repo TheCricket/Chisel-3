@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/mossy_temple/mossy_temple_stand_creeper"
+    "bottom": "chisel:block/mossy_temple/mossy_temple_stand_creeper-bottom",
+    "side": "chisel:block/mossy_temple/mossy_temple_stand_creeper-side",
+    "top": "chisel:block/mossy_temple/mossy_temple_stand_creeper-top"
   }
 }

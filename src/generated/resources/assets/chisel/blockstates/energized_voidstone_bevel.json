@@ -1,0 +1,31 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_emissivity": 15,
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/energized_voidstone_bevel",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:energized_voidstone_bevel",
+    "model_type": "multi_layer_connected_glow",
+    "name": "energized_voidstone_bevel"
+  }
+}

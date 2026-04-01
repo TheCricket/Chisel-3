@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/cobblestone/cobblestone_circular"
+    "all": "chisel:block/cobblestone/cobblestone_circular",
+    "overlay_connected": "chisel:block/cobblestone/cobblestone_circular-ctm",
+    "overlay_texture": "chisel:block/cobblestone/cobblestone_circular",
+    "particle": "chisel:block/cobblestone/cobblestone_circular"
   }
 }

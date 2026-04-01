@@ -2,15 +2,10 @@ package chisel.events;
 
 import chisel.Chisel;
 import chisel.datagen.*;
-import chisel.datagen.lang.ChiselLang;
 import chisel.datagen.model.ChiselModelProvider;
-import chisel.registry.ChiselVariants;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-
-import java.util.Set;
 
 @EventBusSubscriber(modid = Chisel.MODID)
 public class GatherDataEventHandler {

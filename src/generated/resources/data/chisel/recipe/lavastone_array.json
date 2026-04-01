@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "#c:buckets/lava",
+    "S": "#c:stones"
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:lavastone_array"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dirt/dirt_reinforced",
+    "overlay_connected": "chisel:block/dirt/dirt_reinforced-ctm",
+    "overlay_texture": "chisel:block/dirt/dirt_reinforced",
+    "particle": "chisel:block/dirt/dirt_reinforced"
+  }
+}

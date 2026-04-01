@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/glowstone/glowstone_dent"
+    "all": "chisel:block/glowstone/glowstone_dent",
+    "overlay_connected": "chisel:block/glowstone/glowstone_dent-ctm",
+    "overlay_texture": "chisel:block/glowstone/glowstone_dent",
+    "particle": "chisel:block/glowstone/glowstone_dent"
   }
 }

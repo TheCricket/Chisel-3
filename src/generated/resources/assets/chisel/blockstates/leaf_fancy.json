@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/leaf_fancy"
+    }
+  }
+}

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_panel_fuzzy"
+    "all": "chisel:block/laboratory/laboratory_panel_fuzzy",
+    "overlay_connected": "chisel:block/laboratory/laboratory_panel_fuzzy-ctm",
+    "overlay_texture": "chisel:block/laboratory/laboratory_panel_fuzzy",
+    "particle": "chisel:block/laboratory/laboratory_panel_fuzzy"
   }
 }

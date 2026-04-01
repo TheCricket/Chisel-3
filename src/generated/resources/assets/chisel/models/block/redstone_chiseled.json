@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/redstone/redstone_chiseled-bottom",
+    "side": "chisel:block/redstone/redstone_chiseled-side",
+    "top": "chisel:block/redstone/redstone_chiseled-top"
+  }
+}

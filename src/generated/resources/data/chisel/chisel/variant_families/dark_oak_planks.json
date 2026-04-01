@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:dark_oak_planks_braced",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "dark_oak_planks_braced"
     },
     {

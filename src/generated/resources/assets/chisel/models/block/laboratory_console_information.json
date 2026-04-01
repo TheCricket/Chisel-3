@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/laboratory/laboratory_console_information-bottom",
+    "side": "chisel:block/laboratory/laboratory_console_information-side",
+    "top": "chisel:block/laboratory/laboratory_console_information-top"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "#minecraft:coals",
+    "S": "#c:stones"
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:grimstone_blocks"
+  }
+}

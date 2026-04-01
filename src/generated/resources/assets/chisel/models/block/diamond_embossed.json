@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/diamond/diamond_embossed-bottom",
+    "side": "chisel:block/diamond/diamond_embossed-side",
+    "top": "chisel:block/diamond/diamond_embossed-top"
+  }
+}

@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/cobblestone_tiles_large"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/cobblestone_tiles_large",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:cobblestone_tiles_large",
+    "model_type": "connected",
+    "name": "cobblestone_tiles_large"
   }
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/cobblestone/cobblestone_dent"
+    "all": "chisel:block/cobblestone/cobblestone_dent",
+    "overlay_connected": "chisel:block/cobblestone/cobblestone_dent-ctm",
+    "overlay_texture": "chisel:block/cobblestone/cobblestone_dent",
+    "particle": "chisel:block/cobblestone/cobblestone_dent"
   }
 }

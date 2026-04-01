@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_clearscreen"
+    "all": "chisel:block/laboratory/laboratory_clearscreen",
+    "overlay_connected": "chisel:block/laboratory/laboratory_clearscreen-ctm",
+    "overlay_texture": "chisel:block/laboratory/laboratory_clearscreen",
+    "particle": "chisel:block/laboratory/laboratory_clearscreen"
   }
 }

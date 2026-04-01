@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/diorite/diorite_weaver"
+    "all": "chisel:block/diorite/diorite_weaver",
+    "overlay_connected": "chisel:block/diorite/diorite_weaver-ctm",
+    "overlay_texture": "chisel:block/diorite/diorite_weaver",
+    "particle": "chisel:block/diorite/diorite_weaver"
   }
 }

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/grimstone/grimstone_platform_tiles"
+    "bottom": "chisel:block/grimstone/grimstone_platform_tiles-bottom",
+    "side": "chisel:block/grimstone/grimstone_platform_tiles-side",
+    "top": "chisel:block/grimstone/grimstone_platform_tiles-top"
   }
 }

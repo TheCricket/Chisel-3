@@ -13,13 +13,8 @@
     },
     {
       "block": "chisel:concrete_block",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "concrete_block"
-    },
-    {
-      "block": "chisel:concrete_block_partly",
-      "model_type": "cube_all",
-      "name": "concrete_block_partly"
     },
     {
       "block": "chisel:concrete_block_weathered",
@@ -37,24 +32,9 @@
       "name": "concrete_blocks_weathered"
     },
     {
-      "block": "chisel:concrete_raw_partly",
-      "model_type": "cube_all",
-      "name": "concrete_raw_partly"
-    },
-    {
       "block": "chisel:concrete_raw_weathered",
       "model_type": "cube_all",
       "name": "concrete_raw_weathered"
-    },
-    {
-      "block": "chisel:concrete_slab",
-      "model_type": "cube_all",
-      "name": "concrete_slab"
-    },
-    {
-      "block": "chisel:concrete_slab_weathered",
-      "model_type": "cube_all",
-      "name": "concrete_slab_weathered"
     }
   ]
 }

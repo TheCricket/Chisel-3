@@ -1,0 +1,63 @@
+package chisel.block.util;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.redstone.Orientation;
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
+public class ConnectedTextureBlock extends Block {
+
+    public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
+    public static final BooleanProperty EAST = BlockStateProperties.EAST;
+    public static final BooleanProperty SOUTH = BlockStateProperties.SOUTH;
+    public static final BooleanProperty WEST = BlockStateProperties.WEST;
+    public static final BooleanProperty UP = BlockStateProperties.UP;
+    public static final BooleanProperty DOWN = BlockStateProperties.DOWN;
+
+    public ConnectedTextureBlock(Properties properties) {
+        super(properties);
+        registerDefaultState(defaultBlockState().setValue(NORTH, false).setValue(EAST, false).setValue(SOUTH, false).setValue(WEST, false).setValue(UP, false).setValue(DOWN, false));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(NORTH, EAST, SOUTH, WEST, UP, DOWN);
+    }
+
+    @Override
+    public @Nullable BlockState getStateForPlacement(@NonNull BlockPlaceContext context) {
+        if(context.canPlace()) {
+            return getConnectableSides(context.getLevel(), context.getClickedPos());
+        }
+        return super.getStateForPlacement(context);
+    }
+
+    @Override
+    protected void neighborChanged(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Block block, @Nullable Orientation orientation, boolean movedByPiston) {
+        super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
+        level.setBlock(pos, getConnectableSides(level, pos), Block.UPDATE_ALL);
+    }
+
+    @Override
+    protected boolean skipRendering(@NonNull BlockState state, BlockState neighborState, @NonNull Direction direction) {
+        return neighborState.is(this) || super.skipRendering(state, neighborState, direction);
+    }
+
+    private BlockState getConnectableSides(Level level, BlockPos pos) {
+        return defaultBlockState()
+                .setValue(DOWN, level.getBlockState(pos.below()).is(this))
+                .setValue(UP, level.getBlockState(pos.above()).is(this))
+                .setValue(NORTH, level.getBlockState(pos.north()).is(this))
+                .setValue(SOUTH, level.getBlockState(pos.south()).is(this))
+                .setValue(WEST, level.getBlockState(pos.west()).is(this))
+                .setValue(EAST, level.getBlockState(pos.east()).is(this));
+    }
+}

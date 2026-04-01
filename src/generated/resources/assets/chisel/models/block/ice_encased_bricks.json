@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ice/ice_encased_bricks",
+    "overlay_connected": "chisel:block/ice/ice_encased_bricks-ctm",
+    "overlay_texture": "chisel:block/ice/ice_encased_bricks",
+    "particle": "chisel:block/ice/ice_encased_bricks"
+  }
+}
