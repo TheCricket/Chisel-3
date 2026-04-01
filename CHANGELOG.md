@@ -6,19 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - World gen! Both Marble and Limestone will be found around the world.
+- Bookshelves: Added wood-specific bookshelves for all 12 wood types (Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, Mangrove, Cherry, Pale Oak, Bamboo, Crimson, Warped).
 
 ### Changed
-- Added in CTM for Glass.
-- Added in missing variants for Glass Pane.
-- Added in missing variants for Bookshelves.
+- Massive texture update/rename/fix across almost all blocks (over 3000 files affected).
 
 ### Fixed
-- Acacia Planks - Shipping
-- Cloud Blocks
-- Dirt Blocks
-- Diamond Blocks
-- Diorite Blocks
-- Datagen for CTM Blockstates where it wouldn't sort the blockstates.
+- Removed redundant/obsolete blocks: Packed Ice, Packed Ice Pillar, and Paperwall (consolidated).
 
 ## [3.0.1]
 
