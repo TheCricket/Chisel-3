@@ -77,7 +77,6 @@ public class ChiselBlocks {
     public static final PumpkinBlock PUMPKIN = new PumpkinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final RedstoneBlock REDSTONE = new RedstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
     public static final RoadLineBlock ROAD_LINE = new RoadLineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final RunicVoidstoneBlock RUNIC_VOIDSTONE = new RunicVoidstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final SandstoneBlock SANDSTONE = new SandstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
     public static final SilverBlock SILVER = new SilverBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final SnakestoneSandBlock SNAKESTONE_SAND = new SnakestoneSandBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
@@ -157,7 +156,7 @@ public class ChiselBlocks {
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,
                 LEAF, LIMESTONE, LIT_PUMPKIN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
                 NICKEL, OAK, OBSIDIAN, PAPERWALL, PLATINUM,
-                PUMPKIN, REDSTONE, ROAD_LINE, RUNIC_VOIDSTONE, SANDSTONE, SILVER, SNAKESTONE_SAND, SNAKESTONE_STONE,
+                PUMPKIN, REDSTONE, ROAD_LINE, SANDSTONE, SILVER, SNAKESTONE_SAND, SNAKESTONE_STONE,
                 SPRUCE, STEEL, STONE_BRICKS, TECHNICAL, TEMPLE, TIN, TORCH, TYRIAN, URANIUM, VALENTINES, VOIDSTONE, WARNING,
                 WATERSTONE, WOOLEN_CLAY
         ));

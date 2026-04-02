@@ -7,31 +7,35 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class RoadLineBlock extends ChiselBlock {
     public RoadLineBlock(BlockBehaviour.Properties props) {
         family = builder("road_line")
-                .addVariant("road_line_0", props)
-                .addVariant("road_line_1", props)
-                .addVariant("road_line_2", props)
-                .addVariant("road_line_3", props)
-                .addVariant("road_line_4", props)
-                .addVariant("road_line_5", props)
-                .addVariant("road_line_6", props)
-                .addVariant("road_line_7", props)
-                .addVariant("road_line_8", props)
-                .addVariant("road_line_9", props)
+                .addVariant("road_line_double_white_center", props)
+                .addVariant("road_line_double_white_long", props)
+                .addVariant("road_line_double_white_side", props)
+                .addVariant("road_line_double_yellow_center", props)
+                .addVariant("road_line_double_yellow_long", props)
+                .addVariant("road_line_double_yellow_side", props)
+                .addVariant("road_line_white_center", props)
+                .addVariant("road_line_white_long", props)
+                .addVariant("road_line_white_side", props)
+                .addVariant("road_line_yellow_center", props)
+                .addVariant("road_line_yellow_long", props)
+                .addVariant("road_line_yellow_side", props)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("road_line_0"), "Road Line", "Type 0");
-        lang.addBlock(getVariant("road_line_1"), "Road Line", "Type 1");
-        lang.addBlock(getVariant("road_line_2"), "Road Line", "Type 2");
-        lang.addBlock(getVariant("road_line_3"), "Road Line", "Type 3");
-        lang.addBlock(getVariant("road_line_4"), "Road Line", "Type 4");
-        lang.addBlock(getVariant("road_line_5"), "Road Line", "Type 5");
-        lang.addBlock(getVariant("road_line_6"), "Road Line", "Type 6");
-        lang.addBlock(getVariant("road_line_7"), "Road Line", "Type 7");
-        lang.addBlock(getVariant("road_line_8"), "Road Line", "Type 8");
-        lang.addBlock(getVariant("road_line_9"), "Road Line", "Type 9");
+        lang.addBlock(getVariant("road_line_double_white_center"), "Road Line", "Double White Center");
+        lang.addBlock(getVariant("road_line_double_white_long"), "Road Line", "Double White Long");
+        lang.addBlock(getVariant("road_line_double_white_side"), "Road Line", "Double White Side");
+        lang.addBlock(getVariant("road_line_double_yellow_center"), "Road Line", "Double Yellow Center");
+        lang.addBlock(getVariant("road_line_double_yellow_long"), "Road Line", "Double Yellow Long");
+        lang.addBlock(getVariant("road_line_double_yellow_side"), "Road Line", "Double Yellow Side");
+        lang.addBlock(getVariant("road_line_white_center"), "Road Line", "White Center");
+        lang.addBlock(getVariant("road_line_white_long"), "Road Line", "White Long");
+        lang.addBlock(getVariant("road_line_white_side"), "Road Line", "White Side");
+        lang.addBlock(getVariant("road_line_yellow_center"), "Road Line", "Yellow Center");
+        lang.addBlock(getVariant("road_line_yellow_long"), "Road Line", "Yellow Long");
+        lang.addBlock(getVariant("road_line_yellow_side"), "Road Line", "Yellow Side");
     }
 }
 

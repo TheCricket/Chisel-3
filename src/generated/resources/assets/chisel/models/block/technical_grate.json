@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/technical/technical_grate"
+    "all": "chisel:block/technical/technical_grate",
+    "overlay_connected": "chisel:block/technical/technical_grate-ctm",
+    "overlay_texture": "chisel:block/technical/technical_grate",
+    "particle": "chisel:block/technical/technical_grate"
   }
 }

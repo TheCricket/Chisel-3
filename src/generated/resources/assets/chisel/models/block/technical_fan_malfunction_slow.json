@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/technical/technical_fan_malfunction_slow-bottom",
+    "side": "chisel:block/technical/technical_fan_malfunction_slow-side",
+    "top": "chisel:block/technical/technical_fan_malfunction_slow-top"
+  }
+}

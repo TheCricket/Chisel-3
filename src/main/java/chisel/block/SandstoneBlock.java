@@ -10,80 +10,56 @@ public class SandstoneBlock extends ChiselBlock {
     public SandstoneBlock(BlockBehaviour.Properties props) {
         family = builder("sandstone")
                 .addVariant(Blocks.SANDSTONE)
-                .addVariant("sandstone_array", props)
-                .addVariant("sandstone_braid", props)
-                .addVariant("sandstone_chaotic_bricks", props)
-                .addVariant("sandstone_chaotic_medium", props)
-                .addVariant("sandstone_chaotic_small", props)
-                .addVariant("sandstone_circular", props)
-                .addVariant("sandstone_cracked", props)
-                .addVariant("sandstone_cracked_bricks", props)
-                .addVariant("sandstone_cuts", props)
-                .addVariant("sandstone_dent", props)
-                .addVariant("sandstone_emboss", props)
-                .addVariant("sandstone_encased_bricks", props)
-                .addVariant("sandstone_french", props)
-                .addVariant("sandstone_french_2", props)
-                .addVariant("sandstone_indent", props)
-                .addVariant("sandstone_jellybean", props)
-                .addVariant("sandstone_layers", props)
-                .addVariant("sandstone_mosaic", props)
-                .addVariant("sandstone_ornate", props)
-                .addVariant("sandstone_panel", props)
-                .addVariant("sandstone_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("sandstone_prism", props)
-                .addVariant("sandstone_road", props)
-                .addVariant("sandstone_scribbles_0", props)
-                .addVariant("sandstone_scribbles_1", props)
-                .addVariant("sandstone_scribbles_2", props)
-                .addVariant("sandstone_scribbles_3", props)
-                .addVariant("sandstone_scribbles_4", props)
-                .addVariant("sandstone_scribbles_5", props)
-                .addVariant("sandstone_scribbles_6", props)
-                .addVariant("sandstone_scribbles_7", props)
-                .addVariant("sandstone_scribbles_8", props)
-                .addVariant("sandstone_scribbles_9", props)
-                .addVariant("sandstone_slanted", props)
-                .addVariant("sandstone_small_bricks", props)
-                .addVariant("sandstone_smooth_flat", props)
-                .addVariant("sandstone_soft_bricks", props)
-                .addVariant("sandstone_solid_bricks", props)
-                .addVariant("sandstone_stacked", props)
-                .addVariant("sandstone_tiles_large", props)
-                .addVariant("sandstone_tiles_medium", props)
-                .addVariant("sandstone_tiles_small", props)
-                .addVariant("sandstone_triple_bricks", props)
-                .addVariant("sandstone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("sandstone_weaver", props)
-                .addVariant("sandstone_zag", props)
+                .addVariant("sandstone_base", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_block", props)
+                .addVariant("sandstone_blocks", props)
+                .addVariant("sandstone_brick_flat", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_capstone", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_cobble_solid", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_column", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_creeper", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_faded", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_horizontal_tiles", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("sandstone_scribbles_0", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_1", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_2", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_3", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_4", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_5", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_6", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_7", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_8", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_9", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_10", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_11", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_12", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_13", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_14", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_scribbles_15", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_small", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_smooth", props)
+                .addVariant("sandstone_smooth_base", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_smooth_cap", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_smooth_flat", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_smooth_glyph", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("sandstone_smooth_small", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("sandstone_array"), "Sandstone", "Array");
-        lang.addBlock(getVariant("sandstone_braid"), "Sandstone", "Braid");
-        lang.addBlock(getVariant("sandstone_chaotic_bricks"), "Sandstone", "Chaotic Bricks");
-        lang.addBlock(getVariant("sandstone_chaotic_medium"), "Sandstone", "Medium Chaotic");
-        lang.addBlock(getVariant("sandstone_chaotic_small"), "Sandstone", "Small Chaotic");
-        lang.addBlock(getVariant("sandstone_circular"), "Sandstone", "Circular");
-        lang.addBlock(getVariant("sandstone_cracked"), "Sandstone", "Cracked");
-        lang.addBlock(getVariant("sandstone_cracked_bricks"), "Sandstone", "Cracked Bricks");
-        lang.addBlock(getVariant("sandstone_cuts"), "Sandstone", "Cuts");
-        lang.addBlock(getVariant("sandstone_dent"), "Sandstone", "Dent");
-        lang.addBlock(getVariant("sandstone_emboss"), "Sandstone", "Emboss");
-        lang.addBlock(getVariant("sandstone_encased_bricks"), "Sandstone", "Encased Bricks");
-        lang.addBlock(getVariant("sandstone_french"), "Sandstone", "French");
-        lang.addBlock(getVariant("sandstone_french_2"), "Sandstone", "French 2");
-        lang.addBlock(getVariant("sandstone_indent"), "Sandstone", "Indent");
-        lang.addBlock(getVariant("sandstone_jellybean"), "Sandstone", "Jellybean");
-        lang.addBlock(getVariant("sandstone_layers"), "Sandstone", "Layers");
+        lang.addBlock(getVariant("sandstone_base"), "Sandstone", "Base");
+        lang.addBlock(getVariant("sandstone_block"), "Sandstone", "Block");
+        lang.addBlock(getVariant("sandstone_blocks"), "Sandstone", "Blocks");
+        lang.addBlock(getVariant("sandstone_brick_flat"), "Sandstone", "Flat Brick");
+        lang.addBlock(getVariant("sandstone_capstone"), "Sandstone", "Capstone");
+        lang.addBlock(getVariant("sandstone_cobble_solid"), "Sandstone", "Solid Cobble");
+        lang.addBlock(getVariant("sandstone_column"), "Sandstone", "Column");
+        lang.addBlock(getVariant("sandstone_creeper"), "Sandstone", "Creeper");
+        lang.addBlock(getVariant("sandstone_faded"), "Sandstone", "Faded");
+        lang.addBlock(getVariant("sandstone_horizontal_tiles"), "Sandstone", "Horizontal Tiles");
         lang.addBlock(getVariant("sandstone_mosaic"), "Sandstone", "Mosaic");
-        lang.addBlock(getVariant("sandstone_ornate"), "Sandstone", "Ornate");
-        lang.addBlock(getVariant("sandstone_panel"), "Sandstone", "Panel");
-        lang.addBlock(getVariant("sandstone_pillar"), "Sandstone", "Pillar");
-        lang.addBlock(getVariant("sandstone_prism"), "Sandstone", "Prism");
-        lang.addBlock(getVariant("sandstone_road"), "Sandstone", "Road");
         lang.addBlock(getVariant("sandstone_scribbles_0"), "Sandstone", "Scribbles 0");
         lang.addBlock(getVariant("sandstone_scribbles_1"), "Sandstone", "Scribbles 1");
         lang.addBlock(getVariant("sandstone_scribbles_2"), "Sandstone", "Scribbles 2");
@@ -94,19 +70,19 @@ public class SandstoneBlock extends ChiselBlock {
         lang.addBlock(getVariant("sandstone_scribbles_7"), "Sandstone", "Scribbles 7");
         lang.addBlock(getVariant("sandstone_scribbles_8"), "Sandstone", "Scribbles 8");
         lang.addBlock(getVariant("sandstone_scribbles_9"), "Sandstone", "Scribbles 9");
-        lang.addBlock(getVariant("sandstone_slanted"), "Sandstone", "Slanted");
-        lang.addBlock(getVariant("sandstone_small_bricks"), "Sandstone", "Small Bricks");
+        lang.addBlock(getVariant("sandstone_scribbles_10"), "Sandstone", "Scribbles 10");
+        lang.addBlock(getVariant("sandstone_scribbles_11"), "Sandstone", "Scribbles 11");
+        lang.addBlock(getVariant("sandstone_scribbles_12"), "Sandstone", "Scribbles 12");
+        lang.addBlock(getVariant("sandstone_scribbles_13"), "Sandstone", "Scribbles 13");
+        lang.addBlock(getVariant("sandstone_scribbles_14"), "Sandstone", "Scribbles 14");
+        lang.addBlock(getVariant("sandstone_scribbles_15"), "Sandstone", "Scribbles 15");
+        lang.addBlock(getVariant("sandstone_small"), "Sandstone", "Small");
+        lang.addBlock(getVariant("sandstone_smooth"), "Sandstone", "Smooth");
+        lang.addBlock(getVariant("sandstone_smooth_base"), "Sandstone", "Smooth Base");
+        lang.addBlock(getVariant("sandstone_smooth_cap"), "Sandstone", "Smooth Cap");
         lang.addBlock(getVariant("sandstone_smooth_flat"), "Sandstone", "Smooth Flat");
-        lang.addBlock(getVariant("sandstone_soft_bricks"), "Sandstone", "Soft Bricks");
-        lang.addBlock(getVariant("sandstone_solid_bricks"), "Sandstone", "Solid Bricks");
-        lang.addBlock(getVariant("sandstone_stacked"), "Sandstone", "Stacked");
-        lang.addBlock(getVariant("sandstone_tiles_large"), "Sandstone", "Large Tiles");
-        lang.addBlock(getVariant("sandstone_tiles_medium"), "Sandstone", "Medium Tiles");
-        lang.addBlock(getVariant("sandstone_tiles_small"), "Sandstone", "Small Tiles");
-        lang.addBlock(getVariant("sandstone_triple_bricks"), "Sandstone", "Triple Bricks");
-        lang.addBlock(getVariant("sandstone_twisted"), "Sandstone", "Twisted");
-        lang.addBlock(getVariant("sandstone_weaver"), "Sandstone", "Weaver");
-        lang.addBlock(getVariant("sandstone_zag"), "Sandstone", "Zag");
+        lang.addBlock(getVariant("sandstone_smooth_glyph"), "Sandstone", "Smooth Glyph");
+        lang.addBlock(getVariant("sandstone_smooth_small"), "Sandstone", "Smooth Small");
     }
 }
 

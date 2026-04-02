@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_cables",
+    "overlay_connected": "chisel:block/technical/technical_cables-ctm",
+    "overlay_texture": "chisel:block/technical/technical_cables",
+    "particle": "chisel:block/technical/technical_cables"
+  }
+}

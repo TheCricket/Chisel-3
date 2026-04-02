@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/technical/technical_insulation"
+    "all": "chisel:block/technical/technical_insulation",
+    "overlay_connected": "chisel:block/technical/technical_insulation-ctm",
+    "overlay_texture": "chisel:block/technical/technical_insulation",
+    "particle": "chisel:block/technical/technical_insulation"
   }
 }

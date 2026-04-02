@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/technical/technical_fan_fast_transparent-bottom",
+    "side": "chisel:block/technical/technical_fan_fast_transparent-side",
+    "top": "chisel:block/technical/technical_fan_fast_transparent-top"
+  }
+}

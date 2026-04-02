@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_spinning_stuff",
+    "overlay_connected": "chisel:block/technical/technical_spinning_stuff-ctm",
+    "overlay_texture": "chisel:block/technical/technical_spinning_stuff",
+    "particle": "chisel:block/technical/technical_spinning_stuff"
+  }
+}

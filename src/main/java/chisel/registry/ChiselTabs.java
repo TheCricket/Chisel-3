@@ -36,7 +36,6 @@ public class ChiselTabs {
                     ChiselBlocks.NETHERBRICK.getFamily(),
                     ChiselBlocks.NETHERRACK.getFamily(),
                     ChiselBlocks.OBSIDIAN.getFamily(),
-                    ChiselBlocks.RUNIC_VOIDSTONE.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
                     ChiselBlocks.SNAKESTONE_SAND.getFamily(),
                     ChiselBlocks.SNAKESTONE_STONE.getFamily(),

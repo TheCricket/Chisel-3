@@ -2,54 +2,64 @@
   "familyName": "road_line",
   "variants": [
     {
-      "block": "chisel:road_line_0",
+      "block": "chisel:road_line_double_white_center",
       "model_type": "cube_all",
-      "name": "road_line_0"
+      "name": "road_line_double_white_center"
     },
     {
-      "block": "chisel:road_line_1",
+      "block": "chisel:road_line_double_white_long",
       "model_type": "cube_all",
-      "name": "road_line_1"
+      "name": "road_line_double_white_long"
     },
     {
-      "block": "chisel:road_line_2",
+      "block": "chisel:road_line_double_white_side",
       "model_type": "cube_all",
-      "name": "road_line_2"
+      "name": "road_line_double_white_side"
     },
     {
-      "block": "chisel:road_line_3",
+      "block": "chisel:road_line_double_yellow_center",
       "model_type": "cube_all",
-      "name": "road_line_3"
+      "name": "road_line_double_yellow_center"
     },
     {
-      "block": "chisel:road_line_4",
+      "block": "chisel:road_line_double_yellow_long",
       "model_type": "cube_all",
-      "name": "road_line_4"
+      "name": "road_line_double_yellow_long"
     },
     {
-      "block": "chisel:road_line_5",
+      "block": "chisel:road_line_double_yellow_side",
       "model_type": "cube_all",
-      "name": "road_line_5"
+      "name": "road_line_double_yellow_side"
     },
     {
-      "block": "chisel:road_line_6",
+      "block": "chisel:road_line_white_center",
       "model_type": "cube_all",
-      "name": "road_line_6"
+      "name": "road_line_white_center"
     },
     {
-      "block": "chisel:road_line_7",
+      "block": "chisel:road_line_white_long",
       "model_type": "cube_all",
-      "name": "road_line_7"
+      "name": "road_line_white_long"
     },
     {
-      "block": "chisel:road_line_8",
+      "block": "chisel:road_line_white_side",
       "model_type": "cube_all",
-      "name": "road_line_8"
+      "name": "road_line_white_side"
     },
     {
-      "block": "chisel:road_line_9",
+      "block": "chisel:road_line_yellow_center",
       "model_type": "cube_all",
-      "name": "road_line_9"
+      "name": "road_line_yellow_center"
+    },
+    {
+      "block": "chisel:road_line_yellow_long",
+      "model_type": "cube_all",
+      "name": "road_line_yellow_long"
+    },
+    {
+      "block": "chisel:road_line_yellow_side",
+      "model_type": "cube_all",
+      "name": "road_line_yellow_side"
     }
   ]
 }

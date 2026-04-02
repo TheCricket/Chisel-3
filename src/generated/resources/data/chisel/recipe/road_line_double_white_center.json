@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "#c:dusts/redstone",
+    "W": "#c:dyes/white"
+  },
+  "pattern": [
+    "WRW",
+    "WRW",
+    "WRW"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:road_line_double_white_center"
+  }
+}

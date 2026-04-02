@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_wall_pads",
+    "overlay_connected": "chisel:block/technical/technical_wall_pads-ctm",
+    "overlay_texture": "chisel:block/technical/technical_wall_pads",
+    "particle": "chisel:block/technical/technical_wall_pads"
+  }
+}

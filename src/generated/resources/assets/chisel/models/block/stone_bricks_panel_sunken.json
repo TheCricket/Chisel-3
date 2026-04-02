@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/stone_bricks/stone_bricks_panel_sunken"
+    "all": "chisel:block/stone_bricks/stone_bricks_panel_sunken",
+    "overlay_connected": "chisel:block/stone_bricks/stone_bricks_panel_sunken-ctm",
+    "overlay_texture": "chisel:block/stone_bricks/stone_bricks_panel_sunken",
+    "particle": "chisel:block/stone_bricks/stone_bricks_panel_sunken"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/stone_bricks/stone_bricks_panel_hard",
+    "overlay_connected": "chisel:block/stone_bricks/stone_bricks_panel_hard-ctm",
+    "overlay_texture": "chisel:block/stone_bricks/stone_bricks_panel_hard",
+    "particle": "chisel:block/stone_bricks/stone_bricks_panel_hard"
+  }
+}

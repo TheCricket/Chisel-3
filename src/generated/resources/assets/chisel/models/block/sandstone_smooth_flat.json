@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/sandstone/sandstone_smooth_flat"
+    "bottom": "chisel:block/sandstone/sandstone_smooth_flat-bottom",
+    "side": "chisel:block/sandstone/sandstone_smooth_flat-side",
+    "top": "chisel:block/sandstone/sandstone_smooth_flat-top"
   }
 }

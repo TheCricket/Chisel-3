@@ -1,0 +1,30 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/technical_under_small",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:technical_under_small",
+    "model_type": "connected",
+    "name": "technical_under_small"
+  }
+}

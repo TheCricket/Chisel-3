@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_scaffold_transparent",
+    "overlay_connected": "chisel:block/technical/technical_scaffold_transparent-ctm",
+    "overlay_texture": "chisel:block/technical/technical_scaffold_transparent",
+    "particle": "chisel:block/technical/technical_scaffold_transparent"
+  }
+}
