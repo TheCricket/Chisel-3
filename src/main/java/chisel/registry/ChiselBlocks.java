@@ -63,7 +63,7 @@ public class ChiselBlocks {
     public static final LeadBlock LEAD = new LeadBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final LeafBlock LEAF = new LeafBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES));
     public static final LimestoneBlock LIMESTONE = new LimestoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final LitPumpkinBlock LIT_PUMPKIN = new LitPumpkinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
+    public static final JackOLanternBlock JACK_O_LANTERN = new JackOLanternBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
     public static final MarbleBlock MARBLE = new MarbleBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final MossyCobblestoneBlock MOSSY_COBBLESTONE = new MossyCobblestoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
     public static final MossyTempleBlock MOSSY_TEMPLE = new MossyTempleBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
@@ -74,7 +74,7 @@ public class ChiselBlocks {
     public static final ObsidianBlock OBSIDIAN = new ObsidianBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
     public static final PaperwallBlock PAPERWALL = new PaperwallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final PlatinumBlock PLATINUM = new PlatinumBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final PumpkinBlock PUMPKIN = new PumpkinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
+    public static final ChiselPumpkinBlock PUMPKIN = new ChiselPumpkinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final RedstoneBlock REDSTONE = new RedstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
     public static final RoadLineBlock ROAD_LINE = new RoadLineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final SandstoneBlock SANDSTONE = new SandstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
@@ -154,7 +154,7 @@ public class ChiselBlocks {
                 CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,
-                LEAF, LIMESTONE, LIT_PUMPKIN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
+                LEAF, LIMESTONE, JACK_O_LANTERN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
                 NICKEL, OAK, OBSIDIAN, PAPERWALL, PLATINUM,
                 PUMPKIN, REDSTONE, ROAD_LINE, SANDSTONE, SILVER, SNAKESTONE_SAND, SNAKESTONE_STONE,
                 SPRUCE, STEEL, STONE_BRICKS, TECHNICAL, TEMPLE, TIN, TORCH, TYRIAN, URANIUM, VALENTINES, VOIDSTONE, WARNING,

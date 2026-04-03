@@ -23,6 +23,7 @@ public enum VariantModelType implements StringRepresentable {
     IRON_BARS("iron_bars"),
     MOSSY("mossy"),
     MOSSY_TOP_BOTTOM_SIDE("mossy_top_bottom_side"),
+    PUMPKIN("pumpkin"),
     GLASS_PANE("glass_pane");
 
     public static final Codec<VariantModelType> CODEC = StringRepresentable.fromEnum(VariantModelType::values);

@@ -101,6 +101,7 @@ public class Variant extends VariantModels {
             case GLASS_PANE -> GLASS_PANE.generate(this, blockModels);
             case MOSSY -> MOSSY.generate(this, blockModels);
             case MOSSY_TOP_BOTTOM_SIDE -> MOSSY_TOP_BOTTOM_SIDE.generate(this, blockModels);
+            case PUMPKIN -> PUMPKIN.generate(this, blockModels);
         }
     }
 

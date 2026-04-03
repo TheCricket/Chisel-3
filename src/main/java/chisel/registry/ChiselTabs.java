@@ -100,7 +100,7 @@ public class ChiselTabs {
                         ChiselBlocks.GLASS_PANE.getFamily(),
                         ChiselBlocks.GLOWSTONE.getFamily(),
                         ChiselBlocks.ICE.getFamily(),
-                        ChiselBlocks.LIT_PUMPKIN.getFamily(),
+                        ChiselBlocks.JACK_O_LANTERN.getFamily(),
                         ChiselBlocks.IRON_BARS.getFamily(),
                         ChiselBlocks.LAPIS.getFamily(),
                         ChiselBlocks.LEAF.getFamily(),

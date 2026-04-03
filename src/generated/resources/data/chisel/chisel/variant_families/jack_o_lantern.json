@@ -1,0 +1,100 @@
+{
+  "familyName": "jack_o_lantern",
+  "variants": [
+    {
+      "block": "minecraft:jack_o_lantern",
+      "model_type": "cube_all",
+      "name": "block.minecraft.jack_o_lantern"
+    },
+    {
+      "block": "chisel:jack_o_lantern_0",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_0"
+    },
+    {
+      "block": "chisel:jack_o_lantern_1",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_1"
+    },
+    {
+      "block": "chisel:jack_o_lantern_2",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_2"
+    },
+    {
+      "block": "chisel:jack_o_lantern_3",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_3"
+    },
+    {
+      "block": "chisel:jack_o_lantern_4",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_4"
+    },
+    {
+      "block": "chisel:jack_o_lantern_5",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_5"
+    },
+    {
+      "block": "chisel:jack_o_lantern_6",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_6"
+    },
+    {
+      "block": "chisel:jack_o_lantern_7",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_7"
+    },
+    {
+      "block": "chisel:jack_o_lantern_8",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_8"
+    },
+    {
+      "block": "chisel:jack_o_lantern_9",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_9"
+    },
+    {
+      "block": "chisel:jack_o_lantern_10",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_10"
+    },
+    {
+      "block": "chisel:jack_o_lantern_11",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_11"
+    },
+    {
+      "block": "chisel:jack_o_lantern_12",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_12"
+    },
+    {
+      "block": "chisel:jack_o_lantern_13",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_13"
+    },
+    {
+      "block": "chisel:jack_o_lantern_14",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_14"
+    },
+    {
+      "block": "chisel:jack_o_lantern_15",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_15"
+    },
+    {
+      "block": "chisel:jack_o_lantern_16",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_16"
+    },
+    {
+      "block": "chisel:jack_o_lantern_17",
+      "model_type": "pumpkin",
+      "name": "jack_o_lantern_17"
+    }
+  ]
+}

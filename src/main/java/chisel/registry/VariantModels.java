@@ -29,4 +29,5 @@ public class VariantModels {
     public final IronBarsModel IRON_BARS = new IronBarsModel();
     public final MossyModel MOSSY = new MossyModel();
     public final MossyTBSModel MOSSY_TOP_BOTTOM_SIDE = new MossyTBSModel();
+    public final PumpkinModel PUMPKIN = new PumpkinModel();
 }
