@@ -1,6 +1,7 @@
 package chisel.core;
 
 import chisel.block.util.ConnectedTextureBlockItem;
+import chisel.block.util.TorchBlockItem;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;
@@ -95,6 +96,20 @@ public class VariantFamily {
             public Builder addVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelType modelType) {
                 DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
                 registerAndAdd(new Variant(name, block, family, modelType));
+                return this;
+            }
+
+            public Builder addTorchVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelType modelType) {
+                DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
+                Variant v =  new Variant(name, block, family, modelType);
+                v.isInTab = false;
+
+                if(modelType == VariantModelType.TORCH) {
+                    ChiselItems.ITEMS.registerItem(v.getName(), p -> new TorchBlockItem(v, block.get(), ChiselBlocks.TORCH.getVariant("wall_torch_%s".formatted(name.substring(6))).get(), p), () -> new Item.Properties().useBlockDescriptionPrefix());
+                }
+
+                family.getVariants().add(v);
+
                 return this;
             }
 

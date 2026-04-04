@@ -42,7 +42,7 @@ public class ChiselTabs {
                     ChiselBlocks.TEMPLE.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
-                        if(variant.shouldGenerateModel())
+                        if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
             })))
             .build());
@@ -58,7 +58,7 @@ public class ChiselTabs {
                     ChiselBlocks.JUNGLE.getFamily(),
                     ChiselBlocks.OAK.getFamily(),
                     ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
-                        if(variant.shouldGenerateModel())
+                        if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
                     })))
             .build());
@@ -79,7 +79,7 @@ public class ChiselTabs {
                     ChiselBlocks.ALUMINUM.getFamily(),
                     ChiselBlocks.WARNING.getFamily())
                     .forEach(family -> family.getVariants().forEach(variant ->  {
-                        if(variant.shouldGenerateModel())
+                        if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
                     })))
             .build());
@@ -110,7 +110,7 @@ public class ChiselTabs {
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
                         ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
-                            if(variant.shouldGenerateModel())
+                            if(variant.shouldGenerateModel() && variant.isInTab)
                                 output.accept(variant.getBlock());
                 }));
 
@@ -129,7 +129,7 @@ public class ChiselTabs {
                     ChiselBlocks.STEEL.getFamily(),
                     ChiselBlocks.TIN.getFamily(),
                     ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
-                        if(variant.shouldGenerateModel())
+                        if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
             })))
             .build());

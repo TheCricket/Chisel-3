@@ -25,6 +25,7 @@ public class Variant extends VariantModels {
     private final Supplier<Block> block;
     private final VariantModelType modelType;
     private final boolean shouldGenerateModel;
+    public boolean isInTab = true;
     private VariantFamily family;
 
     public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelType modelType, boolean shouldGenerateModel) {
@@ -45,6 +46,10 @@ public class Variant extends VariantModels {
 
     public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelType modelType) {
         this(name, block, family, modelType, true);
+    }
+
+    public VariantFamily getFamily() {
+        return family;
     }
 
     public void setFamily(VariantFamily family) {
@@ -102,6 +107,8 @@ public class Variant extends VariantModels {
             case MOSSY -> MOSSY.generate(this, blockModels);
             case MOSSY_TOP_BOTTOM_SIDE -> MOSSY_TOP_BOTTOM_SIDE.generate(this, blockModels);
             case PUMPKIN -> PUMPKIN.generate(this, blockModels);
+            case TORCH -> TORCH.generate(this, blockModels);
+            case WALL_TORCH -> WALL_TORCH.generate(this, blockModels);
         }
     }
 

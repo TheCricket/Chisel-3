@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chisel:block/wall_torch_1"
+    },
+    "facing=north": {
+      "model": "chisel:block/wall_torch_1",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chisel:block/wall_torch_1",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chisel:block/wall_torch_1",
+      "y": 180
+    }
+  }
+}

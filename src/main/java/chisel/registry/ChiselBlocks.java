@@ -87,7 +87,7 @@ public class ChiselBlocks {
     public static final TechnicalBlock TECHNICAL = new TechnicalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final TempleBlock TEMPLE = new TempleBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final TinBlock TIN = new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final TorchBlock TORCH = new TorchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH));
+    public static final ChiselTorchBlock TORCH = new ChiselTorchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH));
     public static final TyrianBlock TYRIAN = new TyrianBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final UraniumBlock URANIUM = new UraniumBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final ValentinesBlock VALENTINES = new ValentinesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));

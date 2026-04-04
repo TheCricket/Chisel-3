@@ -1,0 +1,6 @@
+{
+  "parent": "chisel:block/torch",
+  "textures": {
+    "torch": "chisel:block/torch/torch_2"
+  }
+}

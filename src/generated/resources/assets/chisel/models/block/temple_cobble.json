@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/temple/temple_cobble"
+    "all": "chisel:block/temple/temple_cobble",
+    "overlay_connected": "chisel:block/temple/temple_cobble-ctm",
+    "overlay_texture": "chisel:block/temple/temple_cobble",
+    "particle": "chisel:block/temple/temple_cobble"
   }
 }

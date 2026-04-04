@@ -30,4 +30,6 @@ public class VariantModels {
     public final MossyModel MOSSY = new MossyModel();
     public final MossyTBSModel MOSSY_TOP_BOTTOM_SIDE = new MossyTBSModel();
     public final PumpkinModel PUMPKIN = new PumpkinModel();
+    public final TorchModel TORCH = new TorchModel(false);
+    public final TorchModel WALL_TORCH = new TorchModel(true);
 }

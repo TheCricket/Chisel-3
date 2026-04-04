@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/tin/tin_scaffold"
+    "all": "chisel:block/tin/tin_scaffold",
+    "overlay_connected": "chisel:block/tin/tin_scaffold-ctm",
+    "overlay_texture": "chisel:block/tin/tin_scaffold",
+    "particle": "chisel:block/tin/tin_scaffold"
   }
 }

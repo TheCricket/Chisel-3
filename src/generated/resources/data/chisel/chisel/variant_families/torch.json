@@ -2,9 +2,104 @@
   "familyName": "torch",
   "variants": [
     {
-      "block": "chisel:torch_0",
-      "model_type": "cube_all",
-      "name": "torch_0"
+      "block": "chisel:torch_1",
+      "model_type": "torch",
+      "name": "torch_1"
+    },
+    {
+      "block": "chisel:torch_2",
+      "model_type": "torch",
+      "name": "torch_2"
+    },
+    {
+      "block": "chisel:torch_3",
+      "model_type": "torch",
+      "name": "torch_3"
+    },
+    {
+      "block": "chisel:torch_4",
+      "model_type": "torch",
+      "name": "torch_4"
+    },
+    {
+      "block": "chisel:torch_5",
+      "model_type": "torch",
+      "name": "torch_5"
+    },
+    {
+      "block": "chisel:torch_6",
+      "model_type": "torch",
+      "name": "torch_6"
+    },
+    {
+      "block": "chisel:torch_7",
+      "model_type": "torch",
+      "name": "torch_7"
+    },
+    {
+      "block": "chisel:torch_8",
+      "model_type": "torch",
+      "name": "torch_8"
+    },
+    {
+      "block": "chisel:torch_9",
+      "model_type": "torch",
+      "name": "torch_9"
+    },
+    {
+      "block": "chisel:torch_10",
+      "model_type": "torch",
+      "name": "torch_10"
+    },
+    {
+      "block": "chisel:wall_torch_1",
+      "model_type": "wall_torch",
+      "name": "wall_torch_1"
+    },
+    {
+      "block": "chisel:wall_torch_2",
+      "model_type": "wall_torch",
+      "name": "wall_torch_2"
+    },
+    {
+      "block": "chisel:wall_torch_3",
+      "model_type": "wall_torch",
+      "name": "wall_torch_3"
+    },
+    {
+      "block": "chisel:wall_torch_4",
+      "model_type": "wall_torch",
+      "name": "wall_torch_4"
+    },
+    {
+      "block": "chisel:wall_torch_5",
+      "model_type": "wall_torch",
+      "name": "wall_torch_5"
+    },
+    {
+      "block": "chisel:wall_torch_6",
+      "model_type": "wall_torch",
+      "name": "wall_torch_6"
+    },
+    {
+      "block": "chisel:wall_torch_7",
+      "model_type": "wall_torch",
+      "name": "wall_torch_7"
+    },
+    {
+      "block": "chisel:wall_torch_8",
+      "model_type": "wall_torch",
+      "name": "wall_torch_8"
+    },
+    {
+      "block": "chisel:wall_torch_9",
+      "model_type": "wall_torch",
+      "name": "wall_torch_9"
+    },
+    {
+      "block": "chisel:wall_torch_10",
+      "model_type": "wall_torch",
+      "name": "wall_torch_10"
     }
   ]
 }
