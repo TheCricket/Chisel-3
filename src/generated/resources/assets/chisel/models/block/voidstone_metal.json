@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/voidstone/voidstone_metal",
+    "overlay_connected": "chisel:block/voidstone/voidstone_metal-ctm",
+    "overlay_texture": "chisel:block/voidstone/voidstone_metal",
+    "particle": "chisel:block/voidstone/voidstone_metal"
+  }
+}

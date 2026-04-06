@@ -9,25 +9,43 @@ public class WoolenClayBlock extends ChiselBlock {
     public WoolenClayBlock(BlockBehaviour.Properties props) {
         family = builder("woolen_clay")
                 .addVariant(Blocks.CLAY)
-                .addVariant("woolen_clay_braid", props)
-                .addVariant("woolen_clay_chaotic", props)
-                .addVariant("woolen_clay_cuts", props)
-                .addVariant("woolen_clay_dent", props)
-                .addVariant("woolen_clay_french", props)
-                .addVariant("woolen_clay_french_2", props)
-                .addVariant("woolen_clay_layers", props)
+                .addVariant("woolen_clay_0", props)
+                .addVariant("woolen_clay_1", props)
+                .addVariant("woolen_clay_2", props)
+                .addVariant("woolen_clay_3", props)
+                .addVariant("woolen_clay_4", props)
+                .addVariant("woolen_clay_5", props)
+                .addVariant("woolen_clay_6", props)
+                .addVariant("woolen_clay_7", props)
+                .addVariant("woolen_clay_8", props)
+                .addVariant("woolen_clay_9", props)
+                .addVariant("woolen_clay_10", props)
+                .addVariant("woolen_clay_11", props)
+                .addVariant("woolen_clay_12", props)
+                .addVariant("woolen_clay_13", props)
+                .addVariant("woolen_clay_14", props)
+                .addVariant("woolen_clay_15", props)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("woolen_clay_braid"), "Woolen Clay", "Braid");
-        lang.addBlock(getVariant("woolen_clay_chaotic"), "Woolen Clay", "Chaotic");
-        lang.addBlock(getVariant("woolen_clay_cuts"), "Woolen Clay", "Cuts");
-        lang.addBlock(getVariant("woolen_clay_dent"), "Woolen Clay", "Dent");
-        lang.addBlock(getVariant("woolen_clay_french"), "Woolen Clay", "French");
-        lang.addBlock(getVariant("woolen_clay_french_2"), "Woolen Clay", "French 2");
-        lang.addBlock(getVariant("woolen_clay_layers"), "Woolen Clay", "Layers");
+        lang.addBlock(getVariant("woolen_clay_0"), "Woolen Clay", "White");
+        lang.addBlock(getVariant("woolen_clay_1"), "Woolen Clay", "Orange");
+        lang.addBlock(getVariant("woolen_clay_2"), "Woolen Clay", "Magenta");
+        lang.addBlock(getVariant("woolen_clay_3"), "Woolen Clay", "Light Blue");
+        lang.addBlock(getVariant("woolen_clay_4"), "Woolen Clay", "Yellow");
+        lang.addBlock(getVariant("woolen_clay_5"), "Woolen Clay", "Lime");
+        lang.addBlock(getVariant("woolen_clay_6"), "Woolen Clay", "Pink");
+        lang.addBlock(getVariant("woolen_clay_7"), "Woolen Clay", "Gray");
+        lang.addBlock(getVariant("woolen_clay_8"), "Woolen Clay", "Light Gray");
+        lang.addBlock(getVariant("woolen_clay_9"), "Woolen Clay", "Cyan");
+        lang.addBlock(getVariant("woolen_clay_10"), "Woolen Clay", "Purple");
+        lang.addBlock(getVariant("woolen_clay_11"), "Woolen Clay", "Blue");
+        lang.addBlock(getVariant("woolen_clay_12"), "Woolen Clay", "Brown");
+        lang.addBlock(getVariant("woolen_clay_13"), "Woolen Clay", "Green");
+        lang.addBlock(getVariant("woolen_clay_14"), "Woolen Clay", "Red");
+        lang.addBlock(getVariant("woolen_clay_15"), "Woolen Clay", "Black");
     }
 }
 

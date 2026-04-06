@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/voidstone/voidstone_bevel",
+    "overlay_connected": "chisel:block/voidstone/voidstone_bevel-ctm",
+    "overlay_texture": "chisel:block/voidstone/voidstone_bevel",
+    "particle": "chisel:block/voidstone/voidstone_bevel"
+  }
+}
