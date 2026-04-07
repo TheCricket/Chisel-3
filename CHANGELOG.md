@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.3]
+
+### Added
+- Added back Pumpkins and Jack o' Lanterns.
+
+### Changed
+- Massive texture update and fix across a wide range of blocks:
+  - Technical, Road lines, Sandstone, Stone Bricks.
+  - Valentines, Voidstone, and Woolen Clay.
+  - Torches (Not 100% working yet!).
+- Significant datagen improvements and refactoring.
+
+### Fixed
+- Fixed many texture and rendering issues.
+
 ## [3.0.2]
 
 ### Added
