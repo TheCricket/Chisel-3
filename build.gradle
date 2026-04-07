@@ -141,7 +141,7 @@ modrinth {
     projectId = "chisel-3"
     versionName = "${mod_name}-${mod_version}"
     versionNumber = mod_version
-    versionType = "alpha"
+    versionType = "beta"
     uploadFile = jar
     gameVersions = ["26.1"]
     loaders = ["neoforge"]

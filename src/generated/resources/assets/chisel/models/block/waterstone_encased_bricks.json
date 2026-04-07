@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass_tinted",
+  "textures": {
+    "all": "chisel:block/waterstone/waterstone_encased_bricks",
+    "base_texture": "chisel:block/waterstone/waterstone_encased_bricks-bg",
+    "layer0": "chisel:block/waterstone/waterstone_encased_bricks",
+    "layer1": "chisel:block/waterstone/waterstone_encased_bricks-bg",
+    "overlay_connected": "chisel:block/waterstone/waterstone_encased_bricks-ctm",
+    "overlay_texture": "chisel:block/waterstone/waterstone_encased_bricks",
+    "particle": "chisel:block/waterstone/waterstone_encased_bricks"
+  }
+}

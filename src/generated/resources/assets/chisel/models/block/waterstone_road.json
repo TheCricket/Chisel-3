@@ -1,0 +1,8 @@
+{
+  "parent": "chisel:block/cube_multi_pass_tinted",
+  "textures": {
+    "layer0": "chisel:block/waterstone/waterstone_road",
+    "layer1": "chisel:block/waterstone/water_still",
+    "particle": "chisel:block/waterstone/waterstone_road"
+  }
+}

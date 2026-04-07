@@ -96,9 +96,11 @@ public class Variant extends VariantModels {
             case CONNECTED_HORIZONTALLY -> CTMH.generate(this, blockModels);
             case MULTI_LAYER -> MULTI_LAYER.generate(this, blockModels);
             case MULTI_LAYER_TBS -> MULTI_LAYER_TBS.generate(this, blockModels);
-            case MULTI_LAYER_WATER -> LAVASTONE.generate(this, blockModels);
+            case MULTI_LAYER_TBS_TINTED -> MULTI_LAYER_TBS_TINTED.generate(this, blockModels);
+            case MULTI_LAYER_WATER -> WATERSTONE.generate(this, blockModels);
             case MULTI_LAYER_LAVA -> LAVASTONE.generate(this, blockModels);
             case MULTI_LAYER_LAVA_TOP_BOTTOM_SIDE -> LAVASTONE_TOP_BOTTOM_SIDE.generate(this, blockModels);
+            case MULTI_LAYER_CONNECTED_TINTED -> MULTI_LAYER_CTM_TINTED.generate(this, blockModels);
             case MULTI_LAYER_CONNECTED -> MULTI_LAYER_CTM.generate(this, blockModels);
             case MULTI_LAYER_CONNECTED_GLOW -> MULTI_LAYER_CTM_GLOW.generate(this, blockModels);
             case CARPET -> CARPET.generate(this, blockModels);

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/tyrian/tyrian_shiny",
+    "overlay_connected": "chisel:block/tyrian/tyrian_shiny-ctm",
+    "overlay_texture": "chisel:block/tyrian/tyrian_shiny",
+    "particle": "chisel:block/tyrian/tyrian_shiny"
+  }
+}

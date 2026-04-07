@@ -93,7 +93,7 @@ public class ChiselBlocks {
     public static final ValentinesBlock VALENTINES = new ValentinesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final VoidstoneBlock VOIDSTONE = new VoidstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final WarningBlock WARNING = new WarningBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final WaterstoneBlock WATERSTONE = new WaterstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
+    public static final WaterstoneBlock WATERSTONE = new WaterstoneBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion());
     public static final WoolenClayBlock WOOLEN_CLAY = new WoolenClayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY));
 
     public static final List<StainedGlassBlock> STAINED_GLASS = new ArrayList<>();

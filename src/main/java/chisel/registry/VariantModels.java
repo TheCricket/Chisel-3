@@ -19,10 +19,13 @@ public class VariantModels {
     public final PillarModel PILLAR = new PillarModel();
     public final MultiLayerModel MULTI_LAYER = new MultiLayerModel();
     public final MultiLayerTBSModel MULTI_LAYER_TBS = new MultiLayerTBSModel();
+    public final MultiLayerTBSTintedModel MULTI_LAYER_TBS_TINTED = new MultiLayerTBSTintedModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM = new MultiLayerCTMModel(false);
+    public final MultiLayerCTMTintedModel MULTI_LAYER_CTM_TINTED = new MultiLayerCTMTintedModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM_GLOW = new MultiLayerCTMModel(true);
     public final LavastoneModel LAVASTONE = new LavastoneModel();
     public final LavastoneTBSModel LAVASTONE_TOP_BOTTOM_SIDE = new LavastoneTBSModel();
+    public final WaterstoneModel WATERSTONE = new WaterstoneModel();
     public final BookshelfModel BOOKSHELF = new BookshelfModel();
     public final CarpetModel CARPET = new CarpetModel();
     public final GlassPaneModel GLASS_PANE = new GlassPaneModel();
