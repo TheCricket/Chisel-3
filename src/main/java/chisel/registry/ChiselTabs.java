@@ -37,8 +37,6 @@ public class ChiselTabs {
                     ChiselBlocks.NETHERRACK.getFamily(),
                     ChiselBlocks.OBSIDIAN.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
-                    ChiselBlocks.SNAKESTONE_SAND.getFamily(),
-                    ChiselBlocks.SNAKESTONE_STONE.getFamily(),
                     ChiselBlocks.TEMPLE.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {

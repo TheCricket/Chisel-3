@@ -1,6 +1,6 @@
 package chisel.client.ctm;
 
-import chisel.core.Variant;
+import chisel.core.variant.Variant;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.core.Direction;

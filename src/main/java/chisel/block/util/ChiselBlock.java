@@ -1,8 +1,9 @@
 package chisel.block.util;
 
 import chisel.Chisel;
-import chisel.core.VariantFamily;
-import chisel.registry.ChiselVariants;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantFamily;
+import chisel.datagen.ChiselVariants;
 import chisel.util.LangHelper;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
@@ -23,7 +24,7 @@ public class ChiselBlock {
 
     public ResourceKey<VariantFamily> getKey() {
         if (KEY == null) {
-            KEY = ResourceKey.create(ChiselVariants.VARIANT_FAMILY_REGISTRY_KEY, Chisel.prefix(getFamily().getFamilyName()));
+            KEY = ResourceKey.create(ChiselVariants.KEY, Chisel.prefix(getFamily().getFamilyName()));
         }
         return KEY;
     }
@@ -32,7 +33,7 @@ public class ChiselBlock {
         return () -> family.getVariants().stream()
                 .filter(v -> v.getName().equals(name))
                 .findFirst()
-                .map(chisel.core.Variant::getBlock)
+                .map(Variant::getBlock)
                 .orElseThrow(() -> new IllegalArgumentException("Variant not found: " + name));
     }
 

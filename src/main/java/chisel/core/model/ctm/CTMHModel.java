@@ -1,19 +1,19 @@
 package chisel.core.model.ctm;
 
 import chisel.block.util.ConnectedTextureBlock;
-import chisel.core.Variant;
-import chisel.core.VariantModel;
 import chisel.core.model.ctm.util.C1Model;
 import chisel.core.model.ctm.util.C2Model;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModel;
 import com.mojang.math.Quadrant;
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.resources.Identifier;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
+import net.minecraft.resources.Identifier;
 
 import static net.minecraft.client.data.models.BlockModelGenerators.condition;
 import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;

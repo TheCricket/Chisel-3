@@ -20,6 +20,7 @@ public class Chisel {
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
         ChiselMenus.MENU_TYPES.register(bus);
+        ChiselEntities.ENTITY_TYPES.register(bus);
     }
 
     public static Identifier prefix(String resource) {

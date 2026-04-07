@@ -2,7 +2,7 @@ package chisel.block;
 
 import chisel.Chisel;
 import chisel.block.util.ChiselBlock;
-import chisel.core.VariantModelType;
+import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

@@ -1,9 +1,10 @@
 package chisel.datagen.model;
 
 import chisel.Chisel;
+import chisel.block.util.ChiselBlock;
+import chisel.datagen.ChiselVariants;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
-import chisel.registry.ChiselVariants;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -23,6 +24,7 @@ public class ChiselModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
+        ChiselBlocks.getBlocks().forEach(ChiselBlock::getFamily);
         ChiselVariants.getVariantFamilies().forEach(family -> family.getVariants().forEach(variant -> {
             if(variant.shouldGenerateModel())
                 variant.registerModel(blockModels);

@@ -1,7 +1,7 @@
 package chisel.util;
 
-import chisel.core.VariantFamily;
-import chisel.registry.ChiselVariants;
+import chisel.core.variant.VariantFamily;
+import chisel.datagen.ChiselVariants;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceKey;
@@ -18,7 +18,7 @@ public class VariantFinder {
 
     public static VariantFamily getFamilyForBlock(Block block, RegistryAccess registryAccess) {
         Registry<VariantFamily> registry = Objects.requireNonNull(registryAccess
-                .lookup(ChiselVariants.VARIANT_FAMILY_REGISTRY_KEY)
+                .lookup(ChiselVariants.KEY)
                 .orElseThrow(() -> new IllegalStateException("Variant family registry is not available on the server"))
         );
 

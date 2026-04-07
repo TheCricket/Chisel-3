@@ -1,6 +1,6 @@
 package chisel.client.ctm;
 
-import chisel.core.Variant;
+import chisel.core.variant.Variant;
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/jungle_planks/jungle_planks_log_bordered",
+    "overlay_connected": "chisel:block/jungle_planks/jungle_planks_log_bordered-ctm",
+    "overlay_texture": "chisel:block/jungle_planks/jungle_planks_log_bordered",
+    "particle": "chisel:block/jungle_planks/jungle_planks_log_bordered"
+  }
+}

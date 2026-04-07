@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class CloudFamily extends ChiselBlock {
     public CloudFamily(BlockBehaviour.Properties props) {
         family = builder("cloud")
-                .addVariant(Blocks.WHITE_WOOL)
                 .addVariant("cloud_grid", props)
                 .addVariant("cloud_large", props)
                 .addVariant("cloud_normal", props)

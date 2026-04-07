@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/futura/futura_screen_cyan",
+    "base_texture": "chisel:block/futura/futura_screen_cyan-bg",
+    "layer0": "chisel:block/futura/futura_screen_cyan",
+    "layer1": "chisel:block/futura/futura_screen_cyan-bg",
+    "overlay_connected": "chisel:block/futura/futura_screen_cyan-ctm",
+    "overlay_texture": "chisel:block/futura/futura_screen_cyan",
+    "particle": "chisel:block/futura/futura_screen_cyan"
+  }
+}

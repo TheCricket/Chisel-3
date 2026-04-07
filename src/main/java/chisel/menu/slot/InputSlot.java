@@ -1,6 +1,6 @@
 package chisel.menu.slot;
 
-import chisel.core.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.menu.ChiselContainer;
 import chisel.util.VariantFinder;
 import net.minecraft.client.Minecraft;

@@ -1,7 +1,7 @@
 package chisel.block;
 
 import chisel.block.util.ChiselBlock;
-import chisel.core.VariantModelType;
+import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,7 +10,7 @@ public class BirchFamily extends ChiselBlock {
     public BirchFamily(BlockBehaviour.Properties props) {
         family = builder("birch_planks")
                 .addVariant(Blocks.BIRCH_PLANKS)
-                .addVariant("birch_planks_braced", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("birch_planks_braced", props)
                 .addVariant("birch_planks_braid", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_crude_horizontal", props)
                 .addVariant("birch_planks_crude_paneling", props)
@@ -19,6 +19,7 @@ public class BirchFamily extends ChiselBlock {
                 .addVariant("birch_planks_encased_large", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_encased_smooth", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_large", props)
+                .addVariant("birch_planks_log_bordered", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_log_cabin_ew", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_log_cabin_ns", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_paneling", props, VariantModelType.CONNECTED)
@@ -26,7 +27,6 @@ public class BirchFamily extends ChiselBlock {
                 .addVariant("birch_planks_smooth", props, VariantModelType.CONNECTED)
                 .addVariant("birch_planks_stacked", props)
                 .addVariant("birch_planks_vertical", props)
-                .addVariant("birch_planks_log_bordered", props, VariantModelType.CONNECTED)
                 .family();
     }
 

@@ -2,49 +2,29 @@
   "familyName": "futura",
   "variants": [
     {
-      "block": "chisel:futura_circuit",
-      "model_type": "cube_all",
-      "name": "futura_circuit"
-    },
-    {
       "block": "chisel:futura_controller",
-      "model_type": "cube_all",
+      "model_type": "multi_layer",
       "name": "futura_controller"
     },
     {
-      "block": "chisel:futura_dots",
-      "model_type": "cube_all",
-      "name": "futura_dots"
+      "block": "chisel:futura_controller_purple",
+      "model_type": "multi_layer",
+      "name": "futura_controller_purple"
     },
     {
-      "block": "chisel:futura_screen_blue",
-      "model_type": "cube_all",
-      "name": "futura_screen_blue"
+      "block": "chisel:futura_rainbow",
+      "model_type": "multi_layer",
+      "name": "futura_rainbow"
+    },
+    {
+      "block": "chisel:futura_screen_cyan",
+      "model_type": "multi_layer_connected_glow",
+      "name": "futura_screen_cyan"
     },
     {
       "block": "chisel:futura_screen_gray",
-      "model_type": "cube_all",
+      "model_type": "multi_layer_connected_glow",
       "name": "futura_screen_gray"
-    },
-    {
-      "block": "chisel:futura_screen_green",
-      "model_type": "cube_all",
-      "name": "futura_screen_green"
-    },
-    {
-      "block": "chisel:futura_screen_orange",
-      "model_type": "cube_all",
-      "name": "futura_screen_orange"
-    },
-    {
-      "block": "chisel:futura_screen_red",
-      "model_type": "cube_all",
-      "name": "futura_screen_red"
-    },
-    {
-      "block": "chisel:futura_wavy",
-      "model_type": "cube_all",
-      "name": "futura_wavy"
     }
   ]
 }

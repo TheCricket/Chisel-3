@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/oak_planks/oak_planks_log_cabin_ew",
+    "overlay_connected": "chisel:block/oak_planks/oak_planks_log_cabin_ew-ctm",
+    "overlay_texture": "chisel:block/oak_planks/oak_planks_log_cabin_ew",
+    "particle": "chisel:block/oak_planks/oak_planks_log_cabin_ew"
+  }
+}

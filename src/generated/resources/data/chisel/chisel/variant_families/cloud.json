@@ -2,11 +2,6 @@
   "familyName": "cloud",
   "variants": [
     {
-      "block": "minecraft:white_wool",
-      "model_type": "cube_all",
-      "name": "block.minecraft.white_wool"
-    },
-    {
       "block": "chisel:cloud_grid",
       "model_type": "cube_all",
       "name": "cloud_grid"

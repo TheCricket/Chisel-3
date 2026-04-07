@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "chisel:block/oak_planks/oak_planks_braced-bottom",
-    "side": "chisel:block/oak_planks/oak_planks_braced-side",
-    "top": "chisel:block/oak_planks/oak_planks_braced-top"
+    "all": "chisel:block/oak_planks/oak_planks_braced"
   }
 }

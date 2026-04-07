@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:spruce_planks_braced",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "spruce_planks_braced"
     },
     {
@@ -50,6 +50,11 @@
       "block": "chisel:spruce_planks_large",
       "model_type": "cube_all",
       "name": "spruce_planks_large"
+    },
+    {
+      "block": "chisel:spruce_planks_log_bordered",
+      "model_type": "connected",
+      "name": "spruce_planks_log_bordered"
     },
     {
       "block": "chisel:spruce_planks_log_cabin_ew",

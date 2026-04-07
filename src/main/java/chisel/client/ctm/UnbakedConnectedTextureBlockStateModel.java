@@ -1,14 +1,14 @@
 package chisel.client.ctm;
 
 import chisel.Chisel;
-import chisel.core.Variant;
+import chisel.core.variant.Variant;
 import com.mojang.datafixers.util.Pair;
+import com.mojang.math.Quadrant;
+import com.mojang.math.Transformation;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.mojang.math.Transformation;
-import com.mojang.math.Quadrant;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.client.renderer.block.dispatch.ModelState;
 import net.minecraft.client.renderer.block.dispatch.Variant.SimpleModelState;

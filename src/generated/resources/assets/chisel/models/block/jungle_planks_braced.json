@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "chisel:block/jungle_planks/jungle_planks_braced-bottom",
-    "side": "chisel:block/jungle_planks/jungle_planks_braced-side",
-    "top": "chisel:block/jungle_planks/jungle_planks_braced-top"
+    "all": "chisel:block/jungle_planks/jungle_planks_braced"
   }
 }

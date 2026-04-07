@@ -1,7 +1,7 @@
 package chisel.menu;
 
 import chisel.Chisel;
-import chisel.core.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.item.ChiselItem;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.Container;

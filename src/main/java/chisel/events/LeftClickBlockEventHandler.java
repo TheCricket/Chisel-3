@@ -1,7 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.core.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.datagen.ChiselBlockTags;
 import chisel.registry.ChiselItemAbilities;
 import chisel.registry.ChiselSounds;

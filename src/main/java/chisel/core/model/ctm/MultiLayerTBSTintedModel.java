@@ -1,8 +1,8 @@
 package chisel.core.model.ctm;
 
 import chisel.client.ChiselModelTemplates;
-import chisel.core.Variant;
-import chisel.core.VariantModel;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;
@@ -16,7 +16,7 @@ public class MultiLayerTBSTintedModel extends VariantModel {
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
-                .put(TextureSlot.PARTICLE, variant.getMaterial())
+                .put(TextureSlot.PARTICLE, variant.getMaterial("bg"))
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
                 .put(TextureSlot.SIDE, variant.getMaterial("side"))

@@ -1,10 +1,9 @@
 package chisel.client.ctm;
 
+import com.mojang.serialization.Codec;
 import net.minecraft.client.resources.model.cuboid.CuboidFace;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
-
-import com.mojang.serialization.Codec;
 import net.minecraft.util.StringRepresentable;
 import org.jspecify.annotations.NonNull;
 

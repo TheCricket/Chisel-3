@@ -1,8 +1,8 @@
 package chisel.core.model;
 
 import chisel.client.ChiselModelTemplates;
-import chisel.core.Variant;
-import chisel.core.VariantModel;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;

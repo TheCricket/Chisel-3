@@ -6,10 +6,10 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.resources.Identifier;
 
+import java.util.Optional;
+
 import static chisel.client.ChiselTextureSlots.*;
 import static net.minecraft.client.data.models.model.TextureSlot.*;
-
-import java.util.Optional;
 
 public class ChiselModelTemplates extends ModelTemplates {
 

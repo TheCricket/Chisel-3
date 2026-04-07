@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:jungle_planks_braced",
-      "model_type": "top_bottom_side",
+      "model_type": "cube_all",
       "name": "jungle_planks_braced"
     },
     {
@@ -52,9 +52,19 @@
       "name": "jungle_planks_large"
     },
     {
-      "block": "chisel:jungle_planks_log_cabin",
-      "model_type": "cube_all",
-      "name": "jungle_planks_log_cabin"
+      "block": "chisel:jungle_planks_log_bordered",
+      "model_type": "connected",
+      "name": "jungle_planks_log_bordered"
+    },
+    {
+      "block": "chisel:jungle_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "jungle_planks_log_cabin_ns"
+    },
+    {
+      "block": "chisel:jungle_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "jungle_planks_log_cabin_ew"
     },
     {
       "block": "chisel:jungle_planks_paneling",

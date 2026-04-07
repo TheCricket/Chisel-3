@@ -141,6 +141,8 @@ tasks.register('publishCurseForge', net.darkhax.curseforgegradle.TaskPublishCurs
     def mainFile = upload(projectId, jar)
 
     mainFile.changelog = file('CHANGELOG.md')
+    mainFile.addModLoader("neoforge")
+    mainFile.releaseType = release_type
 }
 
 modrinth {
@@ -148,7 +150,7 @@ modrinth {
     projectId = "chisel-3"
     versionName = "${mod_name}-${mod_version}"
     versionNumber = mod_version
-    versionType = "beta"
+    versionType = release_type
     uploadFile = jar
     gameVersions = ["26.1"]
     loaders = ["neoforge"]

@@ -3,7 +3,7 @@ package chisel.block;
 import chisel.block.util.ChiselBlock;
 import chisel.block.util.NoParticleTorchBlock;
 import chisel.block.util.NoParticleWallTorchBlock;
-import chisel.core.VariantModelType;
+import chisel.core.variant.VariantModelType;
 import chisel.registry.ChiselBlocks;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Block;

@@ -1,6 +1,6 @@
 package chisel.client.ctm;
 
-import chisel.core.Variant;
+import chisel.core.variant.Variant;
 import net.minecraft.core.Direction;
 
 import java.util.Arrays;

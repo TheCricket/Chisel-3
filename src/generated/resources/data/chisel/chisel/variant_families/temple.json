@@ -42,49 +42,9 @@
       "name": "temple_plate"
     },
     {
-      "block": "chisel:temple_plate_cracked_0",
+      "block": "chisel:temple_plate_cracked",
       "model_type": "cube_all",
-      "name": "temple_plate_cracked_0"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_1",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_1"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_2",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_2"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_3",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_3"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_4",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_4"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_5",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_5"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_6",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_6"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_7",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_7"
-    },
-    {
-      "block": "chisel:temple_plate_cracked_8",
-      "model_type": "cube_all",
-      "name": "temple_plate_cracked_8"
+      "name": "temple_plate_cracked"
     },
     {
       "block": "chisel:temple_stand",

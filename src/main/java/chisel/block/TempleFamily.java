@@ -1,7 +1,7 @@
 package chisel.block;
 
 import chisel.block.util.ChiselBlock;
-import chisel.core.VariantModelType;
+import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -16,15 +16,7 @@ public class TempleFamily extends ChiselBlock {
                 .addVariant("temple_column", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("temple_ornate", props)
                 .addVariant("temple_plate", props)
-                .addVariant("temple_plate_cracked_0", props)
-                .addVariant("temple_plate_cracked_1", props)
-                .addVariant("temple_plate_cracked_2", props)
-                .addVariant("temple_plate_cracked_3", props)
-                .addVariant("temple_plate_cracked_4", props)
-                .addVariant("temple_plate_cracked_5", props)
-                .addVariant("temple_plate_cracked_6", props)
-                .addVariant("temple_plate_cracked_7", props)
-                .addVariant("temple_plate_cracked_8", props)
+                .addVariant("temple_plate_cracked", props)
                 .addVariant("temple_stand", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("temple_stand_creeper", props, VariantModelType.TOP_BOTTOM_SIDE)
                 .addVariant("temple_stand_mosaic", props, VariantModelType.TOP_BOTTOM_SIDE)
@@ -45,15 +37,7 @@ public class TempleFamily extends ChiselBlock {
         lang.addBlock(getVariant("temple_column"), "Temple Block", "Column");
         lang.addBlock(getVariant("temple_ornate"), "Temple Block", "Ornate");
         lang.addBlock(getVariant("temple_plate"), "Temple Block", "Plate");
-        lang.addBlock(getVariant("temple_plate_cracked_0"), "Temple Block", "Cracked Plate 1");
-        lang.addBlock(getVariant("temple_plate_cracked_1"), "Temple Block", "Cracked Plate 2");
-        lang.addBlock(getVariant("temple_plate_cracked_2"), "Temple Block", "Cracked Plate 3");
-        lang.addBlock(getVariant("temple_plate_cracked_3"), "Temple Block", "Cracked Plate 4");
-        lang.addBlock(getVariant("temple_plate_cracked_4"), "Temple Block", "Cracked Plate 5");
-        lang.addBlock(getVariant("temple_plate_cracked_5"), "Temple Block", "Cracked Plate 6");
-        lang.addBlock(getVariant("temple_plate_cracked_6"), "Temple Block", "Cracked Plate 7");
-        lang.addBlock(getVariant("temple_plate_cracked_7"), "Temple Block", "Cracked Plate 8");
-        lang.addBlock(getVariant("temple_plate_cracked_8"), "Temple Block", "Cracked Plate 9");
+        lang.addBlock(getVariant("temple_plate_cracked"), "Temple Block", "Cracked Plate");
         lang.addBlock(getVariant("temple_stand"), "Temple Block", "Stand");
         lang.addBlock(getVariant("temple_stand_creeper"), "Temple Block", "Creeper Stand");
         lang.addBlock(getVariant("temple_stand_mosaic"), "Temple Block", "Mosaic Stand");

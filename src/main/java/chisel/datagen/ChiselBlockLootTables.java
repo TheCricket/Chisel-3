@@ -1,8 +1,7 @@
 package chisel.datagen;
 
-import chisel.core.VariantModelType;
+import chisel.core.variant.VariantModelType;
 import chisel.registry.ChiselBlocks;
-import chisel.registry.ChiselVariants;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
