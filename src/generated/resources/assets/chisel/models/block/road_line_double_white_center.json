@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/road_lines",
   "textures": {
-    "all": "chisel:block/road_line/road_line_double_white_center"
+    "texture": "chisel:block/road_line/road_line_double_white_center"
   }
 }

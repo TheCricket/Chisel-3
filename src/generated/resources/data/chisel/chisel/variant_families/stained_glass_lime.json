@@ -22,9 +22,9 @@
       "name": "stained_glass_lime_panel"
     },
     {
-      "block": "chisel:stained_glass_lime_fancy",
+      "block": "chisel:stained_glass_lime_panel_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_lime_fancy"
+      "name": "stained_glass_lime_panel_fancy"
     }
   ]
 }

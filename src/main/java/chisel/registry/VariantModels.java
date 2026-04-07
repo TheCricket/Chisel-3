@@ -35,4 +35,5 @@ public class VariantModels {
     public final PumpkinModel PUMPKIN = new PumpkinModel();
     public final TorchModel TORCH = new TorchModel(false);
     public final TorchModel WALL_TORCH = new TorchModel(true);
+    public final RoadLineModel ROAD_LINES = new RoadLineModel();
 }

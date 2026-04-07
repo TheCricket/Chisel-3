@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/stained_glass_light_gray/stained_glass_light_gray_fancy"
-  }
-}

@@ -29,4 +29,5 @@ public class ChiselModelTemplates extends ModelTemplates {
 
     public static final ModelTemplate TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/torch")), Optional.empty(), TextureSlot.TORCH);
     public static final ModelTemplate WALL_TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/wall_torch")), Optional.empty(), TextureSlot.TORCH);
+    public static final ModelTemplate ROAD_LINES = new ModelTemplate(Optional.of(Chisel.prefix("block/road_lines")), Optional.empty(), TextureSlot.TEXTURE);
 }

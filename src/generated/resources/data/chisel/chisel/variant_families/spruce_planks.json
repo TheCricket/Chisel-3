@@ -52,9 +52,14 @@
       "name": "spruce_planks_large"
     },
     {
-      "block": "chisel:spruce_planks_log_cabin",
-      "model_type": "cube_all",
-      "name": "spruce_planks_log_cabin"
+      "block": "chisel:spruce_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "spruce_planks_log_cabin_ew"
+    },
+    {
+      "block": "chisel:spruce_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "spruce_planks_log_cabin_ns"
     },
     {
       "block": "chisel:spruce_planks_paneling",

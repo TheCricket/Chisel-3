@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_side_alt"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_side_alt",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_noside"
+      },
+      "when": {
+        "north": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_noside_alt"
+      },
+      "when": {
+        "east": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_noside_alt",
+        "y": 90
+      },
+      "when": {
+        "south": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "chisel:block/stained_glass_pane_orange_quad_noside",
+        "y": 90
+      },
+      "when": {
+        "west": "false"
+      }
+    }
+  ]
+}

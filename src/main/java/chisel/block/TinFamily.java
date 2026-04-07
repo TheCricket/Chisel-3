@@ -1,0 +1,37 @@
+package chisel.block;
+
+import chisel.block.util.ChiselBlock;
+import chisel.core.VariantModelType;
+import chisel.util.LangHelper;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+public class TinFamily extends ChiselBlock {
+    public TinFamily(BlockBehaviour.Properties props) {
+        family = builder("tin")
+                .addVariant("tin_125", props)
+                .addVariant("tin_adv", props)
+                .addVariant("tin_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("tin_bolted", props)
+                .addVariant("tin_bordered", props)
+                .addVariant("tin_caution", props, VariantModelType.CONNECTED)
+                .addVariant("tin_crate", props)
+                .addVariant("tin_egregious", props, VariantModelType.CONNECTED)
+                .addVariant("tin_machine", props)
+                .addVariant("tin_scaffold", props, VariantModelType.CONNECTED)
+                .addVariant("tin_shipping", props)
+                .addVariant("tin_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .family();
+    }
+
+    @Override
+    public void addTranslations(LangHelper lang) {
+        lang.addBlock(getVariant("tin_bad_greggy"), "Tin", "Bad Greggy");
+        lang.addBlock(getVariant("tin_bolted"), "Tin", "Bolted");
+        lang.addBlock(getVariant("tin_caution"), "Tin", "Caution");
+        lang.addBlock(getVariant("tin_crate"), "Tin", "Crate");
+        lang.addBlock(getVariant("tin_machine"), "Tin", "Machine");
+        lang.addBlock(getVariant("tin_scaffold"), "Tin", "Scaffold");
+        lang.addBlock(getVariant("tin_thermal"), "Tin", "Thermal");
+    }
+}
+

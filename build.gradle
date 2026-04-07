@@ -37,6 +37,10 @@ repositories {
     maven { url = "https://maven.createmod.net" }
     maven { url "https://api.modrinth.com/maven" }
     maven { url = 'https://maven.parchmentmc.org' }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
 }
 
 base {
@@ -103,7 +107,10 @@ configurations {
 }
 
 dependencies {
-
+    // compile against the JEI API but do not include it at runtime
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    // at runtime, use the full JEI jar for NeoForge
+    runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

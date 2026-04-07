@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "chisel:block/road_line_white_center",
+      "y": 90
+    },
+    "facing=north": {
       "model": "chisel:block/road_line_white_center"
+    },
+    "facing=south": {
+      "model": "chisel:block/road_line_white_center",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chisel:block/road_line_white_center",
+      "y": 270
     }
   }
 }

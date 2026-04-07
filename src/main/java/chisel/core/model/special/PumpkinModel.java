@@ -16,16 +16,13 @@ import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant
 
 public class PumpkinModel extends VariantModel {
 
-    private final Material pumpkin_side = new Material(Identifier.withDefaultNamespace("block/pumpkin_side"));
-    private final Material pumpkin_top = new Material(Identifier.withDefaultNamespace("block/pumpkin_top"));
-
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.FRONT, variant.getMaterial())
-                .put(TextureSlot.SIDE, pumpkin_side)
-                .put(TextureSlot.END, pumpkin_top);
+                .put(TextureSlot.SIDE, new Material(Identifier.withDefaultNamespace("block/pumpkin_side")))
+                .put(TextureSlot.END, new Material(Identifier.withDefaultNamespace("block/pumpkin_top")));
     }
 
     @Override

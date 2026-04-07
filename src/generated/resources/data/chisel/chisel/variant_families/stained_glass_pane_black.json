@@ -22,9 +22,14 @@
       "name": "stained_glass_pane_black_panel"
     },
     {
-      "block": "chisel:stained_glass_pane_black_fancy",
+      "block": "chisel:stained_glass_pane_black_quad",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_black_fancy"
+      "name": "stained_glass_pane_black_quad"
+    },
+    {
+      "block": "chisel:stained_glass_pane_black_quad_fancy",
+      "model_type": "glass_pane",
+      "name": "stained_glass_pane_black_quad_fancy"
     }
   ]
 }

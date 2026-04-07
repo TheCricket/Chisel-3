@@ -111,6 +111,7 @@ public class Variant extends VariantModels {
             case PUMPKIN -> PUMPKIN.generate(this, blockModels);
             case TORCH -> TORCH.generate(this, blockModels);
             case WALL_TORCH -> WALL_TORCH.generate(this, blockModels);
+            case ROAD_LINES -> ROAD_LINES.generate(this, blockModels);
         }
     }
 

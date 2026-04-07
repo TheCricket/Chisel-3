@@ -3,62 +3,62 @@
   "variants": [
     {
       "block": "chisel:road_line_double_white_center",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_white_center"
     },
     {
       "block": "chisel:road_line_double_white_long",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_white_long"
     },
     {
       "block": "chisel:road_line_double_white_side",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_white_side"
     },
     {
       "block": "chisel:road_line_double_yellow_center",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_yellow_center"
     },
     {
       "block": "chisel:road_line_double_yellow_long",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_yellow_long"
     },
     {
       "block": "chisel:road_line_double_yellow_side",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_double_yellow_side"
     },
     {
       "block": "chisel:road_line_white_center",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_white_center"
     },
     {
       "block": "chisel:road_line_white_long",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_white_long"
     },
     {
       "block": "chisel:road_line_white_side",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_white_side"
     },
     {
       "block": "chisel:road_line_yellow_center",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_yellow_center"
     },
     {
       "block": "chisel:road_line_yellow_long",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_yellow_long"
     },
     {
       "block": "chisel:road_line_yellow_side",
-      "model_type": "cube_all",
+      "model_type": "road_lines",
       "name": "road_line_yellow_side"
     }
   ]

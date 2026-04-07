@@ -28,6 +28,7 @@ public enum VariantModelType implements StringRepresentable {
     PUMPKIN("pumpkin"),
     TORCH("torch"),
     WALL_TORCH("wall_torch"),
+    ROAD_LINES("road_lines"),
     GLASS_PANE("glass_pane");
 
     public static final Codec<VariantModelType> CODEC = StringRepresentable.fromEnum(VariantModelType::values);

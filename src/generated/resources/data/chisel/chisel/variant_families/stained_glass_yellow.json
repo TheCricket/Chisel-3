@@ -22,9 +22,9 @@
       "name": "stained_glass_yellow_panel"
     },
     {
-      "block": "chisel:stained_glass_yellow_fancy",
+      "block": "chisel:stained_glass_yellow_panel_fancy",
       "model_type": "cube_all",
-      "name": "stained_glass_yellow_fancy"
+      "name": "stained_glass_yellow_panel_fancy"
     }
   ]
 }
