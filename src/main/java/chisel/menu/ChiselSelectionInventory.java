@@ -1,6 +1,5 @@
 package chisel.menu;
 
-import chisel.Chisel;
 import chisel.core.variant.VariantFamily;
 import chisel.item.ChiselItem;
 import net.minecraft.core.NonNullList;
@@ -10,20 +9,29 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
 public class ChiselSelectionInventory implements Container {
 
+    public static final int VISIBLE_SIZE = 60;
     public VariantFamily family;
-    public final int size;
+    public int size = VISIBLE_SIZE;
     public int stackSize;
     public int activeVariants = 0;
     public ChiselContainer container;
     public NonNullList<ItemStack> items;
 
+    private final List<ItemStack> allItems = new ArrayList<>();
+    private final List<ItemStack> filteredItems = new ArrayList<>();
+    private String filter = "";
+    private float scrollOffset = 0.0f;
+
     public ChiselSelectionInventory() {
         this.family = null;
-        this.size = 60;
         this.stackSize = 1;
-        items = NonNullList.withSize(size + 1, ItemStack.EMPTY);
+        items = NonNullList.withSize(VISIBLE_SIZE, ItemStack.EMPTY);
     }
 
     @Override
@@ -40,7 +48,7 @@ public class ChiselSelectionInventory implements Container {
 
     @Override
     public int getContainerSize() {
-        return size + 1;
+        return VISIBLE_SIZE;
     }
 
     @Override
@@ -103,30 +111,71 @@ public class ChiselSelectionInventory implements Container {
     @Override
     public void clearContent() {
         items.clear();
-        setFamily(null);
-        setStackSize(1);
+        allItems.clear();
+        filteredItems.clear();
+        family = null;
+        stackSize = 1;
         activeVariants = 0;
+        filter = "";
+        scrollOffset = 0;
     }
 
     public void updateSlots(VariantFamily family, int stackSize) {
-        setFamily(family);
-        setStackSize(stackSize);
+        this.family = family;
+        this.stackSize = stackSize;
+        allItems.clear();
         if(family != null) {
-            Chisel.LOGGER.info("Updating inventory with family variants");
             family.getVariants().forEach(variant -> {
                 ItemStack stack = new ItemStack(variant.getBlock());
                 stack.setCount(stackSize);
-                setItem(activeVariants, stack);
-                activeVariants++;
+                allItems.add(stack);
             });
-        } else {
-            clearContent();
         }
+        updateFilteredItems();
         setChanged();
+    }
+
+    public void setFilter(String filter) {
+        this.filter = filter.toLowerCase(Locale.ROOT);
+        updateFilteredItems();
+    }
+
+    public void setScrollOffset(float offset) {
+        this.scrollOffset = offset;
+        updateVisibleItems();
+    }
+
+    public void updateFilteredItems() {
+        filteredItems.clear();
+        for (ItemStack stack : allItems) {
+            if (filter.isEmpty() || stack.getHoverName().getString().toLowerCase(Locale.ROOT).contains(filter)) {
+                filteredItems.add(stack);
+            }
+        }
+        activeVariants = filteredItems.size();
+        updateVisibleItems();
+    }
+
+    public void updateVisibleItems() {
+        int totalRows = (filteredItems.size() + 9) / 10;
+        int scrollRows = totalRows - 6;
+        if (scrollRows < 0) scrollRows = 0;
+        int rowOffset = Math.round(scrollOffset * (float) scrollRows);
+        int itemOffset = rowOffset * 10;
+
+        for (int i = 0; i < VISIBLE_SIZE; i++) {
+            int index = itemOffset + i;
+            if (index < filteredItems.size()) {
+                items.set(i, filteredItems.get(index).copy());
+            } else {
+                items.set(i, ItemStack.EMPTY);
+            }
+        }
     }
 
     public void setFamily(VariantFamily family) {
         this.family = family;
+        updateSlots(family, stackSize);
     }
 
     public void setStackSize(int stackSize) {

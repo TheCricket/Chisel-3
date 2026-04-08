@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.5]
+
+### Added
+- New Items:
+  - Implemented **Cloud in a Bottle**, **Bottle of Moss**, and **Smashing Rock**.
+- Chisel GUI Enhancements:
+  - Added a **Search Bar** to the Chisel GUI to easily find specific block variants.
+  - Added **Scrolling** support to the Chisel GUI for block families with more than 60 variants.
+
+### Changed
+- Redesigned the **Chisel GUI**:
+    - Increased the number of visible variants.
+
+### Fixed
+- Fixed **Stained Glass and Panes**.
+- Fixed several **Spruce textures**.
+- Fixed a **server crash** during menu operations.
+- Fixed numerous **missing texture issues**.
+- Fixed **Lavastone** particle textures.
+- The item placed in the Chisel's input slot is now saved to the Chisel itself (stored in NBT).
+
+Note: 3.0.4 was a quick hotfix for that server crash
+
 ## [3.0.3]
 
 ### Added

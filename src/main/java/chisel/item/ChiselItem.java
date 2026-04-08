@@ -30,9 +30,8 @@ public class ChiselItem extends Item {
     @Override
     public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
         if (!level.isClientSide()) {
-            player.startUsingItem(hand);
             player.openMenu(new SimpleMenuProvider(
-                    (id, inv, _) -> new ChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer().setBoolean(0, hand == InteractionHand.MAIN_HAND))),
+                    (id, inv, _) -> new ChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer().writeBoolean(hand == InteractionHand.MAIN_HAND))),
                     Component.translatable("container.chisel")
             ));
         }

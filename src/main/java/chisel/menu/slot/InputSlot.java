@@ -3,14 +3,11 @@ package chisel.menu.slot;
 import chisel.core.variant.VariantFamily;
 import chisel.menu.ChiselContainer;
 import chisel.util.VariantFinder;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
-
-import java.util.Objects;
 
 public class InputSlot extends Slot {
 
@@ -31,7 +28,7 @@ public class InputSlot extends Slot {
     public void set(@NonNull ItemStack stack) {
         super.set(stack);
         if(getItem().getItem() instanceof BlockItem blockItem) {
-            VariantFamily family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), Objects.requireNonNull(Minecraft.getInstance().getConnection()).registryAccess());
+            VariantFamily family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), container.inventory.player.level().registryAccess());
             if(family != null) {
                 container.selectionInventory.updateSlots(family, stack.getCount());
             }

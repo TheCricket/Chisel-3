@@ -3,7 +3,7 @@
   "textures": {
     "bottom": "chisel:block/lavastone/lavastone_pillar-bottom",
     "layer0": "minecraft:block/lava_still",
-    "particle": "chisel:block/lavastone/lavastone_pillar",
+    "particle": "chisel:block/lavastone/lavastone_pillar-side",
     "side": "chisel:block/lavastone/lavastone_pillar-side",
     "top": "chisel:block/lavastone/lavastone_pillar-top"
   }
