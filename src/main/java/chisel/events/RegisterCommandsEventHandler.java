@@ -2,6 +2,7 @@ package chisel.events;
 
 import chisel.Chisel;
 import chisel.registry.ChiselBlocks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
@@ -30,36 +31,40 @@ public class RegisterCommandsEventHandler {
                             ServerPlayer player = source.getPlayerOrException();
                             BlockPos pos = player.blockPosition();
 
-                            List<Block> blocks = new ArrayList<>();
-                            ChiselBlocks.getBlocks().forEach(block -> block.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock())));
+                            if(Minecraft.getInstance().isOfflineDeveloperMode()) {
 
-                            int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
-                            int x = 0, z = 0;
+                                List<Block> blocks = new ArrayList<>();
+                                ChiselBlocks.getBlocks().forEach(block -> block.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock())));
 
-                            for(int c = 0; c < blocks.size(); c++) {
-                                Block block = blocks.get(c);
-                                BlockState state = block.defaultBlockState();
+                                int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
+                                int x = 0, z = 0;
 
-                                int baseX = pos.getX() + (x * 2);
-                                int baseZ = pos.getZ() + (z * 2);
-                                int y = pos.getY();
+                                for (int c = 0; c < blocks.size(); c++) {
+                                    Block block = blocks.get(c);
+                                    BlockState state = block.defaultBlockState();
 
-                                BlockPos place = new BlockPos(baseX, y, baseZ);
+                                    int baseX = pos.getX() + (x * 2);
+                                    int baseZ = pos.getZ() + (z * 2);
+                                    int y = pos.getY();
 
-                                level.setBlock(place, state, Block.UPDATE_ALL);
-                                level.setBlock(place.east(), state, Block.UPDATE_ALL);
-                                level.setBlock(place.south(), state, Block.UPDATE_ALL);
-                                level.setBlock(place.east().south(), state, Block.UPDATE_ALL);
+                                    BlockPos place = new BlockPos(baseX, y, baseZ);
 
-                                x++;
-                                if(x >= blocksPerRow) {
-                                    x = 0;
-                                    z++;
+                                    level.setBlock(place, state, Block.UPDATE_ALL);
+                                    level.setBlock(place.east(), state, Block.UPDATE_ALL);
+                                    level.setBlock(place.south(), state, Block.UPDATE_ALL);
+                                    level.setBlock(place.east().south(), state, Block.UPDATE_ALL);
+
+                                    x++;
+                                    if (x >= blocksPerRow) {
+                                        x = 0;
+                                        z++;
+                                    }
                                 }
+
+                                source.sendSuccess(() -> Component.literal(String.format("Placed %s different variants", blocks.size())), true);
+                            } else {
+                                source.sendFailure(Component.literal("You must be in developer mode to use this command!"));
                             }
-
-                            source.sendSuccess(() -> Component.literal(String.format("Placed %s different variants", blocks.size())), true);
-
                             return 1;
                         })
         );
