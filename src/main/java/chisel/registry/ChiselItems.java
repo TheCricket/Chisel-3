@@ -17,9 +17,9 @@ import java.util.function.Supplier;
 public class ChiselItems {
     public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(Chisel.MODID);
 
-    public static DeferredItem<Item> CHISEL_IRON = registerChisel("chisel_iron");
-    public static DeferredItem<Item> CHISEL_DIAMOND = registerChisel("chisel_diamond");
-    public static DeferredItem<Item> CHISEL_OBSIDIAN = registerChisel("chisel_obsidian");
+    public static DeferredItem<Item> CHISEL_IRON = registerChisel("chisel_iron", new Item.Properties().stacksTo(1).durability(512));
+    public static DeferredItem<Item> CHISEL_DIAMOND = registerChisel("chisel_diamond", new Item.Properties().stacksTo(1).durability(5096));
+    public static DeferredItem<Item> CHISEL_OBSIDIAN = registerChisel("chisel_obsidian", new Item.Properties().stacksTo(1).durability(10048));
 
     public static DeferredItem<Item> UPGRADE_STACK = register("upgrade_stack");
     public static DeferredItem<Item> UPGRADE_SPEED = register("upgrade_speed");
@@ -38,7 +38,7 @@ public class ChiselItems {
         return ITEMS.registerItem(name, func, properties);
     }
 
-    private static DeferredItem<Item> registerChisel(String name) {
-        return ITEMS.register(name, () -> new ChiselItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Chisel.prefix(name)))));
+    private static DeferredItem<Item> registerChisel(String name, Item.Properties props) {
+        return ITEMS.register(name, () -> new ChiselItem(props.setId(ResourceKey.create(Registries.ITEM, Chisel.prefix(name)))));
     }
 }
