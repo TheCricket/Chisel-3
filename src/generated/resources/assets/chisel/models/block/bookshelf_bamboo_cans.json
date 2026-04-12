@@ -1,8 +1,10 @@
 {
-  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
+    "base_texture": "minecraft:block/bamboo_planks",
     "bottom": "minecraft:block/bamboo_planks",
     "layer0": "minecraft:block/bamboo_planks",
+    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_cans-ctm",
     "particle": "minecraft:block/bamboo_planks",
     "side": "chisel:block/bookshelf/bookshelf_cans",
     "top": "minecraft:block/bamboo_planks"

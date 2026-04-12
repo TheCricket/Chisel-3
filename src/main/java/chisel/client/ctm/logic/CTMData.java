@@ -13,12 +13,17 @@ public final class CTMData {
     private final CTMLogic2x2[] logic2x2;
     private final CTMLogic3x3[] logic3x3;
     private final CTMLogic4x4[] logic4x4;
+    private final CTMLogicHorizontal[] logicHorizontal;
 
     public CTMData(Variant variant, CTMLogic[][] logic) {
-        this(variant, logic, null, null, null);
+        this(variant, logic, null, null, null, null);
     }
 
     public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4) {
+        this(variant, logic, logic2x2, logic3x3, logic4x4, null);
+    }
+
+    public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal) {
         this.variant = variant;
         this.logic = new CTMLogic[6][4];
         if (logic != null) {
@@ -29,6 +34,7 @@ public final class CTMData {
         this.logic2x2 = logic2x2;
         this.logic3x3 = logic3x3;
         this.logic4x4 = logic4x4;
+        this.logicHorizontal = logicHorizontal;
     }
 
     public CTMLogic get(Direction face, int corner) {
@@ -47,6 +53,10 @@ public final class CTMData {
         return logic4x4 != null ? logic4x4[face.get3DDataValue()] : null;
     }
 
+    public CTMLogicHorizontal getHorizontal(Direction face) {
+        return logicHorizontal != null ? logicHorizontal[face.get3DDataValue()] : null;
+    }
+
     public CTMLogic[][] raw() {
         CTMLogic[][] copy = new CTMLogic[6][4];
         for (int i = 0; i < 6; i++) {
@@ -63,7 +73,8 @@ public final class CTMData {
                 Arrays.deepEquals(logic, that.logic) &&
                 Arrays.equals(logic2x2, that.logic2x2) &&
                 Arrays.equals(logic3x3, that.logic3x3) &&
-                Arrays.equals(logic4x4, that.logic4x4);
+                Arrays.equals(logic4x4, that.logic4x4) &&
+                Arrays.equals(logicHorizontal, that.logicHorizontal);
     }
 
     @Override
@@ -73,6 +84,7 @@ public final class CTMData {
         result = 31 * result + Arrays.hashCode(logic2x2);
         result = 31 * result + Arrays.hashCode(logic3x3);
         result = 31 * result + Arrays.hashCode(logic4x4);
+        result = 31 * result + Arrays.hashCode(logicHorizontal);
         return result;
     }
 }

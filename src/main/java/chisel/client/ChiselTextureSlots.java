@@ -18,4 +18,6 @@ public class ChiselTextureSlots {
     public static final TextureSlot CTM_OVERLAY_2X2 = TextureSlot.create("overlay_2x2");
     public static final TextureSlot CTM_OVERLAY_3X3 = TextureSlot.create("overlay_3x3");
     public static final TextureSlot CTM_OVERLAY_4X4 = TextureSlot.create("overlay_4x4");
+    public static final TextureSlot CTM_OVERLAY_HORIZONTAL = TextureSlot.create("overlay_horizontal");
+    public static final TextureSlot CTM_OVERLAY_VERTICAL = TextureSlot.create("overlay_vertical");
 }

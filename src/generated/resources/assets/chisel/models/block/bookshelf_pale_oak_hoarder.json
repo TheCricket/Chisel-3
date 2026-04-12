@@ -1,8 +1,10 @@
 {
-  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
+    "base_texture": "minecraft:block/pale_oak_planks",
     "bottom": "minecraft:block/pale_oak_planks",
     "layer0": "minecraft:block/pale_oak_planks",
+    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_hoarder-ctm",
     "particle": "minecraft:block/pale_oak_planks",
     "side": "chisel:block/bookshelf/bookshelf_hoarder",
     "top": "minecraft:block/pale_oak_planks"

@@ -29,6 +29,7 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     private final Map<Direction, BakedQuad[]> multiblock2x2Quads;
     private final Map<Direction, BakedQuad[]> multiblock3x3Quads;
     private final Map<Direction, BakedQuad[]> multiblock4x4Quads;
+    private final Map<Direction, BakedQuad[]> horizontalQuads;
     private final TextureAtlasSprite particle;
     private final Variant variant;
 
@@ -43,6 +44,7 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
             Map<Direction, BakedQuad[]> multiblock2x2Quads,
             Map<Direction, BakedQuad[]> multiblock3x3Quads,
             Map<Direction, BakedQuad[]> multiblock4x4Quads,
+            Map<Direction, BakedQuad[]> horizontalQuads,
             TextureAtlasSprite particle,
             Variant variant
     ) {
@@ -54,6 +56,7 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
         this.multiblock2x2Quads = multiblock2x2Quads;
         this.multiblock3x3Quads = multiblock3x3Quads;
         this.multiblock4x4Quads = multiblock4x4Quads;
+        this.horizontalQuads = horizontalQuads;
         this.particle = particle;
         this.variant = variant;
     }
@@ -93,6 +96,36 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
                 logic4x4[face.get3DDataValue()] = CTMLogic4x4.get(pos, face);
             }
             return new CTMData(variant, null, null, null, logic4x4);
+        }
+
+        if (variant.getModelType() == VariantModelType.CONNECTED_HORIZONTALLY || variant.getModelType() == VariantModelType.BOOKSHELF) {
+            CTMLogicHorizontal[] logicHorizontal = new CTMLogicHorizontal[6];
+            for (Direction face : Direction.values()) {
+                if (face.getAxis().isVertical()) {
+                    logicHorizontal[face.get3DDataValue()] = CTMLogicHorizontal.NONE;
+                    continue;
+                }
+                Direction left = face.getCounterClockWise();
+                Direction right = face.getClockWise();
+                boolean connectLeft = shouldConnectSide(level, pos, face, left);
+                boolean connectRight = shouldConnectSide(level, pos, face, right);
+                logicHorizontal[face.get3DDataValue()] = CTMLogicHorizontal.get(connectLeft, connectRight);
+            }
+            return new CTMData(variant, null, null, null, null, logicHorizontal);
+        }
+
+        if (variant.getModelType() == VariantModelType.CONNECTED_VERTICALLY) {
+            CTMLogicHorizontal[] logicVertical = new CTMLogicHorizontal[6];
+            for (Direction face : Direction.values()) {
+                if (face.getAxis().isVertical()) {
+                    logicVertical[face.get3DDataValue()] = CTMLogicHorizontal.NONE;
+                    continue;
+                }
+                boolean connectUp = shouldConnectSide(level, pos, face, Direction.UP);
+                boolean connectDown = shouldConnectSide(level, pos, face, Direction.DOWN);
+                logicVertical[face.get3DDataValue()] = CTMLogicHorizontal.get(connectUp, connectDown);
+            }
+            return new CTMData(variant, null, null, null, null, logicVertical);
         }
 
         CTMLogic[][] logic = new CTMLogic[6][4];
@@ -162,6 +195,15 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
                 } else if (variant.getModelType() == VariantModelType.MULTIBLOCK_4X4) {
                     CTMLogic4x4 logic = data.get4x4(side);
                     BakedQuad[] quads = multiblock4x4Quads.get(side);
+                    if (quads != null && logic != null) {
+                        BakedQuad quad = quads[logic.ordinal()];
+                        if (quad != null) {
+                            faceQuads.add(quad);
+                        }
+                    }
+                } else if (variant.getModelType() == VariantModelType.CONNECTED_HORIZONTALLY || variant.getModelType() == VariantModelType.CONNECTED_VERTICALLY || variant.getModelType() == VariantModelType.BOOKSHELF) {
+                    CTMLogicHorizontal logic = data.getHorizontal(side);
+                    BakedQuad[] quads = horizontalQuads.get(side);
                     if (quads != null && logic != null) {
                         BakedQuad quad = quads[logic.ordinal()];
                         if (quad != null) {

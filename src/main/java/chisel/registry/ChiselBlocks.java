@@ -35,6 +35,7 @@ public class ChiselBlocks {
     public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE));
     public static final ConcreteFamily CONCRETE = new ConcreteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
     public static final CopperFamily COPPER = new CopperFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+    public static final CrimsonFamily CRIMSON = new CrimsonFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
     public static final DarkOakFamily DARK_OAK = new DarkOakFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
     public static final DiamondFamily DIAMOND = new DiamondFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
     public static final DioriteFamily DIORITE = new DioriteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE));
@@ -151,7 +152,7 @@ public class ChiselBlocks {
     public static List<ChiselBlock> getBlocks() {
         List<ChiselBlock> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANDESITE, ANTIBLOCK, BIRCH, BOOKSHELF, BRICKS, BRONZE,
-                CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
+                CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,
                 LEAF, LIMESTONE, JACK_O_LANTERN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,

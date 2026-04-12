@@ -1,7 +1,27 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/bookshelf_warped_papers"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/bookshelf_warped_papers",
+  "variant": {
+    "block": "chisel:bookshelf_warped_papers",
+    "model_type": "bookshelf",
+    "name": "bookshelf_warped_papers"
   }
 }

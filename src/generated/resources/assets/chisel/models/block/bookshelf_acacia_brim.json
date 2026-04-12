@@ -1,8 +1,10 @@
 {
-  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
+    "base_texture": "minecraft:block/acacia_planks",
     "bottom": "minecraft:block/acacia_planks",
     "layer0": "minecraft:block/acacia_planks",
+    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_brim-ctm",
     "particle": "minecraft:block/acacia_planks",
     "side": "chisel:block/bookshelf/bookshelf_brim",
     "top": "minecraft:block/acacia_planks"

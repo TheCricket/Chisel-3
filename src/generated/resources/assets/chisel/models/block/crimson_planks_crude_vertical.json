@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/crimson_planks/crimson_planks_crude_vertical",
+    "overlay_3x3": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3",
+    "particle": "chisel:block/crimson_planks/crimson_planks_crude_vertical"
+  }
+}

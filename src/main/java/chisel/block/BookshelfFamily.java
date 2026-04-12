@@ -1,5 +1,6 @@
 package chisel.block;
 
+import chisel.block.util.CTMHBlock;
 import chisel.block.util.ChiselBlock;
 import chisel.core.variant.VariantFamily;
 import chisel.core.variant.VariantModelType;
@@ -19,7 +20,7 @@ public class BookshelfFamily extends ChiselBlock {
         b.addVariant(Blocks.BOOKSHELF);
         for (String wood : woods) {
             for (String type : types) {
-                b.addVariant("bookshelf_%s_%s".formatted(wood, type), props, VariantModelType.BOOKSHELF);
+                b.addVariant("bookshelf_%s_%s".formatted(wood, type), CTMHBlock::new, () -> props, VariantModelType.BOOKSHELF);
             }
         }
 

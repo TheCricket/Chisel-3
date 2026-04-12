@@ -1,7 +1,27 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/bookshelf_jungle_abandoned"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/bookshelf_jungle_abandoned",
+  "variant": {
+    "block": "chisel:bookshelf_jungle_abandoned",
+    "model_type": "bookshelf",
+    "name": "bookshelf_jungle_abandoned"
   }
 }

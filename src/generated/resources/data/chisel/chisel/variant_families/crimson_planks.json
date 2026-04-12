@@ -1,0 +1,95 @@
+{
+  "familyName": "crimson_planks",
+  "variants": [
+    {
+      "block": "minecraft:crimson_planks",
+      "model_type": "cube_all",
+      "name": "block.minecraft.crimson_planks"
+    },
+    {
+      "block": "chisel:crimson_planks_braced",
+      "model_type": "connected_tbs",
+      "name": "crimson_planks_braced"
+    },
+    {
+      "block": "chisel:crimson_planks_braid",
+      "model_type": "connected",
+      "name": "crimson_planks_braid"
+    },
+    {
+      "block": "chisel:crimson_planks_crude_horizontal",
+      "model_type": "multiblock_3x3",
+      "name": "crimson_planks_crude_horizontal"
+    },
+    {
+      "block": "chisel:crimson_planks_crude_paneling",
+      "model_type": "cube_all",
+      "name": "crimson_planks_crude_paneling"
+    },
+    {
+      "block": "chisel:crimson_planks_crude_vertical",
+      "model_type": "multiblock_3x3",
+      "name": "crimson_planks_crude_vertical"
+    },
+    {
+      "block": "chisel:crimson_planks_encased",
+      "model_type": "connected",
+      "name": "crimson_planks_encased"
+    },
+    {
+      "block": "chisel:crimson_planks_encased_large",
+      "model_type": "connected",
+      "name": "crimson_planks_encased_large"
+    },
+    {
+      "block": "chisel:crimson_planks_encased_smooth",
+      "model_type": "connected",
+      "name": "crimson_planks_encased_smooth"
+    },
+    {
+      "block": "chisel:crimson_planks_large",
+      "model_type": "cube_all",
+      "name": "crimson_planks_large"
+    },
+    {
+      "block": "chisel:crimson_planks_log_bordered",
+      "model_type": "connected",
+      "name": "crimson_planks_log_bordered"
+    },
+    {
+      "block": "chisel:crimson_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "crimson_planks_log_cabin_ew"
+    },
+    {
+      "block": "chisel:crimson_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "crimson_planks_log_cabin_ns"
+    },
+    {
+      "block": "chisel:crimson_planks_paneling",
+      "model_type": "connected",
+      "name": "crimson_planks_paneling"
+    },
+    {
+      "block": "chisel:crimson_planks_shipping",
+      "model_type": "connected",
+      "name": "crimson_planks_shipping"
+    },
+    {
+      "block": "chisel:crimson_planks_smooth",
+      "model_type": "connected",
+      "name": "crimson_planks_smooth"
+    },
+    {
+      "block": "chisel:crimson_planks_stacked",
+      "model_type": "cube_all",
+      "name": "crimson_planks_stacked"
+    },
+    {
+      "block": "chisel:crimson_planks_vertical",
+      "model_type": "cube_all",
+      "name": "crimson_planks_vertical"
+    }
+  ]
+}

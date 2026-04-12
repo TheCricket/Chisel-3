@@ -19,8 +19,6 @@ public class CTMHBlock extends Block {
     public static final BooleanProperty EAST = BlockStateProperties.EAST;
     public static final BooleanProperty SOUTH = BlockStateProperties.SOUTH;
     public static final BooleanProperty WEST = BlockStateProperties.WEST;
-    public static final BooleanProperty EW = BooleanProperty.create("EW");
-    public static final BooleanProperty NS = BooleanProperty.create("NS");
 
     public CTMHBlock(Properties properties) {
         super(properties);
@@ -52,30 +50,15 @@ public class CTMHBlock extends Block {
     }
 
     private BlockState getConnectableSides(Level level, BlockPos pos) {
-        boolean isNorth = level.getBlockState(pos.north()).is(this);
-        boolean isSouth = level.getBlockState(pos.south()).is(this);
-        boolean isWest = level.getBlockState(pos.west()).is(this);
-        boolean isEast = level.getBlockState(pos.east()).is(this);
+        boolean north = level.getBlockState(pos.north()).is(this);
+        boolean south = level.getBlockState(pos.south()).is(this);
+        boolean west = level.getBlockState(pos.west()).is(this);
+        boolean east = level.getBlockState(pos.east()).is(this);
 
-        BlockState state = defaultBlockState();
-
-        if(isNorth && isSouth) {
-            return state
-                    .setValue(NORTH, true)
-                    .setValue(SOUTH, true)
-                    .setValue(NS, true);
-        } else if(isWest && isEast) {
-            return state
-                    .setValue(WEST, true)
-                    .setValue(EAST, true)
-                    .setValue(EW, true);
-        }
-
-        if(isNorth) state.setValue(NORTH, true);
-        if(isSouth) state.setValue(SOUTH, true);
-        if(isWest) state.setValue(WEST, true);
-        if(isEast) state.setValue(EAST, true);
-
-        return state;
+        return defaultBlockState()
+                .setValue(NORTH, north)
+                .setValue(SOUTH, south)
+                .setValue(WEST, west)
+                .setValue(EAST, east);
     }
 }

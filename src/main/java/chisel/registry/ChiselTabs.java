@@ -51,6 +51,7 @@ public class ChiselTabs {
             .displayItems((_, output) -> List.of(
                     ChiselBlocks.ACACIA.getFamily(),
                     ChiselBlocks.BIRCH.getFamily(),
+                    ChiselBlocks.CRIMSON.getFamily(),
                     ChiselBlocks.BOOKSHELF.getFamily(),
                     ChiselBlocks.DARK_OAK.getFamily(),
                     ChiselBlocks.JUNGLE.getFamily(),

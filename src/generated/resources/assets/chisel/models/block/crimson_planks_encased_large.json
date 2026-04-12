@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/crimson_planks/crimson_planks_encased_large",
+    "overlay_connected": "chisel:block/crimson_planks/crimson_planks_encased_large-ctm",
+    "overlay_texture": "chisel:block/crimson_planks/crimson_planks_encased_large",
+    "particle": "chisel:block/crimson_planks/crimson_planks_encased_large"
+  }
+}

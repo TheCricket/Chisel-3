@@ -29,13 +29,15 @@ public class CTMHModel extends VariantModel {
                 .put(ChiselTextureSlots.CTM_OVERLAY_SIDE_CONNECTED, variant.getMaterial("side-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM_CONNECTED, variant.getMaterial("bottom-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_TOP_CONNECTED, variant.getMaterial("top-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctmv"));
+                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctmv"))
+                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, variant.getMaterial("ctmh"))
+                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("ctmv"));
     }
 
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.CTM.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        Identifier modelLocation = ChiselModelTemplates.CTM_HORIZONTAL.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
