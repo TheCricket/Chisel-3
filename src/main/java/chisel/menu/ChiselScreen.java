@@ -2,8 +2,10 @@ package chisel.menu;
 
 import chisel.Chisel;
 import chisel.network.ChiselSearchPacket;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.render.pip.OversizedItemRenderer;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.input.MouseButtonEvent;
@@ -24,22 +26,24 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
 
     private final Identifier TEXTURE = Chisel.prefix("textures/gui/chisel.png");
     private static final Identifier SCROLLER_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller");
+    private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller_disabled");
     private EditBox searchBox;
     private float scrollOffs = 0.0f;
     private boolean isScrolling;
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
-        super(menu, inventory, title, 252, 220);
-        inventoryLabelY = imageHeight - 94;
-        titleLabelY = 76;
+        super(menu, inventory, title, 252, 222);
+        inventoryLabelY = imageHeight - 91;
+        titleLabelY = topPos + 10;
     }
 
     @Override
     protected void init() {
         super.init();
-        searchBox = new EditBox(font, leftPos + 62, topPos + 4, 180, 10, Component.empty());
+        searchBox = new EditBox(font, leftPos + 134, topPos + 9, 88, 10, Component.empty());
         searchBox.setMaxLength(50);
         searchBox.setResponder(this::onSearchTextChange);
+        searchBox.setBordered(false);
         addRenderableWidget(searchBox);
     }
 
@@ -64,7 +68,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         if (!canScroll()) {
             return false;
         } else {
-            int i = (getMenu().variants.activeVariants + 10 - 1) / 10 - 6;
+            int i = (getMenu().variants.activeVariants + 9 - 1) / 9 - 5;
             scrollOffs = (float)((double)scrollOffs - scrollY / (double)i);
             scrollOffs = Mth.clamp(scrollOffs, 0.0F, 1.0F);
             getMenu().setSearchState(searchBox.getValue(), scrollOffs);
@@ -83,9 +87,9 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     private boolean isHoveringScroller(double mouseX, double mouseY) {
-        int x = leftPos + 242;
-        int y = topPos + 26;
-        return mouseX >= (double)x && mouseX < (double)(x + 12) && mouseY >= (double)y && mouseY < (double)(y + 108);
+        int x = leftPos + 229;
+        int y = topPos + 6;
+        return mouseX >= (double)x && mouseX < (double)(x + 12) && mouseY >= (double)y && mouseY < (double)(y + 90);
     }
 
     @Override
@@ -99,8 +103,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     @Override
     public boolean mouseDragged(@NonNull MouseButtonEvent event, double dx, double dy) {
         if (isScrolling) {
-            int i = topPos + 26;
-            int j = i + 108;
+            int i = topPos + 6;
+            int j = i + 90;
             scrollOffs = ((float)event.y() - (float)i - 7.5F) / ((float)(j - i) - 15.0F);
             scrollOffs = Mth.clamp(scrollOffs, 0.0F, 1.0F);
             getMenu().setSearchState(searchBox.getValue(), scrollOffs);
@@ -112,15 +116,14 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     private boolean canScroll() {
-        return getMenu().variants.activeVariants > 60;
+        return getMenu().variants.activeVariants > 45;
     }
 
     @Override
     public void extractBackground(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
         super.extractBackground(graphics, mouseX, mouseY, a);
 
-        int textureY = topPos + 18;
-        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, textureY, 0, 0, 252, 202, 256, 256);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 252, 202, 256, 256);
 
         Slot main = getMenu().inputSlot;
 
@@ -128,11 +131,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
             graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos + 8, topPos + 26, 0, 202, 48, 48, 256, 256);
         }
 
-        if (canScroll()) {
-            graphics.fill(RenderPipelines.GUI, leftPos + 242, textureY + 8, leftPos + 254, textureY + 116, 0x80000000);
-            int k = (int)(93.0F * scrollOffs);
-            graphics.blitSprite(RenderPipelines.GUI_TEXTURED, SCROLLER_SPRITE, leftPos + 242, textureY + 8 + k, 12, 15);
-        }
+        int k = (int)(75.0F * scrollOffs);
+        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, canScroll() ? SCROLLER_SPRITE : SCROLLER_DISABLED_SPRITE, leftPos + 229, topPos + 6 + k, 12, 15);
     }
 
     @Override

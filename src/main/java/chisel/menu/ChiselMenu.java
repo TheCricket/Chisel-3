@@ -94,7 +94,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     private void addVariantSlots() {
         int top = 26, left = 62;
         for (int c = 0; c < ChiselSelectionInventory.VISIBLE_SIZE; c++) {
-            addSlot(new SelectionSlot(container, variants, c, left + ((c % 10) * 18), top + ((c / 10) * 18)));
+            addSlot(new SelectionSlot(container, variants, c, left + ((c % 9) * 18), top + ((c / 9) * 18)));
         }
 
         addSlot(inputSlot = new InputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 16));
@@ -102,7 +102,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     private void addInventorySlots(Inventory inventory) {
-        int top = 138;
+        int top = 120;
         int left = 71;
         // main inv
         for (int c = 0; c < 27; c++) {
