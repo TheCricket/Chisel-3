@@ -1,6 +1,8 @@
 package chisel.client.ctm;
 
+import chisel.client.ctm.logic.*;
 import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModelType;
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -24,6 +26,9 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     private final boolean renderOverlayOnAllFaces;
     private final Map<Direction, BakedQuad[]> baseQuads;
     private final Map<Direction, BakedQuad[][]> connectedQuads;
+    private final Map<Direction, BakedQuad[]> multiblock2x2Quads;
+    private final Map<Direction, BakedQuad[]> multiblock3x3Quads;
+    private final Map<Direction, BakedQuad[]> multiblock4x4Quads;
     private final TextureAtlasSprite particle;
     private final Variant variant;
 
@@ -35,6 +40,9 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
             boolean renderOverlayOnAllFaces,
             Map<Direction, BakedQuad[]> baseQuads,
             Map<Direction, BakedQuad[][]> connectedQuads,
+            Map<Direction, BakedQuad[]> multiblock2x2Quads,
+            Map<Direction, BakedQuad[]> multiblock3x3Quads,
+            Map<Direction, BakedQuad[]> multiblock4x4Quads,
             TextureAtlasSprite particle,
             Variant variant
     ) {
@@ -43,6 +51,9 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
         this.renderOverlayOnAllFaces = renderOverlayOnAllFaces;
         this.baseQuads = baseQuads;
         this.connectedQuads = connectedQuads;
+        this.multiblock2x2Quads = multiblock2x2Quads;
+        this.multiblock3x3Quads = multiblock3x3Quads;
+        this.multiblock4x4Quads = multiblock4x4Quads;
         this.particle = particle;
         this.variant = variant;
     }
@@ -62,6 +73,28 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
     }
 
     private CTMData computeCTMData(BlockAndTintGetter level, BlockPos pos) {
+        if (variant.getModelType() == VariantModelType.MULTIBLOCK_2X2) {
+            CTMLogic2x2[] logic2x2 = new CTMLogic2x2[6];
+            for (Direction face : Direction.values()) {
+                logic2x2[face.get3DDataValue()] = CTMLogic2x2.get(pos, face);
+            }
+            return new CTMData(variant, null, logic2x2, null, null);
+        }
+        if (variant.getModelType() == VariantModelType.MULTIBLOCK_3X3) {
+            CTMLogic3x3[] logic3x3 = new CTMLogic3x3[6];
+            for (Direction face : Direction.values()) {
+                logic3x3[face.get3DDataValue()] = CTMLogic3x3.get(pos, face);
+            }
+            return new CTMData(variant, null, null, logic3x3, null);
+        }
+        if (variant.getModelType() == VariantModelType.MULTIBLOCK_4X4) {
+            CTMLogic4x4[] logic4x4 = new CTMLogic4x4[6];
+            for (Direction face : Direction.values()) {
+                logic4x4[face.get3DDataValue()] = CTMLogic4x4.get(pos, face);
+            }
+            return new CTMData(variant, null, null, null, logic4x4);
+        }
+
         CTMLogic[][] logic = new CTMLogic[6][4];
 
         for (Direction face : Direction.values()) {
@@ -108,16 +141,45 @@ public class ConnectedTextureBlockStateModel implements DynamicBlockStateModel {
             }
 
             if (connectedFaces.contains(side) || renderOverlayOnAllFaces) {
-                for (int i = 0; i < 4; i++) {
-                    CTMLogic logic = connectedFaces.contains(side)
-                            ? data.get(side, i)
-                            : CTMLogic.NONE;
-
-                    BakedQuad[][] conn = connectedQuads.get(side);
-                    if (conn != null && conn[i] != null) {
-                        BakedQuad quad = conn[i][logic.ordinal()];
+                if (variant.getModelType() == VariantModelType.MULTIBLOCK_2X2) {
+                    CTMLogic2x2 logic = data.get2x2(side);
+                    BakedQuad[] quads = multiblock2x2Quads.get(side);
+                    if (quads != null && logic != null) {
+                        BakedQuad quad = quads[logic.ordinal()];
                         if (quad != null) {
                             faceQuads.add(quad);
+                        }
+                    }
+                } else if (variant.getModelType() == VariantModelType.MULTIBLOCK_3X3) {
+                    CTMLogic3x3 logic = data.get3x3(side);
+                    BakedQuad[] quads = multiblock3x3Quads.get(side);
+                    if (quads != null && logic != null) {
+                        BakedQuad quad = quads[logic.ordinal()];
+                        if (quad != null) {
+                            faceQuads.add(quad);
+                        }
+                    }
+                } else if (variant.getModelType() == VariantModelType.MULTIBLOCK_4X4) {
+                    CTMLogic4x4 logic = data.get4x4(side);
+                    BakedQuad[] quads = multiblock4x4Quads.get(side);
+                    if (quads != null && logic != null) {
+                        BakedQuad quad = quads[logic.ordinal()];
+                        if (quad != null) {
+                            faceQuads.add(quad);
+                        }
+                    }
+                } else {
+                    for (int i = 0; i < 4; i++) {
+                        CTMLogic logic = connectedFaces.contains(side)
+                                ? data.get(side, i)
+                                : CTMLogic.NONE;
+
+                        BakedQuad[][] conn = connectedQuads.get(side);
+                        if (conn != null && conn[i] != null) {
+                            BakedQuad quad = conn[i][logic.ordinal()];
+                            if (quad != null) {
+                                faceQuads.add(quad);
+                            }
                         }
                     }
                 }

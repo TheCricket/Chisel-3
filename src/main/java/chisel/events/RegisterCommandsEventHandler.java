@@ -39,20 +39,20 @@ public class RegisterCommandsEventHandler {
                                 int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
                                 int x = 0, z = 0;
 
-                                for (int c = 0; c < blocks.size(); c++) {
-                                    Block block = blocks.get(c);
+                                for (Block block : blocks) {
                                     BlockState state = block.defaultBlockState();
 
-                                    int baseX = pos.getX() + (x * 2);
-                                    int baseZ = pos.getZ() + (z * 2);
-                                    int y = pos.getY();
+                                    int baseX = pos.getX() + (x * 4);
+                                    int baseZ = pos.getZ() + (z * 4);
+                                    int baseY = pos.getY();
 
-                                    BlockPos place = new BlockPos(baseX, y, baseZ);
-
-                                    level.setBlock(place, state, Block.UPDATE_ALL);
-                                    level.setBlock(place.east(), state, Block.UPDATE_ALL);
-                                    level.setBlock(place.south(), state, Block.UPDATE_ALL);
-                                    level.setBlock(place.east().south(), state, Block.UPDATE_ALL);
+                                    for (int ox = 0; ox < 3; ox++) {
+                                        for (int oy = 0; oy < 3; oy++) {
+                                            for (int oz = 0; oz < 3; oz++) {
+                                                level.setBlock(new BlockPos(baseX + ox, baseY + oy, baseZ + oz), state, Block.UPDATE_ALL);
+                                            }
+                                        }
+                                    }
 
                                     x++;
                                     if (x >= blocksPerRow) {

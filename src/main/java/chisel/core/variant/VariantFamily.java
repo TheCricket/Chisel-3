@@ -1,6 +1,6 @@
 package chisel.core.variant;
 
-import chisel.block.util.ConnectedTextureBlockItem;
+import chisel.block.util.ChiselBlockItem;
 import chisel.block.util.TorchBlockItem;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
@@ -118,7 +118,7 @@ public class VariantFamily {
             }
 
             private void registerAndAdd(Variant variant) {
-                ChiselItems.ITEMS.registerItem(variant.getName(), p -> new ConnectedTextureBlockItem(variant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
+                ChiselItems.ITEMS.registerItem(variant.getName(), p -> new ChiselBlockItem(variant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
                 family.getVariants().add(variant);
             }
         }

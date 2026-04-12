@@ -1,17 +1,18 @@
 package chisel.core.variant;
 
-import chisel.core.model.CubeAllModel;
-import chisel.core.model.MultiLayerModel;
-import chisel.core.model.PillarModel;
-import chisel.core.model.TopBottomSideModel;
-import chisel.core.model.ctm.*;
-import chisel.core.model.special.*;
+import chisel.client.model.CubeAllModel;
+import chisel.client.model.MultiLayerModel;
+import chisel.client.model.PillarModel;
+import chisel.client.model.TopBottomSideModel;
+import chisel.client.model.ctm.*;
+import chisel.client.model.special.*;
 
 public class VariantModels {
     public final TopBottomSideModel TOP_BOTTOM_SIDE = new TopBottomSideModel();
     public final CTMVTopBottomSide TOP_BOTTOM_SIDE_CTMV = new CTMVTopBottomSide();
 
     public final CTMModel CTM = new CTMModel();
+    public final CTMTBSModel CTM_TBS = new CTMTBSModel();
     public final CTMVModel CTMV = new CTMVModel();
     public final CTMHModel CTMH = new CTMHModel();
 
@@ -36,4 +37,7 @@ public class VariantModels {
     public final TorchModel TORCH = new TorchModel(false);
     public final TorchModel WALL_TORCH = new TorchModel(true);
     public final RoadLineModel ROAD_LINES = new RoadLineModel();
+    public final Multiblock2x2Model MULTIBLOCK_2X2 = new Multiblock2x2Model();
+    public final Multiblock3x3Model MULTIBLOCK_3X3 = new Multiblock3x3Model();
+    public final Multiblock4x4Model MULTIBLOCK_4X4 = new Multiblock4x4Model();
 }

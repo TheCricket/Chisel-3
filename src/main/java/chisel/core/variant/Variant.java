@@ -8,6 +8,9 @@ import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 
+import java.util.Collections;
+import java.util.EnumSet;
+import java.util.Set;
 import java.util.function.Supplier;
 
 import static chisel.core.variant.VariantModelType.*;
@@ -19,6 +22,20 @@ public class Variant extends VariantModels {
             BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(Variant::getBlock),
             VariantModelType.CODEC.fieldOf("model_type").forGetter(Variant::getModelType)
     ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType)));
+
+    private static final Set<VariantModelType> MODEL_TYPES = Collections.unmodifiableSet(EnumSet.of(
+                    CONNECTED,
+                    CONNECTED_TBS,
+                    CONNECTED_VERTICALLY,
+                    CONNECTED_HORIZONTALLY,
+                    MULTI_LAYER_CONNECTED,
+                    MULTI_LAYER_CONNECTED_TINTED,
+                    MULTI_LAYER_CONNECTED_GLOW,
+                    VariantModelType.MULTIBLOCK_2X2,
+                    VariantModelType.MULTIBLOCK_3X3,
+                    VariantModelType.MULTIBLOCK_4X4
+            )
+    );
 
     private final String name;
     private final Supplier<Block> block;
@@ -64,7 +81,7 @@ public class Variant extends VariantModels {
     }
 
     public boolean isCTM() {
-        return modelType == CONNECTED || modelType == CONNECTED_VERTICALLY || modelType == CONNECTED_HORIZONTALLY || modelType == MULTI_LAYER_CONNECTED;
+        return MODEL_TYPES.contains(modelType);
     }
 
     public VariantModelType getModelType() {
@@ -91,6 +108,7 @@ public class Variant extends VariantModels {
             case TOP_BOTTOM_SIDE -> TOP_BOTTOM_SIDE.generate(this, blockModels);
             case TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY -> TOP_BOTTOM_SIDE_CTMV.generate(this, blockModels);
             case CONNECTED -> CTM.generate(this, blockModels);
+            case CONNECTED_TBS -> CTM_TBS.generate(this, blockModels);
             case CONNECTED_VERTICALLY -> CTMV.generate(this, blockModels);
             case CONNECTED_HORIZONTALLY -> CTMH.generate(this, blockModels);
             case MULTI_LAYER -> MULTI_LAYER.generate(this, blockModels);
@@ -111,6 +129,9 @@ public class Variant extends VariantModels {
             case TORCH -> TORCH.generate(this, blockModels);
             case WALL_TORCH -> WALL_TORCH.generate(this, blockModels);
             case ROAD_LINES -> ROAD_LINES.generate(this, blockModels);
+            case MULTIBLOCK_2X2 -> MULTIBLOCK_2X2.generate(this, blockModels);
+            case MULTIBLOCK_3X3 -> MULTIBLOCK_3X3.generate(this, blockModels);
+            case MULTIBLOCK_4X4 -> MULTIBLOCK_4X4.generate(this, blockModels);
         }
     }
 

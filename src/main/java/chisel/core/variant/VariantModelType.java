@@ -10,6 +10,7 @@ public enum VariantModelType implements StringRepresentable {
     TOP_BOTTOM_SIDE("top_bottom_side"),
     TOP_BOTTOM_SIDE_CONNECTED_VERTICALLY("top_bottom_side_connected_vertically"),
     CONNECTED("connected"),
+    CONNECTED_TBS("connected_tbs"),
     CONNECTED_VERTICALLY("connected_vertically"),
     CONNECTED_HORIZONTALLY("connected_horizontally"),
     MULTI_LAYER("multi_layer"),
@@ -29,7 +30,10 @@ public enum VariantModelType implements StringRepresentable {
     TORCH("torch"),
     WALL_TORCH("wall_torch"),
     ROAD_LINES("road_lines"),
-    GLASS_PANE("glass_pane");
+    GLASS_PANE("glass_pane"),
+    MULTIBLOCK_2X2("multiblock_2x2"),
+    MULTIBLOCK_3X3("multiblock_3x3"),
+    MULTIBLOCK_4X4("multiblock_4x4");
 
     public static final Codec<VariantModelType> CODEC = StringRepresentable.fromEnum(VariantModelType::values);
     private final String name;

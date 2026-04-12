@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:birch_planks_braced",
-      "model_type": "cube_all",
+      "model_type": "connected_tbs",
       "name": "birch_planks_braced"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:birch_planks_crude_horizontal",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "birch_planks_crude_horizontal"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "block": "chisel:birch_planks_crude_vertical",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "birch_planks_crude_vertical"
     },
     {
