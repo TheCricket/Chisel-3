@@ -1,54 +1,40 @@
 package chisel.client;
 
-import chisel.registry.ChiselItems;
+import chisel.events.AddLayersEventHandler;
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.minecraft.client.Minecraft;
+import com.mojang.math.Axis;
 import net.minecraft.client.model.player.PlayerModel;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.entity.RenderLayerParent;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.ItemLike;
+import net.minecraft.client.renderer.item.ItemStackRenderState;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 public class VIPRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
 
-    public static final Map<UUID, ItemLike> VIPS = new HashMap<>();
-
     public VIPRenderLayer(RenderLayerParent<AvatarRenderState, PlayerModel> renderer) {
         super(renderer);
-        VIPS.put(UUID.fromString("a7529984-8cb2-4fb9-b799-97980f770101"), ChiselItems.CHISEL_OBSIDIAN);
-        VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON);
-
     }
 
     @Override
     public void submit(@NonNull PoseStack pose, @NonNull SubmitNodeCollector submit, int lightCoords, @NonNull AvatarRenderState state, float yRot, float xRot) {
         if(state.isInvisible || state.isSpectator) return;
 
-        ClientLevel level = Minecraft.getInstance().level;
-        if(level == null) return;
-
-        Entity entity = level.getEntity(state.id);
-        if(!(entity instanceof Player player)) return;
-        if(!shouldRenderBadge(player)) return;
-
-        ItemLike item = VIPS.get(player.getUUID());
+        ItemStackRenderState item = state.getRenderData(AddLayersEventHandler.VIP_ITEM);
+        if(item == null) return;
 
         pose.pushPose();
-        getParentModel().body.translateAndRotate(pose);
-        //TODO: Finish this
-        pose.popPose();
-    }
+        if(state.isCrouching) pose.rotateAround(Axis.XP.rotation(28.64789F), 1.0F, 0.0F, 0.0F);
+        pose.rotateAround(Axis.XP.rotationDegrees(180), 1, 0, 0);
+        pose.rotateAround(Axis.YP.rotationDegrees(90), 0, 1, 0);
+        pose.translate(-0.25F, -0.85F, state.chestEquipment != ItemStack.EMPTY ? 0.28F : 0.2F);
+        pose.scale(0.5F, 0.5F, 0.5F);
 
-    private boolean shouldRenderBadge(Player player) {
-        return VIPS.containsKey(player.getUUID());
+        getParentModel().body.translateAndRotate(pose);
+        item.submit(pose, submit, lightCoords, OverlayTexture.NO_OVERLAY, 0);
+        pose.popPose();
     }
 }
