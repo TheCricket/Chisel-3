@@ -28,7 +28,7 @@ public class AndesiteFamily extends ChiselBlock {
                 .addVariant("andesite_mosaic", props, VariantModelType.CONNECTED)
                 .addVariant("andesite_ornate", props)
                 .addVariant("andesite_panel", props)
-                .addVariant("andesite_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("andesite_pillar", props, VariantModelType.TBS)
                 .addVariant("andesite_prism", props)
                 .addVariant("andesite_road", props)
                 .addVariant("andesite_slanted", props, VariantModelType.MULTIBLOCK_2X2)
@@ -39,7 +39,7 @@ public class AndesiteFamily extends ChiselBlock {
                 .addVariant("andesite_tiles_medium", props)
                 .addVariant("andesite_tiles_small", props)
                 .addVariant("andesite_triple_bricks", props)
-                .addVariant("andesite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("andesite_twisted", props, VariantModelType.TBS)
                 .addVariant("andesite_weaver", props, VariantModelType.CONNECTED)
                 .addVariant("andesite_zag", props, VariantModelType.CONNECTED)
                 .family();

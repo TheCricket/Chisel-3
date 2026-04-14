@@ -9,7 +9,6 @@ import chisel.client.model.special.*;
 
 public class VariantModels {
     public final TopBottomSideModel TOP_BOTTOM_SIDE = new TopBottomSideModel();
-    public final CTMVTopBottomSide TOP_BOTTOM_SIDE_CTMV = new CTMVTopBottomSide();
 
     public final CTMModel CTM = new CTMModel();
     public final CTMTBSModel CTM_TBS = new CTMTBSModel();
@@ -37,7 +36,11 @@ public class VariantModels {
     public final TorchModel TORCH = new TorchModel(false);
     public final TorchModel WALL_TORCH = new TorchModel(true);
     public final RoadLineModel ROAD_LINES = new RoadLineModel();
+    public final V4Model V4 = new V4Model();
     public final Multiblock2x2Model MULTIBLOCK_2X2 = new Multiblock2x2Model();
     public final Multiblock3x3Model MULTIBLOCK_3X3 = new Multiblock3x3Model();
     public final Multiblock4x4Model MULTIBLOCK_4X4 = new Multiblock4x4Model();
+    public final WaterstoneMultiblockModel WATERSTONE_2X2 = new WaterstoneMultiblockModel(2);
+    public final WaterstoneMultiblockModel WATERSTONE_3X3 = new WaterstoneMultiblockModel(3);
+    public final WaterstoneMultiblockModel WATERSTONE_4X4 = new WaterstoneMultiblockModel(4);
 }

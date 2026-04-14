@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/silver/silver_scaffold"
+    "all": "chisel:block/silver/silver_scaffold",
+    "overlay_connected": "chisel:block/silver/silver_scaffold-ctm",
+    "overlay_texture": "chisel:block/silver/silver_scaffold",
+    "particle": "chisel:block/silver/silver_scaffold"
   }
 }

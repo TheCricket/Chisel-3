@@ -29,9 +29,9 @@ public class CTMHModel extends VariantModel {
                 .put(ChiselTextureSlots.CTM_OVERLAY_SIDE_CONNECTED, variant.getMaterial("side-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM_CONNECTED, variant.getMaterial("bottom-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_TOP_CONNECTED, variant.getMaterial("top-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctmv"))
+                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("side-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, variant.getMaterial("ctmh"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("ctmv"));
+                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("side-ctm"));
     }
 
     @Override

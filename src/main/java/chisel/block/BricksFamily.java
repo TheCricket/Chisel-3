@@ -28,7 +28,7 @@ public class BricksFamily extends ChiselBlock {
                 .addVariant("bricks_mosaic", props)
                 .addVariant("bricks_ornate", props)
                 .addVariant("bricks_panel", props)
-                .addVariant("bricks_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("bricks_pillar", props, VariantModelType.TBS)
                 .addVariant("bricks_prism", props)
                 .addVariant("bricks_raw", props)
                 .addVariant("bricks_road", props)
@@ -40,7 +40,7 @@ public class BricksFamily extends ChiselBlock {
                 .addVariant("bricks_tiles_medium", props)
                 .addVariant("bricks_tiles_small", props)
                 .addVariant("bricks_triple", props)
-                .addVariant("bricks_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("bricks_twisted", props, VariantModelType.TBS)
                 .addVariant("bricks_weaver", props)
                 .addVariant("bricks_zag", props)
                 .family();

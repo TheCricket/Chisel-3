@@ -31,7 +31,7 @@ public class CobblestoneFamily extends ChiselBlock {
                 .addVariant("cobblestone_mosaic", props, VariantModelType.CONNECTED)
                 .addVariant("cobblestone_ornate", props)
                 .addVariant("cobblestone_panel", props)
-                .addVariant("cobblestone_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("cobblestone_pillar", props, VariantModelType.TBS)
                 .addVariant("cobblestone_prism", props)
                 .addVariant("cobblestone_raw", props)
                 .addVariant("cobblestone_road", props)
@@ -43,7 +43,7 @@ public class CobblestoneFamily extends ChiselBlock {
                 .addVariant("cobblestone_tiles_medium", props)
                 .addVariant("cobblestone_tiles_small", props)
                 .addVariant("cobblestone_triple", props)
-                .addVariant("cobblestone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("cobblestone_twisted", props, VariantModelType.TBS)
                 .addVariant("cobblestone_weaver", props, VariantModelType.CONNECTED)
                 .addVariant("cobblestone_zag", props, VariantModelType.CONNECTED)
                 .family();

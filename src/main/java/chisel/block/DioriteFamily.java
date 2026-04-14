@@ -28,7 +28,7 @@ public class DioriteFamily extends ChiselBlock {
                 .addVariant("diorite_mosaic", props, VariantModelType.CONNECTED)
                 .addVariant("diorite_ornate", props)
                 .addVariant("diorite_panel", props)
-                .addVariant("diorite_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("diorite_pillar", props, VariantModelType.TBS)
                 .addVariant("diorite_prism", props)
                 .addVariant("diorite_raw", props)
                 .addVariant("diorite_road", props)
@@ -40,7 +40,7 @@ public class DioriteFamily extends ChiselBlock {
                 .addVariant("diorite_tiles_medium", props)
                 .addVariant("diorite_tiles_small", props)
                 .addVariant("diorite_triple", props)
-                .addVariant("diorite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("diorite_twisted", props, VariantModelType.TBS)
                 .addVariant("diorite_weaver", props, VariantModelType.CONNECTED)
                 .addVariant("diorite_zag", props, VariantModelType.CONNECTED)
                 .family();

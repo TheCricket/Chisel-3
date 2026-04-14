@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:marble_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "marble_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:marble_chaotic_bricks",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "marble_chaotic_bricks"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:marble_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_circular"
     },
     {
@@ -48,17 +48,17 @@
     },
     {
       "block": "chisel:marble_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "marble_cuts"
     },
     {
       "block": "chisel:marble_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_dent"
     },
     {
       "block": "chisel:marble_encased_bricks",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_encased_bricks"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:marble_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "marble_jellybean"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:marble_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_mosaic"
     },
     {
@@ -102,6 +102,86 @@
       "name": "marble_pillar"
     },
     {
+      "block": "chisel:marble_pillar_carved",
+      "model_type": "top_bottom_side",
+      "name": "marble_pillar_carved"
+    },
+    {
+      "block": "chisel:marble_pillar_convex",
+      "model_type": "ctmv",
+      "name": "marble_pillar_convex"
+    },
+    {
+      "block": "chisel:marble_pillar_greek_decor",
+      "model_type": "ctmv",
+      "name": "marble_pillar_greek_decor"
+    },
+    {
+      "block": "chisel:marble_pillar_greek_greek",
+      "model_type": "ctmv",
+      "name": "marble_pillar_greek_greek"
+    },
+    {
+      "block": "chisel:marble_pillar_greek_plain",
+      "model_type": "ctmv",
+      "name": "marble_pillar_greek_plain"
+    },
+    {
+      "block": "chisel:marble_pillar_normal",
+      "model_type": "ctmv",
+      "name": "marble_pillar_normal"
+    },
+    {
+      "block": "chisel:marble_pillar_normal2",
+      "model_type": "ctmv",
+      "name": "marble_pillar_normal2"
+    },
+    {
+      "block": "chisel:marble_pillar_ornamental",
+      "model_type": "top_bottom_side",
+      "name": "marble_pillar_ornamental"
+    },
+    {
+      "block": "chisel:marble_pillar_plain_decor",
+      "model_type": "ctmv",
+      "name": "marble_pillar_plain_decor"
+    },
+    {
+      "block": "chisel:marble_pillar_plain_greek",
+      "model_type": "ctmv",
+      "name": "marble_pillar_plain_greek"
+    },
+    {
+      "block": "chisel:marble_pillar_plain_plain",
+      "model_type": "ctmv",
+      "name": "marble_pillar_plain_plain"
+    },
+    {
+      "block": "chisel:marble_pillar_rough",
+      "model_type": "ctmv",
+      "name": "marble_pillar_rough"
+    },
+    {
+      "block": "chisel:marble_pillar_simple",
+      "model_type": "ctmv",
+      "name": "marble_pillar_simple"
+    },
+    {
+      "block": "chisel:marble_pillar_wide_decor",
+      "model_type": "ctmv",
+      "name": "marble_pillar_wide_decor"
+    },
+    {
+      "block": "chisel:marble_pillar_wide_greek",
+      "model_type": "ctmv",
+      "name": "marble_pillar_wide_greek"
+    },
+    {
+      "block": "chisel:marble_pillar_wide_plain",
+      "model_type": "ctmv",
+      "name": "marble_pillar_wide_plain"
+    },
+    {
       "block": "chisel:marble_prism",
       "model_type": "cube_all",
       "name": "marble_prism"
@@ -113,7 +193,7 @@
     },
     {
       "block": "chisel:marble_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "marble_slanted"
     },
     {
@@ -133,7 +213,7 @@
     },
     {
       "block": "chisel:marble_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_tiles_large"
     },
     {
@@ -158,12 +238,12 @@
     },
     {
       "block": "chisel:marble_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_weaver"
     },
     {
       "block": "chisel:marble_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "marble_zag"
     }
   ]

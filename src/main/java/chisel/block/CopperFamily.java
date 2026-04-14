@@ -16,7 +16,7 @@ public class CopperFamily extends ChiselBlock {
                 .addVariant("copper_crate", props, VariantModelType.CONNECTED)
                 .addVariant("copper_machine", props)
                 .addVariant("copper_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("copper_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("copper_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

@@ -14,7 +14,7 @@ public class BronzeFamily extends ChiselBlock {
                 .addVariant("bronze_crate", props, VariantModelType.CONNECTED)
                 .addVariant("bronze_machine", props)
                 .addVariant("bronze_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("bronze_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("bronze_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

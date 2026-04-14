@@ -8,13 +8,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class NickelFamily extends ChiselBlock {
     public NickelFamily(BlockBehaviour.Properties props) {
         family = builder("nickel")
-                .addVariant("nickel_bad_greggy", props)
+                .addVariant("nickel_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("nickel_bolted", props)
-                .addVariant("nickel_caution", props)
+                .addVariant("nickel_caution", props, VariantModelType.CONNECTED)
                 .addVariant("nickel_crate", props)
                 .addVariant("nickel_machine", props)
-                .addVariant("nickel_scaffold", props)
-                .addVariant("nickel_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("nickel_scaffold", props, VariantModelType.CONNECTED)
+                .addVariant("nickel_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

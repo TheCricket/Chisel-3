@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_array"
+    "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_array",
+    "overlay_2x2": "chisel:block/mossy_cobblestone/mossy_cobblestone_array-2x2",
+    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_array"
   }
 }

@@ -29,7 +29,7 @@ public class GlowstoneFamily extends ChiselBlock {
                 .addVariant("glowstone_neon_panel", props)
                 .addVariant("glowstone_ornate", props)
                 .addVariant("glowstone_panel", props)
-                .addVariant("glowstone_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("glowstone_pillar", props, VariantModelType.TBS)
                 .addVariant("glowstone_prism", props)
                 .addVariant("glowstone_road", props)
                 .addVariant("glowstone_slanted", props)
@@ -39,7 +39,7 @@ public class GlowstoneFamily extends ChiselBlock {
                 .addVariant("glowstone_tiles_medium", props)
                 .addVariant("glowstone_tiles_medium_bismuth", props)
                 .addVariant("glowstone_triple_bricks", props)
-                .addVariant("glowstone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("glowstone_twisted", props, VariantModelType.TBS)
                 .family();
     }
 

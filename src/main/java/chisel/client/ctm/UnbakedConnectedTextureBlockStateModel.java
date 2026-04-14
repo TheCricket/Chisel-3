@@ -1,11 +1,7 @@
 package chisel.client.ctm;
 
 import chisel.Chisel;
-import chisel.client.ctm.logic.CTMLogic;
-import chisel.client.ctm.logic.CTMLogic2x2;
-import chisel.client.ctm.logic.CTMLogic3x3;
-import chisel.client.ctm.logic.CTMLogic4x4;
-import chisel.client.ctm.logic.CTMLogicHorizontal;
+import chisel.client.ctm.logic.*;
 import chisel.core.variant.Variant;
 import chisel.core.variant.VariantModelType;
 import com.mojang.datafixers.util.Pair;
@@ -138,6 +134,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
             Map<Direction, BakedQuad[]> multiblock3x3Quads = new EnumMap<>(Direction.class);
             Map<Direction, BakedQuad[]> multiblock4x4Quads = new EnumMap<>(Direction.class);
             Map<Direction, BakedQuad[]> horizontalQuads = new EnumMap<>(Direction.class);
+            Map<Direction, BakedQuad[]> verticalQuads = new EnumMap<>(Direction.class);
             Set<Direction> unculledFaces = new HashSet<>();
 
             Vector3f from = element.getFirst();
@@ -157,6 +154,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                 BakedQuad[] faceMultiblock3x3Quads = new BakedQuad[CTMLogic3x3.values().length];
                 BakedQuad[] faceMultiblock4x4Quads = new BakedQuad[CTMLogic4x4.values().length];
                 BakedQuad[] faceHorizontalQuads = new BakedQuad[CTMLogicHorizontal.values().length];
+                BakedQuad[] faceVerticalQuads = new BakedQuad[CTMLogicVertical.values().length];
 
                 // Slicing the face into 4 quadrants
                 for (int c = 0; c < 4; c++) {
@@ -212,7 +210,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                 }
 
                 // Bake 2x2 multiblock states for the entire face if applicable
-                if (variant.getModelType() == VariantModelType.MULTIBLOCK_2X2 && bakedOverlay2x2 != null) {
+                if ((variant.getModelType() == VariantModelType.MULTIBLOCK_2X2 || variant.getModelType() == VariantModelType.V4) && bakedOverlay2x2 != null) {
                     CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
                     for (CTMLogic2x2 logic : CTMLogic2x2.values()) {
                         CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
@@ -251,7 +249,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                 }
 
                 // Bake horizontal CTM states for the entire face if applicable
-                if ((variant.getModelType() == VariantModelType.CONNECTED_HORIZONTALLY || variant.getModelType() == VariantModelType.BOOKSHELF) && bakedOverlayHorizontal != null) {
+                if ((variant.getModelType() == VariantModelType.CTMH || variant.getModelType() == VariantModelType.BOOKSHELF) && bakedOverlayHorizontal != null) {
                     CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
                     Vector3f qFrom = from;
                     Vector3f qTo = to;
@@ -271,15 +269,24 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                 }
 
                 // Bake vertical CTM states for the entire face if applicable
-                if (variant.getModelType() == VariantModelType.CONNECTED_VERTICALLY && bakedOverlayVertical != null) {
-                    CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
-                    for (CTMLogicHorizontal logic : CTMLogicHorizontal.values()) {
-                        CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
-                        if (connFace.cullForDirection() == null) {
-                            unculledFaces.add(face);
+                if (variant.getModelType() == VariantModelType.CTMV) {
+                    Material.Baked bakedOverlayV = switch (face) {
+                        case UP -> bakedOverlayTop;
+                        case DOWN -> bakedOverlayBottom;
+                        default -> bakedOverlayVertical != null ? bakedOverlayVertical : bakedOverlaySide;
+                    };
+
+                    if (bakedOverlayV != null) {
+                        CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
+                        for (CTMLogicVertical logic : CTMLogicVertical.values()) {
+                            CuboidFace.UVs remappedUVs = face.getAxis().isHorizontal() ? logic.remapUVs(faceUvs) : faceUvs;
+                            CuboidFace connFace = new CuboidFace(cull, tintIndex, "", remappedUVs, Quadrant.R0);
+                            if (connFace.cullForDirection() == null) {
+                                unculledFaces.add(face);
+                            }
+                            faceVerticalQuads[logic.ordinal()] = FaceBakery.bakeQuad(baker, from, to,
+                                    connFace, bakedOverlayV, face, state, null, true, emissivity);
                         }
-                        faceHorizontalQuads[logic.ordinal()] = FaceBakery.bakeQuad(baker, from, to,
-                                connFace, bakedOverlayVertical, face, state, null, true, emissivity);
                     }
                 }
 
@@ -287,7 +294,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                     baseQuads.put(face, baseQuadList.toArray(new BakedQuad[0]));
                 }
                 connectedQuads.put(face, connQuads);
-                if (variant.getModelType() == VariantModelType.MULTIBLOCK_2X2) {
+                if (variant.getModelType() == VariantModelType.MULTIBLOCK_2X2 || variant.getModelType() == VariantModelType.V4) {
                     multiblock2x2Quads.put(face, faceMultiblock2x2Quads);
                 }
                 if (variant.getModelType() == VariantModelType.MULTIBLOCK_3X3) {
@@ -296,8 +303,11 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                 if (variant.getModelType() == VariantModelType.MULTIBLOCK_4X4) {
                     multiblock4x4Quads.put(face, faceMultiblock4x4Quads);
                 }
-                if (variant.getModelType() == VariantModelType.CONNECTED_HORIZONTALLY || variant.getModelType() == VariantModelType.CONNECTED_VERTICALLY || variant.getModelType() == VariantModelType.BOOKSHELF) {
+                if (variant.getModelType() == VariantModelType.CTMH || variant.getModelType() == VariantModelType.BOOKSHELF) {
                     horizontalQuads.put(face, faceHorizontalQuads);
+                }
+                if (variant.getModelType() == VariantModelType.CTMV) {
+                    verticalQuads.put(face, faceVerticalQuads);
                 }
             }
 
@@ -311,6 +321,7 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
                     multiblock3x3Quads,
                     multiblock4x4Quads,
                     horizontalQuads,
+                    verticalQuads,
                     bakedParticle != null ? bakedParticle.sprite() : null,
                     variant
             );
@@ -351,9 +362,9 @@ public class UnbakedConnectedTextureBlockStateModel implements CustomUnbakedBloc
         bakedOverlayBottom = overlayBottom != null ? baker.materials().get(overlayBottom, model) : bakedOverlay;
         bakedOverlaySide = overlaySide != null ? baker.materials().get(overlaySide, model) : bakedOverlay;
 
-        bakedOverlayTopConnected = overlayConnectedTop != null ? baker.materials().get(overlayConnectedTop, model) : (overlayConnectedTexture != null ? bakedOverlayConnected : null);
-        bakedOverlayBottomConnected = overlayConnectedBottom != null ? baker.materials().get(overlayConnectedBottom, model) : (overlayConnectedTexture != null ? bakedOverlayConnected : null);
-        bakedOverlaySideConnected = overlayConnectedSide != null ? baker.materials().get(overlayConnectedSide, model) : (overlayConnectedTexture != null ? bakedOverlayConnected : null);
+        bakedOverlayTopConnected = overlayConnectedTop != null ? baker.materials().get(overlayConnectedTop, model) : bakedOverlayTop;
+        bakedOverlayBottomConnected = overlayConnectedBottom != null ? baker.materials().get(overlayConnectedBottom, model) : bakedOverlayBottom;
+        bakedOverlaySideConnected = overlayConnectedSide != null ? baker.materials().get(overlayConnectedSide, model) : bakedOverlaySide;
 
         bakedOverlay2x2 = overlay2x2 != null ? baker.materials().get(overlay2x2, model) : null;
         bakedOverlay3x3 = overlay3x3 != null ? baker.materials().get(overlay3x3, model) : null;

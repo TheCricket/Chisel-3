@@ -14,7 +14,7 @@ public class CobaltFamily extends ChiselBlock {
                 .addVariant("cobalt_crate", props)
                 .addVariant("cobalt_machine", props)
                 .addVariant("cobalt_scaffold", props)
-                .addVariant("cobalt_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("cobalt_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

@@ -14,7 +14,7 @@ public class AluminumFamily extends ChiselBlock {
                 .addVariant("aluminum_crate", props, VariantModelType.CONNECTED)
                 .addVariant("aluminum_machine", props)
                 .addVariant("aluminum_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("aluminum_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("aluminum_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

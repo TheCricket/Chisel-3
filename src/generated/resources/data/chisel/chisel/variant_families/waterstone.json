@@ -3,7 +3,7 @@
   "variants": [
     {
       "block": "chisel:waterstone_array",
-      "model_type": "multi_layer_water",
+      "model_type": "multi_layer_water_2x2",
       "name": "waterstone_array"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:waterstone_chaotic_bricks",
-      "model_type": "multi_layer_water",
+      "model_type": "multi_layer_water_3x3",
       "name": "waterstone_chaotic_bricks"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "block": "chisel:waterstone_cuts",
-      "model_type": "multi_layer_water",
+      "model_type": "multi_layer_water_4x4",
       "name": "waterstone_cuts"
     },
     {
@@ -65,6 +65,11 @@
       "block": "chisel:waterstone_french_2",
       "model_type": "multi_layer_water",
       "name": "waterstone_french_2"
+    },
+    {
+      "block": "chisel:waterstone_jellybean",
+      "model_type": "multi_layer_water_2x2",
+      "name": "waterstone_jellybean"
     },
     {
       "block": "chisel:waterstone_layers",
@@ -108,7 +113,7 @@
     },
     {
       "block": "chisel:waterstone_slanted",
-      "model_type": "multi_layer_water",
+      "model_type": "multi_layer_water_2x2",
       "name": "waterstone_slanted"
     },
     {

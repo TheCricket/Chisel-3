@@ -28,7 +28,7 @@ public class GraniteFamily extends ChiselBlock {
                 .addVariant("granite_mosaic", props)
                 .addVariant("granite_ornate", props)
                 .addVariant("granite_panel", props)
-                .addVariant("granite_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("granite_pillar", props, VariantModelType.TBS)
                 .addVariant("granite_prism", props)
                 .addVariant("granite_raw", props)
                 .addVariant("granite_road", props)
@@ -40,7 +40,7 @@ public class GraniteFamily extends ChiselBlock {
                 .addVariant("granite_tiles_medium", props)
                 .addVariant("granite_tiles_small", props)
                 .addVariant("granite_triple_bricks", props)
-                .addVariant("granite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("granite_twisted", props, VariantModelType.TBS)
                 .addVariant("granite_weaver", props)
                 .addVariant("granite_zag", props)
                 .family();

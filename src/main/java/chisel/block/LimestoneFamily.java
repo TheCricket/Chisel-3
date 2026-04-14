@@ -27,7 +27,7 @@ public class LimestoneFamily extends ChiselBlock {
                 .addVariant("limestone_mosaic", props)
                 .addVariant("limestone_ornate", props)
                 .addVariant("limestone_panel", props)
-                .addVariant("limestone_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("limestone_pillar", props, VariantModelType.TBS)
                 .addVariant("limestone_prism", props)
                 .addVariant("limestone_road", props)
                 .addVariant("limestone_slanted", props)
@@ -38,7 +38,7 @@ public class LimestoneFamily extends ChiselBlock {
                 .addVariant("limestone_tiles_medium", props)
                 .addVariant("limestone_tiles_small", props)
                 .addVariant("limestone_triple_bricks", props)
-                .addVariant("limestone_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("limestone_twisted", props, VariantModelType.TBS)
                 .addVariant("limestone_weaver", props)
                 .addVariant("limestone_zag", props)
                 .family();

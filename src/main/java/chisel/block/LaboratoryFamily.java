@@ -10,9 +10,9 @@ public class LaboratoryFamily extends ChiselBlock {
         family = builder("laboratory")
                 .addVariant("laboratory_checkerboard", props)
                 .addVariant("laboratory_clearscreen", props, VariantModelType.CONNECTED)
-                .addVariant("laboratory_console_information", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("laboratory_console_left", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("laboratory_console_right", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_console_information", props, VariantModelType.TBS)
+                .addVariant("laboratory_console_left", props, VariantModelType.TBS)
+                .addVariant("laboratory_console_right", props, VariantModelType.TBS)
                 .addVariant("laboratory_floor", props)
                 .addVariant("laboratory_panel_clear", props)
                 .addVariant("laboratory_panel_dotted", props)
@@ -22,11 +22,11 @@ public class LaboratoryFamily extends ChiselBlock {
                 .addVariant("laboratory_tiles_enamelled_small", props)
                 .addVariant("laboratory_tiles_large", props)
                 .addVariant("laboratory_tiles_small", props)
-                .addVariant("laboratory_tiles_steel_large", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("laboratory_tiles_steel_small", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_tiles_steel_large", props, VariantModelType.TBS)
+                .addVariant("laboratory_tiles_steel_small", props, VariantModelType.TBS)
                 .addVariant("laboratory_wall", props)
                 .addVariant("laboratory_wall_rounded", props, VariantModelType.CONNECTED)
-                .addVariant("laboratory_wall_vent", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("laboratory_wall_vent", props, VariantModelType.TBS)
                 .family();
     }
 

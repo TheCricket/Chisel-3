@@ -66,6 +66,7 @@ public class ChiselBlocks {
     public static final LimestoneFamily LIMESTONE = new LimestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final JackOLanternFamily JACK_O_LANTERN = new JackOLanternFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
     public static final MarbleFamily MARBLE = new MarbleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
+    public static final MilitaryFamily MILITARY = new MilitaryFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final MossyCobblestoneFamily MOSSY_COBBLESTONE = new MossyCobblestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
     public static final MossyTempleFamily MOSSY_TEMPLE = new MossyTempleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final NetherBrickFamily NETHERBRICK = new NetherBrickFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
@@ -79,9 +80,8 @@ public class ChiselBlocks {
     public static final RedstoneFamily REDSTONE = new RedstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
     public static final RoadLineFamily ROAD_LINE = new RoadLineFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollision());
     public static final SandstoneFamily SANDSTONE = new SandstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
+    public static final ShingleFamily SHINGLE = new ShingleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final SilverFamily SILVER = new SilverFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    //public static final SnakestoneSandFamily SNAKESTONE_SAND = new SnakestoneSandFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
-    //public static final SnakestoneStoneFamily SNAKESTONE_STONE = new SnakestoneStoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
     public static final SpruceFamily SPRUCE = new SpruceFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
     public static final SteelFamily STEEL = new SteelFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final StoneBricksFamily STONE_BRICKS = new StoneBricksFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS));
@@ -155,9 +155,9 @@ public class ChiselBlocks {
                 CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,
-                LEAF, LIMESTONE, JACK_O_LANTERN, MARBLE, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
+                LEAF, LIMESTONE, JACK_O_LANTERN, MARBLE, MILITARY, MOSSY_COBBLESTONE, MOSSY_TEMPLE, NETHERBRICK, NETHERRACK,
                 NICKEL, OAK, OBSIDIAN, PAPERWALL, PLATINUM,
-                PUMPKIN, REDSTONE, ROAD_LINE, SANDSTONE, SILVER,
+                PUMPKIN, REDSTONE, ROAD_LINE, SANDSTONE, SHINGLE, SILVER,
                 SPRUCE, STEEL, STONE_BRICKS, TECHNICAL, TEMPLE, TIN, TORCH, TYRIAN, URANIUM, VALENTINES, VOIDSTONE, WARNING,
                 WATERSTONE, WOOLEN_CLAY
         ));

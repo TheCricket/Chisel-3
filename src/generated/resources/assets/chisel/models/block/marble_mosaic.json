@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/marble/marble_mosaic"
+    "all": "chisel:block/marble/marble_mosaic",
+    "overlay_connected": "chisel:block/marble/marble_mosaic-ctm",
+    "overlay_texture": "chisel:block/marble/marble_mosaic",
+    "particle": "chisel:block/marble/marble_mosaic"
   }
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/uranium/uranium_bad_greggy"
+    "all": "chisel:block/uranium/uranium_bad_greggy",
+    "overlay_connected": "chisel:block/uranium/uranium_bad_greggy-ctm",
+    "overlay_texture": "chisel:block/uranium/uranium_bad_greggy",
+    "particle": "chisel:block/uranium/uranium_bad_greggy"
   }
 }

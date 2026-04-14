@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/marble/marble_tiles_large"
+    "all": "chisel:block/marble/marble_tiles_large",
+    "overlay_connected": "chisel:block/marble/marble_tiles_large-ctm",
+    "overlay_texture": "chisel:block/marble/marble_tiles_large",
+    "particle": "chisel:block/marble/marble_tiles_large"
   }
 }

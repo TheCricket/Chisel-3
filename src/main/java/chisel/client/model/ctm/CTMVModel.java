@@ -18,17 +18,17 @@ public class CTMVModel extends VariantModel {
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
-                .put(TextureSlot.PARTICLE, variant.getMaterial())
-                .put(TextureSlot.ALL, variant.getMaterial())
+                .put(TextureSlot.PARTICLE, variant.getMaterial("side"))
+                .put(TextureSlot.ALL, variant.getMaterial("side"))
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
                 .put(TextureSlot.SIDE, variant.getMaterial("side"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial())
+                .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial("side"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_TOP, variant.getMaterial("top"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM, variant.getMaterial("bottom"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_SIDE, variant.getMaterial("side"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctmv"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("ctmv"));
+                .put(ChiselTextureSlots.CTM_OVERLAY_SIDE_CONNECTED, variant.getMaterial("side-ctm"))
+                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("side-ctm"));
     }
 
     @Override

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/uranium/uranium_scaffold"
+    "all": "chisel:block/uranium/uranium_scaffold",
+    "overlay_connected": "chisel:block/uranium/uranium_scaffold-ctm",
+    "overlay_texture": "chisel:block/uranium/uranium_scaffold",
+    "particle": "chisel:block/uranium/uranium_scaffold"
   }
 }

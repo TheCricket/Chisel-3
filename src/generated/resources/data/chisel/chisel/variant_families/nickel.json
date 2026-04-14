@@ -3,7 +3,7 @@
   "variants": [
     {
       "block": "chisel:nickel_bad_greggy",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "nickel_bad_greggy"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:nickel_caution",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "nickel_caution"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "block": "chisel:nickel_scaffold",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "nickel_scaffold"
     },
     {

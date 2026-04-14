@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/military/military_rebel_caution_red",
+    "overlay_connected": "chisel:block/military/military_rebel_caution_red-ctm",
+    "overlay_texture": "chisel:block/military/military_rebel_caution_red",
+    "particle": "chisel:block/military/military_rebel_caution_red"
+  }
+}

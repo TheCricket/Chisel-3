@@ -14,7 +14,7 @@ public class ElectrumFamily extends ChiselBlock {
                 .addVariant("electrum_crate", props)
                 .addVariant("electrum_machine", props)
                 .addVariant("electrum_scaffold", props)
-                .addVariant("electrum_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("electrum_thermal", props, VariantModelType.TBS)
                 .family();
     }
 

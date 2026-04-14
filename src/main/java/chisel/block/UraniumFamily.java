@@ -8,18 +8,20 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class UraniumFamily extends ChiselBlock {
     public UraniumFamily(BlockBehaviour.Properties props) {
         family = builder("uranium")
-                .addVariant("uranium_bad_greggy", props)
+                .addVariant("uranium_125", props)
+                .addVariant("uranium_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("uranium_bolted", props)
-                .addVariant("uranium_caution", props)
-                .addVariant("uranium_crate", props)
+                .addVariant("uranium_caution", props, VariantModelType.CONNECTED)
+                .addVariant("uranium_crate", props, VariantModelType.CONNECTED)
                 .addVariant("uranium_machine", props)
-                .addVariant("uranium_scaffold", props)
-                .addVariant("uranium_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("uranium_scaffold", props, VariantModelType.CONNECTED)
+                .addVariant("uranium_thermal", props, VariantModelType.TBS)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
+        lang.addBlock(getVariant("uranium_125"), "Uranium", "125");
         lang.addBlock(getVariant("uranium_bad_greggy"), "Uranium", "Bad Greggy");
         lang.addBlock(getVariant("uranium_bolted"), "Uranium", "Bolted");
         lang.addBlock(getVariant("uranium_caution"), "Uranium", "Caution");
@@ -29,4 +31,5 @@ public class UraniumFamily extends ChiselBlock {
         lang.addBlock(getVariant("uranium_thermal"), "Uranium", "Thermal");
     }
 }
+
 

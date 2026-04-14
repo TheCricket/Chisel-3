@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/shingles/shingles_3",
+    "overlay_2x2": "chisel:block/shingles/shingles_3-v4",
+    "particle": "chisel:block/shingles/shingles_3"
+  }
+}

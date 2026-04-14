@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/waterstone/waterstone_jellybean",
+    "layer1": "chisel:block/waterstone/water_still",
+    "overlay_2x2": "chisel:block/waterstone/waterstone_jellybean-2x2",
+    "particle": "chisel:block/waterstone/waterstone_jellybean"
+  }
+}

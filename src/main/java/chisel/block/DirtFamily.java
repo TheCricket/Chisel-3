@@ -17,7 +17,7 @@ public class DirtFamily extends ChiselBlock {
                 .addVariant("dirt_chunky", props)
                 .addVariant("dirt_cobble", props)
                 .addVariant("dirt_happy", props)
-                .addVariant("dirt_horizontal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("dirt_horizontal", props, VariantModelType.TBS)
                 .addVariant("dirt_layers", props)
                 .addVariant("dirt_netherbricks", props)
                 .addVariant("dirt_plate", props)
