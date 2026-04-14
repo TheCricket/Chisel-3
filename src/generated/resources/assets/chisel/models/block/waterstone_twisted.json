@@ -3,7 +3,8 @@
   "textures": {
     "bottom": "chisel:block/waterstone/waterstone_twisted-bottom",
     "layer0": "chisel:block/waterstone/waterstone_twisted-bg",
-    "particle": "chisel:block/waterstone/waterstone_twisted-bg",
+    "layer1": "chisel:block/waterstone/waterstone_twisted",
+    "particle": "chisel:block/waterstone/waterstone_twisted",
     "side": "chisel:block/waterstone/waterstone_twisted-side",
     "top": "chisel:block/waterstone/waterstone_twisted-top"
   }

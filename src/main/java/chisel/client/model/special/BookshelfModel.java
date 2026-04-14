@@ -26,6 +26,7 @@ public class BookshelfModel extends VariantModel {
                 .put(TextureSlot.BOTTOM, getBlockMaterial())
                 .put(TextureSlot.SIDE, getMaterial())
                 .put(TextureSlot.LAYER0, getBlockMaterial())
+                .put(TextureSlot.LAYER1, getBlockMaterial())
                 .put(ChiselTextureSlots.CTM_BASE, getBlockMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, getMaterialCTM());
     }

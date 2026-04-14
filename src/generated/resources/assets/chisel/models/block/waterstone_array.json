@@ -1,8 +1,9 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
     "all": "chisel:block/waterstone/waterstone_array",
-    "layer1": "chisel:block/waterstone/water_still",
+    "layer0": "chisel:block/waterstone/water_still",
+    "layer1": "chisel:block/waterstone/waterstone_array",
     "overlay_2x2": "chisel:block/waterstone/waterstone_array-2x2",
     "particle": "chisel:block/waterstone/waterstone_array"
   }

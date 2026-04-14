@@ -18,8 +18,8 @@ public class WaterstoneModel extends VariantModel {
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
-                .put(TextureSlot.LAYER1, new Material(Chisel.prefix("block/%s/water_still".formatted(variant.getFamily().getFamilyName()))))
-                .put(TextureSlot.LAYER0, variant.getMaterial());
+                .put(TextureSlot.LAYER0, new Material(Chisel.prefix("block/%s/water_still".formatted(variant.getFamily().getFamilyName()))))
+                .put(TextureSlot.LAYER1, variant.getMaterial());
     }
 
     @Override

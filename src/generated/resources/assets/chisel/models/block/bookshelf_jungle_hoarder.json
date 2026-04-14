@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/jungle_planks",
     "bottom": "minecraft:block/jungle_planks",
     "layer0": "minecraft:block/jungle_planks",
+    "layer1": "minecraft:block/jungle_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_hoarder-ctm",
     "particle": "minecraft:block/jungle_planks",
     "side": "chisel:block/bookshelf/bookshelf_hoarder",

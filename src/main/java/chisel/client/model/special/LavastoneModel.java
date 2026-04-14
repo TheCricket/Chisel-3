@@ -12,7 +12,7 @@ public class LavastoneModel extends MultiLayerModel {
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
-                .put(TextureSlot.LAYER1, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
-                .put(TextureSlot.LAYER0, variant.getMaterial());
+                .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
+                .put(TextureSlot.LAYER1, variant.getMaterial());
     }
 }

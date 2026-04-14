@@ -3,7 +3,8 @@
   "textures": {
     "bottom": "chisel:block/waterstone/waterstone_pillar-bottom",
     "layer0": "chisel:block/waterstone/waterstone_pillar-bg",
-    "particle": "chisel:block/waterstone/waterstone_pillar-bg",
+    "layer1": "chisel:block/waterstone/waterstone_pillar",
+    "particle": "chisel:block/waterstone/waterstone_pillar",
     "side": "chisel:block/waterstone/waterstone_pillar-side",
     "top": "chisel:block/waterstone/waterstone_pillar-top"
   }

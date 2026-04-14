@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/lavastone/lavastone_zag",
     "base_texture": "chisel:block/lavastone/lavastone_zag-bg",
-    "layer0": "chisel:block/lavastone/lavastone_zag",
-    "layer1": "chisel:block/lavastone/lavastone_zag-bg",
+    "layer0": "chisel:block/lavastone/lavastone_zag-bg",
+    "layer1": "chisel:block/lavastone/lavastone_zag",
     "overlay_connected": "chisel:block/lavastone/lavastone_zag-ctm",
     "overlay_texture": "chisel:block/lavastone/lavastone_zag",
     "particle": "chisel:block/lavastone/lavastone_zag"

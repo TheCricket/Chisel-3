@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/warped_planks",
     "bottom": "minecraft:block/warped_planks",
     "layer0": "minecraft:block/warped_planks",
+    "layer1": "minecraft:block/warped_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_abandoned-ctm",
     "particle": "minecraft:block/warped_planks",
     "side": "chisel:block/bookshelf/bookshelf_abandoned",

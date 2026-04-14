@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/acacia_planks",
     "bottom": "minecraft:block/acacia_planks",
     "layer0": "minecraft:block/acacia_planks",
+    "layer1": "minecraft:block/acacia_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_abandoned-ctm",
     "particle": "minecraft:block/acacia_planks",
     "side": "chisel:block/bookshelf/bookshelf_abandoned",

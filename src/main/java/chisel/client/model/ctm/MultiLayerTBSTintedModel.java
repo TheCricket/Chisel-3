@@ -16,10 +16,11 @@ public class MultiLayerTBSTintedModel extends VariantModel {
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
-                .put(TextureSlot.PARTICLE, variant.getMaterial("bg"))
+                .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
                 .put(TextureSlot.SIDE, variant.getMaterial("side"))
+                .put(TextureSlot.LAYER1, variant.getMaterial())
                 .put(TextureSlot.LAYER0, variant.getMaterial("bg"));
     }
 

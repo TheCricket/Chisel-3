@@ -17,8 +17,8 @@ public class MultiLayerModel extends VariantModel {
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
-                .put(TextureSlot.LAYER1, variant.getMaterial("bg"))
-                .put(TextureSlot.LAYER0, variant.getMaterial());
+                .put(TextureSlot.LAYER0, variant.getMaterial("bg"))
+                .put(TextureSlot.LAYER1, variant.getMaterial());
     }
 
     @Override

@@ -20,6 +20,7 @@ public class MultiLayerTBSModel extends VariantModel {
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
                 .put(TextureSlot.SIDE, variant.getMaterial("side"))
+                .put(TextureSlot.LAYER1, variant.getMaterial())
                 .put(TextureSlot.LAYER0, variant.getMaterial("bg"));
     }
 

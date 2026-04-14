@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/waterstone/waterstone_tiles_large",
     "base_texture": "chisel:block/waterstone/waterstone_tiles_large-bg",
-    "layer0": "chisel:block/waterstone/waterstone_tiles_large",
-    "layer1": "chisel:block/waterstone/waterstone_tiles_large-bg",
+    "layer0": "chisel:block/waterstone/waterstone_tiles_large-bg",
+    "layer1": "chisel:block/waterstone/waterstone_tiles_large",
     "overlay_connected": "chisel:block/waterstone/waterstone_tiles_large-ctm",
     "overlay_texture": "chisel:block/waterstone/waterstone_tiles_large",
     "particle": "chisel:block/waterstone/waterstone_tiles_large"

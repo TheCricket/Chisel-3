@@ -33,7 +33,8 @@ public class WaterstoneMultiblockModel extends VariantModel {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.ALL, variant.getMaterial())
-                .put(TextureSlot.LAYER1, new Material(Chisel.prefix("block/%s/water_still".formatted(variant.getFamily().getFamilyName()))))
+                .put(TextureSlot.LAYER0, new Material(Chisel.prefix("block/%s/water_still".formatted(variant.getFamily().getFamilyName()))))
+                .put(TextureSlot.LAYER1, variant.getMaterial())
                 .put(overlaySlot, variant.getMaterial(size + "x" + size));
     }
 
@@ -46,6 +47,7 @@ public class WaterstoneMultiblockModel extends VariantModel {
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)
                 .variant(variant)
+                .baseTintIndex(0)
                 .connectedFace(Direction.UP)
                 .connectedFace(Direction.DOWN)
                 .connectedFace(Direction.NORTH)

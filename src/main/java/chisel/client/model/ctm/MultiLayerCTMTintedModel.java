@@ -20,8 +20,8 @@ public class MultiLayerCTMTintedModel extends VariantModel {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.ALL, variant.getMaterial())
-                .put(TextureSlot.LAYER0, variant.getMaterial())
-                .put(TextureSlot.LAYER1, variant.getMaterial("bg"))
+                .put(TextureSlot.LAYER1, variant.getMaterial())
+                .put(TextureSlot.LAYER0, variant.getMaterial("bg"))
                 .put(ChiselTextureSlots.CTM_BASE, variant.getMaterial("bg"))
                 .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("ctm"));

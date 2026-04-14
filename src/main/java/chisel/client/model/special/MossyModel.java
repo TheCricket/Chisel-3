@@ -19,8 +19,8 @@ public class MossyModel extends VariantModel {
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
-                .put(TextureSlot.LAYER1, new Material(Chisel.prefix("block/mossy_cobblestone/mossy")))
-                .put(TextureSlot.LAYER0, variant.getMaterial());
+                .put(TextureSlot.LAYER0, new Material(Chisel.prefix("block/mossy_cobblestone/mossy")))
+                .put(TextureSlot.LAYER1, variant.getMaterial());
     }
 
     @Override

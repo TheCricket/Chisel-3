@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/oak_planks",
     "bottom": "minecraft:block/oak_planks",
     "layer0": "minecraft:block/oak_planks",
+    "layer1": "minecraft:block/oak_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_historian-ctm",
     "particle": "minecraft:block/oak_planks",
     "side": "chisel:block/bookshelf/bookshelf_historian",

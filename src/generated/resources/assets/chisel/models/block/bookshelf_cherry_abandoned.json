@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/cherry_planks",
     "bottom": "minecraft:block/cherry_planks",
     "layer0": "minecraft:block/cherry_planks",
+    "layer1": "minecraft:block/cherry_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_abandoned-ctm",
     "particle": "minecraft:block/cherry_planks",
     "side": "chisel:block/bookshelf/bookshelf_abandoned",

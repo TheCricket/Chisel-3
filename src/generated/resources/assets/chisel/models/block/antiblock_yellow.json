@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/antiblock/antiblock_yellow",
     "base_texture": "chisel:block/antiblock/antiblock_yellow-bg",
-    "layer0": "chisel:block/antiblock/antiblock_yellow",
-    "layer1": "chisel:block/antiblock/antiblock_yellow-bg",
+    "layer0": "chisel:block/antiblock/antiblock_yellow-bg",
+    "layer1": "chisel:block/antiblock/antiblock_yellow",
     "overlay_connected": "chisel:block/antiblock/antiblock_yellow-ctm",
     "overlay_texture": "chisel:block/antiblock/antiblock_yellow",
     "particle": "chisel:block/antiblock/antiblock_yellow"

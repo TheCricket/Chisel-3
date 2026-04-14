@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/pale_oak_planks",
     "bottom": "minecraft:block/pale_oak_planks",
     "layer0": "minecraft:block/pale_oak_planks",
+    "layer1": "minecraft:block/pale_oak_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_cans-ctm",
     "particle": "minecraft:block/pale_oak_planks",
     "side": "chisel:block/bookshelf/bookshelf_cans",

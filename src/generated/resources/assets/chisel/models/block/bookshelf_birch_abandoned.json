@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/birch_planks",
     "bottom": "minecraft:block/birch_planks",
     "layer0": "minecraft:block/birch_planks",
+    "layer1": "minecraft:block/birch_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_abandoned-ctm",
     "particle": "minecraft:block/birch_planks",
     "side": "chisel:block/bookshelf/bookshelf_abandoned",

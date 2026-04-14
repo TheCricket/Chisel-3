@@ -4,6 +4,7 @@
     "base_texture": "minecraft:block/spruce_planks",
     "bottom": "minecraft:block/spruce_planks",
     "layer0": "minecraft:block/spruce_planks",
+    "layer1": "minecraft:block/spruce_planks",
     "overlay_horizontal": "chisel:block/bookshelf/bookshelf_historian-ctm",
     "particle": "minecraft:block/spruce_planks",
     "side": "chisel:block/bookshelf/bookshelf_historian",
