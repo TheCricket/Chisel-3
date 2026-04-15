@@ -8,12 +8,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class ElectrumFamily extends ChiselBlock {
     public ElectrumFamily(BlockBehaviour.Properties props) {
         family = builder("electrum")
-                .addVariant("electrum_bad_greggy", props)
+                .addVariant("electrum_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("electrum_bolted", props)
-                .addVariant("electrum_caution", props)
-                .addVariant("electrum_crate", props)
+                .addVariant("electrum_caution", props, VariantModelType.CONNECTED)
+                .addVariant("electrum_crate", props, VariantModelType.CONNECTED)
                 .addVariant("electrum_machine", props)
-                .addVariant("electrum_scaffold", props)
+                .addVariant("electrum_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("electrum_thermal", props, VariantModelType.TBS)
                 .family();
     }
