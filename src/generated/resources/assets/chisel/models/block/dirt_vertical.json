@@ -1,6 +1,18 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/dirt/dirt_vertical"
+    "all": "chisel:block/dirt/dirt_vertical",
+    "bottom": "chisel:block/dirt/dirt_vertical-bottom",
+    "overlay_bottom": "chisel:block/dirt/dirt_vertical-bottom",
+    "overlay_bottom_connected": "chisel:block/dirt/dirt_vertical-bottom-ctm",
+    "overlay_connected": "chisel:block/dirt/dirt_vertical-ctm",
+    "overlay_side": "chisel:block/dirt/dirt_vertical-side",
+    "overlay_side_connected": "chisel:block/dirt/dirt_vertical-side-ctm",
+    "overlay_texture": "chisel:block/dirt/dirt_vertical",
+    "overlay_top": "chisel:block/dirt/dirt_vertical-top",
+    "overlay_top_connected": "chisel:block/dirt/dirt_vertical-top-ctm",
+    "particle": "chisel:block/dirt/dirt_vertical",
+    "side": "chisel:block/dirt/dirt_vertical-side",
+    "top": "chisel:block/dirt/dirt_vertical-top"
   }
 }

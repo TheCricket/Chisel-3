@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/dirt_vertical"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/dirt_vertical",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:dirt_vertical",
+    "model_type": "connected_tbs",
+    "name": "dirt_vertical"
   }
 }
