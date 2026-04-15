@@ -1,0 +1,31 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_tint_index": 0,
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/lavastone_jellybean",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:lavastone_jellybean",
+    "model_type": "lava_2x2",
+    "name": "lavastone_jellybean"
+  }
+}
