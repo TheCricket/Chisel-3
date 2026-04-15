@@ -9,7 +9,7 @@ public class FactoryFamily extends ChiselBlock {
     public FactoryFamily(BlockBehaviour.Properties props) {
         family = builder("factory")
                 .addVariant("factory_circuit", props, VariantModelType.CONNECTED)
-                .addVariant("factory_column", props, VariantModelType.TBS)
+                .addVariant("factory_column", props, VariantModelType.CONNECTED_TBS)
                 .addVariant("factory_dots", props, VariantModelType.CONNECTED)
                 .addVariant("factory_frame_blue", props, VariantModelType.CONNECTED)
                 .addVariant("factory_gold_plate", props, VariantModelType.CONNECTED)
@@ -25,7 +25,7 @@ public class FactoryFamily extends ChiselBlock {
                 .addVariant("factory_rust2", props, VariantModelType.CONNECTED)
                 .addVariant("factory_rust_plates", props, VariantModelType.CONNECTED)
                 .addVariant("factory_tile_mosaic", props, VariantModelType.CONNECTED)
-                .addVariant("factory_vent", props, VariantModelType.TBS)
+                .addVariant("factory_vent", props, VariantModelType.CONNECTED_TBS)
                 .addVariant("factory_wireframe", props, VariantModelType.CONNECTED)
                 .addVariant("factory_wireframe_blue", props, VariantModelType.CONNECTED)
                 .addVariant("factory_wireframe_white", props, VariantModelType.CONNECTED)
