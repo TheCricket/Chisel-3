@@ -1,123 +1,88 @@
 # Roadmap
 
-Initial pass is just textures
+### Textures to make
 
-- [X] Acacia
-- [X] Aluminum
-- [X] Andesite
-- [X] Antiblock
-- [X] Birch
-- [X] Bookshelf
-- [X] Bricks
-- [X] Bronze
-- [ ] Carpet
-- [ ] Carpet Floor
-- [X] Cloud
-- [X] Cobblestone
-- [ ] Concrete
-- [X] Copper
-- [X] Dark Oak
-- [X] Diamond
-- [X] Diorite
-- [X] Dirt
-- [X] Emerald
-- [X] Energized Voidstone
-- [X] Energized Voidstone Pillar
-- [X] Factory
-- [X] Futura
-- [X] Glass
-- [ ] Glass Pane
-- [X] Glowstone
-- [X] Gold
-- [X] Granite
-- [X] Grimstone
-- [X] Hex Plating
-- [X] Holystone
-- [X] Ice
-- [X] Ice Pillar
-- [X] Iron
-- [X] Iron Bars
-- [X] Jungle Planks
-- [X] Laboratory
-- [X] Lapis
-- [X] Large Hex Plating
-- [X] Lavastone
-- [X] Lead
-- [X] Leaf
-- [X] Limestone
-- [ ] Lit Pumpkin (Rename to jack-o-lantern when I get to it)
-- [X] Marble
-- [X] Mossy Cobblestone
-- [X] Mossy Temple
-- [ ] Nether Bricks
-- [ ] Netherrack
-- [X] Oak
-- [ ] Obsidian
-- [ ] Packed Ice
-- [ ] Packed Ice Pillar
-- [ ] Paper wall
-- [ ] Paper wall block
-- [ ] Pumpkin
-- [ ] Redstone
-- [ ] Road line
-- [ ] Runic voidstone
-- [ ] Sandstone
-- [X] Silver
-- [ ] Snakestone Sand
-- [ ] Snakestone Stone
-- [X] Spruce
-- [X] Stained glass black
-- [X] Stained glass blue
-- [X] Stained glass brown
-- [X] Stained glass cyan
-- [X] Stained glass gray
-- [X] Stained glass green
-- [X] Stained glass light blue
-- [X] Stained glass light gray
-- [X] Stained glass lime
-- [X] Stained glass magenta
-- [X] Stained glass orange
-- [X] Stained glass pink
-- [X] Stained glass purple
-- [X] Stained glass red
-- [X] Stained glass white
-- [X] Stained glass yellow
-- [X] Stained glass pane black
-- [X] Stained glass pane blue
-- [X] Stained glass pane brown
-- [X] Stained glass pane cyan
-- [X] Stained glass pane gray
-- [X] Stained glass pane green
-- [X] Stained glass pane light blue
-- [X] Stained glass pane light gray
-- [X] Stained glass pane lime
-- [X] Stained glass pane magenta
-- [X] Stained glass pane orange
-- [X] Stained glass pane pink
-- [X] Stained glass pane purple
-- [X] Stained glass pane red
-- [X] Stained glass pane white
-- [X] Stained glass pane yellow
-- [X] Steel
-- [ ] Stone Bricks
-- [ ] Technical
-- [ ] Temple
-- [ ] Tin
-- [ ] Torch
-- [ ] Tyrian
-- [X] Uranium
-- [X] Valentines
-- [X] Voidstone
-- [X] Warning
-- [ ] Waterstone
-- [ ] Woolen Clay
-
-## Items
-- [ ] Ball o' Moss
-- [X] Chisel
-- [ ] Diamond Chisel
-- [ ] Obsidian Chisel
-- [ ] Cloud in a Bottle
-- [ ] Smashing Rock
-- [ ] Upgrades
-- [ ] Not an item but auto chisel
+- [ ] `chisel:block/dirt_bricks`
+    - [ ] `chisel:block/dirt/dirt_bricks-bottom`
+    - [ ] `chisel:block/dirt/dirt_bricks-bottom-ctm`
+    - [ ] `chisel:block/dirt/dirt_bricks-side`
+    - [ ] `chisel:block/dirt/dirt_bricks-top`
+    - [ ] `chisel:block/dirt/dirt_bricks-top-ctm`
+- [ ] `chisel:block/military_rebel_camo_secluded`
+    - [ ] `chisel:block/military/military_rebel_camo_secluded`
+- [ ] `chisel:block/dirt_vert`
+    - [ ] `chisel:block/dirt/dirt_vert-bottom`
+    - [ ] `chisel:block/dirt/dirt_vert-bottom-ctm`
+    - [ ] `chisel:block/dirt/dirt_vert-side`
+    - [ ] `chisel:block/dirt/dirt_vert-top`
+    - [ ] `chisel:block/dirt/dirt_vert-top-ctm`
+- [ ] `chisel:block/dark_oak_planks_crude_paneling`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_crude_paneling-3x3`
+- [ ] `chisel:block/military_rebel_camo`
+    - [ ] `chisel:block/military/military_rebel_camo`
+- [ ] `chisel:block/military_imperial_camo`
+    - [ ] `chisel:block/military/military_imperial_camo`
+- [ ] `chisel:block/military_imperial_camo_secluded`
+    - [ ] `chisel:block/military/military_imperial_camo_secluded`
+- [ ] `chisel:block/waterstone_twisted`
+    - [ ] `chisel:block/waterstone/waterstone_twisted`
+- [ ] `chisel:block/dark_oak_planks_braced`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_braced-bottom`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_braced-bottom-ctm`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_braced-side`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_braced-top`
+    - [ ] `chisel:block/dark_oak_planks/dark_oak_planks_braced-top-ctm`
+- [ ] `chisel:block/shingles_1`
+    - [ ] `chisel:block/shingles/shingles_1`
+- [ ] `chisel:block/crimson_planks_braced`
+    - [ ] `chisel:block/crimson_planks/crimson_planks_braced`
+    - [ ] `chisel:block/crimson_planks/crimson_planks_braced-bottom`
+    - [ ] `chisel:block/crimson_planks/crimson_planks_braced-bottom-ctm`
+- [ ] `chisel:block/shingles_3`
+    - [ ] `chisel:block/shingles/shingles_3`
+- [ ] `chisel:block/shingles_2`
+    - [ ] `chisel:block/shingles/shingles_2`
+- [ ] `chisel:block/factory_column`
+    - [ ] `chisel:block/factory/factory_column`
+    - [ ] `chisel:block/factory/factory_column-bottom-ctm`
+    - [ ] `chisel:block/factory/factory_column-top-ctm`
+- [ ] `chisel:block/oak_planks_braced`
+    - [ ] `chisel:block/oak_planks/oak_planks_braced-bottom`
+    - [ ] `chisel:block/oak_planks/oak_planks_braced-bottom-ctm`
+    - [ ] `chisel:block/oak_planks/oak_planks_braced-side`
+    - [ ] `chisel:block/oak_planks/oak_planks_braced-top`
+    - [ ] `chisel:block/oak_planks/oak_planks_braced-top-ctm`
+- [ ] `chisel:block/carpet_grey`
+    - [ ] `chisel:block/carpet/carpet_grey`
+- [ ] `chisel:block/shingles_5`
+    - [ ] `chisel:block/shingles/shingles_5`
+- [ ] `chisel:block/shingles_4`
+    - [ ] `chisel:block/shingles/shingles_4`
+- [ ] `chisel:block/waterstone_pillar`
+    - [ ] `chisel:block/waterstone/waterstone_pillar`
+- [ ] `chisel:block/factory_vent`
+    - [ ] `chisel:block/factory/factory_vent`
+    - [ ] `chisel:block/factory/factory_vent-bottom-ctm`
+    - [ ] `chisel:block/factory/factory_vent-top-ctm`
+- [ ] `chisel:block/birch_planks_braced`
+    - [ ] `chisel:block/birch_planks/birch_planks_braced-bottom`
+    - [ ] `chisel:block/birch_planks/birch_planks_braced-bottom-ctm`
+    - [ ] `chisel:block/birch_planks/birch_planks_braced-side`
+    - [ ] `chisel:block/birch_planks/birch_planks_braced-top`
+    - [ ] `chisel:block/birch_planks/birch_planks_braced-top-ctm`
+- [ ] `chisel:block/shingles_6`
+    - [ ] `chisel:block/shingles/shingles_6`
+- [ ] `chisel:block/dirt_vertical`
+    - [ ] `chisel:block/dirt/dirt_vertical-bottom`
+    - [ ] `chisel:block/dirt/dirt_vertical-bottom-ctm`
+    - [ ] `chisel:block/dirt/dirt_vertical-side`
+    - [ ] `chisel:block/dirt/dirt_vertical-top`
+    - [ ] `chisel:block/dirt/dirt_vertical-top-ctm`
+- [ ] `chisel:block/acacia_planks_braced`
+    - [ ] `chisel:block/acacia_planks/acacia_planks_braced`
+- [ ] `chisel:block/jungle_planks_braced`
+    - [ ] `chisel:block/jungle_planks/jungle_planks_braced-bottom`
+    - [ ] `chisel:block/jungle_planks/jungle_planks_braced-bottom-ctm`
+    - [ ] `chisel:block/jungle_planks/jungle_planks_braced-side`
+    - [ ] `chisel:block/jungle_planks/jungle_planks_braced-top`
+    - [ ] `chisel:block/jungle_planks/jungle_planks_braced-top-ctm`
