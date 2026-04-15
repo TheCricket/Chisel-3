@@ -7,6 +7,7 @@ import chisel.client.model.TopBottomSideModel;
 import chisel.client.model.ctm.*;
 import chisel.client.model.special.*;
 import chisel.client.model.special.lavastone.LavastoneModel;
+import chisel.client.model.special.lavastone.LavastoneMultiblockModel;
 import chisel.client.model.special.lavastone.LavastoneTBSModel;
 import chisel.client.model.special.waterstone.WaterstoneModel;
 import chisel.client.model.special.waterstone.WaterstoneMultiblockModel;
@@ -51,7 +52,7 @@ public class VariantModels {
 
     public final LavastoneModel LAVASTONE = new LavastoneModel();
     public final LavastoneTBSModel LAVASTONE_TOP_BOTTOM_SIDE = new LavastoneTBSModel();
-    public final WaterstoneMultiblockModel LAVASTONE_2X2 = new WaterstoneMultiblockModel(2);
-    public final WaterstoneMultiblockModel LAVASTONE_3X3 = new WaterstoneMultiblockModel(3);
-    public final WaterstoneMultiblockModel LAVASTONE_4X4 = new WaterstoneMultiblockModel(4);
+    public final LavastoneMultiblockModel LAVASTONE_2X2 = new LavastoneMultiblockModel(2);
+    public final LavastoneMultiblockModel LAVASTONE_3X3 = new LavastoneMultiblockModel(3);
+    public final LavastoneMultiblockModel LAVASTONE_4X4 = new LavastoneMultiblockModel(4);
 }
