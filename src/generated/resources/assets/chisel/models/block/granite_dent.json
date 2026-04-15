@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/granite/granite_dent"
+    "all": "chisel:block/granite/granite_dent",
+    "overlay_connected": "chisel:block/granite/granite_dent-ctm",
+    "overlay_texture": "chisel:block/granite/granite_dent",
+    "particle": "chisel:block/granite/granite_dent"
   }
 }

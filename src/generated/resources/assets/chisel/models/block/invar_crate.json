@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/invar/invar_crate"
+    "all": "chisel:block/invar/invar_crate",
+    "overlay_connected": "chisel:block/invar/invar_crate-ctm",
+    "overlay_texture": "chisel:block/invar/invar_crate",
+    "particle": "chisel:block/invar/invar_crate"
   }
 }

@@ -139,6 +139,9 @@ public class Variant extends VariantModels {
             case MULTI_LAYER_WATER_2X2 -> WATERSTONE_2X2.generate(this, blockModels);
             case MULTI_LAYER_WATER_3X3 -> WATERSTONE_3X3.generate(this, blockModels);
             case MULTI_LAYER_WATER_4X4 -> WATERSTONE_4X4.generate(this, blockModels);
+            case LAVA_2x2 -> LAVASTONE_2X2.generate(this, blockModels);
+            case LAVA_3x3 -> LAVASTONE_3X3.generate(this, blockModels);
+            case LAVA_4x4 -> LAVASTONE_4X4.generate(this, blockModels);
         }
     }
 

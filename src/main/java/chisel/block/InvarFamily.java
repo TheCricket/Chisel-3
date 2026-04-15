@@ -8,12 +8,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class InvarFamily extends ChiselBlock {
     public InvarFamily(BlockBehaviour.Properties props) {
         family = builder("invar")
-                .addVariant("invar_bad_greggy", props)
+                .addVariant("invar_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("invar_bolted", props)
-                .addVariant("invar_caution", props)
-                .addVariant("invar_crate", props)
+                .addVariant("invar_caution", props, VariantModelType.CONNECTED)
+                .addVariant("invar_crate", props, VariantModelType.CONNECTED)
                 .addVariant("invar_machine", props)
-                .addVariant("invar_scaffold", props)
+                .addVariant("invar_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("invar_thermal", props, VariantModelType.TBS)
                 .family();
     }

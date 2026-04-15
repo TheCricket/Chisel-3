@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/invar/invar_caution"
+    "all": "chisel:block/invar/invar_caution",
+    "overlay_connected": "chisel:block/invar/invar_caution-ctm",
+    "overlay_texture": "chisel:block/invar/invar_caution",
+    "particle": "chisel:block/invar/invar_caution"
   }
 }

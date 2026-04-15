@@ -1,4 +1,4 @@
-package chisel.client.model.special;
+package chisel.client.model.special.waterstone;
 
 import chisel.Chisel;
 import chisel.client.ChiselModelTemplates;

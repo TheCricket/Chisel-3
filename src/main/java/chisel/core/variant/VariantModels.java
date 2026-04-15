@@ -6,6 +6,10 @@ import chisel.client.model.PillarModel;
 import chisel.client.model.TopBottomSideModel;
 import chisel.client.model.ctm.*;
 import chisel.client.model.special.*;
+import chisel.client.model.special.lavastone.LavastoneModel;
+import chisel.client.model.special.lavastone.LavastoneTBSModel;
+import chisel.client.model.special.waterstone.WaterstoneModel;
+import chisel.client.model.special.waterstone.WaterstoneMultiblockModel;
 
 public class VariantModels {
     public final TopBottomSideModel TOP_BOTTOM_SIDE = new TopBottomSideModel();
@@ -23,8 +27,6 @@ public class VariantModels {
     public final MultiLayerCTMModel MULTI_LAYER_CTM = new MultiLayerCTMModel(false);
     public final MultiLayerCTMTintedModel MULTI_LAYER_CTM_TINTED = new MultiLayerCTMTintedModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM_GLOW = new MultiLayerCTMModel(true);
-    public final LavastoneModel LAVASTONE = new LavastoneModel();
-    public final LavastoneTBSModel LAVASTONE_TOP_BOTTOM_SIDE = new LavastoneTBSModel();
     public final WaterstoneModel WATERSTONE = new WaterstoneModel();
     public final BookshelfModel BOOKSHELF = new BookshelfModel();
     public final CarpetModel CARPET = new CarpetModel();
@@ -37,10 +39,19 @@ public class VariantModels {
     public final TorchModel WALL_TORCH = new TorchModel(true);
     public final RoadLineModel ROAD_LINES = new RoadLineModel();
     public final V4Model V4 = new V4Model();
+
     public final Multiblock2x2Model MULTIBLOCK_2X2 = new Multiblock2x2Model();
     public final Multiblock3x3Model MULTIBLOCK_3X3 = new Multiblock3x3Model();
     public final Multiblock4x4Model MULTIBLOCK_4X4 = new Multiblock4x4Model();
+
     public final WaterstoneMultiblockModel WATERSTONE_2X2 = new WaterstoneMultiblockModel(2);
     public final WaterstoneMultiblockModel WATERSTONE_3X3 = new WaterstoneMultiblockModel(3);
     public final WaterstoneMultiblockModel WATERSTONE_4X4 = new WaterstoneMultiblockModel(4);
+
+
+    public final LavastoneModel LAVASTONE = new LavastoneModel();
+    public final LavastoneTBSModel LAVASTONE_TOP_BOTTOM_SIDE = new LavastoneTBSModel();
+    public final WaterstoneMultiblockModel LAVASTONE_2X2 = new WaterstoneMultiblockModel(2);
+    public final WaterstoneMultiblockModel LAVASTONE_3X3 = new WaterstoneMultiblockModel(3);
+    public final WaterstoneMultiblockModel LAVASTONE_4X4 = new WaterstoneMultiblockModel(4);
 }

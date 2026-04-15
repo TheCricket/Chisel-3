@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ice/ice_array"
+    "all": "chisel:block/ice/ice_array",
+    "overlay_2x2": "chisel:block/ice/ice_array-2x2",
+    "particle": "chisel:block/ice/ice_array"
   }
 }

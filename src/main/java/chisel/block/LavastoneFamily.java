@@ -8,19 +8,20 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class LavastoneFamily extends ChiselBlock {
     public LavastoneFamily(BlockBehaviour.Properties props) {
         family = builder("lavastone")
-                .addVariant("lavastone_array", props, VariantModelType.MULTI_LAYER_LAVA)
+                .addVariant("lavastone_array", props, VariantModelType.LAVA_2x2)
                 .addVariant("lavastone_braid", props, VariantModelType.MULTI_LAYER_LAVA)
-                .addVariant("lavastone_chaotic_bricks", props, VariantModelType.MULTI_LAYER_LAVA)
+                .addVariant("lavastone_chaotic_bricks", props, VariantModelType.LAVA_3x3)
                 .addVariant("lavastone_chaotic_medium", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_chaotic_small", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_circular", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("lavastone_cracked", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_cracked_bricks", props, VariantModelType.MULTI_LAYER_LAVA)
-                .addVariant("lavastone_cuts", props, VariantModelType.MULTI_LAYER_LAVA)
+                .addVariant("lavastone_cuts", props, VariantModelType.LAVA_4x4)
                 .addVariant("lavastone_dent", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("lavastone_encased_bricks", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("lavastone_french_1", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_french_2", props, VariantModelType.MULTI_LAYER_LAVA)
+                .addVariant("lavastone_jellybean", props, VariantModelType.LAVA_2x2)
                 .addVariant("lavastone_layers", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_mosaic", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("lavastone_ornate", props, VariantModelType.MULTI_LAYER_LAVA)
@@ -29,7 +30,7 @@ public class LavastoneFamily extends ChiselBlock {
                 .addVariant("lavastone_prism", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_raw", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_road", props, VariantModelType.MULTI_LAYER_LAVA)
-                .addVariant("lavastone_slanted", props, VariantModelType.MULTI_LAYER_LAVA)
+                .addVariant("lavastone_slanted", props, VariantModelType.LAVA_2x2)
                 .addVariant("lavastone_small_bricks", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_soft_bricks", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_tiles_large", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
@@ -56,6 +57,7 @@ public class LavastoneFamily extends ChiselBlock {
         lang.addBlock(getVariant("lavastone_encased_bricks"), "Lavastone", "Encased Bricks");
         lang.addBlock(getVariant("lavastone_french_1"), "Lavastone", "French 1");
         lang.addBlock(getVariant("lavastone_french_2"), "Lavastone", "French 2");
+        lang.addBlock(getVariant("lavastone_jellybean"), "Lavastone", "Jellybean");
         lang.addBlock(getVariant("lavastone_layers"), "Lavastone", "Layers");
         lang.addBlock(getVariant("lavastone_mosaic"), "Lavastone", "Mosaic");
         lang.addBlock(getVariant("lavastone_ornate"), "Lavastone", "Ornate");

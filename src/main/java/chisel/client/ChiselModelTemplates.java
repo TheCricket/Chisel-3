@@ -38,4 +38,8 @@ public class ChiselModelTemplates extends ModelTemplates {
     public static final ModelTemplate TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/torch")), Optional.empty(), TextureSlot.TORCH);
     public static final ModelTemplate WALL_TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/wall_torch")), Optional.empty(), TextureSlot.TORCH);
     public static final ModelTemplate ROAD_LINES = new ModelTemplate(Optional.of(Chisel.prefix("block/road_lines")), Optional.empty(), TextureSlot.TEXTURE);
+
+    public static final ModelTemplate CTM_MULTI_PASS_MULTIBLOCK_2x2 = create("chisel:ctm_multi_pass_multiblock_2x2", PARTICLE, ALL, CTM_OVERLAY_2X2).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();
+    public static final ModelTemplate CTM_MULTI_PASS_MULTIBLOCK_3x3 = create("chisel:ctm_multi_pass_multiblock_3x3", PARTICLE, ALL, CTM_OVERLAY_3X3).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();
+    public static final ModelTemplate CTM_MULTI_PASS_MULTIBLOCK_4x4 = create("chisel:ctm_multi_pass_multiblock_4x4", PARTICLE, ALL, CTM_OVERLAY_4X4).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();
 }

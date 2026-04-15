@@ -1,4 +1,4 @@
-package chisel.client.model.special;
+package chisel.client.model.special.lavastone;
 
 import chisel.client.model.MultiLayerModel;
 import net.minecraft.client.data.models.model.TextureMapping;

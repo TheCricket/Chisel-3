@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/lead/lead_caution"
+    "all": "chisel:block/lead/lead_caution",
+    "overlay_connected": "chisel:block/lead/lead_caution-ctm",
+    "overlay_texture": "chisel:block/lead/lead_caution",
+    "particle": "chisel:block/lead/lead_caution"
   }
 }

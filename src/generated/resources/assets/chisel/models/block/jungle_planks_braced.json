@@ -1,6 +1,18 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/jungle_planks/jungle_planks_braced"
+    "all": "chisel:block/jungle_planks/jungle_planks_braced",
+    "bottom": "chisel:block/jungle_planks/jungle_planks_braced-bottom",
+    "overlay_bottom": "chisel:block/jungle_planks/jungle_planks_braced-bottom",
+    "overlay_bottom_connected": "chisel:block/jungle_planks/jungle_planks_braced-bottom-ctm",
+    "overlay_connected": "chisel:block/jungle_planks/jungle_planks_braced-ctm",
+    "overlay_side": "chisel:block/jungle_planks/jungle_planks_braced-side",
+    "overlay_side_connected": "chisel:block/jungle_planks/jungle_planks_braced-side-ctm",
+    "overlay_texture": "chisel:block/jungle_planks/jungle_planks_braced",
+    "overlay_top": "chisel:block/jungle_planks/jungle_planks_braced-top",
+    "overlay_top_connected": "chisel:block/jungle_planks/jungle_planks_braced-top-ctm",
+    "particle": "chisel:block/jungle_planks/jungle_planks_braced",
+    "side": "chisel:block/jungle_planks/jungle_planks_braced-side",
+    "top": "chisel:block/jungle_planks/jungle_planks_braced-top"
   }
 }

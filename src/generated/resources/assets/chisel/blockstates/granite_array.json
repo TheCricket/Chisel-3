@@ -1,7 +1,30 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/granite_array"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/granite_array",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:granite_array",
+    "model_type": "multiblock_2x2",
+    "name": "granite_array"
   }
 }
