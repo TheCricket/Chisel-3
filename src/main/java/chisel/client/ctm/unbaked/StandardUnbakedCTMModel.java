@@ -94,18 +94,7 @@ public class StandardUnbakedCTMModel extends AbstractUnbakedConnectedTextureBloc
 
                 if (bakedBase != null) {
                     CuboidFace baseFace = new CuboidFace(cull, baseTintIndex, "", CTMLogic.NONE.remapUVs(qUvs), Quadrant.R0);
-                    Vector3f offsetFrom = new Vector3f(qFrom);
-                    Vector3f offsetTo = new Vector3f(qTo);
-                    float offset = 0.0001f;
-                    switch (face) {
-                        case DOWN -> { offsetFrom.y -= offset; offsetTo.y -= offset; }
-                        case UP -> { offsetFrom.y += offset; offsetTo.y += offset; }
-                        case NORTH -> { offsetFrom.z -= offset; offsetTo.z -= offset; }
-                        case SOUTH -> { offsetFrom.z += offset; offsetTo.z += offset; }
-                        case WEST -> { offsetFrom.x -= offset; offsetTo.x -= offset; }
-                        case EAST -> { offsetFrom.x += offset; offsetTo.x += offset; }
-                    }
-                    baseQuadList.add(FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, baseFace, bakedBase, face, state, null, true, baseEmissivity));
+                    baseQuadList.add(FaceBakery.bakeQuad(baker, qFrom, qTo, baseFace, bakedBase, face, state, null, true, baseEmissivity));
                 }
 
                 if (bakedOverlay != null && bakedOverlayConnected != null) {

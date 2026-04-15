@@ -111,68 +111,76 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
 
             if ((variant.getModelType() == VariantModelType.MULTIBLOCK_2X2 || variant.getModelType() == VariantModelType.V4 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_2X2) && bakedOverlay2x2 != null) {
                 BakedQuad[] quads = new BakedQuad[CTMLogic2x2.values().length];
-                Vector3f offsetFrom = new Vector3f(from);
-                Vector3f offsetTo = new Vector3f(to);
-                float offset = 0.01f;
-                switch (face) {
-                    case DOWN -> { offsetFrom.y -= offset; offsetTo.y -= offset; }
-                    case UP -> { offsetFrom.y += offset; offsetTo.y += offset; }
-                    case NORTH -> { offsetFrom.z -= offset; offsetTo.z -= offset; }
-                    case SOUTH -> { offsetFrom.z += offset; offsetTo.z += offset; }
-                    case WEST -> { offsetFrom.x -= offset; offsetTo.x -= offset; }
-                    case EAST -> { offsetFrom.x += offset; offsetTo.x += offset; }
-                }
+                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
                 for (CTMLogic2x2 logic : CTMLogic2x2.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
-                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, connFace, bakedOverlay2x2, face, state, null, true, emissivity);
+                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsets[0], offsets[1], connFace, bakedOverlay2x2, face, state, null, true, emissivity);
                 }
                 multiblock2x2Quads.put(face, quads);
             }
 
             if ((variant.getModelType() == VariantModelType.MULTIBLOCK_3X3 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_3X3) && bakedOverlay3x3 != null) {
                 BakedQuad[] quads = new BakedQuad[CTMLogic3x3.values().length];
-                Vector3f offsetFrom = new Vector3f(from);
-                Vector3f offsetTo = new Vector3f(to);
-                float offset = 0.01f;
-                switch (face) {
-                    case DOWN -> { offsetFrom.y -= offset; offsetTo.y -= offset; }
-                    case UP -> { offsetFrom.y += offset; offsetTo.y += offset; }
-                    case NORTH -> { offsetFrom.z -= offset; offsetTo.z -= offset; }
-                    case SOUTH -> { offsetFrom.z += offset; offsetTo.z += offset; }
-                    case WEST -> { offsetFrom.x -= offset; offsetTo.x -= offset; }
-                    case EAST -> { offsetFrom.x += offset; offsetTo.x += offset; }
-                }
+                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
                 for (CTMLogic3x3 logic : CTMLogic3x3.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
-                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, connFace, bakedOverlay3x3, face, state, null, true, emissivity);
+                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsets[0], offsets[1], connFace, bakedOverlay3x3, face, state, null, true, emissivity);
                 }
                 multiblock3x3Quads.put(face, quads);
             }
 
             if ((variant.getModelType() == VariantModelType.MULTIBLOCK_4X4 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_4X4) && bakedOverlay4x4 != null) {
                 BakedQuad[] quads = new BakedQuad[CTMLogic4x4.values().length];
-                Vector3f offsetFrom = new Vector3f(from);
-                Vector3f offsetTo = new Vector3f(to);
-                float offset = 0.01f;
-                switch (face) {
-                    case DOWN -> { offsetFrom.y -= offset; offsetTo.y -= offset; }
-                    case UP -> { offsetFrom.y += offset; offsetTo.y += offset; }
-                    case NORTH -> { offsetFrom.z -= offset; offsetTo.z -= offset; }
-                    case SOUTH -> { offsetFrom.z += offset; offsetTo.z += offset; }
-                    case WEST -> { offsetFrom.x -= offset; offsetTo.x -= offset; }
-                    case EAST -> { offsetFrom.x += offset; offsetTo.x += offset; }
-                }
+                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
+
                 for (CTMLogic4x4 logic : CTMLogic4x4.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
-                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, connFace, bakedOverlay4x4, face, state, null, true, emissivity);
+                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, offsets[0], offsets[1], connFace, bakedOverlay4x4, face, state, null, true, emissivity);
                 }
                 multiblock4x4Quads.put(face, quads);
             }
         }
 
         return new MultiblockCTMBlockStateModel(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, multiblock2x2Quads, multiblock3x3Quads, multiblock4x4Quads, bakedParticle != null ? bakedParticle.sprite() : null, variant);
+    }
+
+    private Vector3f[] getOffsets(Direction face, VariantModelType type, Vector3f from, Vector3f to) {
+        float offset = 0.01f;
+        Vector3f[] offsets = new Vector3f[] {
+                new Vector3f(from), new Vector3f(to)
+        };
+
+        if(type == VariantModelType.MULTI_LAYER_WATER_2X2 || type == VariantModelType.MULTI_LAYER_WATER_3X3 || type == VariantModelType.MULTI_LAYER_WATER_4X4) {
+            switch (face) {
+                case DOWN -> {
+                    offsets[0].y -= offset;
+                    offsets[1].y -= offset;
+                }
+                case UP -> {
+                    offsets[0].y += offset;
+                    offsets[1].y += offset;
+                }
+                case NORTH -> {
+                    offsets[0].z -= offset;
+                    offsets[1].z -= offset;
+                }
+                case SOUTH -> {
+                    offsets[0].z += offset;
+                    offsets[1].z += offset;
+                }
+                case WEST -> {
+                    offsets[0].x -= offset;
+                    offsets[1].x -= offset;
+                }
+                case EAST -> {
+                    offsets[0].x += offset;
+                    offsets[1].x += offset;
+                }
+            }
+        }
+        return offsets;
     }
 }
