@@ -30,6 +30,7 @@ public class ChiselBlocks {
     public static final BookshelfFamily BOOKSHELF = new BookshelfFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BOOKSHELF));
     public static final BricksFamily BRICKS = new BricksFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS));
     public static final BronzeFamily BRONZE = new BronzeFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final CarpetFamily CARPET = new CarpetFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final CloudFamily CLOUD = new CloudFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
     public static final CobaltFamily COBALT = new CobaltFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE));
@@ -151,7 +152,7 @@ public class ChiselBlocks {
 
     public static List<ChiselBlock> getBlocks() {
         List<ChiselBlock> blocks = new ArrayList<>(List.of(
-                ACACIA, ALUMINUM, ANDESITE, ANTIBLOCK, BIRCH, BOOKSHELF, BRICKS, BRONZE,
+                ACACIA, ALUMINUM, ANDESITE, ANTIBLOCK, BIRCH, BOOKSHELF, BRICKS, BRONZE, CARPET,
                 CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD,

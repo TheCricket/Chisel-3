@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/bricks/bricks_tiles_large"
+    "all": "chisel:block/bricks/bricks_tiles_large",
+    "overlay_connected": "chisel:block/bricks/bricks_tiles_large-ctm",
+    "overlay_texture": "chisel:block/bricks/bricks_tiles_large",
+    "particle": "chisel:block/bricks/bricks_tiles_large"
   }
 }

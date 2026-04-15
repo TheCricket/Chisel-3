@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/carpet/carpet_magenta",
+    "overlay_connected": "chisel:block/carpet/carpet_magenta-ctm",
+    "overlay_texture": "chisel:block/carpet/carpet_magenta",
+    "particle": "chisel:block/carpet/carpet_magenta"
+  }
+}

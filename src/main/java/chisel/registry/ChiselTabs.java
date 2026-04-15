@@ -93,6 +93,7 @@ public class ChiselTabs {
                         ChiselBlocks.ANTIBLOCK.getFamily(),
                         ChiselBlocks.GLASS.getFamily(),
                         ChiselBlocks.TORCH.getFamily(),
+                        ChiselBlocks.CARPET.getFamily(),
                         ChiselBlocks.CLOUD.getFamily(),
                         ChiselBlocks.DIAMOND.getFamily(),
                         ChiselBlocks.DIRT.getFamily(),
