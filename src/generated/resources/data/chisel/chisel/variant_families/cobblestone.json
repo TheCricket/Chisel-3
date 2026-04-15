@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:cobblestone_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "cobblestone_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:cobblestone_chaotic",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "cobblestone_chaotic"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "block": "chisel:cobblestone_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "cobblestone_cuts"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:cobblestone_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "cobblestone_jellybean"
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "block": "chisel:cobblestone_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "cobblestone_slanted"
     },
     {
