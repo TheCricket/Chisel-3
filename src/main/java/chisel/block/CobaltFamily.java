@@ -8,12 +8,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class CobaltFamily extends ChiselBlock {
     public CobaltFamily(BlockBehaviour.Properties props) {
         family = builder("cobalt")
-                .addVariant("cobalt_bad_greggy", props)
+                .addVariant("cobalt_bad_greggy", props, VariantModelType.CONNECTED)
                 .addVariant("cobalt_bolted", props)
-                .addVariant("cobalt_caution", props)
-                .addVariant("cobalt_crate", props)
+                .addVariant("cobalt_caution", props, VariantModelType.CONNECTED)
+                .addVariant("cobalt_crate", props, VariantModelType.CONNECTED)
                 .addVariant("cobalt_machine", props)
-                .addVariant("cobalt_scaffold", props)
+                .addVariant("cobalt_scaffold", props, VariantModelType.CONNECTED)
                 .addVariant("cobalt_thermal", props, VariantModelType.TBS)
                 .family();
     }
