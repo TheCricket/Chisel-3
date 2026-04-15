@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:diorite_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "diorite_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:diorite_chaotic",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "diorite_chaotic"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "block": "chisel:diorite_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "diorite_cuts"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:diorite_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "diorite_jellybean"
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "block": "chisel:diorite_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "diorite_slanted"
     },
     {
