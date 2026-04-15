@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:dark_oak_planks_log_cabin"
+          "name": "chisel:dark_oak_planks_log_cabin_ns"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/dark_oak_planks_log_cabin"
+  "random_sequence": "chisel:blocks/dark_oak_planks_log_cabin_ns"
 }

@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:dark_oak_planks_braced",
-      "model_type": "cube_all",
+      "model_type": "connected_tbs",
       "name": "dark_oak_planks_braced"
     },
     {
@@ -23,12 +23,12 @@
     },
     {
       "block": "chisel:dark_oak_planks_crude_paneling",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "dark_oak_planks_crude_paneling"
     },
     {
       "block": "chisel:dark_oak_planks_crude_vertical",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "dark_oak_planks_crude_vertical"
     },
     {
@@ -52,9 +52,19 @@
       "name": "dark_oak_planks_large"
     },
     {
-      "block": "chisel:dark_oak_planks_log_cabin",
-      "model_type": "cube_all",
-      "name": "dark_oak_planks_log_cabin"
+      "block": "chisel:dark_oak_planks_log_bordered",
+      "model_type": "connected",
+      "name": "dark_oak_planks_log_bordered"
+    },
+    {
+      "block": "chisel:dark_oak_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "dark_oak_planks_log_cabin_ns"
+    },
+    {
+      "block": "chisel:dark_oak_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "dark_oak_planks_log_cabin_ew"
     },
     {
       "block": "chisel:dark_oak_planks_paneling",
