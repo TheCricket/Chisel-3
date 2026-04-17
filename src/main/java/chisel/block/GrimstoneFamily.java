@@ -29,22 +29,22 @@ public class GrimstoneFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("grimstone_blocks"), "Grimstone", "Blocks");
-        lang.addBlock(getVariant("grimstone_blocks_rough"), "Grimstone", "Rough Blocks");
-        lang.addBlock(getVariant("grimstone_bricks"), "Grimstone", "Bricks");
-        lang.addBlock(getVariant("grimstone_bricks_large"), "Grimstone", "Large Bricks");
-        lang.addBlock(getVariant("grimstone_chiseled"), "Grimstone", "Chiseled");
-        lang.addBlock(getVariant("grimstone_chunks"), "Grimstone", "Chunks");
-        lang.addBlock(getVariant("grimstone_construction"), "Grimstone", "Construction");
-        lang.addBlock(getVariant("grimstone_flaky"), "Grimstone", "Flaky");
-        lang.addBlock(getVariant("grimstone_hate"), "Grimstone", "Hate");
-        lang.addBlock(getVariant("grimstone_plate"), "Grimstone", "Plate");
-        lang.addBlock(getVariant("grimstone_plate_smooth"), "Grimstone", "Smooth Plate");
-        lang.addBlock(getVariant("grimstone_platform"), "Grimstone", "Platform");
-        lang.addBlock(getVariant("grimstone_platform_tiles"), "Grimstone", "Platform Tiles");
-        lang.addBlock(getVariant("grimstone_raw"), "Grimstone", "Raw");
-        lang.addBlock(getVariant("grimstone_smooth"), "Grimstone", "Smooth");
-        lang.addBlock(getVariant("grimstone_tiles"), "Grimstone", "Tiles");
+        lang.addBlock(getVariant("grimstone_blocks"), "Grimstone", "Grimstone Blocks");
+        lang.addBlock(getVariant("grimstone_blocks_rough"), "Grimstone", "Rough Grimstone Blocks");
+        lang.addBlock(getVariant("grimstone_bricks"), "Grimstone", "Grimstone Bricks");
+        lang.addBlock(getVariant("grimstone_bricks_large"), "Grimstone", "Large Grimstone Bricks");
+        lang.addBlock(getVariant("grimstone_chiseled"), "Grimstone", "Chiseled Grimstone");
+        lang.addBlock(getVariant("grimstone_chunks"), "Grimstone", "Grimstone");
+        lang.addBlock(getVariant("grimstone_construction"), "Grimstone", "Fancy Grimstone Construction");
+        lang.addBlock(getVariant("grimstone_flaky"), "Grimstone", "Flaky Grimstone");
+        lang.addBlock(getVariant("grimstone_hate"), "Grimstone", "Mysterious Grimstone Symbol");
+        lang.addBlock(getVariant("grimstone_plate"), "Grimstone", "Grimstone Plate");
+        lang.addBlock(getVariant("grimstone_plate_smooth"), "Grimstone", "Smooth Grimstone Plate");
+        lang.addBlock(getVariant("grimstone_platform"), "Grimstone", "Grimstone Platform");
+        lang.addBlock(getVariant("grimstone_platform_tiles"), "Grimstone", "Grimstone Platform Tiles");
+        lang.addBlock(getVariant("grimstone_raw"), "Grimstone", "Grimstone");
+        lang.addBlock(getVariant("grimstone_smooth"), "Grimstone", "Smooth Grimstone");
+        lang.addBlock(getVariant("grimstone_tiles"), "Grimstone", "Fancy Grimstone Tiles");
     }
 }
 

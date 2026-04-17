@@ -20,10 +20,10 @@ public class AluminumFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("aluminum_bad_greggy"), "Aluminum", "Bad Greggy");
-        lang.addBlock(getVariant("aluminum_bolted"), "Aluminum", "Bolted");
-        lang.addBlock(getVariant("aluminum_caution"), "Aluminum", "Caution");
-        lang.addBlock(getVariant("aluminum_crate"), "Aluminum", "Crate");
+        lang.addBlock(getVariant("aluminum_bad_greggy"), "Aluminum", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("aluminum_bolted"), "Aluminum", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("aluminum_caution"), "Aluminum", "Caution Stripes");
+        lang.addBlock(getVariant("aluminum_crate"), "Aluminum", "Shipping Crate");
         lang.addBlock(getVariant("aluminum_machine"), "Aluminum", "Machine");
         lang.addBlock(getVariant("aluminum_scaffold"), "Aluminum", "Scaffold");
         lang.addBlock(getVariant("aluminum_thermal"), "Aluminum", "Thermal");

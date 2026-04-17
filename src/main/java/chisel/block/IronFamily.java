@@ -40,30 +40,30 @@ public class IronFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("iron_bad_greggy"), "Iron", "Bad Greggy");
-        lang.addBlock(getVariant("iron_bolted"), "Iron", "Bolted");
-        lang.addBlock(getVariant("iron_caution"), "Iron", "Caution");
-        lang.addBlock(getVariant("iron_crate"), "Iron", "Crate");
+        lang.addBlock(getVariant("iron_bad_greggy"), "Iron", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("iron_bolted"), "Iron", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("iron_caution"), "Iron", "Caution Stripes");
+        lang.addBlock(getVariant("iron_crate"), "Iron", "Shipping Crate");
         lang.addBlock(getVariant("iron_machine"), "Iron", "Machine");
         lang.addBlock(getVariant("iron_scaffold"), "Iron", "Scaffold");
         lang.addBlock(getVariant("iron_thermal"), "Iron", "Thermal");
         lang.addBlock(getVariant("iron_125"), "Iron", "125");
-        lang.addBlock(getVariant("iron_bordered"), "Iron", "Bordered");
-        lang.addBlock(getVariant("iron_brick"), "Iron", "Brick");
-        lang.addBlock(getVariant("iron_coin_heads"), "Iron", "Coin (Heads)");
-        lang.addBlock(getVariant("iron_coin_tails"), "Iron", "Coin (Tails)");
-        lang.addBlock(getVariant("iron_crate_dark"), "Iron", "Dark Crate");
-        lang.addBlock(getVariant("iron_crate_light"), "Iron", "Light Crate");
-        lang.addBlock(getVariant("iron_gears"), "Iron", "Gears");
-        lang.addBlock(getVariant("iron_ingots_large"), "Iron", "Large Ingots");
-        lang.addBlock(getVariant("iron_ingots_small"), "Iron", "Small Ingots");
-        lang.addBlock(getVariant("iron_moon"), "Iron", "Moon");
-        lang.addBlock(getVariant("iron_moon_obsidian"), "Iron", "Obsidian Moon");
-        lang.addBlock(getVariant("iron_moon_obsidian_purple"), "Iron", "Purple Obsidian Moon");
-        lang.addBlock(getVariant("iron_plates"), "Iron", "Plates");
-        lang.addBlock(getVariant("iron_rivets"), "Iron", "Rivets");
+        lang.addBlock(getVariant("iron_bordered"), "Iron", "Egregiously Bordered Block");
+        lang.addBlock(getVariant("iron_brick"), "Iron", "Iron Bricks");
+        lang.addBlock(getVariant("iron_coin_heads"), "Iron", "Iron Coin Stack Heads-up");
+        lang.addBlock(getVariant("iron_coin_tails"), "Iron", "Iron Coin Stack Heads-down");
+        lang.addBlock(getVariant("iron_crate_dark"), "Iron", "Dark Iron Crate");
+        lang.addBlock(getVariant("iron_crate_light"), "Iron", "Light Iron Crate");
+        lang.addBlock(getVariant("iron_gears"), "Iron", "Iron Gears");
+        lang.addBlock(getVariant("iron_ingots_large"), "Iron", "Large Iron Ingots");
+        lang.addBlock(getVariant("iron_ingots_small"), "Iron", "Small Iron Ingots");
+        lang.addBlock(getVariant("iron_moon"), "Iron", "Iron Block with Moon Decoration");
+        lang.addBlock(getVariant("iron_moon_obsidian"), "Iron", "Iron Moon in Obsidian");
+        lang.addBlock(getVariant("iron_moon_obsidian_purple"), "Iron", "Iron Moon in Purple Obsidian");
+        lang.addBlock(getVariant("iron_plates"), "Iron", "Iron Plates");
+        lang.addBlock(getVariant("iron_rivets"), "Iron", "Iron Plates with Rivets");
         lang.addBlock(getVariant("iron_shipping"), "Iron", "Shipping Crate");
-        lang.addBlock(getVariant("iron_simple"), "Iron", "Simple");
-        lang.addBlock(getVariant("iron_vents"), "Iron", "Vents");
+        lang.addBlock(getVariant("iron_simple"), "Iron", "Simple Iron Block");
+        lang.addBlock(getVariant("iron_vents"), "Iron", "Iron Vents");
     }
 }

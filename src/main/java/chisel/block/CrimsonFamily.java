@@ -33,23 +33,23 @@ public class CrimsonFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("crimson_planks_braced"), "Crimson Wood Planks", "Braced Planks");
-        lang.addBlock(getVariant("crimson_planks_braid"), "Crimson Wood Planks", "Braid");
-        lang.addBlock(getVariant("crimson_planks_crude_horizontal"), "Crimson Wood Planks", "Crude Horizontal Planks");
-        lang.addBlock(getVariant("crimson_planks_crude_paneling"), "Crimson Wood Planks", "Crude Paneling");
-        lang.addBlock(getVariant("crimson_planks_crude_vertical"), "Crimson Wood Planks", "Crude Vertical Planks");
-        lang.addBlock(getVariant("crimson_planks_encased"), "Crimson Wood Planks", "Encased Planks");
-        lang.addBlock(getVariant("crimson_planks_encased_large"), "Crimson Wood Planks", "Encased Large Planks");
-        lang.addBlock(getVariant("crimson_planks_encased_smooth"), "Crimson Wood Planks", "Encased Smooth");
-        lang.addBlock(getVariant("crimson_planks_large"), "Crimson Wood Planks", "Large Planks");
-        lang.addBlock(getVariant("crimson_planks_log_cabin_ew"), "Crimson Wood Planks", "Log Cabin (EW)");
-        lang.addBlock(getVariant("crimson_planks_log_cabin_ns"), "Crimson Wood Planks", "Log Cabin (NS)");
-        lang.addBlock(getVariant("crimson_planks_paneling"), "Crimson Wood Planks", "Paneling");
-        lang.addBlock(getVariant("crimson_planks_shipping"), "Crimson Wood Planks", "Shipping Crate");
-        lang.addBlock(getVariant("crimson_planks_smooth"), "Crimson Wood Planks", "Smooth");
-        lang.addBlock(getVariant("crimson_planks_stacked"), "Crimson Wood Planks", "Stacked");
-        lang.addBlock(getVariant("crimson_planks_vertical"), "Crimson Wood Planks", "Vertical Planks");
-        lang.addBlock(getVariant("crimson_planks_log_bordered"), "Crimson Wood Planks", "Log Bordered");
+        lang.addBlock(getVariant("crimson_planks_braced"), "Crimson Wood Planks", "Crimson Wood Panel");
+        lang.addBlock(getVariant("crimson_planks_braid"), "Crimson Wood Planks", "Crimson Wood Braid");
+        lang.addBlock(getVariant("crimson_planks_crude_horizontal"), "Crimson Wood Planks", "Vertical Crimson Wood Planks in Disarray");
+        lang.addBlock(getVariant("crimson_planks_crude_paneling"), "Crimson Wood Planks", "Crimson Wood Planks in Disarray");
+        lang.addBlock(getVariant("crimson_planks_crude_vertical"), "Crimson Wood Planks", "Vertical Crimson Wood Planks in Disarray");
+        lang.addBlock(getVariant("crimson_planks_encased"), "Crimson Wood Planks", "Encased Crimson Wood Panel");
+        lang.addBlock(getVariant("crimson_planks_encased_large"), "Crimson Wood Planks", "Large Long Crimson Wood Planks");
+        lang.addBlock(getVariant("crimson_planks_encased_smooth"), "Crimson Wood Planks", "Smooth Crimson Wood Planks");
+        lang.addBlock(getVariant("crimson_planks_large"), "Crimson Wood Planks", "Large Long Crimson Wood Planks");
+        lang.addBlock(getVariant("crimson_planks_log_bordered"), "Crimson Wood Planks", "Log Bordered Crimson Wood Panel");
+        lang.addBlock(getVariant("crimson_planks_log_cabin_ns"), "Crimson Wood Planks", "Crimson Wood Log Cabin (North-South)");
+        lang.addBlock(getVariant("crimson_planks_log_cabin_ew"), "Crimson Wood Planks", "Crimson Wood Log Cabin (East-West)");
+        lang.addBlock(getVariant("crimson_planks_paneling"), "Crimson Wood Planks", "Crimson Wood Panel");
+        lang.addBlock(getVariant("crimson_planks_shipping"), "Crimson Wood Planks", "Crimson Wood Crate");
+        lang.addBlock(getVariant("crimson_planks_smooth"), "Crimson Wood Planks", "Smooth Crimson Wood Planks");
+        lang.addBlock(getVariant("crimson_planks_stacked"), "Crimson Wood Planks", "Stacked Crimson Wood Tiles");
+        lang.addBlock(getVariant("crimson_planks_vertical"), "Crimson Wood Planks", "Vertical Crimson Wood Planks");
     }
 }
 

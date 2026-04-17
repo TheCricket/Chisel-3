@@ -22,11 +22,11 @@ public class SteelFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("steel_125"), "Steel", "125");
-        lang.addBlock(getVariant("steel_bad_greggy"), "Steel", "Bad Greggy");
-        lang.addBlock(getVariant("steel_bolted"), "Steel", "Bolted");
-        lang.addBlock(getVariant("steel_caution"), "Steel", "Caution");
-        lang.addBlock(getVariant("steel_crate"), "Steel", "Crate");
-        lang.addBlock(getVariant("steel_egregious"), "Steel", "Egregious");
+        lang.addBlock(getVariant("steel_bad_greggy"), "Steel", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("steel_bolted"), "Steel", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("steel_caution"), "Steel", "Caution Stripes");
+        lang.addBlock(getVariant("steel_crate"), "Steel", "Shipping Crate");
+        lang.addBlock(getVariant("steel_egregious"), "Steel", "Egregiously Bordered Block");
         lang.addBlock(getVariant("steel_scaffold"), "Steel", "Scaffold");
         lang.addBlock(getVariant("steel_thermal"), "Steel", "Thermal");
     }

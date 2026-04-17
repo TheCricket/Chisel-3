@@ -23,16 +23,16 @@ public class MilitaryFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("military_imperial_camo"), "Military", "Imperial Camo");
-        lang.addBlock(getVariant("military_imperial_camo_secluded"), "Military", "Secluded Imperial Camo");
-        lang.addBlock(getVariant("military_imperial_caution_orange"), "Military", "Imperial Orange Caution");
-        lang.addBlock(getVariant("military_imperial_caution_white"), "Military", "Imperial White Caution");
-        lang.addBlock(getVariant("military_imperial_plate"), "Military", "Imperial Plate");
-        lang.addBlock(getVariant("military_rebel_camo"), "Military", "Rebel Camo");
-        lang.addBlock(getVariant("military_rebel_camo_secluded"), "Military", "Secluded Rebel Camo");
-        lang.addBlock(getVariant("military_rebel_caution_red"), "Military", "Rebel Red Caution");
-        lang.addBlock(getVariant("military_rebel_caution_white"), "Military", "Rebel White Caution");
-        lang.addBlock(getVariant("military_rebel_plate"), "Military", "Rebel Plate");
+        lang.addBlock(getVariant("military_imperial_camo"), "Military", "Camouflaged");
+        lang.addBlock(getVariant("military_imperial_camo_secluded"), "Military", "Camouflaged (Secluded)");
+        lang.addBlock(getVariant("military_imperial_caution_orange"), "Military", "Teamed Caution Tape");
+        lang.addBlock(getVariant("military_imperial_caution_white"), "Military", "White Caution Tape");
+        lang.addBlock(getVariant("military_imperial_plate"), "Military", "Bolted Plate");
+        lang.addBlock(getVariant("military_rebel_camo"), "Military", "Camouflaged");
+        lang.addBlock(getVariant("military_rebel_camo_secluded"), "Military", "Camouflaged (Secluded)");
+        lang.addBlock(getVariant("military_rebel_caution_red"), "Military", "Teamed Caution Tape");
+        lang.addBlock(getVariant("military_rebel_caution_white"), "Military", "White Caution Tape");
+        lang.addBlock(getVariant("military_rebel_plate"), "Military", "Bolted Plate");
     }
 }
 

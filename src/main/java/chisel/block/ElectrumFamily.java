@@ -20,10 +20,10 @@ public class ElectrumFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("electrum_bad_greggy"), "Electrum", "Bad Greggy");
-        lang.addBlock(getVariant("electrum_bolted"), "Electrum", "Bolted");
-        lang.addBlock(getVariant("electrum_caution"), "Electrum", "Caution");
-        lang.addBlock(getVariant("electrum_crate"), "Electrum", "Crate");
+        lang.addBlock(getVariant("electrum_bad_greggy"), "Electrum", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("electrum_bolted"), "Electrum", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("electrum_caution"), "Electrum", "Caution Stripes");
+        lang.addBlock(getVariant("electrum_crate"), "Electrum", "Shipping Crate");
         lang.addBlock(getVariant("electrum_machine"), "Electrum", "Machine");
         lang.addBlock(getVariant("electrum_scaffold"), "Electrum", "Scaffold");
         lang.addBlock(getVariant("electrum_thermal"), "Electrum", "Thermal");

@@ -47,11 +47,11 @@ public class AndesiteFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("andesite_array"), "Andesite", "Array");
+        lang.addBlock(getVariant("andesite_array"), "Andesite", "Andesite Pillar");
         lang.addBlock(getVariant("andesite_braid"), "Andesite", "Braid");
         lang.addBlock(getVariant("andesite_chaotic_bricks"), "Andesite", "Chaotic Bricks");
-        lang.addBlock(getVariant("andesite_chaotic_medium"), "Andesite", "Medium Chaotic");
-        lang.addBlock(getVariant("andesite_chaotic_small"), "Andesite", "Small Chaotic");
+        lang.addBlock(getVariant("andesite_chaotic_medium"), "Andesite", "Andesite Bricks");
+        lang.addBlock(getVariant("andesite_chaotic_small"), "Andesite", "Andesite Small Tiles");
         lang.addBlock(getVariant("andesite_circular"), "Andesite", "Circular");
         lang.addBlock(getVariant("andesite_cracked"), "Andesite", "Cracked");
         lang.addBlock(getVariant("andesite_cracked_bricks"), "Andesite", "Cracked Bricks");
@@ -63,10 +63,10 @@ public class AndesiteFamily extends ChiselBlock {
         lang.addBlock(getVariant("andesite_jellybean"), "Andesite", "Jellybean");
         lang.addBlock(getVariant("andesite_layers"), "Andesite", "Layers");
         lang.addBlock(getVariant("andesite_mosaic"), "Andesite", "Mosaic");
-        lang.addBlock(getVariant("andesite_ornate"), "Andesite", "Ornate");
+        lang.addBlock(getVariant("andesite_ornate"), "Andesite", "Ornate Andesite");
         lang.addBlock(getVariant("andesite_panel"), "Andesite", "Panel");
         lang.addBlock(getVariant("andesite_pillar"), "Andesite", "Pillar");
-        lang.addBlock(getVariant("andesite_prism"), "Andesite", "Prism");
+        lang.addBlock(getVariant("andesite_prism"), "Andesite", "Prismatic Andesite");
         lang.addBlock(getVariant("andesite_road"), "Andesite", "Road");
         lang.addBlock(getVariant("andesite_slanted"), "Andesite", "Slanted");
         lang.addBlock(getVariant("andesite_small_bricks"), "Andesite", "Small Bricks");

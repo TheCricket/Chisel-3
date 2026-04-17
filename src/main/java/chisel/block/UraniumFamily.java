@@ -22,10 +22,10 @@ public class UraniumFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("uranium_125"), "Uranium", "125");
-        lang.addBlock(getVariant("uranium_bad_greggy"), "Uranium", "Bad Greggy");
-        lang.addBlock(getVariant("uranium_bolted"), "Uranium", "Bolted");
-        lang.addBlock(getVariant("uranium_caution"), "Uranium", "Caution");
-        lang.addBlock(getVariant("uranium_crate"), "Uranium", "Crate");
+        lang.addBlock(getVariant("uranium_bad_greggy"), "Uranium", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("uranium_bolted"), "Uranium", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("uranium_caution"), "Uranium", "Caution Stripes");
+        lang.addBlock(getVariant("uranium_crate"), "Uranium", "Shipping Crate");
         lang.addBlock(getVariant("uranium_machine"), "Uranium", "Machine");
         lang.addBlock(getVariant("uranium_scaffold"), "Uranium", "Scaffold");
         lang.addBlock(getVariant("uranium_thermal"), "Uranium", "Thermal");

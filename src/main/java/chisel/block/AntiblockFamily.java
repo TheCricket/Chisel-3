@@ -29,22 +29,22 @@ public class AntiblockFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("antiblock_black"), "Antiblock", "Black");
-        lang.addBlock(getVariant("antiblock_blue"), "Antiblock", "Blue");
-        lang.addBlock(getVariant("antiblock_brown"), "Antiblock", "Brown");
-        lang.addBlock(getVariant("antiblock_cyan"), "Antiblock", "Cyan");
-        lang.addBlock(getVariant("antiblock_gray"), "Antiblock", "Gray");
-        lang.addBlock(getVariant("antiblock_green"), "Antiblock", "Green");
-        lang.addBlock(getVariant("antiblock_light_blue"), "Antiblock", "Light Blue");
-        lang.addBlock(getVariant("antiblock_light_gray"), "Antiblock", "Light Gray");
-        lang.addBlock(getVariant("antiblock_lime"), "Antiblock", "Lime");
-        lang.addBlock(getVariant("antiblock_magenta"), "Antiblock", "Magenta");
-        lang.addBlock(getVariant("antiblock_orange"), "Antiblock", "Orange");
-        lang.addBlock(getVariant("antiblock_pink"), "Antiblock", "Pink");
-        lang.addBlock(getVariant("antiblock_purple"), "Antiblock", "Purple");
-        lang.addBlock(getVariant("antiblock_red"), "Antiblock", "Red");
-        lang.addBlock(getVariant("antiblock_white"), "Antiblock", "White");
-        lang.addBlock(getVariant("antiblock_yellow"), "Antiblock", "Yellow");
+        lang.addBlock(getVariant("antiblock_black"), "Antiblock", "Black Anti Block");
+        lang.addBlock(getVariant("antiblock_blue"), "Antiblock", "Blue Anti Block");
+        lang.addBlock(getVariant("antiblock_brown"), "Antiblock", "Brown Anti Block");
+        lang.addBlock(getVariant("antiblock_cyan"), "Antiblock", "Cyan Anti Block");
+        lang.addBlock(getVariant("antiblock_gray"), "Antiblock", "Gray Anti Block");
+        lang.addBlock(getVariant("antiblock_green"), "Antiblock", "Green Anti Block");
+        lang.addBlock(getVariant("antiblock_light_blue"), "Antiblock", "Light Blue Anti Block");
+        lang.addBlock(getVariant("antiblock_light_gray"), "Antiblock", "Light Gray Anti Block");
+        lang.addBlock(getVariant("antiblock_lime"), "Antiblock", "Lime Anti Block");
+        lang.addBlock(getVariant("antiblock_magenta"), "Antiblock", "Magenta Anti Block");
+        lang.addBlock(getVariant("antiblock_orange"), "Antiblock", "Orange Anti Block");
+        lang.addBlock(getVariant("antiblock_pink"), "Antiblock", "Pink Anti Block");
+        lang.addBlock(getVariant("antiblock_purple"), "Antiblock", "Purple Anti Block");
+        lang.addBlock(getVariant("antiblock_red"), "Antiblock", "Red Anti Block");
+        lang.addBlock(getVariant("antiblock_white"), "Antiblock", "White Anti Block");
+        lang.addBlock(getVariant("antiblock_yellow"), "Antiblock", "Yellow Anti Block");
     }
 }
 

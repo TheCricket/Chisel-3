@@ -29,22 +29,22 @@ public class TempleFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("temple_bricks"), "Temple Block", "Bricks");
-        lang.addBlock(getVariant("temple_bricks_disarray"), "Temple Block", "Disarray Bricks");
-        lang.addBlock(getVariant("temple_bricks_large"), "Temple Block", "Large Bricks");
-        lang.addBlock(getVariant("temple_bricks_worn"), "Temple Block", "Worn Bricks");
-        lang.addBlock(getVariant("temple_cobble"), "Temple Block", "Cobblestone");
-        lang.addBlock(getVariant("temple_column"), "Temple Block", "Column");
-        lang.addBlock(getVariant("temple_ornate"), "Temple Block", "Ornate");
-        lang.addBlock(getVariant("temple_plate"), "Temple Block", "Plate");
-        lang.addBlock(getVariant("temple_plate_cracked"), "Temple Block", "Cracked Plate");
-        lang.addBlock(getVariant("temple_stand"), "Temple Block", "Stand");
-        lang.addBlock(getVariant("temple_stand_creeper"), "Temple Block", "Creeper Stand");
-        lang.addBlock(getVariant("temple_stand_mosaic"), "Temple Block", "Mosaic Stand");
-        lang.addBlock(getVariant("temple_tiles"), "Temple Block", "Tiles");
-        lang.addBlock(getVariant("temple_tiles_light"), "Temple Block", "Light Tiles");
-        lang.addBlock(getVariant("temple_tiles_small"), "Temple Block", "Small Tiles");
-        lang.addBlock(getVariant("temple_tiles_small_light"), "Temple Block", "Small Light Tiles");
+        lang.addBlock(getVariant("temple_bricks"), "Temple Block", "Temple Bricks");
+        lang.addBlock(getVariant("temple_bricks_disarray"), "Temple Block", "Temple Bricks in disarray");
+        lang.addBlock(getVariant("temple_bricks_large"), "Temple Block", "Large Temple Bricks");
+        lang.addBlock(getVariant("temple_bricks_worn"), "Temple Block", "Worn Temple Bricks");
+        lang.addBlock(getVariant("temple_cobble"), "Temple Block", "Temple Cobblestone");
+        lang.addBlock(getVariant("temple_column"), "Temple Block", "Temple Column");
+        lang.addBlock(getVariant("temple_ornate"), "Temple Block", "Ornate Temple Block");
+        lang.addBlock(getVariant("temple_plate"), "Temple Block", "Temple Plate");
+        lang.addBlock(getVariant("temple_plate_cracked"), "Temple Block", "Cracked Temple Plate");
+        lang.addBlock(getVariant("temple_stand"), "Temple Block", "Temple Stand");
+        lang.addBlock(getVariant("temple_stand_creeper"), "Temple Block", "Temple Creeper Stand");
+        lang.addBlock(getVariant("temple_stand_mosaic"), "Temple Block", "Temple Mosaic Stand");
+        lang.addBlock(getVariant("temple_tiles"), "Temple Block", "Temple Tiles");
+        lang.addBlock(getVariant("temple_tiles_light"), "Temple Block", "Light Temple Tiles");
+        lang.addBlock(getVariant("temple_tiles_small"), "Temple Block", "Small Temple Tiles");
+        lang.addBlock(getVariant("temple_tiles_small_light"), "Temple Block", "Small Light Temple Tiles");
     }
 }
 

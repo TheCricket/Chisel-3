@@ -21,14 +21,14 @@ public class VoidstoneFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("voidstone_bevel"), "Voidstone", "Bevel");
-        lang.addBlock(getVariant("voidstone_eye"), "Voidstone", "Eye");
-        lang.addBlock(getVariant("voidstone_metal"), "Voidstone", "Metal");
-        lang.addBlock(getVariant("voidstone_raw"), "Voidstone", "Raw");
-        lang.addBlock(getVariant("voidstone_runic"), "Voidstone", "Runic");
-        lang.addBlock(getVariant("voidstone_skull"), "Voidstone", "Skull");
-        lang.addBlock(getVariant("voidstone_smooth"), "Voidstone", "Smooth");
-        lang.addBlock(getVariant("voidstone_tiles"), "Voidstone", "Tiles");
+        lang.addBlock(getVariant("voidstone_bevel"), "Voidstone", "Beveled Voidstone");
+        lang.addBlock(getVariant("voidstone_eye"), "Voidstone", "Eye Voidstone");
+        lang.addBlock(getVariant("voidstone_metal"), "Voidstone", "Metal-Bordered Voidstone");
+        lang.addBlock(getVariant("voidstone_raw"), "Voidstone", "Raw Voidstone");
+        lang.addBlock(getVariant("voidstone_runic"), "Voidstone", "Runic Voidstone");
+        lang.addBlock(getVariant("voidstone_skull"), "Voidstone", "Skull Voidstone");
+        lang.addBlock(getVariant("voidstone_smooth"), "Voidstone", "Smooth Voidstone");
+        lang.addBlock(getVariant("voidstone_tiles"), "Voidstone", "Large Voidstone Tiles");
     }
 }
 

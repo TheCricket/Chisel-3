@@ -28,20 +28,20 @@ public class NetherrackFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("netherrack_blood"), "Netherrack", "Blood");
-        lang.addBlock(getVariant("netherrack_blood_dark"), "Netherrack", "Dark Blood");
-        lang.addBlock(getVariant("netherrack_blood_gravel"), "Netherrack", "Blood Gravel");
-        lang.addBlock(getVariant("netherrack_blue"), "Netherrack", "Blue");
-        lang.addBlock(getVariant("netherrack_blue_shale"), "Netherrack", "Blue Shale");
-        lang.addBlock(getVariant("netherrack_classic"), "Netherrack", "Classic");
-        lang.addBlock(getVariant("netherrack_guts"), "Netherrack", "Guts");
-        lang.addBlock(getVariant("netherrack_guts_dark"), "Netherrack", "Dark Guts");
-        lang.addBlock(getVariant("netherrack_lava"), "Netherrack", "Lava");
-        lang.addBlock(getVariant("netherrack_meat"), "Netherrack", "Meat");
-        lang.addBlock(getVariant("netherrack_meat_red"), "Netherrack", "Red Meat");
-        lang.addBlock(getVariant("netherrack_meat_small"), "Netherrack", "Small Meat");
-        lang.addBlock(getVariant("netherrack_red"), "Netherrack", "Red");
-        lang.addBlock(getVariant("netherrack_spattered"), "Netherrack", "Spattered");
+        lang.addBlock(getVariant("netherrack_blood"), "Netherrack", "Netherrack with Blood");
+        lang.addBlock(getVariant("netherrack_blood_dark"), "Netherrack", "Darker Netherrack with Blood");
+        lang.addBlock(getVariant("netherrack_blood_gravel"), "Netherrack", "Nethergravel with Blood");
+        lang.addBlock(getVariant("netherrack_blue"), "Netherrack", "Blue Netherrack");
+        lang.addBlock(getVariant("netherrack_blue_shale"), "Netherrack", "Shale Blue Netherrack");
+        lang.addBlock(getVariant("netherrack_classic"), "Netherrack", "Classic Netherrack");
+        lang.addBlock(getVariant("netherrack_guts"), "Netherrack", "Netherrack made of Guts");
+        lang.addBlock(getVariant("netherrack_guts_dark"), "Netherrack", "Dark Netherrack made of Guts");
+        lang.addBlock(getVariant("netherrack_lava"), "Netherrack", "Netherrack with Flowing Lava");
+        lang.addBlock(getVariant("netherrack_meat"), "Netherrack", "Netherrack made of Meat");
+        lang.addBlock(getVariant("netherrack_meat_red"), "Netherrack", "Red Netherrack made of Meat");
+        lang.addBlock(getVariant("netherrack_meat_small"), "Netherrack", "Netherrack made of Smaller Meat Chunks");
+        lang.addBlock(getVariant("netherrack_red"), "Netherrack", "Dark Red Netherrack");
+        lang.addBlock(getVariant("netherrack_spattered"), "Netherrack", "Spattered Netherrack");
     }
 }
 

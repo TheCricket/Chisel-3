@@ -20,10 +20,10 @@ public class PlatinumFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("platinum_bad_greggy"), "Platinum", "Bad Greggy");
-        lang.addBlock(getVariant("platinum_bolted"), "Platinum", "Bolted");
-        lang.addBlock(getVariant("platinum_caution"), "Platinum", "Caution");
-        lang.addBlock(getVariant("platinum_crate"), "Platinum", "Crate");
+        lang.addBlock(getVariant("platinum_bad_greggy"), "Platinum", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("platinum_bolted"), "Platinum", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("platinum_caution"), "Platinum", "Caution Stripes");
+        lang.addBlock(getVariant("platinum_crate"), "Platinum", "Shipping Crate");
         lang.addBlock(getVariant("platinum_machine"), "Platinum", "Machine");
         lang.addBlock(getVariant("platinum_scaffold"), "Platinum", "Scaffold");
         lang.addBlock(getVariant("platinum_thermal"), "Platinum", "Thermal");

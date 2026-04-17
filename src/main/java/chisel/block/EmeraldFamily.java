@@ -28,19 +28,19 @@ public class EmeraldFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("emerald_bismuth"), "Emerald Block", "Bismuth");
-        lang.addBlock(getVariant("emerald_blocks_small"), "Emerald Block", "Small Blocks");
-        lang.addBlock(getVariant("emerald_blocks_small_ornate"), "Emerald Block", "Small Ornate Blocks");
-        lang.addBlock(getVariant("emerald_cell"), "Emerald Block", "Cell");
-        lang.addBlock(getVariant("emerald_chunk"), "Emerald Block", "Chunk");
+        lang.addBlock(getVariant("emerald_bismuth"), "Emerald Block", "Emerald Bismuth");
+        lang.addBlock(getVariant("emerald_blocks_small"), "Emerald Block", "Small Emerald Blocks");
+        lang.addBlock(getVariant("emerald_blocks_small_ornate"), "Emerald Block", "Small Ornate Emerald Blocks");
+        lang.addBlock(getVariant("emerald_cell"), "Emerald Block", "Emerald Cell");
+        lang.addBlock(getVariant("emerald_chunk"), "Emerald Block", "Emerald Chunk");
         lang.addBlock(getVariant("emerald_circle"), "Emerald Block", "Circle");
         lang.addBlock(getVariant("emerald_masonry"), "Emerald Block", "Masonry");
-        lang.addBlock(getVariant("emerald_ornate"), "Emerald Block", "Ornate");
-        lang.addBlock(getVariant("emerald_ornate_layer"), "Emerald Block", "Ornate Layer");
-        lang.addBlock(getVariant("emerald_panel"), "Emerald Block", "Panel");
-        lang.addBlock(getVariant("emerald_panel_classic"), "Emerald Block", "Classic Panel");
+        lang.addBlock(getVariant("emerald_ornate"), "Emerald Block", "Ornate Emerald Block");
+        lang.addBlock(getVariant("emerald_ornate_layer"), "Emerald Block", "Emerald with Ornate Layer");
+        lang.addBlock(getVariant("emerald_panel"), "Emerald Block", "Emerald Panel");
+        lang.addBlock(getVariant("emerald_panel_classic"), "Emerald Block", "Classic emerald Panel");
         lang.addBlock(getVariant("emerald_prismatic"), "Emerald Block", "Prismatic");
-        lang.addBlock(getVariant("emerald_smooth"), "Emerald Block", "Smooth");
-        lang.addBlock(getVariant("emerald_zelda"), "Emerald Block", "Zelda");
+        lang.addBlock(getVariant("emerald_smooth"), "Emerald Block", "Smooth Emerald");
+        lang.addBlock(getVariant("emerald_zelda"), "Emerald Block", "Zelda Emerald Block");
     }
 }

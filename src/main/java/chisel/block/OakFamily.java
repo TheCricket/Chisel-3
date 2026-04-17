@@ -32,23 +32,23 @@ public class OakFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("oak_planks_braced"), "Oak Wood Planks", "Braced Planks");
-        lang.addBlock(getVariant("oak_planks_braid"), "Oak Wood Planks", "Braid");
-        lang.addBlock(getVariant("oak_planks_crude_horizontal"), "Oak Wood Planks", "Crude Horizontal Planks");
-        lang.addBlock(getVariant("oak_planks_crude_paneling"), "Oak Wood Planks", "Crude Paneling");
-        lang.addBlock(getVariant("oak_planks_crude_vertical"), "Oak Wood Planks", "Crude Vertical Planks");
-        lang.addBlock(getVariant("oak_planks_encased"), "Oak Wood Planks", "Encased Planks");
-        lang.addBlock(getVariant("oak_planks_encased_large"), "Oak Wood Planks", "Encased Large Planks");
-        lang.addBlock(getVariant("oak_planks_encased_smooth"), "Oak Wood Planks", "Encased Smooth");
-        lang.addBlock(getVariant("oak_planks_large"), "Oak Wood Planks", "Large Planks");
-        lang.addBlock(getVariant("oak_planks_log_bordered"), "Oak Wood Planks", "Log Bordered");
-        lang.addBlock(getVariant("oak_planks_log_cabin_ns"), "Oak Wood Planks", "Log Cabin NS");
-        lang.addBlock(getVariant("oak_planks_log_cabin_ew"), "Oak Wood Planks", "Log Cabin EW");
-        lang.addBlock(getVariant("oak_planks_paneling"), "Oak Wood Planks", "Paneling");
-        lang.addBlock(getVariant("oak_planks_shipping"), "Oak Wood Planks", "Shipping Crate");
-        lang.addBlock(getVariant("oak_planks_smooth"), "Oak Wood Planks", "Smooth");
-        lang.addBlock(getVariant("oak_planks_stacked"), "Oak Wood Planks", "Stacked");
-        lang.addBlock(getVariant("oak_planks_vertical"), "Oak Wood Planks", "Vertical Planks");
+        lang.addBlock(getVariant("oak_planks_braced"), "Oak Wood Planks", "Oak Wood Panel");
+        lang.addBlock(getVariant("oak_planks_braid"), "Oak Wood Planks", "Oak Wood Braid");
+        lang.addBlock(getVariant("oak_planks_crude_horizontal"), "Oak Wood Planks", "Vertical Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("oak_planks_crude_paneling"), "Oak Wood Planks", "Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("oak_planks_crude_vertical"), "Oak Wood Planks", "Vertical Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("oak_planks_encased"), "Oak Wood Planks", "Encased Oak Wood Panel");
+        lang.addBlock(getVariant("oak_planks_encased_large"), "Oak Wood Planks", "Large Long Oak Wood Planks");
+        lang.addBlock(getVariant("oak_planks_encased_smooth"), "Oak Wood Planks", "Smooth Oak Wood Planks");
+        lang.addBlock(getVariant("oak_planks_large"), "Oak Wood Planks", "Large Long Oak Wood Planks");
+        lang.addBlock(getVariant("oak_planks_log_bordered"), "Oak Wood Planks", "Log Bordered Oak Wood Panel");
+        lang.addBlock(getVariant("oak_planks_log_cabin_ns"), "Oak Wood Planks", "Oak Wood Log Cabin (North-South)");
+        lang.addBlock(getVariant("oak_planks_log_cabin_ew"), "Oak Wood Planks", "Oak Wood Log Cabin (East-West)");
+        lang.addBlock(getVariant("oak_planks_paneling"), "Oak Wood Planks", "Oak Wood Panel");
+        lang.addBlock(getVariant("oak_planks_shipping"), "Oak Wood Planks", "Oak Wood Crate");
+        lang.addBlock(getVariant("oak_planks_smooth"), "Oak Wood Planks", "Smooth Oak Wood Planks");
+        lang.addBlock(getVariant("oak_planks_stacked"), "Oak Wood Planks", "Stacked Oak Wood Tiles");
+        lang.addBlock(getVariant("oak_planks_vertical"), "Oak Wood Planks", "Vertical Oak Wood Planks");
     }
 }
 

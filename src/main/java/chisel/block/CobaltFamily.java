@@ -20,10 +20,10 @@ public class CobaltFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("cobalt_bad_greggy"), "Cobalt", "Bad Greggy");
-        lang.addBlock(getVariant("cobalt_bolted"), "Cobalt", "Bolted");
-        lang.addBlock(getVariant("cobalt_caution"), "Cobalt", "Caution");
-        lang.addBlock(getVariant("cobalt_crate"), "Cobalt", "Crate");
+        lang.addBlock(getVariant("cobalt_bad_greggy"), "Cobalt", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("cobalt_bolted"), "Cobalt", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("cobalt_caution"), "Cobalt", "Caution Stripes");
+        lang.addBlock(getVariant("cobalt_crate"), "Cobalt", "Shipping Crate");
         lang.addBlock(getVariant("cobalt_machine"), "Cobalt", "Machine");
         lang.addBlock(getVariant("cobalt_scaffold"), "Cobalt", "Scaffold");
         lang.addBlock(getVariant("cobalt_thermal"), "Cobalt", "Thermal");

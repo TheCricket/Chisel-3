@@ -33,24 +33,24 @@ public class RedstoneFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("redstone_bricks"), "Redstone Block", "Bricks");
-        lang.addBlock(getVariant("redstone_bricks_chaotic"), "Redstone Block", "Chaotic Bricks");
-        lang.addBlock(getVariant("redstone_bricks_small"), "Redstone Block", "Small Bricks");
-        lang.addBlock(getVariant("redstone_chiseled"), "Redstone Block", "Chiseled");
+        lang.addBlock(getVariant("redstone_bricks"), "Redstone Block", "Redstone Bricks");
+        lang.addBlock(getVariant("redstone_bricks_chaotic"), "Redstone Block", "Chaotic Redstone Bricks");
+        lang.addBlock(getVariant("redstone_bricks_small"), "Redstone Block", "Small Redstone Bricks");
+        lang.addBlock(getVariant("redstone_chiseled"), "Redstone Block", "Chiseled Redstone");
         lang.addBlock(getVariant("redstone_chunk"), "Redstone Block", "Chunk");
-        lang.addBlock(getVariant("redstone_circuit"), "Redstone Block", "Circuit");
-        lang.addBlock(getVariant("redstone_circuit_supaplex"), "Redstone Block", "Supaplex Circuit");
+        lang.addBlock(getVariant("redstone_circuit"), "Redstone Block", "Redstone Circuit");
+        lang.addBlock(getVariant("redstone_circuit_supaplex"), "Redstone Block", "Redstone Supaplex Circuit");
         lang.addBlock(getVariant("redstone_ere"), "Redstone Block", "Ere");
-        lang.addBlock(getVariant("redstone_greek"), "Redstone Block", "Greek");
-        lang.addBlock(getVariant("redstone_large"), "Redstone Block", "Large Bricks");
-        lang.addBlock(getVariant("redstone_pillar"), "Redstone Block", "Pillar");
-        lang.addBlock(getVariant("redstone_skulls"), "Redstone Block", "Skulls");
-        lang.addBlock(getVariant("redstone_small"), "Redstone Block", "Small");
-        lang.addBlock(getVariant("redstone_smooth"), "Redstone Block", "Smooth");
+        lang.addBlock(getVariant("redstone_greek"), "Redstone Block", "Redstone Greek Decoration");
+        lang.addBlock(getVariant("redstone_large"), "Redstone Block", "Large Redstone Block");
+        lang.addBlock(getVariant("redstone_pillar"), "Redstone Block", "Redstone Pillar");
+        lang.addBlock(getVariant("redstone_skulls"), "Redstone Block", "Redstone Skulls");
+        lang.addBlock(getVariant("redstone_small"), "Redstone Block", "Small Redstone Block");
+        lang.addBlock(getVariant("redstone_smooth"), "Redstone Block", "Smooth Redstone");
         lang.addBlock(getVariant("redstone_solid"), "Redstone Block", "Solid");
-        lang.addBlock(getVariant("redstone_tiles"), "Redstone Block", "Tiles");
-        lang.addBlock(getVariant("redstone_tiles_ornate"), "Redstone Block", "Ornate Tiles");
-        lang.addBlock(getVariant("redstone_zelda"), "Redstone Block", "Zelda");
+        lang.addBlock(getVariant("redstone_tiles"), "Redstone Block", "Redstone Tiles");
+        lang.addBlock(getVariant("redstone_tiles_ornate"), "Redstone Block", "Ornate Redstone Tiles");
+        lang.addBlock(getVariant("redstone_zelda"), "Redstone Block", "Redstone Zelda Block");
     }
 }
 

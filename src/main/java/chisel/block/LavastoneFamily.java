@@ -46,9 +46,9 @@ public class LavastoneFamily extends ChiselBlock {
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("lavastone_array"), "Lavastone", "Array");
         lang.addBlock(getVariant("lavastone_braid"), "Lavastone", "Braid");
-        lang.addBlock(getVariant("lavastone_chaotic_bricks"), "Lavastone", "Chaotic Bricks");
-        lang.addBlock(getVariant("lavastone_chaotic_medium"), "Lavastone", "Medium Chaotic");
-        lang.addBlock(getVariant("lavastone_chaotic_small"), "Lavastone", "Small Chaotic");
+        lang.addBlock(getVariant("lavastone_chaotic_bricks"), "Lavastone", "Chaotic Lavastone Bricks");
+        lang.addBlock(getVariant("lavastone_chaotic_medium"), "Lavastone", "Lavastone Bricks");
+        lang.addBlock(getVariant("lavastone_chaotic_small"), "Lavastone", "Lavastone Tiles");
         lang.addBlock(getVariant("lavastone_circular"), "Lavastone", "Circular");
         lang.addBlock(getVariant("lavastone_cracked"), "Lavastone", "Cracked");
         lang.addBlock(getVariant("lavastone_cracked_bricks"), "Lavastone", "Cracked Bricks");
@@ -59,12 +59,12 @@ public class LavastoneFamily extends ChiselBlock {
         lang.addBlock(getVariant("lavastone_french_2"), "Lavastone", "French 2");
         lang.addBlock(getVariant("lavastone_jellybean"), "Lavastone", "Jellybean");
         lang.addBlock(getVariant("lavastone_layers"), "Lavastone", "Layers");
-        lang.addBlock(getVariant("lavastone_mosaic"), "Lavastone", "Mosaic");
-        lang.addBlock(getVariant("lavastone_ornate"), "Lavastone", "Ornate");
-        lang.addBlock(getVariant("lavastone_panel"), "Lavastone", "Panel");
+        lang.addBlock(getVariant("lavastone_mosaic"), "Lavastone", "Lava Creeper in Tiles");
+        lang.addBlock(getVariant("lavastone_ornate"), "Lavastone", "Ornate Lava Panel");
+        lang.addBlock(getVariant("lavastone_panel"), "Lavastone", "Lava Panel");
         lang.addBlock(getVariant("lavastone_pillar"), "Lavastone", "Pillar");
         lang.addBlock(getVariant("lavastone_prism"), "Lavastone", "Prism");
-        lang.addBlock(getVariant("lavastone_raw"), "Lavastone", "Raw");
+        lang.addBlock(getVariant("lavastone_raw"), "Lavastone", "Black Lavastone");
         lang.addBlock(getVariant("lavastone_road"), "Lavastone", "Road");
         lang.addBlock(getVariant("lavastone_slanted"), "Lavastone", "Slanted");
         lang.addBlock(getVariant("lavastone_small_bricks"), "Lavastone", "Small Bricks");

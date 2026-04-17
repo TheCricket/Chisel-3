@@ -32,23 +32,23 @@ public class DarkOakFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("dark_oak_planks_braced"), "Dark Oak Wood Planks", "Braced Planks");
-        lang.addBlock(getVariant("dark_oak_planks_braid"), "Dark Oak Wood Planks", "Braid");
-        lang.addBlock(getVariant("dark_oak_planks_crude_horizontal"), "Dark Oak Wood Planks", "Crude Horizontal Planks");
-        lang.addBlock(getVariant("dark_oak_planks_crude_paneling"), "Dark Oak Wood Planks", "Crude Paneling");
-        lang.addBlock(getVariant("dark_oak_planks_crude_vertical"), "Dark Oak Wood Planks", "Crude Vertical Planks");
-        lang.addBlock(getVariant("dark_oak_planks_encased"), "Dark Oak Wood Planks", "Encased Planks");
-        lang.addBlock(getVariant("dark_oak_planks_encased_large"), "Dark Oak Wood Planks", "Encased Large Planks");
-        lang.addBlock(getVariant("dark_oak_planks_encased_smooth"), "Dark Oak Wood Planks", "Encased Smooth");
-        lang.addBlock(getVariant("dark_oak_planks_large"), "Dark Oak Wood Planks", "Large Planks");
-        lang.addBlock(getVariant("dark_oak_planks_log_bordered"), "Dark Oak Wood Planks", "Bordered");
-        lang.addBlock(getVariant("dark_oak_planks_log_cabin_ns"), "Dark Oak Wood Planks", "Log Cabin (NS)");
-        lang.addBlock(getVariant("dark_oak_planks_log_cabin_ew"), "Dark Oak Wood Planks", "Log Cabin (EW)");
-        lang.addBlock(getVariant("dark_oak_planks_paneling"), "Dark Oak Wood Planks", "Paneling");
-        lang.addBlock(getVariant("dark_oak_planks_shipping"), "Dark Oak Wood Planks", "Shipping Crate");
-        lang.addBlock(getVariant("dark_oak_planks_smooth"), "Dark Oak Wood Planks", "Smooth");
-        lang.addBlock(getVariant("dark_oak_planks_stacked"), "Dark Oak Wood Planks", "Stacked");
-        lang.addBlock(getVariant("dark_oak_planks_vertical"), "Dark Oak Wood Planks", "Vertical Planks");
+        lang.addBlock(getVariant("dark_oak_planks_braced"), "Dark Oak Wood Planks", "Dark Oak Wood Panel");
+        lang.addBlock(getVariant("dark_oak_planks_braid"), "Dark Oak Wood Planks", "Dark Oak Wood Braid");
+        lang.addBlock(getVariant("dark_oak_planks_crude_horizontal"), "Dark Oak Wood Planks", "Vertical Dark Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("dark_oak_planks_crude_paneling"), "Dark Oak Wood Planks", "Dark Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("dark_oak_planks_crude_vertical"), "Dark Oak Wood Planks", "Vertical Dark Oak Wood Planks in Disarray");
+        lang.addBlock(getVariant("dark_oak_planks_encased"), "Dark Oak Wood Planks", "Encased Dark Oak Wood Panel");
+        lang.addBlock(getVariant("dark_oak_planks_encased_large"), "Dark Oak Wood Planks", "Large Long Dark Oak Wood Planks");
+        lang.addBlock(getVariant("dark_oak_planks_encased_smooth"), "Dark Oak Wood Planks", "Smooth Dark Oak Wood Planks");
+        lang.addBlock(getVariant("dark_oak_planks_large"), "Dark Oak Wood Planks", "Large Long Dark Oak Wood Planks");
+        lang.addBlock(getVariant("dark_oak_planks_log_bordered"), "Dark Oak Wood Planks", "Log Bordered Dark Oak Wood Panel");
+        lang.addBlock(getVariant("dark_oak_planks_log_cabin_ns"), "Dark Oak Wood Planks", "Dark Oak Wood Log Cabin (North-South)");
+        lang.addBlock(getVariant("dark_oak_planks_log_cabin_ew"), "Dark Oak Wood Planks", "Dark Oak Wood Log Cabin (East-West)");
+        lang.addBlock(getVariant("dark_oak_planks_paneling"), "Dark Oak Wood Planks", "Dark Oak Wood Panel");
+        lang.addBlock(getVariant("dark_oak_planks_shipping"), "Dark Oak Wood Planks", "Dark Oak Wood Crate");
+        lang.addBlock(getVariant("dark_oak_planks_smooth"), "Dark Oak Wood Planks", "Smooth Dark Oak Wood Planks");
+        lang.addBlock(getVariant("dark_oak_planks_stacked"), "Dark Oak Wood Planks", "Stacked Dark Oak Wood Tiles");
+        lang.addBlock(getVariant("dark_oak_planks_vertical"), "Dark Oak Wood Planks", "Vertical Dark Oak Wood Planks");
     }
 }
 

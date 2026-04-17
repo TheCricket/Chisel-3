@@ -27,18 +27,18 @@ public class DiamondFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("diamond_bismuth"), "Diamond", "Bismuth");
-        lang.addBlock(getVariant("diamond_cells"), "Diamond", "Cells");
-        lang.addBlock(getVariant("diamond_crushed"), "Diamond", "Crushed");
-        lang.addBlock(getVariant("diamond_embossed"), "Diamond", "Embossed");
-        lang.addBlock(getVariant("diamond_obsidian"), "Diamond", "Obsidian");
-        lang.addBlock(getVariant("diamond_obsidian_purple"), "Diamond", "Obsidian Purple");
-        lang.addBlock(getVariant("diamond_ornate"), "Diamond", "Ornate");
-        lang.addBlock(getVariant("diamond_panel"), "Diamond", "Panel");
-        lang.addBlock(getVariant("diamond_simple"), "Diamond", "Simple");
-        lang.addBlock(getVariant("diamond_small_blocks"), "Diamond", "Small Blocks");
-        lang.addBlock(getVariant("diamond_small_blocks_ornate"), "Diamond", "Small Blocks Ornate");
-        lang.addBlock(getVariant("diamond_zelda"), "Diamond", "Zelda");
+        lang.addBlock(getVariant("diamond_bismuth"), "Diamond", "Bismuth Diamond Block");
+        lang.addBlock(getVariant("diamond_cells"), "Diamond", "Diamond Cells");
+        lang.addBlock(getVariant("diamond_crushed"), "Diamond", "Crushed Diamond");
+        lang.addBlock(getVariant("diamond_embossed"), "Diamond", "Embossed Diamond Block");
+        lang.addBlock(getVariant("diamond_obsidian"), "Diamond", "Diamonds in Obsidian");
+        lang.addBlock(getVariant("diamond_obsidian_purple"), "Diamond", "Diamonds in Purple Obsidian");
+        lang.addBlock(getVariant("diamond_ornate"), "Diamond", "Diamond Block with Ornate Layer");
+        lang.addBlock(getVariant("diamond_panel"), "Diamond", "Diamond Block with Panel");
+        lang.addBlock(getVariant("diamond_simple"), "Diamond", "Simple Diamond Block");
+        lang.addBlock(getVariant("diamond_small_blocks"), "Diamond", "Small Diamond Blocks");
+        lang.addBlock(getVariant("diamond_small_blocks_ornate"), "Diamond", "Small Ornate Diamond Blocks");
+        lang.addBlock(getVariant("diamond_zelda"), "Diamond", "Zelda Diamond Block");
     }
 }
 

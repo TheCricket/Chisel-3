@@ -20,10 +20,10 @@ public class LeadFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("lead_bad_greggy"), "Lead", "Bad Greggy");
-        lang.addBlock(getVariant("lead_bolted"), "Lead", "Bolted");
-        lang.addBlock(getVariant("lead_caution"), "Lead", "Caution");
-        lang.addBlock(getVariant("lead_crate"), "Lead", "Crate");
+        lang.addBlock(getVariant("lead_bad_greggy"), "Lead", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("lead_bolted"), "Lead", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("lead_caution"), "Lead", "Caution Stripes");
+        lang.addBlock(getVariant("lead_crate"), "Lead", "Shipping Crate");
         lang.addBlock(getVariant("lead_machine"), "Lead", "Machine");
         lang.addBlock(getVariant("lead_scaffold"), "Lead", "Scaffold");
         lang.addBlock(getVariant("lead_thermal"), "Lead", "Thermal");

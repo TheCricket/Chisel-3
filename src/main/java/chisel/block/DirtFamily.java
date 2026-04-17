@@ -30,21 +30,21 @@ public class DirtFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("dirt_bricks"), "Dirt", "Bricks");
-        lang.addBlock(getVariant("dirt_bricks_arranged"), "Dirt", "Bricks Arranged");
-        lang.addBlock(getVariant("dirt_bricks_disarray"), "Dirt", "Bricks Disarray");
-        lang.addBlock(getVariant("dirt_bricks_large"), "Dirt", "Bricks Large");
-        lang.addBlock(getVariant("dirt_chunky"), "Dirt", "Chunky");
-        lang.addBlock(getVariant("dirt_cobble"), "Dirt", "Cobble");
-        lang.addBlock(getVariant("dirt_happy"), "Dirt", "Happy");
-        lang.addBlock(getVariant("dirt_horizontal"), "Dirt", "Horizontal");
-        lang.addBlock(getVariant("dirt_layers"), "Dirt", "Layers");
-        lang.addBlock(getVariant("dirt_netherbricks"), "Dirt", "Netherbricks");
-        lang.addBlock(getVariant("dirt_plate"), "Dirt", "Plate");
-        lang.addBlock(getVariant("dirt_reinforced"), "Dirt", "Reinforced");
-        lang.addBlock(getVariant("dirt_reinforced_cobble"), "Dirt", "Reinforced Cobble");
-        lang.addBlock(getVariant("dirt_vert"), "Dirt", "Vert");
-        lang.addBlock(getVariant("dirt_vertical"), "Dirt", "Vertical");
+        lang.addBlock(getVariant("dirt_bricks"), "Dirt", "Dirt Bricks");
+        lang.addBlock(getVariant("dirt_bricks_arranged"), "Dirt", "Dirt Bricks");
+        lang.addBlock(getVariant("dirt_bricks_disarray"), "Dirt", "Dirt Bricks in Disarray");
+        lang.addBlock(getVariant("dirt_bricks_large"), "Dirt", "Large Dirt Bricks");
+        lang.addBlock(getVariant("dirt_chunky"), "Dirt", "Crumbling Dirt");
+        lang.addBlock(getVariant("dirt_cobble"), "Dirt", "Cobble-Dirt");
+        lang.addBlock(getVariant("dirt_happy"), "Dirt", "Happy Dirt");
+        lang.addBlock(getVariant("dirt_horizontal"), "Dirt", "Horizontal Dirt");
+        lang.addBlock(getVariant("dirt_layers"), "Dirt", "Dirt Layers");
+        lang.addBlock(getVariant("dirt_netherbricks"), "Dirt", "Dirt Bricks Imitating Nether Brick Design");
+        lang.addBlock(getVariant("dirt_plate"), "Dirt", "Farmland");
+        lang.addBlock(getVariant("dirt_reinforced"), "Dirt", "Reinforced Dirt");
+        lang.addBlock(getVariant("dirt_reinforced_cobble"), "Dirt", "Reinforced Cobble-Dirt");
+        lang.addBlock(getVariant("dirt_vert"), "Dirt", "Vertical Dirt");
+        lang.addBlock(getVariant("dirt_vertical"), "Dirt", "Vertical Dirt");
     }
 }
 

@@ -48,11 +48,11 @@ public class GraniteFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("granite_array"), "Granite", "Array");
+        lang.addBlock(getVariant("granite_array"), "Granite", "Granite Pillar");
         lang.addBlock(getVariant("granite_braid"), "Granite", "Braid");
         lang.addBlock(getVariant("granite_chaotic_bricks"), "Granite", "Chaotic Bricks");
-        lang.addBlock(getVariant("granite_chaotic_medium"), "Granite", "Medium Chaotic");
-        lang.addBlock(getVariant("granite_chaotic_small"), "Granite", "Small Chaotic");
+        lang.addBlock(getVariant("granite_chaotic_medium"), "Granite", "Granite Bricks");
+        lang.addBlock(getVariant("granite_chaotic_small"), "Granite", "Granite Small Tiles");
         lang.addBlock(getVariant("granite_circular"), "Granite", "Circular");
         lang.addBlock(getVariant("granite_cracked"), "Granite", "Cracked");
         lang.addBlock(getVariant("granite_cracked_bricks"), "Granite", "Cracked Bricks");
@@ -64,10 +64,10 @@ public class GraniteFamily extends ChiselBlock {
         lang.addBlock(getVariant("granite_jellybean"), "Granite", "Jellybean");
         lang.addBlock(getVariant("granite_layers"), "Granite", "Layers");
         lang.addBlock(getVariant("granite_mosaic"), "Granite", "Mosaic");
-        lang.addBlock(getVariant("granite_ornate"), "Granite", "Ornate");
+        lang.addBlock(getVariant("granite_ornate"), "Granite", "Ornate Granite");
         lang.addBlock(getVariant("granite_panel"), "Granite", "Panel");
         lang.addBlock(getVariant("granite_pillar"), "Granite", "Pillar");
-        lang.addBlock(getVariant("granite_prism"), "Granite", "Prism");
+        lang.addBlock(getVariant("granite_prism"), "Granite", "Prismatic Granite");
         lang.addBlock(getVariant("granite_raw"), "Granite", "Raw");
         lang.addBlock(getVariant("granite_road"), "Granite", "Road");
         lang.addBlock(getVariant("granite_slanted"), "Granite", "Slanted");

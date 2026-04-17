@@ -23,15 +23,15 @@ public class LapisFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("lapis_chunky"), "Lapis Lazuli Block", "Chunky");
-        lang.addBlock(getVariant("lapis_dark"), "Lapis Lazuli Block", "Dark");
-        lang.addBlock(getVariant("lapis_masonry"), "Lapis Lazuli Block", "Masonry");
-        lang.addBlock(getVariant("lapis_ornate"), "Lapis Lazuli Block", "Ornate");
-        lang.addBlock(getVariant("lapis_ornate_layer"), "Lapis Lazuli Block", "Ornate Layer");
-        lang.addBlock(getVariant("lapis_panel"), "Lapis Lazuli Block", "Panel");
-        lang.addBlock(getVariant("lapis_smooth"), "Lapis Lazuli Block", "Smooth");
-        lang.addBlock(getVariant("lapis_tile"), "Lapis Lazuli Block", "Tile");
-        lang.addBlock(getVariant("lapis_zelda"), "Lapis Lazuli Block", "Zelda");
+        lang.addBlock(getVariant("lapis_chunky"), "Lapis Block", "Chunky Lapis Block");
+        lang.addBlock(getVariant("lapis_dark"), "Lapis Block", "Dark Lapis Block");
+        lang.addBlock(getVariant("lapis_masonry"), "Lapis Block", "Masonry");
+        lang.addBlock(getVariant("lapis_ornate"), "Lapis Block", "Ornate Lapis Block");
+        lang.addBlock(getVariant("lapis_ornate_layer"), "Lapis Block", "Lapis with Ornate Layer");
+        lang.addBlock(getVariant("lapis_panel"), "Lapis Block", "Lapis Panel");
+        lang.addBlock(getVariant("lapis_smooth"), "Lapis Block", "Smooth Lapis");
+        lang.addBlock(getVariant("lapis_tile"), "Lapis Block", "Lapis Tile");
+        lang.addBlock(getVariant("lapis_zelda"), "Lapis Block", "Zelda Lapis Block");
     }
 }
 

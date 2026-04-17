@@ -19,11 +19,11 @@ public class ShingleFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("shingles_1"), "Shingle", "1");
-        lang.addBlock(getVariant("shingles_2"), "Shingle", "2");
-        lang.addBlock(getVariant("shingles_3"), "Shingle", "3");
-        lang.addBlock(getVariant("shingles_4"), "Shingle", "4");
-        lang.addBlock(getVariant("shingles_5"), "Shingle", "5");
-        lang.addBlock(getVariant("shingles_6"), "Shingle", "6");
+        lang.addBlock(getVariant("shingles_1"), "Shingles", "Red Diagonal");
+        lang.addBlock(getVariant("shingles_2"), "Shingles", "Red Tiny Squares");
+        lang.addBlock(getVariant("shingles_3"), "Shingles", "Red Big Squares");
+        lang.addBlock(getVariant("shingles_4"), "Shingles", "Black Diagonal");
+        lang.addBlock(getVariant("shingles_5"), "Shingles", "Black Tiny Squares");
+        lang.addBlock(getVariant("shingles_6"), "Shingles", "Black Big Squares");
     }
 }

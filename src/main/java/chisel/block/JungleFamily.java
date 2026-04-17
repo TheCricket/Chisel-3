@@ -32,23 +32,23 @@ public class JungleFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("jungle_planks_braced"), "Jungle Wood Planks", "Braced Planks");
-        lang.addBlock(getVariant("jungle_planks_braid"), "Jungle Wood Planks", "Braid");
-        lang.addBlock(getVariant("jungle_planks_crude_horizontal"), "Jungle Wood Planks", "Crude Horizontal Planks");
-        lang.addBlock(getVariant("jungle_planks_crude_paneling"), "Jungle Wood Planks", "Crude Paneling");
-        lang.addBlock(getVariant("jungle_planks_crude_vertical"), "Jungle Wood Planks", "Crude Vertical Planks");
-        lang.addBlock(getVariant("jungle_planks_encased"), "Jungle Wood Planks", "Encased Planks");
-        lang.addBlock(getVariant("jungle_planks_encased_large"), "Jungle Wood Planks", "Encased Large Planks");
-        lang.addBlock(getVariant("jungle_planks_encased_smooth"), "Jungle Wood Planks", "Encased Smooth");
-        lang.addBlock(getVariant("jungle_planks_large"), "Jungle Wood Planks", "Large Planks");
-        lang.addBlock(getVariant("jungle_planks_log_bordered"), "Jungle Wood Planks", "Log Bordered");
-        lang.addBlock(getVariant("jungle_planks_log_cabin_ns"), "Jungle Wood Planks", "Log Cabin NS");
-        lang.addBlock(getVariant("jungle_planks_log_cabin_ew"), "Jungle Wood Planks", "Log Cabin EW");
-        lang.addBlock(getVariant("jungle_planks_paneling"), "Jungle Wood Planks", "Paneling");
-        lang.addBlock(getVariant("jungle_planks_shipping"), "Jungle Wood Planks", "Shipping Crate");
-        lang.addBlock(getVariant("jungle_planks_smooth"), "Jungle Wood Planks", "Smooth");
-        lang.addBlock(getVariant("jungle_planks_stacked"), "Jungle Wood Planks", "Stacked");
-        lang.addBlock(getVariant("jungle_planks_vertical"), "Jungle Wood Planks", "Vertical Planks");
+        lang.addBlock(getVariant("jungle_planks_braced"), "Jungle Wood Planks", "Jungle Wood Panel");
+        lang.addBlock(getVariant("jungle_planks_braid"), "Jungle Wood Planks", "Jungle Wood Braid");
+        lang.addBlock(getVariant("jungle_planks_crude_horizontal"), "Jungle Wood Planks", "Vertical Jungle Wood Planks in Disarray");
+        lang.addBlock(getVariant("jungle_planks_crude_paneling"), "Jungle Wood Planks", "Jungle Wood Planks in Disarray");
+        lang.addBlock(getVariant("jungle_planks_crude_vertical"), "Jungle Wood Planks", "Vertical Jungle Wood Planks in Disarray");
+        lang.addBlock(getVariant("jungle_planks_encased"), "Jungle Wood Planks", "Encased Jungle Wood Panel");
+        lang.addBlock(getVariant("jungle_planks_encased_large"), "Jungle Wood Planks", "Large Long Jungle Wood Planks");
+        lang.addBlock(getVariant("jungle_planks_encased_smooth"), "Jungle Wood Planks", "Smooth Jungle Wood Planks");
+        lang.addBlock(getVariant("jungle_planks_large"), "Jungle Wood Planks", "Large Long Jungle Wood Planks");
+        lang.addBlock(getVariant("jungle_planks_log_bordered"), "Jungle Wood Planks", "Log Bordered Jungle Wood Panel");
+        lang.addBlock(getVariant("jungle_planks_log_cabin_ns"), "Jungle Wood Planks", "Jungle Wood Log Cabin (North-South)");
+        lang.addBlock(getVariant("jungle_planks_log_cabin_ew"), "Jungle Wood Planks", "Jungle Wood Log Cabin (East-West)");
+        lang.addBlock(getVariant("jungle_planks_paneling"), "Jungle Wood Planks", "Jungle Wood Panel");
+        lang.addBlock(getVariant("jungle_planks_shipping"), "Jungle Wood Planks", "Jungle Wood Crate");
+        lang.addBlock(getVariant("jungle_planks_smooth"), "Jungle Wood Planks", "Smooth Jungle Wood Planks");
+        lang.addBlock(getVariant("jungle_planks_stacked"), "Jungle Wood Planks", "Stacked Jungle Wood Tiles");
+        lang.addBlock(getVariant("jungle_planks_vertical"), "Jungle Wood Planks", "Vertical Jungle Wood Planks");
     }
 }
 

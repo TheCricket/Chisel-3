@@ -29,22 +29,22 @@ public class WarningFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("warning_biohazard"), "Warning Block", "Biohazard");
-        lang.addBlock(getVariant("warning_chem"), "Warning Block", "Chem");
-        lang.addBlock(getVariant("warning_construction"), "Warning Block", "Construction");
-        lang.addBlock(getVariant("warning_cryogenic"), "Warning Block", "Cryogenic");
-        lang.addBlock(getVariant("warning_death"), "Warning Block", "Death");
-        lang.addBlock(getVariant("warning_explosion"), "Warning Block", "Explosion");
-        lang.addBlock(getVariant("warning_falling"), "Warning Block", "Falling");
-        lang.addBlock(getVariant("warning_falling_objects"), "Warning Block", "Falling Objects");
-        lang.addBlock(getVariant("warning_fire"), "Warning Block", "Fire");
-        lang.addBlock(getVariant("warning_generic"), "Warning Block", "Generic");
-        lang.addBlock(getVariant("warning_illuminati"), "Warning Block", "Illuminati");
-        lang.addBlock(getVariant("warning_loud"), "Warning Block", "Loud");
-        lang.addBlock(getVariant("warning_no_entry"), "Warning Block", "No Entry");
-        lang.addBlock(getVariant("warning_oxygen"), "Warning Block", "Oxygen");
-        lang.addBlock(getVariant("warning_radiation"), "Warning Block", "Radiation");
-        lang.addBlock(getVariant("warning_voltage"), "Warning Block", "Voltage");
+        lang.addBlock(getVariant("warning_biohazard"), "Warning Sign", "Biohazard");
+        lang.addBlock(getVariant("warning_chem"), "Warning Sign", "Dangerous Chemicals");
+        lang.addBlock(getVariant("warning_construction"), "Warning Sign", "Under Construction");
+        lang.addBlock(getVariant("warning_cryogenic"), "Warning Sign", "Cryogenic Freezing in progress");
+        lang.addBlock(getVariant("warning_death"), "Warning Sign", "Death");
+        lang.addBlock(getVariant("warning_explosion"), "Warning Sign", "Explosion");
+        lang.addBlock(getVariant("warning_falling"), "Warning Sign", "Danger of Falling");
+        lang.addBlock(getVariant("warning_falling_objects"), "Warning Sign", "Falling Objects");
+        lang.addBlock(getVariant("warning_fire"), "Warning Sign", "Fire");
+        lang.addBlock(getVariant("warning_generic"), "Warning Sign", "Generic Warning");
+        lang.addBlock(getVariant("warning_illuminati"), "Warning Sign", "Illuminati");
+        lang.addBlock(getVariant("warning_loud"), "Warning Sign", "Loud Sounds");
+        lang.addBlock(getVariant("warning_no_entry"), "Warning Sign", "No Entry");
+        lang.addBlock(getVariant("warning_oxygen"), "Warning Sign", "Oxygen Required");
+        lang.addBlock(getVariant("warning_radiation"), "Warning Sign", "Radiation");
+        lang.addBlock(getVariant("warning_voltage"), "Warning Sign", "High Voltage");
     }
 }
 

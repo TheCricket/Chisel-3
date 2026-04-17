@@ -32,23 +32,23 @@ public class SpruceFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("spruce_planks_braced"), "Spruce Wood Planks", "Braced Planks");
-        lang.addBlock(getVariant("spruce_planks_braid"), "Spruce Wood Planks", "Braid");
-        lang.addBlock(getVariant("spruce_planks_crude_horizontal"), "Spruce Wood Planks", "Crude Horizontal Planks");
-        lang.addBlock(getVariant("spruce_planks_crude_paneling"), "Spruce Wood Planks", "Crude Paneling");
-        lang.addBlock(getVariant("spruce_planks_crude_vertical"), "Spruce Wood Planks", "Crude Vertical Planks");
-        lang.addBlock(getVariant("spruce_planks_encased"), "Spruce Wood Planks", "Encased Planks");
-        lang.addBlock(getVariant("spruce_planks_encased_large"), "Spruce Wood Planks", "Encased Large Planks");
-        lang.addBlock(getVariant("spruce_planks_encased_smooth"), "Spruce Wood Planks", "Encased Smooth");
-        lang.addBlock(getVariant("spruce_planks_large"), "Spruce Wood Planks", "Large Planks");
-        lang.addBlock(getVariant("spruce_planks_log_bordered"), "Spruce Wood Planks", "Log Bordered");
-        lang.addBlock(getVariant("spruce_planks_log_cabin_ew"), "Spruce Wood Planks", "Log Cabin EW");
-        lang.addBlock(getVariant("spruce_planks_log_cabin_ns"), "Spruce Wood Planks", "Log Cabin NS");
-        lang.addBlock(getVariant("spruce_planks_paneling"), "Spruce Wood Planks", "Paneling");
-        lang.addBlock(getVariant("spruce_planks_shipping"), "Spruce Wood Planks", "Shipping Crate");
-        lang.addBlock(getVariant("spruce_planks_smooth"), "Spruce Wood Planks", "Smooth");
-        lang.addBlock(getVariant("spruce_planks_stacked"), "Spruce Wood Planks", "Stacked");
-        lang.addBlock(getVariant("spruce_planks_vertical"), "Spruce Wood Planks", "Vertical Planks");
+        lang.addBlock(getVariant("spruce_planks_braced"), "Spruce Wood Planks", "Spruce Wood Panel");
+        lang.addBlock(getVariant("spruce_planks_braid"), "Spruce Wood Planks", "Spruce Wood Braid");
+        lang.addBlock(getVariant("spruce_planks_crude_horizontal"), "Spruce Wood Planks", "Vertical Spruce Wood Planks in Disarray");
+        lang.addBlock(getVariant("spruce_planks_crude_paneling"), "Spruce Wood Planks", "Spruce Wood Planks in Disarray");
+        lang.addBlock(getVariant("spruce_planks_crude_vertical"), "Spruce Wood Planks", "Vertical Spruce Wood Planks in Disarray");
+        lang.addBlock(getVariant("spruce_planks_encased"), "Spruce Wood Planks", "Encased Spruce Wood Panel");
+        lang.addBlock(getVariant("spruce_planks_encased_large"), "Spruce Wood Planks", "Large Long Spruce Wood Planks");
+        lang.addBlock(getVariant("spruce_planks_encased_smooth"), " Spruce Wood Planks", "Smooth Spruce Wood Planks");
+        lang.addBlock(getVariant("spruce_planks_large"), "Spruce Wood Planks", "Large Long Spruce Wood Planks");
+        lang.addBlock(getVariant("spruce_planks_log_bordered"), "Spruce Wood Planks", "Log Bordered Spruce Wood Panel");
+        lang.addBlock(getVariant("spruce_planks_log_cabin_ew"), "Spruce Wood Planks", "Spruce Wood Log Cabin (East-West)");
+        lang.addBlock(getVariant("spruce_planks_log_cabin_ns"), "Spruce Wood Planks", "Spruce Wood Log Cabin (North-South)");
+        lang.addBlock(getVariant("spruce_planks_paneling"), "Spruce Wood Planks", "Spruce Wood Panel");
+        lang.addBlock(getVariant("spruce_planks_shipping"), "Spruce Wood Planks", "Spruce Wood Crate");
+        lang.addBlock(getVariant("spruce_planks_smooth"), "Spruce Wood Planks", "Smooth Spruce Wood Planks");
+        lang.addBlock(getVariant("spruce_planks_stacked"), "Spruce Wood Planks", "Stacked Spruce Wood Tiles");
+        lang.addBlock(getVariant("spruce_planks_vertical"), "Spruce Wood Planks", "Vertical Spruce Wood Planks");
     }
 }
 

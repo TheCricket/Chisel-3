@@ -48,11 +48,11 @@ public class DioriteFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("diorite_array"), "Diorite", "Array");
+        lang.addBlock(getVariant("diorite_array"), "Diorite", "Diorite Pillar");
         lang.addBlock(getVariant("diorite_braid"), "Diorite", "Braid");
         lang.addBlock(getVariant("diorite_chaotic"), "Diorite", "Chaotic");
-        lang.addBlock(getVariant("diorite_chaotic_medium"), "Diorite", "Medium Chaotic");
-        lang.addBlock(getVariant("diorite_chaotic_small"), "Diorite", "Small Chaotic");
+        lang.addBlock(getVariant("diorite_chaotic_medium"), "Diorite", "Diorite Bricks");
+        lang.addBlock(getVariant("diorite_chaotic_small"), "Diorite", "Diorite Small Tiles");
         lang.addBlock(getVariant("diorite_circular"), "Diorite", "Circular");
         lang.addBlock(getVariant("diorite_cracked"), "Diorite", "Cracked");
         lang.addBlock(getVariant("diorite_cracked_bricks"), "Diorite", "Cracked Bricks");
@@ -64,10 +64,10 @@ public class DioriteFamily extends ChiselBlock {
         lang.addBlock(getVariant("diorite_jellybean"), "Diorite", "Jellybean");
         lang.addBlock(getVariant("diorite_layers"), "Diorite", "Layers");
         lang.addBlock(getVariant("diorite_mosaic"), "Diorite", "Mosaic");
-        lang.addBlock(getVariant("diorite_ornate"), "Diorite", "Ornate");
+        lang.addBlock(getVariant("diorite_ornate"), "Diorite", "Ornate Diorite");
         lang.addBlock(getVariant("diorite_panel"), "Diorite", "Panel");
         lang.addBlock(getVariant("diorite_pillar"), "Diorite", "Pillar");
-        lang.addBlock(getVariant("diorite_prism"), "Diorite", "Prism");
+        lang.addBlock(getVariant("diorite_prism"), "Diorite", "Prismatic Diorite");
         lang.addBlock(getVariant("diorite_raw"), "Diorite", "Raw");
         lang.addBlock(getVariant("diorite_road"), "Diorite", "Road");
         lang.addBlock(getVariant("diorite_slanted"), "Diorite", "Slanted");

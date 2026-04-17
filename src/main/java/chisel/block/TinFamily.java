@@ -22,11 +22,11 @@ public class TinFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("tin_125"), "Tin", "125");
-        lang.addBlock(getVariant("tin_bad_greggy"), "Tin", "Bad Greggy");
-        lang.addBlock(getVariant("tin_bolted"), "Tin", "Bolted");
-        lang.addBlock(getVariant("tin_caution"), "Tin", "Caution");
-        lang.addBlock(getVariant("tin_crate"), "Tin", "Crate");
-        lang.addBlock(getVariant("tin_egregious"), "Tin", "Egregious");
+        lang.addBlock(getVariant("tin_bad_greggy"), "Tin", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("tin_bolted"), "Tin", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("tin_caution"), "Tin", "Caution Stripes");
+        lang.addBlock(getVariant("tin_crate"), "Tin", "Shipping Crate");
+        lang.addBlock(getVariant("tin_egregious"), "Tin", "Egregiously Bordered Block");
         lang.addBlock(getVariant("tin_scaffold"), "Tin", "Scaffold");
         lang.addBlock(getVariant("tin_thermal"), "Tin", "Thermal");
     }

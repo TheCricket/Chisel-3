@@ -48,19 +48,19 @@ public class BricksFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("bricks_array"), "Bricks", "Array");
+        lang.addBlock(getVariant("bricks_array"), "Bricks", "Large Bricks");
         lang.addBlock(getVariant("bricks_braid"), "Bricks", "Braid");
-        lang.addBlock(getVariant("bricks_chaotic"), "Bricks", "Chaotic");
-        lang.addBlock(getVariant("bricks_chaotic_medium"), "Bricks", "Medium Chaotic");
-        lang.addBlock(getVariant("bricks_chaotic_small"), "Bricks", "Small Chaotic");
+        lang.addBlock(getVariant("bricks_chaotic"), "Bricks", "Varied Bricks");
+        lang.addBlock(getVariant("bricks_chaotic_medium"), "Bricks", "Detailed Bricks");
+        lang.addBlock(getVariant("bricks_chaotic_small"), "Bricks", "Small Bricks");
         lang.addBlock(getVariant("bricks_circular"), "Bricks", "Circular");
-        lang.addBlock(getVariant("bricks_cracked"), "Bricks", "Cracked");
+        lang.addBlock(getVariant("bricks_cracked"), "Bricks", "Damaged Bricks");
         lang.addBlock(getVariant("bricks_cracked_bricks"), "Bricks", "Cracked Bricks");
         lang.addBlock(getVariant("bricks_cuts"), "Bricks", "Cuts");
-        lang.addBlock(getVariant("bricks_dent"), "Bricks", "Dent");
+        lang.addBlock(getVariant("bricks_dent"), "Bricks", "Bricks with Dent");
         lang.addBlock(getVariant("bricks_encased"), "Bricks", "Encased");
-        lang.addBlock(getVariant("bricks_french"), "Bricks", "French");
-        lang.addBlock(getVariant("bricks_french_2"), "Bricks", "French 2");
+        lang.addBlock(getVariant("bricks_french"), "Bricks", "Mortarless Bricks");
+        lang.addBlock(getVariant("bricks_french_2"), "Bricks", "Aged Bricks");
         lang.addBlock(getVariant("bricks_jellybean"), "Bricks", "Jellybean");
         lang.addBlock(getVariant("bricks_layers"), "Bricks", "Layers");
         lang.addBlock(getVariant("bricks_mosaic"), "Bricks", "Mosaic");
@@ -71,8 +71,8 @@ public class BricksFamily extends ChiselBlock {
         lang.addBlock(getVariant("bricks_raw"), "Bricks", "Raw");
         lang.addBlock(getVariant("bricks_road"), "Bricks", "Road");
         lang.addBlock(getVariant("bricks_slanted"), "Bricks", "Slanted");
-        lang.addBlock(getVariant("bricks_small"), "Bricks", "Small");
-        lang.addBlock(getVariant("bricks_soft"), "Bricks", "Soft");
+        lang.addBlock(getVariant("bricks_small"), "Bricks", "Small Tiles");
+        lang.addBlock(getVariant("bricks_soft"), "Bricks", "Yellow Bricks");
         lang.addBlock(getVariant("bricks_solid"), "Bricks", "Solid");
         lang.addBlock(getVariant("bricks_tiles_large"), "Bricks", "Large Tiles");
         lang.addBlock(getVariant("bricks_tiles_medium"), "Bricks", "Medium Tiles");

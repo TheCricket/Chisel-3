@@ -31,7 +31,18 @@ public class BookshelfFamily extends ChiselBlock {
     public void addTranslations(LangHelper lang) {
         for (int c = 0; c < woods.length; c++) {
             for (int d = 0; d < types.length; d++) {
-                lang.addBlock(getVariant("bookshelf_" + woods[c] + "_" + types[d]), woodNames[c] + " Bookshelf", typeNames[d]);
+                String desc = typeNames[d];
+                switch (types[d]) {
+                    case "abandoned" -> desc = "Abandoned Bookshelf";
+                    case "brim" -> desc = "Bookshelf filled to the brim with boring Pastel Books";
+                    case "historian" -> desc = "Historian's Bookshelf";
+                    case "hoarder" -> desc = "Hoarder's Bookshelf";
+                    case "necromancer" -> desc = "Necromancer's Bookshelf";
+                    case "necromancer_apprentice" -> desc = "Necromancer’s Apprentice Bookshelf";
+                    case "rainbow" -> desc = "Bookshelf with Rainbow Books";
+                    case "tomes" -> desc = "Bookshelf with Red Tomes";
+                }
+                lang.addBlock(getVariant("bookshelf_" + woods[c] + "_" + types[d]), woodNames[c] + " Bookshelf", desc);
             }
         }
     }

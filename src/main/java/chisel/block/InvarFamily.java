@@ -20,10 +20,10 @@ public class InvarFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("invar_bad_greggy"), "Invar", "Bad Greggy");
-        lang.addBlock(getVariant("invar_bolted"), "Invar", "Bolted");
-        lang.addBlock(getVariant("invar_caution"), "Invar", "Caution");
-        lang.addBlock(getVariant("invar_crate"), "Invar", "Crate");
+        lang.addBlock(getVariant("invar_bad_greggy"), "Invar", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("invar_bolted"), "Invar", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("invar_caution"), "Invar", "Caution Stripes");
+        lang.addBlock(getVariant("invar_crate"), "Invar", "Shipping Crate");
         lang.addBlock(getVariant("invar_machine"), "Invar", "Machine");
         lang.addBlock(getVariant("invar_scaffold"), "Invar", "Scaffold");
         lang.addBlock(getVariant("invar_thermal"), "Invar", "Thermal");

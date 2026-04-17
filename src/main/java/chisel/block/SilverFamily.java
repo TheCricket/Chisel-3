@@ -21,10 +21,10 @@ public class SilverFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("silver_125"), "Silver", "125");
-        lang.addBlock(getVariant("silver_bad_greggy"), "Silver", "Bad Greggy");
-        lang.addBlock(getVariant("silver_bolted"), "Silver", "Bolted");
-        lang.addBlock(getVariant("silver_caution"), "Silver", "Caution");
-        lang.addBlock(getVariant("silver_crate"), "Silver", "Crate");
+        lang.addBlock(getVariant("silver_bad_greggy"), "Silver", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("silver_bolted"), "Silver", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("silver_caution"), "Silver", "Caution Stripes");
+        lang.addBlock(getVariant("silver_crate"), "Silver", "Shipping Crate");
         lang.addBlock(getVariant("silver_scaffold"), "Silver", "Scaffold");
         lang.addBlock(getVariant("silver_thermal"), "Silver", "Thermal");
     }
