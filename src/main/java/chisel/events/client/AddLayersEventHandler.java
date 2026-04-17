@@ -1,4 +1,4 @@
-package chisel.events;
+package chisel.events.client;
 
 import chisel.Chisel;
 import chisel.client.VIPRenderLayer;
@@ -14,6 +14,7 @@ import net.minecraft.world.entity.Avatar;
 import net.minecraft.world.entity.player.PlayerModelType;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
@@ -25,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@EventBusSubscriber(modid = Chisel.MODID)
+@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class AddLayersEventHandler {
 
     public static final ContextKey<ItemStackRenderState> VIP_ITEM = new ContextKey<>(Chisel.prefix("vip_item"));
@@ -50,6 +51,7 @@ public class AddLayersEventHandler {
             @Override
             public <T extends Avatar & ClientAvatarEntity> void accept(@NonNull T avatar, @NonNull AvatarRenderState state) {
                 ItemLike item = VIPS.get(avatar.getUUID());
+                if(item == null) return;
 
                 ItemStackRenderState stack = new ItemStackRenderState();
                 Minecraft.getInstance().getItemModelResolver().updateForTopItem(stack, item.asItem().getDefaultInstance(), ItemDisplayContext.FIXED, null, null, 0);

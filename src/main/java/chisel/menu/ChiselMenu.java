@@ -124,16 +124,29 @@ public class ChiselMenu extends AbstractContainerMenu {
             ItemStack copyFrom = slot.getItem();
             stack = copyFrom.copy();
 
-            if (slotIndex < 61) {
-                if (!moveItemStackTo(copyFrom, 61, slots.size(), true))
+            if (slotIndex < 45) { // If it's a SelectionSlot (0-44)
+                if (!moveItemStackTo(copyFrom, 46, slots.size(), true)) {
                     return ItemStack.EMPTY;
-            } else if (!moveItemStackTo(copyFrom, 60, 61, false)) // Move to Input
-                return ItemStack.EMPTY;
+                }
+                // Trigger side effects manually since moveItemStackTo doesn't call onTake
+                container.chisel.hurtAndBreak(stack.getCount(), player, container.hand);
+                variants.clearContent();
+                inputSlot.set(ItemStack.EMPTY);
+            } else if (slotIndex < 46) { // If it's the InputSlot (45)
+                if (!moveItemStackTo(copyFrom, 46, slots.size(), true))
+                    return ItemStack.EMPTY;
 
-            if (copyFrom.getCount() == 0)
+                variants.clearContent();
+            } else { // From Player Inventory to InputSlot
+                if (!moveItemStackTo(copyFrom, 45, 46, false))
+                    return ItemStack.EMPTY;
+            }
+
+            if (copyFrom.isEmpty()) {
                 slot.set(ItemStack.EMPTY);
-            else
+            } else {
                 slot.setChanged();
+            }
         }
 
         return stack;

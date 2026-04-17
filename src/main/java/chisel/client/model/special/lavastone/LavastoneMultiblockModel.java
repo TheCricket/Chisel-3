@@ -20,17 +20,14 @@ import org.joml.Vector3f;
 public class LavastoneMultiblockModel extends VariantModel {
 
     private final int size;
-    private final TextureSlot overlaySlot;
-    private final ModelTemplate template;
 
     public LavastoneMultiblockModel(int size) {
         this.size = size;
-        this.overlaySlot = size == 2 ? ChiselTextureSlots.CTM_OVERLAY_2X2 : (size == 3 ? ChiselTextureSlots.CTM_OVERLAY_3X3 : ChiselTextureSlots.CTM_OVERLAY_4X4);
-        this.template = size == 2 ? ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_2x2 : (size == 3 ? ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_3x3 : ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_4x4);
     }
 
     @Override
     public TextureMapping getTextureMapping() {
+        TextureSlot overlaySlot = size == 2 ? ChiselTextureSlots.CTM_OVERLAY_2X2 : (size == 3 ? ChiselTextureSlots.CTM_OVERLAY_3X3 : ChiselTextureSlots.CTM_OVERLAY_4X4);
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, variant.getMaterial())
                 .put(TextureSlot.ALL, variant.getMaterial())
@@ -42,6 +39,7 @@ public class LavastoneMultiblockModel extends VariantModel {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
+        ModelTemplate template = size == 2 ? ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_2x2 : (size == 3 ? ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_3x3 : ChiselModelTemplates.CTM_MULTI_PASS_MULTIBLOCK_4x4);
         Identifier modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()

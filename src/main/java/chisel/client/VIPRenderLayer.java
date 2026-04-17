@@ -1,6 +1,6 @@
 package chisel.client;
 
-import chisel.events.AddLayersEventHandler;
+import chisel.events.client.AddLayersEventHandler;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.model.player.PlayerModel;

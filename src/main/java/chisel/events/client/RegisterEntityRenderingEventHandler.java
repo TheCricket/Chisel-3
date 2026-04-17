@@ -1,13 +1,14 @@
-package chisel.events;
+package chisel.events.client;
 
 import chisel.Chisel;
 import chisel.registry.ChiselEntities;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
-@EventBusSubscriber(modid = Chisel.MODID)
+@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class RegisterEntityRenderingEventHandler {
 
     @SubscribeEvent
