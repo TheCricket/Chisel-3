@@ -158,7 +158,7 @@ modrinth {
     versionNumber = mod_version
     versionType = release_type
     uploadFile = jar
-    gameVersions = ["26.1"]
+    gameVersions = ["26.1.2"]
     loaders = ["neoforge"]
 }
 
