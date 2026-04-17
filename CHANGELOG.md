@@ -17,13 +17,14 @@ All notable changes to this project will be documented in this file.
   - Connected Top-Bottom-Side (CTM TBS) support.
   - Horizontal (CTMH) and Vertical (CTMV) connection support.
   - V4 model support (4-variant random textures).
+  - Added CTM support to **Bookshelves**.
 - Added a `clientAuth` run configuration for development.
 
 ### Changed
 - Refactored `CTM_MULTI_PASS_MULTIBLOCK` templates to support multiple texture layers.
 - Improved CTM logic and variant registration for better performance and flexibility.
-- Promoted version from **Beta** to **Release**.
-- Updated **NeoForge** to `26.1.2.7-beta` and **JEI** to `29.5.0.24`.
+- Promoted version from **Beta** to **Release!**.
+- Updated and localized descriptions for numerous blocks.
 
 ### Fixed
 - Fixed **Lavastone** multiblock models incorrectly using water textures instead of lava.
@@ -33,7 +34,10 @@ All notable changes to this project will be documented in this file.
   - **Electrum**: Fixed inconsistent texture patterns.
   - **Stone/Dirt/Cobblestone**: Fixed various alignment and missing texture issues.
   - **Diorite/Andesite/Granite**: Improved CTM transitions.
-  - **Wood Planks**: Fixed several orientation issues (Dark Oak, Acacia, etc.).
+  - **Wood Planks**: Fixed several orientation issues (Dark Oak, Acacia, etc.) and added missing **Braced** variant textures.
+  - **Military/Shingles**: Added missing textures for Imperial/Rebel Camo and various Shingles.
+- Fixed a duplication bug in the Chisel menu.
+- Fixed several server-side crashes related to menu operations and block events.
 - Fixed many cases of missing or incorrect blockstate definitions.
 
 ## [3.0.5]
