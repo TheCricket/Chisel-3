@@ -2,11 +2,7 @@
   "neoforge:definition_type": "chisel:ctm_definition_loader",
   "connected_faces": [
     "down",
-    "up",
-    "north",
-    "south",
-    "west",
-    "east"
+    "up"
   ],
   "element": {
     "max": [
@@ -24,7 +20,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:dirt_vertical",
-    "model_type": "connected_tbs",
+    "model_type": "ctmv",
     "name": "dirt_vertical"
   }
 }

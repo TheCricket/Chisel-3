@@ -10,21 +10,21 @@ public class DirtFamily extends ChiselBlock {
     public DirtFamily(BlockBehaviour.Properties props) {
         family = builder("dirt")
                 .addVariant(Blocks.DIRT)
-                .addVariant("dirt_bricks", props, VariantModelType.CONNECTED_TBS)
+                .addVariant("dirt_bricks", props, VariantModelType.CTMV)
                 .addVariant("dirt_bricks_arranged", props)
                 .addVariant("dirt_bricks_disarray", props)
                 .addVariant("dirt_bricks_large", props)
                 .addVariant("dirt_chunky", props)
                 .addVariant("dirt_cobble", props)
                 .addVariant("dirt_happy", props)
-                .addVariant("dirt_horizontal", props, VariantModelType.TBS)
+                .addVariant("dirt_horizontal", props, VariantModelType.CTMH)
                 .addVariant("dirt_layers", props)
                 .addVariant("dirt_netherbricks", props)
                 .addVariant("dirt_plate", props)
                 .addVariant("dirt_reinforced", props, VariantModelType.CONNECTED)
                 .addVariant("dirt_reinforced_cobble", props, VariantModelType.CONNECTED)
-                .addVariant("dirt_vert", props, VariantModelType.CONNECTED_TBS)
-                .addVariant("dirt_vertical", props, VariantModelType.CONNECTED_TBS)
+                .addVariant("dirt_vert", props, VariantModelType.CTMV)
+                .addVariant("dirt_vertical", props, VariantModelType.CTMV)
                 .family();
     }
 

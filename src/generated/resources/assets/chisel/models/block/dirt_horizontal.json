@@ -1,7 +1,10 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_all",
   "textures": {
+    "all": "chisel:block/dirt/dirt_horizontal",
     "bottom": "chisel:block/dirt/dirt_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/dirt/dirt_horizontal-ctmh",
+    "particle": "chisel:block/dirt/dirt_horizontal",
     "side": "chisel:block/dirt/dirt_horizontal-side",
     "top": "chisel:block/dirt/dirt_horizontal-top"
   }
