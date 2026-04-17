@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/crimson_planks/crimson_planks_braced",
+    "bottom": "chisel:block/crimson_planks/crimson_planks_braced-bottom",
+    "overlay_bottom": "chisel:block/crimson_planks/crimson_planks_braced-bottom",
+    "overlay_bottom_connected": "chisel:block/crimson_planks/crimson_planks_braced-bottom-ctm",
+    "overlay_connected": "chisel:block/crimson_planks/crimson_planks_braced-ctm",
+    "overlay_side": "chisel:block/crimson_planks/crimson_planks_braced-side",
+    "overlay_side_connected": "chisel:block/crimson_planks/crimson_planks_braced-side-ctm",
+    "overlay_texture": "chisel:block/crimson_planks/crimson_planks_braced",
+    "overlay_top": "chisel:block/crimson_planks/crimson_planks_braced-top",
+    "overlay_top_connected": "chisel:block/crimson_planks/crimson_planks_braced-top-ctm",
+    "particle": "chisel:block/crimson_planks/crimson_planks_braced",
+    "side": "chisel:block/crimson_planks/crimson_planks_braced-side",
+    "top": "chisel:block/crimson_planks/crimson_planks_braced-top"
+  }
+}

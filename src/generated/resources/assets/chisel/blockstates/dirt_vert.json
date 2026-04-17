@@ -1,7 +1,26 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/dirt_vert"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/dirt_vert",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:dirt_vert",
+    "model_type": "ctmv",
+    "name": "dirt_vert"
   }
 }

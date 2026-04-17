@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/marble/marble_pillar_carved-bottom",
+    "side": "chisel:block/marble/marble_pillar_carved-side",
+    "top": "chisel:block/marble/marble_pillar_carved-top"
+  }
+}

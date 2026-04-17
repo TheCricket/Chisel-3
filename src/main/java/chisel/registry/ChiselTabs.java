@@ -37,6 +37,7 @@ public class ChiselTabs {
                     ChiselBlocks.NETHERRACK.getFamily(),
                     ChiselBlocks.OBSIDIAN.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
+                    ChiselBlocks.SHINGLE.getFamily(),
                     ChiselBlocks.TEMPLE.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
@@ -51,6 +52,7 @@ public class ChiselTabs {
             .displayItems((_, output) -> List.of(
                     ChiselBlocks.ACACIA.getFamily(),
                     ChiselBlocks.BIRCH.getFamily(),
+                    ChiselBlocks.CRIMSON.getFamily(),
                     ChiselBlocks.BOOKSHELF.getFamily(),
                     ChiselBlocks.DARK_OAK.getFamily(),
                     ChiselBlocks.JUNGLE.getFamily(),
@@ -72,6 +74,7 @@ public class ChiselTabs {
                     ChiselBlocks.HEX_PLATING.getFamily(),
                     ChiselBlocks.IRON.getFamily(),
                     ChiselBlocks.LABORATORY.getFamily(),
+                    ChiselBlocks.MILITARY.getFamily(),
                     ChiselBlocks.TECHNICAL.getFamily(),
                     ChiselBlocks.TYRIAN.getFamily(),
                     ChiselBlocks.ALUMINUM.getFamily(),
@@ -90,6 +93,7 @@ public class ChiselTabs {
                         ChiselBlocks.ANTIBLOCK.getFamily(),
                         ChiselBlocks.GLASS.getFamily(),
                         ChiselBlocks.TORCH.getFamily(),
+                        ChiselBlocks.CARPET.getFamily(),
                         ChiselBlocks.CLOUD.getFamily(),
                         ChiselBlocks.DIAMOND.getFamily(),
                         ChiselBlocks.DIRT.getFamily(),

@@ -16,16 +16,16 @@ public class CopperFamily extends ChiselBlock {
                 .addVariant("copper_crate", props, VariantModelType.CONNECTED)
                 .addVariant("copper_machine", props)
                 .addVariant("copper_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("copper_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("copper_thermal", props, VariantModelType.TBS)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("copper_bad_greggy"), "Copper", "Bad Greggy");
-        lang.addBlock(getVariant("copper_bolted"), "Copper", "Bolted");
-        lang.addBlock(getVariant("copper_caution"), "Copper", "Caution");
-        lang.addBlock(getVariant("copper_crate"), "Copper", "Crate");
+        lang.addBlock(getVariant("copper_bad_greggy"), "Copper", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("copper_bolted"), "Copper", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("copper_caution"), "Copper", "Caution Stripes");
+        lang.addBlock(getVariant("copper_crate"), "Copper", "Shipping Crate");
         lang.addBlock(getVariant("copper_machine"), "Copper", "Machine");
         lang.addBlock(getVariant("copper_scaffold"), "Copper", "Scaffold");
         lang.addBlock(getVariant("copper_thermal"), "Copper", "Thermal");

@@ -21,10 +21,10 @@ public class LeafFamily extends ChiselBlock {
     public void addTranslations(LangHelper lang) {
         lang.addBlock(getVariant("leaf_christmas_balls"), "Leaf Block", "Christmas Balls");
         lang.addBlock(getVariant("leaf_christmas_lights"), "Leaf Block", "Christmas Lights");
-        lang.addBlock(getVariant("leaf_dead"), "Leaf Block", "Dead");
-        lang.addBlock(getVariant("leaf_fancy"), "Leaf Block", "Fancy");
-        lang.addBlock(getVariant("leaf_pink"), "Leaf Block", "Pink");
-        lang.addBlock(getVariant("leaf_red"), "Leaf Block", "Red");
-        lang.addBlock(getVariant("leaf_white"), "Leaf Block", "White");
+        lang.addBlock(getVariant("leaf_dead"), "Leaf Block", "Dead Leaves");
+        lang.addBlock(getVariant("leaf_fancy"), "Leaf Block", "Fancy Leaves");
+        lang.addBlock(getVariant("leaf_pink"), "Leaf Block", "Pink Petals");
+        lang.addBlock(getVariant("leaf_red"), "Leaf Block", "Red Rose");
+        lang.addBlock(getVariant("leaf_white"), "Leaf Block", "White Rose");
     }
 }

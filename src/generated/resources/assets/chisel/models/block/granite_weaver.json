@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/granite/granite_weaver"
+    "all": "chisel:block/granite/granite_weaver",
+    "overlay_connected": "chisel:block/granite/granite_weaver-ctm",
+    "overlay_texture": "chisel:block/granite/granite_weaver",
+    "particle": "chisel:block/granite/granite_weaver"
   }
 }

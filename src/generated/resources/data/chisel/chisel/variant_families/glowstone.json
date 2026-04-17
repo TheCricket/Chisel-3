@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:glowstone_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "glowstone_array"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "block": "chisel:glowstone_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "glowstone_jellybean"
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "block": "chisel:glowstone_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "glowstone_slanted"
     },
     {

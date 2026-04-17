@@ -40,16 +40,16 @@ public class ChiselTorchFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("torch_1"), "Torch", "1");
-        lang.addBlock(getVariant("torch_2"), "Torch", "2");
-        lang.addBlock(getVariant("torch_3"), "Torch", "3");
-        lang.addBlock(getVariant("torch_4"), "Torch", "4");
-        lang.addBlock(getVariant("torch_5"), "Torch", "5");
-        lang.addBlock(getVariant("torch_6"), "Torch", "6");
-        lang.addBlock(getVariant("torch_7"), "Torch", "7");
-        lang.addBlock(getVariant("torch_8"), "Torch", "8");
-        lang.addBlock(getVariant("torch_9"), "Torch", "9");
-        lang.addBlock(getVariant("torch_10"), "Torch", "10");
+        lang.addBlock(getVariant("torch_1"), "Torch", "Wax Candle");
+        lang.addBlock(getVariant("torch_2"), "Torch", "Tall Wax Candle");
+        lang.addBlock(getVariant("torch_3"), "Torch", "White Lamp");
+        lang.addBlock(getVariant("torch_4"), "Torch", "Embroidered White Lamp");
+        lang.addBlock(getVariant("torch_5"), "Torch", "Small Black Lamp");
+        lang.addBlock(getVariant("torch_6"), "Torch", "Tall Black Lamp");
+        lang.addBlock(getVariant("torch_7"), "Torch", "Red Lamp");
+        lang.addBlock(getVariant("torch_8"), "Torch", "Embroidered Red Lamp");
+        lang.addBlock(getVariant("torch_9"), "Torch", "Light Bulb");
+        lang.addBlock(getVariant("torch_10"), "Torch", "Clear Light Bulb");
     }
 
     private static BlockBehaviour.Properties wallVariant(Block standingBlock) {

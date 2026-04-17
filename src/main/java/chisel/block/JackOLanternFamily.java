@@ -34,9 +34,22 @@ public class JackOLanternFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        for (int i = 0; i <= 15; i++) {
-            lang.addBlock(getVariant("jack_o_lantern_" + i), "Jack o'Lantern", "Type " + i);
-        }
+        lang.addBlock(getVariant("jack_o_lantern_0"), "Jack o'Lantern", "Suprised");
+        lang.addBlock(getVariant("jack_o_lantern_1"), "Jack o'Lantern", "Smiling open");
+        lang.addBlock(getVariant("jack_o_lantern_2"), "Jack o'Lantern", "Cheeky");
+        lang.addBlock(getVariant("jack_o_lantern_3"), "Jack o'Lantern", "Pensive");
+        lang.addBlock(getVariant("jack_o_lantern_4"), "Jack o'Lantern", "Disappointed");
+        lang.addBlock(getVariant("jack_o_lantern_5"), "Jack o'Lantern", "Smirking");
+        lang.addBlock(getVariant("jack_o_lantern_6"), "Jack o'Lantern", "Curious");
+        lang.addBlock(getVariant("jack_o_lantern_7"), "Jack o'Lantern", "Bored");
+        lang.addBlock(getVariant("jack_o_lantern_8"), "Jack o'Lantern", "Sad");
+        lang.addBlock(getVariant("jack_o_lantern_9"), "Jack o'Lantern", "Evil");
+        lang.addBlock(getVariant("jack_o_lantern_10"), "Jack o'Lantern", "Exited");
+        lang.addBlock(getVariant("jack_o_lantern_11"), "Jack o'Lantern", "Sleeping");
+        lang.addBlock(getVariant("jack_o_lantern_12"), "Jack o'Lantern", "Astonished");
+        lang.addBlock(getVariant("jack_o_lantern_13"), "Jack o'Lantern", "Neutral");
+        lang.addBlock(getVariant("jack_o_lantern_14"), "Jack o'Lantern", "Laughing out loud");
+        lang.addBlock(getVariant("jack_o_lantern_15"), "Jack o'Lantern", "Smiling Closed");
     }
 }
 

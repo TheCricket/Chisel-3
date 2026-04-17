@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/oak_planks/oak_planks_crude_horizontal"
+    "all": "chisel:block/oak_planks/oak_planks_crude_horizontal",
+    "overlay_3x3": "chisel:block/oak_planks/oak_planks_crude_horizontal-3x3",
+    "particle": "chisel:block/oak_planks/oak_planks_crude_horizontal"
   }
 }

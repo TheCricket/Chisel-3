@@ -1,0 +1,30 @@
+{
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/shingles_3",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:shingles_3",
+    "model_type": "v4",
+    "name": "shingles_3"
+  }
+}

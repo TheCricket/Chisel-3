@@ -1,7 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
+    "all": "chisel:block/factory/factory_column-side",
     "bottom": "chisel:block/factory/factory_column-bottom",
+    "overlay_bottom": "chisel:block/factory/factory_column-bottom",
+    "overlay_side_connected": "chisel:block/factory/factory_column-side-ctm",
+    "overlay_texture": "chisel:block/factory/factory_column-side",
+    "overlay_top": "chisel:block/factory/factory_column-top",
+    "overlay_vertical": "chisel:block/factory/factory_column-side-ctm",
+    "particle": "chisel:block/factory/factory_column-side",
     "side": "chisel:block/factory/factory_column-side",
     "top": "chisel:block/factory/factory_column-top"
   }

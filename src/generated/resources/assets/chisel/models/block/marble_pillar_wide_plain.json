@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/marble/marble_pillar_wide_plain-side",
+    "bottom": "chisel:block/marble/marble_pillar_wide_plain-bottom",
+    "overlay_bottom": "chisel:block/marble/marble_pillar_wide_plain-bottom",
+    "overlay_side_connected": "chisel:block/marble/marble_pillar_wide_plain-side-ctm",
+    "overlay_texture": "chisel:block/marble/marble_pillar_wide_plain-side",
+    "overlay_top": "chisel:block/marble/marble_pillar_wide_plain-top",
+    "overlay_vertical": "chisel:block/marble/marble_pillar_wide_plain-side-ctm",
+    "particle": "chisel:block/marble/marble_pillar_wide_plain-side",
+    "side": "chisel:block/marble/marble_pillar_wide_plain-side",
+    "top": "chisel:block/marble/marble_pillar_wide_plain-top"
+  }
+}

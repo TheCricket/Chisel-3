@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:ice_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "ice_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:ice_chaotic_bricks",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "ice_chaotic_bricks"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "block": "chisel:ice_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "ice_cuts"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:ice_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "ice_jellybean"
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "block": "chisel:ice_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "ice_slanted"
     },
     {

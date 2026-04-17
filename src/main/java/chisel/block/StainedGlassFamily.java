@@ -25,9 +25,9 @@ public class StainedGlassFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         String colorName = StringUtils.capitalize(color.replace("_", " "));
-        lang.addBlock(getVariant("stained_glass_%s_borderless".formatted(color)), colorName + " Stained Glass", "Borderless");
-        lang.addBlock(getVariant("stained_glass_%s_bubble".formatted(color)), colorName + " Stained Glass", "Bubble");
-        lang.addBlock(getVariant("stained_glass_%s_panel".formatted(color)), colorName + " Stained Glass", "Panel");
-        lang.addBlock(getVariant("stained_glass_%s_panel_fancy".formatted(color)), colorName + " Stained Glass", "Fancy");
+        lang.addBlock(getVariant("stained_glass_%s_borderless".formatted(color)), colorName + " Stained Glass", colorName + " Borderless Glass");
+        lang.addBlock(getVariant("stained_glass_%s_bubble".formatted(color)), colorName + " Stained Glass", colorName + " Bubble Glass");
+        lang.addBlock(getVariant("stained_glass_%s_panel".formatted(color)), colorName + " Stained Glass", colorName + " Glass Panel");
+        lang.addBlock(getVariant("stained_glass_%s_panel_fancy".formatted(color)), colorName + " Stained Glass", colorName + " Fancy Glass Panel");
     }
 }

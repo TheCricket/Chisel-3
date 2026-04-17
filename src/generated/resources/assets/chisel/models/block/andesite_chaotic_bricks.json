@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/andesite/andesite_chaotic_bricks"
+    "all": "chisel:block/andesite/andesite_chaotic_bricks",
+    "overlay_3x3": "chisel:block/andesite/andesite_chaotic_bricks-3x3",
+    "particle": "chisel:block/andesite/andesite_chaotic_bricks"
   }
 }

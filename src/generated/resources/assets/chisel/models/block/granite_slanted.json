@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/granite/granite_slanted"
+    "all": "chisel:block/granite/granite_slanted",
+    "overlay_2x2": "chisel:block/granite/granite_slanted-2x2",
+    "particle": "chisel:block/granite/granite_slanted"
   }
 }

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/lead/lead_crate"
+    "all": "chisel:block/lead/lead_crate",
+    "overlay_connected": "chisel:block/lead/lead_crate-ctm",
+    "overlay_texture": "chisel:block/lead/lead_crate",
+    "particle": "chisel:block/lead/lead_crate"
   }
 }

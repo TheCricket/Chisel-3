@@ -34,9 +34,22 @@ public class ChiselPumpkinFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        for (int i = 0; i <= 17; i++) {
-            lang.addBlock(getVariant("pumpkin_" + i), "Pumpkin", "Type " + i);
-        }
+        lang.addBlock(getVariant("pumpkin_0"), "Pumpkin", "Suprised");
+        lang.addBlock(getVariant("pumpkin_1"), "Pumpkin", "Smiling open");
+        lang.addBlock(getVariant("pumpkin_2"), "Pumpkin", "Cheeky");
+        lang.addBlock(getVariant("pumpkin_3"), "Pumpkin", "Pensive");
+        lang.addBlock(getVariant("pumpkin_4"), "Pumpkin", "Disappointed");
+        lang.addBlock(getVariant("pumpkin_5"), "Pumpkin", "Smirking");
+        lang.addBlock(getVariant("pumpkin_6"), "Pumpkin", "Curious");
+        lang.addBlock(getVariant("pumpkin_7"), "Pumpkin", "Bored");
+        lang.addBlock(getVariant("pumpkin_8"), "Pumpkin", "Sad");
+        lang.addBlock(getVariant("pumpkin_9"), "Pumpkin", "Evil");
+        lang.addBlock(getVariant("pumpkin_10"), "Pumpkin", "Exited");
+        lang.addBlock(getVariant("pumpkin_11"), "Pumpkin", "Sleeping");
+        lang.addBlock(getVariant("pumpkin_12"), "Pumpkin", "Astonished");
+        lang.addBlock(getVariant("pumpkin_13"), "Pumpkin", "Neutral");
+        lang.addBlock(getVariant("pumpkin_14"), "Pumpkin", "Laughing out loud");
+        lang.addBlock(getVariant("pumpkin_15"), "Pumpkin", "Smiling Closed");
     }
 }
 

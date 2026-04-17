@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/military/military_imperial_caution_white",
+    "overlay_connected": "chisel:block/military/military_imperial_caution_white-ctm",
+    "overlay_texture": "chisel:block/military/military_imperial_caution_white",
+    "particle": "chisel:block/military/military_imperial_caution_white"
+  }
+}

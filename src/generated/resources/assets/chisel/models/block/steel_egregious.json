@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steel/steel_egregious",
+    "overlay_connected": "chisel:block/steel/steel_egregious-ctm",
+    "overlay_texture": "chisel:block/steel/steel_egregious",
+    "particle": "chisel:block/steel/steel_egregious"
+  }
+}

@@ -21,15 +21,15 @@ public class PaperwallBlockFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("paperwall_block_boxed"), "Paperwall Block", "Boxed");
-        lang.addBlock(getVariant("paperwall_block_crossed"), "Paperwall Block", "Crossed");
-        lang.addBlock(getVariant("paperwall_block_door"), "Paperwall Block", "Door");
-        lang.addBlock(getVariant("paperwall_block_floral"), "Paperwall Block", "Floral");
-        lang.addBlock(getVariant("paperwall_block_plain"), "Paperwall Block", "Plain");
-        lang.addBlock(getVariant("paperwall_block_six"), "Paperwall Block", "Six");
-        lang.addBlock(getVariant("paperwall_block_strike_horizontal"), "Paperwall Block", "Horizontal Strike");
-        lang.addBlock(getVariant("paperwall_block_strike_middle"), "Paperwall Block", "Middle Strike");
-        lang.addBlock(getVariant("paperwall_block_strike_vertical"), "Paperwall Block", "Vertical Strike");
+        lang.addBlock(getVariant("paperwall_block_boxed"), "Paperwall Block", "Boxed Paperwall");
+        lang.addBlock(getVariant("paperwall_block_crossed"), "Paperwall Block", "Crossed Paperwall");
+        lang.addBlock(getVariant("paperwall_block_door"), "Paperwall Block", "Door Shaped Paperwall");
+        lang.addBlock(getVariant("paperwall_block_floral"), "Paperwall Block", "Floral Adorned Paperwall");
+        lang.addBlock(getVariant("paperwall_block_plain"), "Paperwall Block", "Plain Paperwall");
+        lang.addBlock(getVariant("paperwall_block_six"), "Paperwall Block", "Six Sectioned Paperwall");
+        lang.addBlock(getVariant("paperwall_block_strike_horizontal"), "Paperwall Block", "Horizontally Striked Paperwall");
+        lang.addBlock(getVariant("paperwall_block_strike_middle"), "Paperwall Block", "Middle Striked Paperwall");
+        lang.addBlock(getVariant("paperwall_block_strike_vertical"), "Paperwall Block", "Vertically Striked Paperwall");
     }
 }
 

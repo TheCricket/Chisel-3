@@ -1,7 +1,31 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/waterstone_chaotic_bricks"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_tint_index": 0,
+  "connected_faces": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/waterstone_chaotic_bricks",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:waterstone_chaotic_bricks",
+    "model_type": "multi_layer_water_3x3",
+    "name": "waterstone_chaotic_bricks"
   }
 }

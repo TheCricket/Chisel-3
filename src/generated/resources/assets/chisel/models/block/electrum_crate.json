@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/electrum/electrum_crate"
+    "all": "chisel:block/electrum/electrum_crate",
+    "overlay_connected": "chisel:block/electrum/electrum_crate-ctm",
+    "overlay_texture": "chisel:block/electrum/electrum_crate",
+    "particle": "chisel:block/electrum/electrum_crate"
   }
 }

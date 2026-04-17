@@ -26,13 +26,13 @@ public class GlassPaneFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("glass_pane_borderless"), "Glass Pane", "Borderless");
-        lang.addBlock(getVariant("glass_pane_bubble"), "Glass Pane", "Bubble");
-        lang.addBlock(getVariant("glass_pane_chinese"), "Glass Pane", "Chinese");
-        lang.addBlock(getVariant("glass_pane_chinese_gold"), "Glass Pane", "Chinese Gold");
-        lang.addBlock(getVariant("glass_pane_japanese"), "Glass Pane", "Japanese Tiles");
-        lang.addBlock(getVariant("glass_pane_japanese2"), "Glass Pane", "Japanese");
-        lang.addBlock(getVariant("glass_pane_streak"), "Glass Pane", "Streak");
+        lang.addBlock(getVariant("glass_pane_borderless"), "Glass Pane", "Borderless Glass Pane");
+        lang.addBlock(getVariant("glass_pane_bubble"), "Glass Pane", "Bubble Glass Pane");
+        lang.addBlock(getVariant("glass_pane_chinese"), "Glass Pane", "Chinese Glass Pane");
+        lang.addBlock(getVariant("glass_pane_chinese_gold"), "Glass Pane", "Chinese Glass Pane with Golden Frame");
+        lang.addBlock(getVariant("glass_pane_japanese"), "Glass Pane", "Japanese Glass Pane");
+        lang.addBlock(getVariant("glass_pane_japanese2"), "Glass Pane", "Ornate Japanese Glass Pane");
+        lang.addBlock(getVariant("glass_pane_streak"), "Glass Pane", "Streak Glass Pane");
     }
 }
 

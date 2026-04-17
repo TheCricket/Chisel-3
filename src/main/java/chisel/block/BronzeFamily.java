@@ -14,16 +14,16 @@ public class BronzeFamily extends ChiselBlock {
                 .addVariant("bronze_crate", props, VariantModelType.CONNECTED)
                 .addVariant("bronze_machine", props)
                 .addVariant("bronze_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("bronze_thermal", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("bronze_thermal", props, VariantModelType.TBS)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("bronze_bad_greggy"), "Bronze", "Bad Greggy");
-        lang.addBlock(getVariant("bronze_bolted"), "Bronze", "Bolted");
-        lang.addBlock(getVariant("bronze_caution"), "Bronze", "Caution");
-        lang.addBlock(getVariant("bronze_crate"), "Bronze", "Crate");
+        lang.addBlock(getVariant("bronze_bad_greggy"), "Bronze", "An Old Relic from the land of Oneteufyv");
+        lang.addBlock(getVariant("bronze_bolted"), "Bronze", "Fancy Bolted Plating");
+        lang.addBlock(getVariant("bronze_caution"), "Bronze", "Caution Stripes");
+        lang.addBlock(getVariant("bronze_crate"), "Bronze", "Shipping Crate");
         lang.addBlock(getVariant("bronze_machine"), "Bronze", "Machine");
         lang.addBlock(getVariant("bronze_scaffold"), "Bronze", "Scaffold");
         lang.addBlock(getVariant("bronze_thermal"), "Bronze", "Thermal");

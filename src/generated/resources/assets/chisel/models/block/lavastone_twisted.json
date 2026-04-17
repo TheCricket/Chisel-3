@@ -3,6 +3,7 @@
   "textures": {
     "bottom": "chisel:block/lavastone/lavastone_twisted-bottom",
     "layer0": "minecraft:block/lava_still",
+    "layer1": "chisel:block/lavastone/lavastone_twisted-side",
     "particle": "chisel:block/lavastone/lavastone_twisted-side",
     "side": "chisel:block/lavastone/lavastone_twisted-side",
     "top": "chisel:block/lavastone/lavastone_twisted-top"

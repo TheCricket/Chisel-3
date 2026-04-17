@@ -3,7 +3,7 @@
   "variants": [
     {
       "block": "chisel:mossy_cobblestone_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "mossy_cobblestone_array"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_chaotic",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "mossy_cobblestone_chaotic"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "mossy_cobblestone_cuts"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "mossy_cobblestone_jellybean"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "mossy_cobblestone_slanted"
     },
     {

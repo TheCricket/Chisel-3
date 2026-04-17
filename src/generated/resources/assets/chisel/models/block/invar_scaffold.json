@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/invar/invar_scaffold"
+    "all": "chisel:block/invar/invar_scaffold",
+    "overlay_connected": "chisel:block/invar/invar_scaffold-ctm",
+    "overlay_texture": "chisel:block/invar/invar_scaffold",
+    "particle": "chisel:block/invar/invar_scaffold"
   }
 }

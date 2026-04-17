@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/waterstone/waterstone_weaver",
     "base_texture": "chisel:block/waterstone/waterstone_weaver-bg",
-    "layer0": "chisel:block/waterstone/waterstone_weaver",
-    "layer1": "chisel:block/waterstone/waterstone_weaver-bg",
+    "layer0": "chisel:block/waterstone/waterstone_weaver-bg",
+    "layer1": "chisel:block/waterstone/waterstone_weaver",
     "overlay_connected": "chisel:block/waterstone/waterstone_weaver-ctm",
     "overlay_texture": "chisel:block/waterstone/waterstone_weaver",
     "particle": "chisel:block/waterstone/waterstone_weaver"

@@ -26,18 +26,18 @@ public class RoadLineFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("road_line_double_white_center"), "Road Line", "Double White Center");
-        lang.addBlock(getVariant("road_line_double_white_long"), "Road Line", "Double White Long");
-        lang.addBlock(getVariant("road_line_double_white_side"), "Road Line", "Double White Side");
-        lang.addBlock(getVariant("road_line_double_yellow_center"), "Road Line", "Double Yellow Center");
-        lang.addBlock(getVariant("road_line_double_yellow_long"), "Road Line", "Double Yellow Long");
-        lang.addBlock(getVariant("road_line_double_yellow_side"), "Road Line", "Double Yellow Side");
-        lang.addBlock(getVariant("road_line_white_center"), "Road Line", "White Center");
-        lang.addBlock(getVariant("road_line_white_long"), "Road Line", "White Long");
-        lang.addBlock(getVariant("road_line_white_side"), "Road Line", "White Side");
-        lang.addBlock(getVariant("road_line_yellow_center"), "Road Line", "Yellow Center");
-        lang.addBlock(getVariant("road_line_yellow_long"), "Road Line", "Yellow Long");
-        lang.addBlock(getVariant("road_line_yellow_side"), "Road Line", "Yellow Side");
+        lang.addBlock(getVariant("road_line_double_white_center"), "Road Lines", "Double White");
+        lang.addBlock(getVariant("road_line_double_white_long"), "Road Lines", "Double White");
+        lang.addBlock(getVariant("road_line_double_white_side"), "Road Lines", "Double White");
+        lang.addBlock(getVariant("road_line_double_yellow_center"), "Road Lines", "Double Yellow");
+        lang.addBlock(getVariant("road_line_double_yellow_long"), "Road Lines", "Double Yellow");
+        lang.addBlock(getVariant("road_line_double_yellow_side"), "Road Lines", "Double Yellow");
+        lang.addBlock(getVariant("road_line_white_center"), "Road Lines", "White");
+        lang.addBlock(getVariant("road_line_white_long"), "Road Lines", "White");
+        lang.addBlock(getVariant("road_line_white_side"), "Road Lines", "White");
+        lang.addBlock(getVariant("road_line_yellow_center"), "Road Lines", "Yellow");
+        lang.addBlock(getVariant("road_line_yellow_long"), "Road Lines", "Yellow");
+        lang.addBlock(getVariant("road_line_yellow_side"), "Road Lines", "Yellow");
     }
 }
 

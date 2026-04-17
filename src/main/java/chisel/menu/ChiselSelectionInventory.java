@@ -15,7 +15,7 @@ import java.util.Locale;
 
 public class ChiselSelectionInventory implements Container {
 
-    public static final int VISIBLE_SIZE = 60;
+    public static final int VISIBLE_SIZE = 45;
     public VariantFamily family;
     public int size = VISIBLE_SIZE;
     public int stackSize;
@@ -157,11 +157,11 @@ public class ChiselSelectionInventory implements Container {
     }
 
     public void updateVisibleItems() {
-        int totalRows = (filteredItems.size() + 9) / 10;
-        int scrollRows = totalRows - 6;
+        int totalRows = (filteredItems.size() + 8) / 9;
+        int scrollRows = totalRows - 5;
         if (scrollRows < 0) scrollRows = 0;
         int rowOffset = Math.round(scrollOffset * (float) scrollRows);
-        int itemOffset = rowOffset * 10;
+        int itemOffset = rowOffset * 9;
 
         for (int i = 0; i < VISIBLE_SIZE; i++) {
             int index = itemOffset + i;

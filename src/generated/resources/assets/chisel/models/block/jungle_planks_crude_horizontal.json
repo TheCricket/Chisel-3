@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/jungle_planks/jungle_planks_crude_horizontal"
+    "all": "chisel:block/jungle_planks/jungle_planks_crude_horizontal",
+    "overlay_3x3": "chisel:block/jungle_planks/jungle_planks_crude_horizontal-3x3",
+    "particle": "chisel:block/jungle_planks/jungle_planks_crude_horizontal"
   }
 }

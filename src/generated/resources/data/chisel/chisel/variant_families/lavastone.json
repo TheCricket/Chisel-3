@@ -3,7 +3,7 @@
   "variants": [
     {
       "block": "chisel:lavastone_array",
-      "model_type": "multi_layer_lava",
+      "model_type": "lava_2x2",
       "name": "lavastone_array"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "block": "chisel:lavastone_chaotic_bricks",
-      "model_type": "multi_layer_lava",
+      "model_type": "lava_3x3",
       "name": "lavastone_chaotic_bricks"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "block": "chisel:lavastone_cuts",
-      "model_type": "multi_layer_lava",
+      "model_type": "lava_4x4",
       "name": "lavastone_cuts"
     },
     {
@@ -65,6 +65,11 @@
       "block": "chisel:lavastone_french_2",
       "model_type": "multi_layer_lava",
       "name": "lavastone_french_2"
+    },
+    {
+      "block": "chisel:lavastone_jellybean",
+      "model_type": "lava_2x2",
+      "name": "lavastone_jellybean"
     },
     {
       "block": "chisel:lavastone_layers",
@@ -108,7 +113,7 @@
     },
     {
       "block": "chisel:lavastone_slanted",
-      "model_type": "multi_layer_lava",
+      "model_type": "lava_2x2",
       "name": "lavastone_slanted"
     },
     {

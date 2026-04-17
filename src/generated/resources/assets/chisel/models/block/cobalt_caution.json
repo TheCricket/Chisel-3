@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/cobalt/cobalt_caution"
+    "all": "chisel:block/cobalt/cobalt_caution",
+    "overlay_connected": "chisel:block/cobalt/cobalt_caution-ctm",
+    "overlay_texture": "chisel:block/cobalt/cobalt_caution",
+    "particle": "chisel:block/cobalt/cobalt_caution"
   }
 }

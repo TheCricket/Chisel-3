@@ -1,8 +1,8 @@
 {
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
-    "layer0": "chisel:block/energized_voidstone/energized_voidstone_eye",
-    "layer1": "chisel:block/energized_voidstone/energized_voidstone_eye-bg",
+    "layer0": "chisel:block/energized_voidstone/energized_voidstone_eye-bg",
+    "layer1": "chisel:block/energized_voidstone/energized_voidstone_eye",
     "particle": "chisel:block/energized_voidstone/energized_voidstone_eye"
   }
 }

@@ -21,14 +21,25 @@ public class SelectionSlot extends Slot {
     }
 
     @Override
+    public void onQuickCraft(ItemStack picked, ItemStack original) {
+        super.onQuickCraft(picked, original);
+    }
+
+    @Override
+    protected void onSwapCraft(int count) {
+        super.onSwapCraft(count);
+    }
+
+    @Override
     protected void onQuickCraft(@NonNull ItemStack picked, int count) {
-        super.onQuickCraft(picked, count);
+        container.chisel.hurtAndBreak(picked.count(), container.inventory.player, container.hand);
         clearContent();
     }
 
     @Override
     public void onTake(@NonNull Player player, @NonNull ItemStack carried) {
         super.onTake(player, carried);
+        container.chisel.hurtAndBreak(carried.count(), container.inventory.player, container.hand);
         clearContent();
     }
 

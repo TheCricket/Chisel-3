@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/lavastone/lavastone_circular",
     "base_texture": "chisel:block/lavastone/lavastone_circular-bg",
-    "layer0": "chisel:block/lavastone/lavastone_circular",
-    "layer1": "chisel:block/lavastone/lavastone_circular-bg",
+    "layer0": "chisel:block/lavastone/lavastone_circular-bg",
+    "layer1": "chisel:block/lavastone/lavastone_circular",
     "overlay_connected": "chisel:block/lavastone/lavastone_circular-ctm",
     "overlay_texture": "chisel:block/lavastone/lavastone_circular",
     "particle": "chisel:block/lavastone/lavastone_circular"

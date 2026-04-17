@@ -1,7 +1,17 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
+    "all": "chisel:block/acacia_planks/acacia_planks_braced",
     "bottom": "chisel:block/acacia_planks/acacia_planks_braced-bottom",
+    "overlay_bottom": "chisel:block/acacia_planks/acacia_planks_braced-bottom",
+    "overlay_bottom_connected": "chisel:block/acacia_planks/acacia_planks_braced-bottom-ctm",
+    "overlay_connected": "chisel:block/acacia_planks/acacia_planks_braced-ctm",
+    "overlay_side": "chisel:block/acacia_planks/acacia_planks_braced-side",
+    "overlay_side_connected": "chisel:block/acacia_planks/acacia_planks_braced-side-ctm",
+    "overlay_texture": "chisel:block/acacia_planks/acacia_planks_braced",
+    "overlay_top": "chisel:block/acacia_planks/acacia_planks_braced-top",
+    "overlay_top_connected": "chisel:block/acacia_planks/acacia_planks_braced-top-ctm",
+    "particle": "chisel:block/acacia_planks/acacia_planks_braced",
     "side": "chisel:block/acacia_planks/acacia_planks_braced-side",
     "top": "chisel:block/acacia_planks/acacia_planks_braced-top"
   }

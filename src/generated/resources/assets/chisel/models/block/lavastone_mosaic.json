@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/lavastone/lavastone_mosaic",
     "base_texture": "chisel:block/lavastone/lavastone_mosaic-bg",
-    "layer0": "chisel:block/lavastone/lavastone_mosaic",
-    "layer1": "chisel:block/lavastone/lavastone_mosaic-bg",
+    "layer0": "chisel:block/lavastone/lavastone_mosaic-bg",
+    "layer1": "chisel:block/lavastone/lavastone_mosaic",
     "overlay_connected": "chisel:block/lavastone/lavastone_mosaic-ctm",
     "overlay_texture": "chisel:block/lavastone/lavastone_mosaic",
     "particle": "chisel:block/lavastone/lavastone_mosaic"

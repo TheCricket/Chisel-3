@@ -10,49 +10,49 @@ public class GraniteFamily extends ChiselBlock {
     public GraniteFamily(BlockBehaviour.Properties props) {
         family = builder("granite")
                 .addVariant(Blocks.GRANITE)
-                .addVariant("granite_array", props)
+                .addVariant("granite_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("granite_braid", props)
-                .addVariant("granite_chaotic_bricks", props)
+                .addVariant("granite_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
                 .addVariant("granite_chaotic_medium", props)
                 .addVariant("granite_chaotic_small", props)
-                .addVariant("granite_circular", props)
+                .addVariant("granite_circular", props, VariantModelType.CONNECTED)
                 .addVariant("granite_cracked", props)
                 .addVariant("granite_cracked_bricks", props)
-                .addVariant("granite_cuts", props)
-                .addVariant("granite_dent", props)
-                .addVariant("granite_encased_bricks", props)
+                .addVariant("granite_cuts", props, VariantModelType.MULTIBLOCK_4X4)
+                .addVariant("granite_dent", props, VariantModelType.CONNECTED)
+                .addVariant("granite_encased_bricks", props, VariantModelType.CONNECTED)
                 .addVariant("granite_french_1", props)
                 .addVariant("granite_french_2", props)
-                .addVariant("granite_jellybean", props)
+                .addVariant("granite_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("granite_layers", props)
-                .addVariant("granite_mosaic", props)
+                .addVariant("granite_mosaic", props, VariantModelType.CONNECTED)
                 .addVariant("granite_ornate", props)
                 .addVariant("granite_panel", props)
-                .addVariant("granite_pillar", props, VariantModelType.TOP_BOTTOM_SIDE)
+                .addVariant("granite_pillar", props, VariantModelType.TBS)
                 .addVariant("granite_prism", props)
                 .addVariant("granite_raw", props)
                 .addVariant("granite_road", props)
-                .addVariant("granite_slanted", props)
+                .addVariant("granite_slanted", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("granite_small_bricks", props)
                 .addVariant("granite_soft_bricks", props)
                 .addVariant("granite_solid_bricks", props)
-                .addVariant("granite_tiles_large", props)
+                .addVariant("granite_tiles_large", props, VariantModelType.CONNECTED)
                 .addVariant("granite_tiles_medium", props)
                 .addVariant("granite_tiles_small", props)
                 .addVariant("granite_triple_bricks", props)
-                .addVariant("granite_twisted", props, VariantModelType.TOP_BOTTOM_SIDE)
-                .addVariant("granite_weaver", props)
-                .addVariant("granite_zag", props)
+                .addVariant("granite_twisted", props, VariantModelType.TBS)
+                .addVariant("granite_weaver", props, VariantModelType.CONNECTED)
+                .addVariant("granite_zag", props, VariantModelType.CONNECTED)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("granite_array"), "Granite", "Array");
+        lang.addBlock(getVariant("granite_array"), "Granite", "Granite Pillar");
         lang.addBlock(getVariant("granite_braid"), "Granite", "Braid");
         lang.addBlock(getVariant("granite_chaotic_bricks"), "Granite", "Chaotic Bricks");
-        lang.addBlock(getVariant("granite_chaotic_medium"), "Granite", "Medium Chaotic");
-        lang.addBlock(getVariant("granite_chaotic_small"), "Granite", "Small Chaotic");
+        lang.addBlock(getVariant("granite_chaotic_medium"), "Granite", "Granite Bricks");
+        lang.addBlock(getVariant("granite_chaotic_small"), "Granite", "Granite Small Tiles");
         lang.addBlock(getVariant("granite_circular"), "Granite", "Circular");
         lang.addBlock(getVariant("granite_cracked"), "Granite", "Cracked");
         lang.addBlock(getVariant("granite_cracked_bricks"), "Granite", "Cracked Bricks");
@@ -64,10 +64,10 @@ public class GraniteFamily extends ChiselBlock {
         lang.addBlock(getVariant("granite_jellybean"), "Granite", "Jellybean");
         lang.addBlock(getVariant("granite_layers"), "Granite", "Layers");
         lang.addBlock(getVariant("granite_mosaic"), "Granite", "Mosaic");
-        lang.addBlock(getVariant("granite_ornate"), "Granite", "Ornate");
+        lang.addBlock(getVariant("granite_ornate"), "Granite", "Ornate Granite");
         lang.addBlock(getVariant("granite_panel"), "Granite", "Panel");
         lang.addBlock(getVariant("granite_pillar"), "Granite", "Pillar");
-        lang.addBlock(getVariant("granite_prism"), "Granite", "Prism");
+        lang.addBlock(getVariant("granite_prism"), "Granite", "Prismatic Granite");
         lang.addBlock(getVariant("granite_raw"), "Granite", "Raw");
         lang.addBlock(getVariant("granite_road"), "Granite", "Road");
         lang.addBlock(getVariant("granite_slanted"), "Granite", "Slanted");

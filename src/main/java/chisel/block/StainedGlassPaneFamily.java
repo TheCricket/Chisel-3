@@ -31,11 +31,11 @@ public class StainedGlassPaneFamily extends ChiselBlock {
     @Override
     public void addTranslations(LangHelper lang) {
         String colorName = StringUtils.capitalize(color.getName().replace("_", " "));
-        lang.addBlock(getVariant("stained_glass_pane_%s_borderless".formatted(color)), colorName + " Stained Glass Pane", "Borderless");
-        lang.addBlock(getVariant("stained_glass_pane_%s_bubble".formatted(color)), colorName + " Stained Glass Pane", "Bubble");
-        lang.addBlock(getVariant("stained_glass_pane_%s_panel".formatted(color)), colorName + " Stained Glass Pane", "Panel");
-        lang.addBlock(getVariant("stained_glass_pane_%s_quad".formatted(color)), colorName + " Stained Glass Pane", "Quad");
-        lang.addBlock(getVariant("stained_glass_pane_%s_quad_fancy".formatted(color)), colorName + " Stained Glass Pane", "Fancy");
+        lang.addBlock(getVariant("stained_glass_pane_%s_borderless".formatted(color)), colorName + " Stained Glass Pane", colorName + " Borderless Glass Pane");
+        lang.addBlock(getVariant("stained_glass_pane_%s_bubble".formatted(color)), colorName + " Stained Glass Pane", colorName + " Bubble Glass Pane");
+        lang.addBlock(getVariant("stained_glass_pane_%s_panel".formatted(color)), colorName + " Stained Glass Pane", colorName + " Glass Panel Pane");
+        lang.addBlock(getVariant("stained_glass_pane_%s_quad".formatted(color)), colorName + " Stained Glass Pane", colorName + " Glass Quad Pane");
+        lang.addBlock(getVariant("stained_glass_pane_%s_quad_fancy".formatted(color)), colorName + " Stained Glass Pane", colorName + " Fancy Glass Panel Pane");
     }
 }
 

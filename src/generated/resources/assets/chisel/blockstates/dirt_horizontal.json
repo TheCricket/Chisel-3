@@ -1,7 +1,28 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/dirt_horizontal"
-    }
+  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "element": {
+    "max": [
+      16.0,
+      16.0,
+      16.0
+    ],
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "model_location": "chisel:block/dirt_horizontal",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:dirt_horizontal",
+    "model_type": "ctmh",
+    "name": "dirt_horizontal"
   }
 }

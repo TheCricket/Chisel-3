@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/electrum/electrum_scaffold"
+    "all": "chisel:block/electrum/electrum_scaffold",
+    "overlay_connected": "chisel:block/electrum/electrum_scaffold-ctm",
+    "overlay_texture": "chisel:block/electrum/electrum_scaffold",
+    "particle": "chisel:block/electrum/electrum_scaffold"
   }
 }

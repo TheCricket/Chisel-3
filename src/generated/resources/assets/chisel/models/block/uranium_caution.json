@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/uranium/uranium_caution"
+    "all": "chisel:block/uranium/uranium_caution",
+    "overlay_connected": "chisel:block/uranium/uranium_caution-ctm",
+    "overlay_texture": "chisel:block/uranium/uranium_caution",
+    "particle": "chisel:block/uranium/uranium_caution"
   }
 }

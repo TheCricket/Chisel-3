@@ -21,13 +21,13 @@ public class EnergizedVoidstoneFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("energized_voidstone_bevel"), "Energized Voidstone", "Bevel");
-        lang.addBlock(getVariant("energized_voidstone_eye"), "Energized Voidstone", "Eye");
-        lang.addBlock(getVariant("energized_voidstone_metal"), "Energized Voidstone", "Metal");
-        lang.addBlock(getVariant("energized_voidstone_raw"), "Energized Voidstone", "Raw");
-        lang.addBlock(getVariant("energized_voidstone_runic"), "Energized Voidstone", "Runic");
-        lang.addBlock(getVariant("energized_voidstone_skull"), "Energized Voidstone", "Skull");
-        lang.addBlock(getVariant("energized_voidstone_smooth"), "Energized Voidstone", "Smooth");
-        lang.addBlock(getVariant("energized_voidstone_tiles"), "Energized Voidstone", "Tiles");
+        lang.addBlock(getVariant("energized_voidstone_bevel"), "Energized Voidstone", "Beveled Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_eye"), "Energized Voidstone", "Eye Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_metal"), "Energized Voidstone", "Metal-Bordered Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_raw"), "Energized Voidstone", "Raw Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_runic"), "Energized Voidstone", "Runic Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_skull"), "Energized Voidstone", "Skull Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_smooth"), "Energized Voidstone", "Smooth Energized Voidstone");
+        lang.addBlock(getVariant("energized_voidstone_tiles"), "Energized Voidstone", "Large Energized Voidstone Tiles");
     }
 }

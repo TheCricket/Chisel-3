@@ -1,0 +1,90 @@
+{
+  "familyName": "carpet",
+  "variants": [
+    {
+      "block": "minecraft:black_carpet",
+      "model_type": "cube_all",
+      "name": "block.minecraft.black_carpet"
+    },
+    {
+      "block": "chisel:carpet_black",
+      "model_type": "connected",
+      "name": "carpet_black"
+    },
+    {
+      "block": "chisel:carpet_brown",
+      "model_type": "connected",
+      "name": "carpet_brown"
+    },
+    {
+      "block": "chisel:carpet_dark_blue",
+      "model_type": "connected",
+      "name": "carpet_dark_blue"
+    },
+    {
+      "block": "chisel:carpet_dark_grey",
+      "model_type": "connected",
+      "name": "carpet_dark_grey"
+    },
+    {
+      "block": "chisel:carpet_green",
+      "model_type": "connected",
+      "name": "carpet_green"
+    },
+    {
+      "block": "chisel:carpet_grey",
+      "model_type": "connected",
+      "name": "carpet_grey"
+    },
+    {
+      "block": "chisel:carpet_light_blue",
+      "model_type": "connected",
+      "name": "carpet_light_blue"
+    },
+    {
+      "block": "chisel:carpet_light_green",
+      "model_type": "connected",
+      "name": "carpet_light_green"
+    },
+    {
+      "block": "chisel:carpet_magenta",
+      "model_type": "connected",
+      "name": "carpet_magenta"
+    },
+    {
+      "block": "chisel:carpet_orange",
+      "model_type": "connected",
+      "name": "carpet_orange"
+    },
+    {
+      "block": "chisel:carpet_pink",
+      "model_type": "connected",
+      "name": "carpet_pink"
+    },
+    {
+      "block": "chisel:carpet_purple",
+      "model_type": "connected",
+      "name": "carpet_purple"
+    },
+    {
+      "block": "chisel:carpet_red",
+      "model_type": "connected",
+      "name": "carpet_red"
+    },
+    {
+      "block": "chisel:carpet_cyan",
+      "model_type": "connected",
+      "name": "carpet_cyan"
+    },
+    {
+      "block": "chisel:carpet_white",
+      "model_type": "connected",
+      "name": "carpet_white"
+    },
+    {
+      "block": "chisel:carpet_yellow",
+      "model_type": "connected",
+      "name": "carpet_yellow"
+    }
+  ]
+}

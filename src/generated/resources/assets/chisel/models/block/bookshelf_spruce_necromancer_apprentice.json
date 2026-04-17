@@ -1,8 +1,11 @@
 {
-  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
+    "base_texture": "minecraft:block/spruce_planks",
     "bottom": "minecraft:block/spruce_planks",
     "layer0": "minecraft:block/spruce_planks",
+    "layer1": "minecraft:block/spruce_planks",
+    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-ctm",
     "particle": "minecraft:block/spruce_planks",
     "side": "chisel:block/bookshelf/bookshelf_necromancer_apprentice",
     "top": "minecraft:block/spruce_planks"

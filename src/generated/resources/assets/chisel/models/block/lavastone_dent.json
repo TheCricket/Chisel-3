@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/lavastone/lavastone_dent",
     "base_texture": "chisel:block/lavastone/lavastone_dent-bg",
-    "layer0": "chisel:block/lavastone/lavastone_dent",
-    "layer1": "chisel:block/lavastone/lavastone_dent-bg",
+    "layer0": "chisel:block/lavastone/lavastone_dent-bg",
+    "layer1": "chisel:block/lavastone/lavastone_dent",
     "overlay_connected": "chisel:block/lavastone/lavastone_dent-ctm",
     "overlay_texture": "chisel:block/lavastone/lavastone_dent",
     "particle": "chisel:block/lavastone/lavastone_dent"

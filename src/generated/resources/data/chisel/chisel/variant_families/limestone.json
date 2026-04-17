@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:limestone_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "limestone_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:limestone_chaotic_bricks",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "limestone_chaotic_bricks"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:limestone_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_circular"
     },
     {
@@ -48,17 +48,17 @@
     },
     {
       "block": "chisel:limestone_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "limestone_cuts"
     },
     {
       "block": "chisel:limestone_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_dent"
     },
     {
       "block": "chisel:limestone_encased_bricks",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_encased_bricks"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:limestone_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "limestone_jellybean"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:limestone_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_mosaic"
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "block": "chisel:limestone_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "limestone_slanted"
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "block": "chisel:limestone_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_tiles_large"
     },
     {
@@ -158,12 +158,12 @@
     },
     {
       "block": "chisel:limestone_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_weaver"
     },
     {
       "block": "chisel:limestone_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "limestone_zag"
     }
   ]

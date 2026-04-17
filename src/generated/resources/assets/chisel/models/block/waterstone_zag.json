@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/waterstone/waterstone_zag",
     "base_texture": "chisel:block/waterstone/waterstone_zag-bg",
-    "layer0": "chisel:block/waterstone/waterstone_zag",
-    "layer1": "chisel:block/waterstone/waterstone_zag-bg",
+    "layer0": "chisel:block/waterstone/waterstone_zag-bg",
+    "layer1": "chisel:block/waterstone/waterstone_zag",
     "overlay_connected": "chisel:block/waterstone/waterstone_zag-ctm",
     "overlay_texture": "chisel:block/waterstone/waterstone_zag",
     "particle": "chisel:block/waterstone/waterstone_zag"

@@ -1,8 +1,11 @@
 {
-  "parent": "chisel:block/cube_multi_pass_top_bottom_side_no_glow",
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
+    "base_texture": "minecraft:block/cherry_planks",
     "bottom": "minecraft:block/cherry_planks",
     "layer0": "minecraft:block/cherry_planks",
+    "layer1": "minecraft:block/cherry_planks",
+    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_brim-ctm",
     "particle": "minecraft:block/cherry_planks",
     "side": "chisel:block/bookshelf/bookshelf_brim",
     "top": "minecraft:block/cherry_planks"

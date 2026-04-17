@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:granite_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "granite_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:granite_chaotic_bricks",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "granite_chaotic_bricks"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:granite_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_circular"
     },
     {
@@ -48,17 +48,17 @@
     },
     {
       "block": "chisel:granite_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "granite_cuts"
     },
     {
       "block": "chisel:granite_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_dent"
     },
     {
       "block": "chisel:granite_encased_bricks",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_encased_bricks"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:granite_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "granite_jellybean"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:granite_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_mosaic"
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "block": "chisel:granite_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "granite_slanted"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "block": "chisel:granite_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_tiles_large"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "block": "chisel:granite_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_weaver"
     },
     {
       "block": "chisel:granite_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "granite_zag"
     }
   ]

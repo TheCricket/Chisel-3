@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/cobblestone/cobblestone_chaotic"
+    "all": "chisel:block/cobblestone/cobblestone_chaotic",
+    "overlay_3x3": "chisel:block/cobblestone/cobblestone_chaotic-3x3",
+    "particle": "chisel:block/cobblestone/cobblestone_chaotic"
   }
 }

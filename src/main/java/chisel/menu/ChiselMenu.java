@@ -94,7 +94,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     private void addVariantSlots() {
         int top = 26, left = 62;
         for (int c = 0; c < ChiselSelectionInventory.VISIBLE_SIZE; c++) {
-            addSlot(new SelectionSlot(container, variants, c, left + ((c % 10) * 18), top + ((c / 10) * 18)));
+            addSlot(new SelectionSlot(container, variants, c, left + ((c % 9) * 18), top + ((c / 9) * 18)));
         }
 
         addSlot(inputSlot = new InputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 16));
@@ -102,7 +102,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     private void addInventorySlots(Inventory inventory) {
-        int top = 138;
+        int top = 120;
         int left = 71;
         // main inv
         for (int c = 0; c < 27; c++) {
@@ -124,16 +124,29 @@ public class ChiselMenu extends AbstractContainerMenu {
             ItemStack copyFrom = slot.getItem();
             stack = copyFrom.copy();
 
-            if (slotIndex < 61) {
-                if (!moveItemStackTo(copyFrom, 61, slots.size(), true))
+            if (slotIndex < 45) { // If it's a SelectionSlot (0-44)
+                if (!moveItemStackTo(copyFrom, 46, slots.size(), true)) {
                     return ItemStack.EMPTY;
-            } else if (!moveItemStackTo(copyFrom, 60, 61, false)) // Move to Input
-                return ItemStack.EMPTY;
+                }
+                // Trigger side effects manually since moveItemStackTo doesn't call onTake
+                container.chisel.hurtAndBreak(stack.getCount(), player, container.hand);
+                variants.clearContent();
+                inputSlot.set(ItemStack.EMPTY);
+            } else if (slotIndex < 46) { // If it's the InputSlot (45)
+                if (!moveItemStackTo(copyFrom, 46, slots.size(), true))
+                    return ItemStack.EMPTY;
 
-            if (copyFrom.getCount() == 0)
+                variants.clearContent();
+            } else { // From Player Inventory to InputSlot
+                if (!moveItemStackTo(copyFrom, 45, 46, false))
+                    return ItemStack.EMPTY;
+            }
+
+            if (copyFrom.isEmpty()) {
                 slot.set(ItemStack.EMPTY);
-            else
+            } else {
                 slot.setChanged();
+            }
         }
 
         return stack;

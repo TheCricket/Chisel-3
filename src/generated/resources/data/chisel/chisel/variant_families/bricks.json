@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:bricks_array",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "bricks_array"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "block": "chisel:bricks_chaotic",
-      "model_type": "cube_all",
+      "model_type": "multiblock_3x3",
       "name": "bricks_chaotic"
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "block": "chisel:bricks_circular",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_circular"
     },
     {
@@ -48,17 +48,17 @@
     },
     {
       "block": "chisel:bricks_cuts",
-      "model_type": "cube_all",
+      "model_type": "multiblock_4x4",
       "name": "bricks_cuts"
     },
     {
       "block": "chisel:bricks_dent",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_dent"
     },
     {
       "block": "chisel:bricks_encased",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_encased"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "block": "chisel:bricks_jellybean",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "bricks_jellybean"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "block": "chisel:bricks_mosaic",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_mosaic"
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "block": "chisel:bricks_slanted",
-      "model_type": "cube_all",
+      "model_type": "multiblock_2x2",
       "name": "bricks_slanted"
     },
     {
@@ -138,7 +138,7 @@
     },
     {
       "block": "chisel:bricks_tiles_large",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_tiles_large"
     },
     {
@@ -163,12 +163,12 @@
     },
     {
       "block": "chisel:bricks_weaver",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_weaver"
     },
     {
       "block": "chisel:bricks_zag",
-      "model_type": "cube_all",
+      "model_type": "connected",
       "name": "bricks_zag"
     }
   ]

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/silver/silver_caution"
+    "all": "chisel:block/silver/silver_caution",
+    "overlay_connected": "chisel:block/silver/silver_caution-ctm",
+    "overlay_texture": "chisel:block/silver/silver_caution",
+    "particle": "chisel:block/silver/silver_caution"
   }
 }

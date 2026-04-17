@@ -7,11 +7,6 @@
       "name": "tin_125"
     },
     {
-      "block": "chisel:tin_adv",
-      "model_type": "cube_all",
-      "name": "tin_adv"
-    },
-    {
       "block": "chisel:tin_bad_greggy",
       "model_type": "connected",
       "name": "tin_bad_greggy"
@@ -20,11 +15,6 @@
       "block": "chisel:tin_bolted",
       "model_type": "cube_all",
       "name": "tin_bolted"
-    },
-    {
-      "block": "chisel:tin_bordered",
-      "model_type": "cube_all",
-      "name": "tin_bordered"
     },
     {
       "block": "chisel:tin_caution",
@@ -42,19 +32,9 @@
       "name": "tin_egregious"
     },
     {
-      "block": "chisel:tin_machine",
-      "model_type": "cube_all",
-      "name": "tin_machine"
-    },
-    {
       "block": "chisel:tin_scaffold",
       "model_type": "connected",
       "name": "tin_scaffold"
-    },
-    {
-      "block": "chisel:tin_shipping",
-      "model_type": "cube_all",
-      "name": "tin_shipping"
     },
     {
       "block": "chisel:tin_thermal",

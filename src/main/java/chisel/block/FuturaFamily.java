@@ -18,10 +18,10 @@ public class FuturaFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("futura_controller"), "Futura", "Controller");
-        lang.addBlock(getVariant("futura_controller_purple"), "Futura", "Purple Controller");
-        lang.addBlock(getVariant("futura_rainbow"), "Futura", "Rainbow");
-        lang.addBlock(getVariant("futura_screen_cyan"), "Futura", "Cyan Screen");
-        lang.addBlock(getVariant("futura_screen_gray"), "Futura", "Gray Screen");
+        lang.addBlock(getVariant("futura_controller"), "Futura Block", "Applied Labyrinthic Neon Lines");
+        lang.addBlock(getVariant("futura_controller_purple"), "Futura Block", "Applied Labyrinthic Neon Lines");
+        lang.addBlock(getVariant("futura_rainbow"), "Futura Block", "Poptart Rainbow Screen");
+        lang.addBlock(getVariant("futura_screen_cyan"), "Futura Block", "Glowing Screen with Cyan Borders");
+        lang.addBlock(getVariant("futura_screen_gray"), "Futura Block", "Glowing Screen with Metallic Borders");
     }
 }

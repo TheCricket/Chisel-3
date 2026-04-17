@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:dirt_bricks",
-      "model_type": "cube_all",
+      "model_type": "ctmv",
       "name": "dirt_bricks"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "block": "chisel:dirt_horizontal",
-      "model_type": "top_bottom_side",
+      "model_type": "ctmh",
       "name": "dirt_horizontal"
     },
     {
@@ -73,12 +73,12 @@
     },
     {
       "block": "chisel:dirt_vert",
-      "model_type": "cube_all",
+      "model_type": "ctmv",
       "name": "dirt_vert"
     },
     {
       "block": "chisel:dirt_vertical",
-      "model_type": "cube_all",
+      "model_type": "ctmv",
       "name": "dirt_vertical"
     }
   ]

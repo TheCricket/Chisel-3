@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/limestone/limestone_dent"
+    "all": "chisel:block/limestone/limestone_dent",
+    "overlay_connected": "chisel:block/limestone/limestone_dent-ctm",
+    "overlay_texture": "chisel:block/limestone/limestone_dent",
+    "particle": "chisel:block/limestone/limestone_dent"
   }
 }

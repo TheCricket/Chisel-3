@@ -3,8 +3,8 @@
   "textures": {
     "all": "chisel:block/futura/futura_screen_gray",
     "base_texture": "chisel:block/futura/futura_screen_gray-bg",
-    "layer0": "chisel:block/futura/futura_screen_gray",
-    "layer1": "chisel:block/futura/futura_screen_gray-bg",
+    "layer0": "chisel:block/futura/futura_screen_gray-bg",
+    "layer1": "chisel:block/futura/futura_screen_gray",
     "overlay_connected": "chisel:block/futura/futura_screen_gray-ctm",
     "overlay_texture": "chisel:block/futura/futura_screen_gray",
     "particle": "chisel:block/futura/futura_screen_gray"

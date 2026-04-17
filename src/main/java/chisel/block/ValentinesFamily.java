@@ -22,16 +22,16 @@ public class ValentinesFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("valentines_block"), "Valentine's Block", "Block");
-        lang.addBlock(getVariant("valentines_bricks"), "Valentine's Block", "Bricks");
-        lang.addBlock(getVariant("valentines_bumpy"), "Valentine's Block", "Bumpy");
-        lang.addBlock(getVariant("valentines_cobble"), "Valentine's Block", "Cobble");
-        lang.addBlock(getVariant("valentines_companion"), "Valentine's Block", "Companion");
-        lang.addBlock(getVariant("valentines_empty"), "Valentine's Block", "Empty");
-        lang.addBlock(getVariant("valentines_fire"), "Valentine's Block", "Fire");
-        lang.addBlock(getVariant("valentines_heart"), "Valentine's Block", "Heart");
-        lang.addBlock(getVariant("valentines_heart_gray"), "Valentine's Block", "Heart Gray");
-        lang.addBlock(getVariant("valentines_tile"), "Valentine's Block", "Tile");
+        lang.addBlock(getVariant("valentines_block"), "Valentine's Block", "Pink Chunk");
+        lang.addBlock(getVariant("valentines_bricks"), "Valentine's Block", "Valentines Bricks");
+        lang.addBlock(getVariant("valentines_bumpy"), "Valentine's Block", "Pink Dotted");
+        lang.addBlock(getVariant("valentines_cobble"), "Valentine's Block", "Pink Cobble");
+        lang.addBlock(getVariant("valentines_companion"), "Valentine's Block", "If it speaks, I wouldn't touch it");
+        lang.addBlock(getVariant("valentines_empty"), "Valentine's Block", "Pink Panel");
+        lang.addBlock(getVariant("valentines_fire"), "Valentine's Block", "There's a flame in my heart");
+        lang.addBlock(getVariant("valentines_heart"), "Valentine's Block", "Pink Heart in stone");
+        lang.addBlock(getVariant("valentines_heart_gray"), "Valentine's Block", "Heart in stone");
+        lang.addBlock(getVariant("valentines_tile"), "Valentine's Block", "Pink Tinted Heart in stone");
     }
 }
 

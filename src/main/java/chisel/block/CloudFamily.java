@@ -18,11 +18,11 @@ public class CloudFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("cloud_grid"), "Cloud Block", "Grid");
-        lang.addBlock(getVariant("cloud_large"), "Cloud Block", "Large");
-        lang.addBlock(getVariant("cloud_normal"), "Cloud Block", "Normal");
-        lang.addBlock(getVariant("cloud_small"), "Cloud Block", "Small");
-        lang.addBlock(getVariant("cloud_vertical"), "Cloud Block", "Vertical");
+        lang.addBlock(getVariant("cloud_grid"), "Cloud", "Gridded Cloud Bricks");
+        lang.addBlock(getVariant("cloud_large"), "Cloud", "Large Cloud Bricks");
+        lang.addBlock(getVariant("cloud_normal"), "Cloud", "Cloud Block");
+        lang.addBlock(getVariant("cloud_small"), "Cloud", "Small Cloud Bricks");
+        lang.addBlock(getVariant("cloud_vertical"), "Cloud", "Small Vertical Cloud Bricks");
     }
 }
 

@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/lead/lead_bad_greggy"
+    "all": "chisel:block/lead/lead_bad_greggy",
+    "overlay_connected": "chisel:block/lead/lead_bad_greggy-ctm",
+    "overlay_texture": "chisel:block/lead/lead_bad_greggy",
+    "particle": "chisel:block/lead/lead_bad_greggy"
   }
 }

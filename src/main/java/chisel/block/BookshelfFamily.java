@@ -1,5 +1,6 @@
 package chisel.block;
 
+import chisel.block.util.CTMHBlock;
 import chisel.block.util.ChiselBlock;
 import chisel.core.variant.VariantFamily;
 import chisel.core.variant.VariantModelType;
@@ -19,7 +20,7 @@ public class BookshelfFamily extends ChiselBlock {
         b.addVariant(Blocks.BOOKSHELF);
         for (String wood : woods) {
             for (String type : types) {
-                b.addVariant("bookshelf_%s_%s".formatted(wood, type), props, VariantModelType.BOOKSHELF);
+                b.addVariant("bookshelf_%s_%s".formatted(wood, type), CTMHBlock::new, () -> props, VariantModelType.BOOKSHELF);
             }
         }
 
@@ -30,7 +31,18 @@ public class BookshelfFamily extends ChiselBlock {
     public void addTranslations(LangHelper lang) {
         for (int c = 0; c < woods.length; c++) {
             for (int d = 0; d < types.length; d++) {
-                lang.addBlock(getVariant("bookshelf_" + woods[c] + "_" + types[d]), woodNames[c] + " Bookshelf", typeNames[d]);
+                String desc = typeNames[d];
+                switch (types[d]) {
+                    case "abandoned" -> desc = "Abandoned Bookshelf";
+                    case "brim" -> desc = "Bookshelf filled to the brim with boring Pastel Books";
+                    case "historian" -> desc = "Historian's Bookshelf";
+                    case "hoarder" -> desc = "Hoarder's Bookshelf";
+                    case "necromancer" -> desc = "Necromancer's Bookshelf";
+                    case "necromancer_apprentice" -> desc = "Necromancer’s Apprentice Bookshelf";
+                    case "rainbow" -> desc = "Bookshelf with Rainbow Books";
+                    case "tomes" -> desc = "Bookshelf with Red Tomes";
+                }
+                lang.addBlock(getVariant("bookshelf_" + woods[c] + "_" + types[d]), woodNames[c] + " Bookshelf", desc);
             }
         }
     }

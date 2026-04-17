@@ -1,6 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/birch_planks/birch_planks_crude_horizontal"
+    "all": "chisel:block/birch_planks/birch_planks_crude_horizontal",
+    "overlay_3x3": "chisel:block/birch_planks/birch_planks_crude_horizontal-3x3",
+    "particle": "chisel:block/birch_planks/birch_planks_crude_horizontal"
   }
 }

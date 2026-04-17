@@ -1,0 +1,35 @@
+{
+  "familyName": "shingles",
+  "variants": [
+    {
+      "block": "chisel:shingles_1",
+      "model_type": "v4",
+      "name": "shingles_1"
+    },
+    {
+      "block": "chisel:shingles_2",
+      "model_type": "v4",
+      "name": "shingles_2"
+    },
+    {
+      "block": "chisel:shingles_3",
+      "model_type": "v4",
+      "name": "shingles_3"
+    },
+    {
+      "block": "chisel:shingles_4",
+      "model_type": "v4",
+      "name": "shingles_4"
+    },
+    {
+      "block": "chisel:shingles_5",
+      "model_type": "v4",
+      "name": "shingles_5"
+    },
+    {
+      "block": "chisel:shingles_6",
+      "model_type": "v4",
+      "name": "shingles_6"
+    }
+  ]
+}

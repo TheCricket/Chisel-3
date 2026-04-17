@@ -20,13 +20,13 @@ public class ConcreteFamily extends ChiselBlock {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("concrete_raw"), "Concrete", "Raw");
+        lang.addBlock(getVariant("concrete_raw"), "Concrete", "Concrete");
         lang.addBlock(getVariant("concrete_asphalt"), "Concrete", "Asphalt");
-        lang.addBlock(getVariant("concrete_block"), "Concrete", "Block");
-        lang.addBlock(getVariant("concrete_block_weathered"), "Concrete", "Weathered Block");
-        lang.addBlock(getVariant("concrete_blocks"), "Concrete", "Blocks");
-        lang.addBlock(getVariant("concrete_blocks_weathered"), "Concrete", "Weathered Blocks");
-        lang.addBlock(getVariant("concrete_raw_weathered"), "Concrete", "Weathered Raw");
+        lang.addBlock(getVariant("concrete_block"), "Concrete", "Concrete Block");
+        lang.addBlock(getVariant("concrete_block_weathered"), "Concrete", "Weathered Concrete Block");
+        lang.addBlock(getVariant("concrete_blocks"), "Concrete", "Small Concrete Blocks");
+        lang.addBlock(getVariant("concrete_blocks_weathered"), "Concrete", "Small Weathered Blocks");
+        lang.addBlock(getVariant("concrete_raw_weathered"), "Concrete", "Weathered Concrete");
     }
 }
 
