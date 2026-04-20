@@ -19,5 +19,6 @@ public class GatherDataEventHandler {
         event.createProvider(ChiselRecipes.Runner::new);
         event.createProvider(ChiselBlockTags::new);
         event.createProvider(ChiselRegistries::new);
+        event.createProvider(ChiselParticleDescriptions::new);
     }
 }
