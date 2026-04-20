@@ -57,7 +57,7 @@ public class MarbleFamily extends ChiselBlock {
                 .addVariant("marble_triple_bricks", props)
                 .addVariant("marble_twisted", props, VariantModelType.TBS)
                 .addVariant("marble_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("marble_zag", props, VariantModelType.CONNECTED)
+                .addVariant("marble_zag", props, VariantModelType.AR)
                 .family();
     }
 

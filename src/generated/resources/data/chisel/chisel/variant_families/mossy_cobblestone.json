@@ -178,7 +178,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "mossy_cobblestone_zag"
     }
   ]

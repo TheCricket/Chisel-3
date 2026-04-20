@@ -2,11 +2,9 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/lavastone/lavastone_zag",
-    "base_texture": "chisel:block/lavastone/lavastone_zag-bg",
-    "layer0": "chisel:block/lavastone/lavastone_zag-bg",
+    "layer0": "minecraft:block/lava_still",
     "layer1": "chisel:block/lavastone/lavastone_zag",
-    "overlay_connected": "chisel:block/lavastone/lavastone_zag-ctm",
-    "overlay_texture": "chisel:block/lavastone/lavastone_zag",
+    "overlay_2x2": "chisel:block/lavastone/lavastone_zag-ctm",
     "particle": "chisel:block/lavastone/lavastone_zag"
   }
 }

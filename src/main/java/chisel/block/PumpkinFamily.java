@@ -7,8 +7,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-public class ChiselPumpkinFamily extends ChiselBlock {
-    public ChiselPumpkinFamily(BlockBehaviour.Properties props) {
+public class PumpkinFamily extends ChiselBlock {
+    public PumpkinFamily(BlockBehaviour.Properties props) {
         family = builder("pumpkin")
                 .addVariant(Blocks.PUMPKIN)
                 .addVariant("pumpkin_0", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
@@ -28,13 +28,12 @@ public class ChiselPumpkinFamily extends ChiselBlock {
                 .addVariant("pumpkin_14", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .addVariant("pumpkin_15", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .addVariant("pumpkin_16", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
-                .addVariant("pumpkin_17", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("pumpkin_0"), "Pumpkin", "Suprised");
+        lang.addBlock(getVariant("pumpkin_0"), "Pumpkin", "Surprised");
         lang.addBlock(getVariant("pumpkin_1"), "Pumpkin", "Smiling open");
         lang.addBlock(getVariant("pumpkin_2"), "Pumpkin", "Cheeky");
         lang.addBlock(getVariant("pumpkin_3"), "Pumpkin", "Pensive");

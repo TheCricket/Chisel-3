@@ -24,7 +24,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:cobblestone_zag",
-    "model_type": "connected",
+    "model_type": "ar",
     "name": "cobblestone_zag"
   }
 }

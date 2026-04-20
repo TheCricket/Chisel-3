@@ -45,7 +45,7 @@ public class CobblestoneFamily extends ChiselBlock {
                 .addVariant("cobblestone_triple", props)
                 .addVariant("cobblestone_twisted", props, VariantModelType.TBS)
                 .addVariant("cobblestone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("cobblestone_zag", props, VariantModelType.CONNECTED)
+                .addVariant("cobblestone_zag", props, VariantModelType.AR)
                 .family();
     }
 

@@ -40,7 +40,7 @@ public class LimestoneFamily extends ChiselBlock {
                 .addVariant("limestone_triple_bricks", props)
                 .addVariant("limestone_twisted", props, VariantModelType.TBS)
                 .addVariant("limestone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("limestone_zag", props, VariantModelType.CONNECTED)
+                .addVariant("limestone_zag", props, VariantModelType.AR)
                 .family();
     }
 

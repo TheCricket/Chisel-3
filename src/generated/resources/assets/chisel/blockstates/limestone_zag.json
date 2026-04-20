@@ -24,7 +24,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:limestone_zag",
-    "model_type": "connected",
+    "model_type": "ar",
     "name": "limestone_zag"
   }
 }

@@ -203,7 +203,7 @@
     },
     {
       "block": "chisel:ice_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "ice_zag"
     }
   ]

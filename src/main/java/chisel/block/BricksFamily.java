@@ -42,7 +42,7 @@ public class BricksFamily extends ChiselBlock {
                 .addVariant("bricks_triple", props)
                 .addVariant("bricks_twisted", props, VariantModelType.TBS)
                 .addVariant("bricks_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("bricks_zag", props, VariantModelType.CONNECTED)
+                .addVariant("bricks_zag", props, VariantModelType.AR)
                 .family();
     }
 

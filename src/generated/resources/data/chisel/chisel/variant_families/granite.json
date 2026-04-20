@@ -168,7 +168,7 @@
     },
     {
       "block": "chisel:granite_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "granite_zag"
     }
   ]

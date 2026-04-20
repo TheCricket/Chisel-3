@@ -90,11 +90,6 @@
       "block": "chisel:pumpkin_16",
       "model_type": "pumpkin",
       "name": "pumpkin_16"
-    },
-    {
-      "block": "chisel:pumpkin_17",
-      "model_type": "pumpkin",
-      "name": "pumpkin_17"
     }
   ]
 }

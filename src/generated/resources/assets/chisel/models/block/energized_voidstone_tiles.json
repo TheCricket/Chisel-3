@@ -2,7 +2,10 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/energized_voidstone/energized_voidstone_tiles-bg",
-    "layer1": "chisel:block/energized_voidstone/energized_voidstone_tiles",
+    "layer1": {
+      "force_translucent": true,
+      "sprite": "chisel:block/energized_voidstone/energized_voidstone_tiles"
+    },
     "particle": "chisel:block/energized_voidstone/energized_voidstone_tiles"
   }
 }

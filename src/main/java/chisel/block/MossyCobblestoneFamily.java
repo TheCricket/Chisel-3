@@ -43,7 +43,7 @@ public class MossyCobblestoneFamily extends ChiselBlock {
                 .addVariant("mossy_cobblestone_triple", props)
                 .addVariant("mossy_cobblestone_twisted", props, VariantModelType.TBS)
                 .addVariant("mossy_cobblestone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("mossy_cobblestone_zag", props, VariantModelType.CONNECTED)
+                .addVariant("mossy_cobblestone_zag", props, VariantModelType.AR)
                 .family();
     }
 

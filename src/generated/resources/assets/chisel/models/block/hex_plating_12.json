@@ -2,7 +2,10 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/hex_plating/hex_plating_12-bg",
-    "layer1": "chisel:block/hex_plating/hex_plating_12",
+    "layer1": {
+      "force_translucent": true,
+      "sprite": "chisel:block/hex_plating/hex_plating_12"
+    },
     "particle": "chisel:block/hex_plating/hex_plating_12"
   }
 }

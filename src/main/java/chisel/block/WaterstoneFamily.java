@@ -38,7 +38,7 @@ public class WaterstoneFamily extends ChiselBlock {
                 .addVariant("waterstone_triple_bricks", props, VariantModelType.MULTI_LAYER_WATER)
                 .addVariant("waterstone_twisted", props, VariantModelType.MULTI_LAYER_TBS_TINTED)
                 .addVariant("waterstone_weaver", props, VariantModelType.MULTI_LAYER_CONNECTED_TINTED)
-                .addVariant("waterstone_zag", props, VariantModelType.MULTI_LAYER_CONNECTED_TINTED)
+                .addVariant("waterstone_zag", props, VariantModelType.MULTI_LAYER_WATER_AR)
                 .family();
     }
 

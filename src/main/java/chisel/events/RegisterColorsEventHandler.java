@@ -3,6 +3,7 @@ package chisel.events;
 import chisel.Chisel;
 import chisel.registry.ChiselBlocks;
 import net.minecraft.client.color.block.BlockTintSources;
+import net.minecraft.client.color.item.Constant;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;

@@ -6,9 +6,11 @@ import chisel.client.model.PillarModel;
 import chisel.client.model.TopBottomSideModel;
 import chisel.client.model.ctm.*;
 import chisel.client.model.special.*;
+import chisel.client.model.special.lavastone.LavastoneARModel;
 import chisel.client.model.special.lavastone.LavastoneModel;
 import chisel.client.model.special.lavastone.LavastoneMultiblockModel;
 import chisel.client.model.special.lavastone.LavastoneTBSModel;
+import chisel.client.model.special.waterstone.WaterstoneARModel;
 import chisel.client.model.special.waterstone.WaterstoneModel;
 import chisel.client.model.special.waterstone.WaterstoneMultiblockModel;
 
@@ -40,6 +42,7 @@ public class VariantModels {
     public final TorchModel WALL_TORCH = new TorchModel(true);
     public final RoadLineModel ROAD_LINES = new RoadLineModel();
     public final V4Model V4 = new V4Model();
+    public final ARModel AR = new ARModel();
 
     public final Multiblock2x2Model MULTIBLOCK_2X2 = new Multiblock2x2Model();
     public final Multiblock3x3Model MULTIBLOCK_3X3 = new Multiblock3x3Model();
@@ -48,6 +51,7 @@ public class VariantModels {
     public final WaterstoneMultiblockModel WATERSTONE_2X2 = new WaterstoneMultiblockModel(2);
     public final WaterstoneMultiblockModel WATERSTONE_3X3 = new WaterstoneMultiblockModel(3);
     public final WaterstoneMultiblockModel WATERSTONE_4X4 = new WaterstoneMultiblockModel(4);
+    public final WaterstoneARModel WATERSTONE_AR = new WaterstoneARModel();
 
 
     public final LavastoneModel LAVASTONE = new LavastoneModel();
@@ -55,4 +59,5 @@ public class VariantModels {
     public final LavastoneMultiblockModel LAVASTONE_2X2 = new LavastoneMultiblockModel(2);
     public final LavastoneMultiblockModel LAVASTONE_3X3 = new LavastoneMultiblockModel(3);
     public final LavastoneMultiblockModel LAVASTONE_4X4 = new LavastoneMultiblockModel(4);
+    public final LavastoneARModel LAVASTONE_AR = new LavastoneARModel();
 }

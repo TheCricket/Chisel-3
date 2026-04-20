@@ -2,8 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/ice/ice_zag",
-    "overlay_connected": "chisel:block/ice/ice_zag-ctm",
-    "overlay_texture": "chisel:block/ice/ice_zag",
+    "overlay_2x2": "chisel:block/ice/ice_zag-ctm",
     "particle": "chisel:block/ice/ice_zag"
   }
 }

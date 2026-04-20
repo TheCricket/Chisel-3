@@ -77,7 +77,7 @@ public class ChiselBlocks {
     public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
     public static final PaperwallFamily PAPERWALL = new PaperwallFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final PlatinumFamily PLATINUM = new PlatinumFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ChiselPumpkinFamily PUMPKIN = new ChiselPumpkinFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
+    public static final PumpkinFamily PUMPKIN = new PumpkinFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final RedstoneFamily REDSTONE = new RedstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
     public static final RoadLineFamily ROAD_LINE = new RoadLineFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollision());
     public static final SandstoneFamily SANDSTONE = new SandstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));

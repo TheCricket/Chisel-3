@@ -42,7 +42,7 @@ public class GraniteFamily extends ChiselBlock {
                 .addVariant("granite_triple_bricks", props)
                 .addVariant("granite_twisted", props, VariantModelType.TBS)
                 .addVariant("granite_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("granite_zag", props, VariantModelType.CONNECTED)
+                .addVariant("granite_zag", props, VariantModelType.AR)
                 .family();
     }
 

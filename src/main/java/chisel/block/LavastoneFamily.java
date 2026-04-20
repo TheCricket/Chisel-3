@@ -38,7 +38,7 @@ public class LavastoneFamily extends ChiselBlock {
                 .addVariant("lavastone_triple_bricks", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("lavastone_twisted", props, VariantModelType.MULTI_LAYER_LAVA_TOP_BOTTOM_SIDE)
                 .addVariant("lavastone_weaver", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("lavastone_zag", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("lavastone_zag", props, VariantModelType.MULTI_LAYER_LAVA_AR)
                 .family();
     }
 

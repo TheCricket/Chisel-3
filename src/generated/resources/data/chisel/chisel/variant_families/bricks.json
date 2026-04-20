@@ -168,7 +168,7 @@
     },
     {
       "block": "chisel:bricks_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "bricks_zag"
     }
   ]

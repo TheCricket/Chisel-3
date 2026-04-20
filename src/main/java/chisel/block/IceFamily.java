@@ -49,7 +49,7 @@ public class IceFamily extends ChiselBlock {
                 .addVariant("ice_triple_bricks", props)
                 .addVariant("ice_twisted", props, VariantModelType.TBS)
                 .addVariant("ice_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("ice_zag", props, VariantModelType.CONNECTED)
+                .addVariant("ice_zag", props, VariantModelType.AR)
                 .family();
     }
 

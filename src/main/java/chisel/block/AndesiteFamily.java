@@ -41,7 +41,7 @@ public class AndesiteFamily extends ChiselBlock {
                 .addVariant("andesite_triple_bricks", props)
                 .addVariant("andesite_twisted", props, VariantModelType.TBS)
                 .addVariant("andesite_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("andesite_zag", props, VariantModelType.CONNECTED)
+                .addVariant("andesite_zag", props, VariantModelType.AR)
                 .family();
     }
 

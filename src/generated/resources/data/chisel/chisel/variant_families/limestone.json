@@ -163,7 +163,7 @@
     },
     {
       "block": "chisel:limestone_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "limestone_zag"
     }
   ]

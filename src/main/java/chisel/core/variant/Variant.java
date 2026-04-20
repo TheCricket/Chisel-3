@@ -35,6 +35,9 @@ public class Variant extends VariantModels {
                     VariantModelType.V4,
                     VariantModelType.MULTIBLOCK_3X3,
                     VariantModelType.MULTIBLOCK_4X4,
+                    VariantModelType.AR,
+                    VariantModelType.MULTI_LAYER_LAVA_AR,
+                    VariantModelType.MULTI_LAYER_WATER_AR,
                     MULTI_LAYER_WATER_2X2,
                     MULTI_LAYER_WATER_3X3,
                     MULTI_LAYER_WATER_4X4
@@ -142,6 +145,9 @@ public class Variant extends VariantModels {
             case LAVA_2x2 -> LAVASTONE_2X2.generate(this, blockModels);
             case LAVA_3x3 -> LAVASTONE_3X3.generate(this, blockModels);
             case LAVA_4x4 -> LAVASTONE_4X4.generate(this, blockModels);
+            case AR -> AR.generate(this, blockModels);
+            case MULTI_LAYER_LAVA_AR -> LAVASTONE_AR.generate(this, blockModels);
+            case MULTI_LAYER_WATER_AR -> WATERSTONE_AR.generate(this, blockModels);
         }
     }
 

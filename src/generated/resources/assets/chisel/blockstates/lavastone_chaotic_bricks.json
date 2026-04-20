@@ -1,5 +1,6 @@
 {
   "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_emissivity": 15,
   "base_tint_index": 0,
   "connected_faces": [
     "down",
