@@ -1,7 +1,9 @@
-package chisel.menu;
+package chisel.inventory.menu;
 
-import chisel.menu.slot.InputSlot;
-import chisel.menu.slot.SelectionSlot;
+import chisel.inventory.container.ChiselContainer;
+import chisel.inventory.ChiselSelectionInventory;
+import chisel.inventory.slot.InputSlot;
+import chisel.inventory.slot.SelectionSlot;
 import chisel.registry.ChiselMenus;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
@@ -18,7 +20,7 @@ import org.jspecify.annotations.NonNull;
 
 public class ChiselMenu extends AbstractContainerMenu {
 
-    protected final ChiselSelectionInventory variants = new ChiselSelectionInventory();
+    public final ChiselSelectionInventory variants = new ChiselSelectionInventory();
     protected final ChiselContainer container;
     public Slot inputSlot;
 
@@ -104,7 +106,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     private void addInventorySlots(Inventory inventory) {
         int top = 120;
         int left = 71;
-        // main inv
+
         for (int c = 0; c < 27; c++) {
             addSlot(new Slot(inventory, c + 9, left + ((c % 9) * 18), top + (c / 9) * 18));
         }

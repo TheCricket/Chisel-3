@@ -1,5 +1,6 @@
-package chisel.menu;
+package chisel.inventory.container;
 
+import chisel.inventory.ChiselSelectionInventory;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;

@@ -5,7 +5,7 @@ import net.minecraft.client.renderer.item.ItemStackRenderState;
 
 public class AutoChiselBlockEntityRenderState extends BlockEntityRenderState {
 
-    public ItemStackRenderState chisel;
-    public ItemStackRenderState[] upgrades;
-    public ItemStackRenderState block;
+    public ItemStackRenderState chisel = new ItemStackRenderState();
+    public ItemStackRenderState[] upgrades = {new ItemStackRenderState(), new ItemStackRenderState(), new ItemStackRenderState(), new ItemStackRenderState()};
+    public ItemStackRenderState block = new ItemStackRenderState();
 }

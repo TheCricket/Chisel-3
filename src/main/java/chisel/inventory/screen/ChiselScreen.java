@@ -1,11 +1,10 @@
-package chisel.menu;
+package chisel.inventory.screen;
 
 import chisel.Chisel;
+import chisel.inventory.menu.ChiselMenu;
 import chisel.network.ChiselSearchPacket;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.gui.render.pip.OversizedItemRenderer;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.input.MouseButtonEvent;

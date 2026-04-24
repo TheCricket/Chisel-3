@@ -1,7 +1,7 @@
-package chisel.menu;
+package chisel.inventory;
 
 import chisel.core.variant.VariantFamily;
-import chisel.item.ChiselItem;
+import chisel.inventory.container.ChiselContainer;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.ContainerUser;

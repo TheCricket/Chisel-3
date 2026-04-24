@@ -1,8 +1,8 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.menu.AutoChiselMenu;
-import chisel.menu.ChiselMenu;
+import chisel.inventory.menu.AutoChiselMenu;
+import chisel.inventory.menu.ChiselMenu;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;

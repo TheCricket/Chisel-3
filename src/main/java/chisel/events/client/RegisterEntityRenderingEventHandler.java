@@ -19,6 +19,6 @@ public class RegisterEntityRenderingEventHandler {
         event.registerEntityRenderer(ChiselEntities.SMASHING_ROCK.get(), context -> new ThrownItemRenderer<>(context, 1.0F, true));
         event.registerEntityRenderer(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), context -> new ThrownItemRenderer<>(context, 1.0F, true));
 
-        event.registerBlockEntityRenderer(ChiselBlockEntities.AUTO_CHISEL.get(), _ -> new AutoChiselBlockEntityRenderer());
+        event.registerBlockEntityRenderer(ChiselBlockEntities.AUTO_CHISEL.get(), AutoChiselBlockEntityRenderer::new);
     }
 }

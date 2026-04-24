@@ -1,7 +1,7 @@
 package chisel.block;
 
 import chisel.block.entity.AutoChiselBlockEntity;
-import chisel.menu.AutoChiselMenu;
+import chisel.inventory.menu.AutoChiselMenu;
 import chisel.registry.ChiselStats;
 import com.mojang.serialization.MapCodec;
 import io.netty.buffer.Unpooled;
@@ -23,6 +23,10 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
+
+import chisel.registry.ChiselBlockEntities;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class AutoChiselBlock extends BaseEntityBlock {
 
@@ -66,7 +70,7 @@ public class AutoChiselBlock extends BaseEntityBlock {
     protected @NonNull InteractionResult useWithoutItem(@NonNull BlockState state, Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull BlockHitResult hitResult) {
         if(!level.isClientSide()) {
             player.openMenu(state.getMenuProvider(level, pos));
-            player.awardStat(ChiselStats.INTERACT_WITH_AUTO_CHISEL);
+            player.awardStat(ChiselStats.INTERACT_WITH_AUTO_CHISEL.get());
         }
 
         return InteractionResult.SUCCESS;
@@ -74,6 +78,16 @@ public class AutoChiselBlock extends BaseEntityBlock {
 
     @Override
     protected @Nullable MenuProvider getMenuProvider(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos) {
-        return new SimpleMenuProvider((id, inv, _) -> new AutoChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer())), Component.translatable("container.auto_chisel"));
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof AutoChiselBlockEntity autoChisel) {
+            return new SimpleMenuProvider((id, inv, _) -> new AutoChiselMenu(id, inv, autoChisel, autoChisel.getData()), Component.translatable("container.auto_chisel"));
+        }
+        return super.getMenuProvider(state, level, pos);
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, @NonNull BlockState state, @NonNull BlockEntityType<T> type) {
+        return createTickerHelper(type, ChiselBlockEntities.AUTO_CHISEL.get(), AutoChiselBlockEntity::tick);
     }
 }

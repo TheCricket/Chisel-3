@@ -1,7 +1,7 @@
-package chisel.menu.slot;
+package chisel.inventory.slot;
 
-import chisel.menu.ChiselContainer;
-import chisel.menu.ChiselSelectionInventory;
+import chisel.inventory.container.ChiselContainer;
+import chisel.inventory.ChiselSelectionInventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
