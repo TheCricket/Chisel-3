@@ -1,7 +1,7 @@
 package chisel.core.variant;
 
-import chisel.block.util.ChiselBlockItem;
-import chisel.block.util.TorchBlockItem;
+import chisel.block.item.ChiselBlockItem;
+import chisel.block.item.TorchBlockItem;
 import chisel.registry.ChiselBlocks;
 import chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;

@@ -115,6 +115,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.WARNING.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.WATERSTONE.getFamily());
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
+
         ChiselBlocks.STAINED_GLASS.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
         ChiselBlocks.STAINED_GLASS_PANE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
 

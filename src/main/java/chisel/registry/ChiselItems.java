@@ -7,6 +7,7 @@ import chisel.item.CloudInABottleItem;
 import chisel.item.SmashingRockItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -25,6 +26,7 @@ public class ChiselItems {
     public static DeferredItem<Item> UPGRADE_SPEED = register("upgrade_speed");
     public static DeferredItem<Item> UPGRADE_REVERSION = register("upgrade_reversion");
     public static DeferredItem<Item> UPGRADE_AUTOMATION = register("upgrade_automation");
+    public static DeferredItem<Item> AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), Item.Properties::new);
 
     public static DeferredItem<Item> BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
     public static DeferredItem<Item> CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);

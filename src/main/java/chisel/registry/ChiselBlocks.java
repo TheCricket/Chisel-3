@@ -1,15 +1,15 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.block.*;
-import chisel.block.util.ChiselBlock;
-import chisel.block.util.ConnectedTextureBlock;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
+import chisel.block.AutoChiselBlock;
+import chisel.block.family.*;
+import chisel.block.util.ChiselFamily;
+import chisel.block.ConnectedTextureBlock;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -22,91 +22,96 @@ import java.util.function.Supplier;
 public class ChiselBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Chisel.MODID);
 
-    public static final AcaciaFamily ACACIA = new AcaciaFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
-    public static final AluminumFamily ALUMINUM = new AluminumFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final AndesiteFamily ANDESITE = new AndesiteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE));
-    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
-    public static final BirchFamily BIRCH = new BirchFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
-    public static final BookshelfFamily BOOKSHELF = new BookshelfFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BOOKSHELF));
-    public static final BricksFamily BRICKS = new BricksFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS));
-    public static final BronzeFamily BRONZE = new BronzeFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final CarpetFamily CARPET = new CarpetFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
-    public static final CloudFamily CLOUD = new CloudFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
-    public static final CobaltFamily COBALT = new CobaltFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE));
-    public static final ConcreteFamily CONCRETE = new ConcreteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
-    public static final CopperFamily COPPER = new CopperFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK));
-    public static final CrimsonFamily CRIMSON = new CrimsonFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
-    public static final DarkOakFamily DARK_OAK = new DarkOakFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
-    public static final DiamondFamily DIAMOND = new DiamondFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
-    public static final DioriteFamily DIORITE = new DioriteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE));
-    public static final DirtFamily DIRT = new DirtFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT));
-    public static final ElectrumFamily ELECTRUM = new ElectrumFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final EmeraldFamily EMERALD = new EmeraldFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
-    public static final EnergizedVoidstoneFamily ENERGIZED_VOIDSTONE = new EnergizedVoidstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final FactoryFamily FACTORY = new FactoryFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final FuturaFamily FUTURA = new FuturaFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final GlassFamily GLASS = new GlassFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS));
-    public static final GlassPaneFamily GLASS_PANE = new GlassPaneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE));
-    public static final GlowstoneFamily GLOWSTONE = new GlowstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE));
-    public static final GoldFamily GOLD = new GoldFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK));
-    public static final GraniteFamily GRANITE = new GraniteFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE));
-    public static final GrimstoneFamily GRIMSTONE = new GrimstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final HexPlatingFamily HEX_PLATING = new HexPlatingFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final HolystoneFamily HOLYSTONE = new HolystoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final IceFamily ICE = new IceFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.ICE));
-    public static final InvarFamily INVAR = new InvarFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final IronFamily IRON = new IronFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ChiselIronBarsFamily IRON_BARS = new ChiselIronBarsFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BARS));
-    public static final JungleFamily JUNGLE = new JungleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
-    public static final LaboratoryFamily LABORATORY = new LaboratoryFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final LapisFamily LAPIS = new LapisFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
-    public static final LavastoneFamily LAVASTONE = new LavastoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final LeadFamily LEAD = new LeadFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final LeafFamily LEAF = new LeafFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES));
-    public static final LimestoneFamily LIMESTONE = new LimestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final JackOLanternFamily JACK_O_LANTERN = new JackOLanternFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
-    public static final MarbleFamily MARBLE = new MarbleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final MilitaryFamily MILITARY = new MilitaryFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final MossyCobblestoneFamily MOSSY_COBBLESTONE = new MossyCobblestoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
-    public static final MossyTempleFamily MOSSY_TEMPLE = new MossyTempleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final NetherBrickFamily NETHERBRICK = new NetherBrickFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_BRICKS));
-    public static final NetherrackFamily NETHERRACK = new NetherrackFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK));
-    public static final NickelFamily NICKEL = new NickelFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final OakFamily OAK = new OakFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS));
-    public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN));
-    public static final PaperwallFamily PAPERWALL = new PaperwallFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL));
-    public static final PlatinumFamily PLATINUM = new PlatinumFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final PumpkinFamily PUMPKIN = new PumpkinFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.PUMPKIN));
-    public static final RedstoneFamily REDSTONE = new RedstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
-    public static final RoadLineFamily ROAD_LINE = new RoadLineFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollision());
-    public static final SandstoneFamily SANDSTONE = new SandstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE));
-    public static final ShingleFamily SHINGLE = new ShingleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final SilverFamily SILVER = new SilverFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final SpruceFamily SPRUCE = new SpruceFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
-    public static final SteelFamily STEEL = new SteelFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final StoneBricksFamily STONE_BRICKS = new StoneBricksFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS));
-    public static final TechnicalFamily TECHNICAL = new TechnicalFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final TempleFamily TEMPLE = new TempleFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final TinFamily TIN = new TinFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ChiselTorchFamily TORCH = new ChiselTorchFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH));
-    public static final TyrianFamily TYRIAN = new TyrianFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final UraniumFamily URANIUM = new UraniumFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ValentinesFamily VALENTINES = new ValentinesFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final VoidstoneFamily VOIDSTONE = new VoidstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final WarningFamily WARNING = new WarningFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE));
-    public static final WaterstoneFamily WATERSTONE = new WaterstoneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion());
-    public static final WoolenClayFamily WOOLEN_CLAY = new WoolenClayFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY));
+    public static final AcaciaFamily ACACIA = new AcaciaFamily(Properties.ofFullCopy(Blocks.ACACIA_PLANKS));
+    public static final AluminumFamily ALUMINUM = new AluminumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final AndesiteFamily ANDESITE = new AndesiteFamily(Properties.ofFullCopy(Blocks.ANDESITE));
+    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
+    public static final BirchFamily BIRCH = new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
+    public static final BookshelfFamily BOOKSHELF = new BookshelfFamily(Properties.ofFullCopy(Blocks.BOOKSHELF));
+    public static final BricksFamily BRICKS = new BricksFamily(Properties.ofFullCopy(Blocks.BRICKS));
+    public static final BronzeFamily BRONZE = new BronzeFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final CarpetFamily CARPET = new CarpetFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
+    public static final CloudFamily CLOUD = new CloudFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+    public static final CobaltFamily COBALT = new CobaltFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(Properties.ofFullCopy(Blocks.COBBLESTONE));
+    public static final ConcreteFamily CONCRETE = new ConcreteFamily(Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
+    public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+    public static final CrimsonFamily CRIMSON = new CrimsonFamily(Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
+    public static final DarkOakFamily DARK_OAK = new DarkOakFamily(Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
+    public static final DiamondFamily DIAMOND = new DiamondFamily(Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
+    public static final DioriteFamily DIORITE = new DioriteFamily(Properties.ofFullCopy(Blocks.DIORITE));
+    public static final DirtFamily DIRT = new DirtFamily(Properties.ofFullCopy(Blocks.DIRT));
+    public static final ElectrumFamily ELECTRUM = new ElectrumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final EmeraldFamily EMERALD = new EmeraldFamily(Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
+    public static final EnergizedVoidstoneFamily ENERGIZED_VOIDSTONE = new EnergizedVoidstoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final FactoryFamily FACTORY = new FactoryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final FuturaFamily FUTURA = new FuturaFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final GlassFamily GLASS = new GlassFamily(Properties.ofFullCopy(Blocks.GLASS));
+    public static final GlassPaneFamily GLASS_PANE = new GlassPaneFamily(Properties.ofFullCopy(Blocks.GLASS_PANE));
+    public static final GlowstoneFamily GLOWSTONE = new GlowstoneFamily(Properties.ofFullCopy(Blocks.GLOWSTONE));
+    public static final GoldFamily GOLD = new GoldFamily(Properties.ofFullCopy(Blocks.GOLD_BLOCK));
+    public static final GraniteFamily GRANITE = new GraniteFamily(Properties.ofFullCopy(Blocks.GRANITE));
+    public static final GrimstoneFamily GRIMSTONE = new GrimstoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final HexPlatingFamily HEX_PLATING = new HexPlatingFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final HolystoneFamily HOLYSTONE = new HolystoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final IceFamily ICE = new IceFamily(Properties.ofFullCopy(Blocks.ICE));
+    public static final InvarFamily INVAR = new InvarFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final IronFamily IRON = new IronFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final ChiselIronBarsFamily IRON_BARS = new ChiselIronBarsFamily(Properties.ofFullCopy(Blocks.IRON_BARS));
+    public static final JungleFamily JUNGLE = new JungleFamily(Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
+    public static final LaboratoryFamily LABORATORY = new LaboratoryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final LapisFamily LAPIS = new LapisFamily(Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
+    public static final LavastoneFamily LAVASTONE = new LavastoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final LeadFamily LEAD = new LeadFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final LeafFamily LEAF = new LeafFamily(Properties.ofFullCopy(Blocks.OAK_LEAVES));
+    public static final LimestoneFamily LIMESTONE = new LimestoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final JackOLanternFamily JACK_O_LANTERN = new JackOLanternFamily(Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
+    public static final MarbleFamily MARBLE = new MarbleFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final MilitaryFamily MILITARY = new MilitaryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final MossyCobblestoneFamily MOSSY_COBBLESTONE = new MossyCobblestoneFamily(Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE));
+    public static final MossyTempleFamily MOSSY_TEMPLE = new MossyTempleFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final NetherBrickFamily NETHERBRICK = new NetherBrickFamily(Properties.ofFullCopy(Blocks.NETHER_BRICKS));
+    public static final NetherrackFamily NETHERRACK = new NetherrackFamily(Properties.ofFullCopy(Blocks.NETHERRACK));
+    public static final NickelFamily NICKEL = new NickelFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final OakFamily OAK = new OakFamily(Properties.ofFullCopy(Blocks.OAK_PLANKS));
+    public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(Properties.ofFullCopy(Blocks.OBSIDIAN));
+    public static final PaperwallFamily PAPERWALL = new PaperwallFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
+    public static final PlatinumFamily PLATINUM = new PlatinumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final PumpkinFamily PUMPKIN = new PumpkinFamily(Properties.ofFullCopy(Blocks.PUMPKIN));
+    public static final RedstoneFamily REDSTONE = new RedstoneFamily(Properties.ofFullCopy(Blocks.REDSTONE_BLOCK));
+    public static final RoadLineFamily ROAD_LINE = new RoadLineFamily(Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollision());
+    public static final SandstoneFamily SANDSTONE = new SandstoneFamily(Properties.ofFullCopy(Blocks.SANDSTONE));
+    public static final ShingleFamily SHINGLE = new ShingleFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final SilverFamily SILVER = new SilverFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final SpruceFamily SPRUCE = new SpruceFamily(Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
+    public static final SteelFamily STEEL = new SteelFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final StoneBricksFamily STONE_BRICKS = new StoneBricksFamily(Properties.ofFullCopy(Blocks.STONE_BRICKS));
+    public static final TechnicalFamily TECHNICAL = new TechnicalFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final TempleFamily TEMPLE = new TempleFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final TinFamily TIN = new TinFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final ChiselTorchFamily TORCH = new ChiselTorchFamily(Properties.ofFullCopy(Blocks.TORCH));
+    public static final TyrianFamily TYRIAN = new TyrianFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final UraniumFamily URANIUM = new UraniumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final ValentinesFamily VALENTINES = new ValentinesFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final VoidstoneFamily VOIDSTONE = new VoidstoneFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final WarningFamily WARNING = new WarningFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final WaterstoneFamily WATERSTONE = new WaterstoneFamily(Properties.ofFullCopy(Blocks.STONE).noOcclusion());
+    public static final WoolenClayFamily WOOLEN_CLAY = new WoolenClayFamily(Properties.ofFullCopy(Blocks.CLAY));
 
     public static final List<StainedGlassFamily> STAINED_GLASS = new ArrayList<>();
     public static final List<StainedGlassPaneFamily> STAINED_GLASS_PANE = new ArrayList<>();
 
     static {
         for (DyeColor color : DyeColor.values()) {
-            STAINED_GLASS.add(new StainedGlassFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS), color.getName(), getVanillaStainedGlass(color)));
-            STAINED_GLASS_PANE.add(new StainedGlassPaneFamily(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE), color, getVanillaStainedGlassPane(color)));
+            STAINED_GLASS.add(new StainedGlassFamily(Properties.ofFullCopy(Blocks.GLASS), color.getName(), getVanillaStainedGlass(color)));
+            STAINED_GLASS_PANE.add(new StainedGlassPaneFamily(Properties.ofFullCopy(Blocks.GLASS_PANE), color, getVanillaStainedGlassPane(color)));
         }
     }
+
+    public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, () -> Properties.of()
+            .sound(SoundType.METAL)
+            .strength(2.5F)
+            .requiresCorrectToolForDrops());
 
     private static Block getVanillaStainedGlass(DyeColor color) {
         return switch (color) {
@@ -150,8 +155,8 @@ public class ChiselBlocks {
         };
     }
 
-    public static List<ChiselBlock> getBlocks() {
-        List<ChiselBlock> blocks = new ArrayList<>(List.of(
+    public static List<ChiselFamily> getBlocks() {
+        List<ChiselFamily> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANDESITE, ANTIBLOCK, BIRCH, BOOKSHELF, BRICKS, BRONZE, CARPET,
                 CLOUD, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD,
                 ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE,
@@ -171,11 +176,11 @@ public class ChiselBlocks {
         BLOCKS.register(bus);
     }
 
-    public static DeferredBlock<Block> register(String name, BlockBehaviour.Properties properties) {
-        return BLOCKS.register(name, () -> new ConnectedTextureBlock(properties.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix(name)))));
+    public static DeferredBlock<Block> register(String name, Properties properties) {
+        return BLOCKS.registerBlock(name, ConnectedTextureBlock::new, () -> properties);
     }
 
-    public static DeferredBlock<Block> register(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties) {
-        return BLOCKS.register(name, () -> func.apply(properties.get().setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix(name)))));
+    public static DeferredBlock<Block> register(String name, Function<Properties, ? extends Block> func, Supplier<Properties> properties) {
+        return BLOCKS.registerBlock(name, func, properties);
     }
 }

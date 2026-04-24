@@ -143,6 +143,7 @@ public class ChiselTabs {
                 output.accept(ChiselItems.CHISEL_IRON.get());
                 output.accept(ChiselItems.CHISEL_DIAMOND.get());
                 output.accept(ChiselItems.CHISEL_OBSIDIAN.get());
+                output.accept(ChiselBlocks.AUTO_CHISEL.get().asItem());
                 output.accept(ChiselItems.UPGRADE_STACK.get());
                 output.accept(ChiselItems.UPGRADE_SPEED.get());
                 output.accept(ChiselItems.UPGRADE_REVERSION.get());
