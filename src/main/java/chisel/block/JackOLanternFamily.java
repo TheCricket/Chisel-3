@@ -28,7 +28,6 @@ public class JackOLanternFamily extends ChiselBlock {
                 .addVariant("jack_o_lantern_14", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .addVariant("jack_o_lantern_15", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .addVariant("jack_o_lantern_16", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
-                .addVariant("jack_o_lantern_17", CarvedPumpkinBlock::new, () -> props, VariantModelType.PUMPKIN)
                 .family();
     }
 
@@ -50,6 +49,7 @@ public class JackOLanternFamily extends ChiselBlock {
         lang.addBlock(getVariant("jack_o_lantern_13"), "Jack o'Lantern", "Neutral");
         lang.addBlock(getVariant("jack_o_lantern_14"), "Jack o'Lantern", "Laughing out loud");
         lang.addBlock(getVariant("jack_o_lantern_15"), "Jack o'Lantern", "Smiling Closed");
+        lang.addBlock(getVariant("jack_o_lantern_16"), "Jack o'Lantern", "Scary");
     }
 }
 

@@ -24,18 +24,17 @@ public class StainedGlassPaneFamily extends ChiselBlock {
                 .addVariant("stained_glass_pane_%s_bubble".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("stained_glass_pane_%s_panel".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("stained_glass_pane_%s_quad".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_quad".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("stained_glass_pane_%s_quad_fancy".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_fancy".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
         String colorName = StringUtils.capitalize(color.getName().replace("_", " "));
-        lang.addBlock(getVariant("stained_glass_pane_%s_borderless".formatted(color)), colorName + " Stained Glass Pane", colorName + " Borderless Glass Pane");
-        lang.addBlock(getVariant("stained_glass_pane_%s_bubble".formatted(color)), colorName + " Stained Glass Pane", colorName + " Bubble Glass Pane");
-        lang.addBlock(getVariant("stained_glass_pane_%s_panel".formatted(color)), colorName + " Stained Glass Pane", colorName + " Glass Panel Pane");
-        lang.addBlock(getVariant("stained_glass_pane_%s_quad".formatted(color)), colorName + " Stained Glass Pane", colorName + " Glass Quad Pane");
-        lang.addBlock(getVariant("stained_glass_pane_%s_quad_fancy".formatted(color)), colorName + " Stained Glass Pane", colorName + " Fancy Glass Panel Pane");
+        lang.addBlock(getVariant("stained_glass_pane_%s_borderless".formatted(color)), "%s Stained Glass Pane".formatted(colorName), "%s Borderless Glass Pane".formatted(colorName));
+        lang.addBlock(getVariant("stained_glass_pane_%s_bubble".formatted(color)), "%s Stained Glass Pane".formatted(colorName), "%s Bubble Glass Pane".formatted(colorName));
+        lang.addBlock(getVariant("stained_glass_pane_%s_panel".formatted(color)), "%s Stained Glass Pane".formatted(colorName), "%s Glass Panel Pane".formatted(colorName));
+        lang.addBlock(getVariant("stained_glass_pane_%s_quad".formatted(color)), "%s Stained Glass Pane".formatted(colorName), "%s Glass Quad Pane".formatted(colorName));
+        lang.addBlock(getVariant("stained_glass_pane_%s_fancy".formatted(color)), "%s Stained Glass Pane".formatted(colorName), "%s Fancy Glass Panel Pane".formatted(colorName));
     }
 }
-

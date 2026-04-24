@@ -27,9 +27,9 @@
       "name": "stained_glass_pane_magenta_quad"
     },
     {
-      "block": "chisel:stained_glass_pane_magenta_quad_fancy",
+      "block": "chisel:stained_glass_pane_magenta_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_quad_fancy"
+      "name": "stained_glass_pane_magenta_fancy"
     }
   ]
 }

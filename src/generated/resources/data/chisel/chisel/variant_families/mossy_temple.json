@@ -17,11 +17,6 @@
       "name": "mossy_temple_bricks_large"
     },
     {
-      "block": "chisel:mossy_temple_bricks_weared",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks_weared"
-    },
-    {
       "block": "chisel:mossy_temple_bricks_worn",
       "model_type": "cube_all",
       "name": "mossy_temple_bricks_worn"

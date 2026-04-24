@@ -49,6 +49,7 @@ public class PumpkinFamily extends ChiselBlock {
         lang.addBlock(getVariant("pumpkin_13"), "Pumpkin", "Neutral");
         lang.addBlock(getVariant("pumpkin_14"), "Pumpkin", "Laughing out loud");
         lang.addBlock(getVariant("pumpkin_15"), "Pumpkin", "Smiling Closed");
+        lang.addBlock(getVariant("pumpkin_16"), "Pumpkin", "Scary");
     }
 }
 

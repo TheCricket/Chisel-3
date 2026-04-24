@@ -11,7 +11,6 @@ public class MossyTempleFamily extends ChiselBlock {
                     .addVariant("mossy_temple_bricks", props)
                     .addVariant("mossy_temple_bricks_disarray", props)
                     .addVariant("mossy_temple_bricks_large", props)
-                    .addVariant("mossy_temple_bricks_weared", props)
                     .addVariant("mossy_temple_bricks_worn", props)
                     .addVariant("mossy_temple_cobble", props)
                     .addVariant("mossy_temple_column", props, VariantModelType.TBS)

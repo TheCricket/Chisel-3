@@ -90,11 +90,6 @@
       "block": "chisel:jack_o_lantern_16",
       "model_type": "pumpkin",
       "name": "jack_o_lantern_16"
-    },
-    {
-      "block": "chisel:jack_o_lantern_17",
-      "model_type": "pumpkin",
-      "name": "jack_o_lantern_17"
     }
   ]
 }

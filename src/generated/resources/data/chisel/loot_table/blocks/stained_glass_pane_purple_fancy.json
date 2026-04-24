@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:stained_glass_pane_purple_quad_fancy"
+          "name": "chisel:stained_glass_pane_purple_fancy"
         }
       ],
       "rolls": 1.0
