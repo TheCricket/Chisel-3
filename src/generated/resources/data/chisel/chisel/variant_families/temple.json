@@ -8,22 +8,18 @@
     },
     {
       "block": "chisel:temple_bricks",
-      "model_type": "cube_all",
       "name": "temple_bricks"
     },
     {
       "block": "chisel:temple_bricks_disarray",
-      "model_type": "cube_all",
       "name": "temple_bricks_disarray"
     },
     {
       "block": "chisel:temple_bricks_large",
-      "model_type": "cube_all",
       "name": "temple_bricks_large"
     },
     {
       "block": "chisel:temple_bricks_worn",
-      "model_type": "cube_all",
       "name": "temple_bricks_worn"
     },
     {
@@ -33,17 +29,14 @@
     },
     {
       "block": "chisel:temple_ornate",
-      "model_type": "cube_all",
       "name": "temple_ornate"
     },
     {
       "block": "chisel:temple_plate",
-      "model_type": "cube_all",
       "name": "temple_plate"
     },
     {
       "block": "chisel:temple_plate_cracked",
-      "model_type": "cube_all",
       "name": "temple_plate_cracked"
     },
     {
@@ -63,22 +56,18 @@
     },
     {
       "block": "chisel:temple_tiles",
-      "model_type": "cube_all",
       "name": "temple_tiles"
     },
     {
       "block": "chisel:temple_tiles_light",
-      "model_type": "cube_all",
       "name": "temple_tiles_light"
     },
     {
       "block": "chisel:temple_tiles_small",
-      "model_type": "cube_all",
       "name": "temple_tiles_small"
     },
     {
       "block": "chisel:temple_tiles_small_light",
-      "model_type": "cube_all",
       "name": "temple_tiles_small_light"
     }
   ]

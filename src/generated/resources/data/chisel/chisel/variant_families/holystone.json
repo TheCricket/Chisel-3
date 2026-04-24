@@ -3,22 +3,18 @@
   "variants": [
     {
       "block": "chisel:holystone_blocks",
-      "model_type": "cube_all",
       "name": "holystone_blocks"
     },
     {
       "block": "chisel:holystone_blocks_rough",
-      "model_type": "cube_all",
       "name": "holystone_blocks_rough"
     },
     {
       "block": "chisel:holystone_bricks",
-      "model_type": "cube_all",
       "name": "holystone_bricks"
     },
     {
       "block": "chisel:holystone_bricks_large",
-      "model_type": "cube_all",
       "name": "holystone_bricks_large"
     },
     {
@@ -28,22 +24,18 @@
     },
     {
       "block": "chisel:holystone_construction",
-      "model_type": "cube_all",
       "name": "holystone_construction"
     },
     {
       "block": "chisel:holystone_love",
-      "model_type": "cube_all",
       "name": "holystone_love"
     },
     {
       "block": "chisel:holystone_plate",
-      "model_type": "cube_all",
       "name": "holystone_plate"
     },
     {
       "block": "chisel:holystone_plate_smooth",
-      "model_type": "cube_all",
       "name": "holystone_plate_smooth"
     },
     {
@@ -58,17 +50,14 @@
     },
     {
       "block": "chisel:holystone_raw",
-      "model_type": "cube_all",
       "name": "holystone_raw"
     },
     {
       "block": "chisel:holystone_smooth",
-      "model_type": "cube_all",
       "name": "holystone_smooth"
     },
     {
       "block": "chisel:holystone_tiles",
-      "model_type": "cube_all",
       "name": "holystone_tiles"
     }
   ]

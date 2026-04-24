@@ -3,27 +3,22 @@
   "variants": [
     {
       "block": "minecraft:orange_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.orange_stained_glass"
     },
     {
       "block": "chisel:stained_glass_orange_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_orange_borderless"
     },
     {
       "block": "chisel:stained_glass_orange_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_orange_bubble"
     },
     {
       "block": "chisel:stained_glass_orange_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_orange_panel"
     },
     {
       "block": "chisel:stained_glass_orange_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_orange_panel_fancy"
     }
   ]

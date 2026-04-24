@@ -3,27 +3,22 @@
   "variants": [
     {
       "block": "minecraft:cyan_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.cyan_stained_glass"
     },
     {
       "block": "chisel:stained_glass_cyan_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_cyan_borderless"
     },
     {
       "block": "chisel:stained_glass_cyan_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_cyan_bubble"
     },
     {
       "block": "chisel:stained_glass_cyan_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_cyan_panel"
     },
     {
       "block": "chisel:stained_glass_cyan_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_cyan_panel_fancy"
     }
   ]

@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:military_imperial_plate",
-      "model_type": "cube_all",
       "name": "military_imperial_plate"
     },
     {
@@ -48,7 +47,6 @@
     },
     {
       "block": "chisel:military_rebel_plate",
-      "model_type": "cube_all",
       "name": "military_rebel_plate"
     }
   ]

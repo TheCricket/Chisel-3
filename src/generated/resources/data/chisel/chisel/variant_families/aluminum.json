@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:aluminum_bolted",
-      "model_type": "cube_all",
       "name": "aluminum_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:aluminum_machine",
-      "model_type": "cube_all",
       "name": "aluminum_machine"
     },
     {

@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "chisel:silver_125",
-      "model_type": "cube_all",
       "name": "silver_125"
     },
     {
@@ -13,7 +12,6 @@
     },
     {
       "block": "chisel:silver_bolted",
-      "model_type": "cube_all",
       "name": "silver_bolted"
     },
     {

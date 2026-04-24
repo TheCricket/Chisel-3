@@ -104,8 +104,7 @@ public class ChiselSelectionInventory implements Container {
 
     @Override
     public boolean stillValid(@NonNull Player player) {
-        ItemStack held = player.getUseItem();
-        return !held.isEmpty() && held.getItem() instanceof ChiselItem;
+        return true;
     }
 
     @Override
@@ -126,9 +125,11 @@ public class ChiselSelectionInventory implements Container {
         allItems.clear();
         if(family != null) {
             family.getVariants().forEach(variant -> {
-                ItemStack stack = new ItemStack(variant.getBlock());
-                stack.setCount(stackSize);
-                allItems.add(stack);
+                if (variant != null && variant.getBlock() != null) {
+                    ItemStack stack = new ItemStack(variant.getBlock());
+                    stack.setCount(stackSize);
+                    allItems.add(stack);
+                }
             });
         }
         updateFilteredItems();

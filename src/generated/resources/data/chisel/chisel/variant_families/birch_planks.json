@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:birch_planks",
-      "model_type": "cube_all",
       "name": "block.minecraft.birch_planks"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:birch_planks_crude_paneling",
-      "model_type": "cube_all",
       "name": "birch_planks_crude_paneling"
     },
     {
@@ -48,7 +46,6 @@
     },
     {
       "block": "chisel:birch_planks_large",
-      "model_type": "cube_all",
       "name": "birch_planks_large"
     },
     {
@@ -83,12 +80,10 @@
     },
     {
       "block": "chisel:birch_planks_stacked",
-      "model_type": "cube_all",
       "name": "birch_planks_stacked"
     },
     {
       "block": "chisel:birch_planks_vertical",
-      "model_type": "cube_all",
       "name": "birch_planks_vertical"
     }
   ]

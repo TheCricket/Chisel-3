@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:pumpkin",
-      "model_type": "cube_all",
       "name": "block.minecraft.pumpkin"
     },
     {

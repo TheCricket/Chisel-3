@@ -22,12 +22,14 @@ public class VariantFamily {
             Codec.STRING.fieldOf("familyName").forGetter(f -> f.familyName),
             Variant.CODEC.listOf().fieldOf("variants").forGetter(f -> f.variants),
             Codec.STRING.optionalFieldOf("recipe_unlocked_by").forGetter(f -> java.util.Optional.ofNullable(f.recipeUnlockedBy))
-    ).apply(instance, (prefix, variants, unlockedBy) -> {
-        VariantFamily family = new VariantFamily(prefix);
+    ).apply(instance, (familyName, variants, unlockedBy) -> {
+        VariantFamily family = new VariantFamily(familyName);
         unlockedBy.ifPresent(u -> family.recipeUnlockedBy = u);
         for (Variant v : variants) {
-            v.setFamily(family);
-            family.variants.add(v);
+            if (v != null) {
+                v.setFamily(family);
+                family.variants.add(v);
+            }
         }
         return family;
     }));

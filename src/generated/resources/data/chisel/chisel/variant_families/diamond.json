@@ -3,22 +3,18 @@
   "variants": [
     {
       "block": "minecraft:diamond_block",
-      "model_type": "cube_all",
       "name": "block.minecraft.diamond_block"
     },
     {
       "block": "chisel:diamond_bismuth",
-      "model_type": "cube_all",
       "name": "diamond_bismuth"
     },
     {
       "block": "chisel:diamond_cells",
-      "model_type": "cube_all",
       "name": "diamond_cells"
     },
     {
       "block": "chisel:diamond_crushed",
-      "model_type": "cube_all",
       "name": "diamond_crushed"
     },
     {
@@ -28,17 +24,14 @@
     },
     {
       "block": "chisel:diamond_obsidian",
-      "model_type": "cube_all",
       "name": "diamond_obsidian"
     },
     {
       "block": "chisel:diamond_obsidian_purple",
-      "model_type": "cube_all",
       "name": "diamond_obsidian_purple"
     },
     {
       "block": "chisel:diamond_ornate",
-      "model_type": "cube_all",
       "name": "diamond_ornate"
     },
     {
@@ -53,17 +46,14 @@
     },
     {
       "block": "chisel:diamond_small_blocks",
-      "model_type": "cube_all",
       "name": "diamond_small_blocks"
     },
     {
       "block": "chisel:diamond_small_blocks_ornate",
-      "model_type": "cube_all",
       "name": "diamond_small_blocks_ornate"
     },
     {
       "block": "chisel:diamond_zelda",
-      "model_type": "cube_all",
       "name": "diamond_zelda"
     }
   ]

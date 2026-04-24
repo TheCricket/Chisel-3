@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:bronze_bolted",
-      "model_type": "cube_all",
       "name": "bronze_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:bronze_machine",
-      "model_type": "cube_all",
       "name": "bronze_machine"
     },
     {

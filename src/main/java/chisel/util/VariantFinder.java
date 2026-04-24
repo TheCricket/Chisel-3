@@ -14,20 +14,23 @@ import java.util.Objects;
 
 public class VariantFinder {
 
-    private static final List<VariantFamily> families = new ArrayList<>();
-
     public static VariantFamily getFamilyForBlock(Block block, RegistryAccess registryAccess) {
-        Registry<VariantFamily> registry = Objects.requireNonNull(registryAccess
+        Registry<VariantFamily> registry = registryAccess
                 .lookup(ChiselVariants.KEY)
-                .orElseThrow(() -> new IllegalStateException("Variant family registry is not available on the server"))
-        );
+                .orElse(null);
 
-        for (Map.Entry<ResourceKey<VariantFamily>, VariantFamily> e : registry.entrySet()) {
-            families.add(e.getValue());
+        if (registry != null) {
+            for (VariantFamily family : registry) {
+                if (family.isBlockInFamily(block)) {
+                    return family;
+                }
+            }
         }
 
-        for (VariantFamily family : families) {
-            if(family.isBlockInFamily(block)) {
+        // Fallback for client-side or if registry lookup failed
+        int fallbackCount = ChiselVariants.getVariantFamilies().size();
+        for (VariantFamily family : ChiselVariants.getVariantFamilies()) {
+            if (family.isBlockInFamily(block)) {
                 return family;
             }
         }

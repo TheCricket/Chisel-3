@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:iron_block",
-      "model_type": "cube_all",
       "name": "block.minecraft.iron_block"
     },
     {
@@ -13,7 +12,6 @@
     },
     {
       "block": "chisel:iron_bolted",
-      "model_type": "cube_all",
       "name": "iron_bolted"
     },
     {
@@ -28,7 +26,6 @@
     },
     {
       "block": "chisel:iron_machine",
-      "model_type": "cube_all",
       "name": "iron_machine"
     },
     {
@@ -43,7 +40,6 @@
     },
     {
       "block": "chisel:iron_125",
-      "model_type": "cube_all",
       "name": "iron_125"
     },
     {
@@ -98,12 +94,10 @@
     },
     {
       "block": "chisel:iron_moon_obsidian",
-      "model_type": "cube_all",
       "name": "iron_moon_obsidian"
     },
     {
       "block": "chisel:iron_moon_obsidian_purple",
-      "model_type": "cube_all",
       "name": "iron_moon_obsidian_purple"
     },
     {

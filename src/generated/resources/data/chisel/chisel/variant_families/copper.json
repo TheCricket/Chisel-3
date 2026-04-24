@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:copper_block",
-      "model_type": "cube_all",
       "name": "block.minecraft.copper_block"
     },
     {
@@ -13,7 +12,6 @@
     },
     {
       "block": "chisel:copper_bolted",
-      "model_type": "cube_all",
       "name": "copper_bolted"
     },
     {
@@ -28,7 +26,6 @@
     },
     {
       "block": "chisel:copper_machine",
-      "model_type": "cube_all",
       "name": "copper_machine"
     },
     {

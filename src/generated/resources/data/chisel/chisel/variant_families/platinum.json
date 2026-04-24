@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:platinum_bolted",
-      "model_type": "cube_all",
       "name": "platinum_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:platinum_machine",
-      "model_type": "cube_all",
       "name": "platinum_machine"
     },
     {

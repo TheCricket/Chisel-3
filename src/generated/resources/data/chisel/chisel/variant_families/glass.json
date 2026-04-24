@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.glass"
     },
     {
@@ -18,12 +17,10 @@
     },
     {
       "block": "chisel:glass_chinese",
-      "model_type": "cube_all",
       "name": "glass_chinese"
     },
     {
       "block": "chisel:glass_chinese_2",
-      "model_type": "cube_all",
       "name": "glass_chinese_2"
     },
     {
@@ -33,42 +30,34 @@
     },
     {
       "block": "chisel:glass_dungeon",
-      "model_type": "cube_all",
       "name": "glass_dungeon"
     },
     {
       "block": "chisel:glass_edge",
-      "model_type": "cube_all",
       "name": "glass_edge"
     },
     {
       "block": "chisel:glass_edge_steel",
-      "model_type": "cube_all",
       "name": "glass_edge_steel"
     },
     {
       "block": "chisel:glass_fence",
-      "model_type": "cube_all",
       "name": "glass_fence"
     },
     {
       "block": "chisel:glass_grid_thick",
-      "model_type": "cube_all",
       "name": "glass_grid_thick"
     },
     {
       "block": "chisel:glass_grid_thin",
-      "model_type": "cube_all",
       "name": "glass_grid_thin"
     },
     {
       "block": "chisel:glass_japanese",
-      "model_type": "cube_all",
       "name": "glass_japanese"
     },
     {
       "block": "chisel:glass_japanese_2",
-      "model_type": "cube_all",
       "name": "glass_japanese_2"
     },
     {
@@ -83,12 +72,10 @@
     },
     {
       "block": "chisel:glass_ornate_old",
-      "model_type": "cube_all",
       "name": "glass_ornate_old"
     },
     {
       "block": "chisel:glass_screen",
-      "model_type": "cube_all",
       "name": "glass_screen"
     },
     {
@@ -108,7 +95,6 @@
     },
     {
       "block": "chisel:glass_streak",
-      "model_type": "cube_all",
       "name": "glass_streak"
     }
   ]

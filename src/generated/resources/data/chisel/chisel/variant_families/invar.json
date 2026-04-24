@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:invar_bolted",
-      "model_type": "cube_all",
       "name": "invar_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:invar_machine",
-      "model_type": "cube_all",
       "name": "invar_machine"
     },
     {

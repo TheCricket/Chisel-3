@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:electrum_bolted",
-      "model_type": "cube_all",
       "name": "electrum_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:electrum_machine",
-      "model_type": "cube_all",
       "name": "electrum_machine"
     },
     {

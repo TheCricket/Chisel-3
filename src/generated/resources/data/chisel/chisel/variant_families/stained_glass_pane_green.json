@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:green_stained_glass_pane",
-      "model_type": "cube_all",
       "name": "block.minecraft.green_stained_glass_pane"
     },
     {

@@ -3,12 +3,10 @@
   "variants": [
     {
       "block": "minecraft:spruce_planks",
-      "model_type": "cube_all",
       "name": "block.minecraft.spruce_planks"
     },
     {
       "block": "chisel:spruce_planks_braced",
-      "model_type": "cube_all",
       "name": "spruce_planks_braced"
     },
     {
@@ -23,7 +21,6 @@
     },
     {
       "block": "chisel:spruce_planks_crude_paneling",
-      "model_type": "cube_all",
       "name": "spruce_planks_crude_paneling"
     },
     {
@@ -48,7 +45,6 @@
     },
     {
       "block": "chisel:spruce_planks_large",
-      "model_type": "cube_all",
       "name": "spruce_planks_large"
     },
     {
@@ -83,12 +79,10 @@
     },
     {
       "block": "chisel:spruce_planks_stacked",
-      "model_type": "cube_all",
       "name": "spruce_planks_stacked"
     },
     {
       "block": "chisel:spruce_planks_vertical",
-      "model_type": "cube_all",
       "name": "spruce_planks_vertical"
     }
   ]

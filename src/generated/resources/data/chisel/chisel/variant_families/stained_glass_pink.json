@@ -3,27 +3,22 @@
   "variants": [
     {
       "block": "minecraft:pink_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.pink_stained_glass"
     },
     {
       "block": "chisel:stained_glass_pink_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_pink_borderless"
     },
     {
       "block": "chisel:stained_glass_pink_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_pink_bubble"
     },
     {
       "block": "chisel:stained_glass_pink_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_pink_panel"
     },
     {
       "block": "chisel:stained_glass_pink_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_pink_panel_fancy"
     }
   ]

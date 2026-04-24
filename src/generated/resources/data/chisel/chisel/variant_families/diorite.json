@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:diorite",
-      "model_type": "cube_all",
       "name": "block.minecraft.diorite"
     },
     {
@@ -13,7 +12,6 @@
     },
     {
       "block": "chisel:diorite_braid",
-      "model_type": "cube_all",
       "name": "diorite_braid"
     },
     {
@@ -23,12 +21,10 @@
     },
     {
       "block": "chisel:diorite_chaotic_medium",
-      "model_type": "cube_all",
       "name": "diorite_chaotic_medium"
     },
     {
       "block": "chisel:diorite_chaotic_small",
-      "model_type": "cube_all",
       "name": "diorite_chaotic_small"
     },
     {
@@ -38,12 +34,10 @@
     },
     {
       "block": "chisel:diorite_cracked",
-      "model_type": "cube_all",
       "name": "diorite_cracked"
     },
     {
       "block": "chisel:diorite_cracked_bricks",
-      "model_type": "cube_all",
       "name": "diorite_cracked_bricks"
     },
     {
@@ -63,12 +57,10 @@
     },
     {
       "block": "chisel:diorite_french",
-      "model_type": "cube_all",
       "name": "diorite_french"
     },
     {
       "block": "chisel:diorite_french_2",
-      "model_type": "cube_all",
       "name": "diorite_french_2"
     },
     {
@@ -78,7 +70,6 @@
     },
     {
       "block": "chisel:diorite_layers",
-      "model_type": "cube_all",
       "name": "diorite_layers"
     },
     {
@@ -88,12 +79,10 @@
     },
     {
       "block": "chisel:diorite_ornate",
-      "model_type": "cube_all",
       "name": "diorite_ornate"
     },
     {
       "block": "chisel:diorite_panel",
-      "model_type": "cube_all",
       "name": "diorite_panel"
     },
     {
@@ -103,17 +92,14 @@
     },
     {
       "block": "chisel:diorite_prism",
-      "model_type": "cube_all",
       "name": "diorite_prism"
     },
     {
       "block": "chisel:diorite_raw",
-      "model_type": "cube_all",
       "name": "diorite_raw"
     },
     {
       "block": "chisel:diorite_road",
-      "model_type": "cube_all",
       "name": "diorite_road"
     },
     {
@@ -123,17 +109,14 @@
     },
     {
       "block": "chisel:diorite_small",
-      "model_type": "cube_all",
       "name": "diorite_small"
     },
     {
       "block": "chisel:diorite_soft",
-      "model_type": "cube_all",
       "name": "diorite_soft"
     },
     {
       "block": "chisel:diorite_solid",
-      "model_type": "cube_all",
       "name": "diorite_solid"
     },
     {
@@ -143,17 +126,14 @@
     },
     {
       "block": "chisel:diorite_tiles_medium",
-      "model_type": "cube_all",
       "name": "diorite_tiles_medium"
     },
     {
       "block": "chisel:diorite_tiles_small",
-      "model_type": "cube_all",
       "name": "diorite_tiles_small"
     },
     {
       "block": "chisel:diorite_triple",
-      "model_type": "cube_all",
       "name": "diorite_triple"
     },
     {

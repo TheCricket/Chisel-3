@@ -3,27 +3,22 @@
   "variants": [
     {
       "block": "minecraft:brown_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.brown_stained_glass"
     },
     {
       "block": "chisel:stained_glass_brown_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_brown_borderless"
     },
     {
       "block": "chisel:stained_glass_brown_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_brown_bubble"
     },
     {
       "block": "chisel:stained_glass_brown_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_brown_panel"
     },
     {
       "block": "chisel:stained_glass_brown_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_brown_panel_fancy"
     }
   ]

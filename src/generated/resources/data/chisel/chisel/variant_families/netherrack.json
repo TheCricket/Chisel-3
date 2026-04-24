@@ -3,77 +3,62 @@
   "variants": [
     {
       "block": "minecraft:netherrack",
-      "model_type": "cube_all",
       "name": "block.minecraft.netherrack"
     },
     {
       "block": "chisel:netherrack_blood",
-      "model_type": "cube_all",
       "name": "netherrack_blood"
     },
     {
       "block": "chisel:netherrack_blood_dark",
-      "model_type": "cube_all",
       "name": "netherrack_blood_dark"
     },
     {
       "block": "chisel:netherrack_blood_gravel",
-      "model_type": "cube_all",
       "name": "netherrack_blood_gravel"
     },
     {
       "block": "chisel:netherrack_blue",
-      "model_type": "cube_all",
       "name": "netherrack_blue"
     },
     {
       "block": "chisel:netherrack_blue_shale",
-      "model_type": "cube_all",
       "name": "netherrack_blue_shale"
     },
     {
       "block": "chisel:netherrack_classic",
-      "model_type": "cube_all",
       "name": "netherrack_classic"
     },
     {
       "block": "chisel:netherrack_guts",
-      "model_type": "cube_all",
       "name": "netherrack_guts"
     },
     {
       "block": "chisel:netherrack_guts_dark",
-      "model_type": "cube_all",
       "name": "netherrack_guts_dark"
     },
     {
       "block": "chisel:netherrack_lava",
-      "model_type": "cube_all",
       "name": "netherrack_lava"
     },
     {
       "block": "chisel:netherrack_meat",
-      "model_type": "cube_all",
       "name": "netherrack_meat"
     },
     {
       "block": "chisel:netherrack_meat_red",
-      "model_type": "cube_all",
       "name": "netherrack_meat_red"
     },
     {
       "block": "chisel:netherrack_meat_small",
-      "model_type": "cube_all",
       "name": "netherrack_meat_small"
     },
     {
       "block": "chisel:netherrack_red",
-      "model_type": "cube_all",
       "name": "netherrack_red"
     },
     {
       "block": "chisel:netherrack_spattered",
-      "model_type": "cube_all",
       "name": "netherrack_spattered"
     }
   ]

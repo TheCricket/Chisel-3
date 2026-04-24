@@ -8,7 +8,6 @@
     },
     {
       "block": "chisel:nickel_bolted",
-      "model_type": "cube_all",
       "name": "nickel_bolted"
     },
     {
@@ -18,12 +17,10 @@
     },
     {
       "block": "chisel:nickel_crate",
-      "model_type": "cube_all",
       "name": "nickel_crate"
     },
     {
       "block": "chisel:nickel_machine",
-      "model_type": "cube_all",
       "name": "nickel_machine"
     },
     {

@@ -1,20 +1,20 @@
 package chisel;
 
-import chisel.registry.*;
 import chisel.network.ChiselSearchPacket;
+import chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
-
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Mod(Chisel.MODID)
 public class Chisel {
 
     public static final String MODID = "chisel";
-    public static final Logger LOGGER = Logger.getLogger(Chisel.MODID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(Chisel.MODID);
 
     public Chisel(IEventBus bus) {
         ChiselSounds.SOUNDS.register(bus);

@@ -3,7 +3,6 @@
   "variants": [
     {
       "block": "minecraft:bookshelf",
-      "model_type": "cube_all",
       "name": "block.minecraft.bookshelf"
     },
     {
