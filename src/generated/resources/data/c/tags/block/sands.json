@@ -1,0 +1,19 @@
+{
+  "values": [
+    "chisel:dirt_bricks",
+    "chisel:dirt_bricks_arranged",
+    "chisel:dirt_bricks_disarray",
+    "chisel:dirt_bricks_large",
+    "chisel:dirt_chunky",
+    "chisel:dirt_cobble",
+    "chisel:dirt_happy",
+    "chisel:dirt_horizontal",
+    "chisel:dirt_layers",
+    "chisel:dirt_netherbricks",
+    "chisel:dirt_plate",
+    "chisel:dirt_reinforced",
+    "chisel:dirt_reinforced_cobble",
+    "chisel:dirt_vert",
+    "chisel:dirt_vertical"
+  ]
+}

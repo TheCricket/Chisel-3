@@ -1,0 +1,13 @@
+{
+  "values": [
+    "chisel:stained_glass_yellow_borderless",
+    "chisel:stained_glass_yellow_bubble",
+    "chisel:stained_glass_yellow_panel",
+    "chisel:stained_glass_yellow_panel_fancy",
+    "chisel:stained_glass_pane_yellow_borderless",
+    "chisel:stained_glass_pane_yellow_bubble",
+    "chisel:stained_glass_pane_yellow_panel",
+    "chisel:stained_glass_pane_yellow_quad",
+    "chisel:stained_glass_pane_yellow_fancy"
+  ]
+}

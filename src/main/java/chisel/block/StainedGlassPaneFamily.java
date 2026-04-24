@@ -15,6 +15,10 @@ public class StainedGlassPaneFamily extends ChiselBlock {
 
     private final DyeColor color;
 
+    public DyeColor getColor() {
+        return color;
+    }
+
     public StainedGlassPaneFamily(BlockBehaviour.Properties props, DyeColor color, Block vanilla) {
         this.color = color;
 

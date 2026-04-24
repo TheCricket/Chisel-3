@@ -7,8 +7,11 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.TagKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import org.jspecify.annotations.NonNull;
 
@@ -114,6 +117,71 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         ChiselBlocks.STAINED_GLASS.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
         ChiselBlocks.STAINED_GLASS_PANE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
+
+        // NEOFORGE TAGS
+        addToTag(Tags.Blocks.COBBLESTONES, ChiselBlocks.COBBLESTONE.getFamily());
+        addToTag(Tags.Blocks.COBBLESTONES_NORMAL, ChiselBlocks.COBBLESTONE.getFamily());
+        addToTag(Tags.Blocks.COBBLESTONES_MOSSY, ChiselBlocks.MOSSY_COBBLESTONE.getFamily());
+        addToTag(Tags.Blocks.BOOKSHELVES, ChiselBlocks.BOOKSHELF.getFamily());
+
+        addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselBlocks.GLASS.getFamily());
+        addToTag(Tags.Blocks.GLASS_PANES, ChiselBlocks.GLASS_PANE.getFamily());
+
+        addToTag(Tags.Blocks.SANDS, ChiselBlocks.DIRT.getFamily());
+
+        ChiselBlocks.STAINED_GLASS.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+            addToTag(getTagForColor(family.getColor()), family.getFamily());
+        });
+
+        ChiselBlocks.STAINED_GLASS_PANE.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_PANES, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+            addToTag(getTagForColor(family.getColor().getName()), family.getFamily());
+        });
+
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.ALUMINUM.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.BRONZE.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COBALT.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COPPER.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.DIAMOND.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.ELECTRUM.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.EMERALD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.GOLD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.INVAR.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.IRON.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.LAPIS.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.LEAD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.NICKEL.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.PLATINUM.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.REDSTONE.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.SILVER.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.STEEL.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.TIN.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.URANIUM.getFamily());
+    }
+
+    private TagKey<Block> getTagForColor(String color) {
+        return switch (color) {
+            case "white" -> Tags.Blocks.DYED_WHITE;
+            case "orange" -> Tags.Blocks.DYED_ORANGE;
+            case "magenta" -> Tags.Blocks.DYED_MAGENTA;
+            case "light_blue" -> Tags.Blocks.DYED_LIGHT_BLUE;
+            case "yellow" -> Tags.Blocks.DYED_YELLOW;
+            case "lime" -> Tags.Blocks.DYED_LIME;
+            case "pink" -> Tags.Blocks.DYED_PINK;
+            case "gray" -> Tags.Blocks.DYED_GRAY;
+            case "light_gray" -> Tags.Blocks.DYED_LIGHT_GRAY;
+            case "cyan" -> Tags.Blocks.DYED_CYAN;
+            case "purple" -> Tags.Blocks.DYED_PURPLE;
+            case "blue" -> Tags.Blocks.DYED_BLUE;
+            case "brown" -> Tags.Blocks.DYED_BROWN;
+            case "green" -> Tags.Blocks.DYED_GREEN;
+            case "red" -> Tags.Blocks.DYED_RED;
+            case "black" -> Tags.Blocks.DYED_BLACK;
+            default -> throw new IllegalArgumentException("Unknown color: " + color);
+        };
     }
 
     private void addToWood(VariantFamily family) {

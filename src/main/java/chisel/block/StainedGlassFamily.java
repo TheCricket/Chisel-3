@@ -10,6 +10,10 @@ public class StainedGlassFamily extends ChiselBlock {
 
     private final String color;
 
+    public String getColor() {
+        return color;
+    }
+
     public StainedGlassFamily(BlockBehaviour.Properties props, String color, Block vanilla) {
         this.color = color;
 
