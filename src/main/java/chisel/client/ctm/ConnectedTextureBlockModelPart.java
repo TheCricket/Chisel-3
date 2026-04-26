@@ -29,6 +29,6 @@ public record ConnectedTextureBlockModelPart(
 
     @Override
     public boolean useAmbientOcclusion() {
-        return false;
+        return true;
     }
 }

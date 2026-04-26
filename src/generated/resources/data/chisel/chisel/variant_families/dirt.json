@@ -1,9 +1,9 @@
 {
-  "familyName": "dirt",
+  "family_name": "dirt",
+  "tag": "c:chisel/dirt",
   "variants": [
     {
       "block": "minecraft:dirt",
-      "model_type": "cube_all",
       "name": "block.minecraft.dirt"
     },
     {
@@ -13,32 +13,26 @@
     },
     {
       "block": "chisel:dirt_bricks_arranged",
-      "model_type": "cube_all",
       "name": "dirt_bricks_arranged"
     },
     {
       "block": "chisel:dirt_bricks_disarray",
-      "model_type": "cube_all",
       "name": "dirt_bricks_disarray"
     },
     {
       "block": "chisel:dirt_bricks_large",
-      "model_type": "cube_all",
       "name": "dirt_bricks_large"
     },
     {
       "block": "chisel:dirt_chunky",
-      "model_type": "cube_all",
       "name": "dirt_chunky"
     },
     {
       "block": "chisel:dirt_cobble",
-      "model_type": "cube_all",
       "name": "dirt_cobble"
     },
     {
       "block": "chisel:dirt_happy",
-      "model_type": "cube_all",
       "name": "dirt_happy"
     },
     {
@@ -48,17 +42,14 @@
     },
     {
       "block": "chisel:dirt_layers",
-      "model_type": "cube_all",
       "name": "dirt_layers"
     },
     {
       "block": "chisel:dirt_netherbricks",
-      "model_type": "cube_all",
       "name": "dirt_netherbricks"
     },
     {
       "block": "chisel:dirt_plate",
-      "model_type": "cube_all",
       "name": "dirt_plate"
     },
     {

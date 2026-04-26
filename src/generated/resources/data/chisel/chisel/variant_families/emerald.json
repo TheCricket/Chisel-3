@@ -1,79 +1,65 @@
 {
-  "familyName": "emerald",
+  "family_name": "emerald",
+  "tag": "c:chisel/emerald",
   "variants": [
     {
       "block": "minecraft:emerald_block",
-      "model_type": "cube_all",
       "name": "block.minecraft.emerald_block"
     },
     {
       "block": "chisel:emerald_bismuth",
-      "model_type": "cube_all",
       "name": "emerald_bismuth"
     },
     {
       "block": "chisel:emerald_blocks_small",
-      "model_type": "cube_all",
       "name": "emerald_blocks_small"
     },
     {
       "block": "chisel:emerald_blocks_small_ornate",
-      "model_type": "cube_all",
       "name": "emerald_blocks_small_ornate"
     },
     {
       "block": "chisel:emerald_cell",
-      "model_type": "cube_all",
       "name": "emerald_cell"
     },
     {
       "block": "chisel:emerald_chunk",
-      "model_type": "cube_all",
       "name": "emerald_chunk"
     },
     {
       "block": "chisel:emerald_circle",
-      "model_type": "cube_all",
       "name": "emerald_circle"
     },
     {
       "block": "chisel:emerald_masonry",
-      "model_type": "cube_all",
       "name": "emerald_masonry"
     },
     {
       "block": "chisel:emerald_ornate",
-      "model_type": "cube_all",
       "name": "emerald_ornate"
     },
     {
       "block": "chisel:emerald_ornate_layer",
-      "model_type": "cube_all",
       "name": "emerald_ornate_layer"
     },
     {
       "block": "chisel:emerald_panel",
-      "model_type": "cube_all",
       "name": "emerald_panel"
     },
     {
       "block": "chisel:emerald_panel_classic",
-      "model_type": "cube_all",
       "name": "emerald_panel_classic"
     },
     {
       "block": "chisel:emerald_prismatic",
-      "model_type": "cube_all",
       "name": "emerald_prismatic"
     },
     {
       "block": "chisel:emerald_smooth",
-      "model_type": "cube_all",
       "name": "emerald_smooth"
     },
     {
       "block": "chisel:emerald_zelda",
-      "model_type": "cube_all",
       "name": "emerald_zelda"
     }
   ]

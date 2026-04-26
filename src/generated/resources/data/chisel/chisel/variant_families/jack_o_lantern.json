@@ -1,9 +1,9 @@
 {
-  "familyName": "jack_o_lantern",
+  "family_name": "jack_o_lantern",
+  "tag": "c:chisel/jack_o_lantern",
   "variants": [
     {
       "block": "minecraft:jack_o_lantern",
-      "model_type": "cube_all",
       "name": "block.minecraft.jack_o_lantern"
     },
     {
@@ -90,11 +90,6 @@
       "block": "chisel:jack_o_lantern_16",
       "model_type": "pumpkin",
       "name": "jack_o_lantern_16"
-    },
-    {
-      "block": "chisel:jack_o_lantern_17",
-      "model_type": "pumpkin",
-      "name": "jack_o_lantern_17"
     }
   ]
 }

@@ -1,7 +1,7 @@
 package chisel.datagen;
 
 import chisel.Chisel;
-import chisel.block.util.ChiselBlock;
+import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselBlocks;
 import com.google.common.collect.Maps;
@@ -17,7 +17,7 @@ public class ChiselVariants {
     public static final Map<String, VariantFamily> VARIANT_FAMILIES = Maps.newHashMap();
     public static final ResourceKey<Registry<VariantFamily>> KEY = ResourceKey.createRegistryKey(Chisel.prefix("variant_families"));
 
-    private static void register(ChiselBlock block, BootstrapContext<VariantFamily> context) {
+    private static void register(ChiselFamily block, BootstrapContext<VariantFamily> context) {
         context.register(block.getKey(), block.getFamily());
         VARIANT_FAMILIES.putIfAbsent(block.getFamily().getFamilyName(), block.getFamily());
     }

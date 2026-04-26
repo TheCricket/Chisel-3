@@ -1,9 +1,9 @@
 {
-  "familyName": "tin",
+  "family_name": "tin",
+  "tag": "c:chisel/tin",
   "variants": [
     {
       "block": "chisel:tin_125",
-      "model_type": "cube_all",
       "name": "tin_125"
     },
     {
@@ -13,7 +13,6 @@
     },
     {
       "block": "chisel:tin_bolted",
-      "model_type": "cube_all",
       "name": "tin_bolted"
     },
     {
@@ -23,7 +22,6 @@
     },
     {
       "block": "chisel:tin_crate",
-      "model_type": "cube_all",
       "name": "tin_crate"
     },
     {

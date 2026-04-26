@@ -1,9 +1,9 @@
 {
-  "familyName": "glowstone",
+  "family_name": "glowstone",
+  "tag": "c:chisel/glowstone",
   "variants": [
     {
       "block": "minecraft:glowstone",
-      "model_type": "cube_all",
       "name": "block.minecraft.glowstone"
     },
     {
@@ -13,37 +13,30 @@
     },
     {
       "block": "chisel:glowstone_bismuth",
-      "model_type": "cube_all",
       "name": "glowstone_bismuth"
     },
     {
       "block": "chisel:glowstone_braid",
-      "model_type": "cube_all",
       "name": "glowstone_braid"
     },
     {
       "block": "chisel:glowstone_chaotic_medium",
-      "model_type": "cube_all",
       "name": "glowstone_chaotic_medium"
     },
     {
       "block": "chisel:glowstone_chaotic_small",
-      "model_type": "cube_all",
       "name": "glowstone_chaotic_small"
     },
     {
       "block": "chisel:glowstone_circular",
-      "model_type": "cube_all",
       "name": "glowstone_circular"
     },
     {
       "block": "chisel:glowstone_cracked",
-      "model_type": "cube_all",
       "name": "glowstone_cracked"
     },
     {
       "block": "chisel:glowstone_cracked_bricks",
-      "model_type": "cube_all",
       "name": "glowstone_cracked_bricks"
     },
     {
@@ -58,12 +51,10 @@
     },
     {
       "block": "chisel:glowstone_french_1",
-      "model_type": "cube_all",
       "name": "glowstone_french_1"
     },
     {
       "block": "chisel:glowstone_french_2",
-      "model_type": "cube_all",
       "name": "glowstone_french_2"
     },
     {
@@ -73,7 +64,6 @@
     },
     {
       "block": "chisel:glowstone_layers",
-      "model_type": "cube_all",
       "name": "glowstone_layers"
     },
     {
@@ -83,22 +73,18 @@
     },
     {
       "block": "chisel:glowstone_neon",
-      "model_type": "cube_all",
       "name": "glowstone_neon"
     },
     {
       "block": "chisel:glowstone_neon_panel",
-      "model_type": "cube_all",
       "name": "glowstone_neon_panel"
     },
     {
       "block": "chisel:glowstone_ornate",
-      "model_type": "cube_all",
       "name": "glowstone_ornate"
     },
     {
       "block": "chisel:glowstone_panel",
-      "model_type": "cube_all",
       "name": "glowstone_panel"
     },
     {
@@ -108,12 +94,10 @@
     },
     {
       "block": "chisel:glowstone_prism",
-      "model_type": "cube_all",
       "name": "glowstone_prism"
     },
     {
       "block": "chisel:glowstone_road",
-      "model_type": "cube_all",
       "name": "glowstone_road"
     },
     {
@@ -123,7 +107,6 @@
     },
     {
       "block": "chisel:glowstone_small_bricks",
-      "model_type": "cube_all",
       "name": "glowstone_small_bricks"
     },
     {
@@ -133,22 +116,18 @@
     },
     {
       "block": "chisel:glowstone_tiles_large_bismuth",
-      "model_type": "cube_all",
       "name": "glowstone_tiles_large_bismuth"
     },
     {
       "block": "chisel:glowstone_tiles_medium",
-      "model_type": "cube_all",
       "name": "glowstone_tiles_medium"
     },
     {
       "block": "chisel:glowstone_tiles_medium_bismuth",
-      "model_type": "cube_all",
       "name": "glowstone_tiles_medium_bismuth"
     },
     {
       "block": "chisel:glowstone_triple_bricks",
-      "model_type": "cube_all",
       "name": "glowstone_triple_bricks"
     },
     {

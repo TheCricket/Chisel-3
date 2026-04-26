@@ -1,5 +1,6 @@
 {
-  "familyName": "lavastone",
+  "family_name": "lavastone",
+  "tag": "c:chisel/lavastone",
   "variants": [
     {
       "block": "chisel:lavastone_array",
@@ -153,7 +154,7 @@
     },
     {
       "block": "chisel:lavastone_zag",
-      "model_type": "multi_layer_connected_glow",
+      "model_type": "multi_layer_lava_ar",
       "name": "lavastone_zag"
     }
   ]

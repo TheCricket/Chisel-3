@@ -1,6 +1,6 @@
 package chisel.item;
 
-import chisel.menu.ChiselMenu;
+import chisel.inventory.menu.ChiselMenu;
 import chisel.registry.ChiselItemAbilities;
 import io.netty.buffer.Unpooled;
 import net.minecraft.network.FriendlyByteBuf;

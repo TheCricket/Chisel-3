@@ -1,5 +1,6 @@
 {
-  "familyName": "platinum",
+  "family_name": "platinum",
+  "tag": "c:chisel/platinum",
   "variants": [
     {
       "block": "chisel:platinum_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:platinum_bolted",
-      "model_type": "cube_all",
       "name": "platinum_bolted"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:platinum_machine",
-      "model_type": "cube_all",
       "name": "platinum_machine"
     },
     {

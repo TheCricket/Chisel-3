@@ -1,0 +1,20 @@
+{
+  "values": [
+    "chisel:obsidian_blocks",
+    "chisel:obsidian_chiseled",
+    "chisel:obsidian_crate",
+    "chisel:obsidian_crate_unboxed",
+    "chisel:obsidian_crystal",
+    "chisel:obsidian_greek",
+    "chisel:obsidian_organic_chunks",
+    "chisel:obsidian_organic_growth",
+    "chisel:obsidian_panel",
+    "chisel:obsidian_panel_bright",
+    "chisel:obsidian_panel_map",
+    "chisel:obsidian_panel_region",
+    "chisel:obsidian_panel_shiny",
+    "chisel:obsidian_pillar",
+    "chisel:obsidian_pillar_quartz",
+    "chisel:obsidian_tiles"
+  ]
+}

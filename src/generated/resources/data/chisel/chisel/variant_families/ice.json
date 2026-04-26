@@ -1,9 +1,9 @@
 {
-  "familyName": "ice",
+  "family_name": "ice",
+  "tag": "c:chisel/ice",
   "variants": [
     {
       "block": "minecraft:ice",
-      "model_type": "cube_all",
       "name": "block.minecraft.ice"
     },
     {
@@ -13,7 +13,6 @@
     },
     {
       "block": "chisel:ice_braid",
-      "model_type": "cube_all",
       "name": "ice_braid"
     },
     {
@@ -23,12 +22,10 @@
     },
     {
       "block": "chisel:ice_chaotic_medium",
-      "model_type": "cube_all",
       "name": "ice_chaotic_medium"
     },
     {
       "block": "chisel:ice_chaotic_small",
-      "model_type": "cube_all",
       "name": "ice_chaotic_small"
     },
     {
@@ -38,12 +35,10 @@
     },
     {
       "block": "chisel:ice_cracked",
-      "model_type": "cube_all",
       "name": "ice_cracked"
     },
     {
       "block": "chisel:ice_cracked_bricks",
-      "model_type": "cube_all",
       "name": "ice_cracked_bricks"
     },
     {
@@ -63,12 +58,10 @@
     },
     {
       "block": "chisel:ice_french_1",
-      "model_type": "cube_all",
       "name": "ice_french_1"
     },
     {
       "block": "chisel:ice_french_2",
-      "model_type": "cube_all",
       "name": "ice_french_2"
     },
     {
@@ -78,7 +71,6 @@
     },
     {
       "block": "chisel:ice_layers",
-      "model_type": "cube_all",
       "name": "ice_layers"
     },
     {
@@ -88,12 +80,10 @@
     },
     {
       "block": "chisel:ice_ornate",
-      "model_type": "cube_all",
       "name": "ice_ornate"
     },
     {
       "block": "chisel:ice_panel",
-      "model_type": "cube_all",
       "name": "ice_panel"
     },
     {
@@ -138,17 +128,14 @@
     },
     {
       "block": "chisel:ice_prism",
-      "model_type": "cube_all",
       "name": "ice_prism"
     },
     {
       "block": "chisel:ice_raw",
-      "model_type": "cube_all",
       "name": "ice_raw"
     },
     {
       "block": "chisel:ice_road",
-      "model_type": "cube_all",
       "name": "ice_road"
     },
     {
@@ -158,17 +145,14 @@
     },
     {
       "block": "chisel:ice_small_bricks",
-      "model_type": "cube_all",
       "name": "ice_small_bricks"
     },
     {
       "block": "chisel:ice_soft_bricks",
-      "model_type": "cube_all",
       "name": "ice_soft_bricks"
     },
     {
       "block": "chisel:ice_solid_bricks",
-      "model_type": "cube_all",
       "name": "ice_solid_bricks"
     },
     {
@@ -178,17 +162,14 @@
     },
     {
       "block": "chisel:ice_tiles_medium",
-      "model_type": "cube_all",
       "name": "ice_tiles_medium"
     },
     {
       "block": "chisel:ice_tiles_small",
-      "model_type": "cube_all",
       "name": "ice_tiles_small"
     },
     {
       "block": "chisel:ice_triple_bricks",
-      "model_type": "cube_all",
       "name": "ice_triple_bricks"
     },
     {
@@ -203,7 +184,7 @@
     },
     {
       "block": "chisel:ice_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "ice_zag"
     }
   ]

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "chisel:block/stained_glass_pane_magenta/stained_glass_pane_magenta_quad_fancy"
-  }
-}

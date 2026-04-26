@@ -1,9 +1,9 @@
 {
-  "familyName": "dark_oak_planks",
+  "family_name": "dark_oak_planks",
+  "tag": "c:chisel/dark_oak_planks",
   "variants": [
     {
       "block": "minecraft:dark_oak_planks",
-      "model_type": "cube_all",
       "name": "block.minecraft.dark_oak_planks"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:dark_oak_planks_crude_paneling",
-      "model_type": "cube_all",
       "name": "dark_oak_planks_crude_paneling"
     },
     {
@@ -48,7 +47,6 @@
     },
     {
       "block": "chisel:dark_oak_planks_large",
-      "model_type": "cube_all",
       "name": "dark_oak_planks_large"
     },
     {
@@ -83,12 +81,10 @@
     },
     {
       "block": "chisel:dark_oak_planks_stacked",
-      "model_type": "cube_all",
       "name": "dark_oak_planks_stacked"
     },
     {
       "block": "chisel:dark_oak_planks_vertical",
-      "model_type": "cube_all",
       "name": "dark_oak_planks_vertical"
     }
   ]

@@ -2,7 +2,10 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/futura/futura_rainbow-bg",
-    "layer1": "chisel:block/futura/futura_rainbow",
+    "layer1": {
+      "force_translucent": true,
+      "sprite": "chisel:block/futura/futura_rainbow"
+    },
     "particle": "chisel:block/futura/futura_rainbow"
   }
 }

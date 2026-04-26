@@ -1,9 +1,9 @@
 {
-  "familyName": "stained_glass_pane_magenta",
+  "family_name": "stained_glass_pane_magenta",
+  "tag": "c:chisel/stained_glass_pane_magenta",
   "variants": [
     {
       "block": "minecraft:magenta_stained_glass_pane",
-      "model_type": "cube_all",
       "name": "block.minecraft.magenta_stained_glass_pane"
     },
     {
@@ -27,9 +27,9 @@
       "name": "stained_glass_pane_magenta_quad"
     },
     {
-      "block": "chisel:stained_glass_pane_magenta_quad_fancy",
+      "block": "chisel:stained_glass_pane_magenta_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_quad_fancy"
+      "name": "stained_glass_pane_magenta_fancy"
     }
   ]
 }

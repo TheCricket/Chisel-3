@@ -1,5 +1,6 @@
 {
-  "familyName": "waterstone",
+  "family_name": "waterstone",
+  "tag": "c:chisel/waterstone",
   "variants": [
     {
       "block": "chisel:waterstone_array",
@@ -153,7 +154,7 @@
     },
     {
       "block": "chisel:waterstone_zag",
-      "model_type": "multi_layer_connected_tinted",
+      "model_type": "multi_layer_water_ar",
       "name": "waterstone_zag"
     }
   ]

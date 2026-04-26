@@ -1,104 +1,85 @@
 {
-  "familyName": "stone_bricks",
+  "family_name": "stone_bricks",
+  "tag": "c:chisel/stone_bricks",
   "variants": [
     {
       "block": "minecraft:stone_bricks",
-      "model_type": "cube_all",
       "name": "block.minecraft.stone_bricks"
     },
     {
       "block": "chisel:stone_bricks_chaotic_small",
-      "model_type": "cube_all",
       "name": "stone_bricks_chaotic_small"
     },
     {
       "block": "chisel:stone_bricks_disordered",
-      "model_type": "cube_all",
       "name": "stone_bricks_disordered"
     },
     {
       "block": "chisel:stone_bricks_disordered_panel",
-      "model_type": "cube_all",
       "name": "stone_bricks_disordered_panel"
     },
     {
       "block": "chisel:stone_bricks_disordered_small",
-      "model_type": "cube_all",
       "name": "stone_bricks_disordered_small"
     },
     {
       "block": "chisel:stone_bricks_fancy",
-      "model_type": "cube_all",
       "name": "stone_bricks_fancy"
     },
     {
       "block": "chisel:stone_bricks_felsic",
-      "model_type": "cube_all",
       "name": "stone_bricks_felsic"
     },
     {
       "block": "chisel:stone_bricks_large",
-      "model_type": "cube_all",
       "name": "stone_bricks_large"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_felsic",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_felsic"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_felsic_2",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_felsic_2"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_mafic",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_mafic"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_mixed",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_mixed"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_mixed_2",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_mixed_2"
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_plain",
-      "model_type": "cube_all",
       "name": "stone_bricks_mason_bricks_plain"
     },
     {
       "block": "chisel:stone_bricks_masonry_felsic",
-      "model_type": "cube_all",
       "name": "stone_bricks_masonry_felsic"
     },
     {
       "block": "chisel:stone_bricks_masonry_mafic",
-      "model_type": "cube_all",
       "name": "stone_bricks_masonry_mafic"
     },
     {
       "block": "chisel:stone_bricks_masonry_mixed",
-      "model_type": "cube_all",
       "name": "stone_bricks_masonry_mixed"
     },
     {
       "block": "chisel:stone_bricks_masonry_plain",
-      "model_type": "cube_all",
       "name": "stone_bricks_masonry_plain"
     },
     {
       "block": "chisel:stone_bricks_ornate",
-      "model_type": "cube_all",
       "name": "stone_bricks_ornate"
     },
     {
       "block": "chisel:stone_bricks_ornate_large",
-      "model_type": "cube_all",
       "name": "stone_bricks_ornate_large"
     },
     {
@@ -108,7 +89,6 @@
     },
     {
       "block": "chisel:stone_bricks_panel_ornate",
-      "model_type": "cube_all",
       "name": "stone_bricks_panel_ornate"
     },
     {
@@ -118,27 +98,22 @@
     },
     {
       "block": "chisel:stone_bricks_poison",
-      "model_type": "cube_all",
       "name": "stone_bricks_poison"
     },
     {
       "block": "chisel:stone_bricks_rough",
-      "model_type": "cube_all",
       "name": "stone_bricks_rough"
     },
     {
       "block": "chisel:stone_bricks_small",
-      "model_type": "cube_all",
       "name": "stone_bricks_small"
     },
     {
       "block": "chisel:stone_bricks_smooth",
-      "model_type": "cube_all",
       "name": "stone_bricks_smooth"
     },
     {
       "block": "chisel:stone_bricks_wide",
-      "model_type": "cube_all",
       "name": "stone_bricks_wide"
     }
   ]

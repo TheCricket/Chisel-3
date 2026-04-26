@@ -4,30 +4,26 @@ import chisel.core.variant.VariantFamily;
 import chisel.datagen.ChiselVariants;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 public class VariantFinder {
 
-    private static final List<VariantFamily> families = new ArrayList<>();
-
     public static VariantFamily getFamilyForBlock(Block block, RegistryAccess registryAccess) {
-        Registry<VariantFamily> registry = Objects.requireNonNull(registryAccess
+        if (block == null) return null;
+        Registry<VariantFamily> registry = registryAccess
                 .lookup(ChiselVariants.KEY)
-                .orElseThrow(() -> new IllegalStateException("Variant family registry is not available on the server"))
-        );
+                .orElse(null);
 
-        for (Map.Entry<ResourceKey<VariantFamily>, VariantFamily> e : registry.entrySet()) {
-            families.add(e.getValue());
+        if (registry != null) {
+            for (VariantFamily family : registry) {
+                if (family.isBlockInFamily(block)) {
+                    return family;
+                }
+            }
         }
 
-        for (VariantFamily family : families) {
-            if(family.isBlockInFamily(block)) {
+        for (VariantFamily family : ChiselVariants.getVariantFamilies()) {
+            if (family.isBlockInFamily(block)) {
                 return family;
             }
         }

@@ -1,34 +1,25 @@
 {
-  "familyName": "mossy_temple",
+  "family_name": "mossy_temple",
+  "tag": "c:chisel/mossy_temple",
   "variants": [
     {
       "block": "chisel:mossy_temple_bricks",
-      "model_type": "cube_all",
       "name": "mossy_temple_bricks"
     },
     {
       "block": "chisel:mossy_temple_bricks_disarray",
-      "model_type": "cube_all",
       "name": "mossy_temple_bricks_disarray"
     },
     {
       "block": "chisel:mossy_temple_bricks_large",
-      "model_type": "cube_all",
       "name": "mossy_temple_bricks_large"
     },
     {
-      "block": "chisel:mossy_temple_bricks_weared",
-      "model_type": "cube_all",
-      "name": "mossy_temple_bricks_weared"
-    },
-    {
       "block": "chisel:mossy_temple_bricks_worn",
-      "model_type": "cube_all",
       "name": "mossy_temple_bricks_worn"
     },
     {
       "block": "chisel:mossy_temple_cobble",
-      "model_type": "cube_all",
       "name": "mossy_temple_cobble"
     },
     {
@@ -38,17 +29,14 @@
     },
     {
       "block": "chisel:mossy_temple_ornate",
-      "model_type": "cube_all",
       "name": "mossy_temple_ornate"
     },
     {
       "block": "chisel:mossy_temple_plate",
-      "model_type": "cube_all",
       "name": "mossy_temple_plate"
     },
     {
       "block": "chisel:mossy_temple_plate_cracked",
-      "model_type": "cube_all",
       "name": "mossy_temple_plate_cracked"
     },
     {
@@ -68,22 +56,18 @@
     },
     {
       "block": "chisel:mossy_temple_tiles",
-      "model_type": "cube_all",
       "name": "mossy_temple_tiles"
     },
     {
       "block": "chisel:mossy_temple_tiles_light",
-      "model_type": "cube_all",
       "name": "mossy_temple_tiles_light"
     },
     {
       "block": "chisel:mossy_temple_tiles_small",
-      "model_type": "cube_all",
       "name": "mossy_temple_tiles_small"
     },
     {
       "block": "chisel:mossy_temple_tiles_small_light",
-      "model_type": "cube_all",
       "name": "mossy_temple_tiles_small_light"
     }
   ]

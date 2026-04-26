@@ -1,29 +1,25 @@
 {
-  "familyName": "stained_glass_lime",
+  "family_name": "stained_glass_lime",
+  "tag": "c:chisel/stained_glass_lime",
   "variants": [
     {
       "block": "minecraft:lime_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.lime_stained_glass"
     },
     {
       "block": "chisel:stained_glass_lime_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_lime_borderless"
     },
     {
       "block": "chisel:stained_glass_lime_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_lime_bubble"
     },
     {
       "block": "chisel:stained_glass_lime_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_lime_panel"
     },
     {
       "block": "chisel:stained_glass_lime_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_lime_panel_fancy"
     }
   ]

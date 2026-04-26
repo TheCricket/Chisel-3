@@ -2,8 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/bricks/bricks_zag",
-    "overlay_connected": "chisel:block/bricks/bricks_zag-ctm",
-    "overlay_texture": "chisel:block/bricks/bricks_zag",
+    "overlay_2x2": "chisel:block/bricks/bricks_zag-ctm",
     "particle": "chisel:block/bricks/bricks_zag"
   }
 }

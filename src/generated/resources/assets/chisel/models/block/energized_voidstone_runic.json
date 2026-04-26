@@ -2,7 +2,10 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/energized_voidstone/energized_voidstone_runic-bg",
-    "layer1": "chisel:block/energized_voidstone/energized_voidstone_runic",
+    "layer1": {
+      "force_translucent": true,
+      "sprite": "chisel:block/energized_voidstone/energized_voidstone_runic"
+    },
     "particle": "chisel:block/energized_voidstone/energized_voidstone_runic"
   }
 }

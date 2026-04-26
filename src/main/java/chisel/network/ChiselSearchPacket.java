@@ -1,7 +1,7 @@
 package chisel.network;
 
 import chisel.Chisel;
-import chisel.menu.ChiselMenu;
+import chisel.inventory.menu.ChiselMenu;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;

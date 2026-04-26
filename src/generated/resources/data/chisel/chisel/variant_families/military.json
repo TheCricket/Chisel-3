@@ -1,5 +1,6 @@
 {
-  "familyName": "military",
+  "family_name": "military",
+  "tag": "c:chisel/military",
   "variants": [
     {
       "block": "chisel:military_imperial_camo",
@@ -23,7 +24,6 @@
     },
     {
       "block": "chisel:military_imperial_plate",
-      "model_type": "cube_all",
       "name": "military_imperial_plate"
     },
     {
@@ -48,7 +48,6 @@
     },
     {
       "block": "chisel:military_rebel_plate",
-      "model_type": "cube_all",
       "name": "military_rebel_plate"
     }
   ]

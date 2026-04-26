@@ -1,29 +1,25 @@
 {
-  "familyName": "stained_glass_red",
+  "family_name": "stained_glass_red",
+  "tag": "c:chisel/stained_glass_red",
   "variants": [
     {
       "block": "minecraft:red_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.red_stained_glass"
     },
     {
       "block": "chisel:stained_glass_red_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_red_borderless"
     },
     {
       "block": "chisel:stained_glass_red_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_red_bubble"
     },
     {
       "block": "chisel:stained_glass_red_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_red_panel"
     },
     {
       "block": "chisel:stained_glass_red_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_red_panel_fancy"
     }
   ]

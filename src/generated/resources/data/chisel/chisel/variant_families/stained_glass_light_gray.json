@@ -1,29 +1,25 @@
 {
-  "familyName": "stained_glass_light_gray",
+  "family_name": "stained_glass_light_gray",
+  "tag": "c:chisel/stained_glass_light_gray",
   "variants": [
     {
       "block": "minecraft:light_gray_stained_glass",
-      "model_type": "cube_all",
       "name": "block.minecraft.light_gray_stained_glass"
     },
     {
       "block": "chisel:stained_glass_light_gray_borderless",
-      "model_type": "cube_all",
       "name": "stained_glass_light_gray_borderless"
     },
     {
       "block": "chisel:stained_glass_light_gray_bubble",
-      "model_type": "cube_all",
       "name": "stained_glass_light_gray_bubble"
     },
     {
       "block": "chisel:stained_glass_light_gray_panel",
-      "model_type": "cube_all",
       "name": "stained_glass_light_gray_panel"
     },
     {
       "block": "chisel:stained_glass_light_gray_panel_fancy",
-      "model_type": "cube_all",
       "name": "stained_glass_light_gray_panel_fancy"
     }
   ]

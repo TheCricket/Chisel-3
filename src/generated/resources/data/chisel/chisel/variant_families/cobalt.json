@@ -1,5 +1,6 @@
 {
-  "familyName": "cobalt",
+  "family_name": "cobalt",
+  "tag": "c:chisel/cobalt",
   "variants": [
     {
       "block": "chisel:cobalt_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:cobalt_bolted",
-      "model_type": "cube_all",
       "name": "cobalt_bolted"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:cobalt_machine",
-      "model_type": "cube_all",
       "name": "cobalt_machine"
     },
     {

@@ -1,89 +1,73 @@
 {
-  "familyName": "woolen_clay",
+  "family_name": "woolen_clay",
+  "tag": "c:chisel/woolen_clay",
   "variants": [
     {
       "block": "minecraft:clay",
-      "model_type": "cube_all",
       "name": "block.minecraft.clay"
     },
     {
       "block": "chisel:woolen_clay_0",
-      "model_type": "cube_all",
       "name": "woolen_clay_0"
     },
     {
       "block": "chisel:woolen_clay_1",
-      "model_type": "cube_all",
       "name": "woolen_clay_1"
     },
     {
       "block": "chisel:woolen_clay_2",
-      "model_type": "cube_all",
       "name": "woolen_clay_2"
     },
     {
       "block": "chisel:woolen_clay_3",
-      "model_type": "cube_all",
       "name": "woolen_clay_3"
     },
     {
       "block": "chisel:woolen_clay_4",
-      "model_type": "cube_all",
       "name": "woolen_clay_4"
     },
     {
       "block": "chisel:woolen_clay_5",
-      "model_type": "cube_all",
       "name": "woolen_clay_5"
     },
     {
       "block": "chisel:woolen_clay_6",
-      "model_type": "cube_all",
       "name": "woolen_clay_6"
     },
     {
       "block": "chisel:woolen_clay_7",
-      "model_type": "cube_all",
       "name": "woolen_clay_7"
     },
     {
       "block": "chisel:woolen_clay_8",
-      "model_type": "cube_all",
       "name": "woolen_clay_8"
     },
     {
       "block": "chisel:woolen_clay_9",
-      "model_type": "cube_all",
       "name": "woolen_clay_9"
     },
     {
       "block": "chisel:woolen_clay_10",
-      "model_type": "cube_all",
       "name": "woolen_clay_10"
     },
     {
       "block": "chisel:woolen_clay_11",
-      "model_type": "cube_all",
       "name": "woolen_clay_11"
     },
     {
       "block": "chisel:woolen_clay_12",
-      "model_type": "cube_all",
       "name": "woolen_clay_12"
     },
     {
       "block": "chisel:woolen_clay_13",
-      "model_type": "cube_all",
       "name": "woolen_clay_13"
     },
     {
       "block": "chisel:woolen_clay_14",
-      "model_type": "cube_all",
       "name": "woolen_clay_14"
     },
     {
       "block": "chisel:woolen_clay_15",
-      "model_type": "cube_all",
       "name": "woolen_clay_15"
     }
   ]

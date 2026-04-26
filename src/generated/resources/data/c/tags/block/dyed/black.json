@@ -1,0 +1,13 @@
+{
+  "values": [
+    "chisel:stained_glass_black_borderless",
+    "chisel:stained_glass_black_bubble",
+    "chisel:stained_glass_black_panel",
+    "chisel:stained_glass_black_panel_fancy",
+    "chisel:stained_glass_pane_black_borderless",
+    "chisel:stained_glass_pane_black_bubble",
+    "chisel:stained_glass_pane_black_panel",
+    "chisel:stained_glass_pane_black_quad",
+    "chisel:stained_glass_pane_black_fancy"
+  ]
+}

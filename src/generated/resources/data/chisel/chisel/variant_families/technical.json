@@ -1,9 +1,9 @@
 {
-  "familyName": "technical",
+  "family_name": "technical",
+  "tag": "c:chisel/technical",
   "variants": [
     {
       "block": "chisel:technical_125",
-      "model_type": "cube_all",
       "name": "technical_125"
     },
     {
@@ -43,7 +43,6 @@
     },
     {
       "block": "chisel:technical_gears",
-      "model_type": "cube_all",
       "name": "technical_gears"
     },
     {
@@ -63,12 +62,10 @@
     },
     {
       "block": "chisel:technical_old",
-      "model_type": "cube_all",
       "name": "technical_old"
     },
     {
       "block": "chisel:technical_panel_caution",
-      "model_type": "cube_all",
       "name": "technical_panel_caution"
     },
     {
@@ -113,7 +110,6 @@
     },
     {
       "block": "chisel:technical_wires",
-      "model_type": "cube_all",
       "name": "technical_wires"
     }
   ]

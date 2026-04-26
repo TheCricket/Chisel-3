@@ -1,5 +1,6 @@
 {
-  "familyName": "warning",
+  "family_name": "warning",
+  "tag": "c:chisel/warning",
   "variants": [
     {
       "block": "chisel:warning_biohazard",

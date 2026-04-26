@@ -1,5 +1,6 @@
 {
-  "familyName": "electrum",
+  "family_name": "electrum",
+  "tag": "c:chisel/electrum",
   "variants": [
     {
       "block": "chisel:electrum_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:electrum_bolted",
-      "model_type": "cube_all",
       "name": "electrum_bolted"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:electrum_machine",
-      "model_type": "cube_all",
       "name": "electrum_machine"
     },
     {

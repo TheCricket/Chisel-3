@@ -1,9 +1,9 @@
 {
-  "familyName": "stained_glass_pane_red",
+  "family_name": "stained_glass_pane_red",
+  "tag": "c:chisel/stained_glass_pane_red",
   "variants": [
     {
       "block": "minecraft:red_stained_glass_pane",
-      "model_type": "cube_all",
       "name": "block.minecraft.red_stained_glass_pane"
     },
     {
@@ -27,9 +27,9 @@
       "name": "stained_glass_pane_red_quad"
     },
     {
-      "block": "chisel:stained_glass_pane_red_quad_fancy",
+      "block": "chisel:stained_glass_pane_red_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_red_quad_fancy"
+      "name": "stained_glass_pane_red_fancy"
     }
   ]
 }

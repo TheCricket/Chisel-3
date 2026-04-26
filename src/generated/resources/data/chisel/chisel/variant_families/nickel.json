@@ -1,5 +1,6 @@
 {
-  "familyName": "nickel",
+  "family_name": "nickel",
+  "tag": "c:chisel/nickel",
   "variants": [
     {
       "block": "chisel:nickel_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:nickel_bolted",
-      "model_type": "cube_all",
       "name": "nickel_bolted"
     },
     {
@@ -18,12 +18,10 @@
     },
     {
       "block": "chisel:nickel_crate",
-      "model_type": "cube_all",
       "name": "nickel_crate"
     },
     {
       "block": "chisel:nickel_machine",
-      "model_type": "cube_all",
       "name": "nickel_machine"
     },
     {

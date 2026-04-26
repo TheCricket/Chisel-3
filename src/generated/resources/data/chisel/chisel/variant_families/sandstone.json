@@ -1,9 +1,9 @@
 {
-  "familyName": "sandstone",
+  "family_name": "sandstone",
+  "tag": "c:chisel/sandstone",
   "variants": [
     {
       "block": "minecraft:sandstone",
-      "model_type": "cube_all",
       "name": "block.minecraft.sandstone"
     },
     {
@@ -13,12 +13,10 @@
     },
     {
       "block": "chisel:sandstone_block",
-      "model_type": "cube_all",
       "name": "sandstone_block"
     },
     {
       "block": "chisel:sandstone_blocks",
-      "model_type": "cube_all",
       "name": "sandstone_blocks"
     },
     {
@@ -148,7 +146,6 @@
     },
     {
       "block": "chisel:sandstone_smooth",
-      "model_type": "cube_all",
       "name": "sandstone_smooth"
     },
     {

@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.8]
+
+### Added
+- Added **Auto Chisel**.
+- Added more **Block Tags** for better mod compatibility.
+- Added **JEI Compatibility** for Chisel recipes.
+- Added support for adding blocks to a **Variant Family** via tags.
+
+### Changed
+- Updated **Codecs** for better data handling.
+- Refactored various internal components for better performance.
+
+### Fixed
+- Fixed **localization** issues for several blocks.
+- Fixed textures for **Zag** and **HexPlating**.
+- Added missing particles for **Grimstone** and **Holystone**.
+
+## [3.0.7]
+
+### Fixed
+- Blocks are now mined with tools!
+
 ## [3.0.6]
 
 ### Added

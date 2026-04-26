@@ -1,5 +1,6 @@
 {
-  "familyName": "futura",
+  "family_name": "futura",
+  "tag": "c:chisel/futura",
   "variants": [
     {
       "block": "chisel:futura_controller",

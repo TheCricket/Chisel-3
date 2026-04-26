@@ -1,5 +1,6 @@
 {
-  "familyName": "energized_voidstone",
+  "family_name": "energized_voidstone",
+  "tag": "c:chisel/energized_voidstone",
   "variants": [
     {
       "block": "chisel:energized_voidstone_bevel",

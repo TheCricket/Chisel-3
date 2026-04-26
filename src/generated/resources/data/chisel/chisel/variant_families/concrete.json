@@ -1,14 +1,13 @@
 {
-  "familyName": "concrete",
+  "family_name": "concrete",
+  "tag": "c:chisel/concrete",
   "variants": [
     {
       "block": "chisel:concrete_raw",
-      "model_type": "cube_all",
       "name": "concrete_raw"
     },
     {
       "block": "chisel:concrete_asphalt",
-      "model_type": "cube_all",
       "name": "concrete_asphalt"
     },
     {
@@ -18,22 +17,18 @@
     },
     {
       "block": "chisel:concrete_block_weathered",
-      "model_type": "cube_all",
       "name": "concrete_block_weathered"
     },
     {
       "block": "chisel:concrete_blocks",
-      "model_type": "cube_all",
       "name": "concrete_blocks"
     },
     {
       "block": "chisel:concrete_blocks_weathered",
-      "model_type": "cube_all",
       "name": "concrete_blocks_weathered"
     },
     {
       "block": "chisel:concrete_raw_weathered",
-      "model_type": "cube_all",
       "name": "concrete_raw_weathered"
     }
   ]

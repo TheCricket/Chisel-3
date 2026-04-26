@@ -1,9 +1,9 @@
 {
-  "familyName": "acacia_planks",
+  "family_name": "acacia_planks",
+  "tag": "c:chisel/acacia_planks",
   "variants": [
     {
       "block": "minecraft:acacia_planks",
-      "model_type": "cube_all",
       "name": "block.minecraft.acacia_planks"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:acacia_planks_crude_paneling",
-      "model_type": "cube_all",
       "name": "acacia_planks_crude_paneling"
     },
     {
@@ -48,7 +47,6 @@
     },
     {
       "block": "chisel:acacia_planks_large",
-      "model_type": "cube_all",
       "name": "acacia_planks_large"
     },
     {
@@ -83,12 +81,10 @@
     },
     {
       "block": "chisel:acacia_planks_stacked",
-      "model_type": "cube_all",
       "name": "acacia_planks_stacked"
     },
     {
       "block": "chisel:acacia_planks_vertical",
-      "model_type": "cube_all",
       "name": "acacia_planks_vertical"
     }
   ]

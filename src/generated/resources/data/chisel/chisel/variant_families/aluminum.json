@@ -1,5 +1,6 @@
 {
-  "familyName": "aluminum",
+  "family_name": "aluminum",
+  "tag": "c:chisel/aluminum",
   "variants": [
     {
       "block": "chisel:aluminum_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:aluminum_bolted",
-      "model_type": "cube_all",
       "name": "aluminum_bolted"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:aluminum_machine",
-      "model_type": "cube_all",
       "name": "aluminum_machine"
     },
     {

@@ -1,9 +1,9 @@
 {
-  "familyName": "steel",
+  "family_name": "steel",
+  "tag": "c:chisel/steel",
   "variants": [
     {
       "block": "chisel:steel_125",
-      "model_type": "cube_all",
       "name": "steel_125"
     },
     {
@@ -13,7 +13,6 @@
     },
     {
       "block": "chisel:steel_bolted",
-      "model_type": "cube_all",
       "name": "steel_bolted"
     },
     {

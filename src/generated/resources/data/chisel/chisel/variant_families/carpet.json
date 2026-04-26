@@ -1,9 +1,9 @@
 {
-  "familyName": "carpet",
+  "family_name": "carpet",
+  "tag": "c:chisel/carpet",
   "variants": [
     {
       "block": "minecraft:black_carpet",
-      "model_type": "cube_all",
       "name": "block.minecraft.black_carpet"
     },
     {

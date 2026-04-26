@@ -1,5 +1,6 @@
 {
-  "familyName": "mossy_cobblestone",
+  "family_name": "mossy_cobblestone",
+  "tag": "c:chisel/mossy_cobblestone",
   "variants": [
     {
       "block": "chisel:mossy_cobblestone_array",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:mossy_cobblestone_braid",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_braid"
     },
     {
@@ -18,12 +18,10 @@
     },
     {
       "block": "chisel:mossy_cobblestone_chaotic_medium",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_chaotic_medium"
     },
     {
       "block": "chisel:mossy_cobblestone_chaotic_small",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_chaotic_small"
     },
     {
@@ -33,12 +31,10 @@
     },
     {
       "block": "chisel:mossy_cobblestone_cracked",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_cracked"
     },
     {
       "block": "chisel:mossy_cobblestone_cracked_bricks",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_cracked_bricks"
     },
     {
@@ -63,12 +59,10 @@
     },
     {
       "block": "chisel:mossy_cobblestone_french",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_french"
     },
     {
       "block": "chisel:mossy_cobblestone_french_2",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_french_2"
     },
     {
@@ -83,12 +77,10 @@
     },
     {
       "block": "chisel:mossy_cobblestone_layers",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_layers"
     },
     {
       "block": "chisel:mossy_cobblestone_marker",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_marker"
     },
     {
@@ -98,12 +90,10 @@
     },
     {
       "block": "chisel:mossy_cobblestone_ornate",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_ornate"
     },
     {
       "block": "chisel:mossy_cobblestone_panel",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_panel"
     },
     {
@@ -113,17 +103,14 @@
     },
     {
       "block": "chisel:mossy_cobblestone_prism",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_prism"
     },
     {
       "block": "chisel:mossy_cobblestone_raw",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_raw"
     },
     {
       "block": "chisel:mossy_cobblestone_road",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_road"
     },
     {
@@ -133,17 +120,14 @@
     },
     {
       "block": "chisel:mossy_cobblestone_small",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_small"
     },
     {
       "block": "chisel:mossy_cobblestone_soft",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_soft"
     },
     {
       "block": "chisel:mossy_cobblestone_solid",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_solid"
     },
     {
@@ -153,17 +137,14 @@
     },
     {
       "block": "chisel:mossy_cobblestone_tiles_medium",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_tiles_medium"
     },
     {
       "block": "chisel:mossy_cobblestone_tiles_small",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_tiles_small"
     },
     {
       "block": "chisel:mossy_cobblestone_triple",
-      "model_type": "cube_all",
       "name": "mossy_cobblestone_triple"
     },
     {
@@ -178,7 +159,7 @@
     },
     {
       "block": "chisel:mossy_cobblestone_zag",
-      "model_type": "connected",
+      "model_type": "ar",
       "name": "mossy_cobblestone_zag"
     }
   ]

@@ -1,54 +1,45 @@
 {
-  "familyName": "valentines",
+  "family_name": "valentines",
+  "tag": "c:chisel/valentines",
   "variants": [
     {
       "block": "chisel:valentines_block",
-      "model_type": "cube_all",
       "name": "valentines_block"
     },
     {
       "block": "chisel:valentines_bricks",
-      "model_type": "cube_all",
       "name": "valentines_bricks"
     },
     {
       "block": "chisel:valentines_bumpy",
-      "model_type": "cube_all",
       "name": "valentines_bumpy"
     },
     {
       "block": "chisel:valentines_cobble",
-      "model_type": "cube_all",
       "name": "valentines_cobble"
     },
     {
       "block": "chisel:valentines_companion",
-      "model_type": "cube_all",
       "name": "valentines_companion"
     },
     {
       "block": "chisel:valentines_empty",
-      "model_type": "cube_all",
       "name": "valentines_empty"
     },
     {
       "block": "chisel:valentines_fire",
-      "model_type": "cube_all",
       "name": "valentines_fire"
     },
     {
       "block": "chisel:valentines_heart",
-      "model_type": "cube_all",
       "name": "valentines_heart"
     },
     {
       "block": "chisel:valentines_heart_gray",
-      "model_type": "cube_all",
       "name": "valentines_heart_gray"
     },
     {
       "block": "chisel:valentines_tile",
-      "model_type": "cube_all",
       "name": "valentines_tile"
     }
   ]

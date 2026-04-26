@@ -1,5 +1,6 @@
 {
-  "familyName": "lead",
+  "family_name": "lead",
+  "tag": "c:chisel/lead",
   "variants": [
     {
       "block": "chisel:lead_bad_greggy",
@@ -8,7 +9,6 @@
     },
     {
       "block": "chisel:lead_bolted",
-      "model_type": "cube_all",
       "name": "lead_bolted"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:lead_machine",
-      "model_type": "cube_all",
       "name": "lead_machine"
     },
     {

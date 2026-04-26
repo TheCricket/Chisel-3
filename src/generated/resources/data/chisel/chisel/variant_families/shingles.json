@@ -1,5 +1,6 @@
 {
-  "familyName": "shingles",
+  "family_name": "shingles",
+  "tag": "c:chisel/shingles",
   "variants": [
     {
       "block": "chisel:shingles_1",

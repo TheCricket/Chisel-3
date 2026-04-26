@@ -47,6 +47,7 @@ public class LavastoneMultiblockModel extends VariantModel {
                 .renderOverlayOnAllFaces(true)
                 .variant(variant)
                 .baseTintIndex(0)
+                .baseEmissivity(15)
                 .connectedFace(Direction.UP)
                 .connectedFace(Direction.DOWN)
                 .connectedFace(Direction.NORTH)

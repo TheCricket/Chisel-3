@@ -1,5 +1,6 @@
 {
-  "familyName": "factory",
+  "family_name": "factory",
+  "tag": "c:chisel/factory",
   "variants": [
     {
       "block": "chisel:factory_circuit",
@@ -63,7 +64,6 @@
     },
     {
       "block": "chisel:factory_plating",
-      "model_type": "cube_all",
       "name": "factory_plating"
     },
     {

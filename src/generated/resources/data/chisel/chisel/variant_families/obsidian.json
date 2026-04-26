@@ -1,14 +1,13 @@
 {
-  "familyName": "obsidian",
+  "family_name": "obsidian",
+  "tag": "c:chisel/obsidian",
   "variants": [
     {
       "block": "minecraft:obsidian",
-      "model_type": "cube_all",
       "name": "block.minecraft.obsidian"
     },
     {
       "block": "chisel:obsidian_blocks",
-      "model_type": "cube_all",
       "name": "obsidian_blocks"
     },
     {
@@ -23,12 +22,10 @@
     },
     {
       "block": "chisel:obsidian_crate_unboxed",
-      "model_type": "cube_all",
       "name": "obsidian_crate_unboxed"
     },
     {
       "block": "chisel:obsidian_crystal",
-      "model_type": "cube_all",
       "name": "obsidian_crystal"
     },
     {
@@ -38,37 +35,30 @@
     },
     {
       "block": "chisel:obsidian_organic_chunks",
-      "model_type": "cube_all",
       "name": "obsidian_organic_chunks"
     },
     {
       "block": "chisel:obsidian_organic_growth",
-      "model_type": "cube_all",
       "name": "obsidian_organic_growth"
     },
     {
       "block": "chisel:obsidian_panel",
-      "model_type": "cube_all",
       "name": "obsidian_panel"
     },
     {
       "block": "chisel:obsidian_panel_bright",
-      "model_type": "cube_all",
       "name": "obsidian_panel_bright"
     },
     {
       "block": "chisel:obsidian_panel_map",
-      "model_type": "cube_all",
       "name": "obsidian_panel_map"
     },
     {
       "block": "chisel:obsidian_panel_region",
-      "model_type": "cube_all",
       "name": "obsidian_panel_region"
     },
     {
       "block": "chisel:obsidian_panel_shiny",
-      "model_type": "cube_all",
       "name": "obsidian_panel_shiny"
     },
     {
@@ -83,7 +73,6 @@
     },
     {
       "block": "chisel:obsidian_tiles",
-      "model_type": "cube_all",
       "name": "obsidian_tiles"
     }
   ]

@@ -2,7 +2,10 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "layer0": "chisel:block/warning/warning_loud-bg",
-    "layer1": "chisel:block/warning/warning_loud",
+    "layer1": {
+      "force_translucent": true,
+      "sprite": "chisel:block/warning/warning_loud"
+    },
     "particle": "chisel:block/warning/warning_loud"
   }
 }

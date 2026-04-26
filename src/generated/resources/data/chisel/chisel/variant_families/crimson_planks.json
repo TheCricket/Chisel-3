@@ -1,9 +1,9 @@
 {
-  "familyName": "crimson_planks",
+  "family_name": "crimson_planks",
+  "tag": "c:chisel/crimson_planks",
   "variants": [
     {
       "block": "minecraft:crimson_planks",
-      "model_type": "cube_all",
       "name": "block.minecraft.crimson_planks"
     },
     {
@@ -23,7 +23,6 @@
     },
     {
       "block": "chisel:crimson_planks_crude_paneling",
-      "model_type": "cube_all",
       "name": "crimson_planks_crude_paneling"
     },
     {
@@ -48,7 +47,6 @@
     },
     {
       "block": "chisel:crimson_planks_large",
-      "model_type": "cube_all",
       "name": "crimson_planks_large"
     },
     {
@@ -83,12 +81,10 @@
     },
     {
       "block": "chisel:crimson_planks_stacked",
-      "model_type": "cube_all",
       "name": "crimson_planks_stacked"
     },
     {
       "block": "chisel:crimson_planks_vertical",
-      "model_type": "cube_all",
       "name": "crimson_planks_vertical"
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "familyName": "bookshelf",
+  "family_name": "bookshelf",
+  "tag": "c:chisel/bookshelf",
   "variants": [
     {
       "block": "minecraft:bookshelf",
-      "model_type": "cube_all",
       "name": "block.minecraft.bookshelf"
     },
     {

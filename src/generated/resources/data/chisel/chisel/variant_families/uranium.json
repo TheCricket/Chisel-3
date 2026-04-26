@@ -1,9 +1,9 @@
 {
-  "familyName": "uranium",
+  "family_name": "uranium",
+  "tag": "c:chisel/uranium",
   "variants": [
     {
       "block": "chisel:uranium_125",
-      "model_type": "cube_all",
       "name": "uranium_125"
     },
     {
@@ -13,7 +13,6 @@
     },
     {
       "block": "chisel:uranium_bolted",
-      "model_type": "cube_all",
       "name": "uranium_bolted"
     },
     {
@@ -28,7 +27,6 @@
     },
     {
       "block": "chisel:uranium_machine",
-      "model_type": "cube_all",
       "name": "uranium_machine"
     },
     {

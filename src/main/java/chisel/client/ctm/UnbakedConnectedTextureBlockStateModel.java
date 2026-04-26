@@ -1,6 +1,7 @@
 package chisel.client.ctm;
 
 import chisel.Chisel;
+import chisel.client.ctm.unbaked.ARUnbakedModel;
 import chisel.client.ctm.unbaked.DirectionalUnbakedCTMModel;
 import chisel.client.ctm.unbaked.MultiblockUnbakedCTMModel;
 import chisel.client.ctm.unbaked.StandardUnbakedCTMModel;
@@ -63,6 +64,8 @@ public class UnbakedConnectedTextureBlockStateModel extends AbstractUnbakedConne
     @Override
     public @NonNull BlockStateModel bake(@NonNull ModelBaker baker) {
         AbstractUnbakedConnectedTextureBlockStateModel specialized = switch (variant.getModelType()) {
+            case AR, MULTI_LAYER_LAVA_AR, MULTI_LAYER_WATER_AR ->
+                    new ARUnbakedModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
             case MULTIBLOCK_2X2, MULTIBLOCK_3X3, MULTIBLOCK_4X4, V4, MULTI_LAYER_WATER_2X2, MULTI_LAYER_WATER_3X3, MULTI_LAYER_WATER_4X4 ->
                     new MultiblockUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
             case CTMH, CTMV, BOOKSHELF ->

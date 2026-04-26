@@ -18,7 +18,11 @@ public class ChiselLang extends LangHelper {
 
         ChiselBlocks.getBlocks().forEach(block -> block.addTranslations(this));
 
+        add("block.chisel.auto_chisel", "Auto Chisel");
+        add("item.chisel.auto_chisel", "Auto Chisel");
+
         add("container.chisel", "Chisel");
+        add("container.auto_chisel", "Auto Chisel");
     }
 
     private void addTabs() {
