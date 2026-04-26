@@ -22,7 +22,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public AutoChiselMenu(int containerId, Inventory inventory, FriendlyByteBuf buf) {
-        this(containerId, inventory, new SimpleContainer(AutoChiselBlockEntity.TOTAL_SLOTS), new SimpleContainerData(4));
+        this(containerId, inventory, (Container) inventory.player.level().getBlockEntity(buf.readBlockPos()), new SimpleContainerData(4));
     }
 
     public AutoChiselMenu(int containerId, Inventory inventory, Container container, ContainerData data) {

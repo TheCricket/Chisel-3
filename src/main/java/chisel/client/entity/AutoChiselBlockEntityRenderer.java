@@ -1,9 +1,9 @@
 package chisel.client.entity;
 
-import chisel.Chisel;
 import chisel.block.entity.AutoChiselBlockEntity;
 import chisel.client.entity.state.AutoChiselBlockEntityRenderState;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -17,17 +17,10 @@ import net.minecraft.world.phys.Vec3;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
-import java.util.logging.Logger;
-
 public class AutoChiselBlockEntityRenderer implements BlockEntityRenderer<AutoChiselBlockEntity, AutoChiselBlockEntityRenderState> {
 
     private final ItemModelResolver itemModelResolver;
-
-    private final int STACK_UPGRADE = 0;
-    private final int AUTOMATION_UPGRADE = 1;
-    private final int REVERSION_UPGRADE = 2;
-    private final int SPEED_UPGRADE = 3;
-
+    private final int LIGHT_COORDS = 15728850;
 
     public AutoChiselBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
         itemModelResolver = context.itemModelResolver();
@@ -48,19 +41,46 @@ public class AutoChiselBlockEntityRenderer implements BlockEntityRenderer<AutoCh
         ItemStack speedUpgrade = autoChisel.getItem(AutoChiselBlockEntity.SPEED_UPGRADE_SLOT);
         ItemStack chisel = autoChisel.getItem(AutoChiselBlockEntity.CHISEL_SLOT);
 
-        Logger.getLogger(Chisel.MODID).info(autoChisel.getItem(AutoChiselBlockEntity.TEMPLATE_SLOT).toString());
         itemModelResolver.updateForTopItem(state.block, block, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
-        itemModelResolver.updateForTopItem(state.upgrades[STACK_UPGRADE], stackUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
-        itemModelResolver.updateForTopItem(state.upgrades[AUTOMATION_UPGRADE], automationUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
-        itemModelResolver.updateForTopItem(state.upgrades[REVERSION_UPGRADE], reversionUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
-        itemModelResolver.updateForTopItem(state.upgrades[SPEED_UPGRADE], speedUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
+        itemModelResolver.updateForTopItem(state.upgrades[0], stackUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
+        itemModelResolver.updateForTopItem(state.upgrades[1], automationUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
+        itemModelResolver.updateForTopItem(state.upgrades[2], reversionUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
+        itemModelResolver.updateForTopItem(state.upgrades[3], speedUpgrade, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
         itemModelResolver.updateForTopItem(state.chisel, chisel, ItemDisplayContext.FIXED, autoChisel.getLevel(), null, 0);
     }
 
     @Override
     public void submit(@NonNull AutoChiselBlockEntityRenderState state, @NonNull PoseStack pose, @NonNull SubmitNodeCollector submit, @NonNull CameraRenderState camera) {
+        submitBlock(pose, submit, state);
+        submitChisel(pose, submit, state);
+        submitUpgrades(pose, submit, state);
+    }
+
+    private void submitBlock(PoseStack pose, SubmitNodeCollector submit, AutoChiselBlockEntityRenderState state) {
         pose.pushPose();
-        state.block.submit(pose, submit, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
+        pose.scale(0.75F, 0.75F, 0.75F);
+        pose.translate(0.65, 1.0, 0.65);
+        state.block.submit(pose, submit, LIGHT_COORDS, OverlayTexture.NO_OVERLAY, 0);
+        pose.popPose();
+    }
+
+    private void submitUpgrades(PoseStack pose, SubmitNodeCollector submit, AutoChiselBlockEntityRenderState state) {
+        for (int c = 0; c < state.upgrades.length; c++) {
+            pose.pushPose();
+            pose.translate(0.05F, 0.67F, 0.2F + (c * 0.2F));
+            pose.rotateAround(Axis.YP.rotationDegrees(90), 0, 1, 0);
+            pose.scale(0.1F, 0.1F, 0.1F);
+            state.upgrades[c].submit(pose, submit, LIGHT_COORDS, OverlayTexture.NO_OVERLAY, 0);
+            pose.popPose();
+        }
+    }
+
+    private void submitChisel(PoseStack pose, SubmitNodeCollector submit, AutoChiselBlockEntityRenderState state) {
+        pose.pushPose();
+        pose.translate(0.5F, 0.625F, 0.5F);
+        pose.rotateAround(Axis.XP.rotationDegrees(90), 1, 0, 0);
+        pose.rotateAround(Axis.ZP.rotationDegrees(180), 0, 0, 1);
+        state.chisel.submit(pose, submit, LIGHT_COORDS, OverlayTexture.NO_OVERLAY, 0);
         pose.popPose();
     }
 }

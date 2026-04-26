@@ -10,6 +10,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -27,6 +28,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
+import java.util.logging.Logger;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -387,8 +389,12 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
     public @NonNull ItemStack removeItem(int slot, int amount) {
         ItemStack result = ContainerHelper.removeItem(items, slot, amount);
         setChanged();
-        if (level != null && !level.isClientSide()) {
-            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+        if (level != null) {
+            if (!level.isClientSide()) {
+                level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+            } else {
+                requestModelDataUpdate();
+            }
         }
         return result;
     }
@@ -405,8 +411,12 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
             stack.setCount(getMaxStackSize());
         }
         setChanged();
-        if (level != null && !level.isClientSide()) {
-            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+        if (level != null) {
+            if (!level.isClientSide()) {
+                level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+            } else {
+                requestModelDataUpdate();
+            }
         }
     }
 
@@ -419,8 +429,12 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
     public void clearContent() {
         items.clear();
         setChanged();
-        if (level != null && !level.isClientSide()) {
-            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+        if (level != null) {
+            if (!level.isClientSide()) {
+                level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+            } else {
+                requestModelDataUpdate();
+            }
         }
     }
 
@@ -440,6 +454,26 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
 
     public ContainerData getData() {
         return data;
+    }
+
+    @Override
+    public void onDataPacket(@NonNull Connection net, @NonNull ValueInput valueInput) {
+        super.onDataPacket(net, valueInput);
+        loadAdditional(valueInput);
+        if (level != null && level.isClientSide()) {
+            requestModelDataUpdate();
+            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+        }
+    }
+
+    @Override
+    public void handleUpdateTag(@NonNull ValueInput input) {
+        super.handleUpdateTag(input);
+        loadAdditional(input);
+        if (level != null && level.isClientSide()) {
+            requestModelDataUpdate();
+            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+        }
     }
 
     @Override
