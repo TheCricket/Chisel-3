@@ -25,7 +25,6 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
 
     public ChiselRecipeCategory(IGuiHelper guiHelper) {
         ItemStack chisel = new ItemStack(ChiselItems.CHISEL_IRON.get());
-
         super(
                 TYPE,
                 ChiselItems.CHISEL_IRON.get().getName(chisel),
@@ -37,7 +36,7 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
 
     @Override
     public void createRecipeExtras(IRecipeExtrasBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
-        builder.addText(recipe.family().getVariants().getFirst().getBlock().getName(), getWidth() - 20, 20)
+        builder.addText(recipe.family().getAllVariants(recipe.registries()).getFirst().getBlock().getName(), getWidth() - 20, 20)
                 .setPosition(0, -5)
                 .setColor(0xFF505050)
                 .setLineSpacing(0)
@@ -52,7 +51,7 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
     @Override
     public void setRecipe(@NonNull IRecipeLayoutBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
         VariantFamily family = recipe.family();
-        List<Variant> variants = family.getVariants();
+        List<Variant> variants = family.getAllVariants(recipe.registries());
         variants.forEach(variant -> builder.addOutputSlot().add(variant.getBlock()));
     }
 }

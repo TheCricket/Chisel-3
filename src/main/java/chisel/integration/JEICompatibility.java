@@ -8,6 +8,7 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
+import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
@@ -29,7 +30,7 @@ public class JEICompatibility implements IModPlugin {
     @Override
     public void registerRecipes(@NonNull IRecipeRegistration registration) {
         registration.addRecipes(ChiselRecipeCategory.TYPE, ChiselVariants.getVariantFamilies().stream()
-                .map(ChiselRecipe::new)
+                .map(family -> new ChiselRecipe(family, Minecraft.getInstance().level.registryAccess()))
                 .collect(Collectors.toList()));
     }
 

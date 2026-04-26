@@ -18,6 +18,27 @@ Do not make PRs that are solely formatting or other aesthetic things.
 
 If your PR is going to take a lot of work, it may be best to make an issue so we can discuss the feature before you create it.
 
+Adding Blocks to a Variant Family via Tag
+---------------
+
+In Chisel 3, you can add external blocks to an existing `VariantFamily` using block tags. This is particularly useful for modpack developers who want to unify similar blocks from different mods under a single Chisel family.
+
+Each `VariantFamily` is associated with a tag, typically following the pattern `c:chisel/<family_name>`. 
+
+To add a block to a family:
+1. Identify the tag used by the family (e.g., `c:chisel/aluminum` for the Aluminum family).
+2. Create or modify a datapack to include your block in that tag.
+   - The tag file should be located at `data/c/tags/block/chisel/<family_name>.json`.
+3. Example of adding a block to the `aluminum` family:
+   ```json
+   {
+     "values": [
+       "minecraft:iron_block"
+     ]
+   }
+   ```
+   *Note: This would allow you to chisel an Iron Block into any variant in the Aluminum family and vice versa.*
+
 See the [CONTRIBUTING](CONTRIBUTING.md) file for more details.
 
 Issue Reporting
