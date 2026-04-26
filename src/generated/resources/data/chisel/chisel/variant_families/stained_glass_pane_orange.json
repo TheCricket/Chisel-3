@@ -1,5 +1,6 @@
 {
-  "familyName": "stained_glass_pane_orange",
+  "family_name": "stained_glass_pane_orange",
+  "tag": "c:chisel/stained_glass_pane_orange",
   "variants": [
     {
       "block": "minecraft:orange_stained_glass_pane",

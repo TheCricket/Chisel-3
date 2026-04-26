@@ -1,5 +1,6 @@
 {
-  "familyName": "steel",
+  "family_name": "steel",
+  "tag": "c:chisel/steel",
   "variants": [
     {
       "block": "chisel:steel_125",

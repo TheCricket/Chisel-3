@@ -1,5 +1,6 @@
 {
-  "familyName": "paperwall",
+  "family_name": "paperwall",
+  "tag": "c:chisel/paperwall",
   "variants": [
     {
       "block": "chisel:paperwall_boxed",

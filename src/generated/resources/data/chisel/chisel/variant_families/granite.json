@@ -1,5 +1,6 @@
 {
-  "familyName": "granite",
+  "family_name": "granite",
+  "tag": "c:chisel/granite",
   "variants": [
     {
       "block": "minecraft:granite",

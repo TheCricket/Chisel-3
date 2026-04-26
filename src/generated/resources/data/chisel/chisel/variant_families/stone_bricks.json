@@ -1,5 +1,6 @@
 {
-  "familyName": "stone_bricks",
+  "family_name": "stone_bricks",
+  "tag": "c:chisel/stone_bricks",
   "variants": [
     {
       "block": "minecraft:stone_bricks",

@@ -1,5 +1,6 @@
 {
-  "familyName": "oak_planks",
+  "family_name": "oak_planks",
+  "tag": "c:chisel/oak_planks",
   "variants": [
     {
       "block": "minecraft:oak_planks",

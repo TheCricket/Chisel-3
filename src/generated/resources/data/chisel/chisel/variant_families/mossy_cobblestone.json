@@ -1,5 +1,6 @@
 {
-  "familyName": "mossy_cobblestone",
+  "family_name": "mossy_cobblestone",
+  "tag": "c:chisel/mossy_cobblestone",
   "variants": [
     {
       "block": "chisel:mossy_cobblestone_array",

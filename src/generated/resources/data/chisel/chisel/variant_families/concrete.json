@@ -1,5 +1,6 @@
 {
-  "familyName": "concrete",
+  "family_name": "concrete",
+  "tag": "c:chisel/concrete",
   "variants": [
     {
       "block": "chisel:concrete_raw",

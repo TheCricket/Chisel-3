@@ -1,5 +1,6 @@
 package chisel.block.entity;
 
+import chisel.core.variant.Variant;
 import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselBlockEntities;
 import chisel.registry.ChiselItemAbilities;
@@ -27,8 +28,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
+
+import java.util.List;
 import net.minecraft.world.level.storage.ValueOutput;
-import java.util.logging.Logger;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -190,10 +192,13 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
                 if (inputSlot != -1) {
                     Block inputBlock = ((BlockItem) items.get(inputSlot).getItem()).getBlock();
                     VariantFamily family = VariantFinder.getFamilyForBlock(inputBlock, level.registryAccess());
-                    if (family != null && !family.getVariants().isEmpty()) {
-                        ItemStack output = new ItemStack(family.getVariants().get(0).getBlock());
-                        output.setCount(1);
-                        return output;
+                    if (family != null) {
+                        List<Variant> variants = family.getAllVariants(level.registryAccess());
+                        if (!variants.isEmpty()) {
+                            ItemStack output = new ItemStack(variants.get(0).getBlock());
+                            output.setCount(1);
+                            return output;
+                        }
                     }
                 }
             }
@@ -203,10 +208,13 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
         if (items.get(REVERSION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_REVERSION.get())) {
             Block templateBlock = ((BlockItem) template.getItem()).getBlock();
             VariantFamily family = VariantFinder.getFamilyForBlock(templateBlock, level.registryAccess());
-            if (family != null && !family.getVariants().isEmpty()) {
-                ItemStack output = new ItemStack(family.getVariants().get(0).getBlock());
-                output.setCount(1);
-                return output;
+            if (family != null) {
+                List<Variant> variants = family.getAllVariants(level.registryAccess());
+                if (!variants.isEmpty()) {
+                    ItemStack output = new ItemStack(variants.get(0).getBlock());
+                    output.setCount(1);
+                    return output;
+                }
             }
         }
 

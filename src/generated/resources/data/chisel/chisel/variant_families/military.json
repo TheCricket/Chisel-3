@@ -1,5 +1,6 @@
 {
-  "familyName": "military",
+  "family_name": "military",
+  "tag": "c:chisel/military",
   "variants": [
     {
       "block": "chisel:military_imperial_camo",

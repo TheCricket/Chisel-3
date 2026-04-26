@@ -1,5 +1,6 @@
 {
-  "familyName": "tyrian",
+  "family_name": "tyrian",
+  "tag": "c:chisel/tyrian",
   "variants": [
     {
       "block": "chisel:tyrian_black",

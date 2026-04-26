@@ -1,5 +1,6 @@
 {
-  "familyName": "diamond",
+  "family_name": "diamond",
+  "tag": "c:chisel/diamond",
   "variants": [
     {
       "block": "minecraft:diamond_block",

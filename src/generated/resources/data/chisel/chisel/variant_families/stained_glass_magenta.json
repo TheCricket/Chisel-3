@@ -1,5 +1,6 @@
 {
-  "familyName": "stained_glass_magenta",
+  "family_name": "stained_glass_magenta",
+  "tag": "c:chisel/stained_glass_magenta",
   "variants": [
     {
       "block": "minecraft:magenta_stained_glass",

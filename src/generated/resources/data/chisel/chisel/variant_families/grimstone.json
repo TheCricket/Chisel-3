@@ -1,5 +1,6 @@
 {
-  "familyName": "grimstone",
+  "family_name": "grimstone",
+  "tag": "c:chisel/grimstone",
   "variants": [
     {
       "block": "chisel:grimstone_blocks",

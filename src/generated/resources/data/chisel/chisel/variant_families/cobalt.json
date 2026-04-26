@@ -1,5 +1,6 @@
 {
-  "familyName": "cobalt",
+  "family_name": "cobalt",
+  "tag": "c:chisel/cobalt",
   "variants": [
     {
       "block": "chisel:cobalt_bad_greggy",

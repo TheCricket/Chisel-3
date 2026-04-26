@@ -19,14 +19,9 @@ public class Variant extends VariantModels {
 
     public static final Codec<Variant> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name").forGetter(Variant::getName),
-            BuiltInRegistries.BLOCK.byNameCodec().lenientOptionalFieldOf("block").forGetter(v -> java.util.Optional.ofNullable(v.getBlock())),
+            BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(Variant::getBlock),
             VariantModelType.CODEC.optionalFieldOf("model_type", VariantModelType.CUBE_ALL).forGetter(Variant::getModelType)
-    ).apply(instance, (name, blockOpt, modelType) -> {
-        if (blockOpt.isEmpty()) {
-            return null;
-        }
-        return new Variant(name, blockOpt::get, null, modelType, false);
-    }));
+    ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType, false)));
 
     private static final Set<VariantModelType> MODEL_TYPES = Collections.unmodifiableSet(EnumSet.of(
                     CONNECTED,

@@ -1,5 +1,6 @@
 {
-  "familyName": "invar",
+  "family_name": "invar",
+  "tag": "c:chisel/invar",
   "variants": [
     {
       "block": "chisel:invar_bad_greggy",

@@ -1,5 +1,6 @@
 {
-  "familyName": "waterstone",
+  "family_name": "waterstone",
+  "tag": "c:chisel/waterstone",
   "variants": [
     {
       "block": "chisel:waterstone_array",

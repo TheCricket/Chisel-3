@@ -1,5 +1,6 @@
 {
-  "familyName": "limestone",
+  "family_name": "limestone",
+  "tag": "c:chisel/limestone",
   "variants": [
     {
       "block": "chisel:limestone_raw",

@@ -1,5 +1,6 @@
 {
-  "familyName": "torch",
+  "family_name": "torch",
+  "tag": "c:chisel/torch",
   "variants": [
     {
       "block": "chisel:torch_1",

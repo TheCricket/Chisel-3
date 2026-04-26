@@ -1,5 +1,6 @@
 {
-  "familyName": "valentines",
+  "family_name": "valentines",
+  "tag": "c:chisel/valentines",
   "variants": [
     {
       "block": "chisel:valentines_block",

@@ -1,5 +1,6 @@
 {
-  "familyName": "stained_glass_lime",
+  "family_name": "stained_glass_lime",
+  "tag": "c:chisel/stained_glass_lime",
   "variants": [
     {
       "block": "minecraft:lime_stained_glass",

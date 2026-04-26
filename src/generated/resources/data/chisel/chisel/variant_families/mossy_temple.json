@@ -1,5 +1,6 @@
 {
-  "familyName": "mossy_temple",
+  "family_name": "mossy_temple",
+  "tag": "c:chisel/mossy_temple",
   "variants": [
     {
       "block": "chisel:mossy_temple_bricks",

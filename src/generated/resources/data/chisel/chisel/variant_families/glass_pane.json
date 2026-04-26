@@ -1,5 +1,6 @@
 {
-  "familyName": "glass_pane",
+  "family_name": "glass_pane",
+  "tag": "c:chisel/glass_pane",
   "variants": [
     {
       "block": "minecraft:glass_pane",

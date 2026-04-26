@@ -1,5 +1,6 @@
 {
-  "familyName": "stained_glass_black",
+  "family_name": "stained_glass_black",
+  "tag": "c:chisel/stained_glass_black",
   "variants": [
     {
       "block": "minecraft:black_stained_glass",

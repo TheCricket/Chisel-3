@@ -1,5 +1,6 @@
 {
-  "familyName": "leaf",
+  "family_name": "leaf",
+  "tag": "c:chisel/leaf",
   "variants": [
     {
       "block": "chisel:leaf_christmas_balls",

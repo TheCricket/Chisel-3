@@ -1,5 +1,6 @@
 {
-  "familyName": "sandstone",
+  "family_name": "sandstone",
+  "tag": "c:chisel/sandstone",
   "variants": [
     {
       "block": "minecraft:sandstone",

@@ -1,5 +1,6 @@
 {
-  "familyName": "acacia_planks",
+  "family_name": "acacia_planks",
+  "tag": "c:chisel/acacia_planks",
   "variants": [
     {
       "block": "minecraft:acacia_planks",

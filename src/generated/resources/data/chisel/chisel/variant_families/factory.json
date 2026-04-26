@@ -1,5 +1,6 @@
 {
-  "familyName": "factory",
+  "family_name": "factory",
+  "tag": "c:chisel/factory",
   "variants": [
     {
       "block": "chisel:factory_circuit",

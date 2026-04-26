@@ -1,5 +1,6 @@
 {
-  "familyName": "ice",
+  "family_name": "ice",
+  "tag": "c:chisel/ice",
   "variants": [
     {
       "block": "minecraft:ice",

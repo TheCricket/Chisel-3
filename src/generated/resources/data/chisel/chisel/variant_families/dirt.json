@@ -1,5 +1,6 @@
 {
-  "familyName": "dirt",
+  "family_name": "dirt",
+  "tag": "c:chisel/dirt",
   "variants": [
     {
       "block": "minecraft:dirt",

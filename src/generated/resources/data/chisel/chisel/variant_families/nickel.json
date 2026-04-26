@@ -1,5 +1,6 @@
 {
-  "familyName": "nickel",
+  "family_name": "nickel",
+  "tag": "c:chisel/nickel",
   "variants": [
     {
       "block": "chisel:nickel_bad_greggy",

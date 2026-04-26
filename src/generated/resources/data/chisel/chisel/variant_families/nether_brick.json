@@ -1,5 +1,6 @@
 {
-  "familyName": "nether_brick",
+  "family_name": "nether_brick",
+  "tag": "c:chisel/nether_brick",
   "variants": [
     {
       "block": "minecraft:nether_bricks",

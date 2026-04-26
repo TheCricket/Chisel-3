@@ -1,5 +1,6 @@
 {
-  "familyName": "iron_bars",
+  "family_name": "iron_bars",
+  "tag": "c:chisel/iron_bars",
   "variants": [
     {
       "block": "minecraft:iron_bars",

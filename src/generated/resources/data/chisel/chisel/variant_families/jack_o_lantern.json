@@ -1,5 +1,6 @@
 {
-  "familyName": "jack_o_lantern",
+  "family_name": "jack_o_lantern",
+  "tag": "c:chisel/jack_o_lantern",
   "variants": [
     {
       "block": "minecraft:jack_o_lantern",

@@ -1,5 +1,6 @@
 {
-  "familyName": "voidstone",
+  "family_name": "voidstone",
+  "tag": "c:chisel/voidstone",
   "variants": [
     {
       "block": "chisel:voidstone_bevel",

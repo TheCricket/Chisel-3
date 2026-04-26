@@ -1,5 +1,6 @@
 {
-  "familyName": "dark_oak_planks",
+  "family_name": "dark_oak_planks",
+  "tag": "c:chisel/dark_oak_planks",
   "variants": [
     {
       "block": "minecraft:dark_oak_planks",

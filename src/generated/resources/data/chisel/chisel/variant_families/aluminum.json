@@ -1,5 +1,6 @@
 {
-  "familyName": "aluminum",
+  "family_name": "aluminum",
+  "tag": "c:chisel/aluminum",
   "variants": [
     {
       "block": "chisel:aluminum_bad_greggy",

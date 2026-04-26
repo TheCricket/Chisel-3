@@ -1,5 +1,6 @@
 {
-  "familyName": "cobblestone",
+  "family_name": "cobblestone",
+  "tag": "c:chisel/cobblestone",
   "variants": [
     {
       "block": "minecraft:cobblestone",

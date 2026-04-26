@@ -1,5 +1,6 @@
 {
-  "familyName": "obsidian",
+  "family_name": "obsidian",
+  "tag": "c:chisel/obsidian",
   "variants": [
     {
       "block": "minecraft:obsidian",

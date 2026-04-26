@@ -1,5 +1,6 @@
 {
-  "familyName": "iron",
+  "family_name": "iron",
+  "tag": "c:chisel/iron",
   "variants": [
     {
       "block": "minecraft:iron_block",

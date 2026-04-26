@@ -1,5 +1,6 @@
 {
-  "familyName": "copper",
+  "family_name": "copper",
+  "tag": "c:chisel/copper",
   "variants": [
     {
       "block": "minecraft:copper_block",

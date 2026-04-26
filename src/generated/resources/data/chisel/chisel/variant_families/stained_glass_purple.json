@@ -1,5 +1,6 @@
 {
-  "familyName": "stained_glass_purple",
+  "family_name": "stained_glass_purple",
+  "tag": "c:chisel/stained_glass_purple",
   "variants": [
     {
       "block": "minecraft:purple_stained_glass",

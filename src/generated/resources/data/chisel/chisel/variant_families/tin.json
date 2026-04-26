@@ -1,5 +1,6 @@
 {
-  "familyName": "tin",
+  "family_name": "tin",
+  "tag": "c:chisel/tin",
   "variants": [
     {
       "block": "chisel:tin_125",

@@ -1,5 +1,6 @@
 {
-  "familyName": "jungle_planks",
+  "family_name": "jungle_planks",
+  "tag": "c:chisel/jungle_planks",
   "variants": [
     {
       "block": "minecraft:jungle_planks",

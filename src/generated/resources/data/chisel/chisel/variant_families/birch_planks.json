@@ -1,5 +1,6 @@
 {
-  "familyName": "birch_planks",
+  "family_name": "birch_planks",
+  "tag": "c:chisel/birch_planks",
   "variants": [
     {
       "block": "minecraft:birch_planks",

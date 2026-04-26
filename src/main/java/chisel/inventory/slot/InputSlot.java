@@ -30,7 +30,7 @@ public class InputSlot extends Slot {
         if(getItem().getItem() instanceof BlockItem blockItem) {
             VariantFamily family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), container.inventory.player.level().registryAccess());
             if(family != null) {
-                container.selectionInventory.updateSlots(family, stack.getCount());
+                container.selectionInventory.updateSlots(family, stack.getCount(), container.inventory.player.level().registryAccess());
             }
         }
     }

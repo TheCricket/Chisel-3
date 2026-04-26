@@ -2,6 +2,7 @@ package chisel.inventory;
 
 import chisel.core.variant.VariantFamily;
 import chisel.inventory.container.ChiselContainer;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.ContainerUser;
@@ -119,12 +120,12 @@ public class ChiselSelectionInventory implements Container {
         scrollOffset = 0;
     }
 
-    public void updateSlots(VariantFamily family, int stackSize) {
+    public void updateSlots(VariantFamily family, int stackSize, HolderLookup.Provider registries) {
         this.family = family;
         this.stackSize = stackSize;
         allItems.clear();
         if(family != null) {
-            family.getVariants().forEach(variant -> {
+            family.getAllVariants(registries).forEach(variant -> {
                 if (variant != null && variant.getBlock() != null) {
                     ItemStack stack = new ItemStack(variant.getBlock());
                     stack.setCount(stackSize);
@@ -176,7 +177,7 @@ public class ChiselSelectionInventory implements Container {
 
     public void setFamily(VariantFamily family) {
         this.family = family;
-        updateSlots(family, stackSize);
+        updateSlots(family, stackSize, container.inventory.player.level().registryAccess());
     }
 
     public void setStackSize(int stackSize) {

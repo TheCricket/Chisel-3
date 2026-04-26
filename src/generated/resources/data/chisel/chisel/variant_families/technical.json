@@ -1,5 +1,6 @@
 {
-  "familyName": "technical",
+  "family_name": "technical",
+  "tag": "c:chisel/technical",
   "variants": [
     {
       "block": "chisel:technical_125",

@@ -1,5 +1,6 @@
 {
-  "familyName": "crimson_planks",
+  "family_name": "crimson_planks",
+  "tag": "c:chisel/crimson_planks",
   "variants": [
     {
       "block": "minecraft:crimson_planks",

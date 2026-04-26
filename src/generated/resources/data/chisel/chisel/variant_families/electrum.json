@@ -1,5 +1,6 @@
 {
-  "familyName": "electrum",
+  "family_name": "electrum",
+  "tag": "c:chisel/electrum",
   "variants": [
     {
       "block": "chisel:electrum_bad_greggy",

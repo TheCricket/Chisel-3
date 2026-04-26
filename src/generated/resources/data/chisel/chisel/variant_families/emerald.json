@@ -1,5 +1,6 @@
 {
-  "familyName": "emerald",
+  "family_name": "emerald",
+  "tag": "c:chisel/emerald",
   "variants": [
     {
       "block": "minecraft:emerald_block",

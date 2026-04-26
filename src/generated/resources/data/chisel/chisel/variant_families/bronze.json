@@ -1,5 +1,6 @@
 {
-  "familyName": "bronze",
+  "family_name": "bronze",
+  "tag": "c:chisel/bronze",
   "variants": [
     {
       "block": "chisel:bronze_bad_greggy",

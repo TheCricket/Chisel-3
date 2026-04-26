@@ -1,5 +1,6 @@
 {
-  "familyName": "road_line",
+  "family_name": "road_line",
+  "tag": "c:chisel/road_line",
   "variants": [
     {
       "block": "chisel:road_line_double_white_center",

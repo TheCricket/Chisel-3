@@ -1,5 +1,6 @@
 {
-  "familyName": "glowstone",
+  "family_name": "glowstone",
+  "tag": "c:chisel/glowstone",
   "variants": [
     {
       "block": "minecraft:glowstone",

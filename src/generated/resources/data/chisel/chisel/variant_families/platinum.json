@@ -1,5 +1,6 @@
 {
-  "familyName": "platinum",
+  "family_name": "platinum",
+  "tag": "c:chisel/platinum",
   "variants": [
     {
       "block": "chisel:platinum_bad_greggy",

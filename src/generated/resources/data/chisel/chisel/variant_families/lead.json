@@ -1,5 +1,6 @@
 {
-  "familyName": "lead",
+  "family_name": "lead",
+  "tag": "c:chisel/lead",
   "variants": [
     {
       "block": "chisel:lead_bad_greggy",

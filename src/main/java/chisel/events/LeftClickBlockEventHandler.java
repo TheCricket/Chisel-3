@@ -14,6 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
@@ -84,7 +85,7 @@ public class LeftClickBlockEventHandler {
             return;
         LAST_CHISEL_TIME.put(player, time);
 
-        List<Variant> variants = family.getVariants();
+        List<Variant> variants = family.getAllVariants(level.registryAccess());
         for (int c = 0; c < variants.size(); c++) {
             if (state.is(variants.get(c).getBlock())) {
                 if (c == variants.size() - 1) {

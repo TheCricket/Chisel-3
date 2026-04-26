@@ -1,5 +1,6 @@
 {
-  "familyName": "netherrack",
+  "family_name": "netherrack",
+  "tag": "c:chisel/netherrack",
   "variants": [
     {
       "block": "minecraft:netherrack",

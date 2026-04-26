@@ -1,5 +1,6 @@
 {
-  "familyName": "cloud",
+  "family_name": "cloud",
+  "tag": "c:chisel/cloud",
   "variants": [
     {
       "block": "chisel:cloud_grid",

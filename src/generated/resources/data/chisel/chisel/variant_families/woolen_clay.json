@@ -1,5 +1,6 @@
 {
-  "familyName": "woolen_clay",
+  "family_name": "woolen_clay",
+  "tag": "c:chisel/woolen_clay",
   "variants": [
     {
       "block": "minecraft:clay",

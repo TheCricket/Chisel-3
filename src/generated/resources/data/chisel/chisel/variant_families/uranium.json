@@ -1,5 +1,6 @@
 {
-  "familyName": "uranium",
+  "family_name": "uranium",
+  "tag": "c:chisel/uranium",
   "variants": [
     {
       "block": "chisel:uranium_125",

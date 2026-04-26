@@ -1,5 +1,6 @@
 {
-  "familyName": "glass",
+  "family_name": "glass",
+  "tag": "c:chisel/glass",
   "variants": [
     {
       "block": "minecraft:glass",

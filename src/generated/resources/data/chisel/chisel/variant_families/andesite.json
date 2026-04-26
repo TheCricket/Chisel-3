@@ -1,5 +1,6 @@
 {
-  "familyName": "andesite",
+  "family_name": "andesite",
+  "tag": "c:chisel/andesite",
   "variants": [
     {
       "block": "minecraft:andesite",

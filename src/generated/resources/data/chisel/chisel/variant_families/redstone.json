@@ -1,5 +1,6 @@
 {
-  "familyName": "redstone",
+  "family_name": "redstone",
+  "tag": "c:chisel/redstone",
   "variants": [
     {
       "block": "minecraft:redstone_block",

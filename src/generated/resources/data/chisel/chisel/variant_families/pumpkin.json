@@ -1,5 +1,6 @@
 {
-  "familyName": "pumpkin",
+  "family_name": "pumpkin",
+  "tag": "c:chisel/pumpkin",
   "variants": [
     {
       "block": "minecraft:pumpkin",

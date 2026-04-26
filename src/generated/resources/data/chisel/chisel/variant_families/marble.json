@@ -1,5 +1,6 @@
 {
-  "familyName": "marble",
+  "family_name": "marble",
+  "tag": "c:chisel/marble",
   "variants": [
     {
       "block": "chisel:marble_raw",

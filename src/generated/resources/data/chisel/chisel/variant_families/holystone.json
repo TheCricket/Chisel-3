@@ -1,5 +1,6 @@
 {
-  "familyName": "holystone",
+  "family_name": "holystone",
+  "tag": "c:chisel/holystone",
   "variants": [
     {
       "block": "chisel:holystone_blocks",

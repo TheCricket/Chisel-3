@@ -1,5 +1,6 @@
 {
-  "familyName": "silver",
+  "family_name": "silver",
+  "tag": "c:chisel/silver",
   "variants": [
     {
       "block": "chisel:silver_125",

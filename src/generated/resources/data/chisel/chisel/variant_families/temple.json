@@ -1,5 +1,6 @@
 {
-  "familyName": "temple",
+  "family_name": "temple",
+  "tag": "c:chisel/temple",
   "variants": [
     {
       "block": "chisel:temple_cobble",

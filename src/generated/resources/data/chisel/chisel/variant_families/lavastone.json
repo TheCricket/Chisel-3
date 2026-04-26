@@ -1,5 +1,6 @@
 {
-  "familyName": "lavastone",
+  "family_name": "lavastone",
+  "tag": "c:chisel/lavastone",
   "variants": [
     {
       "block": "chisel:lavastone_array",
