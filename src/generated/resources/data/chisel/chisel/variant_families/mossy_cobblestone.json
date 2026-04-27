@@ -3,6 +3,10 @@
   "tag": "c:chisel/mossy_cobblestone",
   "variants": [
     {
+      "block": "minecraft:mossy_cobblestone",
+      "name": "block.minecraft.mossy_cobblestone"
+    },
+    {
       "block": "chisel:mossy_cobblestone_array",
       "model_type": "multiblock_2x2",
       "name": "mossy_cobblestone_array"

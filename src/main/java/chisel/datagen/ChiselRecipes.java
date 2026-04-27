@@ -29,6 +29,8 @@ public class ChiselRecipes extends RecipeProvider {
     @Override
     protected void buildRecipes() {
         // MARK: Blocks
+        smeltingResultFromBase(ChiselBlocks.CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
+
         stoneAround("has_glowstone", Tags.Items.DUSTS_GLOWSTONE, ChiselBlocks.ANTIBLOCK.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_redstone", Tags.Items.DUSTS_REDSTONE, ChiselBlocks.FUTURA.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_quartz", Tags.Items.GEMS_QUARTZ, ChiselBlocks.LABORATORY.getFamily().getVariants().getFirst().getBlock(), 8);
@@ -98,6 +100,25 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, ChiselBlocks.MILITARY.getVariant("military_imperial_camo").get())
+                .pattern("SIS")
+                .pattern("IGI")
+                .pattern("SIS")
+                .define('S', Tags.Items.STONES)
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('G', Tags.Items.NUGGETS_GOLD)
+                .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ChiselBlocks.AUTO_CHISEL)
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern("SSS")
+                .define('S', Blocks.STONE_SLAB)
+                .define('I', Tags.Items.INGOTS_IRON)
+                .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .save(output);
+
         // MARK: Items
         shaped(RecipeCategory.MISC, ChiselItems.CLOUD_IN_A_BOTTLE)
                 .pattern("G G")
@@ -115,6 +136,13 @@ public class ChiselRecipes extends RecipeProvider {
                 .define('V', Blocks.VINE)
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_vine", has(Blocks.VINE))
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ChiselItems.SMASHING_ROCK, 16)
+                .requires(Items.STONE_PICKAXE)
+                .requires(Items.GLASS_BOTTLE)
+                .requires(Items.STONE_SHOVEL)
+                .unlockedBy("has_stone_pickaxe", has(Items.STONE_PICKAXE))
                 .save(output);
 
         upgradeRecipe("has_sugar", Items.SUGAR, ChiselItems.UPGRADE_SPEED);

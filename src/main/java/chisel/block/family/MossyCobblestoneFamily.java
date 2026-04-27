@@ -3,11 +3,13 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class MossyCobblestoneFamily extends ChiselFamily {
     public MossyCobblestoneFamily(BlockBehaviour.Properties props) {
         family = builder("mossy_cobblestone")
+                .addVariant(Blocks.MOSSY_COBBLESTONE)
                 .addVariant("mossy_cobblestone_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("mossy_cobblestone_braid", props)
                 .addVariant("mossy_cobblestone_chaotic", props, VariantModelType.MULTIBLOCK_3X3)

@@ -31,22 +31,22 @@ public class CarpetFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("carpet_black"), "Floor Carpet", "Black Carpet");
-        lang.addBlock(getVariant("carpet_brown"), "Floor Carpet", "Brown Carpet");
-        lang.addBlock(getVariant("carpet_dark_blue"), "Floor Carpet", "Dark Blue Carpet");
-        lang.addBlock(getVariant("carpet_dark_grey"), "Floor Carpet", "Dark Grey Carpet");
-        lang.addBlock(getVariant("carpet_green"), "Floor Carpet", "Green Carpet");
-        lang.addBlock(getVariant("carpet_grey"), "Floor Carpet", "Grey Carpet");
-        lang.addBlock(getVariant("carpet_light_blue"), "Floor Carpet", "Light Blue Carpet");
-        lang.addBlock(getVariant("carpet_light_green"), "Floor Carpet", "Light Green Carpet");
-        lang.addBlock(getVariant("carpet_magenta"), "Floor Carpet", "Magenta Carpet");
-        lang.addBlock(getVariant("carpet_orange"), "Floor Carpet", "Orange Carpet");
-        lang.addBlock(getVariant("carpet_pink"), "Floor Carpet", "Pink Carpet");
-        lang.addBlock(getVariant("carpet_purple"), "Floor Carpet", "Purple Carpet");
-        lang.addBlock(getVariant("carpet_red"), "Floor Carpet", "Red Carpet");
-        lang.addBlock(getVariant("carpet_cyan"), "Floor Carpet", "Teal Carpet");
-        lang.addBlock(getVariant("carpet_white"), "Floor Carpet", "White Carpet");
-        lang.addBlock(getVariant("carpet_yellow"), "Floor Carpet", "Yellow Carpet");
+        lang.addBlock(getVariant("carpet_black"), "Carpet", "Black Carpet");
+        lang.addBlock(getVariant("carpet_brown"), "Carpet", "Brown Carpet");
+        lang.addBlock(getVariant("carpet_dark_blue"), "Carpet", "Dark Blue Carpet");
+        lang.addBlock(getVariant("carpet_dark_grey"), "Carpet", "Dark Grey Carpet");
+        lang.addBlock(getVariant("carpet_green"), "Carpet", "Green Carpet");
+        lang.addBlock(getVariant("carpet_grey"), "Carpet", "Grey Carpet");
+        lang.addBlock(getVariant("carpet_light_blue"), "Carpet", "Light Blue Carpet");
+        lang.addBlock(getVariant("carpet_light_green"), "Carpet", "Light Green Carpet");
+        lang.addBlock(getVariant("carpet_magenta"), "Carpet", "Magenta Carpet");
+        lang.addBlock(getVariant("carpet_orange"), "Carpet", "Orange Carpet");
+        lang.addBlock(getVariant("carpet_pink"), "Carpet", "Pink Carpet");
+        lang.addBlock(getVariant("carpet_purple"), "Carpet", "Purple Carpet");
+        lang.addBlock(getVariant("carpet_red"), "Carpet", "Red Carpet");
+        lang.addBlock(getVariant("carpet_cyan"), "Carpet", "Teal Carpet");
+        lang.addBlock(getVariant("carpet_white"), "Carpet", "White Carpet");
+        lang.addBlock(getVariant("carpet_yellow"), "Carpet", "Yellow Carpet");
     }
 }
 

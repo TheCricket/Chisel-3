@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/iron",
+    "S": "minecraft:stone_slab"
+  },
+  "pattern": [
+    "SSS",
+    " I ",
+    "SSS"
+  ],
+  "result": {
+    "id": "chisel:auto_chisel"
+  }
+}
