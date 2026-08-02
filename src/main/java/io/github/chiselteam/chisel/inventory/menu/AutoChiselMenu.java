@@ -1,10 +1,12 @@
 package io.github.chiselteam.chisel.inventory.menu;
 
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.inventory.slot.AutoChiselInputSlot;
 import io.github.chiselteam.chisel.inventory.slot.UpgradeSlot;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import io.github.chiselteam.chisel.registry.ChiselMenus;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -45,7 +47,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
         super(ChiselMenus.AUTO_CHISEL.get(), containerId);
         this.data = data;
 
-        addInputSlots(container);
+        addInputSlots(container, inventory.player.level().registryAccess());
         addTemplateAndChiselSlots(container);
         addOutputSlots(container);
         addUpgradeSlots(container);
@@ -54,10 +56,10 @@ public class AutoChiselMenu extends AbstractContainerMenu {
         addDataSlots(data);
     }
 
-    private void addInputSlots(Container container) {
+    private void addInputSlots(Container container, RegistryAccess registryAccess) {
         for (int r = 0; r < 4; r++) {
             for (int c = 0; c < 3; c++) {
-                addSlot(new Slot(container, INPUT_SLOT_START + c + r * 3, 8 + c * 18, 19 + r * 18));
+                addSlot(new AutoChiselInputSlot(container, registryAccess, INPUT_SLOT_START + c + r * 3, 8 + c * 18, 19 + r * 18));
             }
         }
     }

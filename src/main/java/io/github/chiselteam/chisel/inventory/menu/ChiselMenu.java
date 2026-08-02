@@ -1,9 +1,9 @@
 package io.github.chiselteam.chisel.inventory.menu;
 
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
-import io.github.chiselteam.chisel.inventory.container.ChiselContainer;
 import io.github.chiselteam.chisel.inventory.ChiselSelectionInventory;
-import io.github.chiselteam.chisel.inventory.slot.InputSlot;
+import io.github.chiselteam.chisel.inventory.container.ChiselContainer;
+import io.github.chiselteam.chisel.inventory.slot.ChiselInputSlot;
 import io.github.chiselteam.chisel.inventory.slot.SelectionSlot;
 import io.github.chiselteam.chisel.registry.ChiselDataComponents;
 import io.github.chiselteam.chisel.registry.ChiselMenus;
@@ -103,7 +103,7 @@ public class ChiselMenu extends AbstractContainerMenu {
             addSlot(new SelectionSlot(container, variants, c, left + ((c % 9) * 18), top + ((c / 9) * 18)));
         }
 
-        addSlot(inputSlot = new InputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 52));
+        addSlot(inputSlot = new ChiselInputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 52));
         container.inputSlot = inputSlot;
     }
 

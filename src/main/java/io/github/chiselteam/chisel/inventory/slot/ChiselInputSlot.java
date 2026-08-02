@@ -9,11 +9,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
-public class InputSlot extends Slot {
+public class ChiselInputSlot extends Slot {
 
     private final ChiselContainer container;
 
-    public InputSlot(ChiselContainer container, int slot, int x, int y) {
+    public ChiselInputSlot(ChiselContainer container, int slot, int x, int y) {
         super(container, slot, x, y);
         this.container = container;
     }
