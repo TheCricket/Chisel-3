@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.block.entity;
 
 import io.github.chiselteam.chisel.core.variant.Variant;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
+import io.github.chiselteam.chisel.inventory.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
@@ -12,6 +13,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -19,22 +21,24 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.WorldlyContainer;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
-
-import java.util.List;
 import net.minecraft.world.level.storage.ValueOutput;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
-public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContainer {
+import java.util.List;
+
+public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer {
 
     public static final int INPUT_SLOTS = 12;
     public static final int TEMPLATE_SLOT = 12;
@@ -46,7 +50,7 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
     public static final int SPEED_UPGRADE_SLOT = 29;
     public static final int TOTAL_SLOTS = 30;
 
-    private final NonNullList<ItemStack> items = NonNullList.withSize(TOTAL_SLOTS, ItemStack.EMPTY);
+    private NonNullList<ItemStack> items = NonNullList.withSize(TOTAL_SLOTS, ItemStack.EMPTY);
 
     private int progress = 0;
     private static final int MAX_PROGRESS = 100;
@@ -156,9 +160,7 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
         int inputSlot = (family != null) ? findValidInputSlot(family) : findValidReversionInputSlot();
         if (inputSlot == -1) return true;
 
-        if (!hasOutputSpace()) return true;
-
-        return false;
+        return !hasOutputSpace();
     }
 
     private int findValidInputSlot(VariantFamily templateFamily) {
@@ -447,6 +449,11 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
     }
 
     @Override
+    protected @NonNull AbstractContainerMenu createMenu(int i, @NonNull Inventory inventory) {
+        return new AutoChiselMenu(i, inventory, this, data);
+    }
+
+    @Override
     protected void loadAdditional(@NonNull ValueInput input) {
         super.loadAdditional(input);
         ContainerHelper.loadAllItems(input, items);
@@ -458,6 +465,21 @@ public class AutoChiselBlockEntity extends BlockEntity implements WorldlyContain
         super.saveAdditional(output);
         ContainerHelper.saveAllItems(output, items);
         output.putInt("Progress", progress);
+    }
+
+    @Override
+    protected @NonNull Component getDefaultName() {
+        return Component.translatable("container.auto_chisel");
+    }
+
+    @Override
+    public @NonNull NonNullList<ItemStack> getItems() {
+        return items;
+    }
+
+    @Override
+    protected void setItems(@NonNull NonNullList<ItemStack> nonNullList) {
+        items = nonNullList;
     }
 
     public ContainerData getData() {
