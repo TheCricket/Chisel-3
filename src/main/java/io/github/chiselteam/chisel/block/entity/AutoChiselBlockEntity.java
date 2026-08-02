@@ -90,7 +90,13 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         if (level.isClientSide()) return;
 
         if (blockEntity.canProcess()) {
-            int speed = blockEntity.items.get(SPEED_UPGRADE_SLOT).is(ChiselItems.UPGRADE_SPEED.get()) ? 2 : 1;
+            boolean hasSpeed = blockEntity.items.get(SPEED_UPGRADE_SLOT).is(ChiselItems.UPGRADE_SPEED.get());
+            int speed = 1;
+
+            if (hasSpeed) {
+                speed = 2 * blockEntity.items.get(SPEED_UPGRADE_SLOT).getCount();
+            }
+
             blockEntity.progress += speed;
             if (blockEntity.progress >= MAX_PROGRESS) {
                 blockEntity.process();

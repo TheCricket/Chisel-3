@@ -81,7 +81,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
         addSlot(new UpgradeSlot(container, UPGRADE_STACK_SLOT, 98, 95, 1, ChiselItems.UPGRADE_STACK));
         addSlot(new UpgradeSlot(container, UPGRADE_AUTOMATION_SLOT, 116, 95, 1, ChiselItems.UPGRADE_AUTOMATION));
         addSlot(new UpgradeSlot(container, UPGRADE_REVERSION_SLOT, 134, 95, 1, ChiselItems.UPGRADE_REVERSION));
-        addSlot(new UpgradeSlot(container, UPGRADE_SPEED_SLOT, 152, 95, 1, ChiselItems.UPGRADE_SPEED));
+        addSlot(new UpgradeSlot(container, UPGRADE_SPEED_SLOT, 152, 95, 64, ChiselItems.UPGRADE_SPEED));
     }
 
     private void addOutputSlots(Container container) {
