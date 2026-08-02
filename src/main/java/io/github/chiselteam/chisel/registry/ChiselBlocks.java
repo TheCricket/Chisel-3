@@ -147,6 +147,7 @@ public class ChiselBlocks {
     public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, () -> Properties.of()
             .sound(SoundType.METAL)
             .strength(2.5F)
+            .noOcclusion()
             .requiresCorrectToolForDrops());
 
     public static final DeferredBlock<Block> BUILDERS_GUIDE = BLOCKS.registerBlock("builders_guide", BuildersGuideBlock::new, () -> Properties.of()
