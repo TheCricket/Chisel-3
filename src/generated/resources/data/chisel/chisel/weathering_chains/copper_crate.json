@@ -4,5 +4,11 @@
     "chisel:exposed_copper_crate",
     "chisel:weathered_copper_crate",
     "chisel:oxidized_copper_crate"
-  ]
+  ],
+  "waxed_map": {
+    "chisel:copper_crate": "chisel:waxed_copper_crate",
+    "chisel:exposed_copper_crate": "chisel:waxed_exposed_copper_crate",
+    "chisel:oxidized_copper_crate": "chisel:waxed_oxidized_copper_crate",
+    "chisel:weathered_copper_crate": "chisel:waxed_weathered_copper_crate"
+  }
 }

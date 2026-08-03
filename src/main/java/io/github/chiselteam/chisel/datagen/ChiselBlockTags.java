@@ -151,6 +151,12 @@ public class ChiselBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.get());
 
+        ChiselBlocks.getBlocks().forEach(f -> {
+            if (f.getFamily().getWaxedFamily() != null) {
+                addToTag(BlockTags.MINEABLE_WITH_PICKAXE, f.getFamily().getWaxedFamily());
+            }
+        });
+
         ChiselBlocks.STAINED_GLASS.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
         ChiselBlocks.STAINED_GLASS_PANE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
 
@@ -196,6 +202,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.BRONZE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COBALT.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COPPER.getFamily());
+        if (ChiselBlocks.COPPER.getFamily().getWaxedFamily() != null) {
+            addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COPPER.getFamily().getWaxedFamily());
+        }
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.DIAMOND.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.ELECTRUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.EMERALD.getFamily());
@@ -215,6 +224,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         ChiselBlocks.getBlocks().forEach(family -> {
             if(!NOT_FRAMEABLE.contains(family.getFamily())) {
                 addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily());
+                if (family.getFamily().getWaxedFamily() != null) {
+                    addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily().getWaxedFamily());
+                }
             }
         });
 
@@ -246,11 +258,17 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
     private void addToWood(VariantFamily family) {
         addToTag(WOOD, family);
+        if (family.getWaxedFamily() != null) {
+            addToWood(family.getWaxedFamily());
+        }
     }
 
     private void addToTag(TagKey<Block> tag, VariantFamily family) {
         family.getVariants().forEach(variant -> {
             if(variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
+        });
+        family.getHiddenVariants().forEach(variant -> {
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
         });
     }
 }

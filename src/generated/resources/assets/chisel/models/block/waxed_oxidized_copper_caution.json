@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/oxidized_copper/oxidized_copper_caution",
+    "overlay_connected": "chisel:block/oxidized_copper/oxidized_copper_caution-ctm",
+    "overlay_texture": "chisel:block/oxidized_copper/oxidized_copper_caution",
+    "particle": "chisel:block/oxidized_copper/oxidized_copper_caution"
+  }
+}

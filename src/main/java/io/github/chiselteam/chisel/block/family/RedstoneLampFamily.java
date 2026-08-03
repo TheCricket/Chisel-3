@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.block.family;
 
-import io.github.chiselteam.chisel.block.ChiselRedstoneLampBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
+import io.github.chiselteam.chisel.block.util.ChiselRedstoneLampBlock;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 

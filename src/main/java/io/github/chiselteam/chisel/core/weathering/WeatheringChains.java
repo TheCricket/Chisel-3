@@ -22,6 +22,8 @@ public final class WeatheringChains {
     private static final Map<Block, Block> NEXT = new ConcurrentHashMap<>();
     private static final Map<Block, Block> PREV = new ConcurrentHashMap<>();
     private static final Map<Block, Float> RATE = new ConcurrentHashMap<>();
+    private static final Map<Block, Block> WAXED = new ConcurrentHashMap<>();
+    private static final Map<Block, Block> UNWAXED = new ConcurrentHashMap<>();
 
     private WeatheringChains() {
     }
@@ -30,6 +32,8 @@ public final class WeatheringChains {
         NEXT.clear();
         PREV.clear();
         RATE.clear();
+        WAXED.clear();
+        UNWAXED.clear();
 
         Registry<WeatheringChainData> registry = access.lookup(ChiselWeatheringRegistry.KEY).orElse(null);
         if (registry == null) {
@@ -53,8 +57,18 @@ public final class WeatheringChains {
                 registerChain(blocks, chain.agingRate());
                 chains++;
             }
+
+            for (var entry : chain.waxedMap().entrySet()) {
+                Block unwaxed = BuiltInRegistries.BLOCK.getOptional(entry.getKey()).orElse(null);
+                Block waxed = BuiltInRegistries.BLOCK.getOptional(entry.getValue()).orElse(null);
+                if (unwaxed != null && waxed != null) {
+                    registerWaxable(unwaxed, waxed);
+                } else {
+                    LOGGER.warn("Unknown block id in waxed mapping: {} -> {}", entry.getKey(), entry.getValue());
+                }
+            }
         }
-        LOGGER.info("Loaded {} weathering mappings across {} chains", NEXT.size(), chains);
+        LOGGER.info("Loaded {} weathering mappings and {} waxed mappings across {} chains", NEXT.size(), WAXED.size(), chains);
     }
 
     public static void registerChain(List<Block> blocks, float agingRate) {
@@ -80,6 +94,19 @@ public final class WeatheringChains {
 
     public static float getRate(Block b, float def) {
         return RATE.getOrDefault(b, def);
+    }
+
+    public static Optional<Block> getWaxed(Block b) {
+        return Optional.ofNullable(WAXED.get(b));
+    }
+
+    public static Optional<Block> getUnwaxed(Block b) {
+        return Optional.ofNullable(UNWAXED.get(b));
+    }
+
+    public static void registerWaxable(Block unwaxed, Block waxed) {
+        WAXED.put(unwaxed, waxed);
+        UNWAXED.put(waxed, unwaxed);
     }
 
     public static boolean participates(Block b) {

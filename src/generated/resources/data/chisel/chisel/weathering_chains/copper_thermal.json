@@ -4,5 +4,11 @@
     "chisel:exposed_copper_thermal",
     "chisel:weathered_copper_thermal",
     "chisel:oxidized_copper_thermal"
-  ]
+  ],
+  "waxed_map": {
+    "chisel:copper_thermal": "chisel:waxed_copper_thermal",
+    "chisel:exposed_copper_thermal": "chisel:waxed_exposed_copper_thermal",
+    "chisel:oxidized_copper_thermal": "chisel:waxed_oxidized_copper_thermal",
+    "chisel:weathered_copper_thermal": "chisel:waxed_weathered_copper_thermal"
+  }
 }

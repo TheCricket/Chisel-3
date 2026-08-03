@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.integration.jade;
 
-import io.github.chiselteam.chisel.block.*;
+import io.github.chiselteam.chisel.block.util.*;
+import org.jspecify.annotations.NonNull;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
 import snownee.jade.api.IWailaPlugin;
@@ -10,15 +11,13 @@ import snownee.jade.api.WailaPlugin;
 public class JadeCompatibility implements IWailaPlugin {
 
     @Override
-    public void register(IWailaCommonRegistration registration) {
+    public void register(@NonNull IWailaCommonRegistration registration) {
         IWailaPlugin.super.register(registration);
     }
 
     @Override
     public void registerClient(IWailaClientRegistration registration) {
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ConnectedTextureBlock.class);
-        registration.registerBlockComponent(JadeComponentProvider.INSTANCE, CTMHBlock.class);
-        registration.registerBlockComponent(JadeComponentProvider.INSTANCE, CTMVBlock.class);
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, NoParticleTorchBlock.class);
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, RoadlineBlock.class);
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ChiselPoweredBlock.class);

@@ -1,0 +1,39 @@
+{
+  "family_name": "waxed_exposed_copper",
+  "tag": "c:chisel/waxed_exposed_copper",
+  "variants": [
+    {
+      "block": "chisel:waxed_exposed_copper_bad_greggy",
+      "model_type": "connected",
+      "name": "waxed_exposed_copper_bad_greggy"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_bolted",
+      "name": "waxed_exposed_copper_bolted"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_caution",
+      "model_type": "connected",
+      "name": "waxed_exposed_copper_caution"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_crate",
+      "model_type": "connected",
+      "name": "waxed_exposed_copper_crate"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_machine",
+      "name": "waxed_exposed_copper_machine"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_scaffold",
+      "model_type": "connected",
+      "name": "waxed_exposed_copper_scaffold"
+    },
+    {
+      "block": "chisel:waxed_exposed_copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "waxed_exposed_copper_thermal"
+    }
+  ]
+}

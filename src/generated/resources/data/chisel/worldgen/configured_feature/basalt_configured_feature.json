@@ -6,15 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "chisel:basalt_raw",
-          "Properties": {
-            "down": "false",
-            "east": "false",
-            "north": "false",
-            "south": "false",
-            "up": "false",
-            "west": "false"
-          }
+          "Name": "chisel:basalt_raw"
         },
         "target": {
           "block": "minecraft:stone",

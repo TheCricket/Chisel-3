@@ -1,9 +1,8 @@
 package io.github.chiselteam.chisel.block.family;
 
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import io.github.chiselteam.chisel.block.NoParticleTorchBlock;
-import io.github.chiselteam.chisel.block.NoParticleWallTorchBlock;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
+import io.github.chiselteam.chisel.block.util.NoParticleTorchBlock;
+import io.github.chiselteam.chisel.block.util.NoParticleWallTorchBlock;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.Block;
@@ -11,6 +10,9 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TORCH;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.WALL_TORCH;
 
 public class TorchFamily extends ChiselFamily {
 

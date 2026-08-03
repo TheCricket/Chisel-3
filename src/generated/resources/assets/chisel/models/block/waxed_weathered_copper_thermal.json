@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/weathered_copper/weathered_copper_thermal-bottom",
+    "side": "chisel:block/weathered_copper/weathered_copper_thermal-side",
+    "top": "chisel:block/weathered_copper/weathered_copper_thermal-top"
+  }
+}

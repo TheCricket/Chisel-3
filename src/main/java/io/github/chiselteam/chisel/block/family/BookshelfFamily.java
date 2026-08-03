@@ -1,12 +1,12 @@
 package io.github.chiselteam.chisel.block.family;
 
-import io.github.chiselteam.chisel.block.CTMHBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.BOOKSHELF;
 
 public class BookshelfFamily extends ChiselFamily {
 
@@ -20,7 +20,7 @@ public class BookshelfFamily extends ChiselFamily {
         b.addVariant(Blocks.BOOKSHELF);
         for (String wood : woods) {
             for (String type : types) {
-                b.addVariant("bookshelf_%s_%s".formatted(wood, type), CTMHBlock::new, () -> props, BOOKSHELF);
+                b.addVariant("bookshelf_%s_%s".formatted(wood, type), props, BOOKSHELF);
             }
         }
 

@@ -4,5 +4,11 @@
     "chisel:exposed_copper_caution",
     "chisel:weathered_copper_caution",
     "chisel:oxidized_copper_caution"
-  ]
+  ],
+  "waxed_map": {
+    "chisel:copper_caution": "chisel:waxed_copper_caution",
+    "chisel:exposed_copper_caution": "chisel:waxed_exposed_copper_caution",
+    "chisel:oxidized_copper_caution": "chisel:waxed_oxidized_copper_caution",
+    "chisel:weathered_copper_caution": "chisel:waxed_weathered_copper_caution"
+  }
 }

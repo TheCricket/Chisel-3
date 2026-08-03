@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.datagen.model;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
+import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselVariants;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
@@ -18,6 +19,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import org.jspecify.annotations.NonNull;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Stream;
 
 public class ChiselModelProvider extends ModelProvider {
@@ -29,10 +32,8 @@ public class ChiselModelProvider extends ModelProvider {
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
         ChiselBlocks.getBlocks().forEach(ChiselFamily::getFamily);
-        ChiselVariants.getVariantFamilies().forEach(family -> family.getVariants().forEach(variant -> {
-            if(variant.shouldGenerateModel())
-                variant.registerModel(blockModels);
-        }));
+        Set<String> processedFamilies = new HashSet<>();
+        ChiselVariants.getVariantFamilies().forEach(family -> registerFamilyModels(family, blockModels, processedFamilies));
 
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/auto_chisel")))));
         blockModels.registerSimpleItemModel(ChiselBlocks.AUTO_CHISEL.get(), Chisel.prefix("block/auto_chisel"));
@@ -69,6 +70,25 @@ public class ChiselModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ChiselItems.BALL_O_MOSS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.CLOUD_IN_A_BOTTLE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.SMASHING_ROCK.get(), ModelTemplates.FLAT_ITEM);
+    }
+
+    private void registerFamilyModels(VariantFamily family, BlockModelGenerators blockModels, Set<String> processedFamilies) {
+        if (!processedFamilies.add(family.getFamilyName())) {
+            return;
+        }
+        family.getVariants().forEach(variant -> {
+            if (variant.shouldGenerateModel()) {
+                variant.registerModel(blockModels);
+            }
+        });
+        family.getHiddenVariants().forEach(variant -> {
+            if (variant.shouldGenerateModel()) {
+                variant.registerModel(blockModels);
+            }
+        });
+        if (family.getWaxedFamily() != null) {
+            registerFamilyModels(family.getWaxedFamily(), blockModels, processedFamilies);
+        }
     }
 
     @Override

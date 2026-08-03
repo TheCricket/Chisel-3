@@ -1,10 +1,10 @@
 package io.github.chiselteam.chisel.datagen;
 
+import com.google.common.collect.Maps;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
-import com.google.common.collect.Maps;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -20,6 +20,12 @@ public class ChiselVariants {
     private static void register(ChiselFamily block, BootstrapContext<VariantFamily> context) {
         context.register(block.getKey(), block.getFamily());
         VARIANT_FAMILIES.putIfAbsent(block.getFamily().getFamilyName(), block.getFamily());
+        if (block.getFamily().getWaxedFamily() != null) {
+            VariantFamily waxed = block.getFamily().getWaxedFamily();
+            ResourceKey<VariantFamily> waxedKey = ResourceKey.create(KEY, Chisel.prefix(waxed.getFamilyName()));
+            context.register(waxedKey, waxed);
+            VARIANT_FAMILIES.putIfAbsent(waxed.getFamilyName(), waxed);
+        }
     }
 
     public static Collection<VariantFamily> getVariantFamilies() {

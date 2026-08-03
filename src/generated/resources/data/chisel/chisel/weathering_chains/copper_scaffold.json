@@ -4,5 +4,11 @@
     "chisel:exposed_copper_scaffold",
     "chisel:weathered_copper_scaffold",
     "chisel:oxidized_copper_scaffold"
-  ]
+  ],
+  "waxed_map": {
+    "chisel:copper_scaffold": "chisel:waxed_copper_scaffold",
+    "chisel:exposed_copper_scaffold": "chisel:waxed_exposed_copper_scaffold",
+    "chisel:oxidized_copper_scaffold": "chisel:waxed_oxidized_copper_scaffold",
+    "chisel:weathered_copper_scaffold": "chisel:waxed_weathered_copper_scaffold"
+  }
 }

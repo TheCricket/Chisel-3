@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.block.family.stone;
 
-import io.github.chiselteam.chisel.block.CTMVBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -31,21 +30,21 @@ public class MarbleFamily extends ChiselFamily {
                 .addVariant("marble_panel", props)
                 .addVariant("marble_pillar", props, TBS)
                 .addVariant("marble_pillar_carved", props, TBS)
-                .addVariant("marble_pillar_convex", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_greek_decor", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_greek_greek", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_greek_plain", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_normal", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_normal2", CTMVBlock::new, () -> props, CTMV)
+                .addVariant("marble_pillar_convex", props, CTMV)
+                .addVariant("marble_pillar_greek_decor", props, CTMV)
+                .addVariant("marble_pillar_greek_greek", props, CTMV)
+                .addVariant("marble_pillar_greek_plain", props, CTMV)
+                .addVariant("marble_pillar_normal", props, CTMV)
+                .addVariant("marble_pillar_normal2", props, CTMV)
                 .addVariant("marble_pillar_ornamental", props, TBS)
-                .addVariant("marble_pillar_plain_decor", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_plain_greek", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_plain_plain", CTMVBlock::new, () -> props, CTMV)
-                .addVariant("marble_pillar_rough", CTMVBlock::new, () ->props, CTMV)
-                .addVariant("marble_pillar_simple", CTMVBlock::new, () ->props, CTMV)
-                .addVariant("marble_pillar_wide_decor", CTMVBlock::new, () ->props, CTMV)
-                .addVariant("marble_pillar_wide_greek", CTMVBlock::new, () ->props, CTMV)
-                .addVariant("marble_pillar_wide_plain", CTMVBlock::new, () ->props, CTMV)
+                .addVariant("marble_pillar_plain_decor", props, CTMV)
+                .addVariant("marble_pillar_plain_greek", props, CTMV)
+                .addVariant("marble_pillar_plain_plain", props, CTMV)
+                .addVariant("marble_pillar_rough", props, CTMV)
+                .addVariant("marble_pillar_simple", props, CTMV)
+                .addVariant("marble_pillar_wide_decor", props, CTMV)
+                .addVariant("marble_pillar_wide_greek", props, CTMV)
+                .addVariant("marble_pillar_wide_plain", props, CTMV)
                 .addVariant("marble_prism", props)
                 .addVariant("marble_road", props)
                 .addVariant("marble_slanted", props, MULTIBLOCK_2X2)

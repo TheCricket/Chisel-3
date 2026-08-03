@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.block.family;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.block.ChiselStainedGlassPaneBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
+import io.github.chiselteam.chisel.block.util.ChiselStainedGlassPaneBlock;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
