@@ -19,22 +19,17 @@ public class RowChiselMode extends ChiselMode {
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
-        List<BlockPos> affected = new ArrayList<>();
-        Direction right;
-        if (side == Direction.UP || side == Direction.DOWN) {
-            right = Direction.EAST;
-        } else {
-            right = side.getClockWise();
-        }
+        List<BlockPos> affected = new ArrayList<>(3);
+        Direction right = side.getAxis().isVertical() ? Direction.EAST : side.getClockWise();
+
         affected.add(pos);
+
         BlockPos rightPos = pos.relative(right);
-        if (isSameBlock(level, state, level.getBlockState(rightPos))) {
-            affected.add(rightPos);
-        }
+        if (isSameBlock(level, state, level.getBlockState(rightPos))) affected.add(rightPos);
+
         BlockPos leftPos = pos.relative(right.getOpposite());
-        if (isSameBlock(level, state, level.getBlockState(leftPos))) {
-            affected.add(leftPos);
-        }
+        if (isSameBlock(level, state, level.getBlockState(leftPos))) affected.add(leftPos);
+
         return affected;
     }
 }
