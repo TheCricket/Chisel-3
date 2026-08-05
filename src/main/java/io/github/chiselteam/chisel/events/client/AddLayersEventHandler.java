@@ -50,6 +50,7 @@ public class AddLayersEventHandler {
         // Artists
         VIPS.put(UUID.fromString("e350ef68-2feb-4127-b0ce-611e5304685a"), ChiselItems.CHISEL_DIAMOND); // Cebularz
         VIPS.put(UUID.fromString("5399b615-3440-4c66-939d-ab1375952ac3"), ChiselItems.CHISEL_DIAMOND); // Drullkus
+        VIPS.put(UUID.fromString("735d1fe0-0d75-4cee-86a1-bc11b62ca48a"), ChiselItems.CHISEL_DIAMOND); // RPorotos
 
         // Gallery
         VIPS.put(UUID.fromString("ba1dd62a-00ac-4c18-bb91-1e02ed4b65d8"), ChiselItems.CHISEL_DIAMOND); // Buddy610
