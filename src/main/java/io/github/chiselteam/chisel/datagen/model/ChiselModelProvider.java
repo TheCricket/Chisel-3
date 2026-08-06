@@ -42,16 +42,13 @@ public class ChiselModelProvider extends ModelProvider {
                 MultiVariantGenerator.dispatch(
                         ChiselBlocks.BUILDERS_GUIDE.get(),
                         BlockModelGenerators.plainVariant(
-                                ModelTemplates.CUBE.create(
+                                ModelTemplates.CUBE_BOTTOM_TOP.create(
                                         ChiselBlocks.BUILDERS_GUIDE.get(),
                                         new TextureMapping()
-                                                .put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get()))
-                                                .put(TextureSlot.NORTH, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
-                                                .put(TextureSlot.WEST, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus"))
-                                                .put(TextureSlot.SOUTH, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus"))
-                                                .put(TextureSlot.EAST, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
-                                                .put(TextureSlot.UP, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
-                                                .put(TextureSlot.DOWN, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus")),
+                                                .put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_top"))
+                                                .put(TextureSlot.TOP, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_top"))
+                                                .put(TextureSlot.BOTTOM, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_bottom"))
+                                                .put(TextureSlot.SIDE, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_side")),
                                         blockModels.modelOutput
                                 )
                         )
