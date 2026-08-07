@@ -1,25 +1,34 @@
 {
-  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
-    "down",
-    "up",
-    "north",
-    "south",
-    "west",
-    "east"
+    "all"
   ],
-  "element": {
-    "max": [
-      16.0,
-      16.0,
-      16.0
-    ],
-    "min": [
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
+  "connects_to": [
+    {
+      "id": "chisel:copper_crate"
+    },
+    {
+      "id": "chisel:waxed_copper_crate"
+    },
+    {
+      "id": "chisel:exposed_copper_crate"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_crate"
+    },
+    {
+      "id": "chisel:weathered_copper_crate"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_crate"
+    },
+    {
+      "id": "chisel:oxidized_copper_crate"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_crate"
+    }
+  ],
   "model_location": "chisel:block/exposed_copper_crate",
   "render_overlay_on_all_faces": true,
   "variant": {

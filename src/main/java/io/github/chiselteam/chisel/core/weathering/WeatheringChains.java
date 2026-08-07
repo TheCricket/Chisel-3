@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.core.weathering;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.datagen.registry.ChiselWeatheringRegistry;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -85,6 +86,7 @@ public final class WeatheringChains {
     }
 
     public static Optional<Block> getNext(Block b) {
+        if(NEXT.isEmpty()) reloadFrom(Minecraft.getInstance().level.registryAccess());
         return Optional.ofNullable(NEXT.get(b));
     }
 

@@ -67,8 +67,8 @@ public class WeatheringBlock extends ConnectedTextureBlock {
     }
 
     @Override
-    public boolean isRandomlyTicking(BlockState state) {
-        return WeatheringChains.getNext(state.getBlock()).isPresent();
+    public boolean isRandomlyTicking(@NonNull BlockState state) {
+        return true;
     }
 
     @Override

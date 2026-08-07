@@ -1,23 +1,11 @@
 {
-  "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
     "north",
+    "east",
     "south",
-    "west",
-    "east"
+    "west"
   ],
-  "element": {
-    "max": [
-      16.0,
-      16.0,
-      16.0
-    ],
-    "min": [
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
   "model_location": "chisel:block/bookshelf_spruce_hoarder",
   "variant": {
     "block": "chisel:bookshelf_spruce_hoarder",
