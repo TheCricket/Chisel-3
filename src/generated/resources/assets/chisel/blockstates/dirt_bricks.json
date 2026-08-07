@@ -1,8 +1,8 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
-    "down",
-    "up"
+    "up",
+    "down"
   ],
   "model_location": "chisel:block/dirt_bricks",
   "render_overlay_on_all_faces": true,

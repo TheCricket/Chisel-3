@@ -80,6 +80,9 @@ public class ChiselLang extends LangHelper {
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
 
         add("config.jade.plugin_chisel.jade_plugin", "Chisel Descriptions");
+
+        add("key.category.chisel.chisel", "Chisel");
+        add("key.chisel.mode_select", "Select Chisel Mode");
     }
 
     private void addTabs() {

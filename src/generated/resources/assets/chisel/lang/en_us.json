@@ -4361,6 +4361,8 @@
   "itemGroup.tabOtherChiselBlocks": "Other Chisel Blocks",
   "itemGroup.tabStoneChiselBlocks": "Stone Chisel Blocks",
   "itemGroup.tabWoodChiselBlocks": "Wood Chisel Blocks",
+  "key.category.chisel.chisel": "Chisel",
+  "key.chisel.mode_select": "Select Chisel Mode",
   "stat.chisel.blocks_chiseled": "Blocks Chiseled",
   "tooltip.chisel.builders_guide.height_desc": "Right click on Top / Bottom side to change Height",
   "tooltip.chisel.builders_guide.length_desc": "Right click on North / South side to change Length",

@@ -8,13 +8,13 @@ import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import org.joml.Vector3f;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class ConnectedTextureBlockStateModelBuilder {
 
     private Identifier modelLocation;
-    private final Set<Direction> connectedFaces = new HashSet<>();
+    private final Set<Direction> connectedFaces = new TreeSet<>(Enum::compareTo);
     private boolean renderOverlayOnAllFaces;
     private Variant variant;
     private int baseTintIndex = -1;
