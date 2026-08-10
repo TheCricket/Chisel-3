@@ -54,6 +54,7 @@ public class AddLayersEventHandler {
 
         // Gallery
         VIPS.put(UUID.fromString("ba1dd62a-00ac-4c18-bb91-1e02ed4b65d8"), ChiselItems.CHISEL_DIAMOND); // Buddy610
+        VIPS.put(UUID.fromString("d0798f41-4563-4005-a08f-2b85a41bddae"), ChiselItems.CHISEL_DIAMOND); // Joshy
 
         // Community
         VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON); // BeanxxBot
