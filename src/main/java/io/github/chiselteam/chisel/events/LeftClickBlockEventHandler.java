@@ -9,6 +9,7 @@ import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
 import io.github.chiselteam.chisel.util.VariantFinder;
+import io.github.chiselteam.chisel.item.ChiselItem;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -93,6 +94,6 @@ public class LeftClickBlockEventHandler {
         level.setBlockAndUpdate(pos, state);
         level.addDestroyBlockEffect(pos, state);
         level.playSound(null, pos, state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(), SoundSource.BLOCKS);
-        chisel.hurtAndBreak(1, player, hand);
+        ChiselItem.hurtAndBreak(chisel, 1, player, hand);
     }
 }

@@ -4316,8 +4316,6 @@
   "chisel.building_mode.chisel:planes": "Planes",
   "chisel.building_mode.chisel:sphere": "Sphere",
   "chisel.building_mode.chisel:triangle": "Triangle",
-  "chisel.gui.confirm": "Chisel",
-  "chisel.gui.mode": "Mode",
   "chisel.gui.search": "Search:",
   "chisel.mode.column": "Column",
   "chisel.mode.panel": "Panel",

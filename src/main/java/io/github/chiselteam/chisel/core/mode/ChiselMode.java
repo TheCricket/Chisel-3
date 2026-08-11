@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.core.mode;
 import io.github.chiselteam.chisel.registry.ChiselStats;
+import io.github.chiselteam.chisel.item.ChiselItem;
 import com.mojang.serialization.Codec;
 import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.core.variant.Variant;
@@ -78,7 +79,7 @@ public class ChiselMode {
         level.addDestroyBlockEffect(pos, state);
         level.playSound(null, pos, state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(), SoundSource.BLOCKS);
         player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
-        chisel.hurtAndBreak(1, player, hand);
+        ChiselItem.hurtAndBreak(chisel, 1, player, hand);
     }
 
     protected boolean isSameBlock(Level level, BlockState base, BlockState test) {

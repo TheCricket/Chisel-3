@@ -3,12 +3,13 @@ package io.github.chiselteam.chisel.inventory.screen;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.gui.PreviewPIPState;
 import io.github.chiselteam.chisel.client.gui.modes.*;
-import io.github.chiselteam.chisel.core.mode.ChiselMode;
+import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.inventory.menu.ChiselMenu;
-import io.github.chiselteam.chisel.network.ChiselConfirmPacket;
-import io.github.chiselteam.chisel.network.ChiselModePacket;
+import io.github.chiselteam.chisel.network.ChiselSelectionPacket;
 import io.github.chiselteam.chisel.network.ChiselSearchPacket;
-import io.github.chiselteam.chisel.registry.ChiselModes;
+import io.github.chiselteam.chisel.item.ChiselItem;
+import io.github.chiselteam.chisel.registry.ChiselKeyMappings;
+import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
@@ -27,17 +28,16 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
 
+    private final Inventory inventory;
     private final Identifier TEXTURE = Chisel.prefix("textures/gui/chisel.png");
     private static final Identifier SCROLLER_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller");
     private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller_disabled");
     private EditBox searchBox;
-    private Button modeButton;
     private Button previewModeButton;
     private static final List<PreviewMode> PREVIEW_MODES = List.of(new SinglePreview(), new PanelPreview(), new DonutPreview(), new PlusPreview(), new ColumnPreview(), new RowPreview());
     private int previewModeIndex = 0;
@@ -47,10 +47,11 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private float previewRotY = 0.0F;
     private float previewZoom = 1.0F;
     private boolean isDraggingPreview;
-    private int selectedSlotIndex = -1;
+    private static final int BULK_HIGHLIGHT_COLOR = 0x80FF8C00;
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, 252, 222);
+        this.inventory = inventory;
     }
 
     @Override
@@ -62,39 +63,11 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         searchBox.setBordered(false);
         addRenderableWidget(searchBox);
 
-        modeButton = Button.builder(getMenu().getMode().getDescription(), _ -> cycleMode())
-                .bounds(leftPos + 8, topPos + 156, 48, 20)
-                .build();
-        addRenderableWidget(modeButton);
-
         previewModeButton = Button.builder(PREVIEW_MODES.get(previewModeIndex).getDescription(), _ -> cyclePreviewMode())
                 .bounds(leftPos + 7, topPos + 3, 48, 20)
                 .build();
         addRenderableWidget(previewModeButton);
 
-        Button confirmButton = Button.builder(Component.translatable("chisel.gui.confirm"), _ -> confirmChisel())
-                .bounds(leftPos + 8, topPos + 96, 48, 20)
-                .build();
-        addRenderableWidget(confirmButton);
-    }
-
-    private void confirmChisel() {
-        if (selectedSlotIndex < 0) return;
-        if (getMenu().variants.getItem(selectedSlotIndex).isEmpty()) return;
-        Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselConfirmPacket(selectedSlotIndex));
-        selectedSlotIndex = -1;
-    }
-
-    private void cycleMode() {
-        ChiselMode currentMode = getMenu().getMode();
-        List<ChiselMode> modes = new ArrayList<>(ChiselModes.REGISTRY.stream().toList());
-
-        int index = modes.indexOf(currentMode);
-        ChiselMode nextMode = modes.get((index + 1) % modes.size());
-
-        getMenu().setMode(nextMode);
-        modeButton.setMessage(nextMode.getDescription());
-        Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselModePacket(nextMode));
     }
 
     private void cyclePreviewMode() {
@@ -153,11 +126,47 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     protected void slotClicked(@NonNull Slot slot, int slotId, int buttonNum, @NonNull ContainerInput containerInput) {
         if (slot instanceof SelectionSlot) {
             if (buttonNum == 0 && !slot.getItem().isEmpty()) {
-                selectedSlotIndex = slot.getContainerSlot();
+                boolean bulk = containerInput == ContainerInput.QUICK_MOVE;
+                if (!bulk) getMenu().selectVariant(getMinecraft().player, slot.getContainerSlot(), false);
+                Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselSelectionPacket(slot.getContainerSlot(), bulk));
             }
             return;
         }
         super.slotClicked(slot, slotId, buttonNum, containerInput);
+    }
+
+    @Override
+    public void extractContents(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+        super.extractContents(graphics, mouseX, mouseY, partialTick);
+        if (!ChiselKeyMappings.MODE_SELECT.isDown() || !(hoveredSlot instanceof SelectionSlot)) return;
+
+        ItemStack target = hoveredSlot.getItem();
+        ItemStack input = getMenu().inputSlot.getItem();
+        if (!(target.getItem() instanceof BlockItem targetItem) || !(input.getItem() instanceof BlockItem inputItem)) return;
+        VariantFamily family = VariantFinder.getFamilyForBlock(inputItem.getBlock(), inventory.player.level().registryAccess());
+        if (family == null || !family.isBlockInFamily(targetItem.getBlock())) return;
+
+        highlightSlot(graphics, getMenu().inputSlot);
+        int uses = ChiselItem.getAvailableUses(getMenu().getChisel(), inventory.player);
+        for (int inventoryIndex = 0; inventoryIndex < inventory.getContainerSize() && uses > 0; inventoryIndex++) {
+            ItemStack stack = inventory.getItem(inventoryIndex);
+            if (!(stack.getItem() instanceof BlockItem blockItem)) continue;
+            if (!family.isBlockInFamily(blockItem.getBlock()) || stack.getItem() == target.getItem()) continue;
+
+            Slot menuSlot = getPlayerSlot(inventoryIndex);
+            if (menuSlot != null) highlightSlot(graphics, menuSlot);
+            uses -= Math.min(uses, stack.getCount());
+        }
+    }
+
+    private Slot getPlayerSlot(int inventoryIndex) {
+        for (Slot slot : getMenu().slots)
+            if (slot.container == inventory && slot.getContainerSlot() == inventoryIndex) return slot;
+        return null;
+    }
+
+    private void highlightSlot(GuiGraphicsExtractor graphics, Slot slot) {
+        graphics.fill(leftPos + slot.x, topPos + slot.y, leftPos + slot.x + 16, topPos + slot.y + 16, BULK_HIGHLIGHT_COLOR);
     }
 
     private boolean isHoveringScroller(double mouseX, double mouseY) {
@@ -220,15 +229,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
             int y0 = topPos + 26;
             int x1 = x0 + 48;
             int y1 = y0 + 48;
-            BlockItem previewItem = blockItem;
-            if (selectedSlotIndex >= 0) {
-                ItemStack sel = getMenu().variants.getItem(selectedSlotIndex);
-                if (sel.getItem() instanceof BlockItem selBlockItem) {
-                    previewItem = selBlockItem;
-                }
-            }
             graphics.submitPictureInPictureRenderState(new PreviewPIPState(
-                    previewItem.getBlock().defaultBlockState(),
+                    blockItem.getBlock().defaultBlockState(),
                     previewMode.positions(),
                     previewRotX, previewRotY,
                     previewZoom,
@@ -243,21 +245,10 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         int k = (int)(75.0F * scrollOffs);
         graphics.blitSprite(RenderPipelines.GUI_TEXTURED, canScroll() ? SCROLLER_SPRITE : SCROLLER_DISABLED_SPRITE, leftPos + 229, topPos + 6 + k, 12, 15);
 
-        if (selectedSlotIndex >= 0 && selectedSlotIndex < 45) {
-            if (getMenu().variants.getItem(selectedSlotIndex).isEmpty()) {
-                selectedSlotIndex = -1;
-            } else {
-                int sx = leftPos + 62 + (selectedSlotIndex % 9) * 18;
-                int sy = topPos + 26 + (selectedSlotIndex / 9) * 18;
-                graphics.fill(sx, sy, sx + 16, sy + 16, 0x80FF842B);
-            }
-        }
-
     }
 
     @Override
     public void extractLabels(@NonNull GuiGraphicsExtractor graphics, int xm, int ym) {
         graphics.text(font, Component.translatable("chisel.gui.search"), 90, 10, -12566464, false);
-        graphics.text(font, Component.translatable("chisel.gui.mode"), 21, 145, -12566464, false);
     }
 }
