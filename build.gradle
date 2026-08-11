@@ -162,6 +162,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
     mainFile.addModLoader("neoforge")
     mainFile.releaseType = release_type
     mainFile.addRequirement("ctm-lib")
+    mainFile.addGameVersion("Client", "Server")
 }
 
 modrinth {
