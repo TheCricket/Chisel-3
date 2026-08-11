@@ -1,9 +1,9 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
+    "north",
     "south",
     "west",
-    "north",
     "east"
   ],
   "model_location": "chisel:block/bookshelf_cherry_cans",

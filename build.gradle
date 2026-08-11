@@ -121,7 +121,7 @@ configurations {
 }
 
 dependencies {
-    implementation("maven.modrinth:QWVAzrUc:${ctm_version}")
+    implementation("maven.modrinth:ctmlib:${ctm_version}")
     implementation("maven.modrinth:jade:${jade_version}")
 
     // compile against the JEI API but do not include it at runtime
