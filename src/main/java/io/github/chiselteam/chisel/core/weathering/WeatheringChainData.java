@@ -37,7 +37,7 @@ public record WeatheringChainData(List<Identifier> blocks, float agingRate, Map<
     /// - `waxed_map` (map of `string` to `string`, optional): unwaxed to waxed mapping
     public static final Codec<WeatheringChainData> CODEC = RecordCodecBuilder.create(i -> i.group(
             Identifier.CODEC.listOf().fieldOf("blocks").forGetter(WeatheringChainData::blocks),
-            Codec.FLOAT.optionalFieldOf("aging_rate", 0.25f).forGetter(WeatheringChainData::agingRate),
+            Codec.FLOAT.optionalFieldOf("aging_rate", 0.05688889F).forGetter(WeatheringChainData::agingRate),
             Codec.unboundedMap(Identifier.CODEC, Identifier.CODEC).optionalFieldOf("waxed_map", Collections.emptyMap()).forGetter(WeatheringChainData::waxedMap)
     ).apply(i, WeatheringChainData::new));
 }

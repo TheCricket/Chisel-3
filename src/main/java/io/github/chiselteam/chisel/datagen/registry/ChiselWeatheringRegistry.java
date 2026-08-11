@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.datagen.registry;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.core.weathering.WeatheringChainData;
 import io.github.chiselteam.chisel.core.weathering.WeatheringChains;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
@@ -45,13 +46,13 @@ public class ChiselWeatheringRegistry {
                             BuiltInRegistries.BLOCK.getKey(weathered),
                             BuiltInRegistries.BLOCK.getKey(oxidized)
                     ),
-                    0.25f,
+                    0.05688889F,
                     waxedMap
             ));
         });
     }
 
-    private static void addWaxed(Map<Identifier, Identifier> map, Block unwaxed, String waxedName, io.github.chiselteam.chisel.block.util.ChiselFamily family) {
+    private static void addWaxed(Map<Identifier, Identifier> map, Block unwaxed, String waxedName, ChiselFamily family) {
         Block waxed = family.getVariant(waxedName).get();
         map.put(BuiltInRegistries.BLOCK.getKey(unwaxed), BuiltInRegistries.BLOCK.getKey(waxed));
         WeatheringChains.registerWaxable(unwaxed, waxed);

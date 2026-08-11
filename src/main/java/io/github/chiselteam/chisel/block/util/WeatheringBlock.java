@@ -74,7 +74,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
     @Override
     public void randomTick(BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, @NonNull RandomSource random) {
         WeatheringChains.getNext(state.getBlock()).ifPresent(nextBlock -> {
-            float rate = WeatheringChains.getRate(state.getBlock(), 0.25f);
+            float rate = WeatheringChains.getRate(state.getBlock(), 0.05688889F);
             if (random.nextFloat() < rate) {
                 BlockState nextState = copySharedProperties(state, nextBlock.defaultBlockState());
                 level.setBlock(pos, nextState, Block.UPDATE_ALL);
