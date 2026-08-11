@@ -155,7 +155,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public void clicked(int slotIndex, int buttonNum, ContainerInput containerInput, Player player) {
+    public void clicked(int slotIndex, int buttonNum, @NonNull ContainerInput containerInput, @NonNull Player player) {
         if (slotIndex == ChiselSelectionInventory.VISIBLE_SIZE && isWholeStackReplacement(containerInput)) {
             ItemStack working = inputSlot.getItem();
             if (!working.isEmpty() && getAffordableRemoval(working.getCount()) < working.getCount()) return;
@@ -181,12 +181,12 @@ public class ChiselMenu extends AbstractContainerMenu {
 
         ItemStack result = input.transmuteCopy(selected.getItem(), input.getCount());
         ((ChiselInputSlot) inputSlot).setWorking(result);
-        if (bulk) bulkConvert(player, family, selected);
+        if (bulk) bulkConvert(player, family, selected, input.getCount());
         broadcastChanges();
     }
 
-    private void bulkConvert(Player player, VariantFamily family, ItemStack selected) {
-        int uses = ChiselItem.getAvailableUses(container.chisel, player);
+    private void bulkConvert(Player player, VariantFamily family, ItemStack selected, int reservedUses) {
+        int uses = ChiselItem.getAvailableUses(container.chisel, player) - reservedUses;
         if (uses <= 0) return;
         int converted = 0;
         Inventory inventory = player.getInventory();

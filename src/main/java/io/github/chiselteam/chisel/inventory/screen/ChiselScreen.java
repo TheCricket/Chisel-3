@@ -5,10 +5,10 @@ import io.github.chiselteam.chisel.client.gui.PreviewPIPState;
 import io.github.chiselteam.chisel.client.gui.modes.*;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.inventory.menu.ChiselMenu;
-import io.github.chiselteam.chisel.network.ChiselSelectionPacket;
-import io.github.chiselteam.chisel.network.ChiselSearchPacket;
+import io.github.chiselteam.chisel.inventory.slot.SelectionSlot;
 import io.github.chiselteam.chisel.item.ChiselItem;
-import io.github.chiselteam.chisel.registry.ChiselKeyMappings;
+import io.github.chiselteam.chisel.network.ChiselSearchPacket;
+import io.github.chiselteam.chisel.network.ChiselSelectionPacket;
 import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
@@ -17,16 +17,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.RenderPipelines;
-import net.minecraft.world.inventory.ContainerInput;
-import io.github.chiselteam.chisel.inventory.slot.SelectionSlot;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
+import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 import java.util.Objects;
@@ -47,7 +47,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private float previewRotY = 0.0F;
     private float previewZoom = 1.0F;
     private boolean isDraggingPreview;
-    private static final int BULK_HIGHLIGHT_COLOR = 0x80FF8C00;
+    private static final int BULK_HIGHLIGHT_COLOR = 0x80FF842B;
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, 252, 222);
@@ -80,7 +80,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         if (searchBox.keyPressed(event)) {
             return true;
         }
-        if (searchBox.isFocused() && searchBox.isVisible() && event.key() != 256/*ESC*/) {
+        if (searchBox.isFocused() && searchBox.isVisible() && event.key() != GLFW.GLFW_KEY_ESCAPE) {
             return true;
         }
         return super.keyPressed(event);
@@ -135,10 +135,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         super.slotClicked(slot, slotId, buttonNum, containerInput);
     }
 
-    @Override
-    public void extractContents(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        super.extractContents(graphics, mouseX, mouseY, partialTick);
-        if (!ChiselKeyMappings.MODE_SELECT.isDown() || !(hoveredSlot instanceof SelectionSlot)) return;
+    private void extractBulkHighlights(GuiGraphicsExtractor graphics) {
+        if (!getMinecraft().hasShiftDown() || !(hoveredSlot instanceof SelectionSlot)) return;
 
         ItemStack target = hoveredSlot.getItem();
         ItemStack input = getMenu().inputSlot.getItem();
@@ -147,7 +145,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         if (family == null || !family.isBlockInFamily(targetItem.getBlock())) return;
 
         highlightSlot(graphics, getMenu().inputSlot);
-        int uses = ChiselItem.getAvailableUses(getMenu().getChisel(), inventory.player);
+        int uses = ChiselItem.getAvailableUses(getMenu().getChisel(), inventory.player) - input.getCount();
         for (int inventoryIndex = 0; inventoryIndex < inventory.getContainerSize() && uses > 0; inventoryIndex++) {
             ItemStack stack = inventory.getItem(inventoryIndex);
             if (!(stack.getItem() instanceof BlockItem blockItem)) continue;
@@ -220,6 +218,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         super.extractBackground(graphics, mouseX, mouseY, a);
 
         graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 252, 202, 256, 256);
+        extractBulkHighlights(graphics);
 
         Slot main = getMenu().inputSlot;
 
