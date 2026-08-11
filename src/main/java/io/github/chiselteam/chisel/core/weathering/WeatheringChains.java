@@ -23,6 +23,7 @@ public final class WeatheringChains {
     private static final Map<Block, Block> NEXT = new ConcurrentHashMap<>();
     private static final Map<Block, Block> PREV = new ConcurrentHashMap<>();
     private static final Map<Block, Float> RATE = new ConcurrentHashMap<>();
+    private static final Map<Block, Integer> AGE = new ConcurrentHashMap<>();
     private static final Map<Block, Block> WAXED = new ConcurrentHashMap<>();
     private static final Map<Block, Block> UNWAXED = new ConcurrentHashMap<>();
 
@@ -33,6 +34,7 @@ public final class WeatheringChains {
         NEXT.clear();
         PREV.clear();
         RATE.clear();
+        AGE.clear();
         WAXED.clear();
         UNWAXED.clear();
 
@@ -77,6 +79,7 @@ public final class WeatheringChains {
         for (int i = 0; i < blocks.size(); i++) {
             Block current = blocks.get(i);
             RATE.put(current, agingRate);
+            AGE.put(current, i);
             if (i < blocks.size() - 1) {
                 Block next = blocks.get(i + 1);
                 NEXT.put(current, next);
@@ -96,6 +99,10 @@ public final class WeatheringChains {
 
     public static float getRate(Block b, float def) {
         return RATE.getOrDefault(b, def);
+    }
+
+    public static Optional<Integer> getAge(Block b) {
+        return Optional.ofNullable(AGE.get(b));
     }
 
     public static Optional<Block> getWaxed(Block b) {

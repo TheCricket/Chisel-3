@@ -10,7 +10,7 @@ import java.util.Map;
 
 /// Datapack entry describing a single weathering chain.
 /// - `blocks`: ordered list of block identifiers from youngest to oldest
-/// - `aging_rate`: chance `[0..1]` per random tick to advance one stage (defaults to `0.25`)
+/// - `aging_rate`: chance `[0..1]` per random tick to enter the pre-weathering check
 /// - `waxed_map`: map of unwaxed block identifiers to waxed block identifiers
 /// Example JSON:
 /// ```json
@@ -33,7 +33,8 @@ public record WeatheringChainData(List<Identifier> blocks, float agingRate, Map<
     /// Codec for serializing/deserializing `WeatheringChainData` from datapack JSON.
     /// Fields:
     /// - `blocks` (array of `string`): block ids in order from youngest to oldest
-    /// - `aging_rate` (number, optional): chance per random tick; defaults to `0.25`
+    /// - `aging_rate` (number, optional): chance per random tick to run the nearby-block check;
+    ///   defaults to vanilla copper's `64 / 1125`
     /// - `waxed_map` (map of `string` to `string`, optional): unwaxed to waxed mapping
     public static final Codec<WeatheringChainData> CODEC = RecordCodecBuilder.create(i -> i.group(
             Identifier.CODEC.listOf().fieldOf("blocks").forGetter(WeatheringChainData::blocks),

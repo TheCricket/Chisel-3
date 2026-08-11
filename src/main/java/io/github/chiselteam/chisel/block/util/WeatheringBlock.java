@@ -73,12 +73,37 @@ public class WeatheringBlock extends ConnectedTextureBlock {
 
     @Override
     public void randomTick(BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, @NonNull RandomSource random) {
-        WeatheringChains.getNext(state.getBlock()).ifPresent(nextBlock -> {
-            float rate = WeatheringChains.getRate(state.getBlock(), 0.05688889F);
-            if (random.nextFloat() < rate) {
-                BlockState nextState = copySharedProperties(state, nextBlock.defaultBlockState());
-                level.setBlock(pos, nextState, Block.UPDATE_ALL);
-            }
-        });
+        Block currentBlock = state.getBlock();
+        Block nextBlock = WeatheringChains.getNext(currentBlock).orElse(null);
+        if (nextBlock == null) return;
+
+        float rate = WeatheringChains.getRate(currentBlock, 0.05688889F);
+        if (random.nextFloat() >= rate) return;
+
+        int currentAge = WeatheringChains.getAge(currentBlock).orElse(0);
+        int sameAge = 0;
+        int higherAge = 0;
+
+        for (BlockPos nearbyPos : BlockPos.withinManhattan(pos, 4, 4, 4)) {
+            int distance = nearbyPos.distManhattan(pos);
+            if (distance > 4) break;
+            if (nearbyPos.equals(pos)) continue;
+
+            Block nearbyBlock = level.getBlockState(nearbyPos).getBlock();
+            Integer nearbyAge = WeatheringChains.getAge(nearbyBlock).orElse(null);
+            if (nearbyAge == null) continue;
+
+            // A less-weathered block prevents this block from advancing.
+            if (nearbyAge < currentAge) return;
+            if (nearbyAge > currentAge) higherAge++;
+            else sameAge++;
+        }
+
+        float proportion = (higherAge + 1.0F) / (higherAge + sameAge + 1.0F);
+        float modifier = currentAge == 0 ? 0.75F : 1.0F;
+        if (random.nextFloat() < modifier * proportion * proportion) {
+            BlockState nextState = copySharedProperties(state, nextBlock.defaultBlockState());
+            level.setBlock(pos, nextState, Block.UPDATE_ALL);
+        }
     }
 }
