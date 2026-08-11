@@ -4,9 +4,11 @@ import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.inventory.container.ChiselContainer;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.ContainerUser;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
@@ -150,8 +152,12 @@ public class ChiselSelectionInventory implements Container {
     public void updateFilteredItems() {
         filteredItems.clear();
         for (ItemStack stack : allItems) {
-            if (filter.isEmpty() || stack.getHoverName().getString().toLowerCase(Locale.ROOT).contains(filter)) {
+            if (filter.isEmpty()) filteredItems.add(stack);
+            else if (stack.getHoverName().getString().toLowerCase(Locale.ROOT).contains(filter))
                 filteredItems.add(stack);
+            else if (stack.getItem() instanceof BlockItem blockItem) {
+                if (Component.translatable("%s.desc".formatted(blockItem.getDescriptionId())).getString().toLowerCase(Locale.ROOT).contains(filter))
+                    filteredItems.add(stack);
             }
         }
         activeVariants = filteredItems.size();
