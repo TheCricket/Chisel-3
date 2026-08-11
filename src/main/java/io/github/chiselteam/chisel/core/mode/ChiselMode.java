@@ -1,12 +1,13 @@
 package io.github.chiselteam.chisel.core.mode;
-import io.github.chiselteam.chisel.registry.ChiselStats;
-import io.github.chiselteam.chisel.item.ChiselItem;
+
 import com.mojang.serialization.Codec;
-import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.core.variant.Variant;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselBlockTags;
+import io.github.chiselteam.chisel.item.ChiselItem;
+import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
+import io.github.chiselteam.chisel.registry.ChiselStats;
 import io.github.chiselteam.chisel.util.VariantFinder;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.core.BlockPos;
@@ -69,6 +70,9 @@ public class ChiselMode {
                 for (BlockPos p : affected) {
                     chiselBlock(level, player, hand, p, nextState, chisel);
                 }
+                if (!affected.isEmpty()) {
+                    playEffects(level, player, pos, nextState);
+                }
                 break;
             }
         }
@@ -76,14 +80,21 @@ public class ChiselMode {
 
     protected void chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
         level.setBlockAndUpdate(pos, state);
-        level.addDestroyBlockEffect(pos, state);
-        level.playSound(null, pos, state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(), SoundSource.BLOCKS);
         player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
         ChiselItem.hurtAndBreak(chisel, 1, player, hand);
     }
 
+    protected void playEffects(Level level, Player player, BlockPos hitPos, BlockState state) {
+        level.addDestroyBlockEffect(hitPos, state);
+        level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(),
+                SoundSource.PLAYERS);
+    }
+
     protected boolean isSameBlock(Level level, BlockState base, BlockState test) {
-        return VariantFinder.getFamilyForBlock(base.getBlock(), level.registryAccess()).isBlockInFamily(test.getBlock());
+        VariantFamily family = VariantFinder.getFamilyForBlock(base.getBlock(), level.registryAccess());
+        if (family == null) return false;
+        return family.isBlockInFamily(test.getBlock());
     }
 
     @Override

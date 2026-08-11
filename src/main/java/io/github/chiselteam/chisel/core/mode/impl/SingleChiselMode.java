@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SingleChiselMode extends ChiselMode {
@@ -19,6 +19,8 @@ public class SingleChiselMode extends ChiselMode {
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
-        return Collections.singletonList(pos);
+        List<BlockPos> affected = new ArrayList<>();
+        if (isSameBlock(level, state, level.getBlockState(pos))) affected.add(pos);
+        return affected;
     }
 }

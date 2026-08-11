@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.core.mode.impl;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
 
+import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
@@ -11,23 +12,21 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.*;
 
-public class ShapelessFlat extends ChiselMode {
+public class ShapelessExactMode extends ChiselMode {
     private static final int SEARCH_RADIUS = 10;
-    private static final int MAX_AFFECTED_BLOCKS = 256;
+    private static final int MAX_AFFECTED_BLOCKS = 512;
 
-    public ShapelessFlat() {
-        super(Chisel.prefix("shapeless_flat"));
+    public ShapelessExactMode() {
+        super(Chisel.prefix("shapeless_exact"));
     }
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
+        if (VariantFinder.getFamilyForBlock(state.getBlock(), level.registryAccess()) == null) return List.of();
+
         List<BlockPos> affected = new ArrayList<>(Math.min(MAX_AFFECTED_BLOCKS, 64));
         Queue<Long> toProcess = new ArrayDeque<>();
         Set<Long> visited = new HashSet<>();
-
-        Direction up = side.getAxis().isVertical() ? Direction.NORTH : Direction.UP;
-        Direction right = side.getAxis().isVertical() ? Direction.EAST : side.getClockWise();
-        Direction[] directions = {up, up.getOpposite(), right, right.getOpposite()};
 
         long origin = pos.asLong();
         toProcess.add(origin);
@@ -45,11 +44,12 @@ public class ShapelessFlat extends ChiselMode {
             int z = BlockPos.getZ(packedPos);
 
             mutablePos.set(x, y, z);
-            if (!isSameBlock(level, state, level.getBlockState(mutablePos))) continue;
+
+            if (level.getBlockState(mutablePos).getBlock() != state.getBlock()) continue;
 
             affected.add(BlockPos.of(packedPos));
 
-            for (Direction direction : directions) {
+            for (Direction direction : Direction.values()) {
                 int nextX = x + direction.getStepX();
                 int nextY = y + direction.getStepY();
                 int nextZ = z + direction.getStepZ();

@@ -22,7 +22,7 @@ public class RowChiselMode extends ChiselMode {
         List<BlockPos> affected = new ArrayList<>(3);
         Direction right = side.getAxis().isVertical() ? Direction.EAST : side.getClockWise();
 
-        affected.add(pos);
+        if (isSameBlock(level, state, level.getBlockState(pos))) affected.add(pos);
 
         BlockPos rightPos = pos.relative(right);
         if (isSameBlock(level, state, level.getBlockState(rightPos))) affected.add(rightPos);

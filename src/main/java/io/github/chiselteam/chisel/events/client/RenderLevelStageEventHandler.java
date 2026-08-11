@@ -34,6 +34,7 @@ public class RenderLevelStageEventHandler {
     private static BlockPos cachedTarget;
     private static Direction cachedDirection;
     private static ChiselMode cachedMode;
+    private static List<BlockPos> cachedAffectedBlocks = List.of();
     private static List<OutlineEdge> cachedEdges = List.of();
 
     @SubscribeEvent
@@ -105,8 +106,6 @@ public class RenderLevelStageEventHandler {
         Direction direction = hitResult.getDirection();
         ChiselMode mode = chisel.getOrDefault(ChiselDataComponents.CHISEL_MODE, ChiselModes.SINGLE.value());
 
-        if (target.equals(cachedTarget) && direction == cachedDirection && mode == cachedMode) return;
-
         BlockState targetedState = level.getBlockState(target);
         if (targetedState.isAir()) {
             clearChiselOutline();
@@ -119,6 +118,11 @@ public class RenderLevelStageEventHandler {
             return;
         }
 
+        if (target.equals(cachedTarget)
+                && direction == cachedDirection
+                && mode == cachedMode
+                && affectedBlocks.equals(cachedAffectedBlocks)) return;
+
         List<OutlineEdge> edges = createBlockOutlineEdges(affectedBlocks, target);
         if (edges.isEmpty()) {
             clearChiselOutline();
@@ -128,6 +132,7 @@ public class RenderLevelStageEventHandler {
         cachedTarget = target.immutable();
         cachedDirection = direction;
         cachedMode = mode;
+        cachedAffectedBlocks = List.copyOf(affectedBlocks);
         cachedEdges = edges;
     }
 
@@ -246,6 +251,7 @@ public class RenderLevelStageEventHandler {
         cachedTarget = null;
         cachedDirection = null;
         cachedMode = null;
+        cachedAffectedBlocks = List.of();
         cachedEdges = List.of();
     }
 }

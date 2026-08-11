@@ -21,7 +21,7 @@ public class ColumnChiselMode extends ChiselMode {
         List<BlockPos> affected = new ArrayList<>(3);
         Direction up = side.getAxis().isVertical() ? Direction.NORTH : Direction.UP;
 
-        affected.add(pos);
+        if (isSameBlock(level, state, level.getBlockState(pos))) affected.add(pos);
 
         BlockPos upPos = pos.relative(up);
         if (isSameBlock(level, state, level.getBlockState(upPos))) affected.add(upPos);

@@ -20,7 +20,9 @@ public class ChiselModes {
     public static final DeferredHolder<ChiselMode, ChiselMode> COLUMN = MODES.register("column", ColumnChiselMode::new);
     public static final DeferredHolder<ChiselMode, ChiselMode> ROW = MODES.register("row", RowChiselMode::new);
     public static final DeferredHolder<ChiselMode, ChiselMode> SHAPELESS = MODES.register("shapeless", ShapelessMode::new);
-    public static final DeferredHolder<ChiselMode, ChiselMode> SHAPELESS_FLAT = MODES.register("shapeless_flat", ShapelessFlat::new);
+    public static final DeferredHolder<ChiselMode, ChiselMode> SHAPELESS_FLAT = MODES.register("shapeless_flat", ShapelessFlatMode::new);
+    public static final DeferredHolder<ChiselMode, ChiselMode> SHAPELESS_EXACT = MODES.register("shapeless_exact", ShapelessExactMode::new);
+    public static final DeferredHolder<ChiselMode, ChiselMode> SHAPELESS_FLAT_EXACT = MODES.register("shapeless_flat_exact", ShapelessFlatExactMode::new);
 
     public static void register(IEventBus bus) {
         MODES.register(bus);
