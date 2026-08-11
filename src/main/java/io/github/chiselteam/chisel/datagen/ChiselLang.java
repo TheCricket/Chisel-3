@@ -41,6 +41,8 @@ public class ChiselLang extends LangHelper {
         addContainer("auto_chisel", "Auto Chisel");
 
         add("chisel.gui.search", "Search:");
+        add("chisel.gui.no_variants", "No matching variants");
+        add("chisel.search", "Search");
 
         addPreviewMode("donut", "Donut");
         addPreviewMode("panel", "Panel");
@@ -55,6 +57,8 @@ public class ChiselLang extends LangHelper {
         addChiselMode("row", "Row");
         addChiselMode("shapeless", "Shapeless");
         addChiselMode("shapeless_flat", "Shapeless Flat");
+        addChiselMode("shapeless_exact", "Shapeless Exact");
+        addChiselMode("shapeless_flat_exact", "Shapeless Flat Exact");
 
         // Builders Guide - Building Modes
         addBuildingMode("cuboid", "Cuboid (Edges)");

@@ -2,9 +2,11 @@ package io.github.chiselteam.chisel.integration.jei;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.datagen.ChiselVariants;
+import io.github.chiselteam.chisel.inventory.screen.AutoChiselScreen;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
@@ -39,5 +41,10 @@ public class JEICompatibility implements IModPlugin {
         registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_IRON.get()));
         registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_DIAMOND.get()));
         registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_OBSIDIAN.get()));
+    }
+
+    @Override
+    public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+        registration.addGenericGuiContainerHandler(AutoChiselScreen.class, new AutoChiselPickerBounds());
     }
 }

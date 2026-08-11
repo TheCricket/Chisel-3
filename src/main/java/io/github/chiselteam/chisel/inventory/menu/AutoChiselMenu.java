@@ -1,13 +1,18 @@
 package io.github.chiselteam.chisel.inventory.menu;
 
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.inventory.slot.AutoChiselInputSlot;
 import io.github.chiselteam.chisel.inventory.slot.UpgradeSlot;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import io.github.chiselteam.chisel.registry.ChiselMenus;
+import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.core.RegistryAccess;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -15,7 +20,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import org.jspecify.annotations.NonNull;
 
 public class AutoChiselMenu extends AbstractContainerMenu {
@@ -207,5 +214,28 @@ public class AutoChiselMenu extends AbstractContainerMenu {
             return be.isInputInvalid(slot);
         }
         return false;
+    }
+
+    public void selectTemplateVariant(Player player, Identifier blockId) {
+        Slot templateSlot = slots.get(TEMPLATE_SLOT);
+        Slot chiselSlot = slots.get(CHISEL_SLOT);
+        ItemStack template = templateSlot.getItem();
+        ItemStack chisel = chiselSlot.getItem();
+        if (!(template.getItem() instanceof BlockItem templateItem)) return;
+        if (chisel.isEmpty() || !chisel.canPerformAction(ChiselItemAbilities.CHISEL)) return;
+        if (chisel.isDamageableItem() && chisel.getDamageValue() >= chisel.getMaxDamage()) return;
+        if (!(player.level() instanceof ServerLevel serverLevel)) return;
+
+        Block selected = BuiltInRegistries.BLOCK.getOptional(blockId).orElse(null);
+        if (selected == null || selected.asItem() == net.minecraft.world.item.Items.AIR) return;
+        if (selected.asItem() == template.getItem()) return;
+        VariantFamily family = VariantFinder.getFamilyForBlock(templateItem.getBlock(), player.level().registryAccess());
+        if (family == null || !family.isBlockInFamily(selected)) return;
+
+        templateSlot.set(template.transmuteCopy(selected.asItem(), 1));
+        templateSlot.setChanged();
+        chisel.hurtAndBreak(1, serverLevel, null, _ -> chiselSlot.set(ItemStack.EMPTY));
+        chiselSlot.setChanged();
+        broadcastChanges();
     }
 }
