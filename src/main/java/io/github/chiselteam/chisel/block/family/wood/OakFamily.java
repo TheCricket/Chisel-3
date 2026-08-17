@@ -23,7 +23,7 @@ public class OakFamily extends ChiselFamily {
                 .addVariant("oak_planks_log_bordered", props, CONNECTED)
                 .addVariant("oak_planks_log_cabin_ns", props, CONNECTED)
                 .addVariant("oak_planks_log_cabin_ew", props, CONNECTED)
-                .addVariant("oak_planks_paneling", props)
+                .addVariant("oak_planks_paneling", props, CONNECTED)
                 .addVariant("oak_planks_shipping", props, CONNECTED)
                 .addVariant("oak_planks_smooth", props, CONNECTED)
                 .addVariant("oak_planks_stacked", props)
