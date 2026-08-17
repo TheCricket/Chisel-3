@@ -45,6 +45,7 @@ public class ChiselTabs {
                     ChiselBlocks.OBSIDIAN.getFamily(),
                     ChiselBlocks.PRISMARINE.getFamily(),
                     ChiselBlocks.PURPUR.getFamily(),
+                    ChiselBlocks.QUARTZ.getFamily(),
                     ChiselBlocks.RED_SANDSTONE.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
                     ChiselBlocks.SHINGLE.getFamily(),

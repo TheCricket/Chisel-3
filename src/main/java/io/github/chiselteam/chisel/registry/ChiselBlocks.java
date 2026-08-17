@@ -105,6 +105,7 @@ public class ChiselBlocks {
     public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(Properties.ofFullCopy(Blocks.OBSIDIAN));
     public static final PaperwallFamily PAPERWALL = new PaperwallFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final PlatinumFamily PLATINUM = new PlatinumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final QuartzFamily QUARTZ = new QuartzFamily(Properties.ofFullCopy(Blocks.QUARTZ_BLOCK));
     public static final PrismarineFamily PRISMARINE = new PrismarineFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final PumpkinFamily PUMPKIN = new PumpkinFamily(Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final PurpurFamily PURPUR = new PurpurFamily(Properties.ofFullCopy(Blocks.STONE));
@@ -226,7 +227,7 @@ public class ChiselBlocks {
                 CRIMSON, WARPED, DARK_OAK, CHERRY, BASALT, DIAMOND, DIORITE, DEEPSLATE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE,
                 FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS,
                 JACK_O_LANTERN, JUNGLE, MANGROVE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
-                MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, PALE_OAK, OBSIDIAN, PAPERWALL, PLATINUM, PRISMARINE, PUMPKIN,
+                MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, PALE_OAK, OBSIDIAN, PAPERWALL, PLATINUM, QUARTZ, PRISMARINE, PUMPKIN,
                 PURPUR, RED_SANDSTONE, REDSTONE, REDSTONE_LAMP, ROAD_LINE, SANDSTONE, SHINGLE, SILVER, SPRUCE, STEEL,
                 STONE_BRICKS, TALLOW, TECHNICAL, TEMPLE, TERRACOTTA, THAUMIUM, TIN, TORCH, TYRIAN, URANIUM, VALENTINES,
                 VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY

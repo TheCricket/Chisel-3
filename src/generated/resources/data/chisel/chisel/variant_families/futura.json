@@ -4,18 +4,23 @@
   "variants": [
     {
       "block": "chisel:futura_controller",
-      "model_type": "multi_layer",
+      "model_type": "multi_layer_connected_glow",
       "name": "futura_controller"
     },
     {
       "block": "chisel:futura_controller_purple",
-      "model_type": "multi_layer",
+      "model_type": "multi_layer_connected_glow",
       "name": "futura_controller_purple"
     },
     {
       "block": "chisel:futura_rainbow",
       "model_type": "multi_layer",
       "name": "futura_rainbow"
+    },
+    {
+      "block": "chisel:futura_rainbow_orange",
+      "model_type": "multi_layer_connected_glow",
+      "name": "futura_rainbow_orange"
     },
     {
       "block": "chisel:futura_screen_cyan",

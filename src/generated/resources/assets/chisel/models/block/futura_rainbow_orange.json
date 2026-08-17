@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/futura/futura_rainbow_orange",
+    "base_texture": "chisel:block/futura/futura_rainbow_orange-bg",
+    "layer0": "chisel:block/futura/futura_rainbow_orange-bg",
+    "layer1": "chisel:block/futura/futura_rainbow_orange",
+    "overlay_connected": "chisel:block/futura/futura_rainbow_orange-ctm",
+    "overlay_texture": "chisel:block/futura/futura_rainbow_orange",
+    "particle": "chisel:block/futura/futura_rainbow_orange"
+  }
+}

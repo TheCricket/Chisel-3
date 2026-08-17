@@ -1,11 +1,12 @@
 {
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
+    "all": "chisel:block/futura/futura_controller_purple",
+    "base_texture": "chisel:block/futura/futura_controller_purple-bg",
     "layer0": "chisel:block/futura/futura_controller_purple-bg",
-    "layer1": {
-      "force_translucent": true,
-      "sprite": "chisel:block/futura/futura_controller_purple"
-    },
+    "layer1": "chisel:block/futura/futura_controller_purple",
+    "overlay_connected": "chisel:block/futura/futura_controller_purple-ctm",
+    "overlay_texture": "chisel:block/futura/futura_controller_purple",
     "particle": "chisel:block/futura/futura_controller_purple"
   }
 }
