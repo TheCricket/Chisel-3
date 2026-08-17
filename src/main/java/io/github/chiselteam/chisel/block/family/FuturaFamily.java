@@ -13,6 +13,8 @@ public class FuturaFamily extends ChiselFamily {
                 .addVariant("futura_rainbow", props, MULTI_LAYER)
                 .addVariant("futura_screen_cyan", props, MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("futura_screen_gray", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("futura_matrix", props)
+                .addVariant("futura_matrix_purple", props)
                 .family();
     }
 
@@ -23,5 +25,7 @@ public class FuturaFamily extends ChiselFamily {
         lang.addBlock(getVariant("futura_rainbow"), "Futura Block", "Poptart Rainbow Screen");
         lang.addBlock(getVariant("futura_screen_cyan"), "Futura Block", "Glowing Screen with Cyan Borders");
         lang.addBlock(getVariant("futura_screen_gray"), "Futura Block", "Glowing Screen with Metallic Borders");
+        lang.addBlock(getVariant("futura_matrix"), "Futura Block", "Matrix");
+        lang.addBlock(getVariant("futura_matrix_purple"), "Futura Block", "Matrix");
     }
 }

@@ -26,6 +26,14 @@
       "block": "chisel:futura_screen_gray",
       "model_type": "multi_layer_connected_glow",
       "name": "futura_screen_gray"
+    },
+    {
+      "block": "chisel:futura_matrix",
+      "name": "futura_matrix"
+    },
+    {
+      "block": "chisel:futura_matrix_purple",
+      "name": "futura_matrix_purple"
     }
   ]
 }
