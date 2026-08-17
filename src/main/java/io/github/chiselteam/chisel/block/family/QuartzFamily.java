@@ -21,8 +21,8 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_cracked_bricks", props)
                 .addVariant("quartz_cuts", props, MULTIBLOCK_4X4)
                 .addVariant("quartz_dent", props, CONNECTED)
-                .addVariant("quartz_encased", props, CONNECTED)
-                .addVariant("quartz_french", props)
+                .addVariant("quartz_encased_bricks", props, CONNECTED)
+                .addVariant("quartz_french_1", props)
                 .addVariant("quartz_french_2", props)
                 .addVariant("quartz_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("quartz_layers", props)
@@ -34,22 +34,25 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_raw", props)
                 .addVariant("quartz_road", props)
                 .addVariant("quartz_slanted", props, MULTIBLOCK_2X2)
-                .addVariant("quartz_small", props)
-                .addVariant("quartz_soft", props)
-                .addVariant("quartz_solid", props)
+                .addVariant("quartz_small_bricks", props)
+                .addVariant("quartz_soft_bricks", props)
+                .addVariant("quartz_solid_bricks", props)
                 .addVariant("quartz_tiles_large", props, CONNECTED)
                 .addVariant("quartz_tiles_medium", props)
                 .addVariant("quartz_tiles_small", props)
-                .addVariant("quartz_triple", props)
+                .addVariant("quartz_triple_bricks", props)
                 .addVariant("quartz_twisted", props, TBS)
                 .addVariant("quartz_weaver", props, CONNECTED)
                 .addVariant("quartz_zag", props, AR)
+                .addVariant("quartz_squareborder", props, CONNECTED)
+                .addVariant("quartz_indent", props, CONNECTED)
+                .addVariant("quartz_checker", props)
                 .family();
     }
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("quartz_array"), "Quartz", "Quartz Pillar");
+        lang.addBlock(getVariant("quartz_array"), "Quartz", "Array");
         lang.addBlock(getVariant("quartz_braid"), "Quartz", "Braid");
         lang.addBlock(getVariant("quartz_chaotic"), "Quartz", "Chaotic");
         lang.addBlock(getVariant("quartz_chaotic_medium"), "Quartz", "Quartz Bricks");
@@ -59,8 +62,8 @@ public class QuartzFamily extends ChiselFamily {
         lang.addBlock(getVariant("quartz_cracked_bricks"), "Quartz", "Cracked Bricks");
         lang.addBlock(getVariant("quartz_cuts"), "Quartz", "Cuts");
         lang.addBlock(getVariant("quartz_dent"), "Quartz", "Dent");
-        lang.addBlock(getVariant("quartz_encased"), "Quartz", "Encased");
-        lang.addBlock(getVariant("quartz_french"), "Quartz", "French");
+        lang.addBlock(getVariant("quartz_encased_bricks"), "Quartz", "Encased Bricks");
+        lang.addBlock(getVariant("quartz_french_1"), "Quartz", "French 1");
         lang.addBlock(getVariant("quartz_french_2"), "Quartz", "French 2");
         lang.addBlock(getVariant("quartz_jellybean"), "Quartz", "Jellybean");
         lang.addBlock(getVariant("quartz_layers"), "Quartz", "Layers");
@@ -72,16 +75,19 @@ public class QuartzFamily extends ChiselFamily {
         lang.addBlock(getVariant("quartz_raw"), "Quartz", "Raw");
         lang.addBlock(getVariant("quartz_road"), "Quartz", "Road");
         lang.addBlock(getVariant("quartz_slanted"), "Quartz", "Slanted");
-        lang.addBlock(getVariant("quartz_small"), "Quartz", "Small");
-        lang.addBlock(getVariant("quartz_soft"), "Quartz", "Soft");
-        lang.addBlock(getVariant("quartz_solid"), "Quartz", "Solid");
+        lang.addBlock(getVariant("quartz_small_bricks"), "Quartz", "Small Bricks");
+        lang.addBlock(getVariant("quartz_soft_bricks"), "Quartz", "Soft Bricks");
+        lang.addBlock(getVariant("quartz_solid_bricks"), "Quartz", "Solid Bricks");
         lang.addBlock(getVariant("quartz_tiles_large"), "Quartz", "Large Tiles");
         lang.addBlock(getVariant("quartz_tiles_medium"), "Quartz", "Medium Tiles");
         lang.addBlock(getVariant("quartz_tiles_small"), "Quartz", "Small Tiles");
-        lang.addBlock(getVariant("quartz_triple"), "Quartz", "Triple");
+        lang.addBlock(getVariant("quartz_triple_bricks"), "Quartz", "Triple Bricks");
         lang.addBlock(getVariant("quartz_twisted"), "Quartz", "Twisted");
         lang.addBlock(getVariant("quartz_weaver"), "Quartz", "Weaver");
         lang.addBlock(getVariant("quartz_zag"), "Quartz", "Zag");
+        lang.addBlock(getVariant("quartz_squareborder"), "Quartz", "Square Border");
+        lang.addBlock(getVariant("quartz_indent"), "Quartz", "Indent");
+        lang.addBlock(getVariant("quartz_checker"), "Quartz", "Checker");
     }
 }
 

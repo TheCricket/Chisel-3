@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:quartz_small"
+          "name": "chisel:quartz_soft_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/quartz_small"
+  "random_sequence": "chisel:blocks/quartz_soft_bricks"
 }

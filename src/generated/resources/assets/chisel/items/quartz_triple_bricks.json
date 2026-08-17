@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/quartz_triple"
+    "model": "chisel:block/quartz_triple_bricks"
   }
 }

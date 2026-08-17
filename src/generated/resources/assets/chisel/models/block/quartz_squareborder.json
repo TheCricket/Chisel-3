@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/quartz/quartz_squareborder",
+    "overlay_connected": "chisel:block/quartz/quartz_squareborder-ctm",
+    "overlay_texture": "chisel:block/quartz/quartz_squareborder",
+    "particle": "chisel:block/quartz/quartz_squareborder"
+  }
+}

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:quartz_encased"
+          "name": "chisel:quartz_triple_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/quartz_encased"
+  "random_sequence": "chisel:blocks/quartz_triple_bricks"
 }

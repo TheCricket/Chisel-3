@@ -52,13 +52,13 @@
       "name": "quartz_dent"
     },
     {
-      "block": "chisel:quartz_encased",
+      "block": "chisel:quartz_encased_bricks",
       "model_type": "connected",
-      "name": "quartz_encased"
+      "name": "quartz_encased_bricks"
     },
     {
-      "block": "chisel:quartz_french",
-      "name": "quartz_french"
+      "block": "chisel:quartz_french_1",
+      "name": "quartz_french_1"
     },
     {
       "block": "chisel:quartz_french_2",
@@ -109,16 +109,16 @@
       "name": "quartz_slanted"
     },
     {
-      "block": "chisel:quartz_small",
-      "name": "quartz_small"
+      "block": "chisel:quartz_small_bricks",
+      "name": "quartz_small_bricks"
     },
     {
-      "block": "chisel:quartz_soft",
-      "name": "quartz_soft"
+      "block": "chisel:quartz_soft_bricks",
+      "name": "quartz_soft_bricks"
     },
     {
-      "block": "chisel:quartz_solid",
-      "name": "quartz_solid"
+      "block": "chisel:quartz_solid_bricks",
+      "name": "quartz_solid_bricks"
     },
     {
       "block": "chisel:quartz_tiles_large",
@@ -134,8 +134,8 @@
       "name": "quartz_tiles_small"
     },
     {
-      "block": "chisel:quartz_triple",
-      "name": "quartz_triple"
+      "block": "chisel:quartz_triple_bricks",
+      "name": "quartz_triple_bricks"
     },
     {
       "block": "chisel:quartz_twisted",
@@ -151,6 +151,20 @@
       "block": "chisel:quartz_zag",
       "model_type": "ar",
       "name": "quartz_zag"
+    },
+    {
+      "block": "chisel:quartz_squareborder",
+      "model_type": "connected",
+      "name": "quartz_squareborder"
+    },
+    {
+      "block": "chisel:quartz_indent",
+      "model_type": "connected",
+      "name": "quartz_indent"
+    },
+    {
+      "block": "chisel:quartz_checker",
+      "name": "quartz_checker"
     }
   ]
 }

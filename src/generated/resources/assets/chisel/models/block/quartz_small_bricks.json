@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/quartz/quartz_soft"
+    "all": "chisel:block/quartz/quartz_small_bricks"
   }
 }

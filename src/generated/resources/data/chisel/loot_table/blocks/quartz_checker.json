@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:quartz_french"
+          "name": "chisel:quartz_checker"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/quartz_french"
+  "random_sequence": "chisel:blocks/quartz_checker"
 }
