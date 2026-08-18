@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/mangrove_planks_encased",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:mangrove_planks_encased",
+    "kind": "standard"
+  }
+}

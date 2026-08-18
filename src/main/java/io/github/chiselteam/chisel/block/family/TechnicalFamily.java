@@ -1,9 +1,10 @@
 package io.github.chiselteam.chisel.block.family;
 
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class TechnicalFamily extends ChiselFamily {
     public TechnicalFamily(BlockBehaviour.Properties props) {
@@ -59,9 +60,9 @@ public class TechnicalFamily extends ChiselFamily {
         lang.addBlock(getVariant("technical_125"), "Technical Block", "125");
         lang.addBlock(getVariant("technical_cables"), "Technical Block", "Cables");
         lang.addBlock(getVariant("technical_engineering"), "Technical Block", "Engineering");
-        lang.addBlock(getVariant("technical_engineering_1"), "Technical Block", "Engineering (Variant 1)");
-        lang.addBlock(getVariant("technical_engineering_2"), "Technical Block", "Engineering (Variant 2)");
-        lang.addBlock(getVariant("technical_engineering_3"), "Technical Block", "Engineering (Variant 3)");
+        lang.addBlock(getVariant("technical_engineering_1"), "Technical Block", "Engineering");
+        lang.addBlock(getVariant("technical_engineering_2"), "Technical Block", "Engineering");
+        lang.addBlock(getVariant("technical_engineering_3"), "Technical Block", "Engineering");
         lang.addBlock(getVariant("technical_engineering_prototype"), "Technical Block", "Engineering Prototype");
         lang.addBlock(getVariant("technical_exhaust"), "Technical Block", "Exhaust");
         lang.addBlock(getVariant("technical_fan_fast"), "Technical Block", "Fan (Fast)");
@@ -85,9 +86,9 @@ public class TechnicalFamily extends ChiselFamily {
         lang.addBlock(getVariant("technical_rusty"), "Technical Block", "Rusty");
         lang.addBlock(getVariant("technical_scaffold"), "Technical Block", "Scaffold");
         lang.addBlock(getVariant("technical_scaffold_large"), "Technical Block", "Large Scaffold");
-        lang.addBlock(getVariant("technical_scaffold_large_1"), "Technical Block", "Large Scaffold (Variant 1)");
-        lang.addBlock(getVariant("technical_scaffold_large_2"), "Technical Block", "Large Scaffold (Variant 2)");
-        lang.addBlock(getVariant("technical_scaffold_large_3"), "Technical Block", "Large Scaffold (Variant 3)");
+        lang.addBlock(getVariant("technical_scaffold_large_1"), "Technical Block", "Large Scaffold");
+        lang.addBlock(getVariant("technical_scaffold_large_2"), "Technical Block", "Large Scaffold");
+        lang.addBlock(getVariant("technical_scaffold_large_3"), "Technical Block", "Large Scaffold");
         lang.addBlock(getVariant("technical_scaffold_transparent"), "Technical Block", "Transparent Scaffold");
         lang.addBlock(getVariant("technical_spinning_stuff"), "Technical Block", "Spinning Stuff");
         lang.addBlock(getVariant("technical_sturdy"), "Technical Block", "Sturdy");

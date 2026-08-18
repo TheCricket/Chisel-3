@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/warped_planks/warped_planks_paneling",
+    "overlay_connected": "chisel:block/warped_planks/warped_planks_paneling-ctm",
+    "overlay_texture": "chisel:block/warped_planks/warped_planks_paneling",
+    "particle": "chisel:block/warped_planks/warped_planks_paneling"
+  }
+}

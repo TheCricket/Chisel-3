@@ -7,7 +7,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
@@ -38,9 +37,13 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToWood(ChiselBlocks.ACACIA.getFamily());
         addToWood(ChiselBlocks.BAMBOO.getFamily());
         addToWood(ChiselBlocks.BIRCH.getFamily());
+        addToWood(ChiselBlocks.CHERRY.getFamily());
         addToWood(ChiselBlocks.DARK_OAK.getFamily());
         addToWood(ChiselBlocks.JUNGLE.getFamily());
+        addToWood(ChiselBlocks.MANGROVE.getFamily());
+        addToWood(ChiselBlocks.WARPED.getFamily());
         addToWood(ChiselBlocks.OAK.getFamily());
+        addToWood(ChiselBlocks.PALE_OAK.getFamily());
         addToWood(ChiselBlocks.SPRUCE.getFamily());
         addToWood(ChiselBlocks.CRIMSON.getFamily());
         addToWood(ChiselBlocks.BOOKSHELF.getFamily());
@@ -49,9 +52,13 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.ACACIA.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BAMBOO.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BIRCH.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.CHERRY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.DARK_OAK.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.JUNGLE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.MANGROVE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.WARPED.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.OAK.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.PALE_OAK.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.SPRUCE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BOOKSHELF.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.CRIMSON.getFamily());
@@ -82,6 +89,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.COPPER.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DIAMOND.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DIORITE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DEEPSLATE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.ELECTRUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.EMERALD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.END_STONE.getFamily());
@@ -143,6 +151,12 @@ public class ChiselBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.get());
 
+        ChiselBlocks.getBlocks().forEach(f -> {
+            if (f.getFamily().getWaxedFamily() != null) {
+                addToTag(BlockTags.MINEABLE_WITH_PICKAXE, f.getFamily().getWaxedFamily());
+            }
+        });
+
         ChiselBlocks.STAINED_GLASS.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
         ChiselBlocks.STAINED_GLASS_PANE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
 
@@ -188,6 +202,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.BRONZE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COBALT.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COPPER.getFamily());
+        if (ChiselBlocks.COPPER.getFamily().getWaxedFamily() != null) {
+            addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.COPPER.getFamily().getWaxedFamily());
+        }
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.DIAMOND.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.ELECTRUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.EMERALD.getFamily());
@@ -207,6 +224,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         ChiselBlocks.getBlocks().forEach(family -> {
             if(!NOT_FRAMEABLE.contains(family.getFamily())) {
                 addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily());
+                if (family.getFamily().getWaxedFamily() != null) {
+                    addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily().getWaxedFamily());
+                }
             }
         });
 
@@ -238,11 +258,17 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
     private void addToWood(VariantFamily family) {
         addToTag(WOOD, family);
+        if (family.getWaxedFamily() != null) {
+            addToWood(family.getWaxedFamily());
+        }
     }
 
     private void addToTag(TagKey<Block> tag, VariantFamily family) {
         family.getVariants().forEach(variant -> {
             if(variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
+        });
+        family.getHiddenVariants().forEach(variant -> {
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
         });
     }
 }

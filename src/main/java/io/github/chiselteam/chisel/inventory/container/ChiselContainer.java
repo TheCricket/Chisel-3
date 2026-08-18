@@ -17,6 +17,7 @@ public class ChiselContainer extends SimpleContainer {
     public final int chiselSlot;
     public final ItemStack chisel;
     public Slot inputSlot;
+    private ItemStack committedStack = ItemStack.EMPTY;
 
     public ChiselContainer(Inventory inventory, ChiselSelectionInventory selectionInventory, InteractionHand hand, int chiselSlot, ItemStack chisel) {
         super(46);
@@ -30,5 +31,26 @@ public class ChiselContainer extends SimpleContainer {
     @Override
     public boolean canPlaceItem(int slot, @NonNull ItemStack stack) {
         return super.canPlaceItem(slot, stack);
+    }
+
+    public void commit(ItemStack stack) {
+        committedStack = stack.copy();
+    }
+
+    public ItemStack getCommittedStack() {
+        return committedStack;
+    }
+
+    public boolean isConverted() {
+        ItemStack working = inputSlot == null ? ItemStack.EMPTY : inputSlot.getItem();
+        return !working.isEmpty() && !committedStack.isEmpty() && working.getItem() != committedStack.getItem();
+    }
+
+    public void shrinkCommitted(int amount) {
+        committedStack.shrink(amount);
+    }
+
+    public void clearCommitted() {
+        committedStack = ItemStack.EMPTY;
     }
 }

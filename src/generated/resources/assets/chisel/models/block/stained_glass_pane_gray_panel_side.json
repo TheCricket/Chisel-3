@@ -1,13 +1,7 @@
 {
-  "parent": "minecraft:block/template_glass_pane_side",
+  "parent": "chisel:block/template_glass_pane_side",
   "textures": {
-    "edge": {
-      "force_translucent": true,
-      "sprite": "chisel:block/stained_glass_pane_gray/stained_glass_pane_gray_panel-top"
-    },
-    "pane": {
-      "force_translucent": true,
-      "sprite": "chisel:block/stained_glass_pane_gray/stained_glass_pane_gray_panel"
-    }
+    "edge": "chisel:block/stained_glass_pane_gray/stained_glass_pane_gray_panel-top",
+    "pane": "chisel:block/stained_glass_pane_gray/stained_glass_pane_gray_panel"
   }
 }

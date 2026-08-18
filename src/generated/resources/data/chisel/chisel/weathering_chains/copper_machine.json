@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_machine",
+    "chisel:exposed_copper_machine",
+    "chisel:weathered_copper_machine",
+    "chisel:oxidized_copper_machine"
+  ],
+  "waxed_map": {
+    "chisel:copper_machine": "chisel:waxed_copper_machine",
+    "chisel:exposed_copper_machine": "chisel:waxed_exposed_copper_machine",
+    "chisel:oxidized_copper_machine": "chisel:waxed_oxidized_copper_machine",
+    "chisel:weathered_copper_machine": "chisel:waxed_weathered_copper_machine"
+  }
+}

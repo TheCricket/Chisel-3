@@ -3,10 +3,6 @@
   "tag": "c:chisel/redstone",
   "variants": [
     {
-      "block": "minecraft:redstone_block",
-      "name": "block.minecraft.redstone_block"
-    },
-    {
       "block": "chisel:redstone_bricks",
       "name": "redstone_bricks"
     },

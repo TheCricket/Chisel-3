@@ -3,10 +3,6 @@
   "tag": "c:chisel/pumpkin",
   "variants": [
     {
-      "block": "minecraft:pumpkin",
-      "name": "block.minecraft.pumpkin"
-    },
-    {
       "block": "chisel:pumpkin_0",
       "model_type": "pumpkin",
       "name": "pumpkin_0"

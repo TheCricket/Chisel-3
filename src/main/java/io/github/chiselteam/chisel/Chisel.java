@@ -1,8 +1,10 @@
 package io.github.chiselteam.chisel;
 
+import io.github.chiselteam.chisel.config.ChiselConfigurations;
 import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
@@ -11,7 +13,8 @@ public class Chisel {
 
     public static final String MODID = "chisel";
 
-    public Chisel(IEventBus bus) {
+    public Chisel(ModContainer mod, IEventBus bus) {
+        ChiselConfigurations.init(mod);
         ChiselModelHandlers.registerAll();
         ChiselModes.register(bus);
         ChiselBuildingModes.register(bus);

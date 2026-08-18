@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/oak_planks_paneling"
-    }
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/oak_planks_paneling",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:oak_planks_paneling",
+    "kind": "standard"
   }
 }

@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.datagen.model;
 
+import io.github.chiselteam.ctm.api.datagen.CTMBlockStateGenerator;
 import io.github.chiselteam.ctm.api.datagen.CTMModelBuilder;
 import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher;
@@ -27,6 +28,6 @@ public class ConnectedTextureBlockStateDefinitionGenerator implements BlockModel
 
     @Override
     public @NonNull BlockStateModelDispatcher create() {
-        return new BlockStateModelDispatcher(new ConnectedTextureBlockModelDefinition(builder.toUnbaked()));
+        return CTMBlockStateGenerator.of(block, builder.toCTMBuilder()).create();
     }
 }

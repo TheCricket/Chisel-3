@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered",
+    "overlay_connected": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered-ctm",
+    "overlay_texture": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered",
+    "particle": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered"
+  }
+}

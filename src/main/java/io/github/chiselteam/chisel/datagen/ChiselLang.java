@@ -40,9 +40,9 @@ public class ChiselLang extends LangHelper {
         addContainer("chisel", "Chisel");
         addContainer("auto_chisel", "Auto Chisel");
 
-        add("chisel.gui.confirm", "Chisel");
         add("chisel.gui.search", "Search:");
-        add("chisel.gui.mode", "Mode");
+        add("chisel.gui.no_variants", "No matching variants");
+        add("chisel.search", "Search");
 
         addPreviewMode("donut", "Donut");
         addPreviewMode("panel", "Panel");
@@ -57,6 +57,8 @@ public class ChiselLang extends LangHelper {
         addChiselMode("row", "Row");
         addChiselMode("shapeless", "Shapeless");
         addChiselMode("shapeless_flat", "Shapeless Flat");
+        addChiselMode("shapeless_exact", "Shapeless Exact");
+        addChiselMode("shapeless_flat_exact", "Shapeless Flat Exact");
 
         // Builders Guide - Building Modes
         addBuildingMode("cuboid", "Cuboid (Edges)");
@@ -78,6 +80,11 @@ public class ChiselLang extends LangHelper {
         add("tooltip.chisel.builders_guide.place_desc", "Right click with Block to Place in shape");
 
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
+
+        add("config.jade.plugin_chisel.jade_plugin", "Chisel Descriptions");
+
+        add("key.category.chisel.chisel", "Chisel");
+        add("key.chisel.mode_select", "Select Chisel Mode");
     }
 
     private void addTabs() {

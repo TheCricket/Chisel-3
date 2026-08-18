@@ -3,14 +3,23 @@ package io.github.chiselteam.chisel.registry;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.AutoChiselBlock;
 import io.github.chiselteam.chisel.block.BuildersGuideBlock;
-import io.github.chiselteam.chisel.block.ConnectedTextureBlock;
 import io.github.chiselteam.chisel.block.family.*;
+import io.github.chiselteam.chisel.block.family.compat.*;
+import io.github.chiselteam.chisel.block.family.materials.*;
+import io.github.chiselteam.chisel.block.family.materials.copper.CopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.ExposedCopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.OxidizedCopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.WeatheredCopperFamily;
+import io.github.chiselteam.chisel.block.family.stone.*;
+import io.github.chiselteam.chisel.block.family.wood.*;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
+import io.github.chiselteam.chisel.block.util.ConnectedTextureBlock;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -27,7 +36,7 @@ public class ChiselBlocks {
     public static final AluminumFamily ALUMINUM = new AluminumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final AncientStoneFamily ANCIENT_STONE = new AncientStoneFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final AndesiteFamily ANDESITE = new AndesiteFamily(Properties.ofFullCopy(Blocks.ANDESITE));
-    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
+    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15));
     public static final ArcaneFamily ARCANE = new ArcaneFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final BambooFamily BAMBOO = new BambooFamily(Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
     public static final BirchFamily BIRCH = new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
@@ -43,11 +52,17 @@ public class ChiselBlocks {
     public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(Properties.ofFullCopy(Blocks.COBBLESTONE));
     public static final ConcreteFamily CONCRETE = new ConcreteFamily(Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
     public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+    public static final ExposedCopperFamily EXPOSED_COPPER = new ExposedCopperFamily(Properties.ofFullCopy(Blocks.EXPOSED_COPPER));
+    public static final WeatheredCopperFamily WEATHERED_COPPER = new WeatheredCopperFamily(Properties.ofFullCopy(Blocks.WEATHERED_COPPER));
+    public static final OxidizedCopperFamily OXIDIZED_COPPER = new OxidizedCopperFamily(Properties.ofFullCopy(Blocks.OXIDIZED_COPPER));
     public static final CrimsonFamily CRIMSON = new CrimsonFamily(Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
+    public static final WarpedFamily WARPED = new WarpedFamily(Properties.ofFullCopy(Blocks.WARPED_PLANKS));
     public static final DarkOakFamily DARK_OAK = new DarkOakFamily(Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
+    public static final CherryFamily CHERRY = new CherryFamily(Properties.ofFullCopy(Blocks.CHERRY_PLANKS));
     public static final BasaltFamily BASALT = new BasaltFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final DiamondFamily DIAMOND = new DiamondFamily(Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
     public static final DioriteFamily DIORITE = new DioriteFamily(Properties.ofFullCopy(Blocks.DIORITE));
+    public static final DeepslateFamily DEEPSLATE = new DeepslateFamily(Properties.ofFullCopy(Blocks.DEEPSLATE));
     public static final DirtFamily DIRT = new DirtFamily(Properties.ofFullCopy(Blocks.DIRT));
     public static final ElectrumFamily ELECTRUM = new ElectrumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final EmeraldFamily EMERALD = new EmeraldFamily(Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
@@ -69,6 +84,7 @@ public class ChiselBlocks {
     public static final IronBarsFamily IRON_BARS = new IronBarsFamily(Properties.ofFullCopy(Blocks.IRON_BARS));
     public static final JackOLanternFamily JACK_O_LANTERN = new JackOLanternFamily(Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
     public static final JungleFamily JUNGLE = new JungleFamily(Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
+    public static final MangroveFamily MANGROVE = new MangroveFamily(Properties.ofFullCopy(Blocks.MANGROVE_PLANKS));
     public static final LaboratoryFamily LABORATORY = new LaboratoryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final LapisFamily LAPIS = new LapisFamily(Properties.ofFullCopy(Blocks.LAPIS_BLOCK));
     public static final LavastoneFamily LAVASTONE = new LavastoneFamily(Properties.ofFullCopy(Blocks.STONE));
@@ -85,9 +101,11 @@ public class ChiselBlocks {
     public static final NetherrackFamily NETHERRACK = new NetherrackFamily(Properties.ofFullCopy(Blocks.NETHERRACK));
     public static final NickelFamily NICKEL = new NickelFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final OakFamily OAK = new OakFamily(Properties.ofFullCopy(Blocks.OAK_PLANKS));
+    public static final PaleOakFamily PALE_OAK = new PaleOakFamily(Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS));
     public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(Properties.ofFullCopy(Blocks.OBSIDIAN));
     public static final PaperwallFamily PAPERWALL = new PaperwallFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
     public static final PlatinumFamily PLATINUM = new PlatinumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
+    public static final QuartzFamily QUARTZ = new QuartzFamily(Properties.ofFullCopy(Blocks.QUARTZ_BLOCK));
     public static final PrismarineFamily PRISMARINE = new PrismarineFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final PumpkinFamily PUMPKIN = new PumpkinFamily(Properties.ofFullCopy(Blocks.PUMPKIN));
     public static final PurpurFamily PURPUR = new PurpurFamily(Properties.ofFullCopy(Blocks.STONE));
@@ -131,6 +149,7 @@ public class ChiselBlocks {
     public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, () -> Properties.of()
             .sound(SoundType.METAL)
             .strength(2.5F)
+            .noOcclusion()
             .requiresCorrectToolForDrops());
 
     public static final DeferredBlock<Block> BUILDERS_GUIDE = BLOCKS.registerBlock("builders_guide", BuildersGuideBlock::new, () -> Properties.of()
@@ -204,11 +223,11 @@ public class ChiselBlocks {
     public static List<ChiselFamily> getBlocks() {
         List<ChiselFamily> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANCIENT_STONE, ANDESITE, ANTIBLOCK, ARCANE, BAMBOO, BIRCH, BOOKSHELF, BRICKS, BRONZE,
-                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, BASALT,
-                DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE,
-                GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JACK_O_LANTERN,
-                JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
-                MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, OBSIDIAN, PAPERWALL, PLATINUM, PRISMARINE, PUMPKIN,
+                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER,
+                CRIMSON, WARPED, DARK_OAK, CHERRY, BASALT, DIAMOND, DIORITE, DEEPSLATE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE,
+                FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS,
+                JACK_O_LANTERN, JUNGLE, MANGROVE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
+                MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, PALE_OAK, OBSIDIAN, PAPERWALL, PLATINUM, QUARTZ, PRISMARINE, PUMPKIN,
                 PURPUR, RED_SANDSTONE, REDSTONE, REDSTONE_LAMP, ROAD_LINE, SANDSTONE, SHINGLE, SILVER, SPRUCE, STEEL,
                 STONE_BRICKS, TALLOW, TECHNICAL, TEMPLE, TERRACOTTA, THAUMIUM, TIN, TORCH, TYRIAN, URANIUM, VALENTINES,
                 VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ew",
+    "overlay_connected": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ew-ctm",
+    "overlay_texture": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ew",
+    "particle": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ew"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/deepslate/deepslate_tiles_large",
+    "overlay_connected": "chisel:block/deepslate/deepslate_tiles_large-ctm",
+    "overlay_texture": "chisel:block/deepslate/deepslate_tiles_large",
+    "particle": "chisel:block/deepslate/deepslate_tiles_large"
+  }
+}

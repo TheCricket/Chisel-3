@@ -1,0 +1,38 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_caution"
+    },
+    {
+      "id": "chisel:waxed_copper_caution"
+    },
+    {
+      "id": "chisel:exposed_copper_caution"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_caution"
+    },
+    {
+      "id": "chisel:weathered_copper_caution"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_caution"
+    },
+    {
+      "id": "chisel:oxidized_copper_caution"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_caution"
+    }
+  ],
+  "model_location": "chisel:block/waxed_copper_caution",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:waxed_copper_caution",
+    "kind": "standard"
+  }
+}

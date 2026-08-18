@@ -3,10 +3,6 @@
   "tag": "c:chisel/jack_o_lantern",
   "variants": [
     {
-      "block": "minecraft:jack_o_lantern",
-      "name": "block.minecraft.jack_o_lantern"
-    },
-    {
       "block": "chisel:jack_o_lantern_0",
       "model_type": "pumpkin",
       "name": "jack_o_lantern_0"

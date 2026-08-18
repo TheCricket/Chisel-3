@@ -1,0 +1,91 @@
+{
+  "family_name": "warped_planks",
+  "tag": "c:chisel/warped_planks",
+  "variants": [
+    {
+      "block": "minecraft:warped_planks",
+      "name": "block.minecraft.warped_planks"
+    },
+    {
+      "block": "chisel:warped_planks_braced",
+      "model_type": "connected_tbs",
+      "name": "warped_planks_braced"
+    },
+    {
+      "block": "chisel:warped_planks_braid",
+      "model_type": "connected",
+      "name": "warped_planks_braid"
+    },
+    {
+      "block": "chisel:warped_planks_crude_horizontal",
+      "model_type": "multiblock_3x3",
+      "name": "warped_planks_crude_horizontal"
+    },
+    {
+      "block": "chisel:warped_planks_crude_paneling",
+      "name": "warped_planks_crude_paneling"
+    },
+    {
+      "block": "chisel:warped_planks_crude_vertical",
+      "model_type": "multiblock_3x3",
+      "name": "warped_planks_crude_vertical"
+    },
+    {
+      "block": "chisel:warped_planks_encased",
+      "model_type": "connected",
+      "name": "warped_planks_encased"
+    },
+    {
+      "block": "chisel:warped_planks_encased_large",
+      "model_type": "connected",
+      "name": "warped_planks_encased_large"
+    },
+    {
+      "block": "chisel:warped_planks_encased_smooth",
+      "model_type": "connected",
+      "name": "warped_planks_encased_smooth"
+    },
+    {
+      "block": "chisel:warped_planks_large",
+      "name": "warped_planks_large"
+    },
+    {
+      "block": "chisel:warped_planks_log_bordered",
+      "model_type": "connected",
+      "name": "warped_planks_log_bordered"
+    },
+    {
+      "block": "chisel:warped_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "warped_planks_log_cabin_ns"
+    },
+    {
+      "block": "chisel:warped_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "warped_planks_log_cabin_ew"
+    },
+    {
+      "block": "chisel:warped_planks_paneling",
+      "model_type": "connected",
+      "name": "warped_planks_paneling"
+    },
+    {
+      "block": "chisel:warped_planks_shipping",
+      "model_type": "connected",
+      "name": "warped_planks_shipping"
+    },
+    {
+      "block": "chisel:warped_planks_smooth",
+      "model_type": "connected",
+      "name": "warped_planks_smooth"
+    },
+    {
+      "block": "chisel:warped_planks_stacked",
+      "name": "warped_planks_stacked"
+    },
+    {
+      "block": "chisel:warped_planks_vertical",
+      "name": "warped_planks_vertical"
+    }
+  ]
+}

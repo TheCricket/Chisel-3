@@ -2,30 +2,31 @@ package io.github.chiselteam.chisel.block.family;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
+import io.github.chiselteam.chisel.block.util.ChiselIronBarsBlock;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.IRON_BARS;
 
 public class IronBarsFamily extends ChiselFamily {
     public IronBarsFamily(BlockBehaviour.Properties props) {
         family = builder("iron_bars")
                 .addVariant(Blocks.IRON_BARS)
-                .addVariant("iron_bars_barbed_wire", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_barbed_wire")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_bars", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_bars")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_borderless", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_borderless")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_cage", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_cage")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_classic", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_classic")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_classic_new", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_classic_new")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_fence", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_fence")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_modern", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_modern")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_ornate_steel", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_ornate_steel")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_spikes", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_spikes")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_thick_grid", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thick_grid")))), () -> props, IRON_BARS)
-                .addVariant("iron_bars_thin_grid", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thin_grid")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_barbed_wire", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_barbed_wire")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_bars", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_bars")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_borderless", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_borderless")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_cage", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_cage")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_classic", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_classic")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_classic_new", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_classic_new")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_fence", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_fence")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_modern", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_modern")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_ornate_steel", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_ornate_steel")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_spikes", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_spikes")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_thick_grid", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thick_grid")))), () -> props, IRON_BARS)
+                .addVariant("iron_bars_thin_grid", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thin_grid")))), () -> props, IRON_BARS)
                 .family();
     }
 

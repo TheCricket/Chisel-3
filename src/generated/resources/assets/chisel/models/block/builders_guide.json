@@ -1,12 +1,8 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "down": "chisel:block/builders_guide_minus",
-    "east": "chisel:block/builders_guide_plus",
-    "north": "chisel:block/builders_guide_plus",
-    "particle": "chisel:block/builders_guide",
-    "south": "chisel:block/builders_guide_minus",
-    "up": "chisel:block/builders_guide_plus",
-    "west": "chisel:block/builders_guide_minus"
+    "bottom": "chisel:block/builders_guide_bottom",
+    "side": "chisel:block/builders_guide_side",
+    "top": "chisel:block/builders_guide_top"
   }
 }

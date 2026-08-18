@@ -66,6 +66,7 @@
     },
     {
       "block": "chisel:oak_planks_paneling",
+      "model_type": "connected",
       "name": "oak_planks_paneling"
     },
     {

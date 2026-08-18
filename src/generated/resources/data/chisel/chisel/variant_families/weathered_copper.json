@@ -1,0 +1,55 @@
+{
+  "family_name": "weathered_copper",
+  "tag": "c:chisel/weathered_copper",
+  "variants": [
+    {
+      "block": "minecraft:weathered_copper",
+      "name": "block.minecraft.weathered_copper"
+    },
+    {
+      "block": "minecraft:weathered_chiseled_copper",
+      "name": "block.minecraft.weathered_chiseled_copper"
+    },
+    {
+      "block": "minecraft:weathered_cut_copper",
+      "name": "block.minecraft.weathered_cut_copper"
+    },
+    {
+      "block": "minecraft:weathered_copper_grate",
+      "name": "block.minecraft.weathered_copper_grate"
+    },
+    {
+      "block": "chisel:weathered_copper_bad_greggy",
+      "model_type": "connected",
+      "name": "weathered_copper_bad_greggy"
+    },
+    {
+      "block": "chisel:weathered_copper_bolted",
+      "name": "weathered_copper_bolted"
+    },
+    {
+      "block": "chisel:weathered_copper_caution",
+      "model_type": "connected",
+      "name": "weathered_copper_caution"
+    },
+    {
+      "block": "chisel:weathered_copper_crate",
+      "model_type": "connected",
+      "name": "weathered_copper_crate"
+    },
+    {
+      "block": "chisel:weathered_copper_machine",
+      "name": "weathered_copper_machine"
+    },
+    {
+      "block": "chisel:weathered_copper_scaffold",
+      "model_type": "connected",
+      "name": "weathered_copper_scaffold"
+    },
+    {
+      "block": "chisel:weathered_copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "weathered_copper_thermal"
+    }
+  ]
+}

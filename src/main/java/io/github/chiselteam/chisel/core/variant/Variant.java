@@ -1,9 +1,8 @@
 package io.github.chiselteam.chisel.core.variant;
 
-import io.github.chiselteam.chisel.Chisel;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import io.github.chiselteam.chisel.datagen.model.ChiselModelProvider;
+import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -78,11 +77,23 @@ public class Variant {
     }
 
     public Material getMaterial() {
-        return new Material(Chisel.prefix("block/%s/%s".formatted(family.getFamilyName(), name)));
+        String familyName = family.getFamilyName();
+        String nameForTexture = name;
+        if (name.startsWith("waxed_")) {
+            familyName = family.getFamilyName().substring(6);
+            nameForTexture = name.substring(6);
+        }
+        return new Material(Chisel.prefix("block/%s/%s".formatted(familyName, nameForTexture)));
     }
 
     public Material getMaterial(String suffix) {
-        return new Material(Chisel.prefix("block/%s/%s-%s".formatted(family.getFamilyName(), name, suffix)));
+        String familyName = family.getFamilyName();
+        String nameForTexture = name;
+        if (name.startsWith("waxed_")) {
+            familyName = family.getFamilyName().substring(6);
+            nameForTexture = name.substring(6);
+        }
+        return new Material(Chisel.prefix("block/%s/%s-%s".formatted(familyName, nameForTexture, suffix)));
     }
 
     public void registerModel(BlockModelGenerators blockModels) {

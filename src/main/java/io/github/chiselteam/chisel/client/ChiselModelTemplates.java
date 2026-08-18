@@ -39,6 +39,10 @@ public class ChiselModelTemplates extends ModelTemplates {
     public static final ModelTemplate TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/torch")), Optional.empty(), TextureSlot.TORCH);
     public static final ModelTemplate WALL_TORCH = new ModelTemplate(Optional.of(Chisel.prefix("block/wall_torch")), Optional.empty(), TextureSlot.TORCH);
     public static final ModelTemplate ROAD_LINES = new ModelTemplate(Optional.of(Chisel.prefix("block/road_lines")), Optional.empty(), TextureSlot.TEXTURE);
+    public static final ModelTemplate GLASS_PANE_SIDE = new ModelTemplate(Optional.of(Chisel.prefix("block/template_glass_pane_side")), Optional.of("_side"), PANE, EDGE);
+    public static final ModelTemplate GLASS_PANE_SIDE_ALT = new ModelTemplate(Optional.of(Chisel.prefix("block/template_glass_pane_side_alt")), Optional.of("_side_alt"), PANE, EDGE);
+    public static final ModelTemplate GLASS_PANE_END = new ModelTemplate(Optional.of(Chisel.prefix("block/template_glass_pane_end")), Optional.of("_end"), PANE, EDGE);
+    public static final ModelTemplate GLASS_PANE_END_ALT = new ModelTemplate(Optional.of(Chisel.prefix("block/template_glass_pane_end_alt")), Optional.of("_end_alt"), PANE, EDGE);
 
     public static final ModelTemplate CTM_MULTI_PASS_MULTIBLOCK_2x2 = create("chisel:ctm_multi_pass_multiblock_2x2", PARTICLE, ALL, LAYER0, LAYER1, CTM_OVERLAY_2X2).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();
     public static final ModelTemplate CTM_MULTI_PASS_MULTIBLOCK_3x3 = create("chisel:ctm_multi_pass_multiblock_3x3", PARTICLE, ALL, LAYER0, LAYER1, CTM_OVERLAY_3X3).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();

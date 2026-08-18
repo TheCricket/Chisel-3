@@ -68,5 +68,59 @@ public class RegisterCommandsEventHandler {
                             return 1;
                         })
         );
+
+        event.getDispatcher().register(
+                Commands.literal("copper")
+                        .executes(command -> {
+                            CommandSourceStack source = command.getSource();
+                            ServerLevel level = source.getLevel();
+                            ServerPlayer player = source.getPlayerOrException();
+                            BlockPos pos = player.blockPosition();
+
+                            if (Minecraft.getInstance().isOfflineDeveloperMode()) {
+
+                                List<Block> blocks = new ArrayList<>();
+                                ChiselBlocks.COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.EXPOSED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.WEATHERED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.OXIDIZED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.CHERRY.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.MANGROVE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.PALE_OAK.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.WARPED.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselBlocks.DEEPSLATE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+
+                                int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
+                                int x = 0, z = 0;
+
+                                for (Block block : blocks) {
+                                    BlockState state = block.defaultBlockState();
+
+                                    int baseX = pos.getX() + (x * 4);
+                                    int baseZ = pos.getZ() + (z * 4);
+                                    int baseY = pos.getY();
+
+                                    for (int ox = 0; ox < 3; ox++) {
+                                        for (int oy = 0; oy < 3; oy++) {
+                                            for (int oz = 0; oz < 3; oz++) {
+                                                level.setBlock(new BlockPos(baseX + ox, baseY + oy, baseZ + oz), state, Block.UPDATE_ALL);
+                                            }
+                                        }
+                                    }
+
+                                    x++;
+                                    if (x >= blocksPerRow) {
+                                        x = 0;
+                                        z++;
+                                    }
+                                }
+
+                                source.sendSuccess(() -> Component.literal(String.format("Placed %s different variants", blocks.size())), true);
+                            } else {
+                                source.sendFailure(Component.literal("You must be in developer mode to use this command!"));
+                            }
+                            return 1;
+                        })
+        );
     }
 }

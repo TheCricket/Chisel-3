@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mangrove_planks/mangrove_planks_encased",
+    "overlay_connected": "chisel:block/mangrove_planks/mangrove_planks_encased-ctm",
+    "overlay_texture": "chisel:block/mangrove_planks/mangrove_planks_encased",
+    "particle": "chisel:block/mangrove_planks/mangrove_planks_encased"
+  }
+}

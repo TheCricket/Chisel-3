@@ -1,0 +1,91 @@
+{
+  "family_name": "mangrove_planks",
+  "tag": "c:chisel/mangrove_planks",
+  "variants": [
+    {
+      "block": "minecraft:mangrove_planks",
+      "name": "block.minecraft.mangrove_planks"
+    },
+    {
+      "block": "chisel:mangrove_planks_braced",
+      "model_type": "connected_tbs",
+      "name": "mangrove_planks_braced"
+    },
+    {
+      "block": "chisel:mangrove_planks_braid",
+      "model_type": "connected",
+      "name": "mangrove_planks_braid"
+    },
+    {
+      "block": "chisel:mangrove_planks_crude_horizontal",
+      "model_type": "multiblock_3x3",
+      "name": "mangrove_planks_crude_horizontal"
+    },
+    {
+      "block": "chisel:mangrove_planks_crude_paneling",
+      "name": "mangrove_planks_crude_paneling"
+    },
+    {
+      "block": "chisel:mangrove_planks_crude_vertical",
+      "model_type": "multiblock_3x3",
+      "name": "mangrove_planks_crude_vertical"
+    },
+    {
+      "block": "chisel:mangrove_planks_encased",
+      "model_type": "connected",
+      "name": "mangrove_planks_encased"
+    },
+    {
+      "block": "chisel:mangrove_planks_encased_large",
+      "model_type": "connected",
+      "name": "mangrove_planks_encased_large"
+    },
+    {
+      "block": "chisel:mangrove_planks_encased_smooth",
+      "model_type": "connected",
+      "name": "mangrove_planks_encased_smooth"
+    },
+    {
+      "block": "chisel:mangrove_planks_large",
+      "name": "mangrove_planks_large"
+    },
+    {
+      "block": "chisel:mangrove_planks_log_bordered",
+      "model_type": "connected",
+      "name": "mangrove_planks_log_bordered"
+    },
+    {
+      "block": "chisel:mangrove_planks_log_cabin_ns",
+      "model_type": "connected",
+      "name": "mangrove_planks_log_cabin_ns"
+    },
+    {
+      "block": "chisel:mangrove_planks_log_cabin_ew",
+      "model_type": "connected",
+      "name": "mangrove_planks_log_cabin_ew"
+    },
+    {
+      "block": "chisel:mangrove_planks_paneling",
+      "model_type": "connected",
+      "name": "mangrove_planks_paneling"
+    },
+    {
+      "block": "chisel:mangrove_planks_shipping",
+      "model_type": "connected",
+      "name": "mangrove_planks_shipping"
+    },
+    {
+      "block": "chisel:mangrove_planks_smooth",
+      "model_type": "connected",
+      "name": "mangrove_planks_smooth"
+    },
+    {
+      "block": "chisel:mangrove_planks_stacked",
+      "name": "mangrove_planks_stacked"
+    },
+    {
+      "block": "chisel:mangrove_planks_vertical",
+      "name": "mangrove_planks_vertical"
+    }
+  ]
+}

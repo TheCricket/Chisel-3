@@ -1,13 +1,14 @@
 package io.github.chiselteam.chisel.core.variant;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
-import io.github.chiselteam.chisel.block.item.ChiselBlockItem;
-import io.github.chiselteam.chisel.block.item.TorchBlockItem;
-import io.github.chiselteam.chisel.registry.ChiselBlocks;
-import io.github.chiselteam.chisel.registry.ChiselItems;
 import com.google.common.collect.Lists;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.github.chiselteam.chisel.block.item.ChiselBlockItem;
+import io.github.chiselteam.chisel.block.item.TorchBlockItem;
+import io.github.chiselteam.chisel.block.util.WaxedWeatheringBlock;
+import io.github.chiselteam.chisel.block.util.WeatheringBlock;
+import io.github.chiselteam.chisel.registry.ChiselBlocks;
+import io.github.chiselteam.chisel.registry.ChiselItems;
 import io.github.chiselteam.chisel.registry.ChiselModelHandlers;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -19,15 +20,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import org.jspecify.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TORCH;
 
 public class VariantFamily {
 
@@ -50,6 +50,8 @@ public class VariantFamily {
     }));
 
     private final List<Variant> variants = Lists.newArrayList();
+    private final List<Variant> hiddenVariants = Lists.newArrayList();
+    private VariantFamily waxedFamily;
     private final String familyName;
     private String recipeUnlockedBy;
     private TagKey<Block> tag;
@@ -60,6 +62,18 @@ public class VariantFamily {
 
     public List<Variant> getVariants() {
         return variants;
+    }
+
+    public List<Variant> getHiddenVariants() {
+        return hiddenVariants;
+    }
+
+    public @Nullable VariantFamily getWaxedFamily() {
+        return waxedFamily;
+    }
+
+    public void setWaxedFamily(VariantFamily waxedFamily) {
+        this.waxedFamily = waxedFamily;
     }
 
     public List<Variant> getAllVariants(HolderLookup.Provider registries) {
@@ -156,6 +170,28 @@ public class VariantFamily {
             return this;
         }
 
+        public Builder addWeatheringVariant(String name, BlockBehaviour.Properties props, VariantModelHandler modelType) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, WeatheringBlock::new, () -> props);
+            Variant v = new Variant(name, block, family, modelType);
+            registerAndAdd(v);
+
+            if (family.getWaxedFamily() == null) {
+                VariantFamily waxed = new VariantFamily("waxed_" + family.getFamilyName());
+                if (family.getTag() != null) {
+                    waxed.tag = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("c", "chisel/%s".formatted(waxed.getFamilyName())));
+                }
+                family.setWaxedFamily(waxed);
+            }
+
+            String waxedName = "waxed_" + name;
+            DeferredBlock<Block> waxedBlock = ChiselBlocks.register(waxedName, WaxedWeatheringBlock::new, () -> props);
+            Variant waxedVariant = new Variant(waxedName, waxedBlock, family.getWaxedFamily(), modelType);
+            ChiselItems.ITEMS.registerItem(waxedVariant.getName(), p -> new ChiselBlockItem(waxedVariant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
+            family.getWaxedFamily().getVariants().add(waxedVariant);
+
+            return this;
+        }
+
         /**
          * Adds a variant whose generated model carries the eldritch UV-perturbation effect
          * on top of the given model handler.
@@ -200,6 +236,11 @@ public class VariantFamily {
         private void registerAndAdd(Variant variant) {
             ChiselItems.ITEMS.registerItem(variant.getName(), p -> new ChiselBlockItem(variant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
             family.getVariants().add(variant);
+        }
+
+        private void registerAndAddHidden(Variant variant) {
+            ChiselItems.ITEMS.registerItem(variant.getName(), p -> new ChiselBlockItem(variant, p), () -> new Item.Properties().useBlockDescriptionPrefix());
+            family.getHiddenVariants().add(variant);
         }
     }
 }

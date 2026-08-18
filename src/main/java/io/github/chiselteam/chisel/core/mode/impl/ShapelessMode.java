@@ -12,36 +12,53 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.*;
 
 public class ShapelessMode extends ChiselMode {
+    private static final int SEARCH_RADIUS = 10;
+    private static final int MAX_AFFECTED_BLOCKS = 512;
+
     public ShapelessMode() {
         super(Chisel.prefix("shapeless"));
     }
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
-        List<BlockPos> affected = new ArrayList<>();
-        Queue<BlockPos> toProcess = new LinkedList<>();
-        Set<BlockPos> visited = new HashSet<>();
+        List<BlockPos> affected = new ArrayList<>(Math.min(MAX_AFFECTED_BLOCKS, 64));
+        Queue<Long> toProcess = new ArrayDeque<>();
+        Set<Long> visited = new HashSet<>();
 
-        toProcess.add(pos);
-        visited.add(pos);
+        long origin = pos.asLong();
+        toProcess.add(origin);
+        visited.add(origin);
 
-        while (!toProcess.isEmpty()) {
-            BlockPos current = toProcess.poll();
-            if (isSameBlock(level, state, level.getBlockState(current))) {
-                affected.add(current);
+        int originX = pos.getX();
+        int originY = pos.getY();
+        int originZ = pos.getZ();
+        BlockPos.MutableBlockPos mutablePos = new BlockPos.MutableBlockPos();
 
-                for (Direction dir : Direction.values()) {
-                    BlockPos next = current.relative(dir);
-                    if (!visited.contains(next) && 
-                        Math.abs(next.getX() - pos.getX()) <= 10 &&
-                        Math.abs(next.getY() - pos.getY()) <= 10 &&
-                        Math.abs(next.getZ() - pos.getZ()) <= 10) { 
-                        visited.add(next);
-                        toProcess.add(next);
-                    }
-                }
+        while (!toProcess.isEmpty() && affected.size() < MAX_AFFECTED_BLOCKS) {
+            long packedPos = toProcess.remove();
+            int x = BlockPos.getX(packedPos);
+            int y = BlockPos.getY(packedPos);
+            int z = BlockPos.getZ(packedPos);
+
+            mutablePos.set(x, y, z);
+            if (!isSameBlock(level, state, level.getBlockState(mutablePos))) continue;
+
+            affected.add(BlockPos.of(packedPos));
+
+            for (Direction direction : Direction.values()) {
+                int nextX = x + direction.getStepX();
+                int nextY = y + direction.getStepY();
+                int nextZ = z + direction.getStepZ();
+
+                if (Math.abs(nextX - originX) > SEARCH_RADIUS) continue;
+                if (Math.abs(nextY - originY) > SEARCH_RADIUS) continue;
+                if (Math.abs(nextZ - originZ) > SEARCH_RADIUS) continue;
+
+                long next = BlockPos.asLong(nextX, nextY, nextZ);
+                if (visited.add(next)) toProcess.add(next);
             }
         }
+
         return affected;
     }
 }

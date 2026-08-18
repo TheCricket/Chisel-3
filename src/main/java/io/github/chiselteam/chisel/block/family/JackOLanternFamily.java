@@ -1,33 +1,32 @@
 package io.github.chiselteam.chisel.block.family;
 
+import io.github.chiselteam.chisel.block.util.ChiselCarvedPumpkinBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 import io.github.chiselteam.chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.PUMPKIN;
 
 public class JackOLanternFamily extends ChiselFamily {
     public JackOLanternFamily(BlockBehaviour.Properties props) {
         family = builder("jack_o_lantern")
-                .addVariant(Blocks.JACK_O_LANTERN)
-                .addVariant("jack_o_lantern_0", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_1", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_2", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_3", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_4", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_5", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_6", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_7", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_8", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_9", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_10", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_11", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_12", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_13", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_14", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_15", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("jack_o_lantern_16", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_0", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_1", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_2", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_3", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_4", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_5", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_6", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_7", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_8", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_9", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_10", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_11", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_12", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_13", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_14", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_15", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("jack_o_lantern_16", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
                 .family();
     }
 

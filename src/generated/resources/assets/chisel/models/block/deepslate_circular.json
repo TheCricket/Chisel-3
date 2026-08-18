@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/deepslate/deepslate_circular",
+    "overlay_connected": "chisel:block/deepslate/deepslate_circular-ctm",
+    "overlay_texture": "chisel:block/deepslate/deepslate_circular",
+    "particle": "chisel:block/deepslate/deepslate_circular"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "family_name": "deepslate",
+  "tag": "c:chisel/deepslate",
+  "variants": [
+    {
+      "block": "minecraft:deepslate",
+      "name": "block.minecraft.deepslate"
+    },
+    {
+      "block": "minecraft:polished_deepslate",
+      "name": "block.minecraft.polished_deepslate"
+    },
+    {
+      "block": "chisel:deepslate_array",
+      "model_type": "multiblock_2x2",
+      "name": "deepslate_array"
+    },
+    {
+      "block": "chisel:deepslate_braid",
+      "name": "deepslate_braid"
+    },
+    {
+      "block": "chisel:deepslate_chaotic_bricks",
+      "model_type": "multiblock_3x3",
+      "name": "deepslate_chaotic_bricks"
+    },
+    {
+      "block": "chisel:deepslate_chaotic_medium",
+      "name": "deepslate_chaotic_medium"
+    },
+    {
+      "block": "chisel:deepslate_chaotic_small",
+      "name": "deepslate_chaotic_small"
+    },
+    {
+      "block": "chisel:deepslate_circular",
+      "model_type": "connected",
+      "name": "deepslate_circular"
+    },
+    {
+      "block": "chisel:deepslate_cracked",
+      "name": "deepslate_cracked"
+    },
+    {
+      "block": "chisel:deepslate_cracked_bricks",
+      "name": "deepslate_cracked_bricks"
+    },
+    {
+      "block": "chisel:deepslate_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "deepslate_cuts"
+    },
+    {
+      "block": "chisel:deepslate_dent",
+      "model_type": "connected",
+      "name": "deepslate_dent"
+    },
+    {
+      "block": "chisel:deepslate_encased_bricks",
+      "model_type": "connected",
+      "name": "deepslate_encased_bricks"
+    },
+    {
+      "block": "chisel:deepslate_french_1",
+      "name": "deepslate_french_1"
+    },
+    {
+      "block": "chisel:deepslate_french_2",
+      "name": "deepslate_french_2"
+    },
+    {
+      "block": "chisel:deepslate_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "deepslate_jellybean"
+    },
+    {
+      "block": "chisel:deepslate_layers",
+      "name": "deepslate_layers"
+    },
+    {
+      "block": "chisel:deepslate_mosaic",
+      "model_type": "connected",
+      "name": "deepslate_mosaic"
+    },
+    {
+      "block": "chisel:deepslate_ornate",
+      "name": "deepslate_ornate"
+    },
+    {
+      "block": "chisel:deepslate_panel",
+      "name": "deepslate_panel"
+    },
+    {
+      "block": "chisel:deepslate_pillar",
+      "model_type": "top_bottom_side",
+      "name": "deepslate_pillar"
+    },
+    {
+      "block": "chisel:deepslate_prism",
+      "name": "deepslate_prism"
+    },
+    {
+      "block": "chisel:deepslate_road",
+      "name": "deepslate_road"
+    },
+    {
+      "block": "chisel:deepslate_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "deepslate_slanted"
+    },
+    {
+      "block": "chisel:deepslate_small_bricks",
+      "name": "deepslate_small_bricks"
+    },
+    {
+      "block": "chisel:deepslate_soft_bricks",
+      "name": "deepslate_soft_bricks"
+    },
+    {
+      "block": "chisel:deepslate_solid_bricks",
+      "name": "deepslate_solid_bricks"
+    },
+    {
+      "block": "chisel:deepslate_tiles_large",
+      "model_type": "connected",
+      "name": "deepslate_tiles_large"
+    },
+    {
+      "block": "chisel:deepslate_tiles_medium",
+      "name": "deepslate_tiles_medium"
+    },
+    {
+      "block": "chisel:deepslate_tiles_small",
+      "name": "deepslate_tiles_small"
+    },
+    {
+      "block": "chisel:deepslate_triple_bricks",
+      "name": "deepslate_triple_bricks"
+    },
+    {
+      "block": "chisel:deepslate_twisted",
+      "model_type": "top_bottom_side",
+      "name": "deepslate_twisted"
+    },
+    {
+      "block": "chisel:deepslate_weaver",
+      "model_type": "connected",
+      "name": "deepslate_weaver"
+    },
+    {
+      "block": "chisel:deepslate_zag",
+      "model_type": "ar",
+      "name": "deepslate_zag"
+    }
+  ]
+}

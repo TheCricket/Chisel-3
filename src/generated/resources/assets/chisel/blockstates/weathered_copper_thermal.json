@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/weathered_copper_thermal"
+    }
+  }
+}

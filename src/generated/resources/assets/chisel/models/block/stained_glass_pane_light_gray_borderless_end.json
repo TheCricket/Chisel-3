@@ -1,0 +1,7 @@
+{
+  "parent": "chisel:block/template_glass_pane_end",
+  "textures": {
+    "edge": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_borderless-top",
+    "pane": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_borderless"
+  }
+}

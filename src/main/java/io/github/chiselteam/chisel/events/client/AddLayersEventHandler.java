@@ -50,13 +50,16 @@ public class AddLayersEventHandler {
         // Artists
         VIPS.put(UUID.fromString("e350ef68-2feb-4127-b0ce-611e5304685a"), ChiselItems.CHISEL_DIAMOND); // Cebularz
         VIPS.put(UUID.fromString("5399b615-3440-4c66-939d-ab1375952ac3"), ChiselItems.CHISEL_DIAMOND); // Drullkus
+        VIPS.put(UUID.fromString("735d1fe0-0d75-4cee-86a1-bc11b62ca48a"), ChiselItems.CHISEL_DIAMOND); // RPorotos
 
         // Gallery
         VIPS.put(UUID.fromString("ba1dd62a-00ac-4c18-bb91-1e02ed4b65d8"), ChiselItems.CHISEL_DIAMOND); // Buddy610
+        VIPS.put(UUID.fromString("d0798f41-4563-4005-a08f-2b85a41bddae"), ChiselItems.CHISEL_DIAMOND); // Joshy
 
         // Community
         VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON); // BeanxxBot
         VIPS.put(UUID.fromString("ba6efe89-0b84-4c5d-9f0e-b42edef10d6a"), ChiselItems.CHISEL_IRON); // NightRhyme45747
+        VIPS.put(UUID.fromString("8131ab4b-4b9e-4f50-9fee-7c2e47f2e29c"), ChiselItems.CHISEL_IRON); // Splurkz
 
 
         event.registerAvatarEntityModifier(new AvatarRenderStateModifier() {

@@ -8,6 +8,8 @@ import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 
+import java.util.function.Supplier;
+
 public class ChiselFamily {
 
     protected ResourceKey<VariantFamily> KEY;
@@ -15,6 +17,9 @@ public class ChiselFamily {
 
     public VariantFamily getFamily() {
         ChiselVariants.VARIANT_FAMILIES.putIfAbsent(family.getFamilyName(), family);
+        if (family.getWaxedFamily() != null) {
+            ChiselVariants.VARIANT_FAMILIES.putIfAbsent(family.getWaxedFamily().getFamilyName(), family.getWaxedFamily());
+        }
         return family;
     }
 
@@ -29,14 +34,36 @@ public class ChiselFamily {
         return KEY;
     }
 
-    public java.util.function.Supplier<Block> getVariant(String name) {
-        return () -> family.getVariants().stream()
-                .filter(v -> v.getName().equals(name))
-                .findFirst()
-                .map(Variant::getBlock)
-                .orElseThrow(() -> new IllegalArgumentException("Variant not found: " + name));
+    public Supplier<Block> getVariant(String name) {
+        return () -> {
+            Variant variant = family.getVariants().stream()
+                    .filter(v -> v.getName().equals(name))
+                    .findFirst()
+                    .orElseGet(() -> family.getHiddenVariants().stream()
+                            .filter(v -> v.getName().equals(name))
+                            .findFirst()
+                            .orElseGet(() -> {
+                                if (family.getWaxedFamily() != null) {
+                                    return family.getWaxedFamily().getVariants().stream()
+                                            .filter(v -> v.getName().equals(name))
+                                            .findFirst()
+                                            .orElse(null);
+                                }
+                                return null;
+                            }));
+
+            if (variant == null) {
+                throw new IllegalArgumentException("Variant not found: " + name + " in family " + family.getFamilyName());
+            }
+            return variant.getBlock();
+        };
     }
 
     public void addTranslations(LangHelper lang) {
+    }
+
+    public void addWaxedTranslation(LangHelper lang, String key, String blockName, String desc) {
+        lang.addBlock(getVariant(key), blockName, desc);
+        lang.addBlock(getVariant("waxed_%s".formatted(key)), "Waxed %s".formatted(blockName), desc);
     }
 }

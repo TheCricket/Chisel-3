@@ -1,19 +1,14 @@
 package io.github.chiselteam.chisel.inventory.slot;
 
-import io.github.chiselteam.chisel.inventory.container.ChiselContainer;
 import io.github.chiselteam.chisel.inventory.ChiselSelectionInventory;
-import io.github.chiselteam.chisel.registry.ChiselStats;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
 public class SelectionSlot extends Slot {
-    private final ChiselContainer container;
 
-    public SelectionSlot(ChiselContainer container, ChiselSelectionInventory selectionInventory, int slot, int x, int y) {
+    public SelectionSlot(ChiselSelectionInventory selectionInventory, int slot, int x, int y) {
         super(selectionInventory, slot, x, y);
-        this.container = container;
     }
 
     @Override
@@ -22,32 +17,12 @@ public class SelectionSlot extends Slot {
     }
 
     @Override
-    public void onQuickCraft(ItemStack picked, ItemStack original) {
-        super.onQuickCraft(picked, original);
+    public boolean mayPickup(net.minecraft.world.entity.player.@NonNull Player player) {
+        return false;
     }
 
     @Override
-    protected void onSwapCraft(int count) {
-        super.onSwapCraft(count);
-    }
-
-    @Override
-    protected void onQuickCraft(@NonNull ItemStack picked, int count) {
-        container.chisel.hurtAndBreak(picked.count(), container.inventory.player, container.hand);
-        container.inventory.player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
-        clearContent();
-    }
-
-    @Override
-    public void onTake(@NonNull Player player, @NonNull ItemStack carried) {
-        super.onTake(player, carried);
-        container.chisel.hurtAndBreak(carried.count(), container.inventory.player, container.hand);
-        player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
-        clearContent();
-    }
-
-    private void clearContent() {
-        container.selectionInventory.clearContent();
-        container.inputSlot.set(ItemStack.EMPTY);
+    public boolean isFake() {
+        return true;
     }
 }

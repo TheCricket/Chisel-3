@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/exposed_copper/exposed_copper_crate",
+    "overlay_connected": "chisel:block/exposed_copper/exposed_copper_crate-ctm",
+    "overlay_texture": "chisel:block/exposed_copper/exposed_copper_crate",
+    "particle": "chisel:block/exposed_copper/exposed_copper_crate"
+  }
+}

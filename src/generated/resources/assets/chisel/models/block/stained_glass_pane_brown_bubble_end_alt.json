@@ -1,0 +1,7 @@
+{
+  "parent": "chisel:block/template_glass_pane_end_alt",
+  "textures": {
+    "edge": "chisel:block/stained_glass_pane_brown/stained_glass_pane_brown_bubble-top",
+    "pane": "chisel:block/stained_glass_pane_brown/stained_glass_pane_brown_bubble"
+  }
+}

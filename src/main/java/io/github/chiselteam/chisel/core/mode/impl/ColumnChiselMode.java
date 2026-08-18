@@ -18,13 +18,17 @@ public class ColumnChiselMode extends ChiselMode {
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
-        List<BlockPos> affected = new ArrayList<>();
-        Direction up = (side == Direction.UP || side == Direction.DOWN) ? Direction.NORTH : Direction.UP;
-        affected.add(pos);
-        if(isSameBlock(level, state, level.getBlockState(pos.relative(up))))
-            affected.add(pos.relative(up));
-        if(isSameBlock(level, state, level.getBlockState(pos.relative(up.getOpposite()))))
-            affected.add(pos.relative(up.getOpposite()));
+        List<BlockPos> affected = new ArrayList<>(3);
+        Direction up = side.getAxis().isVertical() ? Direction.NORTH : Direction.UP;
+
+        if (isSameBlock(level, state, level.getBlockState(pos))) affected.add(pos);
+
+        BlockPos upPos = pos.relative(up);
+        if (isSameBlock(level, state, level.getBlockState(upPos))) affected.add(upPos);
+
+        BlockPos downPos = pos.relative(up.getOpposite());
+        if (isSameBlock(level, state, level.getBlockState(downPos))) affected.add(downPos);
+
         return affected;
     }
 }

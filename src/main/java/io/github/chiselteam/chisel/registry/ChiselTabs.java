@@ -29,6 +29,7 @@ public class ChiselTabs {
                     ChiselBlocks.CONCRETE.getFamily(),
                     ChiselBlocks.BASALT.getFamily(),
                     ChiselBlocks.DIORITE.getFamily(),
+                    ChiselBlocks.DEEPSLATE.getFamily(),
                     ChiselBlocks.END_STONE.getFamily(),
                     ChiselBlocks.GRANITE.getFamily(),
                     ChiselBlocks.GRIMSTONE.getFamily(),
@@ -44,6 +45,7 @@ public class ChiselTabs {
                     ChiselBlocks.OBSIDIAN.getFamily(),
                     ChiselBlocks.PRISMARINE.getFamily(),
                     ChiselBlocks.PURPUR.getFamily(),
+                    ChiselBlocks.QUARTZ.getFamily(),
                     ChiselBlocks.RED_SANDSTONE.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
                     ChiselBlocks.SHINGLE.getFamily(),
@@ -66,6 +68,10 @@ public class ChiselTabs {
                     ChiselBlocks.BOOKSHELF.getFamily(),
                     ChiselBlocks.DARK_OAK.getFamily(),
                     ChiselBlocks.JUNGLE.getFamily(),
+                    ChiselBlocks.WARPED.getFamily(),
+                    ChiselBlocks.CHERRY.getFamily(),
+                    ChiselBlocks.MANGROVE.getFamily(),
+                    ChiselBlocks.PALE_OAK.getFamily(),
                     ChiselBlocks.OAK.getFamily(),
                     ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
@@ -79,6 +85,9 @@ public class ChiselTabs {
             .displayItems((_, output) -> List.of(
                     ChiselBlocks.FACTORY.getFamily(),
                     ChiselBlocks.COPPER.getFamily(),
+                            ChiselBlocks.EXPOSED_COPPER.getFamily(),
+                            ChiselBlocks.WEATHERED_COPPER.getFamily(),
+                            ChiselBlocks.OXIDIZED_COPPER.getFamily(),
                     ChiselBlocks.FUTURA.getFamily(),
                     ChiselBlocks.GOLD.getFamily(),
                     ChiselBlocks.HEX_PLATING.getFamily(),

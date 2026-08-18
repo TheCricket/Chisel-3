@@ -1,0 +1,7 @@
+{
+  "parent": "chisel:block/template_glass_pane_end",
+  "textures": {
+    "edge": "chisel:block/glass_pane/glass_pane_chinese-top",
+    "pane": "chisel:block/glass_pane/glass_pane_chinese"
+  }
+}

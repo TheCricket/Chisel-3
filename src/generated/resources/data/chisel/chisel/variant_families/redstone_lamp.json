@@ -3,10 +3,6 @@
   "tag": "c:chisel/redstone_lamp",
   "variants": [
     {
-      "block": "minecraft:redstone_lamp",
-      "name": "block.minecraft.redstone_lamp"
-    },
-    {
       "block": "chisel:redstone_lamp_square",
       "model_type": "redstone_lamp",
       "name": "redstone_lamp_square"

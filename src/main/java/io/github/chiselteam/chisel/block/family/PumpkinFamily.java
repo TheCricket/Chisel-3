@@ -1,33 +1,32 @@
 package io.github.chiselteam.chisel.block.family;
 
+import io.github.chiselteam.chisel.block.util.ChiselCarvedPumpkinBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 import io.github.chiselteam.chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.PUMPKIN;
 
 public class PumpkinFamily extends ChiselFamily {
     public PumpkinFamily(BlockBehaviour.Properties props) {
         family = builder("pumpkin")
-                .addVariant(Blocks.PUMPKIN)
-                .addVariant("pumpkin_0", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_1", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_2", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_3", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_4", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_5", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_6", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_7", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_8", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_9", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_10", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_11", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_12", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_13", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_14", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_15", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
-                .addVariant("pumpkin_16", CarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_0", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_1", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_2", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_3", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_4", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_5", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_6", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_7", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_8", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_9", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_10", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_11", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_12", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_13", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_14", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_15", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
+                .addVariant("pumpkin_16", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
                 .family();
     }
 

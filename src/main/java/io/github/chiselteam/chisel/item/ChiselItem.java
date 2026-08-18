@@ -4,6 +4,10 @@ import io.github.chiselteam.chisel.inventory.menu.ChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtOps;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -15,6 +19,7 @@ import net.minecraft.world.item.ItemInstance;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.ItemAbility;
 import org.jspecify.annotations.NonNull;
@@ -25,6 +30,38 @@ public class ChiselItem extends Item {
 
     public ChiselItem(Properties properties) {
         super(properties);
+    }
+
+    public static void hurtAndBreak(ItemStack chisel, int amount, Player player, InteractionHand hand) {
+        ItemStack contained = getContainedItem(chisel);
+        if (player.level() instanceof ServerLevel serverLevel) {
+            chisel.hurtAndBreak(amount, serverLevel, player, brokenItem -> {
+                player.onEquippedItemBroken(brokenItem, hand.asEquipmentSlot());
+                if (!contained.isEmpty()) {
+                    player.drop(contained, false);
+                }
+            });
+        }
+    }
+
+    public static int getAvailableUses(ItemStack chisel, Player player) {
+        if (chisel.isEmpty() || !chisel.canPerformAction(ChiselItemAbilities.CHISEL)) return 0;
+        if (player.hasInfiniteMaterials() || !chisel.isDamageableItem()) return Integer.MAX_VALUE;
+        return Math.max(0, chisel.getMaxDamage() - chisel.getDamageValue());
+    }
+
+    private static ItemStack getContainedItem(ItemStack chisel) {
+        CustomData customData = chisel.get(DataComponents.CUSTOM_DATA);
+        if (customData == null) {
+            return ItemStack.EMPTY;
+        }
+        CompoundTag tag = customData.copyTag();
+        if (!tag.contains("chiselItem")) {
+            return ItemStack.EMPTY;
+        }
+        return ItemStack.CODEC.parse(NbtOps.INSTANCE, tag.get("chiselItem"))
+                .result()
+                .orElse(ItemStack.EMPTY);
     }
 
     @Override

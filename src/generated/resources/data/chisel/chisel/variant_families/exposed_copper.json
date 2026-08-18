@@ -1,0 +1,55 @@
+{
+  "family_name": "exposed_copper",
+  "tag": "c:chisel/exposed_copper",
+  "variants": [
+    {
+      "block": "minecraft:exposed_copper",
+      "name": "block.minecraft.exposed_copper"
+    },
+    {
+      "block": "minecraft:exposed_chiseled_copper",
+      "name": "block.minecraft.exposed_chiseled_copper"
+    },
+    {
+      "block": "minecraft:exposed_cut_copper",
+      "name": "block.minecraft.exposed_cut_copper"
+    },
+    {
+      "block": "minecraft:exposed_copper_grate",
+      "name": "block.minecraft.exposed_copper_grate"
+    },
+    {
+      "block": "chisel:exposed_copper_bad_greggy",
+      "model_type": "connected",
+      "name": "exposed_copper_bad_greggy"
+    },
+    {
+      "block": "chisel:exposed_copper_bolted",
+      "name": "exposed_copper_bolted"
+    },
+    {
+      "block": "chisel:exposed_copper_caution",
+      "model_type": "connected",
+      "name": "exposed_copper_caution"
+    },
+    {
+      "block": "chisel:exposed_copper_crate",
+      "model_type": "connected",
+      "name": "exposed_copper_crate"
+    },
+    {
+      "block": "chisel:exposed_copper_machine",
+      "name": "exposed_copper_machine"
+    },
+    {
+      "block": "chisel:exposed_copper_scaffold",
+      "model_type": "connected",
+      "name": "exposed_copper_scaffold"
+    },
+    {
+      "block": "chisel:exposed_copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "exposed_copper_thermal"
+    }
+  ]
+}

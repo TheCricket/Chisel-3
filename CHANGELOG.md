@@ -2,11 +2,36 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.16]
+
+### Added
+
+- **Block Families**: Added Deepslate, Warped, Pale Oak, Cherry, and Mangrove block sets.
+- **Copper**: Added Copper Weathering in a data driven system other mods can implement!
+- **Futura**: Added Matrix variants.
+- **Jade Compatibility**: Jade now shows descriptions!.
+- **Auto Chisel**: Added item-pipe automation capabilities and an updated interface.
+- **Chisel Selection**: Added an in-world selection overlay that outlines all blocks affected by the selected mode.
+
+### Changed
+
+- **Chisel Menu**: Improved interactions, shift-click behavior, mode selection, and search so descriptions are included.
+- **Quartz and Futura**: Updated textures, models, and variant names for consistency.
+- **Dependencies**: Updated CTM to `26.1.2.4`.
+- **Localization**: Unified several variant names and improved Builder's Guide tooltip readability.
+- **Chisel Durability**: Completely disable it by changing it to 0 in the configs!
+
+### Fixed
+
+- **Auto Chisel**: Prevented non-chiselable blocks from entering input slots and corrected exponential speed-upgrade
+  stacking.
+- **Automation**: Fixed quick-moving upgrade and chisel items and improved item-pipe handling.
+
 ## [26.1.2.15]
 
 ### Fixed
 - **Sound**: Fixed fallback sound.
-- 
+
 ## [26.1.2.14]
 
 ### Fixed

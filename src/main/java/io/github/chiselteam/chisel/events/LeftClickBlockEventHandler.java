@@ -1,17 +1,18 @@
 package io.github.chiselteam.chisel.events;
 
+import com.google.common.cache.CacheBuilder;
+import com.google.common.cache.CacheLoader;
+import com.google.common.cache.LoadingCache;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselBlockTags;
+import io.github.chiselteam.chisel.item.ChiselItem;
 import io.github.chiselteam.chisel.registry.ChiselDataComponents;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
 import io.github.chiselteam.chisel.util.VariantFinder;
-import com.google.common.cache.CacheBuilder;
-import com.google.common.cache.CacheLoader;
-import com.google.common.cache.LoadingCache;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.NbtOps;
@@ -79,6 +80,9 @@ public class LeftClickBlockEventHandler {
                             for (BlockPos p : affected) {
                                 chiselBlock(level, player, hand, p, nextState, stack);
                             }
+                            if (!affected.isEmpty()) {
+                                playEffects(level, player, pos, nextState);
+                            }
                         }
                     }
                 } else {
@@ -91,8 +95,13 @@ public class LeftClickBlockEventHandler {
 
     private static void chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
         level.setBlockAndUpdate(pos, state);
-        level.addDestroyBlockEffect(pos, state);
-        level.playSound(null, pos, state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(), SoundSource.BLOCKS);
-        chisel.hurtAndBreak(1, player, hand);
+        ChiselItem.hurtAndBreak(chisel, 1, player, hand);
+    }
+
+    private static void playEffects(Level level, Player player, BlockPos hitPos, BlockState state) {
+        level.addDestroyBlockEffect(hitPos, state);
+        level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(),
+                SoundSource.PLAYERS);
     }
 }

@@ -1,0 +1,55 @@
+{
+  "family_name": "oxidized_copper",
+  "tag": "c:chisel/oxidized_copper",
+  "variants": [
+    {
+      "block": "minecraft:oxidized_copper",
+      "name": "block.minecraft.oxidized_copper"
+    },
+    {
+      "block": "minecraft:oxidized_chiseled_copper",
+      "name": "block.minecraft.oxidized_chiseled_copper"
+    },
+    {
+      "block": "minecraft:oxidized_cut_copper",
+      "name": "block.minecraft.oxidized_cut_copper"
+    },
+    {
+      "block": "minecraft:oxidized_copper_grate",
+      "name": "block.minecraft.oxidized_copper_grate"
+    },
+    {
+      "block": "chisel:oxidized_copper_bad_greggy",
+      "model_type": "connected",
+      "name": "oxidized_copper_bad_greggy"
+    },
+    {
+      "block": "chisel:oxidized_copper_bolted",
+      "name": "oxidized_copper_bolted"
+    },
+    {
+      "block": "chisel:oxidized_copper_caution",
+      "model_type": "connected",
+      "name": "oxidized_copper_caution"
+    },
+    {
+      "block": "chisel:oxidized_copper_crate",
+      "model_type": "connected",
+      "name": "oxidized_copper_crate"
+    },
+    {
+      "block": "chisel:oxidized_copper_machine",
+      "name": "oxidized_copper_machine"
+    },
+    {
+      "block": "chisel:oxidized_copper_scaffold",
+      "model_type": "connected",
+      "name": "oxidized_copper_scaffold"
+    },
+    {
+      "block": "chisel:oxidized_copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "oxidized_copper_thermal"
+    }
+  ]
+}

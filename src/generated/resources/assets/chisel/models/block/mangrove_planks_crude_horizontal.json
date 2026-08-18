@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mangrove_planks/mangrove_planks_crude_horizontal",
+    "overlay_3x3": "chisel:block/mangrove_planks/mangrove_planks_crude_horizontal-3x3",
+    "particle": "chisel:block/mangrove_planks/mangrove_planks_crude_horizontal"
+  }
+}

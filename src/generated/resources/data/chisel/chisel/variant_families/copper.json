@@ -7,6 +7,18 @@
       "name": "block.minecraft.copper_block"
     },
     {
+      "block": "minecraft:chiseled_copper",
+      "name": "block.minecraft.chiseled_copper"
+    },
+    {
+      "block": "minecraft:cut_copper",
+      "name": "block.minecraft.cut_copper"
+    },
+    {
+      "block": "minecraft:copper_grate",
+      "name": "block.minecraft.copper_grate"
+    },
+    {
       "block": "chisel:copper_bad_greggy",
       "model_type": "connected",
       "name": "copper_bad_greggy"

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mangrove_planks/mangrove_planks_crude_paneling"
+  }
+}

@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.util;
 
-import io.github.chiselteam.chisel.Chisel;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonObject;
+import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
@@ -33,8 +33,8 @@ public abstract class LangHelper extends LanguageProvider {
         if(generateUpsideDown) upsideDown.put(key, LangConversionHelper.convertComponents(splitEnglish));
     }
 
-    public void addBlock(Supplier<? extends Block> key, String family, String desc) {
-        addBlock(key, family);
+    public void addBlock(Supplier<? extends Block> key, String blockName, String desc) {
+        addBlock(key, blockName);
         add("%s.desc".formatted(key.get().getDescriptionId()), desc);
     }
 
