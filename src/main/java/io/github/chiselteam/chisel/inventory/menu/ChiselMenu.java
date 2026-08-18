@@ -67,7 +67,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     public void removed(@NonNull Player player) {
         super.removed(player);
         if (player.level().isClientSide()) return;
-        rollbackWorkingStack();
+        takeWorking(safeWorkingStack().count());
         if (container.chisel.isEmpty()) clearContainer(player, container);
         else savePersistence();
     }
@@ -210,6 +210,8 @@ public class ChiselMenu extends AbstractContainerMenu {
             converted += amount;
         }
 
+        converted += safeWorkingStack().count();
+
         if (converted <= 0) return;
         savePersistence(safeWorkingStack());
         ChiselItem.hurtAndBreak(container.chisel, converted, player, container.hand);
@@ -245,11 +247,6 @@ public class ChiselMenu extends AbstractContainerMenu {
     private ItemStack safeWorkingStack(int count) {
         ItemStack committed = container.getCommittedStack();
         return committed.isEmpty() || count <= 0 ? ItemStack.EMPTY : committed.copyWithCount(count);
-    }
-
-    private void rollbackWorkingStack() {
-        if (!container.isConverted()) return;
-        ((ChiselInputSlot) inputSlot).setWorking(safeWorkingStack());
     }
 
     public void setSearchState(String filter, float scrollOffset) {

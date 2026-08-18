@@ -17,8 +17,6 @@ import java.util.function.Supplier;
 public class ChiselItems {
     public static DeferredRegister.Items ITEMS = DeferredRegister.createItems(Chisel.MODID);
 
-    private static final Item.Properties CHISEL_PROPS = new Item.Properties().stacksTo(1);
-
     public static DeferredItem<Item> CHISEL_IRON, CHISEL_DIAMOND, CHISEL_OBSIDIAN;
     public static DeferredItem<Item> OFFSET_TOOL;
     public static DeferredItem<Item> UPGRADE_STACK, UPGRADE_SPEED, UPGRADE_REVERSION, UPGRADE_AUTOMATION;
@@ -42,9 +40,9 @@ public class ChiselItems {
         int diamond_durability = CommonConfig.DIAMOND_CHISEL_DURABILITY.getAsInt();
         int obsidian_durability = CommonConfig.OBSIDIAN_CHISEL_DURABILITY.getAsInt();
 
-        CHISEL_IRON = iron_durability > 0 ? registerChisel("chisel_iron", CHISEL_PROPS.durability(iron_durability)) : registerChisel("chisel_iron", CHISEL_PROPS);
-        CHISEL_DIAMOND = diamond_durability > 0 ? registerChisel("chisel_diamond", CHISEL_PROPS.durability(diamond_durability)) : registerChisel("chisel_diamond", CHISEL_PROPS);
-        CHISEL_OBSIDIAN = obsidian_durability > 0 ? registerChisel("chisel_obsidian", CHISEL_PROPS.durability(obsidian_durability)) : registerChisel("chisel_obsidian", CHISEL_PROPS);
+        CHISEL_IRON = iron_durability > 0 ? registerChisel("chisel_iron", getChiselProps().durability(iron_durability)) : registerChisel("chisel_iron", getChiselProps());
+        CHISEL_DIAMOND = diamond_durability > 0 ? registerChisel("chisel_diamond", getChiselProps().durability(diamond_durability)) : registerChisel("chisel_diamond", getChiselProps());
+        CHISEL_OBSIDIAN = obsidian_durability > 0 ? registerChisel("chisel_obsidian", getChiselProps().durability(obsidian_durability)) : registerChisel("chisel_obsidian", getChiselProps());
 
         OFFSET_TOOL = register("offset_tool", OffsetToolItem::new, Item.Properties::new);
 
@@ -59,5 +57,9 @@ public class ChiselItems {
         BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
         CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);
         SMASHING_ROCK = register("smashingrock", SmashingRockItem::new, Item.Properties::new);
+    }
+
+    private static Item.Properties getChiselProps() {
+        return new Item.Properties().stacksTo(1);
     }
 }

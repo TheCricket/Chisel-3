@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/quartz_squareborder"
+    "model": "chisel:block/quartz_square_border"
   }
 }

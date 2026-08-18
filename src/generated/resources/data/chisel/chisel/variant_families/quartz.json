@@ -153,9 +153,9 @@
       "name": "quartz_zag"
     },
     {
-      "block": "chisel:quartz_squareborder",
+      "block": "chisel:quartz_square_border",
       "model_type": "connected",
-      "name": "quartz_squareborder"
+      "name": "quartz_square_border"
     },
     {
       "block": "chisel:quartz_indent",

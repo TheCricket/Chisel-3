@@ -44,7 +44,7 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_twisted", props, TBS)
                 .addVariant("quartz_weaver", props, CONNECTED)
                 .addVariant("quartz_zag", props, AR)
-                .addVariant("quartz_squareborder", props, CONNECTED)
+                .addVariant("quartz_square_border", props, CONNECTED)
                 .addVariant("quartz_indent", props, CONNECTED)
                 .addVariant("quartz_checker", props)
                 .family();
@@ -85,7 +85,7 @@ public class QuartzFamily extends ChiselFamily {
         lang.addBlock(getVariant("quartz_twisted"), "Quartz", "Twisted");
         lang.addBlock(getVariant("quartz_weaver"), "Quartz", "Weaver");
         lang.addBlock(getVariant("quartz_zag"), "Quartz", "Zag");
-        lang.addBlock(getVariant("quartz_squareborder"), "Quartz", "Square Border");
+        lang.addBlock(getVariant("quartz_square_border"), "Quartz", "Square Border");
         lang.addBlock(getVariant("quartz_indent"), "Quartz", "Indent");
         lang.addBlock(getVariant("quartz_checker"), "Quartz", "Checker");
     }

@@ -30,6 +30,7 @@ public class VariantModels {
     public final MultiLayerCTMModel MULTI_LAYER_CTM = new MultiLayerCTMModel(false);
     public final MultiLayerCTMTintedModel MULTI_LAYER_CTM_TINTED = new MultiLayerCTMTintedModel();
     public final MultiLayerCTMModel MULTI_LAYER_CTM_GLOW = new MultiLayerCTMModel(true);
+    public final MultiLayerCTMModel LAYERED_MULTI_LAYER_CTM_GLOW = new MultiLayerCTMModel(true, true);
     public final WaterstoneModel WATERSTONE = new WaterstoneModel();
     public final BookshelfModel BOOKSHELF = new BookshelfModel();
     public final CarpetModel CARPET = new CarpetModel();

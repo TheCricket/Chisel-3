@@ -364,6 +364,8 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
             int[] slots = new int[OUTPUT_SLOTS];
             for (int i = 0; i < OUTPUT_SLOTS; i++) slots[i] = 14 + i;
             return slots;
+        } else if (side == Direction.UP) {
+            return new int[]{CHISEL_SLOT};
         } else {
             int[] slots = new int[INPUT_SLOTS];
             for (int i = 0; i < INPUT_SLOTS; i++) slots[i] = i;

@@ -3,10 +3,10 @@
   "connected_faces": [
     "all"
   ],
-  "model_location": "chisel:block/quartz_squareborder",
+  "model_location": "chisel:block/quartz_square_border",
   "render_overlay_on_all_faces": true,
   "variant": {
-    "block": "chisel:quartz_squareborder",
+    "block": "chisel:quartz_square_border",
     "kind": "standard"
   }
 }

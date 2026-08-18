@@ -1,13 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "base_emissivity": 15,
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/futura_controller_purple",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:futura_controller_purple",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/futura_controller_purple"
+    }
   }
 }

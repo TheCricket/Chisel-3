@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.block.item;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
@@ -18,11 +19,11 @@ public class BuildersGuideBlockItem extends BlockItem {
     @SuppressWarnings("deprecation")
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, Consumer<Component> builder, @NonNull TooltipFlag tooltipFlag) {
-        builder.accept(Component.translatable("tooltip.chisel.builders_guide.mode_desc"));
-        builder.accept(Component.translatable("tooltip.chisel.builders_guide.length_desc"));
-        builder.accept(Component.translatable("tooltip.chisel.builders_guide.width_desc"));
-        builder.accept(Component.translatable("tooltip.chisel.builders_guide.height_desc"));
-        builder.accept(Component.translatable("tooltip.chisel.builders_guide.place_desc"));
+        builder.accept(Component.translatable("tooltip.chisel.builders_guide.mode_desc").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("tooltip.chisel.builders_guide.length_desc").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("tooltip.chisel.builders_guide.width_desc").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("tooltip.chisel.builders_guide.height_desc").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("tooltip.chisel.builders_guide.place_desc").withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, context, display, builder, tooltipFlag);
     }
 }
