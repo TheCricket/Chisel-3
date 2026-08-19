@@ -52,7 +52,7 @@ public class MossyCobblestoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("mossy_cobblestone_array"), "Mossy Cobblestone", "Aligned Mossy Cobblestone Bricks");
+        lang.addBlock(getVariant("mossy_cobblestone_array"), "Mossy Cobblestone", "Array");
         lang.addBlock(getVariant("mossy_cobblestone_braid"), "Mossy Cobblestone", "Braid");
         lang.addBlock(getVariant("mossy_cobblestone_chaotic"), "Mossy Cobblestone", "Huge Mossy Cobblestone Tiles");
         lang.addBlock(getVariant("mossy_cobblestone_chaotic_medium"), "Mossy Cobblestone", "Detailed Mossy Cobblestone Bricks");

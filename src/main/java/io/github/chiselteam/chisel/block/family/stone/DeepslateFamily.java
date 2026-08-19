@@ -49,7 +49,7 @@ public class DeepslateFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("deepslate_array"), "Deepslate", "Deepslate Pillar");
+        lang.addBlock(getVariant("deepslate_array"), "Deepslate", "Array");
         lang.addBlock(getVariant("deepslate_braid"), "Deepslate", "Braid");
         lang.addBlock(getVariant("deepslate_chaotic_bricks"), "Deepslate", "Chaotic Bricks");
         lang.addBlock(getVariant("deepslate_chaotic_medium"), "Deepslate", "Deepslate Bricks");

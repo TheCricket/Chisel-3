@@ -165,6 +165,40 @@
     {
       "block": "chisel:quartz_checker",
       "name": "quartz_checker"
+    },
+    {
+      "block": "chisel:quartz_bricks_indent",
+      "name": "quartz_bricks_indent"
+    },
+    {
+      "block": "chisel:quartz_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "quartz_bricks_large"
+    },
+    {
+      "block": "chisel:quartz_checker_small",
+      "name": "quartz_checker_small"
+    },
+    {
+      "block": "chisel:quartz_polished",
+      "name": "quartz_polished"
+    },
+    {
+      "block": "chisel:quartz_bricks_vertical",
+      "name": "quartz_bricks_vertical"
+    },
+    {
+      "block": "chisel:quartz_line_horizontal",
+      "name": "quartz_line_horizontal"
+    },
+    {
+      "block": "chisel:quartz_line_vertical",
+      "name": "quartz_line_vertical"
+    },
+    {
+      "block": "chisel:quartz_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "quartz_meander_horizontal"
     }
   ]
 }

@@ -47,7 +47,7 @@ public class CertusFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("certus_array"), "Certus Quartz", "Large Bricks");
+        lang.addBlock(getVariant("certus_array"), "Certus Quartz", "Array");
         lang.addBlock(getVariant("certus_braid"), "Certus Quartz", "Braid");
         lang.addBlock(getVariant("certus_chaotic"), "Certus Quartz", "Varied Bricks");
         lang.addBlock(getVariant("certus_chaotic_medium"), "Certus Quartz", "Detailed Bricks");

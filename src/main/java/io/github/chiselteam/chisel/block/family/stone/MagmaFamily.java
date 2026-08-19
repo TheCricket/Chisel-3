@@ -49,7 +49,7 @@ public class MagmaFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("magma_array"), "Magma", "Magma Pillar");
+        lang.addBlock(getVariant("magma_array"), "Magma", "Array");
         lang.addBlock(getVariant("magma_braid"), "Magma", "Braid");
         lang.addBlock(getVariant("magma_chaotic_bricks"), "Magma", "Chaotic Bricks");
         lang.addBlock(getVariant("magma_chaotic_medium"), "Magma", "Magma Bricks");

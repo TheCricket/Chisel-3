@@ -67,7 +67,7 @@ public class RedSandstoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("red_sandstone_array"), "Red Sandstone", "Red Sandstone Pillar");
+        lang.addBlock(getVariant("red_sandstone_array"), "Red Sandstone", "Array");
         lang.addBlock(getVariant("red_sandstone_braid"), "Red Sandstone", "Braid");
         lang.addBlock(getVariant("red_sandstone_chaotic_bricks"), "Red Sandstone", "Chaotic Bricks");
         lang.addBlock(getVariant("red_sandstone_chaotic_medium"), "Red Sandstone", "Red Sandstone Bricks");

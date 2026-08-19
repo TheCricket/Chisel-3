@@ -51,7 +51,7 @@ public class BasaltFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("basalt_array"), "Basalt", "Basalt Pillar");
+        lang.addBlock(getVariant("basalt_array"), "Basalt", "Array");
         lang.addBlock(getVariant("basalt_braid"), "Basalt", "Braid");
         lang.addBlock(getVariant("basalt_chaotic_bricks"), "Basalt", "Chaotic Bricks");
         lang.addBlock(getVariant("basalt_chaotic_medium"), "Basalt", "Basalt Bricks");

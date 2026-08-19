@@ -50,7 +50,7 @@ public class PrismarineFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("prismarine_array"), "Prismarine", "Prismarine Pillar");
+        lang.addBlock(getVariant("prismarine_array"), "Prismarine", "Array");
         lang.addBlock(getVariant("prismarine_braid"), "Prismarine", "Braid");
         lang.addBlock(getVariant("prismarine_chaotic_bricks"), "Prismarine", "Chaotic Bricks");
         lang.addBlock(getVariant("prismarine_chaotic_medium"), "Prismarine", "Prismarine Bricks");

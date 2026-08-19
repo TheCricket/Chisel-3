@@ -49,7 +49,7 @@ public class BricksFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("bricks_array"), "Bricks", "Large Bricks");
+        lang.addBlock(getVariant("bricks_array"), "Bricks", "Array");
         lang.addBlock(getVariant("bricks_braid"), "Bricks", "Braid");
         lang.addBlock(getVariant("bricks_chaotic"), "Bricks", "Varied Bricks");
         lang.addBlock(getVariant("bricks_chaotic_medium"), "Bricks", "Detailed Bricks");

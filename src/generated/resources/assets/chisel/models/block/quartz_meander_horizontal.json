@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/quartz/quartz_meander_horizontal",
+    "bottom": "chisel:block/quartz/quartz_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/quartz/quartz_meander_horizontal-ctmh",
+    "particle": "chisel:block/quartz/quartz_meander_horizontal",
+    "top": "chisel:block/quartz/quartz_meander_horizontal-top"
+  }
+}

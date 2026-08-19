@@ -47,8 +47,8 @@ public class LimestoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("limestone_raw"), "Limestone", "Limestone");
-        lang.addBlock(getVariant("limestone_array"), "Limestone", "Large Limestone Tiles");
+        lang.addBlock(getVariant("limestone_raw"), "Limestone", "Raw");
+        lang.addBlock(getVariant("limestone_array"), "Limestone", "Array");
         lang.addBlock(getVariant("limestone_braid"), "Limestone", "Braid");
         lang.addBlock(getVariant("limestone_chaotic_bricks"), "Limestone", "Chaotic Bricks");
         lang.addBlock(getVariant("limestone_chaotic_medium"), "Limestone", "Small Limestone Bricks");

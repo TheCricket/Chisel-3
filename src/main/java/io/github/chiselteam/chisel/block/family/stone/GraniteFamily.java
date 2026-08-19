@@ -49,7 +49,7 @@ public class GraniteFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("granite_array"), "Granite", "Granite Pillar");
+        lang.addBlock(getVariant("granite_array"), "Granite", "Array");
         lang.addBlock(getVariant("granite_braid"), "Granite", "Braid");
         lang.addBlock(getVariant("granite_chaotic_bricks"), "Granite", "Chaotic Bricks");
         lang.addBlock(getVariant("granite_chaotic_medium"), "Granite", "Granite Bricks");

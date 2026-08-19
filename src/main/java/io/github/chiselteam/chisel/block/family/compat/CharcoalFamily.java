@@ -47,7 +47,7 @@ public class CharcoalFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("charcoal_array"), "Charcoal", "Charcoal Pillar");
+        lang.addBlock(getVariant("charcoal_array"), "Charcoal", "Array");
         lang.addBlock(getVariant("charcoal_braid"), "Charcoal", "Braid");
         lang.addBlock(getVariant("charcoal_chaotic_bricks"), "Charcoal", "Chaotic Bricks");
         lang.addBlock(getVariant("charcoal_chaotic_medium"), "Charcoal", "Charcoal Bricks");

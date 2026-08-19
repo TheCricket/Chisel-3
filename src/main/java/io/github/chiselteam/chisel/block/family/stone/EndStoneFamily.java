@@ -50,7 +50,7 @@ public class EndStoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("end_stone_array"), "End Stone", "End Stone Pillar");
+        lang.addBlock(getVariant("end_stone_array"), "End Stone", "Array");
         lang.addBlock(getVariant("end_stone_braid"), "End Stone", "Braid");
         lang.addBlock(getVariant("end_stone_chaotic_bricks"), "End Stone", "Chaotic Bricks");
         lang.addBlock(getVariant("end_stone_chaotic_medium"), "End Stone", "End Stone Bricks");

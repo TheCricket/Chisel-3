@@ -47,7 +47,7 @@ public class CoalCokeFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("coal_coke_array"), "Coal Coke", "Coal Coke Pillar");
+        lang.addBlock(getVariant("coal_coke_array"), "Coal Coke", "Array");
         lang.addBlock(getVariant("coal_coke_braid"), "Coal Coke", "Braid");
         lang.addBlock(getVariant("coal_coke_chaotic_bricks"), "Coal Coke", "Chaotic Bricks");
         lang.addBlock(getVariant("coal_coke_chaotic_medium"), "Coal Coke", "Coal Coke Bricks");

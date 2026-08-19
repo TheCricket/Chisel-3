@@ -52,7 +52,7 @@ public class CobblestoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("cobblestone_array"), "Cobblestone", "Aligned Cobblestone Bricks");
+        lang.addBlock(getVariant("cobblestone_array"), "Cobblestone", "Array");
         lang.addBlock(getVariant("cobblestone_braid"), "Cobblestone", "Braid");
         lang.addBlock(getVariant("cobblestone_chaotic"), "Cobblestone", "Huge Cobblestone Tiles");
         lang.addBlock(getVariant("cobblestone_chaotic_medium"), "Cobblestone", "Detailed Cobblestone Bricks");

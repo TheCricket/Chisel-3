@@ -63,8 +63,8 @@ public class MarbleFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("marble_raw"), "Marble", "Raw Marble");
-        lang.addBlock(getVariant("marble_array"), "Marble", "Marble Blocks");
+        lang.addBlock(getVariant("marble_raw"), "Marble", "Raw");
+        lang.addBlock(getVariant("marble_array"), "Marble", "Array");
         lang.addBlock(getVariant("marble_braid"), "Marble", "Braid");
         lang.addBlock(getVariant("marble_chaotic_bricks"), "Marble", "Arranged Marble Tiles");
         lang.addBlock(getVariant("marble_chaotic_medium"), "Marble", "Marble Brick");

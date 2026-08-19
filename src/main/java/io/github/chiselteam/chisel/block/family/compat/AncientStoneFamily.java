@@ -47,7 +47,7 @@ public class AncientStoneFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("ancient_stone_array"), "Ancient Stone", "Large Bricks");
+        lang.addBlock(getVariant("ancient_stone_array"), "Ancient Stone", "Array");
         lang.addBlock(getVariant("ancient_stone_braid"), "Ancient Stone", "Braid");
         lang.addBlock(getVariant("ancient_stone_chaotic"), "Ancient Stone", "Varied Bricks");
         lang.addBlock(getVariant("ancient_stone_chaotic_medium"), "Ancient Stone", "Detailed Bricks");

@@ -49,7 +49,7 @@ public class AndesiteFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("andesite_array"), "Andesite", "Andesite Pillar");
+        lang.addBlock(getVariant("andesite_array"), "Andesite", "Array");
         lang.addBlock(getVariant("andesite_braid"), "Andesite", "Braid");
         lang.addBlock(getVariant("andesite_chaotic_bricks"), "Andesite", "Chaotic Bricks");
         lang.addBlock(getVariant("andesite_chaotic_medium"), "Andesite", "Andesite Bricks");

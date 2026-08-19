@@ -49,7 +49,7 @@ public class DioriteFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("diorite_array"), "Diorite", "Diorite Pillar");
+        lang.addBlock(getVariant("diorite_array"), "Diorite", "Array");
         lang.addBlock(getVariant("diorite_braid"), "Diorite", "Braid");
         lang.addBlock(getVariant("diorite_chaotic"), "Diorite", "Chaotic");
         lang.addBlock(getVariant("diorite_chaotic_medium"), "Diorite", "Diorite Bricks");

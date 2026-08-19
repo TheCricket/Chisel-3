@@ -48,7 +48,7 @@ public class PurpurFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("purpur_array"), "Purpur", "Purpur Pillar");
+        lang.addBlock(getVariant("purpur_array"), "Purpur", "Array");
         lang.addBlock(getVariant("purpur_braid"), "Purpur", "Braid");
         lang.addBlock(getVariant("purpur_chaotic_bricks"), "Purpur", "Chaotic Bricks");
         lang.addBlock(getVariant("purpur_chaotic_medium"), "Purpur", "Purpur Bricks");

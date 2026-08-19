@@ -48,7 +48,7 @@ public class TerracottaFamily extends ChiselFamily {
 
     @Override
     public void addTranslations(LangHelper lang) {
-        lang.addBlock(getVariant("terracotta_array"), "Terracotta", "Terracotta Pillar");
+        lang.addBlock(getVariant("terracotta_array"), "Terracotta", "Array");
         lang.addBlock(getVariant("terracotta_braid"), "Terracotta", "Braid");
         lang.addBlock(getVariant("terracotta_chaotic_bricks"), "Terracotta", "Chaotic Bricks");
         lang.addBlock(getVariant("terracotta_chaotic_medium"), "Terracotta", "Terracotta Bricks");
