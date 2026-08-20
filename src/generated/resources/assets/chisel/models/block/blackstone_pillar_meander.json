@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/blackstone/blackstone_pillar_meander-side",
+    "bottom": "chisel:block/blackstone/blackstone_pillar_meander-bottom",
+    "overlay_bottom": "chisel:block/blackstone/blackstone_pillar_meander-bottom",
+    "overlay_side_connected": "chisel:block/blackstone/blackstone_pillar_meander-side-ctm",
+    "overlay_texture": "chisel:block/blackstone/blackstone_pillar_meander-side",
+    "overlay_top": "chisel:block/blackstone/blackstone_pillar_meander-top",
+    "overlay_vertical": "chisel:block/blackstone/blackstone_pillar_meander-side-ctm",
+    "particle": "chisel:block/blackstone/blackstone_pillar_meander-side",
+    "side": "chisel:block/blackstone/blackstone_pillar_meander-side",
+    "top": "chisel:block/blackstone/blackstone_pillar_meander-top"
+  }
+}

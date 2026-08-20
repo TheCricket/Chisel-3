@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/blackstone/blackstone_pillar_basic-side",
+    "bottom": "chisel:block/blackstone/blackstone_pillar_basic-bottom",
+    "overlay_bottom": "chisel:block/blackstone/blackstone_pillar_basic-bottom",
+    "overlay_side_connected": "chisel:block/blackstone/blackstone_pillar_basic-side-ctm",
+    "overlay_texture": "chisel:block/blackstone/blackstone_pillar_basic-side",
+    "overlay_top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+    "overlay_vertical": "chisel:block/blackstone/blackstone_pillar_basic-side-ctm",
+    "particle": "chisel:block/blackstone/blackstone_pillar_basic-side",
+    "side": "chisel:block/blackstone/blackstone_pillar_basic-side",
+    "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+  }
+}
