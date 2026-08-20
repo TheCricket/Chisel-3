@@ -5,12 +5,12 @@ import io.github.chiselteam.chisel.core.mode.ChiselMode;
 import io.github.chiselteam.chisel.network.ChiselModeChangePacket;
 import io.github.chiselteam.chisel.registry.ChiselDataComponents;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
-import io.github.chiselteam.chisel.registry.ChiselKeyMappings;
 import io.github.chiselteam.chisel.registry.ChiselModes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
@@ -19,7 +19,7 @@ import net.neoforged.neoforge.client.event.InputEvent;
 import java.util.List;
 import java.util.Objects;
 
-@EventBusSubscriber(modid = Chisel.MODID)
+@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class ChiselModeSelectionHandler {
 
     private static final long ANIMATION_DURATION = 120_000_000L;
