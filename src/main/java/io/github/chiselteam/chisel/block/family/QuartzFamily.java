@@ -13,9 +13,15 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant(Blocks.QUARTZ_BLOCK)
                 .addVariant("quartz_array", props, MULTIBLOCK_2X2)
                 .addVariant("quartz_braid", props)
+                .addVariant("quartz_bricks_indent", props)
+                .addVariant("quartz_bricks_inlayed", props)
+                .addVariant("quartz_bricks_large", props, MULTIBLOCK_2X2)
+                .addVariant("quartz_bricks_vertical", props)
                 .addVariant("quartz_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("quartz_chaotic_medium", props)
                 .addVariant("quartz_chaotic_small", props)
+                .addVariant("quartz_checker", props)
+                .addVariant("quartz_checker_small", props)
                 .addVariant("quartz_circular", props, CONNECTED)
                 .addVariant("quartz_cracked", props)
                 .addVariant("quartz_cracked_bricks", props)
@@ -24,12 +30,38 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_encased_bricks", props, CONNECTED)
                 .addVariant("quartz_french_1", props)
                 .addVariant("quartz_french_2", props)
+                .addVariant("quartz_indent", props, CONNECTED)
                 .addVariant("quartz_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("quartz_layers", props)
+                .addVariant("quartz_line_horizontal", props)
+                .addVariant("quartz_line_vertical", props)
+                .addVariant("quartz_meander_horizontal", props, CTMH)
+                .addVariant("quartz_meander_vertical", props, CTMV)
                 .addVariant("quartz_mosaic", props, CONNECTED)
                 .addVariant("quartz_ornate", props)
                 .addVariant("quartz_panel", props)
                 .addVariant("quartz_pillar", props, TBS)
+                .addVariant("quartz_pillar_basic", props, CTMV)
+                .addVariant("quartz_pillar_basic_dent", props, CTMV)
+                .addVariant("quartz_pillar_basic_plain", props, CTMV)
+                .addVariant("quartz_pillar_basic_round", props, CTMV)
+                .addVariant("quartz_pillar_basic_spiral", props, CTMV)
+                .addVariant("quartz_pillar_classic", props, TBS)
+                .addVariant("quartz_pillar_classic_large", props, TBS)
+                .addVariant("quartz_pillar_ionic", props, CTMV)
+                .addVariant("quartz_pillar_ionic_dent", props, CTMV)
+                .addVariant("quartz_pillar_ionic_plain", props, CTMV)
+                .addVariant("quartz_pillar_ionic_round", props, CTMV)
+                .addVariant("quartz_pillar_ionic_spiral", props, CTMV)
+                .addVariant("quartz_pillar_large_basic_triple", props, CTMV)
+                .addVariant("quartz_pillar_large_ionic_triple", props, CTMV)
+                .addVariant("quartz_pillar_meander", props, CTMV)
+                .addVariant("quartz_pillar_meander_dent", props, CTMV)
+                .addVariant("quartz_pillar_meander_plain", props, CTMV)
+                .addVariant("quartz_pillar_meander_round", props, CTMV)
+                .addVariant("quartz_pillar_meander_spiral", props, CTMV)
+                .addVariant("quartz_plate", props, CONNECTED)
+                .addVariant("quartz_polished", props)
                 .addVariant("quartz_prism", props)
                 .addVariant("quartz_raw", props)
                 .addVariant("quartz_road", props)
@@ -37,6 +69,7 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_small_bricks", props)
                 .addVariant("quartz_soft_bricks", props)
                 .addVariant("quartz_solid_bricks", props)
+                .addVariant("quartz_square_border", props, CONNECTED)
                 .addVariant("quartz_tiles_large", props, CONNECTED)
                 .addVariant("quartz_tiles_medium", props)
                 .addVariant("quartz_tiles_small", props)
@@ -44,30 +77,6 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_twisted", props, TBS)
                 .addVariant("quartz_weaver", props, CONNECTED)
                 .addVariant("quartz_zag", props, AR)
-                .addVariant("quartz_square_border", props, CONNECTED)
-                .addVariant("quartz_indent", props, CONNECTED)
-                .addVariant("quartz_checker", props)
-                .addVariant("quartz_bricks_indent", props)
-                .addVariant("quartz_bricks_large", props, MULTIBLOCK_2X2)
-                .addVariant("quartz_checker_small", props)
-                .addVariant("quartz_polished", props)
-                .addVariant("quartz_bricks_vertical", props)
-                .addVariant("quartz_line_horizontal", props)
-                .addVariant("quartz_line_vertical", props)
-                .addVariant("quartz_meander_horizontal", props, CTMH)
-                .addVariant("quartz_meander_vertical", props, CTMV)
-                .addVariant("quartz_pillar_basic", props, CTMV)
-                .addVariant("quartz_pillar_classic", props, TBS)
-                .addVariant("quartz_pillar_basic_dent", props, CTMV)
-                .addVariant("quartz_pillar_classic_large", props, TBS)
-                .addVariant("quartz_bricks_inlayed", props)
-                .addVariant("quartz_pillar_basic_round", props, CTMV)
-                .addVariant("quartz_plate", props, CONNECTED)
-                .addVariant("quartz_pillar_ionic", props, CTMV)
-                .addVariant("quartz_pillar_ionic_dent", props, CTMV)
-                .addVariant("quartz_pillar_ionic_round", props, CTMV)
-                .addVariant("quartz_pillar_basic_spiral", props, CTMV)
-                .addVariant("quartz_pillar_ionic_spiral", props, CTMV)
                 .family();
     }
 
@@ -130,7 +139,15 @@ public class QuartzFamily extends ChiselFamily {
         lang.addBlock(getVariant("quartz_pillar_ionic_round"), "Quartz", "Ionic Round Pillar");
         lang.addBlock(getVariant("quartz_pillar_basic_spiral"), "Quartz", "Basic Spiral Pillar");
         lang.addBlock(getVariant("quartz_pillar_ionic_spiral"), "Quartz", "Ionic Spiral Pillar");
-        
+        lang.addBlock(getVariant("quartz_pillar_large_ionic_triple"), "Quartz", "Large Ionic Triple Pillar");
+        lang.addBlock(getVariant("quartz_pillar_meander"), "Quartz", "Meander Pillar");
+        lang.addBlock(getVariant("quartz_pillar_meander_dent"), "Quartz", "Meander Dent Pillar");
+        lang.addBlock(getVariant("quartz_pillar_meander_plain"), "Quartz", "Meander Plain Pillar");
+        lang.addBlock(getVariant("quartz_pillar_meander_round"), "Quartz", "Meander Round Pillar");
+        lang.addBlock(getVariant("quartz_pillar_meander_spiral"), "Quartz", "Meander Spiral Pillar");
+        lang.addBlock(getVariant("quartz_pillar_basic_plain"), "Quartz", "Basic Plain Pillar");
+        lang.addBlock(getVariant("quartz_pillar_ionic_plain"), "Quartz", "Ionic Plain Pillar");
+        lang.addBlock(getVariant("quartz_pillar_large_basic_triple"), "Quartz", "Large Basic Triple Pillar");
     }
 }
 

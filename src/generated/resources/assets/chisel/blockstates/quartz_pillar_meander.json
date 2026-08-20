@@ -1,0 +1,13 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "model_location": "chisel:block/quartz_pillar_meander",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:quartz_pillar_meander",
+    "kind": "ctmv"
+  }
+}
