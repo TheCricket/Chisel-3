@@ -55,7 +55,19 @@ public class QuartzFamily extends ChiselFamily {
                 .addVariant("quartz_line_horizontal", props)
                 .addVariant("quartz_line_vertical", props)
                 .addVariant("quartz_meander_horizontal", props, CTMH)
-
+                .addVariant("quartz_meander_vertical", props, CTMV)
+                .addVariant("quartz_pillar_basic", props, CTMV)
+                .addVariant("quartz_pillar_classic", props, TBS)
+                .addVariant("quartz_pillar_basic_dent", props, CTMV)
+                .addVariant("quartz_pillar_classic_large", props, TBS)
+                .addVariant("quartz_bricks_inlayed", props)
+                .addVariant("quartz_pillar_basic_round", props, CTMV)
+                .addVariant("quartz_plate", props, CONNECTED)
+                .addVariant("quartz_pillar_ionic", props, CTMV)
+                .addVariant("quartz_pillar_ionic_dent", props, CTMV)
+                .addVariant("quartz_pillar_ionic_round", props, CTMV)
+                .addVariant("quartz_pillar_basic_spiral", props, CTMV)
+                .addVariant("quartz_pillar_ionic_spiral", props, CTMV)
                 .family();
     }
 
@@ -105,6 +117,19 @@ public class QuartzFamily extends ChiselFamily {
         lang.addBlock(getVariant("quartz_line_horizontal"), "Quartz", "Horizontal Line");
         lang.addBlock(getVariant("quartz_line_vertical"), "Quartz", "Vertical Line");
         lang.addBlock(getVariant("quartz_meander_horizontal"), "Quartz", "Horizontal Meander");
+        lang.addBlock(getVariant("quartz_meander_vertical"), "Quartz", "Vertical Meander");
+        lang.addBlock(getVariant("quartz_pillar_basic"), "Quartz", "Basic Pillar");
+        lang.addBlock(getVariant("quartz_pillar_classic"), "Quartz", "Classic Pillar");
+        lang.addBlock(getVariant("quartz_pillar_basic_dent"), "Quartz", "Basic Dent Pillar");
+        lang.addBlock(getVariant("quartz_pillar_classic_large"), "Quartz", "Large Classic Pillar");
+        lang.addBlock(getVariant("quartz_bricks_inlayed"), "Quartz", "Inlayed Bricks");
+        lang.addBlock(getVariant("quartz_pillar_basic_round"), "Quartz", "Basic Round Pillar");
+        lang.addBlock(getVariant("quartz_plate"), "Quartz", "Plate");
+        lang.addBlock(getVariant("quartz_pillar_ionic"), "Quartz", "Ionic Pillar");
+        lang.addBlock(getVariant("quartz_pillar_ionic_dent"), "Quartz", "Ionic Dent Pillar");
+        lang.addBlock(getVariant("quartz_pillar_ionic_round"), "Quartz", "Ionic Round Pillar");
+        lang.addBlock(getVariant("quartz_pillar_basic_spiral"), "Quartz", "Basic Spiral Pillar");
+        lang.addBlock(getVariant("quartz_pillar_ionic_spiral"), "Quartz", "Ionic Spiral Pillar");
         
     }
 }

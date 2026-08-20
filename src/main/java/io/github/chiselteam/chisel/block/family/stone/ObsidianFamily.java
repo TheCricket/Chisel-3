@@ -45,8 +45,8 @@ public class ObsidianFamily extends ChiselFamily {
         lang.addBlock(getVariant("obsidian_panel_map"), "Obsidian", "Obsidian Panel with Map");
         lang.addBlock(getVariant("obsidian_panel_region"), "Obsidian", "Obsidian Panel with Region Map");
         lang.addBlock(getVariant("obsidian_panel_shiny"), "Obsidian", "Shiny Obsidian Panel");
-        lang.addBlock(getVariant("obsidian_pillar"), "Obsidian", "Obsidian Pillar");
-        lang.addBlock(getVariant("obsidian_pillar_quartz"), "Obsidian", "Large Obsidian Pillar");
+        lang.addBlock(getVariant("obsidian_pillar"), "Obsidian", "Large Obsidian Pillar");
+        lang.addBlock(getVariant("obsidian_pillar_quartz"), "Obsidian", "Obsidian Pillar");
         lang.addBlock(getVariant("obsidian_tiles"), "Obsidian", "Obsidian Tiles");
     }
 }

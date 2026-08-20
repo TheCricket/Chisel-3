@@ -199,6 +199,70 @@
       "block": "chisel:quartz_meander_horizontal",
       "model_type": "ctmh",
       "name": "quartz_meander_horizontal"
+    },
+    {
+      "block": "chisel:quartz_meander_vertical",
+      "model_type": "ctmv",
+      "name": "quartz_meander_vertical"
+    },
+    {
+      "block": "chisel:quartz_pillar_basic",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_basic"
+    },
+    {
+      "block": "chisel:quartz_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "quartz_pillar_classic"
+    },
+    {
+      "block": "chisel:quartz_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:quartz_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "quartz_pillar_classic_large"
+    },
+    {
+      "block": "chisel:quartz_bricks_inlayed",
+      "name": "quartz_bricks_inlayed"
+    },
+    {
+      "block": "chisel:quartz_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_basic_round"
+    },
+    {
+      "block": "chisel:quartz_plate",
+      "model_type": "connected",
+      "name": "quartz_plate"
+    },
+    {
+      "block": "chisel:quartz_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_ionic"
+    },
+    {
+      "block": "chisel:quartz_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:quartz_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:quartz_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:quartz_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "quartz_pillar_ionic_spiral"
     }
   ]
 }

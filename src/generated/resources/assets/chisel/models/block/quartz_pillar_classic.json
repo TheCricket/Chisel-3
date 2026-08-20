@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/quartz/quartz_pillar_classic-bottom",
+    "side": "chisel:block/quartz/quartz_pillar_classic-side",
+    "top": "chisel:block/quartz/quartz_pillar_classic-top"
+  }
+}
