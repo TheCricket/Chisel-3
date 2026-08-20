@@ -21,6 +21,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ExtractBlockOutlineRenderStateEvent;
@@ -29,7 +30,7 @@ import org.joml.Matrix4f;
 
 import java.util.*;
 
-@EventBusSubscriber(modid = Chisel.MODID)
+@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class RenderLevelStageEventHandler {
     private static BlockPos cachedTarget;
     private static Direction cachedDirection;

@@ -2,11 +2,12 @@ package io.github.chiselteam.chisel.events.client;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.overlay.ChiselModeOverlay;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 
-@EventBusSubscriber(modid = Chisel.MODID)
+@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class RegisterGuiLayersEventHandler {
 
     @SubscribeEvent

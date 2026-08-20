@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.client.model.special;
 
 import io.github.chiselteam.chisel.core.variant.Variant;
 import io.github.chiselteam.chisel.core.variant.VariantModel;
+import io.github.chiselteam.chisel.util.ModelHelpers;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
@@ -9,20 +10,10 @@ import net.minecraft.client.data.models.model.ModelLocationUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition;
-import net.minecraft.client.renderer.block.dispatch.multipart.Condition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
 
-import java.util.List;
-
+import static io.github.chiselteam.chisel.client.ChiselModelTemplates.*;
 import static net.minecraft.client.data.models.BlockModelGenerators.*;
-import static io.github.chiselteam.chisel.client.ChiselModelTemplates.GLASS_PANE_END;
-import static io.github.chiselteam.chisel.client.ChiselModelTemplates.GLASS_PANE_END_ALT;
-import static io.github.chiselteam.chisel.client.ChiselModelTemplates.GLASS_PANE_SIDE;
-import static io.github.chiselteam.chisel.client.ChiselModelTemplates.GLASS_PANE_SIDE_ALT;
-import static net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition.Operation.AND;
-import static net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition.Operation.OR;
 
 public class GlassPaneModel extends VariantModel {
     @Override
@@ -51,34 +42,14 @@ public class GlassPaneModel extends VariantModel {
                         .with(condition().term(BlockStateProperties.EAST, true), side.with(Y_ROT_90))
                         .with(condition().term(BlockStateProperties.SOUTH, true), sideAlt)
                         .with(condition().term(BlockStateProperties.WEST, true), sideAlt.with(Y_ROT_90))
-                        .with(centerCondition(BlockStateProperties.NORTH, BlockStateProperties.SOUTH, BlockStateProperties.EAST, BlockStateProperties.WEST), noSide)
-                        .with(centerCondition(BlockStateProperties.EAST, BlockStateProperties.WEST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), noSideAlt)
-                        .with(centerCondition(BlockStateProperties.SOUTH, BlockStateProperties.NORTH, BlockStateProperties.EAST, BlockStateProperties.WEST), noSideAlt.with(Y_ROT_90))
-                        .with(centerCondition(BlockStateProperties.WEST, BlockStateProperties.EAST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), noSide.with(Y_ROT_270))
-                        .with(endCondition(BlockStateProperties.NORTH, BlockStateProperties.SOUTH, BlockStateProperties.EAST, BlockStateProperties.WEST), end)
-                        .with(endCondition(BlockStateProperties.EAST, BlockStateProperties.WEST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), endAlt)
-                        .with(endCondition(BlockStateProperties.SOUTH, BlockStateProperties.NORTH, BlockStateProperties.EAST, BlockStateProperties.WEST), endAlt.with(Y_ROT_90))
-                        .with(endCondition(BlockStateProperties.WEST, BlockStateProperties.EAST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), end.with(Y_ROT_270))
+                        .with(ModelHelpers.centerCondition(BlockStateProperties.NORTH, BlockStateProperties.SOUTH, BlockStateProperties.EAST, BlockStateProperties.WEST), noSide)
+                        .with(ModelHelpers.centerCondition(BlockStateProperties.EAST, BlockStateProperties.WEST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), noSideAlt)
+                        .with(ModelHelpers.centerCondition(BlockStateProperties.SOUTH, BlockStateProperties.NORTH, BlockStateProperties.EAST, BlockStateProperties.WEST), noSideAlt.with(Y_ROT_90))
+                        .with(ModelHelpers.centerCondition(BlockStateProperties.WEST, BlockStateProperties.EAST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), noSide.with(Y_ROT_270))
+                        .with(ModelHelpers.endCondition(BlockStateProperties.NORTH, BlockStateProperties.SOUTH, BlockStateProperties.EAST, BlockStateProperties.WEST), end)
+                        .with(ModelHelpers.endCondition(BlockStateProperties.EAST, BlockStateProperties.WEST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), endAlt)
+                        .with(ModelHelpers.endCondition(BlockStateProperties.SOUTH, BlockStateProperties.NORTH, BlockStateProperties.EAST, BlockStateProperties.WEST), endAlt.with(Y_ROT_90))
+                        .with(ModelHelpers.endCondition(BlockStateProperties.WEST, BlockStateProperties.EAST, BlockStateProperties.NORTH, BlockStateProperties.SOUTH), end.with(Y_ROT_270))
         );
-    }
-
-    private static Condition centerCondition(Property<Boolean> direction, Property<Boolean> opposite, Property<Boolean> perpendicularA, Property<Boolean> perpendicularB) {
-        return new CombinedCondition(AND, List.of(
-                condition().term(direction, false).build(),
-                new CombinedCondition(OR, List.of(
-                        condition().term(opposite, false).build(),
-                        condition().term(perpendicularA, true).build(),
-                        condition().term(perpendicularB, true).build()
-                ))
-        ));
-    }
-
-    private static Condition endCondition(Property<Boolean> direction, Property<Boolean> opposite, Property<Boolean> perpendicularA, Property<Boolean> perpendicularB) {
-        return condition()
-                .term(direction, false)
-                .term(opposite, true)
-                .term(perpendicularA, false)
-                .term(perpendicularB, false)
-                .build();
     }
 }
