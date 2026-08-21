@@ -31,7 +31,7 @@ public class ChiselModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
-        ChiselBlocks.getBlocks().forEach(ChiselFamily::getFamily);
+        ChiselBlocks.getFamilies().forEach(ChiselFamily::getFamily);
         Set<String> processedFamilies = new HashSet<>();
         ChiselVariants.getVariantFamilies().forEach(family -> registerFamilyModels(family, blockModels, processedFamilies));
 

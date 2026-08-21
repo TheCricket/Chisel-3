@@ -21,6 +21,7 @@ public class ChiselTabs {
             .displayItems((_, output) -> List.of(
                     ChiselBlocks.ANCIENT_STONE.getFamily(),
                     ChiselBlocks.ANDESITE.getFamily(),
+                    ChiselBlocks.BLACKSTONE.getFamily(),
                     ChiselBlocks.BRICKS.getFamily(),
                     ChiselBlocks.CHARCOAL.getFamily(),
                     ChiselBlocks.COAL.getFamily(),
@@ -165,6 +166,7 @@ public class ChiselTabs {
                     ChiselBlocks.ELECTRUM.getFamily(),
                     ChiselBlocks.INVAR.getFamily(),
                     ChiselBlocks.LEAD.getFamily(),
+                    ChiselBlocks.NEOVITAE.getFamily(),
                     ChiselBlocks.NICKEL.getFamily(),
                     ChiselBlocks.PLATINUM.getFamily(),
                     ChiselBlocks.SILVER.getFamily(),

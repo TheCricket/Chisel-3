@@ -16,7 +16,7 @@ public class ChiselLang extends LangHelper {
         addItems();
         addTabs();
 
-        ChiselBlocks.getBlocks().forEach(block -> block.addTranslations(this));
+        ChiselBlocks.getFamilies().forEach(block -> block.addTranslations(this));
 
         add("item.chisel.chisel.desc1", "Right click to open GUI");
         add("item.chisel.chisel.desc2", "Left click to chisel blocks in the world");

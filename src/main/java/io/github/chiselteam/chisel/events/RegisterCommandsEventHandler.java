@@ -34,7 +34,7 @@ public class RegisterCommandsEventHandler {
                             if(Minecraft.getInstance().isOfflineDeveloperMode()) {
 
                                 List<Block> blocks = new ArrayList<>();
-                                ChiselBlocks.getBlocks().forEach(block -> block.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock())));
+                                ChiselBlocks.getFamilies().forEach(block -> block.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock())));
 
                                 int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
                                 int x = 0, z = 0;
