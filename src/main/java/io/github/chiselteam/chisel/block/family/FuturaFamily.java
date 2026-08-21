@@ -13,7 +13,7 @@ public class FuturaFamily extends ChiselFamily {
                 .addVariant("futura_controller", props, MULTI_LAYER)
                 .addVariant("futura_controller_purple", props, MULTI_LAYER)
                 .addVariant("futura_rainbow", props, MULTI_LAYER)
-                //.addVariant("futura_rainbow_connected", props, MULTI_LAYER_CONNECTED_GLOW) joshy
+                //.addVariant("futura_rainbow_connected", props, MULTI_LAYER_CONNECTED_GLOW) joshy - will do this when orange fixed
                 //.addVariant("futura_rainbow_orange", props, MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("futura_screen_cyan", props, MULTI_LAYER_CONNECTED_GLOW)
                 .addVariant("futura_screen_gray", props, MULTI_LAYER_CONNECTED_GLOW)
