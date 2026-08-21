@@ -151,7 +151,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.get());
 
-        ChiselBlocks.getBlocks().forEach(f -> {
+        ChiselBlocks.getFamilies().forEach(f -> {
             if (f.getFamily().getWaxedFamily() != null) {
                 addToTag(BlockTags.MINEABLE_WITH_PICKAXE, f.getFamily().getWaxedFamily());
             }
@@ -221,7 +221,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.TIN.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.URANIUM.getFamily());
 
-        ChiselBlocks.getBlocks().forEach(family -> {
+        ChiselBlocks.getFamilies().forEach(family -> {
             if(!NOT_FRAMEABLE.contains(family.getFamily())) {
                 addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily());
                 if (family.getFamily().getWaxedFamily() != null) {

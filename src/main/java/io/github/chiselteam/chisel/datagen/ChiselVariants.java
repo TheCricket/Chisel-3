@@ -33,6 +33,6 @@ public class ChiselVariants {
     }
 
     public static void bootstrap(BootstrapContext<VariantFamily> context) {
-        ChiselBlocks.getBlocks().forEach(block -> register(block, context));
+        ChiselBlocks.getFamilies().forEach(block -> register(block, context));
     }
 }
