@@ -4618,6 +4618,7 @@
   "item.chisel.chisel_obsidian": "Obsidian Chisel",
   "item.chisel.cloud_in_a_bottle.desc": "Right click to throw. This will spawn clouds on impact.",
   "item.chisel.cloudinabottle": "Cloud in a Bottle",
+  "item.chisel.measuring_tape": "Measuring Tape",
   "item.chisel.offset_tool": "Ender Offset Wand",
   "item.chisel.offset_tool.desc": "Right click highlighted direction to shift texture",
   "item.chisel.offset_tool.desc2": "Will only highlight on textures that can be offset",
