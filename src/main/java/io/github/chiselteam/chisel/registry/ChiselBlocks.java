@@ -42,6 +42,7 @@ public class ChiselBlocks {
     public static final BambooFamily BAMBOO = registerFamily(new BambooFamily(Properties.ofFullCopy(Blocks.BAMBOO_PLANKS)));
     public static final BirchFamily BIRCH = registerFamily(new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS)));
     public static final BlackstoneFamily BLACKSTONE = registerFamily(new BlackstoneFamily(Properties.ofFullCopy(Blocks.BLACKSTONE)));
+    public static final SeaLanternFamily SEA_LANTERN = registerFamily(new SeaLanternFamily(Properties.ofFullCopy(Blocks.SEA_LANTERN)));
     public static final BookshelfFamily BOOKSHELF = registerFamily(new BookshelfFamily(Properties.ofFullCopy(Blocks.BOOKSHELF)));
     public static final BricksFamily BRICKS = registerFamily(new BricksFamily(Properties.ofFullCopy(Blocks.BRICKS)));
     public static final BronzeFamily BRONZE = registerFamily(new BronzeFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK)));

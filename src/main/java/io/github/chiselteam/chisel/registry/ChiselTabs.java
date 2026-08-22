@@ -119,6 +119,7 @@ public class ChiselTabs {
                         ChiselBlocks.ENERGIZED_VOIDSTONE.getFamily(),
                         ChiselBlocks.GLASS_PANE.getFamily(),
                         ChiselBlocks.GLOWSTONE.getFamily(),
+                        ChiselBlocks.SEA_LANTERN.getFamily(),
                         ChiselBlocks.ICE.getFamily(),
                         ChiselBlocks.JACK_O_LANTERN.getFamily(),
                         ChiselBlocks.IRON_BARS.getFamily(),

@@ -1,0 +1,11 @@
+{
+  "family_name": "sealantern",
+  "tag": "c:chisel/sealantern",
+  "variants": [
+    {
+      "block": "chisel:sealantern_test",
+      "model_type": "multi_layer_connected",
+      "name": "sealantern_test"
+    }
+  ]
+}

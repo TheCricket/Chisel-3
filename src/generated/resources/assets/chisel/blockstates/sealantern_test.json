@@ -1,0 +1,13 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/sealantern_test",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:sealantern_test",
+    "kind": "standard",
+    "water_offset": true
+  }
+}
