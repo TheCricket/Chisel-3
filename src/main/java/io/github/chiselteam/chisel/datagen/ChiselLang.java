@@ -108,6 +108,7 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.UPGRADE_REVERSION, "Reversion Upgrade");
         addItem(ChiselItems.UPGRADE_SPEED, "Speed Upgrade");
         addItem(ChiselItems.UPGRADE_STACK, "Stack Upgrade");
+        addItem(ChiselItems.MEASURING_TAPE, "Measuring Tape");
     }
 
     private void addBuildingMode(String id, String name) {

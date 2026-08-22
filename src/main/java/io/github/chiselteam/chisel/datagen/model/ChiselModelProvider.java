@@ -67,6 +67,7 @@ public class ChiselModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ChiselItems.BALL_O_MOSS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.CLOUD_IN_A_BOTTLE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.SMASHING_ROCK.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ChiselItems.MEASURING_TAPE.get(), ModelTemplates.FLAT_ITEM);
     }
 
     private void registerFamilyModels(VariantFamily family, BlockModelGenerators blockModels, Set<String> processedFamilies) {

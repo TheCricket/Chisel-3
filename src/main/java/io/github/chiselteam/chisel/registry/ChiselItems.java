@@ -21,7 +21,7 @@ public class ChiselItems {
     public static DeferredItem<Item> OFFSET_TOOL;
     public static DeferredItem<Item> UPGRADE_STACK, UPGRADE_SPEED, UPGRADE_REVERSION, UPGRADE_AUTOMATION;
     public static DeferredItem<Item> AUTO_CHISEL, BUILDERS_GUIDE;
-    public static DeferredItem<Item> BALL_O_MOSS, CLOUD_IN_A_BOTTLE, SMASHING_ROCK;
+    public static DeferredItem<Item> BALL_O_MOSS, CLOUD_IN_A_BOTTLE, SMASHING_ROCK, MEASURING_TAPE;
 
     private static DeferredItem<Item> register(String name) {
         return ITEMS.registerSimpleItem(name);
@@ -57,6 +57,7 @@ public class ChiselItems {
         BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
         CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);
         SMASHING_ROCK = register("smashingrock", SmashingRockItem::new, Item.Properties::new);
+        MEASURING_TAPE = register("measuring_tape", MeasuringTapeItem::new, Item.Properties::new);
     }
 
     private static Item.Properties getChiselProps() {
