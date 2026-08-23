@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side",
+    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-bottom",
+    "overlay_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-bottom",
+    "overlay_side_connected": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side-ctm",
+    "overlay_texture": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side",
+    "overlay_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-top",
+    "overlay_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side-ctm",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side",
+    "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-side",
+    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_dent-top"
+  }
+}

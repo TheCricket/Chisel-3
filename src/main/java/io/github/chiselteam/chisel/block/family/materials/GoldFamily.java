@@ -16,7 +16,7 @@ public class GoldFamily extends ChiselFamily {
                 .addVariant("gold_adv", props)
                 .addVariant("gold_bad_greggy", props, CONNECTED)
                 .addVariant("gold_brick", props, TBS)
-                .addVariant("gold_caution", props)
+                .addVariant("gold_caution", props, CONNECTED)
                 .addVariant("gold_cart", props, TBS)
                 .addVariant("gold_coin_heads", props, TBS)
                 .addVariant("gold_coin_tails", props, TBS)

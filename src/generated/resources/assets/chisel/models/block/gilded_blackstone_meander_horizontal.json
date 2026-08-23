@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal",
+    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal-ctmh",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal",
+    "top": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal-top"
+  }
+}

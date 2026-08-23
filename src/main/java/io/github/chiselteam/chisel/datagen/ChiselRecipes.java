@@ -13,6 +13,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -53,6 +54,12 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_blue_dye", has(Tags.Items.DYES_BLUE))
                 .save(output);
 
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .requires(Items.BLACKSTONE)
+                .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
+                .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")
@@ -70,6 +77,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_paper", has(Items.PAPER))
                 .save(output);
+
 
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.ROAD_LINE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("WRW")

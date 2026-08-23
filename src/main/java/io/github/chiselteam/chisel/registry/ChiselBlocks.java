@@ -42,6 +42,7 @@ public class ChiselBlocks {
     public static final BambooFamily BAMBOO = registerFamily(new BambooFamily(Properties.ofFullCopy(Blocks.BAMBOO_PLANKS)));
     public static final BirchFamily BIRCH = registerFamily(new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS)));
     public static final BlackstoneFamily BLACKSTONE = registerFamily(new BlackstoneFamily(Properties.ofFullCopy(Blocks.BLACKSTONE)));
+    public static final GildedBlackstoneFamily GILDED_BLACKSTONE = registerFamily(new GildedBlackstoneFamily(Properties.ofFullCopy(Blocks.GILDED_BLACKSTONE)));
     public static final SeaLanternFamily SEA_LANTERN = registerFamily(new SeaLanternFamily(Properties.ofFullCopy(Blocks.SEA_LANTERN)));
     public static final BookshelfFamily BOOKSHELF = registerFamily(new BookshelfFamily(Properties.ofFullCopy(Blocks.BOOKSHELF)));
     public static final BricksFamily BRICKS = registerFamily(new BricksFamily(Properties.ofFullCopy(Blocks.BRICKS)));
@@ -98,6 +99,7 @@ public class ChiselBlocks {
     public static final MarbleFamily MARBLE = registerFamily(new MarbleFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final MilitaryFamily MILITARY = registerFamily(new MilitaryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final MossyCobblestoneFamily MOSSY_COBBLESTONE = registerFamily(new MossyCobblestoneFamily(Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE)));
+    public static final MossyBlackstoneFamily MOSSY_BLACKSTONE = registerFamily(new MossyBlackstoneFamily(Properties.ofFullCopy(Blocks.BLACKSTONE)));
     public static final MossyTempleFamily MOSSY_TEMPLE = registerFamily(new MossyTempleFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final NeoVitaeFamily NEOVITAE = registerFamily(new NeoVitaeFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final NetherBrickFamily NETHERBRICK = registerFamily(new NetherBrickFamily(Properties.ofFullCopy(Blocks.NETHER_BRICKS)));
