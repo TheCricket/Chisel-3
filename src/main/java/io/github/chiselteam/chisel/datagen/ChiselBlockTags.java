@@ -163,6 +163,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         // VANILLA TAGS
         addToTag(BlockTags.LEAVES, ChiselBlocks.LEAF.getFamily());
         ChiselBlocks.WOOLS.forEach(family -> addToTag(BlockTags.WOOL, family.getFamily()));
+        addToTag(BlockTags.ENCHANTMENT_POWER_PROVIDER, ChiselBlocks.BOOKSHELF.getFamily());
 
         // NEOFORGE TAGS
         addToTag(Tags.Blocks.COBBLESTONES, ChiselBlocks.COBBLESTONE.getFamily());
