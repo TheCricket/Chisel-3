@@ -7,6 +7,18 @@
       "name": "block.minecraft.quartz_block"
     },
     {
+      "block": "minecraft:chiseled_quartz_block",
+      "name": "block.minecraft.chiseled_quartz_block"
+    },
+    {
+      "block": "minecraft:quartz_bricks",
+      "name": "block.minecraft.quartz_bricks"
+    },
+    {
+      "block": "minecraft:quartz_pillar",
+      "name": "block.minecraft.quartz_pillar"
+    },
+    {
       "block": "chisel:quartz_array",
       "model_type": "multiblock_2x2",
       "name": "quartz_array"

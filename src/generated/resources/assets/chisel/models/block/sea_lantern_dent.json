@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass_no_glow",
+  "textures": {
+    "all": "chisel:block/sea_lantern/sea_lantern_dent",
+    "base_texture": "chisel:block/sea_lantern/sea_lantern_dent-bg",
+    "layer0": "chisel:block/sea_lantern/sea_lantern_dent-bg",
+    "layer1": "chisel:block/sea_lantern/sea_lantern_dent",
+    "overlay_connected": "chisel:block/sea_lantern/sea_lantern_dent-ctm",
+    "overlay_texture": "chisel:block/sea_lantern/sea_lantern_dent",
+    "particle": "chisel:block/sea_lantern/sea_lantern_dent"
+  }
+}

@@ -3,6 +3,10 @@
   "tag": "c:chisel/leaf",
   "variants": [
     {
+      "block": "minecraft:oak_leaves",
+      "name": "block.minecraft.oak_leaves"
+    },
+    {
       "block": "chisel:leaf_christmas_balls",
       "name": "leaf_christmas_balls"
     },

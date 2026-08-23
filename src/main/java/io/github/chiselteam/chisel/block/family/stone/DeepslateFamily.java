@@ -11,7 +11,10 @@ public class DeepslateFamily extends ChiselFamily {
     public DeepslateFamily(BlockBehaviour.Properties props) {
         family = builder("deepslate")
                 .addVariant(Blocks.DEEPSLATE)
+                .addVariant(Blocks.CHISELED_DEEPSLATE)
                 .addVariant(Blocks.POLISHED_DEEPSLATE)
+                .addVariant(Blocks.DEEPSLATE_BRICKS)
+                .addVariant(Blocks.DEEPSLATE_TILES)
                 .addVariant("deepslate_array", props, MULTIBLOCK_2X2)
                 .addVariant("deepslate_braid", props)
                 .addVariant("deepslate_chaotic_bricks", props, MULTIBLOCK_3X3)

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:sealantern_test"
+          "name": "chisel:sea_lantern_checker_small"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/sealantern_test"
+  "random_sequence": "chisel:blocks/sea_lantern_checker_small"
 }

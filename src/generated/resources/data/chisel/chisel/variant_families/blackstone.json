@@ -7,6 +7,18 @@
       "name": "block.minecraft.blackstone"
     },
     {
+      "block": "minecraft:chiseled_polished_blackstone",
+      "name": "block.minecraft.chiseled_polished_blackstone"
+    },
+    {
+      "block": "minecraft:polished_blackstone",
+      "name": "block.minecraft.polished_blackstone"
+    },
+    {
+      "block": "minecraft:polished_blackstone_bricks",
+      "name": "block.minecraft.polished_blackstone_bricks"
+    },
+    {
       "block": "chisel:blackstone_array",
       "model_type": "multiblock_2x2",
       "name": "blackstone_array"

@@ -11,6 +11,7 @@ public class PurpurFamily extends ChiselFamily {
     public PurpurFamily(BlockBehaviour.Properties props) {
         family = builder("purpur")
                 .addVariant(Blocks.PURPUR_BLOCK)
+                .addVariant(Blocks.PURPUR_PILLAR)
                 .addVariant("purpur_array", props, MULTIBLOCK_2X2)
                 .addVariant("purpur_braid", props)
                 .addVariant("purpur_chaotic_bricks", props, MULTIBLOCK_3X3)

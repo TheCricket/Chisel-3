@@ -7,6 +7,10 @@
       "name": "block.minecraft.purpur_block"
     },
     {
+      "block": "minecraft:purpur_pillar",
+      "name": "block.minecraft.purpur_pillar"
+    },
+    {
       "block": "chisel:purpur_array",
       "model_type": "multiblock_2x2",
       "name": "purpur_array"

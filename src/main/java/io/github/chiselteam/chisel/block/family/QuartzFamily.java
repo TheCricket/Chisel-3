@@ -11,6 +11,9 @@ public class QuartzFamily extends ChiselFamily {
     public QuartzFamily(BlockBehaviour.Properties props) {
         family = builder("quartz")
                 .addVariant(Blocks.QUARTZ_BLOCK)
+                .addVariant(Blocks.CHISELED_QUARTZ_BLOCK)
+                .addVariant(Blocks.QUARTZ_BRICKS)
+                .addVariant(Blocks.QUARTZ_PILLAR)
                 .addVariant("quartz_array", props, MULTIBLOCK_2X2)
                 .addVariant("quartz_braid", props)
                 .addVariant("quartz_bricks_indent", props)

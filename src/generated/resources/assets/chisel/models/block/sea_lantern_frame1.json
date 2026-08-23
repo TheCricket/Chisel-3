@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sea_lantern/sea_lantern_frame1"
+  }
+}

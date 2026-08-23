@@ -11,6 +11,7 @@ public class GraniteFamily extends ChiselFamily {
     public GraniteFamily(BlockBehaviour.Properties props) {
         family = builder("granite")
                 .addVariant(Blocks.GRANITE)
+                .addVariant(Blocks.POLISHED_GRANITE)
                 .addVariant("granite_array", props, MULTIBLOCK_2X2)
                 .addVariant("granite_braid", props)
                 .addVariant("granite_chaotic_bricks", props, MULTIBLOCK_3X3)

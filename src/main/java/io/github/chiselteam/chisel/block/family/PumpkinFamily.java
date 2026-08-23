@@ -4,12 +4,14 @@ import io.github.chiselteam.chisel.block.util.ChiselCarvedPumpkinBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Blocks;
 
 import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.PUMPKIN;
 
 public class PumpkinFamily extends ChiselFamily {
     public PumpkinFamily(BlockBehaviour.Properties props) {
         family = builder("pumpkin")
+                .addVariant(Blocks.CARVED_PUMPKIN)
                 .addVariant("pumpkin_0", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
                 .addVariant("pumpkin_1", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)
                 .addVariant("pumpkin_2", ChiselCarvedPumpkinBlock::new, () -> props, PUMPKIN)

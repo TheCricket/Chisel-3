@@ -3,10 +3,10 @@
   "connected_faces": [
     "all"
   ],
-  "model_location": "chisel:block/sealantern_test",
+  "model_location": "chisel:block/sea_lantern_connected",
   "render_overlay_on_all_faces": true,
   "variant": {
-    "block": "chisel:sealantern_test",
+    "block": "chisel:sea_lantern_connected",
     "kind": "standard",
     "water_offset": true
   }

@@ -11,6 +11,9 @@ public class BlackstoneFamily extends ChiselFamily {
     public BlackstoneFamily(BlockBehaviour.Properties props) {
         family = builder("blackstone")
                 .addVariant(Blocks.BLACKSTONE)
+                .addVariant(Blocks.CHISELED_POLISHED_BLACKSTONE)
+                .addVariant(Blocks.POLISHED_BLACKSTONE)
+                .addVariant(Blocks.POLISHED_BLACKSTONE_BRICKS)
                 .addVariant("blackstone_array", props, MULTIBLOCK_2X2)
                 .addVariant("blackstone_braid", props)
                 .addVariant("blackstone_bricks_indent", props)

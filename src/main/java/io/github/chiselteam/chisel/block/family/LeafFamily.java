@@ -3,10 +3,12 @@ package io.github.chiselteam.chisel.block.family;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Blocks;
 
 public class LeafFamily extends ChiselFamily {
     public LeafFamily(BlockBehaviour.Properties props) {
         family = builder("leaf")
+                .addVariant(Blocks.OAK_LEAVES)
                 .addVariant("leaf_christmas_balls", props)
                 .addVariant("leaf_christmas_lights", props)
                 .addVariant("leaf_dead", props)

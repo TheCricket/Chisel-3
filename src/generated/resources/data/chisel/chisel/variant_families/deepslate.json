@@ -7,8 +7,20 @@
       "name": "block.minecraft.deepslate"
     },
     {
+      "block": "minecraft:chiseled_deepslate",
+      "name": "block.minecraft.chiseled_deepslate"
+    },
+    {
       "block": "minecraft:polished_deepslate",
       "name": "block.minecraft.polished_deepslate"
+    },
+    {
+      "block": "minecraft:deepslate_bricks",
+      "name": "block.minecraft.deepslate_bricks"
+    },
+    {
+      "block": "minecraft:deepslate_tiles",
+      "name": "block.minecraft.deepslate_tiles"
     },
     {
       "block": "chisel:deepslate_array",
