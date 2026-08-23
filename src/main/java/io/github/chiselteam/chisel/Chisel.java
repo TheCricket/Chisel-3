@@ -19,6 +19,7 @@ public class Chisel {
         ChiselModes.register(bus);
         ChiselBuildingModes.register(bus);
         ChiselDataComponents.DATA_COMPONENTS.register(bus);
+        ChiselAttachments.ATTACHMENTS.register(bus);
         ChiselSounds.SOUNDS.register(bus);
         ChiselBlocks.registerBlocks(bus);
         ChiselBlockEntities.BLOCK_ENTITIES.register(bus);
