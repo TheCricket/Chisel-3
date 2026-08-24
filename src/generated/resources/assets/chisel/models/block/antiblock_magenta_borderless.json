@@ -1,0 +1,6 @@
+{
+  "parent": "chisel:block/shadeless",
+  "textures": {
+    "all": "chisel:block/antiblock/antiblock_magenta_borderless"
+  }
+}

@@ -3,8 +3,7 @@ package io.github.chiselteam.chisel.block.family;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.ANTIBLOCK;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class AntiblockFamily extends ChiselFamily {
     public AntiblockFamily(BlockBehaviour.Properties props) {
@@ -25,39 +24,54 @@ public class AntiblockFamily extends ChiselFamily {
                 .addVariant("antiblock_red", props, ANTIBLOCK)
                 .addVariant("antiblock_white", props, ANTIBLOCK)
                 .addVariant("antiblock_yellow", props, ANTIBLOCK)
-                .addVariant("antiblock_black_borderless", props)
-                .addVariant("antiblock_blue_borderless", props)
-                .addVariant("antiblock_brown_borderless", props)
-                .addVariant("antiblock_cyan_borderless", props)
-                .addVariant("antiblock_gray_borderless", props)
-                .addVariant("antiblock_green_borderless", props)
-                .addVariant("antiblock_light_blue_borderless", props)
-                .addVariant("antiblock_light_gray_borderless", props)
-                .addVariant("antiblock_lime_borderless", props)
-                .addVariant("antiblock_magenta_borderless", props)
-                .addVariant("antiblock_orange_borderless", props)
-                .addVariant("antiblock_pink_borderless", props)
-                .addVariant("antiblock_purple_borderless", props)
-                .addVariant("antiblock_red_borderless", props)
-                .addVariant("antiblock_white_borderless", props)
-                .addVariant("antiblock_yellow_borderless", props)
-                .addVariant("antiblock_white_bright", props, MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_black_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_blue_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_brown_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_cyan_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_gray_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_green_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_light_blue_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_light_gray_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_lime_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_magenta_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_orange_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_pink_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_purple_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_red_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_white_bright_borderless", props, SHADELESS)
-                .addVariant("antiblock_yellow_bright_borderless", props, SHADELESS)
+                .addVariant("antiblock_black_borderless", props, SHADELESS)
+                .addVariant("antiblock_blue_borderless", props, SHADELESS)
+                .addVariant("antiblock_brown_borderless", props, SHADELESS)
+                .addVariant("antiblock_cyan_borderless", props, SHADELESS)
+                .addVariant("antiblock_gray_borderless", props, SHADELESS)
+                .addVariant("antiblock_green_borderless", props, SHADELESS)
+                .addVariant("antiblock_light_blue_borderless", props, SHADELESS)
+                .addVariant("antiblock_light_gray_borderless", props, SHADELESS)
+                .addVariant("antiblock_lime_borderless", props, SHADELESS)
+                .addVariant("antiblock_magenta_borderless", props, SHADELESS)
+                .addVariant("antiblock_orange_borderless", props, SHADELESS)
+                .addVariant("antiblock_pink_borderless", props, SHADELESS)
+                .addVariant("antiblock_purple_borderless", props, SHADELESS)
+                .addVariant("antiblock_red_borderless", props, SHADELESS)
+                .addVariant("antiblock_white_borderless", props, SHADELESS)
+                .addVariant("antiblock_yellow_borderless", props, SHADELESS)
+                .addVariant("antiblock_black_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_blue_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_brown_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_cyan_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_gray_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_green_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_light_blue_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_light_gray_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_lime_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_magenta_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_orange_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_pink_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_purple_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_red_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_white_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_yellow_dull", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_black_dull_borderless", props)
+                .addVariant("antiblock_blue_dull_borderless", props)
+                .addVariant("antiblock_brown_dull_borderless", props)
+                .addVariant("antiblock_cyan_dull_borderless", props)
+                .addVariant("antiblock_gray_dull_borderless", props)
+                .addVariant("antiblock_green_dull_borderless", props)
+                .addVariant("antiblock_light_blue_dull_borderless", props)
+                .addVariant("antiblock_light_gray_dull_borderless", props)
+                .addVariant("antiblock_lime_dull_borderless", props)
+                .addVariant("antiblock_magenta_dull_borderless", props)
+                .addVariant("antiblock_orange_dull_borderless", props)
+                .addVariant("antiblock_pink_dull_borderless", props)
+                .addVariant("antiblock_purple_dull_borderless", props)
+                .addVariant("antiblock_red_dull_borderless", props)
+                .addVariant("antiblock_white_dull_borderless", props)
+                .addVariant("antiblock_yellow_dull_borderless", props)
                 .family();
     }
 
@@ -95,23 +109,38 @@ public class AntiblockFamily extends ChiselFamily {
         lang.addBlock(getVariant("antiblock_red_borderless"), "Antiblock", "Red Borderless Anti Block");
         lang.addBlock(getVariant("antiblock_white_borderless"), "Antiblock", "White Borderless Anti Block");
         lang.addBlock(getVariant("antiblock_yellow_borderless"), "Antiblock", "Yellow Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_white_bright"), "Antiblock", "White Bright Anti Block");
-        lang.addBlock(getVariant("antiblock_black_bright_borderless"), "Antiblock", "Black Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_blue_bright_borderless"), "Antiblock", "Blue Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_brown_bright_borderless"), "Antiblock", "Brown Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_cyan_bright_borderless"), "Antiblock", "Cyan Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_gray_bright_borderless"), "Antiblock", "Gray Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_green_bright_borderless"), "Antiblock", "Green Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_light_blue_bright_borderless"), "Antiblock", "Light Blue Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_light_gray_bright_borderless"), "Antiblock", "Light Gray Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_lime_bright_borderless"), "Antiblock", "Lime Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_magenta_bright_borderless"), "Antiblock", "Magenta Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_orange_bright_borderless"), "Antiblock", "Orange Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_pink_bright_borderless"), "Antiblock", "Pink Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_purple_bright_borderless"), "Antiblock", "Purple Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_red_bright_borderless"), "Antiblock", "Red Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_white_bright_borderless"), "Antiblock", "White Bright Borderless Anti Block");
-        lang.addBlock(getVariant("antiblock_yellow_bright_borderless"), "Antiblock", "Yellow Bright Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_black_dull"), "Antiblock", "Black Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_blue_dull"), "Antiblock", "Blue Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_brown_dull"), "Antiblock", "Brown Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_cyan_dull"), "Antiblock", "Cyan Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_gray_dull"), "Antiblock", "Gray Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_green_dull"), "Antiblock", "Green Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_light_blue_dull"), "Antiblock", "Light Blue Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_light_gray_dull"), "Antiblock", "Light Gray Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_lime_dull"), "Antiblock", "Lime Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_magenta_dull"), "Antiblock", "Magenta Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_orange_dull"), "Antiblock", "Orange Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_pink_dull"), "Antiblock", "Pink Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_purple_dull"), "Antiblock", "Purple Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_red_dull"), "Antiblock", "Red Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_white_dull"), "Antiblock", "White Dull Anti Block"); 
+        lang.addBlock(getVariant("antiblock_yellow_dull"), "Antiblock", "Yellow Dull Anti Block");
+        lang.addBlock(getVariant("antiblock_black_dull_borderless"), "Antiblock", "Black Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_blue_dull_borderless"), "Antiblock", "Blue Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_brown_dull_borderless"), "Antiblock", "Brown Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_cyan_dull_borderless"), "Antiblock", "Cyan Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_gray_dull_borderless"), "Antiblock", "Gray Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_green_dull_borderless"), "Antiblock", "Green Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_light_blue_dull_borderless"), "Antiblock", "Light Blue Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_light_gray_dull_borderless"), "Antiblock", "Light Gray Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_lime_dull_borderless"), "Antiblock", "Lime Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_magenta_dull_borderless"), "Antiblock", "Magenta Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_orange_dull_borderless"), "Antiblock", "Orange Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_pink_dull_borderless"), "Antiblock", "Pink Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_purple_dull_borderless"), "Antiblock", "Purple Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_red_dull_borderless"), "Antiblock", "Red Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_white_dull_borderless"), "Antiblock", "White Dull Borderless Anti Block");
+        lang.addBlock(getVariant("antiblock_yellow_dull_borderless"), "Antiblock", "Yellow Dull Borderless Anti Block");
     }
 }
 

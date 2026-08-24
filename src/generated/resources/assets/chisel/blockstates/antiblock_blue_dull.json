@@ -1,0 +1,13 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "base_emissivity": 15,
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/antiblock_blue_dull",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:antiblock_blue_dull",
+    "kind": "standard"
+  }
+}
