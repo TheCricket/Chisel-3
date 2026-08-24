@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/tuff/tuff_pillar_basic_spiral-side",
+    "bottom": "chisel:block/tuff/tuff_pillar_basic_spiral-bottom",
+    "overlay_bottom": "chisel:block/tuff/tuff_pillar_basic_spiral-bottom",
+    "overlay_side_connected": "chisel:block/tuff/tuff_pillar_basic_spiral-side-ctm",
+    "overlay_texture": "chisel:block/tuff/tuff_pillar_basic_spiral-side",
+    "overlay_top": "chisel:block/tuff/tuff_pillar_basic_spiral-top",
+    "overlay_vertical": "chisel:block/tuff/tuff_pillar_basic_spiral-side-ctm",
+    "particle": "chisel:block/tuff/tuff_pillar_basic_spiral-side",
+    "side": "chisel:block/tuff/tuff_pillar_basic_spiral-side",
+    "top": "chisel:block/tuff/tuff_pillar_basic_spiral-top"
+  }
+}

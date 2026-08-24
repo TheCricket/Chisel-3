@@ -138,6 +138,7 @@ public class ChiselBlocks {
     public static final WarningFamily WARNING = registerFamily(new WarningFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final WaterstoneFamily WATERSTONE = registerFamily(new WaterstoneFamily(Properties.ofFullCopy(Blocks.STONE).noOcclusion()));
     public static final WoolenClayFamily WOOLEN_CLAY = registerFamily(new WoolenClayFamily(Properties.ofFullCopy(Blocks.CLAY)));
+    public static final TuffFamily TUFF = registerFamily(new TuffFamily(Properties.ofFullCopy(Blocks.TUFF)));
 
     public static final List<WoolFamily> WOOLS = new ArrayList<>();
     public static final List<StainedGlassFamily> STAINED_GLASS = new ArrayList<>();

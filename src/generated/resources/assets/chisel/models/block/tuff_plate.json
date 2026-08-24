@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/tuff/tuff_plate",
+    "overlay_connected": "chisel:block/tuff/tuff_plate-ctm",
+    "overlay_texture": "chisel:block/tuff/tuff_plate",
+    "particle": "chisel:block/tuff/tuff_plate"
+  }
+}

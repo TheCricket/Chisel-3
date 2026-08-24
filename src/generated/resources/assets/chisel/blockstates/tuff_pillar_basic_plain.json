@@ -1,0 +1,13 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "model_location": "chisel:block/tuff_pillar_basic_plain",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:tuff_pillar_basic_plain",
+    "kind": "ctmv"
+  }
+}
