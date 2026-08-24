@@ -1,0 +1,34 @@
+package io.github.chiselteam.chisel.client.model;
+
+import io.github.chiselteam.chisel.core.variant.Variant;
+import io.github.chiselteam.chisel.core.variant.VariantModel;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.model.*;
+import net.minecraft.resources.Identifier;
+
+import java.util.Optional;
+
+public class ShadelessModel extends VariantModel {
+    private static final TexturedModel.Provider SHADELESS =
+            TexturedModel.createDefault(
+                    TextureMapping::cube,
+                    new ModelTemplate(
+                            Optional.of(Identifier.fromNamespaceAndPath("chisel", "block/shadeless")),
+                            Optional.empty(),
+                            TextureSlot.ALL));
+
+    @Override
+    public TextureMapping getTextureMapping() {
+        return TextureMapping.cube(getBlock());
+    }
+
+    @Override
+    public void generate(Variant variant, BlockModelGenerators blockModels) {
+        super.generate(variant, blockModels);
+        blockModels.createTrivialBlock(
+                variant.getBlock(),
+                SHADELESS.updateTexture(
+                        map -> map.put(TextureSlot.ALL, variant.getMaterial())
+                ));
+    }
+}

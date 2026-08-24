@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.core.variant;
 
 import io.github.chiselteam.chisel.client.model.CubeAllModel;
+import io.github.chiselteam.chisel.client.model.ShadelessModel;
 import io.github.chiselteam.chisel.client.model.MultiLayerModel;
 import io.github.chiselteam.chisel.client.model.PillarModel;
 import io.github.chiselteam.chisel.client.model.TopBottomSideModel;
@@ -23,6 +24,7 @@ public class VariantModels {
     public final CTMHModel CTMH = new CTMHModel();
 
     public final CubeAllModel CUBE_ALL = new CubeAllModel();
+    public final ShadelessModel SHADELESS = new ShadelessModel();
     public final PillarModel PILLAR = new PillarModel();
     public final MultiLayerModel MULTI_LAYER = new MultiLayerModel();
     public final MultiLayerTBSModel MULTI_LAYER_TBS = new MultiLayerTBSModel();
