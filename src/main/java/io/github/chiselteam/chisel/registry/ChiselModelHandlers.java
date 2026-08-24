@@ -29,6 +29,7 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler MULTI_LAYER_CONNECTED = new CTMVariantModelHandler("multi_layer_connected", MODELS.MULTI_LAYER_CTM, true);
     public static final VariantModelHandler MULTI_LAYER_CONNECTED_TINTED = new CTMVariantModelHandler("multi_layer_connected_tinted", MODELS.MULTI_LAYER_CTM_TINTED, true);
     public static final VariantModelHandler MULTI_LAYER_CONNECTED_GLOW = new CTMVariantModelHandler("multi_layer_connected_glow", MODELS.MULTI_LAYER_CTM_GLOW);
+    public static final VariantModelHandler ANTIBLOCK = new CTMVariantModelHandler("antiblock", MODELS.ANTIBLOCK);
     public static final VariantModelHandler LAYERED_MULTI_LAYER_CONNECTED_GLOW = new CTMVariantModelHandler("layered_multi_layer_connected_glow", MODELS.LAYERED_MULTI_LAYER_CTM_GLOW);
     public static final VariantModelHandler CARPET = new CubeAllVariantModelHandler("carpet", MODELS.CARPET);
     public static final VariantModelHandler IRON_BARS = new CubeAllVariantModelHandler("iron_bars", MODELS.IRON_BARS);

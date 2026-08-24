@@ -22,6 +22,8 @@ public class ConnectedTextureBlockStateModelBuilder {
     private int tintIndex = -1;
     private int emissivity;
     private boolean eldritch;
+    private boolean shade = true;
+    private boolean ambientOcclusion = true;
     private Vector3f elementMin = new Vector3f(0, 0, 0);
     private Vector3f elementMax = new Vector3f(16, 16, 16);
 
@@ -76,6 +78,16 @@ public class ConnectedTextureBlockStateModelBuilder {
         return this;
     }
 
+    public ConnectedTextureBlockStateModelBuilder shade(boolean shade) {
+        this.shade = shade;
+        return this;
+    }
+
+    public ConnectedTextureBlockStateModelBuilder ambientOcclusion(boolean ambientOcclusion) {
+        this.ambientOcclusion = ambientOcclusion;
+        return this;
+    }
+
     public CTMModelBuilder toCTMBuilder() {
         CTMKind kind = variant.getModelHandler().ctmKind();
         if (kind == null) throw new IllegalStateException("Variant %s is not a connected-texture variant".formatted(variant.getName()));
@@ -88,6 +100,8 @@ public class ConnectedTextureBlockStateModelBuilder {
                 .tintIndex(tintIndex)
                 .emissivity(emissivity)
                 .eldritch(eldritch)
+                .shade(shade)
+                .ambientOcclusion(ambientOcclusion)
                 .waterOffset(variant.getModelHandler().ctmFluidOffset())
                 .connectionPredicate(CopperConnectionPredicates.forVariant(variant));
 

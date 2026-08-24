@@ -37,7 +37,7 @@ public class ChiselBlocks {
     public static final AluminumFamily ALUMINUM = registerFamily(new AluminumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final AncientStoneFamily ANCIENT_STONE = registerFamily(new AncientStoneFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final AndesiteFamily ANDESITE = registerFamily(new AndesiteFamily(Properties.ofFullCopy(Blocks.ANDESITE)));
-    public static final AntiblockFamily ANTIBLOCK = registerFamily(new AntiblockFamily(Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15)));
+    public static final AntiblockFamily ANTIBLOCK = registerFamily(new AntiblockFamily(Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops()));
     public static final ArcaneFamily ARCANE = registerFamily(new ArcaneFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final BambooFamily BAMBOO = registerFamily(new BambooFamily(Properties.ofFullCopy(Blocks.BAMBOO_PLANKS)));
     public static final BirchFamily BIRCH = registerFamily(new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS)));

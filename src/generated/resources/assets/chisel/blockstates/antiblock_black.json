@@ -1,11 +1,14 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
+  "ambient_occlusion": false,
   "base_emissivity": 15,
   "connected_faces": [
     "all"
   ],
+  "emissivity": 15,
   "model_location": "chisel:block/antiblock_black",
   "render_overlay_on_all_faces": true,
+  "shade": false,
   "variant": {
     "block": "chisel:antiblock_black",
     "kind": "standard"
