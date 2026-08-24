@@ -1,6 +1,3 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500,
-    "explorer.autoReveal": "focusNoScroll"
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
