@@ -1,10 +1,7 @@
 package io.github.chiselteam.chisel.events;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.network.AutoChiselTemplatePacket;
-import io.github.chiselteam.chisel.network.ChiselModeChangePacket;
-import io.github.chiselteam.chisel.network.ChiselSearchPacket;
-import io.github.chiselteam.chisel.network.ChiselSelectionPacket;
+import io.github.chiselteam.chisel.network.*;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -20,5 +17,7 @@ public class RegisterPayloadHandlersEventHandler {
         registrar.playToServer(ChiselModeChangePacket.TYPE, ChiselModeChangePacket.STREAM_CODEC, ChiselModeChangePacket::handle);
         registrar.playToServer(ChiselSelectionPacket.TYPE, ChiselSelectionPacket.STREAM_CODEC, ChiselSelectionPacket::handle);
         registrar.playToServer(AutoChiselTemplatePacket.TYPE, AutoChiselTemplatePacket.STREAM_CODEC, AutoChiselTemplatePacket::handle);
+        registrar.playToClient(MossChunkPacket.TYPE, MossChunkPacket.STREAM_CODEC, MossChunkPacket::handle);
+        registrar.playToClient(MossDeltaPacket.TYPE, MossDeltaPacket.STREAM_CODEC, MossDeltaPacket::handle);
     }
 }

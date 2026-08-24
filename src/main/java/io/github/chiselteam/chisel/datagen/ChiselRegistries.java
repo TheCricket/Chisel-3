@@ -1,7 +1,6 @@
 package io.github.chiselteam.chisel.datagen;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.datagen.registry.ChiselBallOMossRegistry;
 import io.github.chiselteam.chisel.datagen.registry.ChiselSmashingRockRegistry;
 import io.github.chiselteam.chisel.datagen.registry.ChiselWeatheringRegistry;
 import io.github.chiselteam.chisel.registry.ChiselBiomeModifiers;
@@ -24,7 +23,6 @@ public class ChiselRegistries extends DatapackBuiltinEntriesProvider {
             .add(Registries.PLACED_FEATURE, ChiselPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ChiselBiomeModifiers::bootstrap)
             .add(ChiselSmashingRockRegistry.KEY, ChiselSmashingRockRegistry::bootstrap)
-            .add(ChiselBallOMossRegistry.KEY, ChiselBallOMossRegistry::bootstrap)
             .add(ChiselWeatheringRegistry.KEY, ChiselWeatheringRegistry::bootstrap)
             .add(ChiselVariants.KEY, ChiselVariants::bootstrap);
 
