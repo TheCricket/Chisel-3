@@ -1,0 +1,313 @@
+{
+  "family_name": "calcite",
+  "tag": "c:chisel/calcite",
+  "variants": [
+    {
+      "block": "minecraft:calcite",
+      "name": "block.minecraft.calcite"
+    },
+    {
+      "block": "chisel:calcite_array",
+      "model_type": "multiblock_2x2",
+      "name": "calcite_array"
+    },
+    {
+      "block": "chisel:calcite_braid",
+      "name": "calcite_braid"
+    },
+    {
+      "block": "chisel:calcite_bricks_indent",
+      "name": "calcite_bricks_indent"
+    },
+    {
+      "block": "chisel:calcite_bricks_inlayed",
+      "name": "calcite_bricks_inlayed"
+    },
+    {
+      "block": "chisel:calcite_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "calcite_bricks_large"
+    },
+    {
+      "block": "chisel:calcite_bricks_vertical",
+      "name": "calcite_bricks_vertical"
+    },
+    {
+      "block": "chisel:calcite_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "calcite_chaotic"
+    },
+    {
+      "block": "chisel:calcite_chaotic_medium",
+      "name": "calcite_chaotic_medium"
+    },
+    {
+      "block": "chisel:calcite_chaotic_small",
+      "name": "calcite_chaotic_small"
+    },
+    {
+      "block": "chisel:calcite_checker",
+      "name": "calcite_checker"
+    },
+    {
+      "block": "chisel:calcite_checker_small",
+      "name": "calcite_checker_small"
+    },
+    {
+      "block": "chisel:calcite_circular",
+      "model_type": "connected",
+      "name": "calcite_circular"
+    },
+    {
+      "block": "chisel:calcite_cobble",
+      "name": "calcite_cobble"
+    },
+    {
+      "block": "chisel:calcite_bricks_cracked",
+      "name": "calcite_bricks_cracked"
+    },
+    {
+      "block": "chisel:calcite_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "calcite_cuts"
+    },
+    {
+      "block": "chisel:calcite_dent",
+      "model_type": "connected",
+      "name": "calcite_dent"
+    },
+    {
+      "block": "chisel:calcite_bricks_encased",
+      "model_type": "connected",
+      "name": "calcite_bricks_encased"
+    },
+    {
+      "block": "chisel:calcite_french_1",
+      "name": "calcite_french_1"
+    },
+    {
+      "block": "chisel:calcite_french_2",
+      "name": "calcite_french_2"
+    },
+    {
+      "block": "chisel:calcite_indent",
+      "model_type": "connected",
+      "name": "calcite_indent"
+    },
+    {
+      "block": "chisel:calcite_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "calcite_jellybean"
+    },
+    {
+      "block": "chisel:calcite_layers",
+      "name": "calcite_layers"
+    },
+    {
+      "block": "chisel:calcite_line_horizontal",
+      "name": "calcite_line_horizontal"
+    },
+    {
+      "block": "chisel:calcite_line_vertical",
+      "name": "calcite_line_vertical"
+    },
+    {
+      "block": "chisel:calcite_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "calcite_meander_horizontal"
+    },
+    {
+      "block": "chisel:calcite_meander_vertical",
+      "model_type": "ctmv",
+      "name": "calcite_meander_vertical"
+    },
+    {
+      "block": "chisel:calcite_mosaic",
+      "model_type": "connected",
+      "name": "calcite_mosaic"
+    },
+    {
+      "block": "chisel:calcite_ornate_small",
+      "name": "calcite_ornate_small"
+    },
+    {
+      "block": "chisel:calcite_panel",
+      "name": "calcite_panel"
+    },
+    {
+      "block": "chisel:calcite_pillar",
+      "model_type": "top_bottom_side",
+      "name": "calcite_pillar"
+    },
+    {
+      "block": "chisel:calcite_pillar_basic",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_basic"
+    },
+    {
+      "block": "chisel:calcite_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:calcite_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:calcite_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_basic_round"
+    },
+    {
+      "block": "chisel:calcite_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:calcite_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "calcite_pillar_classic"
+    },
+    {
+      "block": "chisel:calcite_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "calcite_pillar_classic_large"
+    },
+    {
+      "block": "chisel:calcite_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_ionic"
+    },
+    {
+      "block": "chisel:calcite_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:calcite_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:calcite_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:calcite_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:calcite_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:calcite_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:calcite_pillar_meander",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_meander"
+    },
+    {
+      "block": "chisel:calcite_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:calcite_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:calcite_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_meander_round"
+    },
+    {
+      "block": "chisel:calcite_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "calcite_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:calcite_plate",
+      "model_type": "connected",
+      "name": "calcite_plate"
+    },
+    {
+      "block": "chisel:calcite_polished",
+      "name": "calcite_polished"
+    },
+    {
+      "block": "chisel:calcite_prism",
+      "name": "calcite_prism"
+    },
+    {
+      "block": "chisel:calcite_raw",
+      "name": "calcite_raw"
+    },
+    {
+      "block": "chisel:calcite_road",
+      "name": "calcite_road"
+    },
+    {
+      "block": "chisel:calcite_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "calcite_slanted"
+    },
+    {
+      "block": "chisel:calcite_bricks_small",
+      "name": "calcite_bricks_small"
+    },
+    {
+      "block": "chisel:calcite_bricks_soft",
+      "name": "calcite_bricks_soft"
+    },
+    {
+      "block": "chisel:calcite_bricks_solid",
+      "name": "calcite_bricks_solid"
+    },
+    {
+      "block": "chisel:calcite_border_square",
+      "model_type": "connected",
+      "name": "calcite_border_square"
+    },
+    {
+      "block": "chisel:calcite_tiles_large",
+      "model_type": "connected",
+      "name": "calcite_tiles_large"
+    },
+    {
+      "block": "chisel:calcite_tiles",
+      "name": "calcite_tiles"
+    },
+    {
+      "block": "chisel:calcite_tiles_small",
+      "name": "calcite_tiles_small"
+    },
+    {
+      "block": "chisel:calcite_bricks_triple",
+      "name": "calcite_bricks_triple"
+    },
+    {
+      "block": "chisel:calcite_twisted",
+      "model_type": "top_bottom_side",
+      "name": "calcite_twisted"
+    },
+    {
+      "block": "chisel:calcite_weaver",
+      "model_type": "connected",
+      "name": "calcite_weaver"
+    },
+    {
+      "block": "chisel:calcite_zag",
+      "model_type": "multiblock_2x2",
+      "name": "calcite_zag"
+    }
+  ]
+}

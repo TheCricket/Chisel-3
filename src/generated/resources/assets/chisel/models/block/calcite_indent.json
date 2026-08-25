@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/calcite/calcite_indent",
+    "overlay_connected": "chisel:block/calcite/calcite_indent-ctm",
+    "overlay_texture": "chisel:block/calcite/calcite_indent",
+    "particle": "chisel:block/calcite/calcite_indent"
+  }
+}

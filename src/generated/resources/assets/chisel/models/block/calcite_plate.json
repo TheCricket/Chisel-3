@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/calcite/calcite_plate",
+    "overlay_connected": "chisel:block/calcite/calcite_plate-ctm",
+    "overlay_texture": "chisel:block/calcite/calcite_plate",
+    "particle": "chisel:block/calcite/calcite_plate"
+  }
+}

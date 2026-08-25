@@ -56,6 +56,7 @@ public class ChiselTabs {
                     ChiselBlocks.TERRACOTTA.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
                     ChiselBlocks.TUFF.getFamily(),
+                    ChiselBlocks.CALCITE.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
@@ -134,6 +135,7 @@ public class ChiselTabs {
                         ChiselBlocks.REDSTONE_LAMP.getFamily(),
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
+                        ChiselBlocks.NETHERITE.getFamily(),
                         ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
                             if(variant.shouldGenerateModel() && variant.isInTab)
                                 output.accept(variant.getBlock());
