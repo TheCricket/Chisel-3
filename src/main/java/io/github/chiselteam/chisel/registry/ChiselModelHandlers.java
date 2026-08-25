@@ -9,7 +9,7 @@ public class ChiselModelHandlers {
     private static final VariantModels MODELS = new VariantModels();
 
     public static final VariantModelHandler CUBE_ALL = new CubeAllVariantModelHandler("cube_all", MODELS.CUBE_ALL);
-    public static final VariantModelHandler SHADELESS = new CubeAllVariantModelHandler("shadeless", MODELS.SHADELESS);
+    // public static final VariantModelHandler SHADELESS = new CubeAllVariantModelHandler("shadeless", MODELS.SHADELESS);
     public static final VariantModelHandler PILLAR = new CubeAllVariantModelHandler("pillar", MODELS.PILLAR);
     public static final VariantModelHandler BOOKSHELF = new DirectionalCTMVariantModelHandler("bookshelf", MODELS.BOOKSHELF, true);
     public static final VariantModelHandler TBS = new CubeAllVariantModelHandler("top_bottom_side", MODELS.TOP_BOTTOM_SIDE);
@@ -59,7 +59,7 @@ public class ChiselModelHandlers {
 
     public static void registerAll() {
         VariantModelHandlers.register(CUBE_ALL);
-        VariantModelHandlers.register(SHADELESS);
+        // VariantModelHandlers.register(SHADELESS);
         VariantModelHandlers.register(PILLAR);
         VariantModelHandlers.register(BOOKSHELF);
         VariantModelHandlers.register(TBS);
