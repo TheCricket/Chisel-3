@@ -1,0 +1,313 @@
+{
+  "family_name": "dripstone",
+  "tag": "c:chisel/dripstone",
+  "variants": [
+    {
+      "block": "minecraft:dripstone_block",
+      "name": "block.minecraft.dripstone_block"
+    },
+    {
+      "block": "chisel:dripstone_array",
+      "model_type": "multiblock_2x2",
+      "name": "dripstone_array"
+    },
+    {
+      "block": "chisel:dripstone_braid",
+      "name": "dripstone_braid"
+    },
+    {
+      "block": "chisel:dripstone_bricks_indent",
+      "name": "dripstone_bricks_indent"
+    },
+    {
+      "block": "chisel:dripstone_bricks_inlayed",
+      "name": "dripstone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:dripstone_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "dripstone_bricks_large"
+    },
+    {
+      "block": "chisel:dripstone_bricks_vertical",
+      "name": "dripstone_bricks_vertical"
+    },
+    {
+      "block": "chisel:dripstone_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "dripstone_chaotic"
+    },
+    {
+      "block": "chisel:dripstone_chaotic_medium",
+      "name": "dripstone_chaotic_medium"
+    },
+    {
+      "block": "chisel:dripstone_chaotic_small",
+      "name": "dripstone_chaotic_small"
+    },
+    {
+      "block": "chisel:dripstone_checker",
+      "name": "dripstone_checker"
+    },
+    {
+      "block": "chisel:dripstone_checker_small",
+      "name": "dripstone_checker_small"
+    },
+    {
+      "block": "chisel:dripstone_circular",
+      "model_type": "connected",
+      "name": "dripstone_circular"
+    },
+    {
+      "block": "chisel:dripstone_cobble",
+      "name": "dripstone_cobble"
+    },
+    {
+      "block": "chisel:dripstone_bricks_cracked",
+      "name": "dripstone_bricks_cracked"
+    },
+    {
+      "block": "chisel:dripstone_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "dripstone_cuts"
+    },
+    {
+      "block": "chisel:dripstone_dent",
+      "model_type": "connected",
+      "name": "dripstone_dent"
+    },
+    {
+      "block": "chisel:dripstone_bricks_encased",
+      "model_type": "connected",
+      "name": "dripstone_bricks_encased"
+    },
+    {
+      "block": "chisel:dripstone_french_1",
+      "name": "dripstone_french_1"
+    },
+    {
+      "block": "chisel:dripstone_french_2",
+      "name": "dripstone_french_2"
+    },
+    {
+      "block": "chisel:dripstone_indent",
+      "model_type": "connected",
+      "name": "dripstone_indent"
+    },
+    {
+      "block": "chisel:dripstone_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "dripstone_jellybean"
+    },
+    {
+      "block": "chisel:dripstone_layers",
+      "name": "dripstone_layers"
+    },
+    {
+      "block": "chisel:dripstone_line_horizontal",
+      "name": "dripstone_line_horizontal"
+    },
+    {
+      "block": "chisel:dripstone_line_vertical",
+      "name": "dripstone_line_vertical"
+    },
+    {
+      "block": "chisel:dripstone_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "dripstone_meander_horizontal"
+    },
+    {
+      "block": "chisel:dripstone_meander_vertical",
+      "model_type": "ctmv",
+      "name": "dripstone_meander_vertical"
+    },
+    {
+      "block": "chisel:dripstone_mosaic",
+      "model_type": "connected",
+      "name": "dripstone_mosaic"
+    },
+    {
+      "block": "chisel:dripstone_ornate_small",
+      "name": "dripstone_ornate_small"
+    },
+    {
+      "block": "chisel:dripstone_panel",
+      "name": "dripstone_panel"
+    },
+    {
+      "block": "chisel:dripstone_pillar",
+      "model_type": "top_bottom_side",
+      "name": "dripstone_pillar"
+    },
+    {
+      "block": "chisel:dripstone_pillar_basic",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_basic"
+    },
+    {
+      "block": "chisel:dripstone_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:dripstone_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:dripstone_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_basic_round"
+    },
+    {
+      "block": "chisel:dripstone_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:dripstone_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "dripstone_pillar_classic"
+    },
+    {
+      "block": "chisel:dripstone_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "dripstone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:dripstone_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_ionic"
+    },
+    {
+      "block": "chisel:dripstone_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:dripstone_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:dripstone_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:dripstone_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:dripstone_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:dripstone_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:dripstone_pillar_meander",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_meander"
+    },
+    {
+      "block": "chisel:dripstone_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:dripstone_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:dripstone_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_meander_round"
+    },
+    {
+      "block": "chisel:dripstone_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "dripstone_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:dripstone_plate",
+      "model_type": "connected",
+      "name": "dripstone_plate"
+    },
+    {
+      "block": "chisel:dripstone_polished",
+      "name": "dripstone_polished"
+    },
+    {
+      "block": "chisel:dripstone_prism",
+      "name": "dripstone_prism"
+    },
+    {
+      "block": "chisel:dripstone_raw",
+      "name": "dripstone_raw"
+    },
+    {
+      "block": "chisel:dripstone_road",
+      "name": "dripstone_road"
+    },
+    {
+      "block": "chisel:dripstone_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "dripstone_slanted"
+    },
+    {
+      "block": "chisel:dripstone_bricks_small",
+      "name": "dripstone_bricks_small"
+    },
+    {
+      "block": "chisel:dripstone_bricks_soft",
+      "name": "dripstone_bricks_soft"
+    },
+    {
+      "block": "chisel:dripstone_bricks_solid",
+      "name": "dripstone_bricks_solid"
+    },
+    {
+      "block": "chisel:dripstone_border_square",
+      "model_type": "connected",
+      "name": "dripstone_border_square"
+    },
+    {
+      "block": "chisel:dripstone_tiles_large",
+      "model_type": "connected",
+      "name": "dripstone_tiles_large"
+    },
+    {
+      "block": "chisel:dripstone_tiles",
+      "name": "dripstone_tiles"
+    },
+    {
+      "block": "chisel:dripstone_tiles_small",
+      "name": "dripstone_tiles_small"
+    },
+    {
+      "block": "chisel:dripstone_bricks_triple",
+      "name": "dripstone_bricks_triple"
+    },
+    {
+      "block": "chisel:dripstone_twisted",
+      "model_type": "top_bottom_side",
+      "name": "dripstone_twisted"
+    },
+    {
+      "block": "chisel:dripstone_weaver",
+      "model_type": "connected",
+      "name": "dripstone_weaver"
+    },
+    {
+      "block": "chisel:dripstone_zag",
+      "model_type": "multiblock_2x2",
+      "name": "dripstone_zag"
+    }
+  ]
+}
