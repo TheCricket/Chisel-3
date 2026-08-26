@@ -1,5 +1,6 @@
 ﻿{
   "values": [
+    {"id": "#rechiseled:red_sandstone", "required": false},
     {"id": "mcwpaths:red_sandstone_running_bond", "required": false},
     {"id": "mcwpaths:red_sandstone_windmill_weave", "required": false},
     {"id": "mcwpaths:red_sandstone_flagstone", "required": false},

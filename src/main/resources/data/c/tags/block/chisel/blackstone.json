@@ -1,5 +1,6 @@
 ﻿{
   "values": [
+    {"id": "#rechiseled:blackstone", "required": false},
     {"id": "mcwpaths:blackstone_running_bond", "required": false},
     {"id": "mcwpaths:blackstone_windmill_weave", "required": false},
     {"id": "mcwpaths:blackstone_flagstone", "required": false},

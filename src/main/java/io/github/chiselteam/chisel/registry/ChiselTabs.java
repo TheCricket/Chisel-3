@@ -82,7 +82,10 @@ public class ChiselTabs {
                     ChiselBlocks.MANGROVE.getFamily(),
                     ChiselBlocks.PALE_OAK.getFamily(),
                     ChiselBlocks.OAK.getFamily(),
-                    ChiselBlocks.SPRUCE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                    ChiselBlocks.SPRUCE.getFamily(),
+                    ChiselBlocks.BAMBOO.getFamily()
+                
+                ).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
                     })))
