@@ -1,0 +1,24 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:undershale", "required": false},
+    {"id": "aether_ii:undershale_bricks", "required": false},
+    {"id": "aether_ii:undershale_flagstones", "required": false},
+    {"id": "aether_ii:undershale_keystone", "required": false},
+    {"id": "aether_ii:undershale_base_bricks", "required": false},
+    {"id": "aether_ii:undershale_capstone_bricks", "required": false},
+    {"id": "aether_ii:undershale_base_pillar", "required": false},
+    {"id": "aether_ii:undershale_capstone_pillar", "required": false},
+    {"id": "aether_ii:undershale_pillar", "required": false},
+    {"id": "aether_ii:undershale_tile", "required": false},
+    {"id": "aether_ii:sentry_lightstone", "required": false},
+    {"id": "aether_ii:sentry_bricks", "required": false},
+    {"id": "aether_ii:sentry_flagstones", "required": false},
+    {"id": "aether_ii:sentry_keystone", "required": false},
+    {"id": "aether_ii:sentry_base_bricks", "required": false},
+    {"id": "aether_ii:sentry_capstone_bricks", "required": false},
+    {"id": "aether_ii:sentry_base_pillar", "required": false},
+    {"id": "aether_ii:sentry_capstone_pillar", "required": false},
+    {"id": "aether_ii:sentry_tile", "required": false},
+    {"id": "aether_ii:sentry_pillar", "required": false}
+  ]
+}

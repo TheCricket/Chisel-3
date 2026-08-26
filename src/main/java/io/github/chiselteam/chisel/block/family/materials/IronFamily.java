@@ -5,8 +5,7 @@ import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.CONNECTED;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TBS;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class IronFamily extends ChiselFamily {
     public IronFamily(BlockBehaviour.Properties props) {

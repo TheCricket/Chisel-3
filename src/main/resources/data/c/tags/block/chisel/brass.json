@@ -1,0 +1,6 @@
+﻿{
+  "values": [
+    {"id":"alltheores:brass_block", "required":false},
+    {"id":"railcraft:brass_block", "required":false}
+  ]
+}

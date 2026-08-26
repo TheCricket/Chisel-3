@@ -1,0 +1,152 @@
+{
+  "family_name": "ae2_certus",
+  "tag": "c:chisel/ae2_certus",
+  "variants": [
+    {
+      "block": "chisel:certus_array",
+      "model_type": "multiblock_2x2",
+      "name": "certus_array"
+    },
+    {
+      "block": "chisel:certus_braid",
+      "name": "certus_braid"
+    },
+    {
+      "block": "chisel:certus_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "certus_chaotic"
+    },
+    {
+      "block": "chisel:certus_chaotic_medium",
+      "name": "certus_chaotic_medium"
+    },
+    {
+      "block": "chisel:certus_chaotic_small",
+      "name": "certus_chaotic_small"
+    },
+    {
+      "block": "chisel:certus_circular",
+      "model_type": "connected",
+      "name": "certus_circular"
+    },
+    {
+      "block": "chisel:certus_cracked",
+      "name": "certus_cracked"
+    },
+    {
+      "block": "chisel:certus_cracked_bricks",
+      "name": "certus_cracked_bricks"
+    },
+    {
+      "block": "chisel:certus_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "certus_cuts"
+    },
+    {
+      "block": "chisel:certus_dent",
+      "model_type": "connected",
+      "name": "certus_dent"
+    },
+    {
+      "block": "chisel:certus_encased",
+      "model_type": "connected",
+      "name": "certus_encased"
+    },
+    {
+      "block": "chisel:certus_french",
+      "name": "certus_french"
+    },
+    {
+      "block": "chisel:certus_french_2",
+      "name": "certus_french_2"
+    },
+    {
+      "block": "chisel:certus_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "certus_jellybean"
+    },
+    {
+      "block": "chisel:certus_layers",
+      "name": "certus_layers"
+    },
+    {
+      "block": "chisel:certus_mosaic",
+      "model_type": "connected",
+      "name": "certus_mosaic"
+    },
+    {
+      "block": "chisel:certus_ornate",
+      "name": "certus_ornate"
+    },
+    {
+      "block": "chisel:certus_panel",
+      "name": "certus_panel"
+    },
+    {
+      "block": "chisel:certus_pillar",
+      "model_type": "top_bottom_side",
+      "name": "certus_pillar"
+    },
+    {
+      "block": "chisel:certus_prism",
+      "name": "certus_prism"
+    },
+    {
+      "block": "chisel:certus_raw",
+      "name": "certus_raw"
+    },
+    {
+      "block": "chisel:certus_road",
+      "name": "certus_road"
+    },
+    {
+      "block": "chisel:certus_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "certus_slanted"
+    },
+    {
+      "block": "chisel:certus_small",
+      "name": "certus_small"
+    },
+    {
+      "block": "chisel:certus_soft",
+      "name": "certus_soft"
+    },
+    {
+      "block": "chisel:certus_solid",
+      "name": "certus_solid"
+    },
+    {
+      "block": "chisel:certus_tiles_large",
+      "model_type": "connected",
+      "name": "certus_tiles_large"
+    },
+    {
+      "block": "chisel:certus_tiles_medium",
+      "name": "certus_tiles_medium"
+    },
+    {
+      "block": "chisel:certus_tiles_small",
+      "name": "certus_tiles_small"
+    },
+    {
+      "block": "chisel:certus_triple",
+      "name": "certus_triple"
+    },
+    {
+      "block": "chisel:certus_twisted",
+      "model_type": "top_bottom_side",
+      "name": "certus_twisted"
+    },
+    {
+      "block": "chisel:certus_weaver",
+      "model_type": "connected",
+      "name": "certus_weaver"
+    },
+    {
+      "block": "chisel:certus_zag",
+      "model_type": "ar",
+      "name": "certus_zag"
+    }
+  ]
+}

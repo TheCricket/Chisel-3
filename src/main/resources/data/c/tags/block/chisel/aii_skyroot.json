@@ -1,0 +1,14 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:skyroot_planks", "required": false},
+    {"id": "aether_ii:skyroot_floorboards", "required": false},
+    {"id": "aether_ii:skyroot_highlight", "required": false},
+    {"id": "aether_ii:skyroot_shingles", "required": false},
+    {"id": "aether_ii:skyroot_small_shingles", "required": false},
+    {"id": "aether_ii:skyroot_base_planks", "required": false},
+    {"id": "aether_ii:skyroot_top_planks", "required": false},
+    {"id": "aether_ii:skyroot_base_beam", "required": false},
+    {"id": "aether_ii:skyroot_top_beam", "required": false},
+    {"id": "aether_ii:skyroot_beam", "required": false}
+  ]
+}

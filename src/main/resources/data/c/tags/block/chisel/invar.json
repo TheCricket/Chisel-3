@@ -1,6 +1,7 @@
 {
   "values": [
     {"id": "ftbmaterials:invar_block", "required": false},
-    {"id": "alltheores:invar_block", "required": false}
+    {"id": "alltheores:invar_block", "required": false},
+    {"id": "railcraft:invar_block", "required": false}
   ]
 }

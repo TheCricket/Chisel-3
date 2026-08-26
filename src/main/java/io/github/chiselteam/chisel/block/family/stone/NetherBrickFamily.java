@@ -5,6 +5,8 @@ import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+// import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
+
 public class NetherBrickFamily extends ChiselFamily {
     public NetherBrickFamily(BlockBehaviour.Properties props) {
         family = builder("nether_brick")

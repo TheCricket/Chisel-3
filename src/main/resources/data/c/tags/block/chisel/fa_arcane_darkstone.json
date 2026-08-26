@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "forbidden_arcanus:arcane_polished_darkstone", "required": false},
+    {"id": "forbidden_arcanus:chiseled_arcane_polished_darkstone", "required": false},
+    {"id": "forbidden_arcanus:gilded_chiseled_polished_darkstone", "required": false}
+  ]
+}

@@ -1,0 +1,8 @@
+﻿{
+  "values": [
+    {"id": "mcwpaths:stone_running_bond", "required": false},
+    {"id": "mcwpaths:stone_windmill_weave", "required": false},
+    {"id": "mcwpaths:stone_flagstone", "required": false},
+    {"id": "mcwpaths:stone_crystal_floor", "required": false}
+  ]
+}

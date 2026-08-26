@@ -11,8 +11,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TORCH;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.WALL_TORCH;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class TorchFamily extends ChiselFamily {
 

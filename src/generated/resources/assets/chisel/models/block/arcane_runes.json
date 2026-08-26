@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/arcane/arcane_runes",
-    "overlay_4x4": "chisel:block/arcane/arcane_runes-v16",
-    "particle": "chisel:block/arcane/arcane_runes"
+    "all": "chisel:block/fa_arcane_darkstone/arcane_runes",
+    "overlay_4x4": "chisel:block/fa_arcane_darkstone/arcane_runes-v16",
+    "particle": "chisel:block/fa_arcane_darkstone/arcane_runes"
   }
 }

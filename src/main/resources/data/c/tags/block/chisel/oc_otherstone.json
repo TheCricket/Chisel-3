@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "occultism:otherstone", "required": false},
+    {"id": "occultism:otherstone_bricks", "required": false},
+    {"id": "occultism:chiseled_otherstone_bricks", "required": false}
+  ]
+}

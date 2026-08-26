@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/certus/certus_encased",
-    "overlay_connected": "chisel:block/certus/certus_encased-ctm",
-    "overlay_texture": "chisel:block/certus/certus_encased",
-    "particle": "chisel:block/certus/certus_encased"
+    "all": "chisel:block/ae2_certus/certus_encased",
+    "overlay_connected": "chisel:block/ae2_certus/certus_encased-ctm",
+    "overlay_texture": "chisel:block/ae2_certus/certus_encased",
+    "particle": "chisel:block/ae2_certus/certus_encased"
   }
 }

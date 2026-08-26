@@ -1,0 +1,14 @@
+{
+  "family_name": "mud",
+  "tag": "c:chisel/mud",
+  "variants": [
+    {
+      "block": "minecraft:packed_mud",
+      "name": "block.minecraft.packed_mud"
+    },
+    {
+      "block": "minecraft:mud_bricks",
+      "name": "block.minecraft.mud_bricks"
+    }
+  ]
+}

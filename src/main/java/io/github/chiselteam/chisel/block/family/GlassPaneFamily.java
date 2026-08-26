@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.GLASS_PANE;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class GlassPaneFamily extends ChiselFamily {
     public GlassPaneFamily(BlockBehaviour.Properties props) {

@@ -5,8 +5,7 @@ import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.CONNECTED;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.MULTIBLOCK_3X3;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class SpruceFamily extends ChiselFamily {
     public SpruceFamily(BlockBehaviour.Properties props) {

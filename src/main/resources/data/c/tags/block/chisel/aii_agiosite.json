@@ -1,0 +1,13 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:agiosite", "required": false},
+    {"id": "aether_ii:agiosite_bricks", "required": false},
+    {"id": "aether_ii:agiosite_flagstones", "required": false},
+    {"id": "aether_ii:agiosite_keystone", "required": false},
+    {"id": "aether_ii:agiosite_base_bricks", "required": false},
+    {"id": "aether_ii:agiosite_capstone_bricks", "required": false},
+    {"id": "aether_ii:agiosite_base_pillar", "required": false},
+    {"id": "aether_ii:agiosite_capstone_pillar", "required": false},
+    {"id": "aether_ii:agiosite_pillar", "required": false}
+  ]
+}

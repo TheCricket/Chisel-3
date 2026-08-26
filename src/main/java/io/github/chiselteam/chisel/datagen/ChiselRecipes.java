@@ -59,6 +59,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
                 .save(output);
+// idk how to do 2 recipes
 
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")

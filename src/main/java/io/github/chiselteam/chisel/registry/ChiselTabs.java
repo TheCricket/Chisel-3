@@ -58,6 +58,9 @@ public class ChiselTabs {
                     ChiselBlocks.TUFF.getFamily(),
                     ChiselBlocks.CALCITE.getFamily(),
                     ChiselBlocks.DRIPSTONE.getFamily(),
+                    ChiselBlocks.MUD.getFamily(),
+                    ChiselBlocks.AE2_SKY_STONE.getFamily(),
+                    ChiselBlocks.RESIN.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
@@ -164,24 +167,56 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselBlocks.BRONZE.getVariant("bronze_caution").get()))
             .displayItems((_, output) -> List.of(
+                    ChiselBlocks.ANCIENT_STONE.getFamily(),
+                    ChiselBlocks.ATM_ALLTHEMODIUM.getFamily(),
+                    ChiselBlocks.ATM_UNOBTAINIUM_ALLTHEMODIUM.getFamily(),
+                    ChiselBlocks.ATM_UNOBTAINIUM.getFamily(),
+                    ChiselBlocks.ATM_UNOBTAINIUM_VIBRANIUM.getFamily(),
+                    ChiselBlocks.ATM_VIBRANIUM_ALLTHEMODIUM.getFamily(),
+                    ChiselBlocks.ATM_VIBRANIUM.getFamily(),
                     ChiselBlocks.ALUMINUM.getFamily(),
-                    ChiselBlocks.ARCANE.getFamily(),
+                    ChiselBlocks.FA_ARCANE_DARKSTONE.getFamily(),
+                    ChiselBlocks.FA_DARKSTONE.getFamily(),
                     ChiselBlocks.BRONZE.getFamily(),
-                    ChiselBlocks.CERTUS.getFamily(),
+                    ChiselBlocks.BRASS.getFamily(),
+                    ChiselBlocks.AE2_CERTUS.getFamily(),
+                    ChiselBlocks.AE2_SKY_STONE.getFamily(),
                     ChiselBlocks.COAL_COKE.getFamily(),
                     ChiselBlocks.COBALT.getFamily(),
                     ChiselBlocks.ELECTRUM.getFamily(),
                     ChiselBlocks.INVAR.getFamily(),
                     ChiselBlocks.LEAD.getFamily(),
-                    ChiselBlocks.NEOVITAE.getFamily(),
+                    ChiselBlocks.MA_SOULSTONE.getFamily(),
+                    ChiselBlocks.NV_RUNE.getFamily(),
+                    ChiselBlocks.NV_RITUAL_STONE.getFamily(),
+                    ChiselBlocks.NV_DUNGEON_STONE.getFamily(),
+                    ChiselBlocks.NV_DUNGEON_STONE_INVICTUS.getFamily(),
+                    ChiselBlocks.NV_DUNGEON_STONE_NIHILUM.getFamily(),
+                    ChiselBlocks.NV_DUNGEON_STONE_RUINA.getFamily(),
+                    ChiselBlocks.NV_DUNGEON_STONE_VINDICTA.getFamily(),
                     ChiselBlocks.NICKEL.getFamily(),
                     ChiselBlocks.PLATINUM.getFamily(),
                     ChiselBlocks.SILVER.getFamily(),
                     ChiselBlocks.STEEL.getFamily(),
-                    ChiselBlocks.TALLOW.getFamily(),
                     ChiselBlocks.THAUMIUM.getFamily(),
                     ChiselBlocks.TIN.getFamily(),
-                    ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                    ChiselBlocks.OC_TALLOW.getFamily(),
+                    ChiselBlocks.OC_OTHERROCK.getFamily(),
+                    ChiselBlocks.OC_OTHERSTONE.getFamily(),
+                    ChiselBlocks.URANIUM.getFamily(),
+                    ChiselBlocks.AII_AGIOSITE.getFamily(),
+                    ChiselBlocks.AII_AMBEROOT.getFamily(),
+                    ChiselBlocks.AII_FADED_HOLYSTONE.getFamily(),
+                    ChiselBlocks.AII_HOLYSTONE.getFamily(),
+                    ChiselBlocks.AII_ICESTONE.getFamily(),
+                    ChiselBlocks.AII_CHORITE.getFamily(),
+                    ChiselBlocks.AII_MARBLED.getFamily(),
+                    ChiselBlocks.AII_SKYROOT.getFamily(),
+                    ChiselBlocks.AII_UNDERSHALE.getFamily(),
+                    ChiselBlocks.AII_WISPROOT.getFamily(),
+                    ChiselBlocks.AII_GREATROOT.getFamily()
+                
+                ).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
             })))

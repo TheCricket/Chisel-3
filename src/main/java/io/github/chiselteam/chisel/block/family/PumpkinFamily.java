@@ -1,12 +1,11 @@
 package io.github.chiselteam.chisel.block.family;
 
-import io.github.chiselteam.chisel.block.util.ChiselCarvedPumpkinBlock;
-import io.github.chiselteam.chisel.block.util.ChiselFamily;
+import io.github.chiselteam.chisel.block.util.*;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Blocks;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.PUMPKIN;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class PumpkinFamily extends ChiselFamily {
     public PumpkinFamily(BlockBehaviour.Properties props) {

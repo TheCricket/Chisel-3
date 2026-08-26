@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.IRON_BARS;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class IronBarsFamily extends ChiselFamily {
     public IronBarsFamily(BlockBehaviour.Properties props) {

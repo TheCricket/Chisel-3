@@ -1,6 +1,8 @@
 {
   "values": [
     {"id": "ftbmaterials:nickel_block", "required": false},
-    {"id": "alltheores:nickel_block", "required": false}
+    {"id": "alltheores:nickel_block", "required": false},
+    {"id": "railcraft:nickel_block", "required": false},
+    {"id": "oritech:nickel", "required": false}
   ]
 }

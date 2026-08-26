@@ -1,16 +1,16 @@
 package io.github.chiselteam.chisel.block.family.materials;
 
-import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import io.github.chiselteam.chisel.block.util.ChiselPoweredBlock;
+import io.github.chiselteam.chisel.block.util.*;
 import io.github.chiselteam.chisel.util.LangHelper;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.CONNECTED;
-import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TBS;
+import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.*;
 
 public class RedstoneFamily extends ChiselFamily {
     public RedstoneFamily(BlockBehaviour.Properties props) {
         family = builder("redstone")
+                .addVariant(Blocks.REDSTONE_BLOCK)
                 .addVariant("redstone_bricks", ChiselPoweredBlock::new, () -> props)
                 .addVariant("redstone_bricks_chaotic", ChiselPoweredBlock::new, () -> props)
                 .addVariant("redstone_bricks_small", ChiselPoweredBlock::new, () -> props)

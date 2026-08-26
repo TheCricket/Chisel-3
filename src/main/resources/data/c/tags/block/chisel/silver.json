@@ -1,6 +1,9 @@
 {
   "values": [
     {"id": "ftbmaterials:silver_block", "required": false},
-    {"id": "alltheores:silver_block", "required": false}
+    {"id": "alltheores:silver_block", "required": false},
+    {"id": "occultism:silver_block", "required": false},
+    {"id": "railcraft:silver_block", "required": false},
+    {"id": "silentgems:silver_block", "required": false}
   ]
 }

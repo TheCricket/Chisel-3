@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/arcane/arcane_tile",
-    "overlay_connected": "chisel:block/arcane/arcane_tile-ctm",
-    "overlay_texture": "chisel:block/arcane/arcane_tile",
-    "particle": "chisel:block/arcane/arcane_tile"
+    "all": "chisel:block/fa_arcane_darkstone/arcane_tile",
+    "overlay_connected": "chisel:block/fa_arcane_darkstone/arcane_tile-ctm",
+    "overlay_texture": "chisel:block/fa_arcane_darkstone/arcane_tile",
+    "particle": "chisel:block/fa_arcane_darkstone/arcane_tile"
   }
 }

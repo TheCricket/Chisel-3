@@ -1,0 +1,11 @@
+﻿{
+  "values": [
+    {"id": "neovitae:dungeon_brick1_v", "required": false},
+    {"id": "neovitae:dungeon_brick2_v", "required": false},
+    {"id": "neovitae:dungeon_brick3_v", "required": false},
+    {"id": "neovitae:dungeon_polished_v", "required": false},
+    {"id": "neovitae:dungeon_tile_v", "required": false},
+    {"id": "neovitae:dungeon_smallbrick_v", "required": false},
+    {"id": "neovitae:dungeon_tilespecial_v", "required": false}
+  ]
+}

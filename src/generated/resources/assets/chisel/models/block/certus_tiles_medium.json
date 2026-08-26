@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/certus/certus_tiles_medium"
+    "all": "chisel:block/ae2_certus/certus_tiles_medium"
   }
 }

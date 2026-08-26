@@ -1,0 +1,19 @@
+{
+  "family_name": "oc_tallow",
+  "tag": "c:chisel/oc_tallow",
+  "variants": [
+    {
+      "block": "chisel:tallow_block",
+      "model_type": "top_bottom_side",
+      "name": "tallow_block"
+    },
+    {
+      "block": "chisel:tallow_faces",
+      "name": "tallow_faces"
+    },
+    {
+      "block": "chisel:tallow_smooth",
+      "name": "tallow_smooth"
+    }
+  ]
+}
