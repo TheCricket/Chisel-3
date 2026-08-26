@@ -11,9 +11,9 @@ public class OxidizedCopperFamily extends ChiselFamily {
     public OxidizedCopperFamily(BlockBehaviour.Properties props) {
         family = builder("oxidized_copper")
                 .addVariant(Blocks.OXIDIZED_COPPER)
-                .addVariant(Blocks.OXIDIZED_CHISELED_COPPER)
-                .addVariant(Blocks.OXIDIZED_CUT_COPPER)
-                .addVariant(Blocks.OXIDIZED_COPPER_GRATE)
+                // .addVariant(Blocks.OXIDIZED_CHISELED_COPPER)
+                // .addVariant(Blocks.OXIDIZED_CUT_COPPER)
+                // .addVariant(Blocks.OXIDIZED_COPPER_GRATE)
                 .addWeatheringVariant("oxidized_copper_bad_greggy", props, CONNECTED)
                 .addWeatheringVariant("oxidized_copper_bolted", props, CUBE_ALL)
                 .addWeatheringVariant("oxidized_copper_caution", props, CONNECTED)

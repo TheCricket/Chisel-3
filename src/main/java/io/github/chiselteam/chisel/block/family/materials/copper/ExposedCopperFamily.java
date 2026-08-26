@@ -11,9 +11,9 @@ public class ExposedCopperFamily extends ChiselFamily {
     public ExposedCopperFamily(BlockBehaviour.Properties props) {
         family = builder("exposed_copper")
                 .addVariant(Blocks.EXPOSED_COPPER)
-                .addVariant(Blocks.EXPOSED_CHISELED_COPPER)
-                .addVariant(Blocks.EXPOSED_CUT_COPPER)
-                .addVariant(Blocks.EXPOSED_COPPER_GRATE)
+                // .addVariant(Blocks.EXPOSED_CHISELED_COPPER)
+                // .addVariant(Blocks.EXPOSED_CUT_COPPER)
+                // .addVariant(Blocks.EXPOSED_COPPER_GRATE)
                 .addWeatheringVariant("exposed_copper_bad_greggy", props, CONNECTED)
                 .addWeatheringVariant("exposed_copper_bolted", props, CUBE_ALL)
                 .addWeatheringVariant("exposed_copper_caution", props, CONNECTED)
