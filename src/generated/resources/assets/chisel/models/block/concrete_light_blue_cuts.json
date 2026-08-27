@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_light_blue/concrete_light_blue_cuts",
+    "overlay_4x4": "chisel:block/concrete_light_blue/concrete_light_blue_cuts-4x4",
+    "particle": "chisel:block/concrete_light_blue/concrete_light_blue_cuts"
+  }
+}

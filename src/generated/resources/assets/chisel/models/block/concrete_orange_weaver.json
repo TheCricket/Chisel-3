@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_orange/concrete_orange_weaver",
+    "overlay_connected": "chisel:block/concrete_orange/concrete_orange_weaver-ctm",
+    "overlay_texture": "chisel:block/concrete_orange/concrete_orange_weaver",
+    "particle": "chisel:block/concrete_orange/concrete_orange_weaver"
+  }
+}

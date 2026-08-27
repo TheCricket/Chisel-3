@@ -28,7 +28,7 @@ public class ChiselTabs {
                     ChiselBlocks.COAL.getFamily(),
                     ChiselBlocks.COBBLESTONE.getFamily(),
                     ChiselBlocks.STONE_BRICKS.getFamily(),
-                    ChiselBlocks.CONCRETE.getFamily(),
+                    ChiselBlocks.C_CONCRETE.getFamily(),
                     ChiselBlocks.BASALT.getFamily(),
                     ChiselBlocks.DIORITE.getFamily(),
                     ChiselBlocks.DEEPSLATE.getFamily(),
@@ -61,7 +61,9 @@ public class ChiselTabs {
                     ChiselBlocks.MUD.getFamily(),
                     ChiselBlocks.AE2_SKY_STONE.getFamily(),
                     ChiselBlocks.RESIN.getFamily(),
-                    ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
+                    ChiselBlocks.WATERSTONE.getFamily()
+                
+                ).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
             })))
@@ -108,8 +110,9 @@ public class ChiselTabs {
                     ChiselBlocks.MILITARY.getFamily(),
                     ChiselBlocks.TECHNICAL.getFamily(),
                     ChiselBlocks.TYRIAN.getFamily(),
-                    ChiselBlocks.WARNING.getFamily())
-                    .forEach(family -> family.getVariants().forEach(variant ->  {
+                    ChiselBlocks.WARNING.getFamily()
+                
+                ).forEach(family -> family.getVariants().forEach(variant ->  {
                         if(variant.shouldGenerateModel() && variant.isInTab)
                             output.accept(variant.getBlock());
                     })))
@@ -143,7 +146,9 @@ public class ChiselTabs {
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
                         ChiselBlocks.NETHERITE.getFamily(),
-                        ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
+                        ChiselBlocks.WOOLEN_CLAY.getFamily()
+                
+                ).forEach(family -> family.getVariants().forEach(variant ->  {
                             if(variant.shouldGenerateModel() && variant.isInTab)
                                 output.accept(variant.getBlock());
                         }));
@@ -157,10 +162,17 @@ public class ChiselTabs {
                 ChiselBlocks.TORCH.getVariant("torch_8").get();
                 ChiselBlocks.TORCH.getVariant("torch_9").get();
                 ChiselBlocks.TORCH.getVariant("torch_10").get();
+
                 ChiselBlocks.WOOLS.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
-                    if (variant.shouldGenerateModel() && variant.isInTab)
+                    if(variant.shouldGenerateModel() && variant.isInTab)
                         output.accept(variant.getBlock());
                 }));
+
+                ChiselBlocks.CONCRETE.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if(variant.shouldGenerateModel() && variant.isInTab)
+                        output.accept(variant.getBlock());
+                }));
+
                 ChiselBlocks.STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
                 ChiselBlocks.STAINED_GLASS_PANE.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
             })

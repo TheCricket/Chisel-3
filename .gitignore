@@ -45,3 +45,6 @@ libs
 /src/generated/resources/.cache/
 .env
 .junie/
+
+#vscode
+.vscode/

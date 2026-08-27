@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_red/concrete_red_mosaic",
+    "overlay_connected": "chisel:block/concrete_red/concrete_red_mosaic-ctm",
+    "overlay_texture": "chisel:block/concrete_red/concrete_red_mosaic",
+    "particle": "chisel:block/concrete_red/concrete_red_mosaic"
+  }
+}

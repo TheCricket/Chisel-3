@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/concrete_magenta_chaotic",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:concrete_magenta_chaotic",
+    "kind": "multiblock_3x3"
+  }
+}

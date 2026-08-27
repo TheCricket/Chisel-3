@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_black/concrete_black_plate",
+    "overlay_connected": "chisel:block/concrete_black/concrete_black_plate-ctm",
+    "overlay_texture": "chisel:block/concrete_black/concrete_black_plate",
+    "particle": "chisel:block/concrete_black/concrete_black_plate"
+  }
+}

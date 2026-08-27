@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side",
+    "bottom": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-bottom",
+    "overlay_bottom": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-bottom",
+    "overlay_side_connected": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side-ctm",
+    "overlay_texture": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side",
+    "overlay_top": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-top",
+    "overlay_vertical": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side-ctm",
+    "particle": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side",
+    "side": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-side",
+    "top": "chisel:block/concrete_gray/concrete_gray_pillar_large_ionic_triple-top"
+  }
+}

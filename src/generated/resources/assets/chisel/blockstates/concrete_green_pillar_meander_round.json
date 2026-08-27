@@ -1,0 +1,13 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "model_location": "chisel:block/concrete_green_pillar_meander_round",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:concrete_green_pillar_meander_round",
+    "kind": "ctmv"
+  }
+}

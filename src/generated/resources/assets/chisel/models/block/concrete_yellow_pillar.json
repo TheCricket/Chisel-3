@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar-bottom",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar-top"
+  }
+}

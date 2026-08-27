@@ -30,7 +30,7 @@ public class ChiselRecipes extends RecipeProvider {
     @Override
     protected void buildRecipes() {
         // MARK: Blocks
-        smeltingResultFromBase(ChiselBlocks.CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
+        smeltingResultFromBase(ChiselBlocks.C_CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
 
         stoneAround("has_glowstone", Tags.Items.DUSTS_GLOWSTONE, ChiselBlocks.ANTIBLOCK.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_redstone", Tags.Items.DUSTS_REDSTONE, ChiselBlocks.FUTURA.getFamily().getVariants().getFirst().getBlock(), 8);

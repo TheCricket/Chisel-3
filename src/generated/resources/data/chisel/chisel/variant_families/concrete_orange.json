@@ -1,0 +1,313 @@
+{
+  "family_name": "concrete_orange",
+  "tag": "c:chisel/concrete_orange",
+  "variants": [
+    {
+      "block": "minecraft:orange_concrete",
+      "name": "block.minecraft.orange_concrete"
+    },
+    {
+      "block": "chisel:concrete_orange_array",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_orange_array"
+    },
+    {
+      "block": "chisel:concrete_orange_braid",
+      "name": "concrete_orange_braid"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_indent",
+      "name": "concrete_orange_bricks_indent"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_inlayed",
+      "name": "concrete_orange_bricks_inlayed"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_orange_bricks_large"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_vertical",
+      "name": "concrete_orange_bricks_vertical"
+    },
+    {
+      "block": "chisel:concrete_orange_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "concrete_orange_chaotic"
+    },
+    {
+      "block": "chisel:concrete_orange_chaotic_medium",
+      "name": "concrete_orange_chaotic_medium"
+    },
+    {
+      "block": "chisel:concrete_orange_chaotic_small",
+      "name": "concrete_orange_chaotic_small"
+    },
+    {
+      "block": "chisel:concrete_orange_checker",
+      "name": "concrete_orange_checker"
+    },
+    {
+      "block": "chisel:concrete_orange_checker_small",
+      "name": "concrete_orange_checker_small"
+    },
+    {
+      "block": "chisel:concrete_orange_circular",
+      "model_type": "connected",
+      "name": "concrete_orange_circular"
+    },
+    {
+      "block": "chisel:concrete_orange_cobble",
+      "name": "concrete_orange_cobble"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_cracked",
+      "name": "concrete_orange_bricks_cracked"
+    },
+    {
+      "block": "chisel:concrete_orange_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "concrete_orange_cuts"
+    },
+    {
+      "block": "chisel:concrete_orange_dent",
+      "model_type": "connected",
+      "name": "concrete_orange_dent"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_encased",
+      "model_type": "connected",
+      "name": "concrete_orange_bricks_encased"
+    },
+    {
+      "block": "chisel:concrete_orange_french_1",
+      "name": "concrete_orange_french_1"
+    },
+    {
+      "block": "chisel:concrete_orange_french_2",
+      "name": "concrete_orange_french_2"
+    },
+    {
+      "block": "chisel:concrete_orange_indent",
+      "model_type": "connected",
+      "name": "concrete_orange_indent"
+    },
+    {
+      "block": "chisel:concrete_orange_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_orange_jellybean"
+    },
+    {
+      "block": "chisel:concrete_orange_layers",
+      "name": "concrete_orange_layers"
+    },
+    {
+      "block": "chisel:concrete_orange_line_horizontal",
+      "name": "concrete_orange_line_horizontal"
+    },
+    {
+      "block": "chisel:concrete_orange_line_vertical",
+      "name": "concrete_orange_line_vertical"
+    },
+    {
+      "block": "chisel:concrete_orange_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "concrete_orange_meander_horizontal"
+    },
+    {
+      "block": "chisel:concrete_orange_meander_vertical",
+      "model_type": "ctmv",
+      "name": "concrete_orange_meander_vertical"
+    },
+    {
+      "block": "chisel:concrete_orange_mosaic",
+      "model_type": "connected",
+      "name": "concrete_orange_mosaic"
+    },
+    {
+      "block": "chisel:concrete_orange_ornate_small",
+      "name": "concrete_orange_ornate_small"
+    },
+    {
+      "block": "chisel:concrete_orange_panel",
+      "name": "concrete_orange_panel"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar",
+      "model_type": "top_bottom_side",
+      "name": "concrete_orange_pillar"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_basic",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_basic"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_basic_round"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "concrete_orange_pillar_classic"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "concrete_orange_pillar_classic_large"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_ionic"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_meander",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_meander"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_meander_round"
+    },
+    {
+      "block": "chisel:concrete_orange_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_orange_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:concrete_orange_plate",
+      "model_type": "connected",
+      "name": "concrete_orange_plate"
+    },
+    {
+      "block": "chisel:concrete_orange_polished",
+      "name": "concrete_orange_polished"
+    },
+    {
+      "block": "chisel:concrete_orange_prism",
+      "name": "concrete_orange_prism"
+    },
+    {
+      "block": "chisel:concrete_orange_raw",
+      "name": "concrete_orange_raw"
+    },
+    {
+      "block": "chisel:concrete_orange_road",
+      "name": "concrete_orange_road"
+    },
+    {
+      "block": "chisel:concrete_orange_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_orange_slanted"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_small",
+      "name": "concrete_orange_bricks_small"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_soft",
+      "name": "concrete_orange_bricks_soft"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_solid",
+      "name": "concrete_orange_bricks_solid"
+    },
+    {
+      "block": "chisel:concrete_orange_border_square",
+      "model_type": "connected",
+      "name": "concrete_orange_border_square"
+    },
+    {
+      "block": "chisel:concrete_orange_tiles_large",
+      "model_type": "connected",
+      "name": "concrete_orange_tiles_large"
+    },
+    {
+      "block": "chisel:concrete_orange_tiles",
+      "name": "concrete_orange_tiles"
+    },
+    {
+      "block": "chisel:concrete_orange_tiles_small",
+      "name": "concrete_orange_tiles_small"
+    },
+    {
+      "block": "chisel:concrete_orange_bricks_triple",
+      "name": "concrete_orange_bricks_triple"
+    },
+    {
+      "block": "chisel:concrete_orange_twisted",
+      "model_type": "top_bottom_side",
+      "name": "concrete_orange_twisted"
+    },
+    {
+      "block": "chisel:concrete_orange_weaver",
+      "model_type": "connected",
+      "name": "concrete_orange_weaver"
+    },
+    {
+      "block": "chisel:concrete_orange_zag",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_orange_zag"
+    }
+  ]
+}
