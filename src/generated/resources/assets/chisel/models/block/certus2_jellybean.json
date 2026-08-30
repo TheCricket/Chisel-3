@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/ae2_certus2/certus2_jellybean",
-    "overlay_2x2": "chisel:block/ae2_certus2/certus2_jellybean-2x2",
-    "particle": "chisel:block/ae2_certus2/certus2_jellybean"
-  }
-}

@@ -315,12 +315,27 @@
       "name": "sky_stone_herringbone"
     },
     {
+      "block": "chisel:sky_stone_herringbone_encased",
+      "model_type": "connected",
+      "name": "sky_stone_herringbone_encased"
+    },
+    {
       "block": "chisel:sky_stone_medallion",
       "name": "sky_stone_medallion"
     },
     {
+      "block": "chisel:sky_stone_medallion_encased",
+      "model_type": "connected",
+      "name": "sky_stone_medallion_encased"
+    },
+    {
       "block": "chisel:sky_stone_dots",
       "name": "sky_stone_dots"
+    },
+    {
+      "block": "chisel:sky_stone_dots_encased",
+      "model_type": "connected",
+      "name": "sky_stone_dots_encased"
     },
     {
       "block": "chisel:sky_stone_heart",
@@ -376,6 +391,11 @@
       "name": "sky_stone_stripes"
     },
     {
+      "block": "chisel:sky_stone_stripes_encased",
+      "model_type": "connected",
+      "name": "sky_stone_stripes_encased"
+    },
+    {
       "block": "chisel:sky_stone_chisel_1",
       "name": "sky_stone_chisel_1"
     },
@@ -408,6 +428,11 @@
       "name": "sky_stone_facet_small"
     },
     {
+      "block": "chisel:sky_stone_facet_small_encased",
+      "model_type": "connected",
+      "name": "sky_stone_facet_small_encased"
+    },
+    {
       "block": "chisel:sky_stone_shiny",
       "name": "sky_stone_shiny"
     },
@@ -438,6 +463,11 @@
     {
       "block": "chisel:sky_stone_scaffold",
       "name": "sky_stone_scaffold"
+    },
+    {
+      "block": "chisel:sky_stone_scaffold_encased",
+      "model_type": "connected",
+      "name": "sky_stone_scaffold_encased"
     },
     {
       "block": "chisel:sky_stone_tiles_inlayed",

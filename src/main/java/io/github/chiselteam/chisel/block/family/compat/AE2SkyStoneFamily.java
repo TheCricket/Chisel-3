@@ -77,8 +77,11 @@ public class AE2SkyStoneFamily extends ChiselFamily {
                 .addVariant("sky_stone_zag", props, MULTIBLOCK_2X2)
                 .addVariant("sky_stone_crate", props, CONNECTED)
                 .addVariant("sky_stone_herringbone", props)
+                .addVariant("sky_stone_herringbone_encased", props, CONNECTED)
                 .addVariant("sky_stone_medallion", props)
+                .addVariant("sky_stone_medallion_encased", props, CONNECTED)
                 .addVariant("sky_stone_dots", props)
+                .addVariant("sky_stone_dots_encased", props, CONNECTED)
                 .addVariant("sky_stone_heart", props)
                 .addVariant("sky_stone_star", props)
                 .addVariant("sky_stone_plating", props)
@@ -92,6 +95,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
                 .addVariant("sky_stone_skull_creeper", props)
                 .addVariant("sky_stone_skull_skeleton", props)
                 .addVariant("sky_stone_stripes", props)
+                .addVariant("sky_stone_stripes_encased", props, CONNECTED)
                 .addVariant("sky_stone_chisel_1", props)
                 .addVariant("sky_stone_chisel_2", props)
                 .addVariant("sky_stone_chisel_3", props)
@@ -100,6 +104,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
                 .addVariant("sky_stone_chisel_6", props)
                 .addVariant("sky_stone_facet", props)
                 .addVariant("sky_stone_facet_small", props)
+                .addVariant("sky_stone_facet_small_encased", props, CONNECTED)
                 .addVariant("sky_stone_shiny", props)
                 .addVariant("sky_stone_gem", props)
                 .addVariant("sky_stone_gem_1", props)
@@ -108,6 +113,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
                 .addVariant("sky_stone_bricks_square", props)
                 .addVariant("sky_stone_slab", props)
                 .addVariant("sky_stone_scaffold", props)
+                .addVariant("sky_stone_scaffold_encased", props, CONNECTED)
                 .addVariant("sky_stone_tiles_inlayed", props)
                 .addVariant("sky_stone_waves", props, MULTIBLOCK_2X2)
                 .family();
@@ -183,13 +189,17 @@ public class AE2SkyStoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("sky_stone_zag"), "Sky Stone", "Zag");
         lang.addBlock(getVariant("sky_stone_crate"), "Sky Stone", "Crate");
         lang.addBlock(getVariant("sky_stone_herringbone"), "Sky Stone", "Herringbone");
+        lang.addBlock(getVariant("sky_stone_herringbone_encased"), "Sky Stone", "Encased Herringbone");
         lang.addBlock(getVariant("sky_stone_medallion"), "Sky Stone", "Medallion");
+        lang.addBlock(getVariant("sky_stone_medallion_encased"), "Sky Stone", "Encased Medallion");
         lang.addBlock(getVariant("sky_stone_dots"), "Sky Stone", "Dots");
+        lang.addBlock(getVariant("sky_stone_dots_encased"), "Sky Stone", "Encased Dots");
         lang.addBlock(getVariant("sky_stone_heart"), "Sky Stone", "Heart");
         lang.addBlock(getVariant("sky_stone_star"), "Sky Stone", "Star");
         lang.addBlock(getVariant("sky_stone_plating"), "Sky Stone", "Plating");
         lang.addBlock(getVariant("sky_stone_lodestone"), "Sky Stone", "Lodestone");
         lang.addBlock(getVariant("sky_stone_plank"), "Sky Stone", "Plank");
+        lang.addBlock(getVariant("sky_stone_plank_connected"), "Sky Stone", "Plank Connected");
         lang.addBlock(getVariant("sky_stone_frame"), "Sky Stone", "Frame");
         lang.addBlock(getVariant("sky_stone_panel_1"), "Sky Stone", "Panel 1");
         lang.addBlock(getVariant("sky_stone_panel_2"), "Sky Stone", "Panel 2");
@@ -197,6 +207,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("sky_stone_skull_creeper"), "Sky Stone", "Creeper Skull");
         lang.addBlock(getVariant("sky_stone_skull_skeleton"), "Sky Stone", "Skeleton Skull");
         lang.addBlock(getVariant("sky_stone_stripes"), "Sky Stone", "Stripes");
+        lang.addBlock(getVariant("sky_stone_stripes_encased"), "Sky Stone", "Encased Stripes");
         lang.addBlock(getVariant("sky_stone_chisel_1"), "Sky Stone", "Chisel 1");
         lang.addBlock(getVariant("sky_stone_chisel_2"), "Sky Stone", "Chisel 2");
         lang.addBlock(getVariant("sky_stone_chisel_3"), "Sky Stone", "Chisel 3");
@@ -205,6 +216,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("sky_stone_chisel_6"), "Sky Stone", "Chisel 6");
         lang.addBlock(getVariant("sky_stone_facet"), "Sky Stone", "Facet");
         lang.addBlock(getVariant("sky_stone_facet_small"), "Sky Stone", "Small Facet");
+        lang.addBlock(getVariant("sky_stone_facet_small_encased"), "Sky Stone", "Encased Small Facet");
         lang.addBlock(getVariant("sky_stone_shiny"), "Sky Stone", "Shiny");
         lang.addBlock(getVariant("sky_stone_gem"), "Sky Stone", "Gem");
         lang.addBlock(getVariant("sky_stone_gem_1"), "Sky Stone", "Gem 1");
@@ -213,6 +225,7 @@ public class AE2SkyStoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("sky_stone_bricks_square"), "Sky Stone", "Square Bricks");
         lang.addBlock(getVariant("sky_stone_slab"), "Sky Stone", "Slab");
         lang.addBlock(getVariant("sky_stone_scaffold"), "Sky Stone", "Scaffold");
+        lang.addBlock(getVariant("sky_stone_scaffold_encased"), "Sky Stone", "Encased Scaffold");
         lang.addBlock(getVariant("sky_stone_tiles_inlayed"), "Sky Stone", "Inlayed Tiles");
         lang.addBlock(getVariant("sky_stone_waves"), "Sky Stone", "Waves");
     }

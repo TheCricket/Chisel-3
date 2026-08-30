@@ -13,6 +13,10 @@
     {
       "block": "chisel:discord",
       "name": "discord"
+    },
+    {
+      "block": "chisel:bucket_block",
+      "name": "bucket_block"
     }
   ]
 }

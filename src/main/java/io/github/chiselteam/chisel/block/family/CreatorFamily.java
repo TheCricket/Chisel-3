@@ -12,7 +12,7 @@ public class CreatorFamily extends ChiselFamily {
                 .addVariant("youtube", props)
                 .addVariant("twitch", props)
                 .addVariant("discord", props)
-                // .addVariant("bucket_block", props)
+                .addVariant("bucket_block", props)
                 .family();
     }
 
@@ -21,7 +21,7 @@ public class CreatorFamily extends ChiselFamily {
         lang.addBlock(getVariant("youtube"), "Youtube", "Youtube");
         lang.addBlock(getVariant("twitch"), "Twitch", "Twitch");
         lang.addBlock(getVariant("discord"), "Discord", "Discord");
-        // lang.addBlock(getVariant("bucket_block"), "Bucketst", "Bucketst");
+        lang.addBlock(getVariant("bucket_block"), "Bucketst", "Bucketst");
     }
 }
 

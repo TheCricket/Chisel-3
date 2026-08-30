@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "chisel:block/ae2_certus2/certus2_pillar_classic_large-bottom",
-    "side": "chisel:block/ae2_certus2/certus2_pillar_classic_large-side",
-    "top": "chisel:block/ae2_certus2/certus2_pillar_classic_large-top"
-  }
-}

@@ -230,7 +230,9 @@ public class ChiselTabs {
                     ChiselBlocks.AII_UNDERSHALE.getFamily(),
                     ChiselBlocks.AII_WISPROOT.getFamily(),
                     ChiselBlocks.AII_GREATROOT.getFamily(),
-                    ChiselBlocks.AE2_CERTUS2.getFamily(),
+                //     ChiselBlocks.AE2_CERTUS2.getFamily(),
+                    ChiselBlocks.AE2_CERTUS.getFamily(),
+                    ChiselBlocks.AE2_SKY_STONE.getFamily(),
                     ChiselBlocks.iaf_dreadstone.getFamily(),
                     ChiselBlocks.CREATOR.getFamily()
                     

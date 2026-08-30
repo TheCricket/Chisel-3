@@ -180,7 +180,7 @@ public class ChiselBlocks {
     public static final AIIWisprootFamily AII_WISPROOT = registerFamily(new AIIWisprootFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final AIIGreatrootFamily AII_GREATROOT = registerFamily(new AIIGreatrootFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final AE2CertusFamily AE2_CERTUS = registerFamily(new AE2CertusFamily(Properties.ofFullCopy(Blocks.STONE)));
-    public static final AE2Certus2Family AE2_CERTUS2 = registerFamily(new AE2Certus2Family(Properties.ofFullCopy(Blocks.STONE)));
+    // public static final AE2CertusFamily AE2_CERTUS2 = registerFamily(new AE2CertusFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final AE2SkyStoneFamily AE2_SKY_STONE = registerFamily(new AE2SkyStoneFamily(Properties.ofFullCopy(Blocks.STONE)));
     public static final IAFDreadstoneFamily iaf_dreadstone = registerFamily(new IAFDreadstoneFamily(Properties.ofFullCopy(Blocks.STONE)));
 

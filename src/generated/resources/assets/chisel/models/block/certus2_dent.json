@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/ae2_certus2/certus2_dent",
-    "overlay_connected": "chisel:block/ae2_certus2/certus2_dent-ctm",
-    "overlay_texture": "chisel:block/ae2_certus2/certus2_dent",
-    "particle": "chisel:block/ae2_certus2/certus2_dent"
-  }
-}

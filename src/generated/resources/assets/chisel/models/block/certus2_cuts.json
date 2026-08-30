@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/ae2_certus2/certus2_cuts",
-    "overlay_4x4": "chisel:block/ae2_certus2/certus2_cuts-4x4",
-    "particle": "chisel:block/ae2_certus2/certus2_cuts"
-  }
-}
