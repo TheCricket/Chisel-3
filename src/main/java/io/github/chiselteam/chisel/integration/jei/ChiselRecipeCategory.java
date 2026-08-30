@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.integration.jei;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.core.variant.Variant;
-import io.github.chiselteam.chisel.core.variant.VariantFamily;
+import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotDrawable;
@@ -36,7 +36,7 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
 
     @Override
     public void createRecipeExtras(IRecipeExtrasBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
-        builder.addText(recipe.family().getAllVariants(recipe.registries()).getFirst().getBlock().getName(), getWidth() - 20, 20)
+        builder.addText(recipe.family().getAllVariants().getFirst().getBlock().getName(), getWidth() - 20, 20)
                 .setPosition(0, -5)
                 .setColor(0xFF505050)
                 .setLineSpacing(0)
@@ -51,7 +51,7 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
     @Override
     public void setRecipe(@NonNull IRecipeLayoutBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
         VariantFamily family = recipe.family();
-        List<Variant> variants = family.getAllVariants(recipe.registries());
+        List<Variant> variants = family.getAllVariants();
         variants.forEach(variant -> builder.addOutputSlot().add(variant.getBlock()));
     }
 }

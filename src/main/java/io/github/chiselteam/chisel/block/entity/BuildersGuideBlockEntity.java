@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.block.entity;
 
-import io.github.chiselteam.chisel.core.building.ChiselBuildingMode;
+import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;

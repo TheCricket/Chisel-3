@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.core.mode.ChiselMode;
-import io.github.chiselteam.chisel.core.mode.impl.*;
+import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
+import io.github.chiselteam.chisel.mode.chisel.impl.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.neoforged.bus.api.IEventBus;

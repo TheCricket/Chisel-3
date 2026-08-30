@@ -1,11 +1,11 @@
 package io.github.chiselteam.chisel.datagen.model;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.block.util.ChiselFamily;
-import io.github.chiselteam.chisel.core.variant.VariantFamily;
-import io.github.chiselteam.chisel.datagen.ChiselVariants;
+import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
+import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -13,7 +13,6 @@ import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.renderer.block.dispatch.Variant;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -31,11 +30,12 @@ public class ChiselModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
-        ChiselBlocks.getFamilies().forEach(ChiselFamily::getFamily);
-        Set<String> processedFamilies = new HashSet<>();
-        ChiselVariants.getVariantFamilies().forEach(family -> registerFamilyModels(family, blockModels, processedFamilies));
+        ChiselVariantModelGenerators.registerAll();
 
-        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/auto_chisel")))));
+        Set<String> processedFamilies = new HashSet<>();
+        ChiselVariantFamilies.getRootFamilies().forEach(family -> registerFamilyModels(family, blockModels, processedFamilies));
+
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new net.minecraft.client.renderer.block.dispatch.Variant(Chisel.prefix("block/auto_chisel")))));
         blockModels.registerSimpleItemModel(ChiselBlocks.AUTO_CHISEL.get(), Chisel.prefix("block/auto_chisel"));
 
         blockModels.blockStateOutput.accept(
@@ -71,22 +71,13 @@ public class ChiselModelProvider extends ModelProvider {
     }
 
     private void registerFamilyModels(VariantFamily family, BlockModelGenerators blockModels, Set<String> processedFamilies) {
-        if (!processedFamilies.add(family.getFamilyName())) {
-            return;
-        }
-        family.getVariants().forEach(variant -> {
-            if (variant.shouldGenerateModel()) {
-                variant.registerModel(blockModels);
-            }
-        });
-        family.getHiddenVariants().forEach(variant -> {
-            if (variant.shouldGenerateModel()) {
-                variant.registerModel(blockModels);
-            }
-        });
-        if (family.getWaxedFamily() != null) {
+        if (!processedFamilies.add(family.getFamilyName())) return;
+
+        family.getVariants().stream().filter(Variant::shouldGenerateModel).forEach(variant -> ChiselVariantModelGenerators.generate(variant, blockModels));
+        family.getHiddenVariants().stream().filter(Variant::shouldGenerateModel).forEach(variant -> ChiselVariantModelGenerators.generate(variant, blockModels));
+
+        if (family.getWaxedFamily() != null)
             registerFamilyModels(family.getWaxedFamily(), blockModels, processedFamilies);
-        }
     }
 
     @Override

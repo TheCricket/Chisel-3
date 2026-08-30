@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.network;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.core.mode.ChiselMode;
+import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
 import io.github.chiselteam.chisel.registry.ChiselDataComponents;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselModes;

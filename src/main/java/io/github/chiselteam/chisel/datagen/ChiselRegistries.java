@@ -6,6 +6,8 @@ import io.github.chiselteam.chisel.datagen.registry.ChiselWeatheringRegistry;
 import io.github.chiselteam.chisel.registry.ChiselBiomeModifiers;
 import io.github.chiselteam.chisel.registry.ChiselConfiguredFeatures;
 import io.github.chiselteam.chisel.registry.ChiselPlacedFeatures;
+import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
+import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -23,8 +25,8 @@ public class ChiselRegistries extends DatapackBuiltinEntriesProvider {
             .add(Registries.PLACED_FEATURE, ChiselPlacedFeatures::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ChiselBiomeModifiers::bootstrap)
             .add(ChiselSmashingRockRegistry.KEY, ChiselSmashingRockRegistry::bootstrap)
-            .add(ChiselWeatheringRegistry.KEY, ChiselWeatheringRegistry::bootstrap)
-            .add(ChiselVariants.KEY, ChiselVariants::bootstrap);
+            .add(WeatheringChains.KEY, ChiselWeatheringRegistry::bootstrap)
+            .add(ChiselVariantFamilies.KEY, ChiselVariantFamilies::bootstrap);
 
     public ChiselRegistries(PackOutput output, CompletableFuture<HolderLookup.Provider> future) {
         super(output, future, BUILDER, Set.of("minecraft", Chisel.MODID));

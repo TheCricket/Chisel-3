@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.inventory.menu.AutoChiselMenu;
-import io.github.chiselteam.chisel.inventory.menu.ChiselMenu;
+import io.github.chiselteam.chisel.menu.AutoChiselMenu;
+import io.github.chiselteam.chisel.menu.ChiselMenu;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;

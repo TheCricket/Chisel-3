@@ -1,9 +1,9 @@
 package io.github.chiselteam.chisel.client.entity;
 
-import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
-import io.github.chiselteam.chisel.client.entity.state.AutoChiselBlockEntityRenderState;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.client.entity.state.AutoChiselBlockEntityRenderState;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

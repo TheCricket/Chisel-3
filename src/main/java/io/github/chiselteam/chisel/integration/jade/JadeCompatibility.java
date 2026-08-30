@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.integration.jade;
 
-import io.github.chiselteam.chisel.block.util.*;
+import io.github.chiselteam.chisel.block.*;
 import org.jspecify.annotations.NonNull;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;

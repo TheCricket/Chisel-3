@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.datagen.model.predicates;
 
-import io.github.chiselteam.chisel.core.variant.Variant;
-import io.github.chiselteam.chisel.registry.ChiselBlocks;
+import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.ctm.api.strategy.CTMBlockPredicate;
 import io.github.chiselteam.ctm.api.strategy.ResolvedBlockStateMatcher;
 import net.minecraft.world.level.block.Block;
@@ -38,10 +38,10 @@ public final class CopperConnectionPredicates {
 
     private static Block getCopperVariant(String stage, String name) {
         return switch (stage) {
-            case "copper" -> ChiselBlocks.COPPER.getVariant(name).get();
-            case "exposed_copper" -> ChiselBlocks.EXPOSED_COPPER.getVariant(name).get();
-            case "weathered_copper" -> ChiselBlocks.WEATHERED_COPPER.getVariant(name).get();
-            case "oxidized_copper" -> ChiselBlocks.OXIDIZED_COPPER.getVariant(name).get();
+            case "copper" -> ChiselFamilies.COPPER.getVariant(name).get();
+            case "exposed_copper" -> ChiselFamilies.EXPOSED_COPPER.getVariant(name).get();
+            case "weathered_copper" -> ChiselFamilies.WEATHERED_COPPER.getVariant(name).get();
+            case "oxidized_copper" -> ChiselFamilies.OXIDIZED_COPPER.getVariant(name).get();
             default -> throw new IllegalArgumentException("Unknown copper stage: " + stage);
         };
     }

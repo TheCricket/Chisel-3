@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.util;
 
 import io.github.chiselteam.chisel.block.BuildersGuideBlock;
-import io.github.chiselteam.chisel.core.building.ChiselBuildingMode;
+import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import net.minecraft.core.BlockPos;
 
 import java.util.ArrayList;
