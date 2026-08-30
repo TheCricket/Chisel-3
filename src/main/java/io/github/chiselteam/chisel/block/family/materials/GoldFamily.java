@@ -11,8 +11,8 @@ public class GoldFamily extends ChiselFamily {
     public GoldFamily(BlockBehaviour.Properties props) {
         family = builder("gold")
                 .addVariant(Blocks.GOLD_BLOCK)
-                .addVariant("gold_125", props)
-                .addVariant("gold_adv", props)
+                .addVariant("gold_125", props) //duplicate
+                .addVariant("gold_adv", props) //duplicate
                 .addVariant("gold_bad_greggy", props, CONNECTED)
                 .addVariant("gold_brick", props, TBS)
                 .addVariant("gold_caution", props, CONNECTED)
@@ -24,7 +24,7 @@ public class GoldFamily extends ChiselFamily {
                 .addVariant("gold_egregious", props, CONNECTED)
                 .addVariant("gold_ingots_large", props, TBS)
                 .addVariant("gold_ingots_small", props, TBS)
-                .addVariant("gold_machine", props)
+                .addVariant("gold_machine", props) 
                 .addVariant("gold_plates", props, TBS)
                 .addVariant("gold_rivets", props, TBS)
                 .addVariant("gold_scaffold", props, CONNECTED)

@@ -18,10 +18,10 @@ public class LaboratoryFamily extends ChiselFamily {
                 .addVariant("laboratory_panel_clear", props)
                 .addVariant("laboratory_panel_dotted", props)
                 .addVariant("laboratory_panel_fuzzy", props, CONNECTED)
-                .addVariant("laboratory_panel_wall", props)
-                .addVariant("laboratory_tiles_enamelled_large", props)
-                .addVariant("laboratory_tiles_enamelled_small", props)
-                .addVariant("laboratory_tiles_large", props)
+                .addVariant("laboratory_panel_wall", props)  
+                .addVariant("laboratory_tiles_enamelled_large", props) //duplicate
+                .addVariant("laboratory_tiles_enamelled_small", props) //duplicate
+                .addVariant("laboratory_tiles_large", props) //duplicate
                 .addVariant("laboratory_tiles_small", props)
                 .addVariant("laboratory_tiles_steel_large", props, TBS)
                 .addVariant("laboratory_tiles_steel_small", props, TBS)

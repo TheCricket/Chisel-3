@@ -1,0 +1,9 @@
+﻿{
+  "values": [
+    {"id": "xycraft_world:marble_bricks_cloud_green", "required": false},
+    {"id": "xycraft_world:marble_pillar_cloud_green", "required": false},
+    {"id": "xycraft_world:marble_tiles_cloud_green", "required": false},
+    {"id": "xycraft_world:marble_trim_green", "required": false},
+    {"id": "xycraft_world:marble_trim_panel_green", "required": false}
+  ]
+}

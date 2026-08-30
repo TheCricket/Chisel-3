@@ -1,5 +1,14 @@
 ﻿{
   "values": [
-    {"id": "astralsorcery:marble_raw", "required": false}
+    {"id": "astralsorcery:marble_raw", "required": false},
+
+    {"id": "xycraft_world:marble", "required": false},
+    {"id": "xycraft_world:bordered_marble", "required": false},
+    {"id": "xycraft_world:bordered_marble_panel", "required": false},
+    {"id": "xycraft_world:marble_bricks", "required": false},
+    {"id": "xycraft_world:marble_pillar", "required": false},
+    {"id": "xycraft_world:marble_tiles", "required": false},
+    {"id": "xycraft_world:smooth_marble", "required": false},
+    {"id": "xycraft_world:smooth_marble_panel", "required": false}
   ]
 }

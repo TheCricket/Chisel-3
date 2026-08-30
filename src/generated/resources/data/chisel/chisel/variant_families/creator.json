@@ -1,0 +1,18 @@
+{
+  "family_name": "creator",
+  "tag": "c:chisel/creator",
+  "variants": [
+    {
+      "block": "chisel:youtube",
+      "name": "youtube"
+    },
+    {
+      "block": "chisel:twitch",
+      "name": "twitch"
+    },
+    {
+      "block": "chisel:discord",
+      "name": "discord"
+    }
+  ]
+}

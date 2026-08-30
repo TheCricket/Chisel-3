@@ -1,0 +1,9 @@
+﻿{
+  "values": [
+    {"id": "xycraft_world:kivi_bricks_cloud_green", "required": false},
+    {"id": "xycraft_world:kivi_pillar_cloud_green", "required": false},
+    {"id": "xycraft_world:kivi_tiles_cloud_green", "required": false},
+    {"id": "xycraft_world:kivi_trim_green", "required": false},
+    {"id": "xycraft_world:kivi_trim_panel_green", "required": false}
+  ]
+}

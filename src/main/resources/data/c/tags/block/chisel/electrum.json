@@ -1,7 +1,6 @@
 {
   "values": [
-    {"id": "ftbmaterials:electrum_block", "required": false},
-    {"id": "alltheores:electrum_block", "required": false},
-    {"id": "oritech:electrum", "required": false}
+    {"id": "#c:storage_blocks/electrum", "required": false},
+    {"id": "ftbmaterials:electrum_block", "required": false}
   ]
 }

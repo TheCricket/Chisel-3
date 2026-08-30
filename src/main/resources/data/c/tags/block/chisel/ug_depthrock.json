@@ -1,0 +1,10 @@
+{
+  "values": [
+    {"id": "undergarden:depthrock", "required": false},
+    {"id": "undergarden:polished_depthrock", "required": false},
+    {"id": "undergarden:depthrock_bricks", "required": false},
+    {"id": "undergarden:cracked_depthrock_bricks", "required": false},
+    {"id": "undergarden:chiseled_depthrock_bricks", "required": false},
+    {"id": "undergarden:depthrock_tiles", "required": false}
+  ]
+}

@@ -128,6 +128,15 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.CREATOR.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
+                .pattern("SSS")
+                .pattern("SWS")
+                .pattern("SSS")
+                .define('S', Blocks.RED_CONCRETE)
+                .define('W', Blocks.WHITE_CONCRETE)
+                .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
+                .save(output);
+
         shaped(RecipeCategory.MISC, ChiselBlocks.SHINGLE.getFamily().getVariants().getFirst().getBlock().asItem())
                 .pattern(" B")
                 .pattern("BC")

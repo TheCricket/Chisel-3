@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ae2_certus2/certus2_border_square",
+    "overlay_connected": "chisel:block/ae2_certus2/certus2_border_square-ctm",
+    "overlay_texture": "chisel:block/ae2_certus2/certus2_border_square",
+    "particle": "chisel:block/ae2_certus2/certus2_border_square"
+  }
+}

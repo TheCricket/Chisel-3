@@ -1,0 +1,9 @@
+﻿{
+  "values": [
+    {"id": "xycraft_world:kivi_bricks_cloud_dark", "requidark": false},
+    {"id": "xycraft_world:kivi_pillar_cloud_dark", "requidark": false},
+    {"id": "xycraft_world:kivi_tiles_cloud_dark", "requidark": false},
+    {"id": "xycraft_world:kivi_trim_dark", "requidark": false},
+    {"id": "xycraft_world:kivi_trim_panel_dark", "requidark": false}
+  ]
+}
