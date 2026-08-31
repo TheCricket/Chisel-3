@@ -1,0 +1,12 @@
+﻿{
+  "values": [
+    {"id": "xycraft_world:kivi", "required": false},
+    {"id": "xycraft_world:kivi_bricks", "required": false},
+    {"id": "xycraft_world:kivi_pillar", "required": false},
+    {"id": "xycraft_world:kivi_rajan", "required": false},
+    {"id": "xycraft_world:kivi_rajan_panel", "required": false},
+    {"id": "xycraft_world:kivi_tiles", "required": false},
+    {"id": "xycraft_world:smooth_kivi", "required": false},
+    {"id": "xycraft_world:smooth_kivi_panel", "required": false}
+  ]
+}

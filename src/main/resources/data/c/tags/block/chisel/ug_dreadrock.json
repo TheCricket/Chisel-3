@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "undergarden:dreadrock", "required": false},
+    {"id": "undergarden:dreadrock_bricks", "required": false}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ae2_certus/certus_plank_connected",
+    "overlay_connected": "chisel:block/ae2_certus/certus_plank_connected-ctm",
+    "overlay_texture": "chisel:block/ae2_certus/certus_plank_connected",
+    "particle": "chisel:block/ae2_certus/certus_plank_connected"
+  }
+}

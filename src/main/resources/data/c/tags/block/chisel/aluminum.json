@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/aluminum", "required": false},
     {"id": "ftbmaterials:aluminum_block", "required": false},
     {"id": "alltheores:aluminum_block", "required": false}
   ]

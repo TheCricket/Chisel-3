@@ -7,6 +7,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:certus_zag",
-    "kind": "ar"
+    "kind": "multiblock_2x2"
   }
 }

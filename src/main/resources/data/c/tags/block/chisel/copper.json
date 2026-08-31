@@ -1,5 +1,6 @@
 ﻿{
   "values": [
+    {"id": "#c:storage_blocks/copper", "required": false},
     {"id": "#rechiseled:copper_block", "required": false}
   ]
 }

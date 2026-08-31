@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side",
+    "bottom": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-bottom",
+    "overlay_bottom": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-bottom",
+    "overlay_side_connected": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side-ctm",
+    "overlay_texture": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side",
+    "overlay_top": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-top",
+    "overlay_vertical": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side-ctm",
+    "particle": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side",
+    "side": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side",
+    "top": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-top"
+  }
+}
