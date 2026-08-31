@@ -1,4 +1,4 @@
-package io.github.chiselteam.chisel.moss;
+package io.github.chiselteam.chisel.projectile;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;

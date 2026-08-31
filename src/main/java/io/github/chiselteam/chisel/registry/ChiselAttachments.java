@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.moss.MossData;
+import io.github.chiselteam.chisel.projectile.MossData;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
