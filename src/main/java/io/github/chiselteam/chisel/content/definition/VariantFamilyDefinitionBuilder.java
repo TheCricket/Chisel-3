@@ -83,7 +83,6 @@ public final class VariantFamilyDefinitionBuilder {
 
     public VariantFamilyDefinitionBuilder addVariant(String name, Function<Properties, ? extends Block> blockFactory, Supplier<Properties> properties, VariantModelHandler modelType) {
         variants.add(new VariantDefinition(name, null, blockFactory, properties, modelType, true, true, false, false));
-
         return this;
     }
 

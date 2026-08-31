@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.family;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
-import io.github.chiselteam.chisel.api.family.registration.ChiselFamilyBuilder.AddonFamilyDefinition;
+import io.github.chiselteam.chisel.api.family.registration.AddonFamilyDefinition;
 import io.github.chiselteam.chisel.api.family.registration.ChiselFamilyRegistration;
 import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
 import net.minecraft.core.registries.BuiltInRegistries;

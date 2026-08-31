@@ -95,9 +95,8 @@ public class Variant {
     }
 
     @ApiStatus.Internal
-    public Variant withEldritch() {
+    public void withEldritch() {
         eldritch = true;
-        return this;
     }
 
     public Variant getDropsAs() {

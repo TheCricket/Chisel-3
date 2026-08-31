@@ -6,9 +6,9 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Optional;
 
 @ApiStatus.Internal
@@ -31,6 +31,6 @@ public final class VariantFamilyLookup {
             registryAccess.lookup(ChiselVariantFamilies.KEY).ifPresent(registry -> registry.forEach(families::add));
         families.addAll(ChiselVariantFamilies.getVariantFamilies());
         families.addAll(AddonFamilyRegistry.getFamilies());
-        return java.util.Collections.unmodifiableList(new ArrayList<>(families));
+        return List.copyOf(families);
     }
 }

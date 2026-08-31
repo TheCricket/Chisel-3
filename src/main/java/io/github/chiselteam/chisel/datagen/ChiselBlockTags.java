@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.datagen;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.content.family.WoodFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.core.HolderLookup;
@@ -35,18 +36,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NonNull Provider provider) {
-        addToWood(ChiselFamilies.ACACIA.getFamily());
-        addToWood(ChiselFamilies.BAMBOO.getFamily());
-        addToWood(ChiselFamilies.BIRCH.getFamily());
-        addToWood(ChiselFamilies.CHERRY.getFamily());
-        addToWood(ChiselFamilies.DARK_OAK.getFamily());
-        addToWood(ChiselFamilies.JUNGLE.getFamily());
-        addToWood(ChiselFamilies.MANGROVE.getFamily());
-        addToWood(ChiselFamilies.WARPED.getFamily());
-        addToWood(ChiselFamilies.OAK.getFamily());
-        addToWood(ChiselFamilies.PALE_OAK.getFamily());
-        addToWood(ChiselFamilies.SPRUCE.getFamily());
-        addToWood(ChiselFamilies.CRIMSON.getFamily());
+        WoodFamilies.families().forEach(family -> addToWood(family.getFamily()));
         addToWood(ChiselFamilies.BOOKSHELF.getFamily());
 
         // AXE

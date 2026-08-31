@@ -66,13 +66,4 @@ public final class ChiselFamilyBuilder {
             throw new IllegalArgumentException("Family " + familyId + " must contain at least one variant");
         return new AddonFamilyDefinition(familyId, List.copyOf(variants), tag);
     }
-
-    @ApiStatus.Internal
-    public record AddonFamilyDefinition(Identifier id, List<VariantEntry> variants, TagKey<Block> tag) {
-    }
-
-    @ApiStatus.Internal
-    public record VariantEntry(String logicalName, Supplier<? extends Block> block, VariantModelHandler modelType,
-                               boolean hidden) {
-    }
 }
