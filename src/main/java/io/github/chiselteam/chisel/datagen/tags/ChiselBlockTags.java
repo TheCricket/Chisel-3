@@ -1,4 +1,4 @@
-package io.github.chiselteam.chisel.datagen;
+package io.github.chiselteam.chisel.datagen.tags;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
@@ -221,9 +221,6 @@ public class ChiselBlockTags extends BlockTagsProvider {
                 }
             }
         });
-
-        addToTag(BlockTags.create(Chisel.prefix("marble")), ChiselFamilies.MARBLE.getFamily());
-        addToTag(BlockTags.create(Chisel.prefix("limestone")), ChiselFamilies.LIMESTONE.getFamily());
     }
 
     private TagKey<Block> getTagForColor(String color) {
