@@ -24,6 +24,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BRICKS = StoneFamilies.BRICKS;
     public static final ChiselFamily BRONZE = MetalFamilies.BRONZE;
     public static final ChiselFamily AE2_CERTUS = AppliedEnergisticsFamilies.AE2_CERTUS;
+    public static final ChiselFamily AE2_SKY_STONE = AppliedEnergisticsFamilies.AE2_SKY_STONE;
     public static final ChiselFamily CHARCOAL = DecorativeFamilies.CHARCOAL;
     public static final ChiselFamily CLOUD = DecorativeFamilies.CLOUD;
     public static final ChiselFamily COAL = DecorativeFamilies.COAL;

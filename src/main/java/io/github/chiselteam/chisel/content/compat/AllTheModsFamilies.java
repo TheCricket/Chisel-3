@@ -1,10 +1,11 @@
 package io.github.chiselteam.chisel.content.compat;
 
 import io.github.chiselteam.chisel.content.ChiselFamily;
+import org.jetbrains.annotations.ApiStatus;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
+@ApiStatus.Internal
 public class AllTheModsFamilies {
     private static final List<ChiselFamily> FAMILIES;
 
