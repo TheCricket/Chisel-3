@@ -1,8 +1,9 @@
 package io.github.chiselteam.chisel.datagen;
 
-import io.github.chiselteam.chisel.core.variant.Variant;
-import io.github.chiselteam.chisel.core.variant.VariantFamily;
+import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
+import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -19,35 +20,28 @@ public class ChiselBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        ChiselVariants.getVariantFamilies().forEach(this::generateFamilyLoot);
+        ChiselVariantFamilies.getRootFamilies().forEach(this::generateFamilyLoot);
 
         dropSelf(ChiselBlocks.AUTO_CHISEL.get());
         dropSelf(ChiselBlocks.BUILDERS_GUIDE.get());
     }
 
     private void generateFamilyLoot(VariantFamily f) {
-        f.getVariants().forEach(v -> generateLoot(f, v));
-        f.getHiddenVariants().forEach(v -> generateLoot(f, v));
-        if (f.getWaxedFamily() != null) {
-            generateFamilyLoot(f.getWaxedFamily());
-        }
+        f.getVariants().forEach(this::generateLoot);
+        f.getHiddenVariants().forEach(this::generateLoot);
+        if (f.getWaxedFamily() != null) generateFamilyLoot(f.getWaxedFamily());
     }
 
-    private void generateLoot(VariantFamily f, Variant v) {
-        if (v.shouldGenerateModel()) {
-            if (v.getModelHandler().isWallTorch()) {
-                String torchName = v.getName().replace("wall_torch", "torch");
-                f.getVariants().stream()
-                        .filter(t -> t.getName().equals(torchName))
-                        .findFirst()
-                        .ifPresentOrElse(
-                                t -> add(v.getBlock(), createSingleItemTable(t.getBlock())),
-                                () -> dropSelf(v.getBlock())
-                        );
-            } else {
-                dropSelf(v.getBlock());
-            }
+    private void generateLoot(Variant v) {
+        if (!v.shouldGenerateModel()) return;
+        Variant dropsAs = v.getDropsAs();
+
+        if (dropsAs != null) {
+            add(v.getBlock(), createSingleItemTable(dropsAs.getBlock()));
+            return;
         }
+
+        dropSelf(v.getBlock());
     }
 
     @Override

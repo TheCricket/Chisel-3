@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.core.mode.ChiselMode;
+import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.neoforge.registries.DeferredRegister;

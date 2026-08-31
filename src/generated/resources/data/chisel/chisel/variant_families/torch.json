@@ -55,56 +55,6 @@
       "block": "chisel:torch_10",
       "model_type": "torch",
       "name": "torch_10"
-    },
-    {
-      "block": "chisel:wall_torch_1",
-      "model_type": "wall_torch",
-      "name": "wall_torch_1"
-    },
-    {
-      "block": "chisel:wall_torch_2",
-      "model_type": "wall_torch",
-      "name": "wall_torch_2"
-    },
-    {
-      "block": "chisel:wall_torch_3",
-      "model_type": "wall_torch",
-      "name": "wall_torch_3"
-    },
-    {
-      "block": "chisel:wall_torch_4",
-      "model_type": "wall_torch",
-      "name": "wall_torch_4"
-    },
-    {
-      "block": "chisel:wall_torch_5",
-      "model_type": "wall_torch",
-      "name": "wall_torch_5"
-    },
-    {
-      "block": "chisel:wall_torch_6",
-      "model_type": "wall_torch",
-      "name": "wall_torch_6"
-    },
-    {
-      "block": "chisel:wall_torch_7",
-      "model_type": "wall_torch",
-      "name": "wall_torch_7"
-    },
-    {
-      "block": "chisel:wall_torch_8",
-      "model_type": "wall_torch",
-      "name": "wall_torch_8"
-    },
-    {
-      "block": "chisel:wall_torch_9",
-      "model_type": "wall_torch",
-      "name": "wall_torch_9"
-    },
-    {
-      "block": "chisel:wall_torch_10",
-      "model_type": "wall_torch",
-      "name": "wall_torch_10"
     }
   ]
 }

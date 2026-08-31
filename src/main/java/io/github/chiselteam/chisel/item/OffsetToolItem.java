@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.item;
 
+import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.ctm.api.texture.CTMOffsetDataManager;
 import io.github.chiselteam.ctm.network.CTMOffsetSyncPacket;
-import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -33,7 +33,7 @@ public class OffsetToolItem extends Item {
     public @NonNull InteractionResult useOn(UseOnContext context) {
         BlockPos pos = context.getClickedPos();
         BlockState state = context.getLevel().getBlockState(pos);
-        if (VariantFinder.getFamilyForBlock(state.getBlock(), context.getLevel().registryAccess()) != null) {
+        if (VariantFamilyLookup.getFamilyForBlock(state.getBlock(), context.getLevel().registryAccess()) != null) {
             if (context.getLevel().isClientSide()) {
                 return InteractionResult.SUCCESS;
             } else {

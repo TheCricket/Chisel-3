@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.integration.jei;
 
-import io.github.chiselteam.chisel.inventory.screen.AutoChiselScreen;
+import io.github.chiselteam.chisel.client.gui.AutoChiselScreen;
 import mezz.jei.api.gui.handlers.IGuiContainerHandler;
 import net.minecraft.client.renderer.Rect2i;
 import org.jspecify.annotations.NonNull;

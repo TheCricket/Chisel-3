@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.block.item;
 
-import io.github.chiselteam.chisel.core.variant.Variant;
+import io.github.chiselteam.chisel.api.family.Variant;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;

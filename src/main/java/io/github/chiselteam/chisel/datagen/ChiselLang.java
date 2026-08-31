@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.datagen;
 
-import io.github.chiselteam.chisel.registry.ChiselBlocks;
+import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import io.github.chiselteam.chisel.util.LangHelper;
 import net.minecraft.data.PackOutput;
@@ -16,7 +16,7 @@ public class ChiselLang extends LangHelper {
         addItems();
         addTabs();
 
-        ChiselBlocks.getFamilies().forEach(block -> block.addTranslations(this));
+        ChiselFamilies.getFamilies().forEach(block -> block.addTranslations(this));
 
         add("item.chisel.chisel.desc1", "Right click to open GUI");
         add("item.chisel.chisel.desc2", "Left click to chisel blocks in the world");

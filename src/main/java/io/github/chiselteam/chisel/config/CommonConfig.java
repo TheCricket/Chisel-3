@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.config;
 
-import net.neoforged.neoforge.common.ModConfigSpec.*;
+import net.neoforged.neoforge.common.ModConfigSpec.Builder;
+import net.neoforged.neoforge.common.ModConfigSpec.IntValue;
 
 public class CommonConfig {
 

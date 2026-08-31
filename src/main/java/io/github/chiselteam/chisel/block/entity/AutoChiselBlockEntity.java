@@ -1,12 +1,12 @@
 package io.github.chiselteam.chisel.block.entity;
 
-import io.github.chiselteam.chisel.core.variant.Variant;
-import io.github.chiselteam.chisel.core.variant.VariantFamily;
-import io.github.chiselteam.chisel.inventory.menu.AutoChiselMenu;
+import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.api.family.VariantFamily;
+import io.github.chiselteam.chisel.family.VariantFamilyLookup;
+import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
-import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -126,7 +126,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         if (chisel.isEmpty() || !chisel.canPerformAction(ChiselItemAbilities.CHISEL)) return false;
 
         Block templateBlock = ((BlockItem) template.getItem()).getBlock();
-        VariantFamily templateFamily = VariantFinder.getFamilyForBlock(templateBlock, level.registryAccess());
+        VariantFamily templateFamily = VariantFamilyLookup.getFamilyForBlock(templateBlock, level.registryAccess());
         if (templateFamily == null) return false;
 
         int inputSlot = findValidInputSlot(templateFamily);
@@ -139,7 +139,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         for (int i = 0; i < INPUT_SLOTS; i++) {
             ItemStack input = items.get(i);
             if (!input.isEmpty() && input.getItem() instanceof BlockItem blockItem) {
-                if (VariantFinder.getFamilyForBlock(blockItem.getBlock(), level.registryAccess()) != null) {
+                if (VariantFamilyLookup.getFamilyForBlock(blockItem.getBlock(), level.registryAccess()) != null) {
                     return i;
                 }
             }
@@ -153,7 +153,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         VariantFamily family = null;
 
         if (!template.isEmpty() && template.getItem() instanceof BlockItem blockItem) {
-            family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
+            family = VariantFamilyLookup.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
         }
 
         // Reset if no template AND no reversion upgrade
@@ -199,9 +199,9 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
                 int inputSlot = findValidReversionInputSlot();
                 if (inputSlot != -1) {
                     Block inputBlock = ((BlockItem) items.get(inputSlot).getItem()).getBlock();
-                    VariantFamily family = VariantFinder.getFamilyForBlock(inputBlock, level.registryAccess());
+                    VariantFamily family = VariantFamilyLookup.getFamilyForBlock(inputBlock, level.registryAccess());
                     if (family != null) {
-                        List<Variant> variants = family.getAllVariants(level.registryAccess());
+                        List<Variant> variants = family.getAllVariants();
                         if (!variants.isEmpty()) {
                             ItemStack output = new ItemStack(variants.get(0).getBlock());
                             output.setCount(1);
@@ -215,9 +215,9 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
 
         if (items.get(REVERSION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_REVERSION.get())) {
             Block templateBlock = ((BlockItem) template.getItem()).getBlock();
-            VariantFamily family = VariantFinder.getFamilyForBlock(templateBlock, level.registryAccess());
+            VariantFamily family = VariantFamilyLookup.getFamilyForBlock(templateBlock, level.registryAccess());
             if (family != null) {
-                List<Variant> variants = family.getAllVariants(level.registryAccess());
+                List<Variant> variants = family.getAllVariants();
                 if (!variants.isEmpty()) {
                     ItemStack output = new ItemStack(variants.get(0).getBlock());
                     output.setCount(1);
@@ -237,7 +237,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         VariantFamily family = null;
 
         if (!template.isEmpty() && template.getItem() instanceof BlockItem blockItem) {
-            family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
+            family = VariantFamilyLookup.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
         }
 
         int inputSlot = (family != null) ? findValidInputSlot(family) : (reversion ? findValidReversionInputSlot() : -1);
@@ -245,7 +245,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         if (inputSlot != -1) {
             ItemStack input = items.get(inputSlot);
             if (family == null) {
-                family = VariantFinder.getFamilyForBlock(((BlockItem) input.getItem()).getBlock(), level.registryAccess());
+                family = VariantFamilyLookup.getFamilyForBlock(((BlockItem) input.getItem()).getBlock(), level.registryAccess());
             }
 
             if (family == null) return;
@@ -316,7 +316,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         if (!(template.getItem() instanceof BlockItem blockItem)) return true;
 
         if(level != null) {
-            VariantFamily family = VariantFinder.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
+            VariantFamily family = VariantFamilyLookup.getFamilyForBlock(blockItem.getBlock(), level.registryAccess());
             if(family != null) {
                 return findValidInputSlot(family) == -1;
             } else {
@@ -340,13 +340,13 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         VariantFamily family = null;
 
         if (!template.isEmpty() && template.getItem() instanceof BlockItem templateBlockItem) {
-            family = VariantFinder.getFamilyForBlock(templateBlockItem.getBlock(), level != null ? level.registryAccess() : null);
+            family = VariantFamilyLookup.getFamilyForBlock(templateBlockItem.getBlock(), level != null ? level.registryAccess() : null);
         }
 
         if (family == null) {
             if (items.get(REVERSION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_REVERSION.get())) {
                 if (input.getItem() instanceof BlockItem inputBlockItem) {
-                    return VariantFinder.getFamilyForBlock(inputBlockItem.getBlock(), level != null ? level.registryAccess() : null) == null;
+                    return VariantFamilyLookup.getFamilyForBlock(inputBlockItem.getBlock(), level != null ? level.registryAccess() : null) == null;
                 }
             }
             return true;

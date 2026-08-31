@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.registry;
 
+import io.github.chiselteam.chisel.content.ChiselFamilies;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LevelEvent;
@@ -13,8 +14,8 @@ import java.util.function.Supplier;
 public class ChiselFluidInteractions {
 
     public static void init() {
-        addBlockInteraction(ChiselBlocks.MARBLE.getVariant("marble_raw"));
-        addBlockInteraction(ChiselBlocks.LIMESTONE.getVariant("limestone_raw"));
+        addBlockInteraction(ChiselFamilies.MARBLE.getVariant("marble_raw"));
+        addBlockInteraction(ChiselFamilies.LIMESTONE.getVariant("limestone_raw"));
     }
 
     private static void addBlockInteraction(Supplier<Block> block) {

@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.content.ChiselFamilies;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -20,9 +21,9 @@ public class ChiselConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BASALT = create("basalt_configured_feature");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        FeatureUtils.register(context, MARBLE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselBlocks.MARBLE.getVariant("marble_raw").get().defaultBlockState())), 32));
-        FeatureUtils.register(context, LIMESTONE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselBlocks.LIMESTONE.getVariant("limestone_raw").get().defaultBlockState())), 32));
-        FeatureUtils.register(context, BASALT, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselBlocks.BASALT.getVariant("basalt_raw").get().defaultBlockState())), 32));
+        FeatureUtils.register(context, MARBLE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.MARBLE.getVariant("marble_raw").get().defaultBlockState())), 32));
+        FeatureUtils.register(context, LIMESTONE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.LIMESTONE.getVariant("limestone_raw").get().defaultBlockState())), 32));
+        FeatureUtils.register(context, BASALT, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.BASALT.getVariant("basalt_raw").get().defaultBlockState())), 32));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> create(final String name) {
