@@ -8,8 +8,22 @@
       "name": "certus_array"
     },
     {
+      "block": "chisel:certus_border_square",
+      "model_type": "connected",
+      "name": "certus_border_square"
+    },
+    {
       "block": "chisel:certus_braid",
       "name": "certus_braid"
+    },
+    {
+      "block": "chisel:certus_bricks_cracked",
+      "name": "certus_bricks_cracked"
+    },
+    {
+      "block": "chisel:certus_bricks_encased",
+      "model_type": "connected",
+      "name": "certus_bricks_encased"
     },
     {
       "block": "chisel:certus_bricks_indent",
@@ -23,6 +37,22 @@
       "block": "chisel:certus_bricks_large",
       "model_type": "multiblock_2x2",
       "name": "certus_bricks_large"
+    },
+    {
+      "block": "chisel:certus_bricks_small",
+      "name": "certus_bricks_small"
+    },
+    {
+      "block": "chisel:certus_bricks_soft",
+      "name": "certus_bricks_soft"
+    },
+    {
+      "block": "chisel:certus_bricks_solid",
+      "name": "certus_bricks_solid"
+    },
+    {
+      "block": "chisel:certus_bricks_triple",
+      "name": "certus_bricks_triple"
     },
     {
       "block": "chisel:certus_bricks_vertical",
@@ -59,10 +89,6 @@
       "name": "certus_cobble"
     },
     {
-      "block": "chisel:certus_bricks_cracked",
-      "name": "certus_bricks_cracked"
-    },
-    {
       "block": "chisel:certus_cuts",
       "model_type": "multiblock_4x4",
       "name": "certus_cuts"
@@ -71,11 +97,6 @@
       "block": "chisel:certus_dent",
       "model_type": "connected",
       "name": "certus_dent"
-    },
-    {
-      "block": "chisel:certus_bricks_encased",
-      "model_type": "connected",
-      "name": "certus_bricks_encased"
     },
     {
       "block": "chisel:certus_french_1",
@@ -257,21 +278,8 @@
       "name": "certus_slanted"
     },
     {
-      "block": "chisel:certus_bricks_small",
-      "name": "certus_bricks_small"
-    },
-    {
-      "block": "chisel:certus_bricks_soft",
-      "name": "certus_bricks_soft"
-    },
-    {
-      "block": "chisel:certus_bricks_solid",
-      "name": "certus_bricks_solid"
-    },
-    {
-      "block": "chisel:certus_border_square",
-      "model_type": "connected",
-      "name": "certus_border_square"
+      "block": "chisel:certus_tiles",
+      "name": "certus_tiles"
     },
     {
       "block": "chisel:certus_tiles_large",
@@ -279,16 +287,8 @@
       "name": "certus_tiles_large"
     },
     {
-      "block": "chisel:certus_tiles",
-      "name": "certus_tiles"
-    },
-    {
       "block": "chisel:certus_tiles_small",
       "name": "certus_tiles_small"
-    },
-    {
-      "block": "chisel:certus_bricks_triple",
-      "name": "certus_bricks_triple"
     },
     {
       "block": "chisel:certus_twisted",

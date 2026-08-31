@@ -60,9 +60,11 @@ public class VariantFamily {
 
     public List<Variant> getAllVariants() {
         List<Variant> all = new ArrayList<>(variants.size() + hiddenVariants.size());
-        if (Minecraft.getInstance().level instanceof ClientLevel level) {
-            for (var holder : level.registryAccess().lookupOrThrow(Registries.BLOCK).getTagOrEmpty(tag)) {
-                all.add(new Variant(holder.value(), this));
+        if (Minecraft.getInstance() != null) {
+            if (Minecraft.getInstance().level instanceof ClientLevel level) {
+                for (var holder : level.registryAccess().lookupOrThrow(Registries.BLOCK).getTagOrEmpty(tag)) {
+                    all.add(new Variant(holder.value(), this));
+                }
             }
         }
         all.addAll(variants);
