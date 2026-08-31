@@ -17,7 +17,7 @@ import java.util.Locale;
 
 public class ChiselSelectionInventory implements Container {
 
-    public static final int VISIBLE_SIZE = 45;
+    public static final int VISIBLE_SIZE = 6 * 7;
     public VariantFamily family;
     public int size = VISIBLE_SIZE;
     public int stackSize;

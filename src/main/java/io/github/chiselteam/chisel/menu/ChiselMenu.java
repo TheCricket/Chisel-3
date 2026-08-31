@@ -43,7 +43,7 @@ public class ChiselMenu extends AbstractContainerMenu {
         );
 
         addVariantSlots();
-        addInventorySlots(inventory);
+        addStandardInventorySlots(inventory, 40, 150);
 
         if (!inventory.player.level().isClientSide()) {
             loadPersistence();
@@ -103,27 +103,13 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     private void addVariantSlots() {
-        int top = 26, left = 62;
+        int top = 26, left = 92;
         for (int c = 0; c < ChiselSelectionInventory.VISIBLE_SIZE; c++) {
-            addSlot(new SelectionSlot(variants, c, left + ((c % 9) * 18), top + ((c / 9) * 18)));
+            addSlot(new SelectionSlot(variants, c, left + ((c % 7) * 18), top + ((c / 7) * 18)));
         }
 
-        addSlot(inputSlot = new ChiselInputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 52));
+        addSlot(inputSlot = new ChiselInputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 38, 113));
         container.inputSlot = inputSlot;
-    }
-
-    private void addInventorySlots(Inventory inventory) {
-        int top = 120;
-        int left = 71;
-
-        for (int c = 0; c < 27; c++) {
-            addSlot(new Slot(inventory, c + 9, left + ((c % 9) * 18), top + (c / 9) * 18));
-        }
-
-        top += 58;
-        for (int c = 0; c < 9; c++) {
-            addSlot(new Slot(inventory, c, left + ((c % 9) * 18), top));
-        }
     }
 
     @Override
