@@ -4,11 +4,9 @@ import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.jetbrains.annotations.ApiStatus;
 
 import java.util.List;
 
-@ApiStatus.Internal
 public class StoneFamilies {
     public static final ChiselFamily ANDESITE, BASALT, BLACKSTONE, GILDED_BLACKSTONE, BRICKS, COBBLESTONE, DEEPSLATE, DIORITE, DRIPSTONE, END_STONE, GRANITE, LIMESTONE, MARBLE, MOSSY_COBBLESTONE, NETHERBRICK, NETHERRACK, OBSIDIAN, PRISMARINE, PURPUR, QUARTZ, RED_SANDSTONE, SANDSTONE, STONE_BRICKS, TUFF, CALCITE, MUD;
     private static final List<ChiselFamily> FAMILIES;

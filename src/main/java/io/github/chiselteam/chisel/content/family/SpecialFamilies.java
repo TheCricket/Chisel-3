@@ -12,7 +12,6 @@ import net.minecraft.world.level.material.MapColor;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class SpecialFamilies {
     public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
     private static final List<ChiselFamily> FAMILIES;

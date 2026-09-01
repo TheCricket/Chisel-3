@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class WoodFamilies {
     public static final ChiselFamily ACACIA, BAMBOO, BIRCH, CHERRY, CRIMSON, DARK_OAK, JUNGLE, MANGROVE, OAK, PALE_OAK, SPRUCE, WARPED;
     private static final List<ChiselFamily> FAMILIES;

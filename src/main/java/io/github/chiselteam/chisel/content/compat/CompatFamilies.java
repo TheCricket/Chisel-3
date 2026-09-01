@@ -4,7 +4,6 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class CompatFamilies {
 
     private static final List<CompatModule> MODULES = List.of(

@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class MetalFamilies {
     public static final ChiselFamily ALUMINUM, BRONZE, COBALT, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR, IRON, LAPIS, LEAD, NETHERITE, NICKEL, PLATINUM, SILVER, STEEL, THAUMIUM, TIN, URANIUM;
     private static final List<ChiselFamily> FAMILIES;

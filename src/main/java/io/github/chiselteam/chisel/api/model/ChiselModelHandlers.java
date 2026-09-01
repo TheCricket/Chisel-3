@@ -52,7 +52,6 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler MULTI_LAYER_WATER_4X4 = new MultiblockCTMVariantModelHandler("multi_layer_water_4x4", false, 4, true);
     public static final VariantModelHandler REDSTONE_LAMP = new CubeAllVariantModelHandler("redstone_lamp");
 
-    @org.jetbrains.annotations.ApiStatus.Internal
     public static void registerAll() {
         VariantModelHandlers.register(CUBE_ALL);
         // VariantModelHandlers.register(SHADELESS);

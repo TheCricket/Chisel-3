@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "chisel:block/ice_pillar_greek_greek",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "chisel:block/ice_pillar_greek_greek"
+    },
+    "axis=z": {
+      "model": "chisel:block/ice_pillar_greek_greek",
+      "x": 90
     }
   }
 }

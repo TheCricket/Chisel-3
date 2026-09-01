@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.content.family;
 
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.block.ChiselPoweredBlock;
+import io.github.chiselteam.chisel.block.ChiselPoweredPillarBlock;
 import io.github.chiselteam.chisel.block.SparklyConnectedTextureBlock;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import io.github.chiselteam.chisel.registry.ChiselParticles;
@@ -10,7 +11,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class DecorativeFamilies {
     public static final ChiselFamily FACTORY, FUTURA, LABORATORY, MILITARY, PAPERWALL, TECHNICAL, TEMPLE, TYRIAN, VALENTINES, WARNING, WOOLEN_CLAY;
     public static final ChiselFamily SEA_LANTERN, CHARCOAL, CLOUD, COAL, COAL_COKE, C_CONCRETE, DIRT, ENERGIZED_VOIDSTONE, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LAVASTONE, LEAF, MAGMA, MOSSY_BLACKSTONE, MOSSY_TEMPLE, REDSTONE, SHINGLE, TERRACOTTA, VOIDSTONE, WATERSTONE, RESIN;
@@ -763,7 +763,7 @@ public class DecorativeFamilies {
                 .addVariant("redstone_ere", ChiselPoweredBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)).translation("redstone_ere", "Block of Redstone", "Ere")
                 .addVariant("redstone_greek", ChiselPoweredBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)).translation("redstone_greek", "Block of Redstone", "Redstone Greek Decoration")
                 .addVariant("redstone_large", ChiselPoweredBlock::new, ChiselModelHandlers.CONNECTED).translation("redstone_large", "Block of Redstone", "Large Redstone Block")
-                .addVariant("redstone_pillar", ChiselPoweredBlock::new, ChiselModelHandlers.TBS).translation("redstone_pillar", "Block of Redstone", "Redstone Pillar")
+                .addVariant("redstone_pillar", ChiselPoweredPillarBlock::new, ChiselModelHandlers.TBS).translation("redstone_pillar", "Block of Redstone", "Redstone Pillar")
                 .addVariant("redstone_skulls", ChiselPoweredBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)).translation("redstone_skulls", "Block of Redstone", "Redstone Skulls")
                 .addVariant("redstone_small", ChiselPoweredBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)).translation("redstone_small", "Block of Redstone", "Small Redstone Block")
                 .addVariant("redstone_smooth", ChiselPoweredBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_BLOCK)).translation("redstone_smooth", "Block of Redstone", "Smooth Redstone")

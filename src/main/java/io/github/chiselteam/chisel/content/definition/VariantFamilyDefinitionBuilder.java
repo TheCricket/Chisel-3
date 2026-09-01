@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.content.definition;
 
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
+import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
 import io.github.chiselteam.chisel.block.ConnectedTextureBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -57,20 +58,20 @@ public final class VariantFamilyDefinitionBuilder {
         return this;
     }
 
+    private static Function<Properties, ? extends Block> defaultBlockFactory(String variantName) {
+        return variantName.contains("pillar") ? ChiselRotatedPillarBlock::new : ConnectedTextureBlock::new;
+    }
+
     public VariantFamilyDefinitionBuilder addVariant(String name) {
-        return addVariant(name, ConnectedTextureBlock::new, requireDefaultProperties(), ChiselModelHandlers.CUBE_ALL);
+        return addVariant(name, defaultBlockFactory(name), requireDefaultProperties(), ChiselModelHandlers.CUBE_ALL);
     }
 
     public VariantFamilyDefinitionBuilder addVariant(String name, VariantModelHandler modelType) {
-        return addVariant(name, ConnectedTextureBlock::new, requireDefaultProperties(), modelType);
+        return addVariant(name, defaultBlockFactory(name), requireDefaultProperties(), modelType);
     }
 
     public VariantFamilyDefinitionBuilder addVariant(String name, Properties properties) {
-        return addVariant(name, ConnectedTextureBlock::new, () -> properties, ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Properties properties, VariantModelHandler modelType) {
-        return addVariant(name, ConnectedTextureBlock::new, () -> properties, modelType);
+        return addVariant(name, defaultBlockFactory(name), () -> properties, ChiselModelHandlers.CUBE_ALL);
     }
 
     public VariantFamilyDefinitionBuilder addVariant(String name, Function<Properties, ? extends Block> blockFactory, Supplier<Properties> properties) {
@@ -139,6 +140,10 @@ public final class VariantFamilyDefinitionBuilder {
         if (defaultProperties == null)
             throw new IllegalStateException("No default block properties configured for family '%s'".formatted(name));
         return defaultProperties;
+    }
+
+    public VariantFamilyDefinitionBuilder addVariant(String name, Properties properties, VariantModelHandler modelType) {
+        return addVariant(name, defaultBlockFactory(name), () -> properties, modelType);
     }
 
     private void validateTranslations() {

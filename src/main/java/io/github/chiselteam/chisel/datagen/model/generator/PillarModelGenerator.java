@@ -17,7 +17,7 @@ public class PillarModelGenerator extends VariantModelGenerator {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        blockModels.createTrivialBlock(
+        blockModels.createAxisAlignedPillarBlock(
                 variant.getBlock(),
                 TexturedModel.COLUMN.updateTexture(
                         map -> map.put(TextureSlot.SIDE, VariantTextures.get(variant, "side")).put(TextureSlot.END, VariantTextures.get(variant, "end"))

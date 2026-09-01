@@ -1,10 +1,10 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
-    "north",
-    "south",
     "west",
-    "east"
+    "east",
+    "south",
+    "north"
   ],
   "model_location": "chisel:block/bookshelf_warped_rainbow",
   "variant": {

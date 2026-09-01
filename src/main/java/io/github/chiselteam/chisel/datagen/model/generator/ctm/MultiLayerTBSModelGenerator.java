@@ -9,7 +9,6 @@ import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.createSimpleBlock;
 import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
 
 public class MultiLayerTBSModelGenerator extends VariantModelGenerator {
@@ -29,6 +28,6 @@ public class MultiLayerTBSModelGenerator extends VariantModelGenerator {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         MultiVariant model = plainVariant(ChiselModelTemplates.CUBE_MULTI_PASS_TOP_BOTTOM_SIDE.create(getBlock(), getTextureMapping(), blockModels.modelOutput));
-        blockModels.blockStateOutput.accept(createSimpleBlock(getBlock(), model));
+        generateSimpleBlockState(model);
     }
 }

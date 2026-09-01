@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class NeoVitaeFamilies {
     public static final ChiselFamily NV_RUNE/* , NV_DUNGEON_STONE, NV_DUNGEON_STONE_INVICTUS, NV_DUNGEON_STONE_NIHILUM, NV_DUNGEON_STONE_RUINA, NV_DUNGEON_STONE_VINDICTA, NV_RITUAL_STONE */;
     private static final List<ChiselFamily> FAMILIES;

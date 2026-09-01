@@ -4,11 +4,9 @@ import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.jetbrains.annotations.ApiStatus;
 
 import java.util.List;
 
-@ApiStatus.Internal
 public class AppliedEnergisticsFamilies {
     public static final ChiselFamily AE2_CERTUS = ChiselFamily.build("ae2_certus", builder -> builder
             .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))

@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "chisel:block/concrete_purple_pillar_classic_large",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "chisel:block/concrete_purple_pillar_classic_large"
+    },
+    "axis=z": {
+      "model": "chisel:block/concrete_purple_pillar_classic_large",
+      "x": 90
     }
   }
 }

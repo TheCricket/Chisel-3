@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class ForbiddenArcanusFamilies {
     public static final ChiselFamily FA_ARCANE_DARKSTONE;
     private static final List<ChiselFamily> FAMILIES;

@@ -5,3 +5,11 @@ pluginManagement {
 }
 
 rootProject.name = 'Chisel3'
+
+if (providers.gradleProperty('use_local_ctm').map(Boolean::parseBoolean).getOrElse(false)) {
+    includeBuild('../CTM') {
+        dependencySubstitution {
+            substitute module('maven.modrinth:ctmlib') using project(':')
+        }
+    }
+}

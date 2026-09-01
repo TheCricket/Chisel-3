@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.ArrayList;
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class ColorCollectionFamilies {
     public static final List<ChiselFamily> WOOLS = new ArrayList<>();
     public static final List<ChiselFamily> CONCRETE = new ArrayList<>();

@@ -5,11 +5,8 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-import org.jetbrains.annotations.ApiStatus;
-
 import java.util.List;
 
-@ApiStatus.Internal
 public class AllTheModsFamilies {
     public static final ChiselFamily ATM_ANCIENT_STONE = ChiselFamily.build("atm_ancient_stone", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))

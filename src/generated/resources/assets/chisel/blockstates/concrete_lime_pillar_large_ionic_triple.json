@@ -1,13 +1,46 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "down",
-    "up"
-  ],
-  "model_location": "chisel:block/concrete_lime_pillar_large_ionic_triple",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:concrete_lime_pillar_large_ionic_triple",
-    "kind": "ctmv"
+  "variants": {
+    "axis=x": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_lime_pillar_large_ionic_triple",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_lime_pillar_large_ionic_triple",
+        "kind": "ctmv"
+      },
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_lime_pillar_large_ionic_triple",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_lime_pillar_large_ionic_triple",
+        "kind": "ctmv"
+      }
+    },
+    "axis=z": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_lime_pillar_large_ionic_triple",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_lime_pillar_large_ionic_triple",
+        "kind": "ctmv"
+      },
+      "x": 90
+    }
   }
 }

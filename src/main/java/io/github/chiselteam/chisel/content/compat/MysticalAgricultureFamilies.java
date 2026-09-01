@@ -7,7 +7,6 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 
 import java.util.List;
 
-@org.jetbrains.annotations.ApiStatus.Internal
 public class MysticalAgricultureFamilies {
     // public static final ChiselFamily MA_SOULSTONE;
     private static final List<ChiselFamily> FAMILIES;

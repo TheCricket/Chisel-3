@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "chisel:block/sky_stone_pillar_classic_large",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "chisel:block/sky_stone_pillar_classic_large"
+    },
+    "axis=z": {
+      "model": "chisel:block/sky_stone_pillar_classic_large",
+      "x": 90
     }
   }
 }
