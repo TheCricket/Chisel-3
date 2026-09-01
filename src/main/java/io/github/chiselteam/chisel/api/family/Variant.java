@@ -112,4 +112,8 @@ public class Variant {
     public String getTranslationKey() {
         return getBlock().getDescriptionId();
     }
+
+    public String getDescriptionKey() {
+        return "%s.desc".formatted(getBlock().getDescriptionId());
+    }
 }

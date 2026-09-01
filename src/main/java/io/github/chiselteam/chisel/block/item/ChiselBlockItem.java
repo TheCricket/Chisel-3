@@ -23,6 +23,6 @@ public class ChiselBlockItem extends BlockItem {
     @SuppressWarnings("deprecation")
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable(variant.getTranslationKey()).withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable(variant.getDescriptionKey()).withStyle(ChatFormatting.GRAY));
     }
 }
