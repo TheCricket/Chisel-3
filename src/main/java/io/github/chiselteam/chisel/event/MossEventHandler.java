@@ -39,7 +39,7 @@ public final class MossEventHandler {
         var moss = level.getData(ChiselAttachments.MOSS);
         if (moss.remove(pos)) {
             level.setData(ChiselAttachments.MOSS, moss);
-            PacketDistributor.sendToPlayersTrackingChunk(level, level.getChunkAt(pos).getPos(), new MossDeltaPacket(pos, false));
+            PacketDistributor.sendToPlayersTrackingChunk(level, level.getChunkAt(pos).getPos(), new MossDeltaPacket(pos, false, 0));
         }
     }
 }

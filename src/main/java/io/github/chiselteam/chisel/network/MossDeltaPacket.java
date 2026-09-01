@@ -10,13 +10,16 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import org.jspecify.annotations.NonNull;
 
-public record MossDeltaPacket(BlockPos pos, boolean mossy) implements CustomPacketPayload {
+public record MossDeltaPacket(BlockPos pos, boolean mossy, int texture) implements CustomPacketPayload {
     public static final Type<MossDeltaPacket> TYPE = new Type<>(Chisel.prefix("moss_delta"));
     public static final StreamCodec<FriendlyByteBuf, MossDeltaPacket> STREAM_CODEC = StreamCodec.composite(
-            BlockPos.STREAM_CODEC, MossDeltaPacket::pos, ByteBufCodecs.BOOL, MossDeltaPacket::mossy, MossDeltaPacket::new);
+            BlockPos.STREAM_CODEC, MossDeltaPacket::pos,
+            ByteBufCodecs.BOOL, MossDeltaPacket::mossy,
+            ByteBufCodecs.VAR_INT, MossDeltaPacket::texture,
+            MossDeltaPacket::new);
 
     public static void handle(MossDeltaPacket payload, IPayloadContext context) {
-        context.enqueueWork(() -> ClientMossData.set(payload.pos, payload.mossy));
+        context.enqueueWork(() -> ClientMossData.set(payload.pos, payload.mossy, payload.texture));
     }
 
     @Override

@@ -1,45 +1,48 @@
 package io.github.chiselteam.chisel.projectile;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.ChunkPos;
 
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 public final class MossData {
-    public static final com.mojang.serialization.MapCodec<MossData> CODEC = Codec.LONG.listOf().fieldOf("positions")
-            .xmap(MossData::new, MossData::serializedPositions);
+    public static final MapCodec<MossData> CODEC = MossEntry.CODEC.listOf().fieldOf("entries").xmap(MossData::new, MossData::serializedEntries);
 
-    private final Set<Long> positions;
+    private final Map<Long, Integer> entries;
 
     public MossData() {
-        this.positions = new HashSet<>();
+        this.entries = new HashMap<>();
     }
 
-    private MossData(List<Long> positions) {
-        this.positions = new HashSet<>(positions);
+    private MossData(List<MossEntry> entries) {
+        this.entries = new HashMap<>();
+        entries.forEach(entry -> this.entries.put(entry.pos().asLong(), entry.texture()));
     }
 
-    public boolean add(BlockPos pos) {
-        return positions.add(pos.asLong());
+    public boolean add(BlockPos pos, int texture) {
+        if (texture < 1 || texture > 10) throw new IllegalArgumentException("Moss texture must be between 1 and 10");
+        return entries.putIfAbsent(pos.asLong(), texture) == null;
     }
 
     public boolean remove(BlockPos pos) {
-        return positions.remove(pos.asLong());
+        return entries.remove(pos.asLong()) != null;
     }
 
     public boolean contains(BlockPos pos) {
-        return positions.contains(pos.asLong());
+        return entries.containsKey(pos.asLong());
     }
 
-    public List<BlockPos> inChunk(ChunkPos chunk) {
-        return positions.stream().map(BlockPos::of)
-                .filter(pos -> new ChunkPos(pos.getX() >> 4, pos.getZ() >> 4).equals(chunk)).toList();
+    public List<MossEntry> inChunk(ChunkPos chunk) {
+        return serializedEntries().stream().filter(entry -> {
+            BlockPos pos = entry.pos();
+            return new ChunkPos(pos.getX() >> 4, pos.getZ() >> 4).equals(chunk);
+        }).toList();
     }
 
-    private List<Long> serializedPositions() {
-        return List.copyOf(positions);
+    private List<MossEntry> serializedEntries() {
+        return entries.entrySet().stream().map(entry -> new MossEntry(BlockPos.of(entry.getKey()), entry.getValue())).toList();
     }
 }

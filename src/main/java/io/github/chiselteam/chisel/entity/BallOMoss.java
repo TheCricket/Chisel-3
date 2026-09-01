@@ -1,11 +1,9 @@
 package io.github.chiselteam.chisel.entity;
 
 import io.github.chiselteam.chisel.network.MossDeltaPacket;
-import io.github.chiselteam.chisel.registry.ChiselAttachments;
-import io.github.chiselteam.chisel.registry.ChiselEntities;
-import io.github.chiselteam.chisel.registry.ChiselItems;
-import io.github.chiselteam.chisel.registry.ChiselSounds;
+import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
@@ -61,10 +59,13 @@ public class BallOMoss extends ThrowableItemProjectile {
         if (!(level() instanceof ServerLevel serverLevel)) return;
         BlockState state = serverLevel.getBlockState(pos);
         if (state.getRenderShape() != RenderShape.MODEL || !Block.isShapeFullBlock(state.getOcclusionShape())) return;
+        if (serverLevel.registryAccess().lookupOrThrow(Registries.BLOCK).getOrThrow(ChiselTags.CANT_BE_MOSSED).stream().anyMatch(holder -> holder.is(state.getBlock().builtInRegistryHolder().getKey())))
+            return;
         var moss = serverLevel.getData(ChiselAttachments.MOSS);
-        if (moss.add(pos)) {
+        int texture = serverLevel.getRandom().nextInt(10) + 1;
+        if (moss.add(pos, texture)) {
             serverLevel.setData(ChiselAttachments.MOSS, moss);
-            PacketDistributor.sendToPlayersTrackingChunk(serverLevel, serverLevel.getChunkAt(pos).getPos(), new MossDeltaPacket(pos, true));
+            PacketDistributor.sendToPlayersTrackingChunk(serverLevel, serverLevel.getChunkAt(pos).getPos(), new MossDeltaPacket(pos, true, texture));
         }
     }
 
