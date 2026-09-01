@@ -43,7 +43,7 @@ public class ChiselMenu extends AbstractContainerMenu {
         );
 
         addVariantSlots();
-        addStandardInventorySlots(inventory, 40, 150);
+        addStandardInventorySlots(inventory, 41, 151);
 
         if (!inventory.player.level().isClientSide()) {
             loadPersistence();
