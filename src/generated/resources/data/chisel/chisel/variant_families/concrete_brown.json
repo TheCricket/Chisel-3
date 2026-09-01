@@ -12,8 +12,27 @@
       "name": "concrete_brown_array"
     },
     {
+      "block": "chisel:concrete_brown_border_square",
+      "model_type": "connected",
+      "name": "concrete_brown_border_square"
+    },
+    {
       "block": "chisel:concrete_brown_braid",
       "name": "concrete_brown_braid"
+    },
+    {
+      "block": "chisel:concrete_brown_braid_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_braid_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_cracked",
+      "name": "concrete_brown_bricks_cracked"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_bricks_encased"
     },
     {
       "block": "chisel:concrete_brown_bricks_indent",
@@ -27,6 +46,22 @@
       "block": "chisel:concrete_brown_bricks_large",
       "model_type": "multiblock_2x2",
       "name": "concrete_brown_bricks_large"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_small",
+      "name": "concrete_brown_bricks_small"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_soft",
+      "name": "concrete_brown_bricks_soft"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_solid",
+      "name": "concrete_brown_bricks_solid"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_triple",
+      "name": "concrete_brown_bricks_triple"
     },
     {
       "block": "chisel:concrete_brown_bricks_vertical",
@@ -63,10 +98,6 @@
       "name": "concrete_brown_cobble"
     },
     {
-      "block": "chisel:concrete_brown_bricks_cracked",
-      "name": "concrete_brown_bricks_cracked"
-    },
-    {
       "block": "chisel:concrete_brown_cuts",
       "model_type": "multiblock_4x4",
       "name": "concrete_brown_cuts"
@@ -75,11 +106,6 @@
       "block": "chisel:concrete_brown_dent",
       "model_type": "connected",
       "name": "concrete_brown_dent"
-    },
-    {
-      "block": "chisel:concrete_brown_bricks_encased",
-      "model_type": "connected",
-      "name": "concrete_brown_bricks_encased"
     },
     {
       "block": "chisel:concrete_brown_french_1",
@@ -102,6 +128,11 @@
     {
       "block": "chisel:concrete_brown_layers",
       "name": "concrete_brown_layers"
+    },
+    {
+      "block": "chisel:concrete_brown_layers_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_layers_connected"
     },
     {
       "block": "chisel:concrete_brown_line_horizontal",
@@ -236,12 +267,21 @@
     },
     {
       "block": "chisel:concrete_brown_plate",
-      "model_type": "connected",
       "name": "concrete_brown_plate"
+    },
+    {
+      "block": "chisel:concrete_brown_plate_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_plate_connected"
     },
     {
       "block": "chisel:concrete_brown_polished",
       "name": "concrete_brown_polished"
+    },
+    {
+      "block": "chisel:concrete_brown_polished_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_polished_encased"
     },
     {
       "block": "chisel:concrete_brown_prism",
@@ -261,21 +301,8 @@
       "name": "concrete_brown_slanted"
     },
     {
-      "block": "chisel:concrete_brown_bricks_small",
-      "name": "concrete_brown_bricks_small"
-    },
-    {
-      "block": "chisel:concrete_brown_bricks_soft",
-      "name": "concrete_brown_bricks_soft"
-    },
-    {
-      "block": "chisel:concrete_brown_bricks_solid",
-      "name": "concrete_brown_bricks_solid"
-    },
-    {
-      "block": "chisel:concrete_brown_border_square",
-      "model_type": "connected",
-      "name": "concrete_brown_border_square"
+      "block": "chisel:concrete_brown_tiles",
+      "name": "concrete_brown_tiles"
     },
     {
       "block": "chisel:concrete_brown_tiles_large",
@@ -283,16 +310,8 @@
       "name": "concrete_brown_tiles_large"
     },
     {
-      "block": "chisel:concrete_brown_tiles",
-      "name": "concrete_brown_tiles"
-    },
-    {
       "block": "chisel:concrete_brown_tiles_small",
       "name": "concrete_brown_tiles_small"
-    },
-    {
-      "block": "chisel:concrete_brown_bricks_triple",
-      "name": "concrete_brown_bricks_triple"
     },
     {
       "block": "chisel:concrete_brown_twisted",
@@ -308,6 +327,213 @@
       "block": "chisel:concrete_brown_zag",
       "model_type": "multiblock_2x2",
       "name": "concrete_brown_zag"
+    },
+    {
+      "block": "chisel:concrete_brown_crate",
+      "model_type": "connected",
+      "name": "concrete_brown_crate"
+    },
+    {
+      "block": "chisel:concrete_brown_herringbone",
+      "name": "concrete_brown_herringbone"
+    },
+    {
+      "block": "chisel:concrete_brown_herringbone_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_herringbone_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_medallion",
+      "name": "concrete_brown_medallion"
+    },
+    {
+      "block": "chisel:concrete_brown_medallion_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_medallion_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_dots",
+      "name": "concrete_brown_dots"
+    },
+    {
+      "block": "chisel:concrete_brown_dots_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_dots_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_heart",
+      "name": "concrete_brown_heart"
+    },
+    {
+      "block": "chisel:concrete_brown_star",
+      "name": "concrete_brown_star"
+    },
+    {
+      "block": "chisel:concrete_brown_plating",
+      "name": "concrete_brown_plating"
+    },
+    {
+      "block": "chisel:concrete_brown_lodestone",
+      "name": "concrete_brown_lodestone"
+    },
+    {
+      "block": "chisel:concrete_brown_lodestone_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_lodestone_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_plank",
+      "name": "concrete_brown_plank"
+    },
+    {
+      "block": "chisel:concrete_brown_plank_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_plank_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_frame",
+      "name": "concrete_brown_frame"
+    },
+    {
+      "block": "chisel:concrete_brown_panel_1",
+      "name": "concrete_brown_panel_1"
+    },
+    {
+      "block": "chisel:concrete_brown_panel_2",
+      "name": "concrete_brown_panel_2"
+    },
+    {
+      "block": "chisel:concrete_brown_panel_3",
+      "name": "concrete_brown_panel_3"
+    },
+    {
+      "block": "chisel:concrete_brown_skull_creeper",
+      "name": "concrete_brown_skull_creeper"
+    },
+    {
+      "block": "chisel:concrete_brown_skull_skeleton",
+      "name": "concrete_brown_skull_skeleton"
+    },
+    {
+      "block": "chisel:concrete_brown_stripes",
+      "name": "concrete_brown_stripes"
+    },
+    {
+      "block": "chisel:concrete_brown_stripes_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_stripes_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_1",
+      "name": "concrete_brown_chisel_1"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_2",
+      "name": "concrete_brown_chisel_2"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_3",
+      "name": "concrete_brown_chisel_3"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_4",
+      "name": "concrete_brown_chisel_4"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_5",
+      "name": "concrete_brown_chisel_5"
+    },
+    {
+      "block": "chisel:concrete_brown_chisel_6",
+      "name": "concrete_brown_chisel_6"
+    },
+    {
+      "block": "chisel:concrete_brown_facet",
+      "name": "concrete_brown_facet"
+    },
+    {
+      "block": "chisel:concrete_brown_facet_small",
+      "name": "concrete_brown_facet_small"
+    },
+    {
+      "block": "chisel:concrete_brown_facet_small_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_facet_small_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_shiny",
+      "name": "concrete_brown_shiny"
+    },
+    {
+      "block": "chisel:concrete_brown_shiny_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_shiny_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_gem",
+      "name": "concrete_brown_gem"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_1",
+      "name": "concrete_brown_gem_1"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_1_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_gem_1_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_2",
+      "name": "concrete_brown_gem_2"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_2_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_gem_2_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_3",
+      "name": "concrete_brown_gem_3"
+    },
+    {
+      "block": "chisel:concrete_brown_gem_3_connected",
+      "model_type": "connected",
+      "name": "concrete_brown_gem_3_connected"
+    },
+    {
+      "block": "chisel:concrete_brown_bricks_square",
+      "name": "concrete_brown_bricks_square"
+    },
+    {
+      "block": "chisel:concrete_brown_slab",
+      "name": "concrete_brown_slab"
+    },
+    {
+      "block": "chisel:concrete_brown_scaffold",
+      "name": "concrete_brown_scaffold"
+    },
+    {
+      "block": "chisel:concrete_brown_scaffold_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_scaffold_encased"
+    },
+    {
+      "block": "chisel:concrete_brown_tiles_inlayed",
+      "name": "concrete_brown_tiles_inlayed"
+    },
+    {
+      "block": "chisel:concrete_brown_waves",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_brown_waves"
+    },
+    {
+      "block": "chisel:concrete_brown_parquet",
+      "name": "concrete_brown_parquet"
+    },
+    {
+      "block": "chisel:concrete_brown_parquet_encased",
+      "model_type": "connected",
+      "name": "concrete_brown_parquet_encased"
     }
   ]
 }

@@ -70,7 +70,7 @@ public class RegisterCommandsEventHandler {
         );
 
         event.getDispatcher().register(
-                Commands.literal("copper")
+                Commands.literal("newFamily")
                         .executes(command -> {
                             CommandSourceStack source = command.getSource();
                             ServerLevel level = source.getLevel();
@@ -80,15 +80,8 @@ public class RegisterCommandsEventHandler {
                             if (Minecraft.getInstance().isOfflineDeveloperMode()) {
 
                                 List<Block> blocks = new ArrayList<>();
-                                ChiselFamilies.COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.EXPOSED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.WEATHERED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.OXIDIZED_COPPER.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.CHERRY.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.MANGROVE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.PALE_OAK.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.WARPED.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                                ChiselFamilies.DEEPSLATE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselFamilies.AE2_CERTUS.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                                ChiselFamilies.AE2_SKY_STONE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
 
                                 int blocksPerRow = (int) Math.ceil(Math.sqrt(blocks.size()));
                                 int x = 0, z = 0;

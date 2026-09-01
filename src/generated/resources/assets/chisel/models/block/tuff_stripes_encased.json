@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/tuff/tuff_stripes_encased",
+    "overlay_connected": "chisel:block/tuff/tuff_stripes_encased-ctm",
+    "overlay_texture": "chisel:block/tuff/tuff_stripes_encased",
+    "particle": "chisel:block/tuff/tuff_stripes_encased"
+  }
+}

@@ -17,6 +17,11 @@
       "name": "sky_stone_braid"
     },
     {
+      "block": "chisel:sky_stone_braid_encased",
+      "model_type": "connected",
+      "name": "sky_stone_braid_encased"
+    },
+    {
       "block": "chisel:sky_stone_bricks_cracked",
       "name": "sky_stone_bricks_cracked"
     },
@@ -119,6 +124,11 @@
     {
       "block": "chisel:sky_stone_layers",
       "name": "sky_stone_layers"
+    },
+    {
+      "block": "chisel:sky_stone_layers_connected",
+      "model_type": "connected",
+      "name": "sky_stone_layers_connected"
     },
     {
       "block": "chisel:sky_stone_line_horizontal",
@@ -253,12 +263,21 @@
     },
     {
       "block": "chisel:sky_stone_plate",
-      "model_type": "connected",
       "name": "sky_stone_plate"
+    },
+    {
+      "block": "chisel:sky_stone_plate_connected",
+      "model_type": "connected",
+      "name": "sky_stone_plate_connected"
     },
     {
       "block": "chisel:sky_stone_polished",
       "name": "sky_stone_polished"
+    },
+    {
+      "block": "chisel:sky_stone_polished_encased",
+      "model_type": "connected",
+      "name": "sky_stone_polished_encased"
     },
     {
       "block": "chisel:sky_stone_prism",
@@ -354,6 +373,11 @@
       "name": "sky_stone_lodestone"
     },
     {
+      "block": "chisel:sky_stone_lodestone_connected",
+      "model_type": "connected",
+      "name": "sky_stone_lodestone_connected"
+    },
+    {
       "block": "chisel:sky_stone_plank",
       "name": "sky_stone_plank"
     },
@@ -437,6 +461,11 @@
       "name": "sky_stone_shiny"
     },
     {
+      "block": "chisel:sky_stone_shiny_connected",
+      "model_type": "connected",
+      "name": "sky_stone_shiny_connected"
+    },
+    {
       "block": "chisel:sky_stone_gem",
       "name": "sky_stone_gem"
     },
@@ -445,12 +474,27 @@
       "name": "sky_stone_gem_1"
     },
     {
+      "block": "chisel:sky_stone_gem_1_connected",
+      "model_type": "connected",
+      "name": "sky_stone_gem_1_connected"
+    },
+    {
       "block": "chisel:sky_stone_gem_2",
       "name": "sky_stone_gem_2"
     },
     {
+      "block": "chisel:sky_stone_gem_2_connected",
+      "model_type": "connected",
+      "name": "sky_stone_gem_2_connected"
+    },
+    {
       "block": "chisel:sky_stone_gem_3",
       "name": "sky_stone_gem_3"
+    },
+    {
+      "block": "chisel:sky_stone_gem_3_connected",
+      "model_type": "connected",
+      "name": "sky_stone_gem_3_connected"
     },
     {
       "block": "chisel:sky_stone_bricks_square",
@@ -477,6 +521,15 @@
       "block": "chisel:sky_stone_waves",
       "model_type": "multiblock_2x2",
       "name": "sky_stone_waves"
+    },
+    {
+      "block": "chisel:sky_stone_parquet",
+      "name": "sky_stone_parquet"
+    },
+    {
+      "block": "chisel:sky_stone_parquet_encased",
+      "model_type": "connected",
+      "name": "sky_stone_parquet_encased"
     }
   ]
 }

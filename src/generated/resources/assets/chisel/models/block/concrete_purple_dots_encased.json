@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_purple/concrete_purple_dots_encased",
+    "overlay_connected": "chisel:block/concrete_purple/concrete_purple_dots_encased-ctm",
+    "overlay_texture": "chisel:block/concrete_purple/concrete_purple_dots_encased",
+    "particle": "chisel:block/concrete_purple/concrete_purple_dots_encased"
+  }
+}

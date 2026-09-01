@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ancient_stone/ancient_stone_cuts",
-    "overlay_4x4": "chisel:block/ancient_stone/ancient_stone_cuts-4x4",
-    "particle": "chisel:block/ancient_stone/ancient_stone_cuts"
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_cuts",
+    "overlay_4x4": "chisel:block/atm_ancient_stone/ancient_stone_cuts-4x4",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_cuts"
   }
 }

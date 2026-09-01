@@ -1,5 +1,6 @@
 ﻿{
   "values": [
+    {"id": "neovitae:dungeon_stone_v", "required": false},
     {"id": "neovitae:dungeon_brick1_v", "required": false},
     {"id": "neovitae:dungeon_brick2_v", "required": false},
     {"id": "neovitae:dungeon_brick3_v", "required": false},

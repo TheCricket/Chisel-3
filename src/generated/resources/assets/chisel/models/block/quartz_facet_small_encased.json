@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/quartz/quartz_facet_small_encased",
+    "overlay_connected": "chisel:block/quartz/quartz_facet_small_encased-ctm",
+    "overlay_texture": "chisel:block/quartz/quartz_facet_small_encased",
+    "particle": "chisel:block/quartz/quartz_facet_small_encased"
+  }
+}

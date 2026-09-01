@@ -17,6 +17,11 @@
       "name": "certus_braid"
     },
     {
+      "block": "chisel:certus_braid_encased",
+      "model_type": "connected",
+      "name": "certus_braid_encased"
+    },
+    {
       "block": "chisel:certus_bricks_cracked",
       "name": "certus_bricks_cracked"
     },
@@ -119,6 +124,11 @@
     {
       "block": "chisel:certus_layers",
       "name": "certus_layers"
+    },
+    {
+      "block": "chisel:certus_layers_connected",
+      "model_type": "connected",
+      "name": "certus_layers_connected"
     },
     {
       "block": "chisel:certus_line_horizontal",
@@ -253,12 +263,21 @@
     },
     {
       "block": "chisel:certus_plate",
-      "model_type": "connected",
       "name": "certus_plate"
+    },
+    {
+      "block": "chisel:certus_plate_connected",
+      "model_type": "connected",
+      "name": "certus_plate_connected"
     },
     {
       "block": "chisel:certus_polished",
       "name": "certus_polished"
+    },
+    {
+      "block": "chisel:certus_polished_encased",
+      "model_type": "connected",
+      "name": "certus_polished_encased"
     },
     {
       "block": "chisel:certus_prism",
@@ -354,6 +373,11 @@
       "name": "certus_lodestone"
     },
     {
+      "block": "chisel:certus_lodestone_connected",
+      "model_type": "connected",
+      "name": "certus_lodestone_connected"
+    },
+    {
       "block": "chisel:certus_plank",
       "name": "certus_plank"
     },
@@ -437,6 +461,11 @@
       "name": "certus_shiny"
     },
     {
+      "block": "chisel:certus_shiny_connected",
+      "model_type": "connected",
+      "name": "certus_shiny_connected"
+    },
+    {
       "block": "chisel:certus_gem",
       "name": "certus_gem"
     },
@@ -445,12 +474,27 @@
       "name": "certus_gem_1"
     },
     {
+      "block": "chisel:certus_gem_1_connected",
+      "model_type": "connected",
+      "name": "certus_gem_1_connected"
+    },
+    {
       "block": "chisel:certus_gem_2",
       "name": "certus_gem_2"
     },
     {
+      "block": "chisel:certus_gem_2_connected",
+      "model_type": "connected",
+      "name": "certus_gem_2_connected"
+    },
+    {
       "block": "chisel:certus_gem_3",
       "name": "certus_gem_3"
+    },
+    {
+      "block": "chisel:certus_gem_3_connected",
+      "model_type": "connected",
+      "name": "certus_gem_3_connected"
     },
     {
       "block": "chisel:certus_bricks_square",
@@ -477,6 +521,15 @@
       "block": "chisel:certus_waves",
       "model_type": "multiblock_2x2",
       "name": "certus_waves"
+    },
+    {
+      "block": "chisel:certus_parquet",
+      "name": "certus_parquet"
+    },
+    {
+      "block": "chisel:certus_parquet_encased",
+      "model_type": "connected",
+      "name": "certus_parquet_encased"
     }
   ]
 }

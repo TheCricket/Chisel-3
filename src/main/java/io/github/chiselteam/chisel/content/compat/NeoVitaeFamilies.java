@@ -9,7 +9,7 @@ import java.util.List;
 
 @org.jetbrains.annotations.ApiStatus.Internal
 public class NeoVitaeFamilies {
-    public static final ChiselFamily NV_RUNE;
+    public static final ChiselFamily NV_RUNE/* , NV_DUNGEON_STONE, NV_DUNGEON_STONE_INVICTUS, NV_DUNGEON_STONE_NIHILUM, NV_DUNGEON_STONE_RUINA, NV_DUNGEON_STONE_VINDICTA, NV_RITUAL_STONE */;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -107,9 +107,9 @@ public class NeoVitaeFamilies {
                 // .addVariant("neovitae_diagonal_bricks_2", ChiselModelHandlers.CONNECTED)
                 // .addVariant("neovitae_diagonal_bricks_3", ChiselModelHandlers.CONNECTED)
                 // .addVariant("neovitae_tiles")
-                .build());
+                .build()); */
 
-        */
+       
 
         NV_RUNE = ChiselFamily.build("nv_rune", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))

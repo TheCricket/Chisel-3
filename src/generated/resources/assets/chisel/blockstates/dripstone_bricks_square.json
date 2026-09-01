@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/dripstone_bricks_square"
+    }
+  }
+}

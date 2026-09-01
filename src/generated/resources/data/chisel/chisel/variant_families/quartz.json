@@ -28,6 +28,11 @@
       "name": "quartz_braid"
     },
     {
+      "block": "chisel:quartz_braid_encased",
+      "model_type": "connected",
+      "name": "quartz_braid_encased"
+    },
+    {
       "block": "chisel:quartz_bricks_indent",
       "name": "quartz_bricks_indent"
     },
@@ -114,6 +119,11 @@
     {
       "block": "chisel:quartz_layers",
       "name": "quartz_layers"
+    },
+    {
+      "block": "chisel:quartz_layers_connected",
+      "model_type": "connected",
+      "name": "quartz_layers_connected"
     },
     {
       "block": "chisel:quartz_line_horizontal",
@@ -248,12 +258,21 @@
     },
     {
       "block": "chisel:quartz_plate",
-      "model_type": "connected",
       "name": "quartz_plate"
+    },
+    {
+      "block": "chisel:quartz_plate_connected",
+      "model_type": "connected",
+      "name": "quartz_plate_connected"
     },
     {
       "block": "chisel:quartz_polished",
       "name": "quartz_polished"
+    },
+    {
+      "block": "chisel:quartz_polished_encased",
+      "model_type": "connected",
+      "name": "quartz_polished_encased"
     },
     {
       "block": "chisel:quartz_prism",
@@ -320,6 +339,213 @@
       "block": "chisel:quartz_zag",
       "model_type": "ar",
       "name": "quartz_zag"
+    },
+    {
+      "block": "chisel:quartz_crate",
+      "model_type": "connected",
+      "name": "quartz_crate"
+    },
+    {
+      "block": "chisel:quartz_herringbone",
+      "name": "quartz_herringbone"
+    },
+    {
+      "block": "chisel:quartz_herringbone_encased",
+      "model_type": "connected",
+      "name": "quartz_herringbone_encased"
+    },
+    {
+      "block": "chisel:quartz_medallion",
+      "name": "quartz_medallion"
+    },
+    {
+      "block": "chisel:quartz_medallion_encased",
+      "model_type": "connected",
+      "name": "quartz_medallion_encased"
+    },
+    {
+      "block": "chisel:quartz_dots",
+      "name": "quartz_dots"
+    },
+    {
+      "block": "chisel:quartz_dots_encased",
+      "model_type": "connected",
+      "name": "quartz_dots_encased"
+    },
+    {
+      "block": "chisel:quartz_heart",
+      "name": "quartz_heart"
+    },
+    {
+      "block": "chisel:quartz_star",
+      "name": "quartz_star"
+    },
+    {
+      "block": "chisel:quartz_plating",
+      "name": "quartz_plating"
+    },
+    {
+      "block": "chisel:quartz_lodestone",
+      "name": "quartz_lodestone"
+    },
+    {
+      "block": "chisel:quartz_lodestone_connected",
+      "model_type": "connected",
+      "name": "quartz_lodestone_connected"
+    },
+    {
+      "block": "chisel:quartz_plank",
+      "name": "quartz_plank"
+    },
+    {
+      "block": "chisel:quartz_plank_connected",
+      "model_type": "connected",
+      "name": "quartz_plank_connected"
+    },
+    {
+      "block": "chisel:quartz_frame",
+      "name": "quartz_frame"
+    },
+    {
+      "block": "chisel:quartz_panel_1",
+      "name": "quartz_panel_1"
+    },
+    {
+      "block": "chisel:quartz_panel_2",
+      "name": "quartz_panel_2"
+    },
+    {
+      "block": "chisel:quartz_panel_3",
+      "name": "quartz_panel_3"
+    },
+    {
+      "block": "chisel:quartz_skull_creeper",
+      "name": "quartz_skull_creeper"
+    },
+    {
+      "block": "chisel:quartz_skull_skeleton",
+      "name": "quartz_skull_skeleton"
+    },
+    {
+      "block": "chisel:quartz_stripes",
+      "name": "quartz_stripes"
+    },
+    {
+      "block": "chisel:quartz_stripes_encased",
+      "model_type": "connected",
+      "name": "quartz_stripes_encased"
+    },
+    {
+      "block": "chisel:quartz_chisel_1",
+      "name": "quartz_chisel_1"
+    },
+    {
+      "block": "chisel:quartz_chisel_2",
+      "name": "quartz_chisel_2"
+    },
+    {
+      "block": "chisel:quartz_chisel_3",
+      "name": "quartz_chisel_3"
+    },
+    {
+      "block": "chisel:quartz_chisel_4",
+      "name": "quartz_chisel_4"
+    },
+    {
+      "block": "chisel:quartz_chisel_5",
+      "name": "quartz_chisel_5"
+    },
+    {
+      "block": "chisel:quartz_chisel_6",
+      "name": "quartz_chisel_6"
+    },
+    {
+      "block": "chisel:quartz_facet",
+      "name": "quartz_facet"
+    },
+    {
+      "block": "chisel:quartz_facet_small",
+      "name": "quartz_facet_small"
+    },
+    {
+      "block": "chisel:quartz_facet_small_encased",
+      "model_type": "connected",
+      "name": "quartz_facet_small_encased"
+    },
+    {
+      "block": "chisel:quartz_shiny",
+      "name": "quartz_shiny"
+    },
+    {
+      "block": "chisel:quartz_shiny_connected",
+      "model_type": "connected",
+      "name": "quartz_shiny_connected"
+    },
+    {
+      "block": "chisel:quartz_gem",
+      "name": "quartz_gem"
+    },
+    {
+      "block": "chisel:quartz_gem_1",
+      "name": "quartz_gem_1"
+    },
+    {
+      "block": "chisel:quartz_gem_1_connected",
+      "model_type": "connected",
+      "name": "quartz_gem_1_connected"
+    },
+    {
+      "block": "chisel:quartz_gem_2",
+      "name": "quartz_gem_2"
+    },
+    {
+      "block": "chisel:quartz_gem_2_connected",
+      "model_type": "connected",
+      "name": "quartz_gem_2_connected"
+    },
+    {
+      "block": "chisel:quartz_gem_3",
+      "name": "quartz_gem_3"
+    },
+    {
+      "block": "chisel:quartz_gem_3_connected",
+      "model_type": "connected",
+      "name": "quartz_gem_3_connected"
+    },
+    {
+      "block": "chisel:quartz_bricks_square",
+      "name": "quartz_bricks_square"
+    },
+    {
+      "block": "chisel:quartz_slab",
+      "name": "quartz_slab"
+    },
+    {
+      "block": "chisel:quartz_scaffold",
+      "name": "quartz_scaffold"
+    },
+    {
+      "block": "chisel:quartz_scaffold_encased",
+      "model_type": "connected",
+      "name": "quartz_scaffold_encased"
+    },
+    {
+      "block": "chisel:quartz_tiles_inlayed",
+      "name": "quartz_tiles_inlayed"
+    },
+    {
+      "block": "chisel:quartz_waves",
+      "model_type": "multiblock_2x2",
+      "name": "quartz_waves"
+    },
+    {
+      "block": "chisel:quartz_parquet",
+      "name": "quartz_parquet"
+    },
+    {
+      "block": "chisel:quartz_parquet_encased",
+      "model_type": "connected",
+      "name": "quartz_parquet_encased"
     }
   ]
 }

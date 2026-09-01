@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dripstone/dripstone_facet_small_encased",
+    "overlay_connected": "chisel:block/dripstone/dripstone_facet_small_encased-ctm",
+    "overlay_texture": "chisel:block/dripstone/dripstone_facet_small_encased",
+    "particle": "chisel:block/dripstone/dripstone_facet_small_encased"
+  }
+}

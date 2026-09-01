@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_light_gray/concrete_light_gray_crate",
+    "overlay_connected": "chisel:block/concrete_light_gray/concrete_light_gray_crate-ctm",
+    "overlay_texture": "chisel:block/concrete_light_gray/concrete_light_gray_crate",
+    "particle": "chisel:block/concrete_light_gray/concrete_light_gray_crate"
+  }
+}

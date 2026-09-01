@@ -1,9 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/quartz/quartz_plate",
-    "overlay_connected": "chisel:block/quartz/quartz_plate-ctm",
-    "overlay_texture": "chisel:block/quartz/quartz_plate",
-    "particle": "chisel:block/quartz/quartz_plate"
+    "all": "chisel:block/quartz/quartz_plate"
   }
 }

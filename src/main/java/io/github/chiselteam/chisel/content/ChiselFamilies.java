@@ -11,7 +11,7 @@ import java.util.List;
 public class ChiselFamilies {
     public static final ChiselFamily ACACIA = WoodFamilies.ACACIA;
     public static final ChiselFamily ALUMINUM = MetalFamilies.ALUMINUM;
-    public static final ChiselFamily ANCIENT_STONE = StoneFamilies.ANCIENT_STONE;
+    public static final ChiselFamily ATM_ANCIENT_STONE = AllTheModsFamilies.ATM_ANCIENT_STONE;
     public static final ChiselFamily ANDESITE = StoneFamilies.ANDESITE;
     public static final ChiselFamily ANTIBLOCK = SpecialFamilies.ANTIBLOCK;
     public static final ChiselFamily FA_ARCANE_DARKSTONE = ForbiddenArcanusFamilies.FA_ARCANE_DARKSTONE;
@@ -121,6 +121,7 @@ public class ChiselFamilies {
     public static final ChiselFamily DRIPSTONE = StoneFamilies.DRIPSTONE;
     public static final ChiselFamily MUD = StoneFamilies.MUD;
     public static final ChiselFamily RESIN = DecorativeFamilies.RESIN;
+    // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;
     public static final List<ChiselFamily> CONCRETE = ColorCollectionFamilies.CONCRETE;

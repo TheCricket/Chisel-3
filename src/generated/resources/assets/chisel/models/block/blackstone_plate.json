@@ -1,9 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/blackstone/blackstone_plate",
-    "overlay_connected": "chisel:block/blackstone/blackstone_plate-ctm",
-    "overlay_texture": "chisel:block/blackstone/blackstone_plate",
-    "particle": "chisel:block/blackstone/blackstone_plate"
+    "all": "chisel:block/blackstone/blackstone_plate"
   }
 }

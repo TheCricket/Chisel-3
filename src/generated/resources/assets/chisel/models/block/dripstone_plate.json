@@ -1,9 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dripstone/dripstone_plate",
-    "overlay_connected": "chisel:block/dripstone/dripstone_plate-ctm",
-    "overlay_texture": "chisel:block/dripstone/dripstone_plate",
-    "particle": "chisel:block/dripstone/dripstone_plate"
+    "all": "chisel:block/dripstone/dripstone_plate"
   }
 }

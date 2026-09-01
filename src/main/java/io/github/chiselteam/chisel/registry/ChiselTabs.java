@@ -20,7 +20,7 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.MARBLE.getVariant("marble_raw").get()))
             .displayItems((_, output) -> List.of(
-                    ChiselFamilies.ANCIENT_STONE.getFamily(),
+                    ChiselFamilies.ATM_ANCIENT_STONE.getFamily(),
                     ChiselFamilies.ANDESITE.getFamily(),
                     ChiselFamilies.BLACKSTONE.getFamily(),
                     ChiselFamilies.GILDED_BLACKSTONE.getFamily(),
@@ -182,11 +182,12 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.BRONZE.getVariant("bronze_caution").get()))
             .displayItems((_, output) -> List.of(
-                    ChiselFamilies.ANCIENT_STONE.getFamily(),
+                    ChiselFamilies.ATM_ANCIENT_STONE.getFamily(),
                     ChiselFamilies.ALUMINUM.getFamily(),
                     ChiselFamilies.FA_ARCANE_DARKSTONE.getFamily(),
                     ChiselFamilies.BRONZE.getFamily(),
                     ChiselFamilies.AE2_CERTUS.getFamily(),
+                    ChiselFamilies.AE2_SKY_STONE.getFamily(),
                     ChiselFamilies.COAL_COKE.getFamily(),
                     ChiselFamilies.COBALT.getFamily(),
                     ChiselFamilies.ELECTRUM.getFamily(),

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected",
+    "overlay_connected": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected-ctm",
+    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected"
+  }
+}

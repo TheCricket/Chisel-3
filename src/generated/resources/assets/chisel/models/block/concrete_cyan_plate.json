@@ -1,9 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/concrete_cyan/concrete_cyan_plate",
-    "overlay_connected": "chisel:block/concrete_cyan/concrete_cyan_plate-ctm",
-    "overlay_texture": "chisel:block/concrete_cyan/concrete_cyan_plate",
-    "particle": "chisel:block/concrete_cyan/concrete_cyan_plate"
+    "all": "chisel:block/concrete_cyan/concrete_cyan_plate"
   }
 }

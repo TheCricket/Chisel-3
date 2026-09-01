@@ -3,6 +3,10 @@
   "tag": "c:chisel/stone_bricks",
   "variants": [
     {
+      "block": "minecraft:stone",
+      "name": "block.minecraft.stone"
+    },
+    {
       "block": "minecraft:stone_bricks",
       "name": "block.minecraft.stone_bricks"
     },

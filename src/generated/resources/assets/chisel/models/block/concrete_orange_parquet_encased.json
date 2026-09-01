@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_orange/concrete_orange_parquet_encased",
+    "overlay_connected": "chisel:block/concrete_orange/concrete_orange_parquet_encased-ctm",
+    "overlay_texture": "chisel:block/concrete_orange/concrete_orange_parquet_encased",
+    "particle": "chisel:block/concrete_orange/concrete_orange_parquet_encased"
+  }
+}

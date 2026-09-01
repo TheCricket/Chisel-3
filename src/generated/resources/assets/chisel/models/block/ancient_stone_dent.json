@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ancient_stone/ancient_stone_dent",
-    "overlay_connected": "chisel:block/ancient_stone/ancient_stone_dent-ctm",
-    "overlay_texture": "chisel:block/ancient_stone/ancient_stone_dent",
-    "particle": "chisel:block/ancient_stone/ancient_stone_dent"
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_dent",
+    "overlay_connected": "chisel:block/atm_ancient_stone/ancient_stone_dent-ctm",
+    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_dent",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_dent"
   }
 }

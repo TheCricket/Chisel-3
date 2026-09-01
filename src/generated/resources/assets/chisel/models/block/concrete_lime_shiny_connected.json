@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_lime/concrete_lime_shiny_connected",
+    "overlay_connected": "chisel:block/concrete_lime/concrete_lime_shiny_connected-ctm",
+    "overlay_texture": "chisel:block/concrete_lime/concrete_lime_shiny_connected",
+    "particle": "chisel:block/concrete_lime/concrete_lime_shiny_connected"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_parquet_encased",
+    "overlay_connected": "chisel:block/gilded_blackstone/gilded_blackstone_parquet_encased-ctm",
+    "overlay_texture": "chisel:block/gilded_blackstone/gilded_blackstone_parquet_encased",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_parquet_encased"
+  }
+}

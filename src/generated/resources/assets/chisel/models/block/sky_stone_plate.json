@@ -1,9 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ae2_sky_stone/sky_stone_plate",
-    "overlay_connected": "chisel:block/ae2_sky_stone/sky_stone_plate-ctm",
-    "overlay_texture": "chisel:block/ae2_sky_stone/sky_stone_plate",
-    "particle": "chisel:block/ae2_sky_stone/sky_stone_plate"
+    "all": "chisel:block/ae2_sky_stone/sky_stone_plate"
   }
 }
