@@ -1,10 +1,10 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
   "connected_faces": [
-    "west",
-    "east",
+    "north",
     "south",
-    "north"
+    "west",
+    "east"
   ],
   "model_location": "chisel:block/bookshelf_dark_oak_brim",
   "variant": {
