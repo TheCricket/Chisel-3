@@ -27,7 +27,7 @@ public class GlassModelGenerator extends VariantModelGenerator {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.GLASS_CTM.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        Identifier modelLocation = ChiselModelTemplates.CTM_OVERLAY_ONLY.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(getBlock(),
                 new ConnectedTextureBlockStateModelBuilder()

@@ -4,7 +4,6 @@
     "all"
   ],
   "model_location": "chisel:block/ice_weaver",
-  "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ice_weaver",
     "kind": "standard"

@@ -52,6 +52,11 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler MULTI_LAYER_WATER_4X4 = new MultiblockCTMVariantModelHandler("multi_layer_water_4x4", false, 4, true);
     public static final VariantModelHandler REDSTONE_LAMP = new CubeAllVariantModelHandler("redstone_lamp");
     public static final VariantModelHandler GLASS = new CTMVariantModelHandler("glass");
+    public static final VariantModelHandler ICE = new CTMVariantModelHandler("ice");
+    public static final VariantModelHandler ICE_2X2 = new MultiblockCTMVariantModelHandler("ice_2x2", false, 2, false);
+    public static final VariantModelHandler ICE_3X3 = new MultiblockCTMVariantModelHandler("ice_3x3", false, 3, false);
+    public static final VariantModelHandler ICE_4X4 = new MultiblockCTMVariantModelHandler("ice_4x4", false, 4, false);
+    public static final VariantModelHandler ICE_AR = new ARVariantModelHandler("ice_ar");
 
     public static void registerAll() {
         VariantModelHandlers.register(CUBE_ALL);
@@ -102,5 +107,10 @@ public class ChiselModelHandlers {
         VariantModelHandlers.register(MULTI_LAYER_WATER_4X4);
         VariantModelHandlers.register(REDSTONE_LAMP);
         VariantModelHandlers.register(GLASS);
+        VariantModelHandlers.register(ICE);
+        VariantModelHandlers.register(ICE_2X2);
+        VariantModelHandlers.register(ICE_3X3);
+        VariantModelHandlers.register(ICE_4X4);
+        VariantModelHandlers.register(ICE_AR);
     }
 }

@@ -8,7 +8,7 @@
     },
     {
       "block": "chisel:ice_array",
-      "model_type": "multiblock_2x2",
+      "model_type": "ice_2x2",
       "name": "ice_array"
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "block": "chisel:ice_chaotic_bricks",
-      "model_type": "multiblock_3x3",
+      "model_type": "ice_3x3",
       "name": "ice_chaotic_bricks"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "block": "chisel:ice_circular",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_circular"
     },
     {
@@ -43,17 +43,17 @@
     },
     {
       "block": "chisel:ice_cuts",
-      "model_type": "multiblock_4x4",
+      "model_type": "ice_4x4",
       "name": "ice_cuts"
     },
     {
       "block": "chisel:ice_dent",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_dent"
     },
     {
       "block": "chisel:ice_encased_bricks",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_encased_bricks"
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "block": "chisel:ice_jellybean",
-      "model_type": "multiblock_2x2",
+      "model_type": "ice_2x2",
       "name": "ice_jellybean"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "block": "chisel:ice_mosaic",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_mosaic"
     },
     {
@@ -140,7 +140,7 @@
     },
     {
       "block": "chisel:ice_slanted",
-      "model_type": "multiblock_2x2",
+      "model_type": "ice_2x2",
       "name": "ice_slanted"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "block": "chisel:ice_tiles_large",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_tiles_large"
     },
     {
@@ -179,12 +179,12 @@
     },
     {
       "block": "chisel:ice_weaver",
-      "model_type": "connected",
+      "model_type": "ice",
       "name": "ice_weaver"
     },
     {
       "block": "chisel:ice_zag",
-      "model_type": "ar",
+      "model_type": "ice_ar",
       "name": "ice_zag"
     }
   ]
