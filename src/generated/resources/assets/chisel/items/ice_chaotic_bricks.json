@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/ice_chaotic_bricks"
+    "model": "chisel:item/ice_chaotic_bricks"
   }
 }

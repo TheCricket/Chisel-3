@@ -41,7 +41,7 @@
     },
     {
       "block": "chisel:glowstone_dent",
-      "model_type": "connected",
+      "model_type": "connected_no_ao",
       "name": "glowstone_dent"
     },
     {

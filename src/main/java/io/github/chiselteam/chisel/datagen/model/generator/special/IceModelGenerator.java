@@ -9,9 +9,7 @@ import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBloc
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
 import io.github.chiselteam.ctm.api.strategy.CTMKind;
 import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.data.models.model.*;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import org.joml.Vector3f;
@@ -48,7 +46,12 @@ public class IceModelGenerator extends VariantModelGenerator {
         };
 
         Identifier modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        Identifier itemModelLocation = ModelTemplates.CUBE_ALL.create(
+                ModelLocationUtils.getModelLocation(getBlock().asItem()),
+                new TextureMapping().put(TextureSlot.ALL, VariantTextures.get(variant)),
+                blockModels.modelOutput
+        );
+        blockModels.registerSimpleItemModel(getBlock(), itemModelLocation);
         ConnectedTextureBlockStateModelBuilder builder = new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .variant(variant)

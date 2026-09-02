@@ -16,6 +16,16 @@ import org.joml.Vector3f;
 
 public class CTMModelGenerator extends VariantModelGenerator {
 
+    private final boolean ambientOcclusion;
+
+    public CTMModelGenerator() {
+        this(true);
+    }
+
+    public CTMModelGenerator(boolean ambientOcclusion) {
+        this.ambientOcclusion = ambientOcclusion;
+    }
+
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
@@ -41,6 +51,7 @@ public class CTMModelGenerator extends VariantModelGenerator {
                 .connectedFace(Direction.EAST)
                 .connectedFace(Direction.SOUTH)
                 .element(new Vector3f(0, 0, 0), new Vector3f(16, 16, 16))
+                .ambientOcclusion(ambientOcclusion)
                 .eldritch(variant.isEldritch())
         ));
     }

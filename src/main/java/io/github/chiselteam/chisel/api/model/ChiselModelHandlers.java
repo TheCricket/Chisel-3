@@ -9,6 +9,7 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler BOOKSHELF = new DirectionalCTMVariantModelHandler("bookshelf", true);
     public static final VariantModelHandler TBS = new CubeAllVariantModelHandler("top_bottom_side");
     public static final VariantModelHandler CONNECTED = new CTMVariantModelHandler("connected");
+    public static final VariantModelHandler CONNECTED_NO_AO = new CTMVariantModelHandler("connected_no_ao");
     public static final VariantModelHandler CONNECTED_TBS = new TBSCTMVariantModelHandler("connected_tbs");
     public static final VariantModelHandler CTMV = new DirectionalCTMVariantModelHandler("ctmv", false);
     public static final VariantModelHandler CTMH = new DirectionalCTMVariantModelHandler("ctmh", false);
@@ -65,6 +66,7 @@ public class ChiselModelHandlers {
         VariantModelHandlers.register(BOOKSHELF);
         VariantModelHandlers.register(TBS);
         VariantModelHandlers.register(CONNECTED);
+        VariantModelHandlers.register(CONNECTED_NO_AO);
         VariantModelHandlers.register(CONNECTED_TBS);
         VariantModelHandlers.register(CTMV);
         VariantModelHandlers.register(CTMH);

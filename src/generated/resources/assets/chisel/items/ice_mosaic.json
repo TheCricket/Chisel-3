@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/ice_mosaic"
+    "model": "chisel:item/ice_mosaic"
   }
 }

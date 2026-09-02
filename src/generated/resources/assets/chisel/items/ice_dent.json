@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/ice_dent"
+    "model": "chisel:item/ice_dent"
   }
 }

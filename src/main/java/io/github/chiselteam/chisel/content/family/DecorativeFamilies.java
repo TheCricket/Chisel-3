@@ -229,7 +229,7 @@ public class DecorativeFamilies {
                 .addVariant("glowstone_circular").translation("glowstone_circular", "Glowstone", "Circular")
                 .addVariant("glowstone_cracked").translation("glowstone_cracked", "Glowstone", "Cracked")
                 .addVariant("glowstone_cracked_bricks").translation("glowstone_cracked_bricks", "Glowstone", "Cracked Bricks")
-                .addVariant("glowstone_dent", ChiselModelHandlers.CONNECTED).translation("glowstone_dent", "Glowstone", "Dent")
+                .addVariant("glowstone_dent", ChiselModelHandlers.CONNECTED_NO_AO).translation("glowstone_dent", "Glowstone", "Dent")
                 .addVariant("glowstone_encased_bricks", ChiselModelHandlers.CONNECTED).translation("glowstone_encased_bricks", "Glowstone", "Encased Bricks")
                 .addVariant("glowstone_french_1").translation("glowstone_french_1", "Glowstone", "French 1")
                 .addVariant("glowstone_french_2").translation("glowstone_french_2", "Glowstone", "French 2")

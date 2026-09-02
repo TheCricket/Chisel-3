@@ -1,5 +1,6 @@
 {
   "neoforge:definition_type": "ctm:connected_texture_model",
+  "ambient_occlusion": false,
   "connected_faces": [
     "all"
   ],

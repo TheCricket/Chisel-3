@@ -8,6 +8,8 @@ import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
 import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
@@ -28,7 +30,12 @@ public class GlassModelGenerator extends VariantModelGenerator {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         Identifier modelLocation = ChiselModelTemplates.CTM_OVERLAY_ONLY.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        Identifier itemModelLocation = ModelTemplates.CUBE_ALL.create(
+                ModelLocationUtils.getModelLocation(getBlock().asItem()),
+                new TextureMapping().put(TextureSlot.ALL, VariantTextures.get(variant)),
+                blockModels.modelOutput
+        );
+        blockModels.registerSimpleItemModel(getBlock(), itemModelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(getBlock(),
                 new ConnectedTextureBlockStateModelBuilder()
                         .modelLocation(modelLocation)

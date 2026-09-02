@@ -41,6 +41,7 @@ public class ChiselVariantModelGenerators {
         registerGenerator(TBS, TopBottomSideModelGenerator::new);
 
         registerGenerator(CONNECTED, CTMModelGenerator::new);
+        registerGenerator(CONNECTED_NO_AO, () -> new CTMModelGenerator(false));
         registerGenerator(CONNECTED_TBS, CTMTBSModelGenerator::new);
         registerGenerator(CTMV, CTMVModelGenerator::new);
         registerGenerator(CTMH, CTMHModelGenerator::new);
