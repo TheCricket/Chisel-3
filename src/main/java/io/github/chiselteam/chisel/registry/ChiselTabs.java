@@ -227,6 +227,7 @@ public class ChiselTabs {
                 output.accept(ChiselItems.CLOUD_IN_A_BOTTLE.get());
                 output.accept(ChiselItems.SMASHING_ROCK.get());
                 output.accept(ChiselItems.MEASURING_TAPE.get());
+                output.accept(ChiselItems.BUILDERS_HANDBOOK.get());
             })
             .build());
 }

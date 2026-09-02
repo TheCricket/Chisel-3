@@ -20,8 +20,8 @@ public class ChiselItems {
     public static DeferredItem<Item> CHISEL_IRON, CHISEL_DIAMOND, CHISEL_OBSIDIAN;
     public static DeferredItem<Item> OFFSET_TOOL;
     public static DeferredItem<Item> UPGRADE_STACK, UPGRADE_SPEED, UPGRADE_REVERSION, UPGRADE_AUTOMATION;
-    public static DeferredItem<Item> AUTO_CHISEL, BUILDERS_GUIDE;
-    public static DeferredItem<Item> BALL_O_MOSS, CLOUD_IN_A_BOTTLE, SMASHING_ROCK, MEASURING_TAPE;
+    public static DeferredItem<Item> AUTO_CHISEL, BUILDERS_GUIDE, MEASURING_TAPE, BUILDERS_HANDBOOK;
+    public static DeferredItem<Item> BALL_O_MOSS, CLOUD_IN_A_BOTTLE, SMASHING_ROCK;
 
     private static DeferredItem<Item> register(String name) {
         return ITEMS.registerSimpleItem(name);
@@ -44,7 +44,7 @@ public class ChiselItems {
         CHISEL_DIAMOND = diamond_durability > 0 ? registerChisel("chisel_diamond", getChiselProps().durability(diamond_durability)) : registerChisel("chisel_diamond", getChiselProps());
         CHISEL_OBSIDIAN = obsidian_durability > 0 ? registerChisel("chisel_obsidian", getChiselProps().durability(obsidian_durability)) : registerChisel("chisel_obsidian", getChiselProps());
 
-        OFFSET_TOOL = register("offset_tool", OffsetToolItem::new, Item.Properties::new);
+        OFFSET_TOOL = register("offset_tool", OffsetToolItem::new, ChiselItems::getChiselProps);
 
         UPGRADE_STACK = register("upgrade_stack");
         UPGRADE_SPEED = register("upgrade_speed");
@@ -58,6 +58,7 @@ public class ChiselItems {
         CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);
         SMASHING_ROCK = register("smashingrock", SmashingRockItem::new, Item.Properties::new);
         MEASURING_TAPE = register("measuring_tape", MeasuringTapeItem::new, Item.Properties::new);
+        BUILDERS_HANDBOOK = register("builders_handbook", BuildersHandbookItem::new, ChiselItems::getChiselProps);
     }
 
     private static Item.Properties getChiselProps() {

@@ -12,6 +12,7 @@ public class ChiselStats {
 
     public static final DeferredHolder<Identifier, Identifier> INTERACT_WITH_AUTO_CHISEL = makeStat( "interact_with_auto_chisel");
     public static final DeferredHolder<Identifier, Identifier> BLOCKS_CHISELED = makeStat( "blocks_chiseled");
+    public static final DeferredHolder<Identifier, Identifier> CHISEL_GUIDE_USED = makeStat("chisel_guide_used");
 
     private static DeferredHolder<Identifier, Identifier> makeStat(String name) {
         Identifier location = Chisel.prefix(name);

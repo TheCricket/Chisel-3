@@ -85,6 +85,8 @@ public class ChiselLang extends LangHelper {
 
         add("key.category.chisel.chisel", "Chisel");
         add("key.chisel.mode_select", "Select Chisel Mode");
+
+        add("chisel.builders_handbook.title", "Builders Handbook");
     }
 
     private void addTabs() {
@@ -109,6 +111,7 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.UPGRADE_SPEED, "Speed Upgrade");
         addItem(ChiselItems.UPGRADE_STACK, "Stack Upgrade");
         addItem(ChiselItems.MEASURING_TAPE, "Measuring Tape");
+        addItem(ChiselItems.BUILDERS_HANDBOOK, "Builder's Handbook");
     }
 
     private void addBuildingMode(String id, String name) {
