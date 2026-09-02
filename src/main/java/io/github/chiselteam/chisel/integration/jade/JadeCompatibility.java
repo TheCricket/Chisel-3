@@ -27,5 +27,6 @@ public class JadeCompatibility implements IWailaPlugin {
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ChiselStainedGlassPaneBlock.class);
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ChiselRotatedPillarBlock.class);
         registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ChiselPoweredPillarBlock.class);
+        registration.registerBlockComponent(JadeComponentProvider.INSTANCE, ChiselTransparentBlock.class);
     }
 }

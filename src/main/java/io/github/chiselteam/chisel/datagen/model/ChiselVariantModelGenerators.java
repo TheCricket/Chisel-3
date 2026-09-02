@@ -67,6 +67,7 @@ public class ChiselVariantModelGenerators {
         registerGenerator(CARPET, CarpetModelGenerator::new);
         registerGenerator(IRON_BARS, IronBarsModelGenerator::new);
         registerGenerator(GLASS_PANE, GlassPaneModelGenerator::new);
+        registerGenerator(GLASS, GlassModelGenerator::new);
 
         registerGenerator(MOSSY, MossyModelGenerator::new);
         registerGenerator(MOSSY_TOP_BOTTOM_SIDE, MossyTBSModelGenerator::new);

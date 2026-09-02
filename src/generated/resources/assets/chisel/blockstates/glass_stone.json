@@ -4,7 +4,6 @@
     "all"
   ],
   "model_location": "chisel:block/glass_stone",
-  "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:glass_stone",
     "kind": "standard"

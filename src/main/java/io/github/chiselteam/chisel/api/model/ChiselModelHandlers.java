@@ -51,6 +51,7 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler MULTI_LAYER_WATER_3X3 = new MultiblockCTMVariantModelHandler("multi_layer_water_3x3", false, 3, true);
     public static final VariantModelHandler MULTI_LAYER_WATER_4X4 = new MultiblockCTMVariantModelHandler("multi_layer_water_4x4", false, 4, true);
     public static final VariantModelHandler REDSTONE_LAMP = new CubeAllVariantModelHandler("redstone_lamp");
+    public static final VariantModelHandler GLASS = new CTMVariantModelHandler("glass");
 
     public static void registerAll() {
         VariantModelHandlers.register(CUBE_ALL);
@@ -100,5 +101,6 @@ public class ChiselModelHandlers {
         VariantModelHandlers.register(MULTI_LAYER_WATER_3X3);
         VariantModelHandlers.register(MULTI_LAYER_WATER_4X4);
         VariantModelHandlers.register(REDSTONE_LAMP);
+        VariantModelHandlers.register(GLASS);
     }
 }
