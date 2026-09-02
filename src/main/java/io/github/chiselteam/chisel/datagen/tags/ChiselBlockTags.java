@@ -70,6 +70,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.DIRT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.WOOLEN_CLAY.getFamily());
 
+        // MARK: HOE MINEABLE
+        addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.LEAF.getFamily());
+
         // MARK: PICKAXE
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ALUMINUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ATM_ANCIENT_STONE.getFamily());
@@ -80,25 +83,30 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRICKS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRONZE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.AE2_CERTUS.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.AE2_SKY_STONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BLACKSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.CHARCOAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.COAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.COAL_COKE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.COBALT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.COBBLESTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.C_CONCRETE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.CALCITE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.COPPER.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.EXPOSED_COPPER.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.WEATHERED_COPPER.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.OXIDIZED_COPPER.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.DIAMOND.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.DIORITE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.DEEPSLATE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.DRIPSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ELECTRUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.EMERALD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.END_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ENERGIZED_VOIDSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.FACTORY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.FUTURA.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GLASS.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GLASS_PANE.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GLOWSTONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GILDED_BLACKSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GOLD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GRANITE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.GRIMSTONE.getFamily());
@@ -113,23 +121,26 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.LAVASTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.LEAD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.LIMESTONE.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.JACK_O_LANTERN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MAGMA.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MARBLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MILITARY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NETHERBRICK.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NICKEL.getFamily());
+        addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.NETHERITE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NETHERITE.getFamily());
         addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.OBSIDIAN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.OBSIDIAN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PLATINUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PRISMARINE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PURPUR.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.QUARTZ.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RED_SANDSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.REDSTONE.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.REDSTONE_LAMP.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RESIN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ROAD_LINE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SANDSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SHINGLE.getFamily());
@@ -141,12 +152,45 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TERRACOTTA.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.THAUMIUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TIN.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TUFF.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TYRIAN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.URANIUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.VALENTINES.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.VOIDSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.WARNING.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.WATERSTONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MUD.getFamily());
+
+        // MARK: HARVEST TIERS
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.ALUMINUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.BRONZE.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.COBALT.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.COPPER.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.EXPOSED_COPPER.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.WEATHERED_COPPER.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.OXIDIZED_COPPER.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.ELECTRUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.FACTORY.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.FUTURA.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.HEX_PLATING.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.INVAR.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.IRON.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.LABORATORY.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.LAPIS.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.LEAD.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.MILITARY.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.NICKEL.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.PLATINUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.SILVER.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.STEEL.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TECHNICAL.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.THAUMIUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TIN.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.URANIUM.getFamily());
+
+        addToTag(BlockTags.NEEDS_IRON_TOOL, ChiselFamilies.DIAMOND.getFamily());
+        addToTag(BlockTags.NEEDS_IRON_TOOL, ChiselFamilies.EMERALD.getFamily());
+        addToTag(BlockTags.NEEDS_IRON_TOOL, ChiselFamilies.GOLD.getFamily());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.get());
@@ -154,11 +198,14 @@ public class ChiselBlockTags extends BlockTagsProvider {
         ChiselFamilies.getFamilies().forEach(f -> {
             if (f.getFamily().getWaxedFamily() != null) {
                 addToTag(BlockTags.MINEABLE_WITH_PICKAXE, f.getFamily().getWaxedFamily());
+                if (f == ChiselFamilies.COPPER || f == ChiselFamilies.EXPOSED_COPPER
+                        || f == ChiselFamilies.WEATHERED_COPPER || f == ChiselFamilies.OXIDIZED_COPPER) {
+                    addToTag(BlockTags.NEEDS_STONE_TOOL, f.getFamily().getWaxedFamily());
+                }
             }
         });
 
-        ChiselFamilies.STAINED_GLASS.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
-        ChiselFamilies.STAINED_GLASS_PANE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
+        ChiselFamilies.CONCRETE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
 
         // MARK: VANILLA TAGS
         addToTag(BlockTags.LEAVES, ChiselFamilies.LEAF.getFamily());
