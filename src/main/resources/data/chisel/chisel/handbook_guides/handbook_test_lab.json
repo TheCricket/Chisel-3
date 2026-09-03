@@ -1,0 +1,141 @@
+{
+  "title": {
+    "text": "AAA Handbook Test Lab",
+    "bold": true
+  },
+  "description": {
+    "text": "This intentionally oversized guide exercises page wrapping, automatic pagination, styled text, tips, palette headings, block icons, percentages, missing blocks, page numbers, and navigation arrows. Nothing in this guide is intended to ship as real handbook content."
+  },
+  "icon": "minecraft:stone_bricks",
+  "categories": [
+    "chisel:testing",
+    "chisel:palettes"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor, magna quis placerat consequat, arcu velit vulputate augue, vitae feugiat justo sapien a erat. Suspendisse potenti. Donec feugiat massa non mi tempor, sed tristique lectus faucibus. Curabitur malesuada, mauris at consequat posuere, neque libero interdum lectus, quis vulputate ipsum tortor sed justo."
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "text": "Test tip: this box should have padding on every side, a tinted background, muted text, and no content extending beyond the page. If it begins near the bottom of a page, the paginator should split its wrapped lines cleanly onto another page."
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Praesent sollicitudin ipsum sed nisi elementum, sit amet fermentum augue volutpat. Aliquam erat volutpat. Vivamus quis erat sed arcu malesuada consequat. Phasellus posuere, nisl sed feugiat tristique, tellus lorem commodo justo, ut dignissim sapien mauris nec neque. Morbi cursus interdum lacus, quis egestas urna vulputate vitae. Sed consequat pulvinar lorem, id tristique velit facilisis nec."
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "title": {
+        "text": "Weathered Stone Stress Test",
+        "bold": true
+      },
+      "entries": [
+        {
+          "block": "minecraft:stone_bricks",
+          "role": "primary",
+          "weight": 55
+        },
+        {
+          "block": "minecraft:cobblestone",
+          "role": "secondary",
+          "weight": 25
+        },
+        {
+          "block": "minecraft:andesite",
+          "role": "secondary",
+          "weight": 10
+        },
+        {
+          "block": "minecraft:cracked_stone_bricks",
+          "role": "accent",
+          "weight": 5
+        },
+        {
+          "block": "minecraft:mossy_stone_bricks",
+          "role": "accent",
+          "weight": 3
+        },
+        {
+          "block": "minecraft:mossy_cobblestone",
+          "role": "rare",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:chiseled_stone_bricks",
+          "role": "rare",
+          "weight": 1
+        },
+        {
+          "block": "minecraft:polished_andesite",
+          "role": "accent",
+          "weight": 2
+        },
+        {
+          "block": "minecraft:tuff_bricks",
+          "role": "secondary",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "text": "Pagination check: the palette above is taller than one page. Its heading should stay with at least one entry, and the remaining entries should continue on the following page."
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Etiam consequat risus sit amet mi sodales, vel consequat justo suscipit. This sentence deliberately ends with aSuperLongUnbrokenWordDesignedToTestClippingAndScissoringAtThePaperEdge."
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "title": {
+        "text": "Long Names and Uneven Weights",
+        "underlined": true
+      },
+      "entries": [
+        {
+          "block": "minecraft:waxed_weathered_cut_copper_stairs",
+          "role": "primary",
+          "weight": 100
+        },
+        {
+          "block": "minecraft:exposed_cut_copper_stairs",
+          "role": "secondary",
+          "weight": 33
+        },
+        {
+          "block": "minecraft:ochre_froglight",
+          "role": "accent",
+          "weight": 17
+        },
+        {
+          "block": "chisel:intentionally_missing_test_block",
+          "role": "rare",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "text": "Missing-block check: the final palette entry should display its raw identifier without an item icon. The screen should remain usable and should not crash."
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Final page marker. If this appears after several page turns, the complete guide pipeline is working: JSON decoding, registry synchronization, section dispatch, text wrapping, page construction, spread pairing, rendering, clipping, and arrow navigation."
+      }
+    }
+  ]
+}
