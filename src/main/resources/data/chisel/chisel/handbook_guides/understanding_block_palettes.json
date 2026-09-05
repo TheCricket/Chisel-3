@@ -1,0 +1,72 @@
+{
+  "title": {
+    "translate": "chisel.guide.understanding_block_palettes.title"
+  },
+  "description": {
+    "translate": "chisel.guide.understanding_block_palettes.description"
+  },
+  "icon": "minecraft:stone_bricks",
+  "categories": [
+    "chisel:palettes",
+    "chisel:getting_started"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.roles"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.roles_tip"
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "title": {
+        "translate": "chisel.guide.understanding_block_palettes.weathered_stone"
+      },
+      "entries": [
+        {
+          "block": "minecraft:stone_bricks",
+          "role": "primary",
+          "weight": 55
+        },
+        {
+          "block": "minecraft:cobblestone",
+          "role": "secondary",
+          "weight": 20
+        },
+        {
+          "block": "minecraft:andesite",
+          "role": "secondary",
+          "weight": 12
+        },
+        {
+          "block": "minecraft:cracked_stone_bricks",
+          "role": "accent",
+          "weight": 8
+        },
+        {
+          "block": "minecraft:mossy_stone_bricks",
+          "role": "rare",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.weights"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.variation_tip"
+      }
+    }
+  ]
+}

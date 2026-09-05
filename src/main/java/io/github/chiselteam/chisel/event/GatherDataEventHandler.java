@@ -1,10 +1,10 @@
 package io.github.chiselteam.chisel.event;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.datagen.ChiselLang;
 import io.github.chiselteam.chisel.datagen.ChiselParticleDescriptions;
 import io.github.chiselteam.chisel.datagen.ChiselRecipes;
 import io.github.chiselteam.chisel.datagen.ChiselRegistries;
+import io.github.chiselteam.chisel.datagen.lang.ChiselLang;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelProvider;
 import io.github.chiselteam.chisel.datagen.providers.ChiselLootTableProvider;
 import io.github.chiselteam.chisel.datagen.providers.ChiselSoundDefinitionProvider;

@@ -1,9 +1,10 @@
 package io.github.chiselteam.chisel.client.gui;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.guide.HandbookGuide;
+import io.github.chiselteam.chisel.guide.HandbookEntry;
 import io.github.chiselteam.chisel.guide.HandbookManager;
 import io.github.chiselteam.chisel.guide.HandbookPaginator;
+import io.github.chiselteam.chisel.guide.HandbookView;
 import io.github.chiselteam.chisel.guide.page.*;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
@@ -52,8 +53,15 @@ public class BuildersHandbookScreen extends Screen {
     private static final int BAR_BACKGROUND_COLOR = 0x406F5A48;
     private static final int BAR_FILL_COLOR = 0xFF9B7155;
 
+    private static final int CONTENT_PADDING = 4;
+    private static final int GUIDE_ROW_HEIGHT = 24;
+    private static final int GUIDES_PER_CONTENTS_PAGE = 6;
+
     private List<HandbookSpread> spreads = List.of();
-    private boolean open;
+    private HandbookView view = HandbookView.COVER;
+    private List<HandbookEntry> guides;
+    private HandbookEntry selectedGuide;
+    private List<HandbookSpread> selectedSpreads;
     private int spreadIndex, bookLeft, bookTop;
 
     public BuildersHandbookScreen() {
@@ -70,34 +78,77 @@ public class BuildersHandbookScreen extends Screen {
         bookTop = (height - BOOK_HEIGHT) / 2;
         spreadIndex = 0;
 
-        List<HandbookGuide> guides = minecraft.level == null ? List.of() : HandbookManager.getGuides(minecraft.level.registryAccess());
-        spreads = guides.isEmpty() ? HandbookPaginator.empty(Component.translatable("chisel.builders_handbook.empty"), font) : HandbookPaginator.paginate(guides.getFirst(), font);
+        guides = minecraft.level == null ? List.of() : HandbookManager.getGuides(minecraft.level.registryAccess());
+        spreads = guides.isEmpty() ? HandbookPaginator.empty(Component.translatable("chisel.builders_handbook.empty"), font) : HandbookPaginator.paginate(guides.getFirst().guide(), font);
+    }
+
+    private void selectGuide(HandbookEntry entry) {
+        selectedGuide = entry;
+        spreads = HandbookPaginator.paginate(entry.guide(), font);
+        spreadIndex = 0;
+        view = HandbookView.GUIDE;
     }
 
     @Override
+
     public void extractRenderState(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
         super.extractRenderState(graphics, mouseX, mouseY, a);
-        if (open) extractOpenBook(graphics);
-        else extractCover(graphics);
+        switch (view) {
+            case COVER -> extractCover(graphics);
+            case CONTENTS -> {
+                extractOpenBookBackground(graphics);
+                extractContents(graphics);
+            }
+            case GUIDE -> {
+                extractOpenBookBackground(graphics);
+                extractSelectedGuide(graphics);
+            }
+        }
     }
 
     private void extractCover(GuiGraphicsExtractor graphics) {
-        int x = (width - COVER_WIDTH) / 2;
-        int y = (height - COVER_HEIGHT) / 2;
-
-        graphics.blit(RenderPipelines.GUI_TEXTURED, COVER_TEXTURE, x, y, 0F, 0F, COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, COVER_TEXTURE, getCoverX(), getCoverY(), 0F, 0F, COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
         graphics.nextStratum();
-        extractCenteredText(graphics, Component.translatable("chisel.builders_handbook.title"), width / 2, y + 60, TEXT_COLOR);
+        extractCenteredText(graphics, Component.translatable("chisel.builders_handbook.title"), width / 2, getCoverY() + 60, TEXT_COLOR);
     }
 
-    private void extractOpenBook(GuiGraphicsExtractor graphics) {
-        graphics.blit(RenderPipelines.GUI_TEXTURED, PAGES_TEXTURE, bookLeft, bookTop, 0, 0, BOOK_WIDTH, BOOK_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
-        graphics.nextStratum();
+    private void extractContents(GuiGraphicsExtractor graphics) {
+        int leftX = bookLeft + LEFT_PAGE_X + CONTENT_PADDING;
+        int rightX = bookLeft + RIGHT_PAGE_X + CONTENT_PADDING;
+        int pageY = bookTop + PAGE_Y;
+
+        extractCenteredText(graphics, Component.translatable("chisel.builders_handbook.title"), leftX + HandbookPaginator.PAGE_CONTENT_WIDTH / 2, pageY, TEXT_COLOR);
+        var intro = font.split(Component.translatable("chisel.builders_handbook.intro"), HandbookPaginator.PAGE_CONTENT_WIDTH);
+        extractLines(graphics, intro, leftX, pageY + 18, TEXT_COLOR);
+        extractCenteredText(graphics, Component.translatable("chisel.builders_handbook.contents"), rightX + HandbookPaginator.PAGE_CONTENT_WIDTH / 2, pageY, TEXT_COLOR);
+
+        for (int c = 0; c < Math.min(guides.size(), GUIDES_PER_CONTENTS_PAGE); c++) {
+            extractGuideEntry(graphics, guides.get(c), rightX, pageY + 18 + c * GUIDE_ROW_HEIGHT);
+        }
+    }
+
+    private void extractSelectedGuide(GuiGraphicsExtractor graphics) {
         var spread = spreads.get(spreadIndex);
         extractPage(graphics, spread.leftPage(), bookLeft + LEFT_PAGE_X, bookTop + PAGE_Y);
         extractPage(graphics, spread.rightPage(), bookLeft + RIGHT_PAGE_X, bookTop + PAGE_Y);
         extractPageNumbers(graphics);
         extractArrows(graphics);
+    }
+
+    private void extractGuideEntry(GuiGraphicsExtractor graphics, HandbookEntry entry, int x, int y) {
+        BuiltInRegistries.BLOCK.getOptional(entry.guide().icon()).ifPresent(icon -> graphics.item(new ItemStack(icon), x, y));
+        var titleLines = font.split(entry.guide().title(), HandbookPaginator.PAGE_CONTENT_WIDTH - 20);
+        int lineY = y + 2;
+
+        for (int c = 0; c < Math.min(titleLines.size(), 2); c++) {
+            graphics.text(font, titleLines.get(c), x + 20, lineY, TEXT_COLOR, false);
+            lineY += HandbookPaginator.LINE_HEIGHT;
+        }
+    }
+
+    private void extractOpenBookBackground(GuiGraphicsExtractor graphics) {
+        graphics.blit(RenderPipelines.GUI_TEXTURED, PAGES_TEXTURE, bookLeft, bookTop, 0, 0, BOOK_WIDTH, BOOK_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
+        graphics.nextStratum();
     }
 
     private void extractPage(GuiGraphicsExtractor graphics, HandbookPage page, int x, int y) {
@@ -174,7 +225,7 @@ public class BuildersHandbookScreen extends Screen {
     }
 
     private void extractArrows(GuiGraphicsExtractor graphics) {
-        if (spreadIndex > 0) extractArrow(graphics, LEFT_ARROW_TEXTURE, getPreviousArrowX(), getArrowY());
+        extractArrow(graphics, LEFT_ARROW_TEXTURE, getPreviousArrowX(), getArrowY());
         if (spreadIndex < spreads.size() - 1) extractArrow(graphics, RIGHT_ARROW_TEXTURE, getNextArrowX(), getArrowY());
     }
 
@@ -194,24 +245,51 @@ public class BuildersHandbookScreen extends Screen {
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
         if (event.button() != 0) return super.mouseClicked(event, doubleClick);
 
-        if (!open && isInside(event.x(), event.y(), (width - COVER_WIDTH) / 2, (height - COVER_HEIGHT) / 2, COVER_WIDTH, COVER_HEIGHT)) {
-            open = true;
-            return true;
-        }
+        switch (view) {
+            case COVER -> {
+                if (isInside(event.x(), event.y(), getCoverX(), getCoverY(), COVER_WIDTH, COVER_HEIGHT)) {
+                    view = HandbookView.CONTENTS;
+                    return true;
+                }
+            }
+            case CONTENTS -> {
+                return clickContents(event.x(), event.y());
+            }
+            case GUIDE -> {
+                if (isInside(event.x(), event.y(), getPreviousArrowX(), getArrowY(), ARROW_WIDTH, ARROW_HEIGHT)) {
+                    if (spreadIndex == 0) view = HandbookView.CONTENTS;
+                    else spreadIndex--;
+                    return true;
+                }
 
-        if (!open) return super.mouseClicked(event, doubleClick);
-
-        if (spreadIndex > 0 && isInside(event.x(), event.y(), getPreviousArrowX(), getArrowY(), ARROW_WIDTH, ARROW_HEIGHT)) {
-            spreadIndex--;
-            return true;
-        }
-
-        if (spreadIndex < spreads.size() - 1 && isInside(event.x(), event.y(), getNextArrowX(), getArrowY(), ARROW_WIDTH, ARROW_HEIGHT)) {
-            spreadIndex++;
-            return true;
+                if (spreadIndex < spreads.size() - 1 && isInside(event.x(), event.y(), getNextArrowX(), getArrowY(), ARROW_WIDTH, ARROW_HEIGHT)) {
+                    spreadIndex++;
+                    return true;
+                }
+            }
         }
 
         return super.mouseClicked(event, doubleClick);
+    }
+
+    private boolean clickContents(double mouseX, double mouseY) {
+        int visibleGuides = Math.min(guides.size(), GUIDES_PER_CONTENTS_PAGE);
+
+        for (int c = 0; c < visibleGuides; c++) {
+            if (!isInside(mouseX, mouseY, contentsGuideX(), contentsGuideY(c), HandbookPaginator.PAGE_CONTENT_WIDTH, GUIDE_ROW_HEIGHT))
+                continue;
+            selectGuide(guides.get(c));
+            return true;
+        }
+        return false;
+    }
+
+    private int contentsGuideX() {
+        return bookLeft + RIGHT_PAGE_X + CONTENT_PADDING;
+    }
+
+    private int contentsGuideY(int index) {
+        return bookTop + PAGE_Y + 18 + index * GUIDE_ROW_HEIGHT;
     }
 
     private int getPreviousArrowX() {
@@ -224,6 +302,14 @@ public class BuildersHandbookScreen extends Screen {
 
     private int getArrowY() {
         return bookTop + BOOK_HEIGHT - ARROW_HEIGHT - 8;
+    }
+
+    private int getCoverX() {
+        return (width - COVER_WIDTH) / 2;
+    }
+
+    private int getCoverY() {
+        return (height - COVER_HEIGHT) / 2;
     }
 
     @Override
