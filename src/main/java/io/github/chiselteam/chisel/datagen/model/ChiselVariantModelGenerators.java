@@ -2,10 +2,7 @@ package io.github.chiselteam.chisel.datagen.model;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
-import io.github.chiselteam.chisel.datagen.model.generator.CubeAllModelGenerator;
-import io.github.chiselteam.chisel.datagen.model.generator.MultiLayerModelGenerator;
-import io.github.chiselteam.chisel.datagen.model.generator.PillarModelGenerator;
-import io.github.chiselteam.chisel.datagen.model.generator.TopBottomSideModelGenerator;
+import io.github.chiselteam.chisel.datagen.model.generator.*;
 import io.github.chiselteam.chisel.datagen.model.generator.ctm.*;
 import io.github.chiselteam.chisel.datagen.model.generator.special.*;
 import io.github.chiselteam.chisel.datagen.model.generator.special.lavastone.LavastoneARModelGenerator;
@@ -36,6 +33,8 @@ public class ChiselVariantModelGenerators {
         initialized = true;
 
         registerGenerator(CUBE_ALL, CubeAllModelGenerator::new);
+        registerGenerator(SHADELESS, ShadelessModelGenerator::new);
+        registerGenerator(SHADELESS_MULTI_LAYER, ShadelessMultiLayerModelGenerator::new);
         registerGenerator(PILLAR, PillarModelGenerator::new);
         registerGenerator(BOOKSHELF, BookshelfModelGenerator::new);
         registerGenerator(TBS, TopBottomSideModelGenerator::new);

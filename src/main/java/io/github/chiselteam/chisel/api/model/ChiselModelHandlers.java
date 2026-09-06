@@ -4,7 +4,8 @@ import io.github.chiselteam.chisel.api.model.impl.*;
 
 public class ChiselModelHandlers {
     public static final VariantModelHandler CUBE_ALL = new CubeAllVariantModelHandler("cube_all");
-    // public static final VariantModelHandler SHADELESS = new CubeAllVariantModelHandler("shadeless", MODELS.SHADELESS);
+    public static final VariantModelHandler SHADELESS = new CubeAllVariantModelHandler("shadeless");
+    public static final VariantModelHandler SHADELESS_MULTI_LAYER = new CubeAllVariantModelHandler("shadeless_multi_layer");
     public static final VariantModelHandler PILLAR = new CubeAllVariantModelHandler("pillar");
     public static final VariantModelHandler BOOKSHELF = new DirectionalCTMVariantModelHandler("bookshelf", true);
     public static final VariantModelHandler TBS = new CubeAllVariantModelHandler("top_bottom_side");
@@ -61,7 +62,8 @@ public class ChiselModelHandlers {
 
     public static void registerAll() {
         VariantModelHandlers.register(CUBE_ALL);
-        // VariantModelHandlers.register(SHADELESS);
+        VariantModelHandlers.register(SHADELESS);
+        VariantModelHandlers.register(SHADELESS_MULTI_LAYER);
         VariantModelHandlers.register(PILLAR);
         VariantModelHandlers.register(BOOKSHELF);
         VariantModelHandlers.register(TBS);

@@ -34,6 +34,9 @@ public class ChiselModelTemplates extends ModelTemplates {
     public static final ModelTemplate CTM_VERTICAL = create("chisel:ctm_vertical", PARTICLE, ALL, TOP, BOTTOM, SIDE, CTM_OVERLAY, CTM_OVERLAY_TOP, CTM_OVERLAY_BOTTOM, CTM_OVERLAY_BOTTOM, CTM_OVERLAY_SIDE_CONNECTED, CTM_OVERLAY_VERTICAL).extend().parent(Identifier.withDefaultNamespace("block/cube_bottom_top_inner_faces")).build();
     public static final ModelTemplate CTM_HORIZONTAL_MULTI_PASS = create("chisel:ctm_horizontal_multi_pass", PARTICLE, TOP, BOTTOM, SIDE, LAYER0, LAYER1, CTM_BASE, CTM_OVERLAY_HORIZONTAL).extend().parent(Chisel.prefix("block/cube_multi_pass_top_bottom_side")).build();
 
+    public static final ModelTemplate SHADELESS = new ModelTemplate(Optional.of(Chisel.prefix("block/shadeless")), Optional.empty(), ALL);
+    public static final ModelTemplate SHADELESS_MULTI_LAYER = new ModelTemplate(Optional.of(Chisel.prefix("block/cube_multi_pass_no_shade")), Optional.empty(), LAYER0, LAYER1, PARTICLE);
+
     public static final ModelTemplate CUBE_MULTI_PASS = new ModelTemplate(Optional.of(Chisel.prefix("block/cube_multi_pass")), Optional.empty(), LAYER0, LAYER1, PARTICLE);
     public static final ModelTemplate CUBE_MULTI_PASS_TINTED = new ModelTemplate(Optional.of(Chisel.prefix("block/cube_multi_pass_tinted")), Optional.empty(), LAYER0, LAYER1, PARTICLE);
     public static final ModelTemplate CUBE_MULTI_PASS_NO_GLOW = new ModelTemplate(Optional.of(Chisel.prefix("block/cube_multi_pass_no_glow")), Optional.empty(), LAYER0, LAYER1, PARTICLE);

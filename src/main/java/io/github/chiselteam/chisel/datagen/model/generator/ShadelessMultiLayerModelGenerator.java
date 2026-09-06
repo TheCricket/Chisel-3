@@ -10,15 +10,18 @@ import net.minecraft.client.data.models.model.TextureSlot;
 
 import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
 
-public class ShadelessModelGenerator extends VariantModelGenerator {
+public class ShadelessMultiLayerModelGenerator extends VariantModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
-        return new TextureMapping().put(TextureSlot.ALL, VariantTextures.get(variant));
+        return new TextureMapping()
+                .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
+                .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
+                .put(TextureSlot.LAYER1, VariantTextures.get(variant).withForceTranslucent(true));
     }
 
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        generateSimpleBlockState(plainVariant(ChiselModelTemplates.SHADELESS.create(getBlock(), getTextureMapping(), blockModels.modelOutput)));
+        generateSimpleBlockState(plainVariant(ChiselModelTemplates.SHADELESS_MULTI_LAYER.create(getBlock(), getTextureMapping(), blockModels.modelOutput)));
     }
 }
