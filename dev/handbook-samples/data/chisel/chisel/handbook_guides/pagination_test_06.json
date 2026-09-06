@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 06"
+  },
+  "description": {
+    "text": "Dummy guide six marks the beginning of the second contents page."
+  },
+  "icon": "minecraft:spruce_planks",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:tip",
+      "text": {
+        "text": "Reaching this guide confirms that forward contents pagination works."
+      }
+    }
+  ]
+}

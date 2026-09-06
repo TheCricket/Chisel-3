@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 09"
+  },
+  "description": {
+    "text": "Dummy guide nine tests returning to the same contents page."
+  },
+  "icon": "minecraft:calcite",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Open this guide and return to contents. The handbook should preserve the current contents page."
+      }
+    }
+  ]
+}

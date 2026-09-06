@@ -1,0 +1,32 @@
+{
+  "title": {
+    "text": "Pagination Test 10"
+  },
+  "description": {
+    "text": "Dummy guide ten helps test a partially filled final contents page."
+  },
+  "icon": "minecraft:polished_blackstone",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:palette",
+      "title": {
+        "text": "Small Test Palette"
+      },
+      "entries": [
+        {
+          "block": "minecraft:polished_blackstone",
+          "role": "primary",
+          "weight": 75
+        },
+        {
+          "block": "minecraft:gilded_blackstone",
+          "role": "accent",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "chisel.handbook.category.getting_started.title"
+  },
+  "description": {
+    "translate": "chisel.handbook.category.getting_started.description"
+  },
+  "icon": "minecraft:crafting_table",
+  "sort_order": 0
+}

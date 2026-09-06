@@ -1,5 +1,6 @@
-package io.github.chiselteam.chisel.guide;
+package io.github.chiselteam.chisel.guide.manager;
 
+import io.github.chiselteam.chisel.guide.HandbookGuide;
 import io.github.chiselteam.chisel.guide.page.*;
 import io.github.chiselteam.chisel.guide.section.PaletteSection;
 import io.github.chiselteam.chisel.guide.section.TextSection;

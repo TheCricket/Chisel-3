@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.guide.page;
 
-import io.github.chiselteam.chisel.guide.HandbookPaginator;
+import io.github.chiselteam.chisel.guide.manager.HandbookPaginator;
 import net.minecraft.util.FormattedCharSequence;
 
 import java.util.ArrayList;

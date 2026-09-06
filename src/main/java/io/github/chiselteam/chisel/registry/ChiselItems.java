@@ -20,7 +20,7 @@ public class ChiselItems {
     public static DeferredItem<Item> CHISEL_IRON, CHISEL_DIAMOND, CHISEL_OBSIDIAN;
     public static DeferredItem<Item> OFFSET_TOOL;
     public static DeferredItem<Item> UPGRADE_STACK, UPGRADE_SPEED, UPGRADE_REVERSION, UPGRADE_AUTOMATION;
-    public static DeferredItem<Item> AUTO_CHISEL, BUILDERS_GUIDE, MEASURING_TAPE, BUILDERS_HANDBOOK;
+    public static DeferredItem<Item> AUTO_CHISEL, BUILDERS_GUIDE, MEASURING_TAPE, BUILDERS_HANDBOOK, PALETTE_BUILDER;
     public static DeferredItem<Item> BALL_O_MOSS, CLOUD_IN_A_BOTTLE, SMASHING_ROCK;
 
     private static DeferredItem<Item> register(String name) {
@@ -59,6 +59,7 @@ public class ChiselItems {
         SMASHING_ROCK = register("smashingrock", SmashingRockItem::new, Item.Properties::new);
         MEASURING_TAPE = register("measuring_tape", MeasuringTapeItem::new, Item.Properties::new);
         BUILDERS_HANDBOOK = register("builders_handbook", BuildersHandbookItem::new, ChiselItems::getChiselProps);
+        PALETTE_BUILDER = register("palette_builder", Item::new, Item.Properties::new);
     }
 
     private static Item.Properties getChiselProps() {

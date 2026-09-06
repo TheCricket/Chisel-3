@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 07"
+  },
+  "description": {
+    "text": "Dummy guide seven tests absolute guide indexing after pagination."
+  },
+  "icon": "minecraft:deepslate",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "Selecting the second row of contents page two should open guide seven, not guide two."
+      }
+    }
+  ]
+}

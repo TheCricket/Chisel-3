@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 02"
+  },
+  "description": {
+    "text": "Dummy guide two for testing contents row selection."
+  },
+  "icon": "minecraft:cobblestone",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "This entry confirms that the second row opens the second guide."
+      }
+    }
+  ]
+}

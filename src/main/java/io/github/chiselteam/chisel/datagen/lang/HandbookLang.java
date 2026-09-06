@@ -10,13 +10,24 @@ public final class HandbookLang {
     public static void addTranslations(LangHelper lang) {
         addGeneralGuideTranslations(lang);
         addUnderstandingBlockPalettes(lang);
+        addCategories(lang);
     }
 
     private static void addGeneralGuideTranslations(LangHelper lang) {
         lang.add("chisel.builders_handbook.title", "Builders Handbook");
         lang.add("chisel.builders_handbook.contents", "Table of Contents");
-        lang.add("chisel.builders_handbook.intro", "This book is meant to serve as inspiration for your builds, as well as helpful guides to take your builds to the next level!");
-        lang.add("chisel.builders_handbook.empty", "There are no handbook guides available");
+        lang.add("chisel.builders_handbook.intro", "This book is meant to serve as inspiration for your builds, as well as helpful entries to take your builds to the next level!");
+        lang.add("chisel.builders_handbook.empty", "There are no handbook entries available");
+    }
+
+    private static void addCategories(LangHelper lang) {
+        lang.add("chisel.builders_handbook.all_guides", "All Guides");
+        lang.add("chisel.builders_handbook.all_guides.description", "Browse every available guide, including guides without a category.");
+        lang.add("chisel.builders_handbook.guides", "Guides");
+        lang.add("chisel.handbook.category.getting_started.title", "Getting Started");
+        lang.add("chisel.handbook.category.getting_started.description", "Learn the basics of choosing materials and planning your builds.");
+        lang.add("chisel.handbook.category.palettes.title", "Palettes");
+        lang.add("chisel.handbook.category.palettes.description", "Discover combinations of blocks and how to balance their roles and weights.");
     }
 
     private static void addUnderstandingBlockPalettes(LangHelper lang) {

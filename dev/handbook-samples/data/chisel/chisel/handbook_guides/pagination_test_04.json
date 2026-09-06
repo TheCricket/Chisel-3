@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 04"
+  },
+  "description": {
+    "text": "Dummy guide four for testing contents row spacing."
+  },
+  "icon": "minecraft:bricks",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "The fourth row should remain completely inside the right-hand page."
+      }
+    }
+  ]
+}

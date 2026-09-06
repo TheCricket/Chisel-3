@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "chisel.handbook.category.palettes.title"
+  },
+  "description": {
+    "translate": "chisel.handbook.category.palettes.description"
+  },
+  "icon": "minecraft:stone_bricks",
+  "sort_order": 10
+}

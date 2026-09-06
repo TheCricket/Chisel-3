@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 05"
+  },
+  "description": {
+    "text": "Dummy guide five marks the end of the first contents page."
+  },
+  "icon": "minecraft:oak_planks",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:tip",
+      "text": {
+        "text": "This should be the final guide row before using the next-page arrow."
+      }
+    }
+  ]
+}

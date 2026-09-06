@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 03"
+  },
+  "description": {
+    "text": "Dummy guide three for testing contents row spacing."
+  },
+  "icon": "minecraft:andesite",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "The icon, title, hover area, and click area should all align on row three."
+      }
+    }
+  ]
+}

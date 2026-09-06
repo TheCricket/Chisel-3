@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Chisel handbook layout and navigation samples (development only)",
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": [
+      101,
+      1
+    ]
+  }
+}

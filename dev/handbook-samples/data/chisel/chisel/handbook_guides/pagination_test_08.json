@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 08"
+  },
+  "description": {
+    "text": "Dummy guide eight tests hover positioning after pagination."
+  },
+  "icon": "minecraft:tuff",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "The highlighted row and selected guide should continue to match on later pages."
+      }
+    }
+  ]
+}

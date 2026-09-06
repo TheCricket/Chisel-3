@@ -21,5 +21,6 @@ public class RegisterPayloadHandlersEventHandler {
         registrar.playToClient(MossChunkPacket.TYPE, MossChunkPacket.STREAM_CODEC, MossChunkPacket::handle);
         registrar.playToClient(MossDeltaPacket.TYPE, MossDeltaPacket.STREAM_CODEC, MossDeltaPacket::handle);
         registrar.playToClient(OpenHandbookPacket.TYPE, OpenHandbookPacket.STREAM_CODEC, OpenHandbookPacket::handle);
+        registrar.playToClient(HandbookGuidesPacket.TYPE, HandbookGuidesPacket.STREAM_CODEC);
     }
 }

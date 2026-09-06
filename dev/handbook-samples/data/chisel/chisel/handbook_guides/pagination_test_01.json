@@ -1,0 +1,20 @@
+{
+  "title": {
+    "text": "Pagination Test 01"
+  },
+  "description": {
+    "text": "Dummy guide one for testing the first contents page."
+  },
+  "icon": "minecraft:stone",
+  "categories": [
+    "chisel:testing"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "text": "If this guide opens, the first visible contents entry resolves correctly."
+      }
+    }
+  ]
+}

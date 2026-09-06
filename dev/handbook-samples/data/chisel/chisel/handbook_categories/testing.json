@@ -1,0 +1,10 @@
+{
+  "title": {
+    "text": "Testing"
+  },
+  "description": {
+    "text": "Sample guides for checking handbook layout and navigation."
+  },
+  "icon": "minecraft:redstone_block",
+  "sort_order": 20
+}
