@@ -24,4 +24,9 @@ public class AutoChiselInputSlot extends Slot {
         }
         return true;
     }
+
+    @Override
+    public int getMaxStackSize() {
+        return 64;
+    }
 }
