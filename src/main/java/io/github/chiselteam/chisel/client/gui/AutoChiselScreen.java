@@ -10,8 +10,8 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.Rect2i;
@@ -37,6 +37,7 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
     private static final int TEXTURE_WIDTH = 256;
     private static final int TEXTURE_HEIGHT = 256;
     private static final Identifier RECIPE_BOOK_TEXTURE = Identifier.withDefaultNamespace("textures/gui/recipe_book.png");
+    public static final WidgetSprites RECIPE_BUTTON_SPRITES = new WidgetSprites(Identifier.withDefaultNamespace("recipe_book/button"), Identifier.withDefaultNamespace("recipe_book/button_highlighted"));
     private static final Identifier SLOT_CRAFTABLE_SPRITE = Identifier.withDefaultNamespace("recipe_book/slot_craftable");
     private static final int PICKER_COLUMNS = 5;
     private static final int PICKER_ROWS = 4;
@@ -66,7 +67,7 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
         leftPos = updateScreenPosition();
 
         pickerToggleButton = addRenderableWidget(new ImageButton(
-                leftPos + 78, topPos + 7, 20, 18, RecipeBookComponent.RECIPE_BUTTON_SPRITES, _ -> togglePicker()));
+                leftPos + 78, topPos + 7, 20, 18, RECIPE_BUTTON_SPRITES, _ -> togglePicker()));
 
         searchBox = new EditBox(font, pickerLeft() + 25, pickerTop() + 16, 96, 14, Component.translatable("itemGroup.search"));
         searchBox.setMaxLength(50);
