@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.18]
+
+### Added
+
+- **Measuring Tape**: Added a tool for measuring distances between blocks, with an in-world overlay.
+- **Block Families**: Added Blackstone, Gilded Blackstone, Mossy Blackstone, Sea Lantern, Tuff, Calcite, Dripstone block
+  sets.
+- **Concrete**: Added colored concrete variants.
+- **Variants**: Expanded Quartz, Ancient Stone, Antiblock, and numerous other block families.
+- **Compatibility**: Expanded modded block families, including Applied Energistics 2
+  and Occultism.
+- **Pillars**: Added support for placing pillar variants along different axes.
+
+### Changed
+
+- **Chisel Menu**: Updated the layout, search and scrolling controls, and block preview with smoother rotation.
+- **Ball o' Moss**: Reworked moss into persistent overlays with randomized textures and a tag for blocks that cannot
+  be mossed.
+- **Antiblock**: Updated connected textures and shadeless rendering.
+- **Dependencies**: Updated NeoForge to `26.1.2.106`, JEI to `29.6.2.31`, and CTM to `26.1.2.8`.
+
+### Fixed
+
+- **Auto Chisel**: Fixed compatibility with FastWorkbench and corrected stack limits in input slots and item-pipe
+  automation.
+- **Builder's Guide**: Fixed block placement and preview handling so filled positions are skipped.
+- **Glass and Ice**: Fixed connected-texture rendering and inventory models.
+- **Bookshelves**: Chisel bookshelves now contribute to enchanting power.
+- **Block Tags**: Corrected mining tools and harvest requirements, and added missing Marble and Limestone item tags.
+- **Creative Tabs**: Added missing block families.
+- **Textures and Models**: Fixed Futura screen jitter and various missing or incorrect textures and generated models.
+
+## [26.1.2.17]
+
+### Fixed
+
+- **Dedicated Servers**: Fixed crashes caused by client-only key mappings, event handlers, and model code loading
+  on the server.
+- **Quartz**: Added the missing pillar bottom texture.
+
 ## [26.1.2.16]
 
 ### Added
