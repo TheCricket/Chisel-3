@@ -2,8 +2,7 @@ package io.github.chiselteam.chisel.api.family;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
@@ -60,11 +59,9 @@ public class VariantFamily {
 
     public List<Variant> getAllVariants() {
         List<Variant> all = new ArrayList<>(variants.size() + hiddenVariants.size());
-        if (Minecraft.getInstance() != null) {
-            if (Minecraft.getInstance().level instanceof ClientLevel level) {
-                for (var holder : level.registryAccess().lookupOrThrow(Registries.BLOCK).getTagOrEmpty(tag)) {
-                    all.add(new Variant(holder.value(), this));
-                }
+        if (tag != null) {
+            for (var holder : BuiltInRegistries.BLOCK.getTagOrEmpty(tag)) {
+                all.add(new Variant(holder.value(), this));
             }
         }
         all.addAll(variants);
