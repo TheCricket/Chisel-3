@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/calcite/calcite_pillar_ionic_round-side",
+    "bottom": "chisel:block/calcite/calcite_pillar_ionic_round-bottom",
+    "overlay_bottom": "chisel:block/calcite/calcite_pillar_ionic_round-bottom",
+    "overlay_side_connected": "chisel:block/calcite/calcite_pillar_ionic_round-side-ctm",
+    "overlay_texture": "chisel:block/calcite/calcite_pillar_ionic_round-side",
+    "overlay_top": "chisel:block/calcite/calcite_pillar_ionic_round-top",
+    "overlay_vertical": "chisel:block/calcite/calcite_pillar_ionic_round-side-ctm",
+    "particle": "chisel:block/calcite/calcite_pillar_ionic_round-side",
+    "side": "chisel:block/calcite/calcite_pillar_ionic_round-side",
+    "top": "chisel:block/calcite/calcite_pillar_ionic_round-top"
+  }
+}

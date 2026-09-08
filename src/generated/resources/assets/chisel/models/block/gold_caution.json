@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/gold/gold_caution"
+    "all": "chisel:block/gold/gold_caution",
+    "overlay_connected": "chisel:block/gold/gold_caution-ctm",
+    "overlay_texture": "chisel:block/gold/gold_caution",
+    "particle": "chisel:block/gold/gold_caution"
   }
 }

@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.integration.jei;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.datagen.ChiselVariants;
-import io.github.chiselteam.chisel.inventory.screen.AutoChiselScreen;
+import io.github.chiselteam.chisel.api.ChiselAPI;
+import io.github.chiselteam.chisel.client.gui.AutoChiselScreen;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -31,7 +31,7 @@ public class JEICompatibility implements IModPlugin {
 
     @Override
     public void registerRecipes(@NonNull IRecipeRegistration registration) {
-        registration.addRecipes(ChiselRecipeCategory.TYPE, ChiselVariants.getVariantFamilies().stream()
+        registration.addRecipes(ChiselRecipeCategory.TYPE, ChiselAPI.getFamilies(Minecraft.getInstance().level.registryAccess()).stream()
                 .map(family -> new ChiselRecipe(family, Minecraft.getInstance().level.registryAccess()))
                 .collect(Collectors.toList()));
     }

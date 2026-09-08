@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/bronze", "required": false},
     {"id": "ftbmaterials:bronze_block", "required": false},
     {"id": "alltheores:bronze_block", "required": false}
   ]

@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.block.entity;
 
-import io.github.chiselteam.chisel.core.building.ChiselBuildingMode;
+import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;
@@ -14,7 +14,6 @@ import net.minecraft.world.level.storage.ValueOutput;
 import org.jspecify.annotations.NonNull;
 
 import java.util.List;
-import java.util.Optional;
 
 public class BuildersGuideBlockEntity extends BlockEntity {
 
@@ -23,6 +22,13 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     private int length = 8;
     private int width  = 8;
     private int height = 8;
+
+    private List<BlockPos> positions = List.of();
+    private ChiselBuildingMode cachedMode;
+    private BlockPos cachedOrigin;
+    private int cachedLength;
+    private int cachedWidth;
+    private int cachedHeight;
 
     private DyeColor color = DyeColor.WHITE;
 
@@ -40,9 +46,9 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         width  = clamp(input.getIntOr("width",  8));
         height = clamp(input.getIntOr("height", 8));
 
-        Optional<String> modeId = input.getString("mode");
+        var modeId = input.getString("mode");
         if (modeId.isPresent()) {
-            Identifier id = Identifier.tryParse(modeId.get());
+            var id = Identifier.tryParse(modeId.get());
             if (id != null) {
                 ChiselBuildingModes.REGISTRY.getOptional(id).ifPresent(m -> this.buildingMode = m);
             }
@@ -94,14 +100,24 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     }
 
     public List<BlockPos> getGhostBlocks() {
-        return buildingMode.getGhostBlocks(getBlockPos(), length, width, height);
+        var origin = getBlockPos();
+        if (cachedMode != buildingMode || !origin.equals(cachedOrigin) || cachedLength != length || cachedWidth != width || cachedHeight != height) {
+            positions = buildingMode.getGhostBlocks(origin, length, width, height);
+            cachedMode = buildingMode;
+            cachedOrigin = origin;
+            cachedLength = length;
+            cachedWidth = width;
+            cachedHeight = height;
+        }
+
+        if (level == null) return positions;
+        return positions.stream().filter(level::isEmptyBlock).toList();
     }
 
     public void placeBlock(Block block) {
-        if (level != null) {
-            buildingMode.getGhostBlocks(getBlockPos(), length, width, height);
-            buildingMode.placeBlock(level, block);
-        }
+        if (level == null || level.isClientSide()) return;
+        var remaining = getGhostBlocks();
+        if (!remaining.isEmpty()) level.setBlockAndUpdate(remaining.getFirst(), block.defaultBlockState());
     }
 
     private static int clamp(int value) {
@@ -110,9 +126,8 @@ public class BuildersGuideBlockEntity extends BlockEntity {
 
     private void markDirty() {
         setChanged();
-        if (level != null && !level.isClientSide()) {
+        if (level != null && !level.isClientSide())
             level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
-        }
     }
 
     private static @NonNull ChiselBuildingMode defaultMode() {

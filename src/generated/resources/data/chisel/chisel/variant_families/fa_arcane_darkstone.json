@@ -1,0 +1,59 @@
+{
+  "family_name": "fa_arcane_darkstone",
+  "tag": "c:chisel/fa_arcane_darkstone",
+  "variants": [
+    {
+      "block": "chisel:arcane_border",
+      "model_type": "connected",
+      "name": "arcane_border"
+    },
+    {
+      "block": "chisel:arcane_crack",
+      "model_type": "v9",
+      "name": "arcane_crack"
+    },
+    {
+      "block": "chisel:arcane_matrix",
+      "model_type": "v9",
+      "name": "arcane_matrix"
+    },
+    {
+      "block": "chisel:arcane_tile",
+      "model_type": "connected",
+      "name": "arcane_tile"
+    },
+    {
+      "block": "chisel:arcane_big_brick",
+      "model_type": "connected",
+      "name": "arcane_big_brick"
+    },
+    {
+      "block": "chisel:arcane_border_brain",
+      "model_type": "connected",
+      "name": "arcane_border_brain"
+    },
+    {
+      "block": "chisel:arcane_conduit",
+      "model_type": "connected",
+      "name": "arcane_conduit"
+    },
+    {
+      "block": "chisel:arcane_moon_engrave",
+      "name": "arcane_moon_engrave"
+    },
+    {
+      "block": "chisel:arcane_moon_glow",
+      "name": "arcane_moon_glow"
+    },
+    {
+      "block": "chisel:arcane_runes",
+      "model_type": "v16",
+      "name": "arcane_runes"
+    },
+    {
+      "block": "chisel:arcane_runes_glow",
+      "model_type": "v16",
+      "name": "arcane_runes_glow"
+    }
+  ]
+}

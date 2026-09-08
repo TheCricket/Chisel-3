@@ -1,12 +1,16 @@
 package io.github.chiselteam.chisel;
 
+import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.config.ChiselConfigurations;
+import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.family.AddonFamilyRegistry;
 import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 
 @Mod(Chisel.MODID)
 public class Chisel {
@@ -16,11 +20,13 @@ public class Chisel {
     public Chisel(ModContainer mod, IEventBus bus) {
         ChiselConfigurations.init(mod);
         ChiselModelHandlers.registerAll();
+        ChiselFamilies.register();
         ChiselModes.register(bus);
         ChiselBuildingModes.register(bus);
         ChiselDataComponents.DATA_COMPONENTS.register(bus);
+        ChiselAttachments.ATTACHMENTS.register(bus);
         ChiselSounds.SOUNDS.register(bus);
-        ChiselBlocks.registerBlocks(bus);
+        ChiselBlocks.register(bus);
         ChiselBlockEntities.BLOCK_ENTITIES.register(bus);
         ChiselItems.ITEMS.register(bus);
         ChiselTabs.CREATIVE_MODE_TABS.register(bus);
@@ -30,10 +36,15 @@ public class Chisel {
         ChiselStats.STATS.register(bus);
 
         bus.addListener(this::commonSetup);
+        bus.addListener(this::loadComplete);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(ChiselFluidInteractions::init);
+    }
+
+    private void loadComplete(FMLLoadCompleteEvent event) {
+        event.enqueueWork(AddonFamilyRegistry::freeze);
     }
 
     public static Identifier prefix(String resource) {

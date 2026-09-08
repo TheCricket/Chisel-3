@@ -1,0 +1,13 @@
+﻿{
+  "values": [
+    {"id": "#rechiseled:cobbled_deepslate", "required": false},
+    {"id": "mcwpaths:deepslate_running_bond", "required": false},
+    {"id": "mcwpaths:deepslate_windmill_weave", "required": false},
+    {"id": "mcwpaths:deepslate_flagstone", "required": false},
+    {"id": "mcwpaths:deepslate_crystal_floor", "required": false},
+    {"id": "mcwpaths:cobble_deepslate_running_bond", "required": false},
+    {"id": "mcwpaths:cobble_deepslate_windmill_weave", "required": false},
+    {"id": "mcwpaths:cobble_deepslate_flagstone", "required": false},
+    {"id": "mcwpaths:cobble_deepslate_crystal_floor", "required": false}
+  ]
+}

@@ -1,0 +1,6 @@
+﻿{
+  "values": [
+    {"id": "#c:storage_blocks/iron", "required": false},
+    {"id": "#rechiseled:iron_block", "required": false}
+  ]
+}

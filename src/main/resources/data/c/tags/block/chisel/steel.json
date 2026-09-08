@@ -1,6 +1,10 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/steel", "required": false},
     {"id": "ftbmaterials:steel_block", "required": false},
-    {"id": "alltheores:steel_block", "required": false}
+    {"id": "alltheores:steel_block", "required": false},
+    {"id": "energizedpower:steel_block", "required": false},
+    {"id": "railcraft:steel_block", "required": false},
+    {"id": "oritech:steel", "required": false}
   ]
 }

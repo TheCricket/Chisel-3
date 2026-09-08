@@ -1,18 +1,11 @@
 package io.github.chiselteam.chisel.entity;
 
-import io.github.chiselteam.chisel.projectile.BallOMossData;
-import io.github.chiselteam.chisel.datagen.registry.ChiselBallOMossRegistry;
-import io.github.chiselteam.chisel.registry.ChiselEntities;
-import io.github.chiselteam.chisel.registry.ChiselItems;
-import io.github.chiselteam.chisel.registry.ChiselSounds;
+import io.github.chiselteam.chisel.network.MossDeltaPacket;
+import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
-import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
@@ -20,11 +13,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.neoforged.neoforge.network.PacketDistributor;
 import org.jspecify.annotations.NonNull;
-
-import java.util.*;
 
 public class BallOMoss extends ThrowableItemProjectile {
     public BallOMoss(EntityType<? extends BallOMoss> type, Level level) {
@@ -63,39 +56,17 @@ public class BallOMoss extends ThrowableItemProjectile {
     }
 
     private void turnToMoss(BlockPos pos) {
-        Block mossBlock = getMossBlock(level().getBlockState(pos), level().registryAccess());
-        if(mossBlock != null) {
-            level().setBlockAndUpdate(pos, mossBlock.defaultBlockState());
+        if (!(level() instanceof ServerLevel serverLevel)) return;
+        BlockState state = serverLevel.getBlockState(pos);
+        if (state.getRenderShape() != RenderShape.MODEL || !Block.isShapeFullBlock(state.getOcclusionShape())) return;
+        if (serverLevel.registryAccess().lookupOrThrow(Registries.BLOCK).getOrThrow(ChiselTags.CANT_BE_MOSSED).stream().anyMatch(holder -> holder.is(state.getBlock().builtInRegistryHolder().getKey())))
+            return;
+        var moss = serverLevel.getData(ChiselAttachments.MOSS);
+        int texture = serverLevel.getRandom().nextInt(10) + 1;
+        if (moss.add(pos, texture)) {
+            serverLevel.setData(ChiselAttachments.MOSS, moss);
+            PacketDistributor.sendToPlayersTrackingChunk(serverLevel, serverLevel.getChunkAt(pos).getPos(), new MossDeltaPacket(pos, true, texture));
         }
-    }
-
-    private Block getMossBlock(BlockState block, RegistryAccess registryAccess) {
-        List<BallOMossData> dataList = new ArrayList<>();
-
-        Registry<BallOMossData> registry = Objects.requireNonNull(registryAccess
-                .lookup(ChiselBallOMossRegistry.KEY)
-                .orElseThrow(() -> new IllegalStateException("Ball o' moss registry is not available on the server"))
-        );
-
-        for (Map.Entry<ResourceKey<BallOMossData>, BallOMossData> e : registry.entrySet()) {
-            dataList.add(e.getValue());
-        }
-
-        for(BallOMossData data : dataList) {
-            if(data.getInput().right().isPresent()) {
-                TagKey<Block> tag = data.getInput().right().get();
-                if(block.is(tag)) {
-                    return BuiltInRegistries.BLOCK.getValue(data.getMossBlock());
-                }
-            } else {
-                Block input = BuiltInRegistries.BLOCK.getValue(data.getInput().left().get());
-                if(block.is(input)) {
-                    return BuiltInRegistries.BLOCK.getValue(data.getMossBlock());
-                }
-            }
-        }
-
-        return null;
     }
 
     @Override

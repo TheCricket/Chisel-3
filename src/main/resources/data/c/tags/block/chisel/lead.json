@@ -1,6 +1,8 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/lead", "required": false},
     {"id": "ftbmaterials:lead_block", "required": false},
-    {"id": "alltheores:lead_block", "required": false}
+    {"id": "alltheores:lead_block", "required": false},
+    {"id": "railcraft:lead_block", "required": false}
   ]
 }

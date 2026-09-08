@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.client.overlay;
 
-import io.github.chiselteam.chisel.core.mode.ChiselMode;
-import io.github.chiselteam.chisel.events.client.ChiselModeSelectionHandler;
+import io.github.chiselteam.chisel.event.client.ChiselModeSelectionHandler;
+import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;

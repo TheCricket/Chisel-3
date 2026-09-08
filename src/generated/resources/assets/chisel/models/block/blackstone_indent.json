@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/blackstone/blackstone_indent",
+    "overlay_connected": "chisel:block/blackstone/blackstone_indent-ctm",
+    "overlay_texture": "chisel:block/blackstone/blackstone_indent",
+    "particle": "chisel:block/blackstone/blackstone_indent"
+  }
+}

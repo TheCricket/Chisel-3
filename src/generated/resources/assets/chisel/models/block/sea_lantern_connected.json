@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass_no_glow",
+  "textures": {
+    "all": "chisel:block/sea_lantern/sea_lantern_connected",
+    "base_texture": "chisel:block/sea_lantern/sea_lantern_connected-bg",
+    "layer0": "chisel:block/sea_lantern/sea_lantern_connected-bg",
+    "layer1": "chisel:block/sea_lantern/sea_lantern_connected",
+    "overlay_connected": "chisel:block/sea_lantern/sea_lantern_connected-ctm",
+    "overlay_texture": "chisel:block/sea_lantern/sea_lantern_connected",
+    "particle": "chisel:block/sea_lantern/sea_lantern_connected"
+  }
+}

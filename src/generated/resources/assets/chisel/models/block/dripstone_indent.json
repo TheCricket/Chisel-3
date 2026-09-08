@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dripstone/dripstone_indent",
+    "overlay_connected": "chisel:block/dripstone/dripstone_indent-ctm",
+    "overlay_texture": "chisel:block/dripstone/dripstone_indent",
+    "particle": "chisel:block/dripstone/dripstone_indent"
+  }
+}

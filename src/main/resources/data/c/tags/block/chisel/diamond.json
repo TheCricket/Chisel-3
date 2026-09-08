@@ -1,0 +1,6 @@
+﻿{
+  "values": [
+    {"id": "#c:storage_blocks/diamond", "required": false},
+    {"id": "#rechiseled:diamond_block", "required": false}
+  ]
+}

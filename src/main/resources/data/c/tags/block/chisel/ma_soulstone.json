@@ -1,0 +1,7 @@
+﻿{
+  "values": [
+    {"id": "mysticalagriculture:soulstone", "required": false},
+    {"id": "mysticalagriculture:soulstone_bricks", "required": false},
+    {"id": "mysticalagriculture:soulstone_chiseled_bricks", "required": false}
+  ]
+}

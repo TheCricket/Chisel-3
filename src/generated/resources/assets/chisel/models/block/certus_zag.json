@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/certus/certus_zag",
-    "overlay_2x2": "chisel:block/certus/certus_zag-ctm",
-    "particle": "chisel:block/certus/certus_zag"
+    "all": "chisel:block/ae2_certus/certus_zag",
+    "overlay_2x2": "chisel:block/ae2_certus/certus_zag-2x2",
+    "particle": "chisel:block/ae2_certus/certus_zag"
   }
 }

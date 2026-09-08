@@ -1,0 +1,14 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:holystone", "required": false},
+    {"id": "aether_ii:holystone_bricks", "required": false},
+    {"id": "aether_ii:holystone_flagstones", "required": false},
+    {"id": "aether_ii:holystone_keystone", "required": false},
+    {"id": "aether_ii:holystone_headstone", "required": false},
+    {"id": "aether_ii:holystone_base_bricks", "required": false},
+    {"id": "aether_ii:holystone_capstone_bricks", "required": false},
+    {"id": "aether_ii:holystone_base_pillar", "required": false},
+    {"id": "aether_ii:holystone_capstone_pillar", "required": false},
+    {"id": "aether_ii:holystone_pillar", "required": false}
+  ]
+}

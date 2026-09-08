@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/quartz/quartz_shiny_connected",
+    "overlay_connected": "chisel:block/quartz/quartz_shiny_connected-ctm",
+    "overlay_texture": "chisel:block/quartz/quartz_shiny_connected",
+    "particle": "chisel:block/quartz/quartz_shiny_connected"
+  }
+}

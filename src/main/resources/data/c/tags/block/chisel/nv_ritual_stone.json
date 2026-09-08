@@ -1,0 +1,11 @@
+﻿{
+  "values": [
+    {"id": "neovitae:ritual_stone", "required": false},
+    {"id": "neovitae:air_ritual_stone", "required": false},
+    {"id": "neovitae:water_ritual_stone", "required": false},
+    {"id": "neovitae:fire_ritual_stone", "required": false},
+    {"id": "neovitae:earth_ritual_stone", "required": false},
+    {"id": "neovitae:dusk_ritual_stone", "required": false},
+    {"id": "neovitae:dawn_ritual_stone", "required": false}
+  ]
+}

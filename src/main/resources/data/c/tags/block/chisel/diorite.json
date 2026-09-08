@@ -1,5 +1,6 @@
 ﻿{
   "values": [
+    {"id": "#rechiseled:diorite", "required": false},
     {"id": "mcwpaths:diorite_running_bond", "required": false},
     {"id": "mcwpaths:diorite_windmill_weave", "required": false},
     {"id": "mcwpaths:diorite_flagstone", "required": false},

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/neovitae/neovitae_carved"
+    "all": "chisel:block/nv_rune/neovitae_carved"
   }
 }

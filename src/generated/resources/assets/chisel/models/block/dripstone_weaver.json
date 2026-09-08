@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dripstone/dripstone_weaver",
+    "overlay_connected": "chisel:block/dripstone/dripstone_weaver-ctm",
+    "overlay_texture": "chisel:block/dripstone/dripstone_weaver",
+    "particle": "chisel:block/dripstone/dripstone_weaver"
+  }
+}

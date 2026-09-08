@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/neovitae/neovitae_diagonal_bricks_2",
-    "overlay_connected": "chisel:block/neovitae/neovitae_diagonal_bricks_2-ctm",
-    "overlay_texture": "chisel:block/neovitae/neovitae_diagonal_bricks_2",
-    "particle": "chisel:block/neovitae/neovitae_diagonal_bricks_2"
+    "all": "chisel:block/nv_rune/neovitae_diagonal_bricks_2",
+    "overlay_connected": "chisel:block/nv_rune/neovitae_diagonal_bricks_2-ctm",
+    "overlay_texture": "chisel:block/nv_rune/neovitae_diagonal_bricks_2",
+    "particle": "chisel:block/nv_rune/neovitae_diagonal_bricks_2"
   }
 }

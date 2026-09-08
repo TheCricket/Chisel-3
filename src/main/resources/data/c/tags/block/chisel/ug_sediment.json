@@ -1,0 +1,11 @@
+{
+  "values": [
+    {"id": "undergarden:sediment", "required": false},
+    {"id": "undergarden:sediment_stone", "required": false},
+    {"id": "undergarden:polished_sediment_stone", "required": false},
+    {"id": "undergarden:sediment_stone_bricks", "required": false},
+    {"id": "undergarden:cracked_sediment_stone_bricks", "required": false},
+    {"id": "undergarden:chiseled_sediment_stone", "required": false},
+    {"id": "undergarden:smooth_sediment_stone", "required": false}
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "family_name": "blackstone",
+  "tag": "c:chisel/blackstone",
+  "variants": [
+    {
+      "block": "minecraft:blackstone",
+      "name": "block.minecraft.blackstone"
+    },
+    {
+      "block": "minecraft:chiseled_polished_blackstone",
+      "name": "block.minecraft.chiseled_polished_blackstone"
+    },
+    {
+      "block": "minecraft:polished_blackstone",
+      "name": "block.minecraft.polished_blackstone"
+    },
+    {
+      "block": "minecraft:polished_blackstone_bricks",
+      "name": "block.minecraft.polished_blackstone_bricks"
+    },
+    {
+      "block": "chisel:blackstone_array",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_array"
+    },
+    {
+      "block": "chisel:blackstone_border_square",
+      "model_type": "connected",
+      "name": "blackstone_border_square"
+    },
+    {
+      "block": "chisel:blackstone_braid",
+      "name": "blackstone_braid"
+    },
+    {
+      "block": "chisel:blackstone_braid_encased",
+      "model_type": "connected",
+      "name": "blackstone_braid_encased"
+    },
+    {
+      "block": "chisel:blackstone_bricks_cracked",
+      "name": "blackstone_bricks_cracked"
+    },
+    {
+      "block": "chisel:blackstone_bricks_encased",
+      "model_type": "connected",
+      "name": "blackstone_bricks_encased"
+    },
+    {
+      "block": "chisel:blackstone_bricks_indent",
+      "name": "blackstone_bricks_indent"
+    },
+    {
+      "block": "chisel:blackstone_bricks_inlayed",
+      "name": "blackstone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:blackstone_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_bricks_large"
+    },
+    {
+      "block": "chisel:blackstone_bricks_small",
+      "name": "blackstone_bricks_small"
+    },
+    {
+      "block": "chisel:blackstone_bricks_soft",
+      "name": "blackstone_bricks_soft"
+    },
+    {
+      "block": "chisel:blackstone_bricks_solid",
+      "name": "blackstone_bricks_solid"
+    },
+    {
+      "block": "chisel:blackstone_bricks_triple",
+      "name": "blackstone_bricks_triple"
+    },
+    {
+      "block": "chisel:blackstone_bricks_vertical",
+      "name": "blackstone_bricks_vertical"
+    },
+    {
+      "block": "chisel:blackstone_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "blackstone_chaotic"
+    },
+    {
+      "block": "chisel:blackstone_chaotic_medium",
+      "name": "blackstone_chaotic_medium"
+    },
+    {
+      "block": "chisel:blackstone_chaotic_small",
+      "name": "blackstone_chaotic_small"
+    },
+    {
+      "block": "chisel:blackstone_checker",
+      "name": "blackstone_checker"
+    },
+    {
+      "block": "chisel:blackstone_checker_small",
+      "name": "blackstone_checker_small"
+    },
+    {
+      "block": "chisel:blackstone_circular",
+      "model_type": "connected",
+      "name": "blackstone_circular"
+    },
+    {
+      "block": "chisel:blackstone_cobble",
+      "name": "blackstone_cobble"
+    },
+    {
+      "block": "chisel:blackstone_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "blackstone_cuts"
+    },
+    {
+      "block": "chisel:blackstone_dent",
+      "model_type": "connected",
+      "name": "blackstone_dent"
+    },
+    {
+      "block": "chisel:blackstone_french_1",
+      "name": "blackstone_french_1"
+    },
+    {
+      "block": "chisel:blackstone_french_2",
+      "name": "blackstone_french_2"
+    },
+    {
+      "block": "chisel:blackstone_indent",
+      "model_type": "connected",
+      "name": "blackstone_indent"
+    },
+    {
+      "block": "chisel:blackstone_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_jellybean"
+    },
+    {
+      "block": "chisel:blackstone_layers",
+      "name": "blackstone_layers"
+    },
+    {
+      "block": "chisel:blackstone_layers_connected",
+      "model_type": "connected",
+      "name": "blackstone_layers_connected"
+    },
+    {
+      "block": "chisel:blackstone_line_horizontal",
+      "name": "blackstone_line_horizontal"
+    },
+    {
+      "block": "chisel:blackstone_line_vertical",
+      "name": "blackstone_line_vertical"
+    },
+    {
+      "block": "chisel:blackstone_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "blackstone_meander_horizontal"
+    },
+    {
+      "block": "chisel:blackstone_meander_vertical",
+      "model_type": "ctmv",
+      "name": "blackstone_meander_vertical"
+    },
+    {
+      "block": "chisel:blackstone_mosaic",
+      "model_type": "connected",
+      "name": "blackstone_mosaic"
+    },
+    {
+      "block": "chisel:blackstone_ornate_small",
+      "name": "blackstone_ornate_small"
+    },
+    {
+      "block": "chisel:blackstone_panel",
+      "name": "blackstone_panel"
+    },
+    {
+      "block": "chisel:blackstone_pillar",
+      "model_type": "top_bottom_side",
+      "name": "blackstone_pillar"
+    },
+    {
+      "block": "chisel:blackstone_pillar_basic",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_basic"
+    },
+    {
+      "block": "chisel:blackstone_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:blackstone_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:blackstone_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_basic_round"
+    },
+    {
+      "block": "chisel:blackstone_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:blackstone_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "blackstone_pillar_classic"
+    },
+    {
+      "block": "chisel:blackstone_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "blackstone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:blackstone_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_ionic"
+    },
+    {
+      "block": "chisel:blackstone_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:blackstone_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:blackstone_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:blackstone_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:blackstone_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:blackstone_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:blackstone_pillar_meander",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_meander"
+    },
+    {
+      "block": "chisel:blackstone_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:blackstone_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:blackstone_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_meander_round"
+    },
+    {
+      "block": "chisel:blackstone_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "blackstone_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:blackstone_plate",
+      "name": "blackstone_plate"
+    },
+    {
+      "block": "chisel:blackstone_plate_connected",
+      "model_type": "connected",
+      "name": "blackstone_plate_connected"
+    },
+    {
+      "block": "chisel:blackstone_polished",
+      "name": "blackstone_polished"
+    },
+    {
+      "block": "chisel:blackstone_polished_encased",
+      "model_type": "connected",
+      "name": "blackstone_polished_encased"
+    },
+    {
+      "block": "chisel:blackstone_prism",
+      "name": "blackstone_prism"
+    },
+    {
+      "block": "chisel:blackstone_raw",
+      "name": "blackstone_raw"
+    },
+    {
+      "block": "chisel:blackstone_road",
+      "name": "blackstone_road"
+    },
+    {
+      "block": "chisel:blackstone_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_slanted"
+    },
+    {
+      "block": "chisel:blackstone_tiles",
+      "name": "blackstone_tiles"
+    },
+    {
+      "block": "chisel:blackstone_tiles_large",
+      "model_type": "connected",
+      "name": "blackstone_tiles_large"
+    },
+    {
+      "block": "chisel:blackstone_tiles_small",
+      "name": "blackstone_tiles_small"
+    },
+    {
+      "block": "chisel:blackstone_twisted",
+      "model_type": "top_bottom_side",
+      "name": "blackstone_twisted"
+    },
+    {
+      "block": "chisel:blackstone_weaver",
+      "model_type": "connected",
+      "name": "blackstone_weaver"
+    },
+    {
+      "block": "chisel:blackstone_zag",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_zag"
+    },
+    {
+      "block": "chisel:blackstone_crate",
+      "model_type": "connected",
+      "name": "blackstone_crate"
+    },
+    {
+      "block": "chisel:blackstone_herringbone",
+      "name": "blackstone_herringbone"
+    },
+    {
+      "block": "chisel:blackstone_herringbone_encased",
+      "model_type": "connected",
+      "name": "blackstone_herringbone_encased"
+    },
+    {
+      "block": "chisel:blackstone_medallion",
+      "name": "blackstone_medallion"
+    },
+    {
+      "block": "chisel:blackstone_medallion_encased",
+      "model_type": "connected",
+      "name": "blackstone_medallion_encased"
+    },
+    {
+      "block": "chisel:blackstone_dots",
+      "name": "blackstone_dots"
+    },
+    {
+      "block": "chisel:blackstone_dots_encased",
+      "model_type": "connected",
+      "name": "blackstone_dots_encased"
+    },
+    {
+      "block": "chisel:blackstone_heart",
+      "name": "blackstone_heart"
+    },
+    {
+      "block": "chisel:blackstone_star",
+      "name": "blackstone_star"
+    },
+    {
+      "block": "chisel:blackstone_plating",
+      "name": "blackstone_plating"
+    },
+    {
+      "block": "chisel:blackstone_lodestone",
+      "name": "blackstone_lodestone"
+    },
+    {
+      "block": "chisel:blackstone_lodestone_connected",
+      "model_type": "connected",
+      "name": "blackstone_lodestone_connected"
+    },
+    {
+      "block": "chisel:blackstone_plank",
+      "name": "blackstone_plank"
+    },
+    {
+      "block": "chisel:blackstone_plank_connected",
+      "model_type": "connected",
+      "name": "blackstone_plank_connected"
+    },
+    {
+      "block": "chisel:blackstone_frame",
+      "name": "blackstone_frame"
+    },
+    {
+      "block": "chisel:blackstone_panel_1",
+      "name": "blackstone_panel_1"
+    },
+    {
+      "block": "chisel:blackstone_panel_2",
+      "name": "blackstone_panel_2"
+    },
+    {
+      "block": "chisel:blackstone_panel_3",
+      "name": "blackstone_panel_3"
+    },
+    {
+      "block": "chisel:blackstone_skull_creeper",
+      "name": "blackstone_skull_creeper"
+    },
+    {
+      "block": "chisel:blackstone_skull_skeleton",
+      "name": "blackstone_skull_skeleton"
+    },
+    {
+      "block": "chisel:blackstone_stripes",
+      "name": "blackstone_stripes"
+    },
+    {
+      "block": "chisel:blackstone_stripes_encased",
+      "model_type": "connected",
+      "name": "blackstone_stripes_encased"
+    },
+    {
+      "block": "chisel:blackstone_chisel_1",
+      "name": "blackstone_chisel_1"
+    },
+    {
+      "block": "chisel:blackstone_chisel_2",
+      "name": "blackstone_chisel_2"
+    },
+    {
+      "block": "chisel:blackstone_chisel_3",
+      "name": "blackstone_chisel_3"
+    },
+    {
+      "block": "chisel:blackstone_chisel_4",
+      "name": "blackstone_chisel_4"
+    },
+    {
+      "block": "chisel:blackstone_chisel_5",
+      "name": "blackstone_chisel_5"
+    },
+    {
+      "block": "chisel:blackstone_chisel_6",
+      "name": "blackstone_chisel_6"
+    },
+    {
+      "block": "chisel:blackstone_facet",
+      "name": "blackstone_facet"
+    },
+    {
+      "block": "chisel:blackstone_facet_small",
+      "name": "blackstone_facet_small"
+    },
+    {
+      "block": "chisel:blackstone_facet_small_encased",
+      "model_type": "connected",
+      "name": "blackstone_facet_small_encased"
+    },
+    {
+      "block": "chisel:blackstone_shiny",
+      "name": "blackstone_shiny"
+    },
+    {
+      "block": "chisel:blackstone_shiny_connected",
+      "model_type": "connected",
+      "name": "blackstone_shiny_connected"
+    },
+    {
+      "block": "chisel:blackstone_gem",
+      "name": "blackstone_gem"
+    },
+    {
+      "block": "chisel:blackstone_gem_1",
+      "name": "blackstone_gem_1"
+    },
+    {
+      "block": "chisel:blackstone_gem_1_connected",
+      "model_type": "connected",
+      "name": "blackstone_gem_1_connected"
+    },
+    {
+      "block": "chisel:blackstone_gem_2",
+      "name": "blackstone_gem_2"
+    },
+    {
+      "block": "chisel:blackstone_gem_2_connected",
+      "model_type": "connected",
+      "name": "blackstone_gem_2_connected"
+    },
+    {
+      "block": "chisel:blackstone_gem_3",
+      "name": "blackstone_gem_3"
+    },
+    {
+      "block": "chisel:blackstone_gem_3_connected",
+      "model_type": "connected",
+      "name": "blackstone_gem_3_connected"
+    },
+    {
+      "block": "chisel:blackstone_bricks_square",
+      "name": "blackstone_bricks_square"
+    },
+    {
+      "block": "chisel:blackstone_slab",
+      "name": "blackstone_slab"
+    },
+    {
+      "block": "chisel:blackstone_scaffold",
+      "name": "blackstone_scaffold"
+    },
+    {
+      "block": "chisel:blackstone_scaffold_encased",
+      "model_type": "connected",
+      "name": "blackstone_scaffold_encased"
+    },
+    {
+      "block": "chisel:blackstone_tiles_inlayed",
+      "name": "blackstone_tiles_inlayed"
+    },
+    {
+      "block": "chisel:blackstone_waves",
+      "model_type": "multiblock_2x2",
+      "name": "blackstone_waves"
+    },
+    {
+      "block": "chisel:blackstone_parquet",
+      "name": "blackstone_parquet"
+    },
+    {
+      "block": "chisel:blackstone_parquet_encased",
+      "model_type": "connected",
+      "name": "blackstone_parquet_encased"
+    }
+  ]
+}

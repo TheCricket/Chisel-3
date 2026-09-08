@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/calcite/calcite_pillar_classic-bottom",
+    "side": "chisel:block/calcite/calcite_pillar_classic-side",
+    "top": "chisel:block/calcite/calcite_pillar_classic-top"
+  }
+}

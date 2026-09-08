@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "undergarden:shiverstone", "required": false},
+    {"id": "undergarden:shiverstone_bricks", "required": false},
+    {"id": "undergarden:cracked_shiverstone_bricks", "required": false},
+    {"id": "undergarden:chiseled_shiverstone_bricks", "required": false}
+  ]
+}

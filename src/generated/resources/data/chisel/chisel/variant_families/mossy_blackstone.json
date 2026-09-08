@@ -1,0 +1,10 @@
+{
+  "family_name": "mossy_blackstone",
+  "tag": "c:chisel/mossy_blackstone",
+  "variants": [
+    {
+      "block": "chisel:mossy_blackstone",
+      "name": "mossy_blackstone"
+    }
+  ]
+}

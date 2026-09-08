@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/glass_steel"
+    "model": "chisel:item/glass_steel"
   }
 }

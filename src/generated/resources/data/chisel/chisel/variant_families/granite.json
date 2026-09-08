@@ -7,6 +7,10 @@
       "name": "block.minecraft.granite"
     },
     {
+      "block": "minecraft:polished_granite",
+      "name": "block.minecraft.polished_granite"
+    },
+    {
       "block": "chisel:granite_array",
       "model_type": "multiblock_2x2",
       "name": "granite_array"

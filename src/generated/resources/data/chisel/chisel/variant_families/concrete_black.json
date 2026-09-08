@@ -1,0 +1,539 @@
+{
+  "family_name": "concrete_black",
+  "tag": "c:chisel/concrete_black",
+  "variants": [
+    {
+      "block": "minecraft:black_concrete",
+      "name": "block.minecraft.black_concrete"
+    },
+    {
+      "block": "chisel:concrete_black_array",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_array"
+    },
+    {
+      "block": "chisel:concrete_black_border_square",
+      "model_type": "connected",
+      "name": "concrete_black_border_square"
+    },
+    {
+      "block": "chisel:concrete_black_braid",
+      "name": "concrete_black_braid"
+    },
+    {
+      "block": "chisel:concrete_black_braid_encased",
+      "model_type": "connected",
+      "name": "concrete_black_braid_encased"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_cracked",
+      "name": "concrete_black_bricks_cracked"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_encased",
+      "model_type": "connected",
+      "name": "concrete_black_bricks_encased"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_indent",
+      "name": "concrete_black_bricks_indent"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_inlayed",
+      "name": "concrete_black_bricks_inlayed"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_bricks_large"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_small",
+      "name": "concrete_black_bricks_small"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_soft",
+      "name": "concrete_black_bricks_soft"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_solid",
+      "name": "concrete_black_bricks_solid"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_triple",
+      "name": "concrete_black_bricks_triple"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_vertical",
+      "name": "concrete_black_bricks_vertical"
+    },
+    {
+      "block": "chisel:concrete_black_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "concrete_black_chaotic"
+    },
+    {
+      "block": "chisel:concrete_black_chaotic_medium",
+      "name": "concrete_black_chaotic_medium"
+    },
+    {
+      "block": "chisel:concrete_black_chaotic_small",
+      "name": "concrete_black_chaotic_small"
+    },
+    {
+      "block": "chisel:concrete_black_checker",
+      "name": "concrete_black_checker"
+    },
+    {
+      "block": "chisel:concrete_black_checker_small",
+      "name": "concrete_black_checker_small"
+    },
+    {
+      "block": "chisel:concrete_black_circular",
+      "model_type": "connected",
+      "name": "concrete_black_circular"
+    },
+    {
+      "block": "chisel:concrete_black_cobble",
+      "name": "concrete_black_cobble"
+    },
+    {
+      "block": "chisel:concrete_black_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "concrete_black_cuts"
+    },
+    {
+      "block": "chisel:concrete_black_dent",
+      "model_type": "connected",
+      "name": "concrete_black_dent"
+    },
+    {
+      "block": "chisel:concrete_black_french_1",
+      "name": "concrete_black_french_1"
+    },
+    {
+      "block": "chisel:concrete_black_french_2",
+      "name": "concrete_black_french_2"
+    },
+    {
+      "block": "chisel:concrete_black_indent",
+      "model_type": "connected",
+      "name": "concrete_black_indent"
+    },
+    {
+      "block": "chisel:concrete_black_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_jellybean"
+    },
+    {
+      "block": "chisel:concrete_black_layers",
+      "name": "concrete_black_layers"
+    },
+    {
+      "block": "chisel:concrete_black_layers_connected",
+      "model_type": "connected",
+      "name": "concrete_black_layers_connected"
+    },
+    {
+      "block": "chisel:concrete_black_line_horizontal",
+      "name": "concrete_black_line_horizontal"
+    },
+    {
+      "block": "chisel:concrete_black_line_vertical",
+      "name": "concrete_black_line_vertical"
+    },
+    {
+      "block": "chisel:concrete_black_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "concrete_black_meander_horizontal"
+    },
+    {
+      "block": "chisel:concrete_black_meander_vertical",
+      "model_type": "ctmv",
+      "name": "concrete_black_meander_vertical"
+    },
+    {
+      "block": "chisel:concrete_black_mosaic",
+      "model_type": "connected",
+      "name": "concrete_black_mosaic"
+    },
+    {
+      "block": "chisel:concrete_black_ornate_small",
+      "name": "concrete_black_ornate_small"
+    },
+    {
+      "block": "chisel:concrete_black_panel",
+      "name": "concrete_black_panel"
+    },
+    {
+      "block": "chisel:concrete_black_pillar",
+      "model_type": "top_bottom_side",
+      "name": "concrete_black_pillar"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_basic",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_basic"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_basic_round"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "concrete_black_pillar_classic"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "concrete_black_pillar_classic_large"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_ionic"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_meander",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_meander"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_meander_round"
+    },
+    {
+      "block": "chisel:concrete_black_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_black_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:concrete_black_plate",
+      "name": "concrete_black_plate"
+    },
+    {
+      "block": "chisel:concrete_black_plate_connected",
+      "model_type": "connected",
+      "name": "concrete_black_plate_connected"
+    },
+    {
+      "block": "chisel:concrete_black_polished",
+      "name": "concrete_black_polished"
+    },
+    {
+      "block": "chisel:concrete_black_polished_encased",
+      "model_type": "connected",
+      "name": "concrete_black_polished_encased"
+    },
+    {
+      "block": "chisel:concrete_black_prism",
+      "name": "concrete_black_prism"
+    },
+    {
+      "block": "chisel:concrete_black_raw",
+      "name": "concrete_black_raw"
+    },
+    {
+      "block": "chisel:concrete_black_road",
+      "name": "concrete_black_road"
+    },
+    {
+      "block": "chisel:concrete_black_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_slanted"
+    },
+    {
+      "block": "chisel:concrete_black_tiles",
+      "name": "concrete_black_tiles"
+    },
+    {
+      "block": "chisel:concrete_black_tiles_large",
+      "model_type": "connected",
+      "name": "concrete_black_tiles_large"
+    },
+    {
+      "block": "chisel:concrete_black_tiles_small",
+      "name": "concrete_black_tiles_small"
+    },
+    {
+      "block": "chisel:concrete_black_twisted",
+      "model_type": "top_bottom_side",
+      "name": "concrete_black_twisted"
+    },
+    {
+      "block": "chisel:concrete_black_weaver",
+      "model_type": "connected",
+      "name": "concrete_black_weaver"
+    },
+    {
+      "block": "chisel:concrete_black_zag",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_zag"
+    },
+    {
+      "block": "chisel:concrete_black_crate",
+      "model_type": "connected",
+      "name": "concrete_black_crate"
+    },
+    {
+      "block": "chisel:concrete_black_herringbone",
+      "name": "concrete_black_herringbone"
+    },
+    {
+      "block": "chisel:concrete_black_herringbone_encased",
+      "model_type": "connected",
+      "name": "concrete_black_herringbone_encased"
+    },
+    {
+      "block": "chisel:concrete_black_medallion",
+      "name": "concrete_black_medallion"
+    },
+    {
+      "block": "chisel:concrete_black_medallion_encased",
+      "model_type": "connected",
+      "name": "concrete_black_medallion_encased"
+    },
+    {
+      "block": "chisel:concrete_black_dots",
+      "name": "concrete_black_dots"
+    },
+    {
+      "block": "chisel:concrete_black_dots_encased",
+      "model_type": "connected",
+      "name": "concrete_black_dots_encased"
+    },
+    {
+      "block": "chisel:concrete_black_heart",
+      "name": "concrete_black_heart"
+    },
+    {
+      "block": "chisel:concrete_black_star",
+      "name": "concrete_black_star"
+    },
+    {
+      "block": "chisel:concrete_black_plating",
+      "name": "concrete_black_plating"
+    },
+    {
+      "block": "chisel:concrete_black_lodestone",
+      "name": "concrete_black_lodestone"
+    },
+    {
+      "block": "chisel:concrete_black_lodestone_connected",
+      "model_type": "connected",
+      "name": "concrete_black_lodestone_connected"
+    },
+    {
+      "block": "chisel:concrete_black_plank",
+      "name": "concrete_black_plank"
+    },
+    {
+      "block": "chisel:concrete_black_plank_connected",
+      "model_type": "connected",
+      "name": "concrete_black_plank_connected"
+    },
+    {
+      "block": "chisel:concrete_black_frame",
+      "name": "concrete_black_frame"
+    },
+    {
+      "block": "chisel:concrete_black_panel_1",
+      "name": "concrete_black_panel_1"
+    },
+    {
+      "block": "chisel:concrete_black_panel_2",
+      "name": "concrete_black_panel_2"
+    },
+    {
+      "block": "chisel:concrete_black_panel_3",
+      "name": "concrete_black_panel_3"
+    },
+    {
+      "block": "chisel:concrete_black_skull_creeper",
+      "name": "concrete_black_skull_creeper"
+    },
+    {
+      "block": "chisel:concrete_black_skull_skeleton",
+      "name": "concrete_black_skull_skeleton"
+    },
+    {
+      "block": "chisel:concrete_black_stripes",
+      "name": "concrete_black_stripes"
+    },
+    {
+      "block": "chisel:concrete_black_stripes_encased",
+      "model_type": "connected",
+      "name": "concrete_black_stripes_encased"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_1",
+      "name": "concrete_black_chisel_1"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_2",
+      "name": "concrete_black_chisel_2"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_3",
+      "name": "concrete_black_chisel_3"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_4",
+      "name": "concrete_black_chisel_4"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_5",
+      "name": "concrete_black_chisel_5"
+    },
+    {
+      "block": "chisel:concrete_black_chisel_6",
+      "name": "concrete_black_chisel_6"
+    },
+    {
+      "block": "chisel:concrete_black_facet",
+      "name": "concrete_black_facet"
+    },
+    {
+      "block": "chisel:concrete_black_facet_small",
+      "name": "concrete_black_facet_small"
+    },
+    {
+      "block": "chisel:concrete_black_facet_small_encased",
+      "model_type": "connected",
+      "name": "concrete_black_facet_small_encased"
+    },
+    {
+      "block": "chisel:concrete_black_shiny",
+      "name": "concrete_black_shiny"
+    },
+    {
+      "block": "chisel:concrete_black_shiny_connected",
+      "model_type": "connected",
+      "name": "concrete_black_shiny_connected"
+    },
+    {
+      "block": "chisel:concrete_black_gem",
+      "name": "concrete_black_gem"
+    },
+    {
+      "block": "chisel:concrete_black_gem_1",
+      "name": "concrete_black_gem_1"
+    },
+    {
+      "block": "chisel:concrete_black_gem_1_connected",
+      "model_type": "connected",
+      "name": "concrete_black_gem_1_connected"
+    },
+    {
+      "block": "chisel:concrete_black_gem_2",
+      "name": "concrete_black_gem_2"
+    },
+    {
+      "block": "chisel:concrete_black_gem_2_connected",
+      "model_type": "connected",
+      "name": "concrete_black_gem_2_connected"
+    },
+    {
+      "block": "chisel:concrete_black_gem_3",
+      "name": "concrete_black_gem_3"
+    },
+    {
+      "block": "chisel:concrete_black_gem_3_connected",
+      "model_type": "connected",
+      "name": "concrete_black_gem_3_connected"
+    },
+    {
+      "block": "chisel:concrete_black_bricks_square",
+      "name": "concrete_black_bricks_square"
+    },
+    {
+      "block": "chisel:concrete_black_slab",
+      "name": "concrete_black_slab"
+    },
+    {
+      "block": "chisel:concrete_black_scaffold",
+      "name": "concrete_black_scaffold"
+    },
+    {
+      "block": "chisel:concrete_black_scaffold_encased",
+      "model_type": "connected",
+      "name": "concrete_black_scaffold_encased"
+    },
+    {
+      "block": "chisel:concrete_black_tiles_inlayed",
+      "name": "concrete_black_tiles_inlayed"
+    },
+    {
+      "block": "chisel:concrete_black_waves",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_black_waves"
+    },
+    {
+      "block": "chisel:concrete_black_parquet",
+      "name": "concrete_black_parquet"
+    },
+    {
+      "block": "chisel:concrete_black_parquet_encased",
+      "model_type": "connected",
+      "name": "concrete_black_parquet_encased"
+    }
+  ]
+}

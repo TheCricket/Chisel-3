@@ -41,6 +41,49 @@ To add a block to a family:
 
 See the [CONTRIBUTING](CONTRIBUTING.md) file for more details.
 
+Addon API
+---------
+
+Runtime family lookup is available through the stable read-only facade:
+
+```java
+VariantFamily family = ChiselAPI.getFamily(block, registryAccess).orElse(null);
+```
+
+The registration API is experimental. Addons register blocks with their own `DeferredRegister.Blocks`, then queue only
+the family relationship before NeoForge's load-complete phase:
+
+```java
+public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("examplemod");
+public static final DeferredBlock<Block> MARBLE = BLOCKS.registerSimpleBlock("marble");
+public static final DeferredBlock<Block> MARBLE_BRICKS = BLOCKS.registerSimpleBlock("marble_bricks");
+
+// During the addon constructor or common setup; BLOCKS remains owned by examplemod.
+ChiselAPI.
+
+registerFamily(
+        Identifier.fromNamespaceAndPath("examplemod", "marble"),
+
+family ->family
+        .
+
+variant(MARBLE)
+                .
+
+variant(MARBLE_BRICKS, ChiselModelHandlers.CONNECTED)
+);
+```
+
+Chisel resolves queued suppliers after registries are complete and rejects duplicate IDs, blocks, names, conflicting
+membership, null suppliers, empty families, and late registrations. `ChiselModelHandlers` exposes model metadata used at
+runtime; selecting a model type does **not** make Chisel generate blockstates, models, textures, loot, or translations
+in another mod's namespace. Addons own those resources and their datagen.
+
+`ChiselAPI`, `Variant`, `VariantFamily`, `VariantModelHandler`, and the `ChiselModelHandlers` constants form the
+supported runtime/query surface. Registration types under `api.family.registration` are experimental. Types annotated
+`ApiStatus.Internal`, including Chisel's content definitions, registrars, model generators, and lookup implementation,
+are not supported addon API.
+
 Issue Reporting
 ----------------
 If you wish to report an issue with the mod, please submit one to the issue tracker in this repository.  When creating an

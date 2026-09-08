@@ -1,0 +1,83 @@
+{
+  "family_name": "sea_lantern",
+  "tag": "c:chisel/sea_lantern",
+  "variants": [
+    {
+      "block": "minecraft:sea_lantern",
+      "name": "block.minecraft.sea_lantern"
+    },
+    {
+      "block": "chisel:sea_lantern_connected",
+      "model_type": "multi_layer_connected",
+      "name": "sea_lantern_connected"
+    },
+    {
+      "block": "chisel:sea_lantern_dent",
+      "model_type": "multi_layer_connected",
+      "name": "sea_lantern_dent"
+    },
+    {
+      "block": "chisel:sea_lantern_braid",
+      "name": "sea_lantern_braid"
+    },
+    {
+      "block": "chisel:sea_lantern_braid_invert",
+      "name": "sea_lantern_braid_invert"
+    },
+    {
+      "block": "chisel:sea_lantern_layer",
+      "name": "sea_lantern_layer"
+    },
+    {
+      "block": "chisel:sea_lantern_layer_invert",
+      "name": "sea_lantern_layer_invert"
+    },
+    {
+      "block": "chisel:sea_lantern_road",
+      "name": "sea_lantern_road"
+    },
+    {
+      "block": "chisel:sea_lantern_road_invert",
+      "name": "sea_lantern_road_invert"
+    },
+    {
+      "block": "chisel:sea_lantern_checker_small",
+      "name": "sea_lantern_checker_small"
+    },
+    {
+      "block": "chisel:sea_lantern_checker",
+      "name": "sea_lantern_checker"
+    },
+    {
+      "block": "chisel:sea_lantern_bricks",
+      "name": "sea_lantern_bricks"
+    },
+    {
+      "block": "chisel:sea_lantern_bricks_invert",
+      "name": "sea_lantern_bricks_invert"
+    },
+    {
+      "block": "chisel:sea_lantern_frame1",
+      "name": "sea_lantern_frame1"
+    },
+    {
+      "block": "chisel:sea_lantern_raw",
+      "name": "sea_lantern_raw"
+    },
+    {
+      "block": "chisel:sea_lantern_pillar_dent",
+      "model_type": "ctmv",
+      "name": "sea_lantern_pillar_dent"
+    },
+    {
+      "block": "chisel:sea_lantern_pillar_dent_invert",
+      "model_type": "ctmv",
+      "name": "sea_lantern_pillar_dent_invert"
+    },
+    {
+      "block": "chisel:sea_lantern_frame2",
+      "model_type": "multi_layer_connected",
+      "name": "sea_lantern_frame2"
+    }
+  ]
+}

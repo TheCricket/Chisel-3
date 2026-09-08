@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/calcite/calcite_pillar_meander-side",
+    "bottom": "chisel:block/calcite/calcite_pillar_meander-bottom",
+    "overlay_bottom": "chisel:block/calcite/calcite_pillar_meander-bottom",
+    "overlay_side_connected": "chisel:block/calcite/calcite_pillar_meander-side-ctm",
+    "overlay_texture": "chisel:block/calcite/calcite_pillar_meander-side",
+    "overlay_top": "chisel:block/calcite/calcite_pillar_meander-top",
+    "overlay_vertical": "chisel:block/calcite/calcite_pillar_meander-side-ctm",
+    "particle": "chisel:block/calcite/calcite_pillar_meander-side",
+    "side": "chisel:block/calcite/calcite_pillar_meander-side",
+    "top": "chisel:block/calcite/calcite_pillar_meander-top"
+  }
+}

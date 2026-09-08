@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/certus/certus_tiles_large",
-    "overlay_connected": "chisel:block/certus/certus_tiles_large-ctm",
-    "overlay_texture": "chisel:block/certus/certus_tiles_large",
-    "particle": "chisel:block/certus/certus_tiles_large"
+    "all": "chisel:block/ae2_certus/certus_tiles_large",
+    "overlay_connected": "chisel:block/ae2_certus/certus_tiles_large-ctm",
+    "overlay_texture": "chisel:block/ae2_certus/certus_tiles_large",
+    "particle": "chisel:block/ae2_certus/certus_tiles_large"
   }
 }

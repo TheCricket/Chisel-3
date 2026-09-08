@@ -1,0 +1,14 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:amberoot_planks", "required": false},
+    {"id": "aether_ii:amberoot_floorboards", "required": false},
+    {"id": "aether_ii:amberoot_highlight", "required": false},
+    {"id": "aether_ii:amberoot_shingles", "required": false},
+    {"id": "aether_ii:amberoot_small_shingles", "required": false},
+    {"id": "aether_ii:amberoot_base_planks", "required": false},
+    {"id": "aether_ii:amberoot_top_planks", "required": false},
+    {"id": "aether_ii:amberoot_base_beam", "required": false},
+    {"id": "aether_ii:amberoot_top_beam", "required": false},
+    {"id": "aether_ii:amberoot_beam", "required": false}
+  ]
+}

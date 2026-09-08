@@ -1,0 +1,24 @@
+﻿{
+  "values": [
+    {
+      "id": "xycraft_world:kivi_bricks_cloud_light",
+      "required": false
+    },
+    {
+      "id": "xycraft_world:kivi_pillar_cloud_light",
+      "required": false
+    },
+    {
+      "id": "xycraft_world:kivi_tiles_cloud_light",
+      "required": false
+    },
+    {
+      "id": "xycraft_world:kivi_trim_light",
+      "required": false
+    },
+    {
+      "id": "xycraft_world:kivi_trim_panel_light",
+      "required": false
+    }
+  ]
+}

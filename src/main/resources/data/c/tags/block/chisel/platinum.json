@@ -1,6 +1,8 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/platinum", "required": false},
     {"id": "ftbmaterials:platinum_block", "required": false},
-    {"id": "alltheores:platinum_block", "required": false}
+    {"id": "alltheores:platinum_block", "required": false},
+    {"id": "oritech:platinum", "required": false}
   ]
 }

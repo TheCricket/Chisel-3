@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/calcite/calcite_meander_horizontal",
+    "bottom": "chisel:block/calcite/calcite_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/calcite/calcite_meander_horizontal-ctmh",
+    "particle": "chisel:block/calcite/calcite_meander_horizontal",
+    "top": "chisel:block/calcite/calcite_meander_horizontal-top"
+  }
+}

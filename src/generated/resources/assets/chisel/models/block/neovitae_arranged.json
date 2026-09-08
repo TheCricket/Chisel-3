@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/neovitae/neovitae_arranged",
-    "overlay_connected": "chisel:block/neovitae/neovitae_arranged-ctm",
-    "overlay_texture": "chisel:block/neovitae/neovitae_arranged",
-    "particle": "chisel:block/neovitae/neovitae_arranged"
+    "all": "chisel:block/nv_rune/neovitae_arranged",
+    "overlay_connected": "chisel:block/nv_rune/neovitae_arranged-ctm",
+    "overlay_texture": "chisel:block/nv_rune/neovitae_arranged",
+    "particle": "chisel:block/nv_rune/neovitae_arranged"
   }
 }

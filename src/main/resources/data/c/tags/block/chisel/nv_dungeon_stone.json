@@ -1,0 +1,12 @@
+﻿{
+  "values": [
+    {"id": "neovitae:dungeon_stone", "required": false},
+    {"id": "neovitae:dungeon_brick1", "required": false},
+    {"id": "neovitae:dungeon_brick2", "required": false},
+    {"id": "neovitae:dungeon_brick3", "required": false},
+    {"id": "neovitae:dungeon_polished", "required": false},
+    {"id": "neovitae:dungeon_tile", "required": false},
+    {"id": "neovitae:dungeon_smallbrick", "required": false},
+    {"id": "neovitae:dungeon_tilespecial", "required": false}
+  ]
+}

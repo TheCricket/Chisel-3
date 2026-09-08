@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/concrete_cyan/concrete_cyan_twisted-bottom",
+    "side": "chisel:block/concrete_cyan/concrete_cyan_twisted-side",
+    "top": "chisel:block/concrete_cyan/concrete_cyan_twisted-top"
+  }
+}

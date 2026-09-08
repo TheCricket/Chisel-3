@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_black/concrete_black_bricks_cracked"
+  }
+}

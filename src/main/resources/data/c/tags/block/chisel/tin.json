@@ -1,6 +1,9 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/tin", "required": false},
     {"id": "ftbmaterials:tin_block", "required": false},
-    {"id": "alltheores:tin_block", "required": false}
+    {"id": "alltheores:tin_block", "required": false},
+    {"id": "railcraft:tin_block", "required": false},
+    {"id": "energizedpower:tin_block", "required": false}
   ]
 }

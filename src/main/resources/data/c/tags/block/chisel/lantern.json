@@ -1,0 +1,19 @@
+{
+  "values": [
+    {"id": "mcwlights:wall_lantern", "required": false},
+    {"id": "mcwlights:striped_wall_lantern", "required": false},
+    {"id": "mcwlights:covered_wall_lantern", "required": false},
+    {"id": "mcwlights:chain_wall_lantern", "required": false},
+    {"id": "mcwlights:tavern_wall_lantern", "required": false},
+    {"id": "mcwlights:festive_wall_lantern", "required": false},
+    {"id": "mcwlights:cross_wall_lantern", "required": false},
+    {"id": "mcwlights:bell_wall_lantern", "required": false},
+    {"id": "mcwlights:striped_lantern", "required": false},
+    {"id": "mcwlights:covered_lantern", "required": false},
+    {"id": "mcwlights:chain_lantern", "required": false},
+    {"id": "mcwlights:tavern_lantern", "required": false},
+    {"id": "mcwlights:festive_lantern", "required": false},
+    {"id": "mcwlights:cross_lantern", "required": false},
+    {"id": "mcwlights:bell_lantern", "required": false}
+  ]
+}

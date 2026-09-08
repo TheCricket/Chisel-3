@@ -1,0 +1,14 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:wisproot_floorboards", "required": false},
+    {"id": "aether_ii:wisproot_planks", "required": false},
+    {"id": "aether_ii:wisproot_highlight", "required": false},
+    {"id": "aether_ii:wisproot_shingles", "required": false},
+    {"id": "aether_ii:wisproot_small_shingles", "required": false},
+    {"id": "aether_ii:wisproot_base_planks", "required": false},
+    {"id": "aether_ii:wisproot_top_planks", "required": false},
+    {"id": "aether_ii:wisproot_base_beam", "required": false},
+    {"id": "aether_ii:wisproot_top_beam", "required": false},
+    {"id": "aether_ii:wisproot_beam", "required": false}
+  ]
+}

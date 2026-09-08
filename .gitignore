@@ -2,6 +2,7 @@
 .project
 .classpath
 .metadata
+.eclipse
 org.*
 bin
 
@@ -45,3 +46,6 @@ libs
 /src/generated/resources/.cache/
 .env
 .junie/
+
+#vscode
+.vscode/

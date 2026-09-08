@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/tallow/tallow_faces"
+    "all": "chisel:block/oc_tallow/tallow_faces"
   }
 }

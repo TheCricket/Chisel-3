@@ -1,0 +1,535 @@
+{
+  "family_name": "atm_ancient_stone",
+  "tag": "c:chisel/atm_ancient_stone",
+  "variants": [
+    {
+      "block": "chisel:ancient_stone_array",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_array"
+    },
+    {
+      "block": "chisel:ancient_stone_border_square",
+      "model_type": "connected",
+      "name": "ancient_stone_border_square"
+    },
+    {
+      "block": "chisel:ancient_stone_braid",
+      "name": "ancient_stone_braid"
+    },
+    {
+      "block": "chisel:ancient_stone_braid_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_braid_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_cracked",
+      "name": "ancient_stone_bricks_cracked"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_bricks_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_indent",
+      "name": "ancient_stone_bricks_indent"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_inlayed",
+      "name": "ancient_stone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_bricks_large"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_small",
+      "name": "ancient_stone_bricks_small"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_soft",
+      "name": "ancient_stone_bricks_soft"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_solid",
+      "name": "ancient_stone_bricks_solid"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_triple",
+      "name": "ancient_stone_bricks_triple"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_vertical",
+      "name": "ancient_stone_bricks_vertical"
+    },
+    {
+      "block": "chisel:ancient_stone_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "ancient_stone_chaotic"
+    },
+    {
+      "block": "chisel:ancient_stone_chaotic_medium",
+      "name": "ancient_stone_chaotic_medium"
+    },
+    {
+      "block": "chisel:ancient_stone_chaotic_small",
+      "name": "ancient_stone_chaotic_small"
+    },
+    {
+      "block": "chisel:ancient_stone_checker",
+      "name": "ancient_stone_checker"
+    },
+    {
+      "block": "chisel:ancient_stone_checker_small",
+      "name": "ancient_stone_checker_small"
+    },
+    {
+      "block": "chisel:ancient_stone_circular",
+      "model_type": "connected",
+      "name": "ancient_stone_circular"
+    },
+    {
+      "block": "chisel:ancient_stone_cobble",
+      "name": "ancient_stone_cobble"
+    },
+    {
+      "block": "chisel:ancient_stone_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "ancient_stone_cuts"
+    },
+    {
+      "block": "chisel:ancient_stone_dent",
+      "model_type": "connected",
+      "name": "ancient_stone_dent"
+    },
+    {
+      "block": "chisel:ancient_stone_french_1",
+      "name": "ancient_stone_french_1"
+    },
+    {
+      "block": "chisel:ancient_stone_french_2",
+      "name": "ancient_stone_french_2"
+    },
+    {
+      "block": "chisel:ancient_stone_indent",
+      "model_type": "connected",
+      "name": "ancient_stone_indent"
+    },
+    {
+      "block": "chisel:ancient_stone_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_jellybean"
+    },
+    {
+      "block": "chisel:ancient_stone_layers",
+      "name": "ancient_stone_layers"
+    },
+    {
+      "block": "chisel:ancient_stone_layers_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_layers_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_line_horizontal",
+      "name": "ancient_stone_line_horizontal"
+    },
+    {
+      "block": "chisel:ancient_stone_line_vertical",
+      "name": "ancient_stone_line_vertical"
+    },
+    {
+      "block": "chisel:ancient_stone_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "ancient_stone_meander_horizontal"
+    },
+    {
+      "block": "chisel:ancient_stone_meander_vertical",
+      "model_type": "ctmv",
+      "name": "ancient_stone_meander_vertical"
+    },
+    {
+      "block": "chisel:ancient_stone_mosaic",
+      "model_type": "connected",
+      "name": "ancient_stone_mosaic"
+    },
+    {
+      "block": "chisel:ancient_stone_ornate_small",
+      "name": "ancient_stone_ornate_small"
+    },
+    {
+      "block": "chisel:ancient_stone_panel",
+      "name": "ancient_stone_panel"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar",
+      "model_type": "top_bottom_side",
+      "name": "ancient_stone_pillar"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_basic",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_basic"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_basic_round"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "ancient_stone_pillar_classic"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "ancient_stone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_ionic"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_meander",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_meander"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_meander_round"
+    },
+    {
+      "block": "chisel:ancient_stone_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "ancient_stone_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:ancient_stone_plate",
+      "name": "ancient_stone_plate"
+    },
+    {
+      "block": "chisel:ancient_stone_plate_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_plate_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_polished",
+      "name": "ancient_stone_polished"
+    },
+    {
+      "block": "chisel:ancient_stone_polished_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_polished_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_prism",
+      "name": "ancient_stone_prism"
+    },
+    {
+      "block": "chisel:ancient_stone_raw",
+      "name": "ancient_stone_raw"
+    },
+    {
+      "block": "chisel:ancient_stone_road",
+      "name": "ancient_stone_road"
+    },
+    {
+      "block": "chisel:ancient_stone_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_slanted"
+    },
+    {
+      "block": "chisel:ancient_stone_tiles",
+      "name": "ancient_stone_tiles"
+    },
+    {
+      "block": "chisel:ancient_stone_tiles_large",
+      "model_type": "connected",
+      "name": "ancient_stone_tiles_large"
+    },
+    {
+      "block": "chisel:ancient_stone_tiles_small",
+      "name": "ancient_stone_tiles_small"
+    },
+    {
+      "block": "chisel:ancient_stone_twisted",
+      "model_type": "top_bottom_side",
+      "name": "ancient_stone_twisted"
+    },
+    {
+      "block": "chisel:ancient_stone_weaver",
+      "model_type": "connected",
+      "name": "ancient_stone_weaver"
+    },
+    {
+      "block": "chisel:ancient_stone_zag",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_zag"
+    },
+    {
+      "block": "chisel:ancient_stone_crate",
+      "model_type": "connected",
+      "name": "ancient_stone_crate"
+    },
+    {
+      "block": "chisel:ancient_stone_herringbone",
+      "name": "ancient_stone_herringbone"
+    },
+    {
+      "block": "chisel:ancient_stone_herringbone_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_herringbone_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_medallion",
+      "name": "ancient_stone_medallion"
+    },
+    {
+      "block": "chisel:ancient_stone_medallion_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_medallion_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_dots",
+      "name": "ancient_stone_dots"
+    },
+    {
+      "block": "chisel:ancient_stone_dots_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_dots_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_heart",
+      "name": "ancient_stone_heart"
+    },
+    {
+      "block": "chisel:ancient_stone_star",
+      "name": "ancient_stone_star"
+    },
+    {
+      "block": "chisel:ancient_stone_plating",
+      "name": "ancient_stone_plating"
+    },
+    {
+      "block": "chisel:ancient_stone_lodestone",
+      "name": "ancient_stone_lodestone"
+    },
+    {
+      "block": "chisel:ancient_stone_lodestone_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_lodestone_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_plank",
+      "name": "ancient_stone_plank"
+    },
+    {
+      "block": "chisel:ancient_stone_plank_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_plank_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_frame",
+      "name": "ancient_stone_frame"
+    },
+    {
+      "block": "chisel:ancient_stone_panel_1",
+      "name": "ancient_stone_panel_1"
+    },
+    {
+      "block": "chisel:ancient_stone_panel_2",
+      "name": "ancient_stone_panel_2"
+    },
+    {
+      "block": "chisel:ancient_stone_panel_3",
+      "name": "ancient_stone_panel_3"
+    },
+    {
+      "block": "chisel:ancient_stone_skull_creeper",
+      "name": "ancient_stone_skull_creeper"
+    },
+    {
+      "block": "chisel:ancient_stone_skull_skeleton",
+      "name": "ancient_stone_skull_skeleton"
+    },
+    {
+      "block": "chisel:ancient_stone_stripes",
+      "name": "ancient_stone_stripes"
+    },
+    {
+      "block": "chisel:ancient_stone_stripes_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_stripes_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_1",
+      "name": "ancient_stone_chisel_1"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_2",
+      "name": "ancient_stone_chisel_2"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_3",
+      "name": "ancient_stone_chisel_3"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_4",
+      "name": "ancient_stone_chisel_4"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_5",
+      "name": "ancient_stone_chisel_5"
+    },
+    {
+      "block": "chisel:ancient_stone_chisel_6",
+      "name": "ancient_stone_chisel_6"
+    },
+    {
+      "block": "chisel:ancient_stone_facet",
+      "name": "ancient_stone_facet"
+    },
+    {
+      "block": "chisel:ancient_stone_facet_small",
+      "name": "ancient_stone_facet_small"
+    },
+    {
+      "block": "chisel:ancient_stone_facet_small_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_facet_small_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_shiny",
+      "name": "ancient_stone_shiny"
+    },
+    {
+      "block": "chisel:ancient_stone_shiny_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_shiny_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_gem",
+      "name": "ancient_stone_gem"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_1",
+      "name": "ancient_stone_gem_1"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_1_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_gem_1_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_2",
+      "name": "ancient_stone_gem_2"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_2_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_gem_2_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_3",
+      "name": "ancient_stone_gem_3"
+    },
+    {
+      "block": "chisel:ancient_stone_gem_3_connected",
+      "model_type": "connected",
+      "name": "ancient_stone_gem_3_connected"
+    },
+    {
+      "block": "chisel:ancient_stone_bricks_square",
+      "name": "ancient_stone_bricks_square"
+    },
+    {
+      "block": "chisel:ancient_stone_slab",
+      "name": "ancient_stone_slab"
+    },
+    {
+      "block": "chisel:ancient_stone_scaffold",
+      "name": "ancient_stone_scaffold"
+    },
+    {
+      "block": "chisel:ancient_stone_scaffold_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_scaffold_encased"
+    },
+    {
+      "block": "chisel:ancient_stone_tiles_inlayed",
+      "name": "ancient_stone_tiles_inlayed"
+    },
+    {
+      "block": "chisel:ancient_stone_waves",
+      "model_type": "multiblock_2x2",
+      "name": "ancient_stone_waves"
+    },
+    {
+      "block": "chisel:ancient_stone_parquet",
+      "name": "ancient_stone_parquet"
+    },
+    {
+      "block": "chisel:ancient_stone_parquet_encased",
+      "model_type": "connected",
+      "name": "ancient_stone_parquet_encased"
+    }
+  ]
+}

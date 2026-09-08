@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.network;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.inventory.menu.AutoChiselMenu;
+import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;

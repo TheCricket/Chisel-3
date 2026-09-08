@@ -4,7 +4,6 @@
     "all"
   ],
   "model_location": "chisel:block/glass_borderless",
-  "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:glass_borderless",
     "kind": "standard"

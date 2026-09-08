@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "chisel:block/glowstone_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "chisel:block/glowstone_pillar"
+    },
+    "axis=z": {
+      "model": "chisel:block/glowstone_pillar",
+      "x": 90
     }
   }
 }

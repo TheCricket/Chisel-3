@@ -1,0 +1,14 @@
+{
+  "family_name": "resin",
+  "tag": "c:chisel/resin",
+  "variants": [
+    {
+      "block": "minecraft:resin_bricks",
+      "name": "block.minecraft.resin_bricks"
+    },
+    {
+      "block": "minecraft:chiseled_resin_bricks",
+      "name": "block.minecraft.chiseled_resin_bricks"
+    }
+  ]
+}

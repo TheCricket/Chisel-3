@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side",
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-bottom",
+    "overlay_bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-bottom",
+    "overlay_side_connected": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side-ctm",
+    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side",
+    "overlay_top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-top",
+    "overlay_vertical": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side-ctm",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-top"
+  }
+}

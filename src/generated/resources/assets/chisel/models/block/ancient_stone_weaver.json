@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/ancient_stone/ancient_stone_weaver",
-    "overlay_connected": "chisel:block/ancient_stone/ancient_stone_weaver-ctm",
-    "overlay_texture": "chisel:block/ancient_stone/ancient_stone_weaver",
-    "particle": "chisel:block/ancient_stone/ancient_stone_weaver"
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_weaver",
+    "overlay_connected": "chisel:block/atm_ancient_stone/ancient_stone_weaver-ctm",
+    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_weaver",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_weaver"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/arcane/arcane_moon_glow"
+    "all": "chisel:block/fa_arcane_darkstone/arcane_moon_glow"
   }
 }

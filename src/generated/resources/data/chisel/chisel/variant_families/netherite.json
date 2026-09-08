@@ -1,0 +1,10 @@
+{
+  "family_name": "netherite",
+  "tag": "c:chisel/netherite",
+  "variants": [
+    {
+      "block": "minecraft:netherite_block",
+      "name": "block.minecraft.netherite_block"
+    }
+  ]
+}

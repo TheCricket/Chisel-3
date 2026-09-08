@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/glass_chrono"
+    "model": "chisel:item/glass_chrono"
   }
 }

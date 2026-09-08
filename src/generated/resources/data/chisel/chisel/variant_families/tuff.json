@@ -1,0 +1,555 @@
+{
+  "family_name": "tuff",
+  "tag": "c:chisel/tuff",
+  "variants": [
+    {
+      "block": "minecraft:tuff",
+      "name": "block.minecraft.tuff"
+    },
+    {
+      "block": "minecraft:chiseled_tuff",
+      "name": "block.minecraft.chiseled_tuff"
+    },
+    {
+      "block": "minecraft:polished_tuff",
+      "name": "block.minecraft.polished_tuff"
+    },
+    {
+      "block": "minecraft:tuff_bricks",
+      "name": "block.minecraft.tuff_bricks"
+    },
+    {
+      "block": "minecraft:chiseled_tuff_bricks",
+      "name": "block.minecraft.chiseled_tuff_bricks"
+    },
+    {
+      "block": "chisel:tuff_array",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_array"
+    },
+    {
+      "block": "chisel:tuff_border_square",
+      "model_type": "connected",
+      "name": "tuff_border_square"
+    },
+    {
+      "block": "chisel:tuff_braid",
+      "name": "tuff_braid"
+    },
+    {
+      "block": "chisel:tuff_braid_encased",
+      "model_type": "connected",
+      "name": "tuff_braid_encased"
+    },
+    {
+      "block": "chisel:tuff_bricks_cracked",
+      "name": "tuff_bricks_cracked"
+    },
+    {
+      "block": "chisel:tuff_bricks_encased",
+      "model_type": "connected",
+      "name": "tuff_bricks_encased"
+    },
+    {
+      "block": "chisel:tuff_bricks_indent",
+      "name": "tuff_bricks_indent"
+    },
+    {
+      "block": "chisel:tuff_bricks_inlayed",
+      "name": "tuff_bricks_inlayed"
+    },
+    {
+      "block": "chisel:tuff_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_bricks_large"
+    },
+    {
+      "block": "chisel:tuff_bricks_small",
+      "name": "tuff_bricks_small"
+    },
+    {
+      "block": "chisel:tuff_bricks_soft",
+      "name": "tuff_bricks_soft"
+    },
+    {
+      "block": "chisel:tuff_bricks_solid",
+      "name": "tuff_bricks_solid"
+    },
+    {
+      "block": "chisel:tuff_bricks_triple",
+      "name": "tuff_bricks_triple"
+    },
+    {
+      "block": "chisel:tuff_bricks_vertical",
+      "name": "tuff_bricks_vertical"
+    },
+    {
+      "block": "chisel:tuff_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "tuff_chaotic"
+    },
+    {
+      "block": "chisel:tuff_chaotic_medium",
+      "name": "tuff_chaotic_medium"
+    },
+    {
+      "block": "chisel:tuff_chaotic_small",
+      "name": "tuff_chaotic_small"
+    },
+    {
+      "block": "chisel:tuff_checker",
+      "name": "tuff_checker"
+    },
+    {
+      "block": "chisel:tuff_checker_small",
+      "name": "tuff_checker_small"
+    },
+    {
+      "block": "chisel:tuff_circular",
+      "model_type": "connected",
+      "name": "tuff_circular"
+    },
+    {
+      "block": "chisel:tuff_cobble",
+      "name": "tuff_cobble"
+    },
+    {
+      "block": "chisel:tuff_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "tuff_cuts"
+    },
+    {
+      "block": "chisel:tuff_dent",
+      "model_type": "connected",
+      "name": "tuff_dent"
+    },
+    {
+      "block": "chisel:tuff_french_1",
+      "name": "tuff_french_1"
+    },
+    {
+      "block": "chisel:tuff_french_2",
+      "name": "tuff_french_2"
+    },
+    {
+      "block": "chisel:tuff_indent",
+      "model_type": "connected",
+      "name": "tuff_indent"
+    },
+    {
+      "block": "chisel:tuff_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_jellybean"
+    },
+    {
+      "block": "chisel:tuff_layers",
+      "name": "tuff_layers"
+    },
+    {
+      "block": "chisel:tuff_layers_connected",
+      "model_type": "connected",
+      "name": "tuff_layers_connected"
+    },
+    {
+      "block": "chisel:tuff_line_horizontal",
+      "name": "tuff_line_horizontal"
+    },
+    {
+      "block": "chisel:tuff_line_vertical",
+      "name": "tuff_line_vertical"
+    },
+    {
+      "block": "chisel:tuff_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "tuff_meander_horizontal"
+    },
+    {
+      "block": "chisel:tuff_meander_vertical",
+      "model_type": "ctmv",
+      "name": "tuff_meander_vertical"
+    },
+    {
+      "block": "chisel:tuff_mosaic",
+      "model_type": "connected",
+      "name": "tuff_mosaic"
+    },
+    {
+      "block": "chisel:tuff_ornate_small",
+      "name": "tuff_ornate_small"
+    },
+    {
+      "block": "chisel:tuff_panel",
+      "name": "tuff_panel"
+    },
+    {
+      "block": "chisel:tuff_pillar",
+      "model_type": "top_bottom_side",
+      "name": "tuff_pillar"
+    },
+    {
+      "block": "chisel:tuff_pillar_basic",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_basic"
+    },
+    {
+      "block": "chisel:tuff_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:tuff_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:tuff_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_basic_round"
+    },
+    {
+      "block": "chisel:tuff_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:tuff_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "tuff_pillar_classic"
+    },
+    {
+      "block": "chisel:tuff_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "tuff_pillar_classic_large"
+    },
+    {
+      "block": "chisel:tuff_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_ionic"
+    },
+    {
+      "block": "chisel:tuff_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:tuff_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:tuff_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:tuff_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:tuff_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:tuff_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:tuff_pillar_meander",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_meander"
+    },
+    {
+      "block": "chisel:tuff_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:tuff_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:tuff_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_meander_round"
+    },
+    {
+      "block": "chisel:tuff_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "tuff_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:tuff_plate",
+      "name": "tuff_plate"
+    },
+    {
+      "block": "chisel:tuff_plate_connected",
+      "model_type": "connected",
+      "name": "tuff_plate_connected"
+    },
+    {
+      "block": "chisel:tuff_polished",
+      "name": "tuff_polished"
+    },
+    {
+      "block": "chisel:tuff_polished_encased",
+      "model_type": "connected",
+      "name": "tuff_polished_encased"
+    },
+    {
+      "block": "chisel:tuff_prism",
+      "name": "tuff_prism"
+    },
+    {
+      "block": "chisel:tuff_raw",
+      "name": "tuff_raw"
+    },
+    {
+      "block": "chisel:tuff_road",
+      "name": "tuff_road"
+    },
+    {
+      "block": "chisel:tuff_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_slanted"
+    },
+    {
+      "block": "chisel:tuff_tiles",
+      "name": "tuff_tiles"
+    },
+    {
+      "block": "chisel:tuff_tiles_large",
+      "model_type": "connected",
+      "name": "tuff_tiles_large"
+    },
+    {
+      "block": "chisel:tuff_tiles_small",
+      "name": "tuff_tiles_small"
+    },
+    {
+      "block": "chisel:tuff_twisted",
+      "model_type": "top_bottom_side",
+      "name": "tuff_twisted"
+    },
+    {
+      "block": "chisel:tuff_weaver",
+      "model_type": "connected",
+      "name": "tuff_weaver"
+    },
+    {
+      "block": "chisel:tuff_zag",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_zag"
+    },
+    {
+      "block": "chisel:tuff_crate",
+      "model_type": "connected",
+      "name": "tuff_crate"
+    },
+    {
+      "block": "chisel:tuff_herringbone",
+      "name": "tuff_herringbone"
+    },
+    {
+      "block": "chisel:tuff_herringbone_encased",
+      "model_type": "connected",
+      "name": "tuff_herringbone_encased"
+    },
+    {
+      "block": "chisel:tuff_medallion",
+      "name": "tuff_medallion"
+    },
+    {
+      "block": "chisel:tuff_medallion_encased",
+      "model_type": "connected",
+      "name": "tuff_medallion_encased"
+    },
+    {
+      "block": "chisel:tuff_dots",
+      "name": "tuff_dots"
+    },
+    {
+      "block": "chisel:tuff_dots_encased",
+      "model_type": "connected",
+      "name": "tuff_dots_encased"
+    },
+    {
+      "block": "chisel:tuff_heart",
+      "name": "tuff_heart"
+    },
+    {
+      "block": "chisel:tuff_star",
+      "name": "tuff_star"
+    },
+    {
+      "block": "chisel:tuff_plating",
+      "name": "tuff_plating"
+    },
+    {
+      "block": "chisel:tuff_lodestone",
+      "name": "tuff_lodestone"
+    },
+    {
+      "block": "chisel:tuff_lodestone_connected",
+      "model_type": "connected",
+      "name": "tuff_lodestone_connected"
+    },
+    {
+      "block": "chisel:tuff_plank",
+      "name": "tuff_plank"
+    },
+    {
+      "block": "chisel:tuff_plank_connected",
+      "model_type": "connected",
+      "name": "tuff_plank_connected"
+    },
+    {
+      "block": "chisel:tuff_frame",
+      "name": "tuff_frame"
+    },
+    {
+      "block": "chisel:tuff_panel_1",
+      "name": "tuff_panel_1"
+    },
+    {
+      "block": "chisel:tuff_panel_2",
+      "name": "tuff_panel_2"
+    },
+    {
+      "block": "chisel:tuff_panel_3",
+      "name": "tuff_panel_3"
+    },
+    {
+      "block": "chisel:tuff_skull_creeper",
+      "name": "tuff_skull_creeper"
+    },
+    {
+      "block": "chisel:tuff_skull_skeleton",
+      "name": "tuff_skull_skeleton"
+    },
+    {
+      "block": "chisel:tuff_stripes",
+      "name": "tuff_stripes"
+    },
+    {
+      "block": "chisel:tuff_stripes_encased",
+      "model_type": "connected",
+      "name": "tuff_stripes_encased"
+    },
+    {
+      "block": "chisel:tuff_chisel_1",
+      "name": "tuff_chisel_1"
+    },
+    {
+      "block": "chisel:tuff_chisel_2",
+      "name": "tuff_chisel_2"
+    },
+    {
+      "block": "chisel:tuff_chisel_3",
+      "name": "tuff_chisel_3"
+    },
+    {
+      "block": "chisel:tuff_chisel_4",
+      "name": "tuff_chisel_4"
+    },
+    {
+      "block": "chisel:tuff_chisel_5",
+      "name": "tuff_chisel_5"
+    },
+    {
+      "block": "chisel:tuff_chisel_6",
+      "name": "tuff_chisel_6"
+    },
+    {
+      "block": "chisel:tuff_facet",
+      "name": "tuff_facet"
+    },
+    {
+      "block": "chisel:tuff_facet_small",
+      "name": "tuff_facet_small"
+    },
+    {
+      "block": "chisel:tuff_facet_small_encased",
+      "model_type": "connected",
+      "name": "tuff_facet_small_encased"
+    },
+    {
+      "block": "chisel:tuff_shiny",
+      "name": "tuff_shiny"
+    },
+    {
+      "block": "chisel:tuff_shiny_connected",
+      "model_type": "connected",
+      "name": "tuff_shiny_connected"
+    },
+    {
+      "block": "chisel:tuff_gem",
+      "name": "tuff_gem"
+    },
+    {
+      "block": "chisel:tuff_gem_1",
+      "name": "tuff_gem_1"
+    },
+    {
+      "block": "chisel:tuff_gem_1_connected",
+      "model_type": "connected",
+      "name": "tuff_gem_1_connected"
+    },
+    {
+      "block": "chisel:tuff_gem_2",
+      "name": "tuff_gem_2"
+    },
+    {
+      "block": "chisel:tuff_gem_2_connected",
+      "model_type": "connected",
+      "name": "tuff_gem_2_connected"
+    },
+    {
+      "block": "chisel:tuff_gem_3",
+      "name": "tuff_gem_3"
+    },
+    {
+      "block": "chisel:tuff_gem_3_connected",
+      "model_type": "connected",
+      "name": "tuff_gem_3_connected"
+    },
+    {
+      "block": "chisel:tuff_bricks_square",
+      "name": "tuff_bricks_square"
+    },
+    {
+      "block": "chisel:tuff_slab",
+      "name": "tuff_slab"
+    },
+    {
+      "block": "chisel:tuff_scaffold",
+      "name": "tuff_scaffold"
+    },
+    {
+      "block": "chisel:tuff_scaffold_encased",
+      "model_type": "connected",
+      "name": "tuff_scaffold_encased"
+    },
+    {
+      "block": "chisel:tuff_tiles_inlayed",
+      "name": "tuff_tiles_inlayed"
+    },
+    {
+      "block": "chisel:tuff_waves",
+      "model_type": "multiblock_2x2",
+      "name": "tuff_waves"
+    },
+    {
+      "block": "chisel:tuff_parquet",
+      "name": "tuff_parquet"
+    },
+    {
+      "block": "chisel:tuff_parquet_encased",
+      "model_type": "connected",
+      "name": "tuff_parquet_encased"
+    }
+  ]
+}

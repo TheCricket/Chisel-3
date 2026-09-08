@@ -1,9 +1,10 @@
 package io.github.chiselteam.chisel.block;
 
-import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
-import io.github.chiselteam.chisel.inventory.menu.AutoChiselMenu;
-import io.github.chiselteam.chisel.registry.ChiselStats;
 import com.mojang.serialization.MapCodec;
+import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.menu.AutoChiselMenu;
+import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
+import io.github.chiselteam.chisel.registry.ChiselStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -14,6 +15,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -21,10 +24,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
-
-import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class AutoChiselBlock extends BaseEntityBlock {
 

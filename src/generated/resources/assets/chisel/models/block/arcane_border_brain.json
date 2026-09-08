@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/arcane/arcane_border_brain",
-    "overlay_connected": "chisel:block/arcane/arcane_border_brain-ctm",
-    "overlay_texture": "chisel:block/arcane/arcane_border_brain",
-    "particle": "chisel:block/arcane/arcane_border_brain"
+    "all": "chisel:block/fa_arcane_darkstone/arcane_border_brain",
+    "overlay_connected": "chisel:block/fa_arcane_darkstone/arcane_border_brain-ctm",
+    "overlay_texture": "chisel:block/fa_arcane_darkstone/arcane_border_brain",
+    "particle": "chisel:block/fa_arcane_darkstone/arcane_border_brain"
   }
 }

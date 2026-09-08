@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/concrete_lime_bricks_large",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:concrete_lime_bricks_large",
+    "kind": "multiblock_2x2"
+  }
+}

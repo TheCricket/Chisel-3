@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side",
+    "bottom": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-bottom",
+    "overlay_bottom": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-bottom",
+    "overlay_side_connected": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side-ctm",
+    "overlay_texture": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side",
+    "overlay_top": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-top",
+    "overlay_vertical": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side-ctm",
+    "particle": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side",
+    "side": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-side",
+    "top": "chisel:block/concrete_cyan/concrete_cyan_pillar_ionic-top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/blackstone/blackstone_lodestone_connected",
+    "overlay_connected": "chisel:block/blackstone/blackstone_lodestone_connected-ctm",
+    "overlay_texture": "chisel:block/blackstone/blackstone_lodestone_connected",
+    "particle": "chisel:block/blackstone/blackstone_lodestone_connected"
+  }
+}

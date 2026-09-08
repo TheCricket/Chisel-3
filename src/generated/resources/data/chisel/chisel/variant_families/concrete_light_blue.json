@@ -1,0 +1,539 @@
+{
+  "family_name": "concrete_light_blue",
+  "tag": "c:chisel/concrete_light_blue",
+  "variants": [
+    {
+      "block": "minecraft:light_blue_concrete",
+      "name": "block.minecraft.light_blue_concrete"
+    },
+    {
+      "block": "chisel:concrete_light_blue_array",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_array"
+    },
+    {
+      "block": "chisel:concrete_light_blue_border_square",
+      "model_type": "connected",
+      "name": "concrete_light_blue_border_square"
+    },
+    {
+      "block": "chisel:concrete_light_blue_braid",
+      "name": "concrete_light_blue_braid"
+    },
+    {
+      "block": "chisel:concrete_light_blue_braid_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_braid_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_cracked",
+      "name": "concrete_light_blue_bricks_cracked"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_bricks_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_indent",
+      "name": "concrete_light_blue_bricks_indent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_inlayed",
+      "name": "concrete_light_blue_bricks_inlayed"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_bricks_large"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_small",
+      "name": "concrete_light_blue_bricks_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_soft",
+      "name": "concrete_light_blue_bricks_soft"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_solid",
+      "name": "concrete_light_blue_bricks_solid"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_triple",
+      "name": "concrete_light_blue_bricks_triple"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_vertical",
+      "name": "concrete_light_blue_bricks_vertical"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "concrete_light_blue_chaotic"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chaotic_medium",
+      "name": "concrete_light_blue_chaotic_medium"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chaotic_small",
+      "name": "concrete_light_blue_chaotic_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_checker",
+      "name": "concrete_light_blue_checker"
+    },
+    {
+      "block": "chisel:concrete_light_blue_checker_small",
+      "name": "concrete_light_blue_checker_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_circular",
+      "model_type": "connected",
+      "name": "concrete_light_blue_circular"
+    },
+    {
+      "block": "chisel:concrete_light_blue_cobble",
+      "name": "concrete_light_blue_cobble"
+    },
+    {
+      "block": "chisel:concrete_light_blue_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "concrete_light_blue_cuts"
+    },
+    {
+      "block": "chisel:concrete_light_blue_dent",
+      "model_type": "connected",
+      "name": "concrete_light_blue_dent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_french_1",
+      "name": "concrete_light_blue_french_1"
+    },
+    {
+      "block": "chisel:concrete_light_blue_french_2",
+      "name": "concrete_light_blue_french_2"
+    },
+    {
+      "block": "chisel:concrete_light_blue_indent",
+      "model_type": "connected",
+      "name": "concrete_light_blue_indent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_jellybean"
+    },
+    {
+      "block": "chisel:concrete_light_blue_layers",
+      "name": "concrete_light_blue_layers"
+    },
+    {
+      "block": "chisel:concrete_light_blue_layers_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_layers_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_line_horizontal",
+      "name": "concrete_light_blue_line_horizontal"
+    },
+    {
+      "block": "chisel:concrete_light_blue_line_vertical",
+      "name": "concrete_light_blue_line_vertical"
+    },
+    {
+      "block": "chisel:concrete_light_blue_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "concrete_light_blue_meander_horizontal"
+    },
+    {
+      "block": "chisel:concrete_light_blue_meander_vertical",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_meander_vertical"
+    },
+    {
+      "block": "chisel:concrete_light_blue_mosaic",
+      "model_type": "connected",
+      "name": "concrete_light_blue_mosaic"
+    },
+    {
+      "block": "chisel:concrete_light_blue_ornate_small",
+      "name": "concrete_light_blue_ornate_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_panel",
+      "name": "concrete_light_blue_panel"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar",
+      "model_type": "top_bottom_side",
+      "name": "concrete_light_blue_pillar"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_basic",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_basic"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_basic_round"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "concrete_light_blue_pillar_classic"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "concrete_light_blue_pillar_classic_large"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_ionic"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_meander",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_meander"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_meander_round"
+    },
+    {
+      "block": "chisel:concrete_light_blue_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "concrete_light_blue_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:concrete_light_blue_plate",
+      "name": "concrete_light_blue_plate"
+    },
+    {
+      "block": "chisel:concrete_light_blue_plate_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_plate_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_polished",
+      "name": "concrete_light_blue_polished"
+    },
+    {
+      "block": "chisel:concrete_light_blue_polished_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_polished_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_prism",
+      "name": "concrete_light_blue_prism"
+    },
+    {
+      "block": "chisel:concrete_light_blue_raw",
+      "name": "concrete_light_blue_raw"
+    },
+    {
+      "block": "chisel:concrete_light_blue_road",
+      "name": "concrete_light_blue_road"
+    },
+    {
+      "block": "chisel:concrete_light_blue_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_slanted"
+    },
+    {
+      "block": "chisel:concrete_light_blue_tiles",
+      "name": "concrete_light_blue_tiles"
+    },
+    {
+      "block": "chisel:concrete_light_blue_tiles_large",
+      "model_type": "connected",
+      "name": "concrete_light_blue_tiles_large"
+    },
+    {
+      "block": "chisel:concrete_light_blue_tiles_small",
+      "name": "concrete_light_blue_tiles_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_twisted",
+      "model_type": "top_bottom_side",
+      "name": "concrete_light_blue_twisted"
+    },
+    {
+      "block": "chisel:concrete_light_blue_weaver",
+      "model_type": "connected",
+      "name": "concrete_light_blue_weaver"
+    },
+    {
+      "block": "chisel:concrete_light_blue_zag",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_zag"
+    },
+    {
+      "block": "chisel:concrete_light_blue_crate",
+      "model_type": "connected",
+      "name": "concrete_light_blue_crate"
+    },
+    {
+      "block": "chisel:concrete_light_blue_herringbone",
+      "name": "concrete_light_blue_herringbone"
+    },
+    {
+      "block": "chisel:concrete_light_blue_herringbone_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_herringbone_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_medallion",
+      "name": "concrete_light_blue_medallion"
+    },
+    {
+      "block": "chisel:concrete_light_blue_medallion_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_medallion_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_dots",
+      "name": "concrete_light_blue_dots"
+    },
+    {
+      "block": "chisel:concrete_light_blue_dots_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_dots_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_heart",
+      "name": "concrete_light_blue_heart"
+    },
+    {
+      "block": "chisel:concrete_light_blue_star",
+      "name": "concrete_light_blue_star"
+    },
+    {
+      "block": "chisel:concrete_light_blue_plating",
+      "name": "concrete_light_blue_plating"
+    },
+    {
+      "block": "chisel:concrete_light_blue_lodestone",
+      "name": "concrete_light_blue_lodestone"
+    },
+    {
+      "block": "chisel:concrete_light_blue_lodestone_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_lodestone_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_plank",
+      "name": "concrete_light_blue_plank"
+    },
+    {
+      "block": "chisel:concrete_light_blue_plank_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_plank_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_frame",
+      "name": "concrete_light_blue_frame"
+    },
+    {
+      "block": "chisel:concrete_light_blue_panel_1",
+      "name": "concrete_light_blue_panel_1"
+    },
+    {
+      "block": "chisel:concrete_light_blue_panel_2",
+      "name": "concrete_light_blue_panel_2"
+    },
+    {
+      "block": "chisel:concrete_light_blue_panel_3",
+      "name": "concrete_light_blue_panel_3"
+    },
+    {
+      "block": "chisel:concrete_light_blue_skull_creeper",
+      "name": "concrete_light_blue_skull_creeper"
+    },
+    {
+      "block": "chisel:concrete_light_blue_skull_skeleton",
+      "name": "concrete_light_blue_skull_skeleton"
+    },
+    {
+      "block": "chisel:concrete_light_blue_stripes",
+      "name": "concrete_light_blue_stripes"
+    },
+    {
+      "block": "chisel:concrete_light_blue_stripes_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_stripes_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_1",
+      "name": "concrete_light_blue_chisel_1"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_2",
+      "name": "concrete_light_blue_chisel_2"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_3",
+      "name": "concrete_light_blue_chisel_3"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_4",
+      "name": "concrete_light_blue_chisel_4"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_5",
+      "name": "concrete_light_blue_chisel_5"
+    },
+    {
+      "block": "chisel:concrete_light_blue_chisel_6",
+      "name": "concrete_light_blue_chisel_6"
+    },
+    {
+      "block": "chisel:concrete_light_blue_facet",
+      "name": "concrete_light_blue_facet"
+    },
+    {
+      "block": "chisel:concrete_light_blue_facet_small",
+      "name": "concrete_light_blue_facet_small"
+    },
+    {
+      "block": "chisel:concrete_light_blue_facet_small_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_facet_small_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_shiny",
+      "name": "concrete_light_blue_shiny"
+    },
+    {
+      "block": "chisel:concrete_light_blue_shiny_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_shiny_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem",
+      "name": "concrete_light_blue_gem"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_1",
+      "name": "concrete_light_blue_gem_1"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_1_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_gem_1_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_2",
+      "name": "concrete_light_blue_gem_2"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_2_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_gem_2_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_3",
+      "name": "concrete_light_blue_gem_3"
+    },
+    {
+      "block": "chisel:concrete_light_blue_gem_3_connected",
+      "model_type": "connected",
+      "name": "concrete_light_blue_gem_3_connected"
+    },
+    {
+      "block": "chisel:concrete_light_blue_bricks_square",
+      "name": "concrete_light_blue_bricks_square"
+    },
+    {
+      "block": "chisel:concrete_light_blue_slab",
+      "name": "concrete_light_blue_slab"
+    },
+    {
+      "block": "chisel:concrete_light_blue_scaffold",
+      "name": "concrete_light_blue_scaffold"
+    },
+    {
+      "block": "chisel:concrete_light_blue_scaffold_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_scaffold_encased"
+    },
+    {
+      "block": "chisel:concrete_light_blue_tiles_inlayed",
+      "name": "concrete_light_blue_tiles_inlayed"
+    },
+    {
+      "block": "chisel:concrete_light_blue_waves",
+      "model_type": "multiblock_2x2",
+      "name": "concrete_light_blue_waves"
+    },
+    {
+      "block": "chisel:concrete_light_blue_parquet",
+      "name": "concrete_light_blue_parquet"
+    },
+    {
+      "block": "chisel:concrete_light_blue_parquet_encased",
+      "model_type": "connected",
+      "name": "concrete_light_blue_parquet_encased"
+    }
+  ]
+}

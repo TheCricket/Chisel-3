@@ -1,0 +1,13 @@
+﻿{
+  "values": [
+    {"id": "aether_ii:icestone", "required": false},
+    {"id": "aether_ii:icestone_bricks", "required": false},
+    {"id": "aether_ii:icestone_flagstones", "required": false},
+    {"id": "aether_ii:icestone_keystone", "required": false},
+    {"id": "aether_ii:icestone_base_bricks", "required": false},
+    {"id": "aether_ii:icestone_capstone_bricks", "required": false},
+    {"id": "aether_ii:icestone_base_pillar", "required": false},
+    {"id": "aether_ii:icestone_capstone_pillar", "required": false},
+    {"id": "aether_ii:icestone_pillar", "required": false}
+  ]
+}

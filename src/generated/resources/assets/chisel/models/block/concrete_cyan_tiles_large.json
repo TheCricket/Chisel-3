@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/concrete_cyan/concrete_cyan_tiles_large",
+    "overlay_connected": "chisel:block/concrete_cyan/concrete_cyan_tiles_large-ctm",
+    "overlay_texture": "chisel:block/concrete_cyan/concrete_cyan_tiles_large",
+    "particle": "chisel:block/concrete_cyan/concrete_cyan_tiles_large"
+  }
+}

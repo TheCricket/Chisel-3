@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "axis=x": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_brown_pillar_ionic_spiral",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_brown_pillar_ionic_spiral",
+        "kind": "ctmv"
+      },
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_brown_pillar_ionic_spiral",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_brown_pillar_ionic_spiral",
+        "kind": "ctmv"
+      }
+    },
+    "axis=z": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "down",
+        "up"
+      ],
+      "model_location": "chisel:block/concrete_brown_pillar_ionic_spiral",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:concrete_brown_pillar_ionic_spiral",
+        "kind": "ctmv"
+      },
+      "x": 90
+    }
+  }
+}

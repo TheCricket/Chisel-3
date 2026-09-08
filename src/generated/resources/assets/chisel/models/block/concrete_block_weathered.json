@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/concrete/concrete_block_weathered"
+    "all": "chisel:block/c_concrete/concrete_block_weathered"
   }
 }

@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/ancient_stone/ancient_stone_encased",
-    "overlay_connected": "chisel:block/ancient_stone/ancient_stone_encased-ctm",
-    "overlay_texture": "chisel:block/ancient_stone/ancient_stone_encased",
-    "particle": "chisel:block/ancient_stone/ancient_stone_encased"
-  }
-}

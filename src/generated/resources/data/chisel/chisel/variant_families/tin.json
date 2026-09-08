@@ -22,6 +22,7 @@
     },
     {
       "block": "chisel:tin_crate",
+      "model_type": "connected",
       "name": "tin_crate"
     },
     {

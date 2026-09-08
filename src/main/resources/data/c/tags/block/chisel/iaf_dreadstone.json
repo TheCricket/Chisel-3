@@ -1,0 +1,9 @@
+﻿{
+  "values": [
+    {"id": "iceandfire:dread_stone", "required": false},
+    {"id": "iceandfire:dread_stone_bricks", "required": false},
+    {"id": "iceandfire:dread_stone_chiseled", "required": false},
+    {"id": "iceandfire:dread_stone_tile", "required": false},
+    {"id": "iceandfire:dread_stone_bricks_cracked", "required": false}
+  ]
+}

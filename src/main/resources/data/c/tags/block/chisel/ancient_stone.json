@@ -1,9 +1,0 @@
-﻿{
-  "values": [
-    {"id": "allthemodium:ancient_stone", "required": false},
-    {"id": "allthemodium:smooth_ancient_stone", "required": false},
-    {"id": "allthemodium:polished_ancient_stone", "required": false},
-    {"id": "allthemodium:ancient_stone_bricks", "required": false},
-    {"id": "allthemodium:chiseled_ancient_stone_bricks", "required": false}
-  ]
-}

@@ -1,0 +1,7 @@
+﻿{
+  "values": [
+    {"id": "#c:storage_blocks/brass", "required": false},
+    {"id":"alltheores:brass_block", "required":false},
+    {"id":"railcraft:brass_block", "required":false}
+  ]
+}

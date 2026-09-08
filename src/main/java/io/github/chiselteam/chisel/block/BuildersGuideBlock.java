@@ -9,12 +9,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
@@ -41,12 +39,12 @@ public class BuildersGuideBlock extends BaseEntityBlock {
 
     @Override
     protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
-        BuildersGuideBlockEntity guide = (BuildersGuideBlockEntity) level.getBlockEntity(pos);
+        var guide = (BuildersGuideBlockEntity) level.getBlockEntity(pos);
         if(guide == null) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
         if(guide.getGhostBlocks().isEmpty()) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
 
         if(stack.getItem() instanceof DyeItem) {
-            DyeColor dye = stack.get(DataComponents.DYE);
+            var dye = stack.get(DataComponents.DYE);
             guide.setColor(dye);
             if(!player.isCreative()) stack.shrink(1);
             player.swing(hand);
@@ -54,7 +52,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
         }
 
         if(stack.getItem() instanceof BlockItem blockItem) {
-            Block block = blockItem.getBlock();
+            var block = blockItem.getBlock();
             guide.placeBlock(block);
             if(!player.isCreative()) stack.shrink(1);
             player.swing(hand);
@@ -66,7 +64,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
 
     @Override
     protected @NonNull InteractionResult useWithoutItem(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull BlockHitResult hitResult) {
-        BlockEntity entity = level.getBlockEntity(pos);
+        var entity = level.getBlockEntity(pos);
         if(entity == null) return super.useWithoutItem(state, level, pos, player, hitResult);
 
         if(entity instanceof BuildersGuideBlockEntity guide) {

@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "chisel:block/cobblestone_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "chisel:block/cobblestone_pillar"
+    },
+    "axis=z": {
+      "model": "chisel:block/cobblestone_pillar",
+      "x": 90
     }
   }
 }
