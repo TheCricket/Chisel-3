@@ -391,6 +391,11 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
+    public int getMaxStackSize() {
+        return 64;
+    }
+
+    @Override
     public boolean isEmpty() {
         for (ItemStack itemstack : items) {
             if (!itemstack.isEmpty()) return false;
@@ -425,8 +430,8 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     @Override
     public void setItem(int slot, @NonNull ItemStack stack) {
         items.set(slot, stack);
-        if (stack.getCount() > getMaxStackSize()) {
-            stack.setCount(getMaxStackSize());
+        if (stack.getCount() > getMaxStackSize(stack)) {
+            stack.setCount(getMaxStackSize(stack));
         }
         setChanged();
         if (level != null) {

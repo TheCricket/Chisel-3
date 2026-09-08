@@ -62,7 +62,7 @@ public class AutoChiselContainerWrapper extends SnapshotJournal<List<ItemStack>>
     public long getCapacityAsLong(int slot, @NonNull ItemResource resource) {
         int[] slots = blockEntity.getSlotsForFace(effectiveSide);
         if (slot < 0 || slot >= slots.length) return 0;
-        return blockEntity.getMaxStackSize();
+        return resource.isEmpty() ? blockEntity.getMaxStackSize() : blockEntity.getMaxStackSize(resource.toStack());
     }
 
     @Override
@@ -89,10 +89,11 @@ public class AutoChiselContainerWrapper extends SnapshotJournal<List<ItemStack>>
 
         int realSlot = slots[slot];
         ItemStack resourceStack = resource.toStack();
+        int stackLimit = blockEntity.getMaxStackSize(resourceStack);
         if (blockEntity.canPlaceItemThroughFace(realSlot, resourceStack, side)) {
             ItemStack existing = blockEntity.getItem(realSlot);
-            if (existing.isEmpty() || (ItemStack.isSameItemSameComponents(existing, resourceStack) && existing.getCount() < blockEntity.getMaxStackSize())) {
-                int toInsert = Math.min(maxAmount, blockEntity.getMaxStackSize() - existing.getCount());
+            if (existing.isEmpty() || (ItemStack.isSameItemSameComponents(existing, resourceStack) && existing.getCount() < stackLimit)) {
+                int toInsert = Math.min(maxAmount, stackLimit - existing.getCount());
                 if (toInsert > 0) {
                     this.updateSnapshots(transaction);
                     if (existing.isEmpty()) {
