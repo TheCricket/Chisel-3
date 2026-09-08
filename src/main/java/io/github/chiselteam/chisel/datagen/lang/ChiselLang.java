@@ -15,6 +15,7 @@ public class ChiselLang extends LangHelper {
     @Override
     protected void addTranslations() {
         HandbookLang.addTranslations(this);
+        PaletteLang.addTranslations(this);
         addBlocks();
         addItems();
         addContainers();

@@ -59,7 +59,7 @@ public class ChiselItems {
         SMASHING_ROCK = register("smashingrock", SmashingRockItem::new, Item.Properties::new);
         MEASURING_TAPE = register("measuring_tape", MeasuringTapeItem::new, Item.Properties::new);
         BUILDERS_HANDBOOK = register("builders_handbook", BuildersHandbookItem::new, ChiselItems::getChiselProps);
-        PALETTE_BUILDER = register("palette_builder", Item::new, Item.Properties::new);
+        PALETTE_BUILDER = register("palette_builder", PaletteBuilderItem::new, ChiselItems::getChiselProps);
     }
 
     private static Item.Properties getChiselProps() {

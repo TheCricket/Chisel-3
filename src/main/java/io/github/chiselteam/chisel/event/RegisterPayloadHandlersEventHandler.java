@@ -13,6 +13,9 @@ public class RegisterPayloadHandlersEventHandler {
     @SubscribeEvent
     public static void registerPayloads(final RegisterPayloadHandlersEvent event) {
         final PayloadRegistrar registrar = event.registrar(Chisel.MODID).versioned("1");
+        registrar.playToServer(SavePalettePacket.TYPE, SavePalettePacket.STREAM_CODEC, SavePalettePacket::handle);
+        registrar.playToServer(DeletePalettePacket.TYPE, DeletePalettePacket.STREAM_CODEC, DeletePalettePacket::handle);
+        registrar.playToServer(SelectPalettePacket.TYPE, SelectPalettePacket.STREAM_CODEC, SelectPalettePacket::handle);
         registrar.playToServer(ChiselSearchPacket.TYPE, ChiselSearchPacket.STREAM_CODEC, ChiselSearchPacket::handle);
         registrar.playToServer(ChiselModeChangePacket.TYPE, ChiselModeChangePacket.STREAM_CODEC, ChiselModeChangePacket::handle);
         registrar.playToServer(ChiselSelectionPacket.TYPE, ChiselSelectionPacket.STREAM_CODEC, ChiselSelectionPacket::handle);
@@ -21,6 +24,8 @@ public class RegisterPayloadHandlersEventHandler {
         registrar.playToClient(MossChunkPacket.TYPE, MossChunkPacket.STREAM_CODEC, MossChunkPacket::handle);
         registrar.playToClient(MossDeltaPacket.TYPE, MossDeltaPacket.STREAM_CODEC, MossDeltaPacket::handle);
         registrar.playToClient(OpenHandbookPacket.TYPE, OpenHandbookPacket.STREAM_CODEC, OpenHandbookPacket::handle);
+        registrar.playToClient(OpenPaletteBuilderPacket.TYPE, OpenPaletteBuilderPacket.STREAM_CODEC);
+        registrar.playToClient(PaletteSaveResultPacket.TYPE, PaletteSaveResultPacket.STREAM_CODEC);
         registrar.playToClient(HandbookGuidesPacket.TYPE, HandbookGuidesPacket.STREAM_CODEC);
     }
 }
